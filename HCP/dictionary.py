@@ -1,12 +1,11 @@
+#! /usr/bin/env python
+
+
+# imports
 import json
 import pandas
 import re
 from pathlib import Path
-
-
-# convert words and strings to exclusively alphanumerics for BIDS' sake
-def alphanum(input):
-    return re.sub(r'[\W_]+', '', input)
 
 
 # file path handling
@@ -15,48 +14,78 @@ INPUT = HERE.joinpath('HCP_S1200_DataDictionary_April_20_2018.xlsx')
 OUTPUT = HERE.joinpath('phenotype', INPUT.name.replace('.xlsx', '.json'))
 status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
+
 # reading in the original data dictionary
 original = pandas.read_excel(INPUT)
 
+# start with a new/empty data dictionary
 dictionary = {}
+
+# begin the output file since the mkdir command above created its directory
 with open(OUTPUT, 'w') as f:
+    # loop over the rows of the original data dictionary
     for i in range(original.shape[0]):
+
+        # get the "columnHeader" as the BIDS field/short name
         try:
             ShortName = str(original['columnHeader'][i])
         except:
+            # go to next row if columnHeader errors
             continue
+
+        # set the BIDS long name to "category|assessment|fullDisplayName"
         try:
             LongName = '|'.join([ str(original['category'][i]) , str(original['assessment'][i]) , str(original['fullDisplayName'][i]) ])
         except:
+            # go to next row if category, assessment, or fullDisplayName error
             continue
+
+        # set the BIDS description to the original "description"
         try:
             Description = str(original['description'][i])
         except:
+            # go to next row if description errors
             continue
 
+        # set the BIDS field/short name and insert the long name and description
         dictionary[ShortName] = {}
         dictionary[ShortName]["LongName"] = LongName
         dictionary[ShortName]["Description"] = Description
 
+        # parse the BIDS "Levels" per ShortName, when present
         levels = {}
+
+        # only has levels when "=" is present and we're ignoring "href"
         if '=' in Description and 'href' not in Description:
 
+            # find all the evidence of Levels in the Description
             matches = re.findall('[;:\(\?\.] *.+= *.+', Description)
+
+            # when there's evidence of Levels, parse them out
             if matches:
+
+                # first match in "phrase" is start index of something with "="
                 phrase = matches[0]
 
+                # iterate through "phrase" characters
                 for start_idx, char in enumerate(phrase):
                     if ' ' in char or '(' in char:
+                        # break to preserve the found character index
                         break
 
+                # use the found character index to get the "Levels" string
                 start_idx += 1
+
+                # ignore ending with closed parentheses
                 if phrase[-1] == ')':
                     substring = phrase[start_idx:-1]
                 else:
                     substring = phrase[start_idx:]
 
+                # skip some phrases that do not need Levels
                 if 'Illumina' not in substring and 'theta' not in substring and 'Zygosity' not in substring and '100%' not in substring and 'Most cigarettes smoked in a day' not in Description:
 
+                    # psecial cases for "Levels" parsing
                     if ShortName == 'SSAGA_Employ':
                         substring_split = substring.replace(';', ',').split(',')
                     elif ShortName == 'Acquisition':
@@ -80,44 +109,65 @@ with open(OUTPUT, 'w') as f:
                         if ShortName in ['SSAGA_PanicDisorder', 'SSAGA_Agoraphobia']:
                             del(substring_split[2])
 
+                    # reassign the variable name to something clearer for below
                     level_list = substring_split
 
-                    # @TODO Fix these
+                    # skip doing automatically for these two, manual fixes below
                     if ShortName in ['Acquisition', 'SSAGA_Income']:
                         continue
 
+                    # iterate through the "Levels" list
                     for level in level_list:
+
+                        # if there's an "=" in the level, parse both sides
                         if '=' in level:
                             if '>=' in level or '<=' in level or ' = ' in level:
                                 pair = level.split(' = ')
                             else:
                                 pair = level.split('=')
 
+                            # clean up the "Levels" key and value
                             level_key = str(pair[0].lstrip().rstrip().replace(' (Asked of female participants only)','').replace(' (Asked of female participants only',''))
                             level_value = str(pair[1].lstrip().rstrip().replace(' (Asked of female participants only)','').replace(' (Asked of female participants only',''))
 
+                        # if there's no "=", then the level is the key and value
                         else:
+                            # clean up the level key
                             level_key = str(level.lstrip().rstrip())
+
+                            # "copy" the key into the value
                             level_value = level_key
 
+                        # pass if the level key is an integer
                         try:
                             level_key_int = int(level_key)
                         except:
+                            # pass if the level value is an integer
                             try:
                                 level_value_int = int(level_value)
+
+                                # swap the key and value if it gets here
                                 temp = level_key
                                 level_key = level_value
                                 level_value = temp
+
+                            # otherwise it's probably a string
                             except:
+
+                                # skip this erroneous level_key with no value
                                 if level_key == ' etc.':
                                     continue
+
+                                # some nice debugging warning messages
                                 elif not ('Agree' in level_value or 'Disagree' in level_value or 'if male' in level_value or 'if female' in level_value):
                                     print(f'problem with level: {level}')
                                     print(f'             level_key: {level_key}')
                                     print(f'             level_value: {level_value}')
 
+                        # add the level key and value to the "levels" dictionary
                         levels[level_key] = level_value
 
+        # if the levels dictionary is not empty, add it to the dictionary
         if levels:
             dictionary[ShortName]["Levels"] = levels
 
@@ -200,4 +250,5 @@ with open(OUTPUT, 'w') as f:
             "5": ">100 times, if male"
         }
 
+    # write out the final JSON with pretty printing
     f.write(json.dumps(dictionary, indent=4))
