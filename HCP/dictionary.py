@@ -11,7 +11,7 @@ from pathlib import Path
 # file path handling
 HERE = Path(__file__).parent.resolve()
 INPUT = HERE.joinpath('HCP_S1200_DataDictionary_April_20_2018.xlsx')
-OUTPUT = HERE.joinpath('phenotype', INPUT.name.replace('.xlsx', '.json'))
+OUTPUT = HERE.joinpath('phenotype', 'dictionary.json')
 status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 
