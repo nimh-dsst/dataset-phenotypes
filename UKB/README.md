@@ -41,7 +41,7 @@ From the [UK Biobank "About Us" page](https://www.ukbiobank.ac.uk/learn-more-abo
 6. Run the following line of code within the `UKB/` subfolder:
 
     ```shell
-    python dictionary.py
+    python3 dictionary.py
     ```
 
 ## Notes about this data dictionary

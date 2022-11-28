@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 
 # imports
@@ -10,15 +10,13 @@ from pathlib import Path
 # file path handling
 HERE = Path(__file__).parent.resolve()
 DATA = HERE.joinpath('Data_Dictionary_Showcase.tsv')
-# CODINGS = HERE.joinpath('Codings.tsv')
 DATACODE_DIR = HERE.joinpath('PHESANT-1.1', 'ukb_data_codes', 'data_codes')
 OUTPUT = HERE.joinpath('phenotype', 'dictionary.json')
 status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 
-# read in the data dictionary and codings
+# read in the data dictionary
 data = pandas.read_csv(DATA, sep='\t')
-# codings = pandas.read_csv(CODINGS, sep='\t')
 
 # start the output dictionary
 dictionary = {}

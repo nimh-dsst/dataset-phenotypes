@@ -15,7 +15,7 @@ From the [Human Connectome Project Young Adult 1200 Subjects Data Release page](
 2. Run the following line of code within the `HCP/` subfolder:
 
     ```shell
-    python dictionary.py
+    python3 dictionary.py
     ```
 
 ## Notes about this data dictionary
