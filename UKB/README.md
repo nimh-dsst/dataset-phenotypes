@@ -11,13 +11,19 @@ From the [UK Biobank "About Us" page](https://www.ukbiobank.ac.uk/learn-more-abo
 > advancement of modern medicine and treatment and has enabled several
 > scientific discoveries that improve human health.
 
-## Steps to produce this data dictionary
+## Steps to produce this study's data dictionary
+
+1. Install the required Python 3 library with the following line of code:
+
+    ```shell
+    python3 -m pip install --user pandas
+    ```
 
 1. Go to the [UK Biobank data access guide page](https://biobank.ctsu.ox.ac.uk/crystal/exinfo.cgi?src=AccessingData).
-2. Click the **Download data dictionary - tsv format** link and place the download into the `UKB/` subfolder.
-3. Do not rename the above file from its originally downloaded name.
-4. Go to [the MRCIEU/PHESANT repository's release "v1.1" on GitHub](https://github.com/MRCIEU/PHESANT/releases/tag/v1.1)
-5. Download the **Source code (zip)** asset and unzip the `PHESANT-1.1.zip` into the `UKB/` subfolder so it looks like this:
+1. Click the **Download data dictionary - tsv format** link and place the download into the `UKB/` subfolder.
+1. Do not rename the above file from its originally downloaded name.
+1. Go to [the MRCIEU/PHESANT repository's release "v1.1" on GitHub](https://github.com/MRCIEU/PHESANT/releases/tag/v1.1)
+1. Download the **Source code (zip)** asset and unzip the `PHESANT-1.1.zip` into the `UKB/` subfolder so it looks like this:
 
     ```shell
     UKB/
@@ -38,7 +44,7 @@ From the [UK Biobank "About Us" page](https://www.ukbiobank.ac.uk/learn-more-abo
     └── README.md
     ```
 
-6. Run the following line of code within the `UKB/` subfolder:
+1. Run the following line of code within the `UKB/` subfolder:
 
     ```shell
     python3 dictionary.py

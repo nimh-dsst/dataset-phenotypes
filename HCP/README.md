@@ -9,10 +9,16 @@ From the [Human Connectome Project Young Adult 1200 Subjects Data Release page](
 > (rMEG) and/or task MEG (tMEG) data available. For the first time, 3T MRI and
 > behavioral retest data for 46 subjects is also available.
 
-## Steps to produce this data dictionary
+## Steps to produce this study's data dictionary
+
+1. Install the required Python 3 library with the following line of code:
+
+    ```shell
+    python3 -m pip install --user pandas
+    ```
 
 1. [Download the "Excel version" of the data dictionary](https://wiki.humanconnectome.org/display/PublicData/HCP-YA+Data+Dictionary-+Updated+for+the+1200+Subject+Release) into the `HCP/` subfolder.
-2. Run the following line of code within the `HCP/` subfolder:
+1. Run the following line of code within the `HCP/` subfolder:
 
     ```shell
     python3 dictionary.py
@@ -24,14 +30,14 @@ The BIDS "LongName" is composed of the pipe-separated (a pipe is this `|` charac
 You may also notice some manual fixes toward the bottom of the `dictionary.py` script to a few fields' `Levels`:
 
 1. Acquisition
-2. SSAGA_Income
-3. SSAGA_ChildhoodConduct
-4. SSAGA_Alc_D4_Dp_Sx
-5. SSAGA_Alc_12_Frq
-6. SSAGA_Alc_12_Frq_5plus
-7. SSAGA_Alc_12_Frq_Drk
-8. SSAGA_Alc_12_Max_Drinks
-9. SSAGA_Alc_Hvy_Max_Drinks
-10. SSAGA_Times_Used_Illicits
+1. SSAGA_Income
+1. SSAGA_ChildhoodConduct
+1. SSAGA_Alc_D4_Dp_Sx
+1. SSAGA_Alc_12_Frq
+1. SSAGA_Alc_12_Frq_5plus
+1. SSAGA_Alc_12_Frq_Drk
+1. SSAGA_Alc_12_Max_Drinks
+1. SSAGA_Alc_Hvy_Max_Drinks
+1. SSAGA_Times_Used_Illicits
 
 These corrections are due to the complex patterns within the levels of the original data dictionary which were easier to instead "inject".

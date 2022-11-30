@@ -1,2 +1,3 @@
 # dataset-phenotypes
-Preparatory scripts and BIDS phenotypic data for large datasets.
+
+Preparatory scripts to output BIDS phenotypic data for common neuroimaging datasets.
