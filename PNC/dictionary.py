@@ -54,21 +54,11 @@ with open(OUTPUT,'w') as f:
         except:
             continue
 
-        # parse comment/logical_min/logical_max/unit, but set to None on failure
+        # parse comment and unit, but set to None on failure
         try:
             ecomm = entry['comment']
         except:
             ecomm = None
-
-        try:
-            emin = entry['logical_min']
-        except:
-            emin = None
-
-        try:
-            emax = entry['logical_max']
-        except:
-            emax = None
 
         try:
             eunit = entry['unit']
@@ -106,10 +96,6 @@ with open(OUTPUT,'w') as f:
 
         dictionary[ename]["Levels"] = levels
 
-        if emin:
-            dictionary[ename]["LogicalMin"] = emin
-        if emax:
-            dictionary[ename]["LogicalMax"] = emax
         if eunit:
             dictionary[ename]["Units"] = eunit
 

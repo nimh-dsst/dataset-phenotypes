@@ -40,6 +40,4 @@ The BIDS `Description` is either of:
 - `type` from the XML ; OR
 - `type` and `comment` from the XML separated by a comma and a space, when a `comment` is present.
 
-`LogicalMin` and `LogicalMax` have been inserted directly from the XML and are not actually normal BIDS sidecar metadata JSON fields.
-When present, they are the range of possible values for the field.
 `Units` have been added as-is from the XML's `unit` field.
