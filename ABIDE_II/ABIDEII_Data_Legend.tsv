@@ -1,0 +1,363 @@
+INDEX	COLUMN LABEL	DESCRIPTION	VARIABLE TYPE	CODING SPECIFICATION	MIN	MAX	ABIDE I INDEX	ABIDE I LABEL
+1	SUB_ID	ABIDE II Unique ID Number	Numeric		28675	30151	1	SUB_ID
+2	NDAR_GUID	National Database for Autism Research Global Unique Identifier	String		-	-	NA	NA
+3	DX_GROUP	Diagnostic Group	Numeric	1=Autism; 2=Control	1	2	2	DX_GROUP
+4	PDD_DSM_IV_TR	DSM-IV-TR PDD Category	Numeric	0=none; 1=Autism; 2=Aspergers; 3=PDD-NOS	0	3	3	DSM_IV_TR
+5	ASD_DSM_5	DSM-5 ASD Category	Numeric	0=none; 1=ASD	0	1	NA	NA
+6	AGE_AT_SCAN	Age at time of scan (years)	Numeric		5.13	64	4	AGE_AT_SCAN
+7	SEX	Gender	Numeric	1=male; 2=female	1	2	5	SEX
+8	HANDEDNESS_CATEGORY	Handedness Category	Numeric	1=right handed; 2=left handed; 3=mixed handed	1	3	6	HANDEDNESS_CATEGORY
+9	HANDEDNESS_SCORES	Handedness Scores	Numeric	right handed: scores ≥ 50; left handed: scores ≤-50; mixed handed: scores between -50 and 50	-100	100	7	HANDEDNESS_SCORES
+10	FIQ	Full IQ Standard Score	Numeric	Differential Ability Scale (DAS)	73	143	8	FIQ
+				Kaufman Brief Intellifence Test (KBIT-2)	85	141			
+				Wechsler Adult Intelligence Scale (WAIS)	73	146			
+				Wechsler Abbreviated Scale of Intelligence (WASI)	66	149			
+				Wechsler Intelligence Scale of Children (WISC)	49	143			
+				Wechsler Preschool and Primary Scale of Intelligence (WPPSI-III)	125	125			
+11	VIQ	Verbal IQ Standard Score	Numeric	DAS	73	153	9	VIQ
+				WAIS	84	136			
+				WASI	66	156			
+				WISC	45	148			
+				WPPSI-III	109	120			
+12	PIQ	Perfomance IQ Standard Score	Numeric	DAS	74	145	10	PIQ
+				Raven's Progressive Matrices (Raven)	66	135			
+				Snijders-Oomen Nonverbal Intelligence (SON-R)	67	135			
+				WAIS	64	149			
+				WASI	53	147			
+				WISC	61	147			
+				WPPSI-III	92	125			
+13	FIQ_TEST_TYPE	IQ Test Used for Full Scale IQ	String	DAS; DAS-II; KBITS-2; WAIS-III; WAIS-IV; WAIS-IV-NL; WASI; WASI-II; WISC-III; WISC-IV; WISC-IV; WPPSI-III	-	-	11	FIQ_TEST_TYPE
+14	VIQ_TEST_TYPE	IQ Test Used for Verbal IQ	String	DAS; DAS-II; WAIS-III; WAIS-IV; WAIS-IV-NL; WASI; WASI-II; WISC-III; WISC-IV; WISC-IV; WPPSI-III	-	-	12	VIQ_TEST_TYPE
+15	PIQ_TEST_TYPE	IQ Test Used for Performance IQ	String	DAS; DAS-II; Raven; SON-R; WAIS-III; WAIS-IV; WAIS-V-NL; WASI; WASI-II; WISC-III; WISC-IV; WISC-V; WPPSI-III	-	-	13	PIQ_TEST_TYPE
+16	ADI_R_SOCIAL_TOTAL_A	Autism Diagnsoitc Interview-Revised Reciprocal Social Interaction Subscore (A) Total	Numeric		0	30	14	ADI_R_SOCIAL_TOTAL_A
+17	ADI_R_VERBAL_TOTAL_BV	Abnormalities in Communication Subscore Verbal B(V) Total	Numeric		0	25	15	ADI_R_VERBAL_TOTAL_BV
+18	ADI_R_NONVERBAL_TOTAL_BV	Abnormalities in Communication Subscore Nonverbal B(NV) Total	Numeric		0	14	NA	NA
+19	ADI_R_RRB_TOTAL_C	Restricted, Repetitive, and Sterestyped Patterns of Behavior (C) Total	Numeric		0	12	16	ADI_R_RRB_TOTAL_C
+20	ADI_R_ONSET_TOTAL_D	Abnormality of Development Evident at or Before 36 Months (D) Total	Numeric		0	5	17	ADI_R_ONSET_TOTAL_D
+21	ADI_R_RSRCH_RELIABLE	Was AD-R scored/administered by research reliable personnel?	Numeric	0=no; 1=yes	0	1	18	ADI_R_RSRCH_RELIABLE
+22	ADOS_MODULE	Autism Diagnostic Observation Schedule Module	Numeric		1	4	19	ADOS_MODULE
+23	ADOS_RSRCH_RELIABLE	Was ADOS scored/administered by research reliable personnel?	Numeric	0=no; 1=yes	0	1	24	ADOS_RSRCH_RELIABLE
+24	ADOS_G_TOTAL	ADOS Generic or ADOS-2 Module 4 Total Score	Numeric		0	23	20	ADOS_TOTAL
+25	ADOS_G_COMM	ADOS-G or ADOS-2 Module 4 Communication Total	Numeric		0	10	21	ADOS_COMM
+26	ADOS_G_SOCIAL	ADOS-G or ADOS-2 Module 4 Reciprocal Social Interaction Total	Numeric		0	14	22	ADOS_SOCIAL
+27	ADOS_G_STEREO_BEHAV	ADOS-G or ADOS-2 Module 4 Stereotyped Behaviors and Restricted Interest Total	Numeric		0	6	23	ADOS_STERO_BEHAV
+28	ADOS_G_CREATIVITY	ADOS-G or ADOS-2 Module 4 Imagination/Creativity Total	Numeric		0	2	NA	NA
+29	ADOS_2_SOCAFFECT	ADOS-2 Social Affect Total	Numeric		0	20	25	ADOS_GOTHAM_SOC_AFFECT
+30	ADOS_2_RRB	ADOS-2 Restricted and Repetitive Behavior Total	Numeric		0	8	26	ADOS_GOTHAM_SOC_RRB
+31	ADOS_2_TOTAL	ADOS-2 Total Score	Numeric		1	25	27	ADOS_GOTHAM_TOTAL
+32	ADOS_2_SEVERITY_TOTAL	ADOS-2 Calibrated Severity Total Score	Numeric		1	10	28	ADOS_GOTHAM_SEVERITY
+33	SRS_EDITION	Social Responsiveness Scale Edition	Numeric	1=SRS; 2=SRS-2	1	2	NA	NA
+34	SRS_VERSION	SRS Version	Numeric	1=child from; 2=adult form	1	2	29	SRS_VERSION
+35	SRS_INFORMANT	Who completed the SRS?	Numeric	1=mother; 2=father; 3=both parents; 4=teacher; 5=self; 6=significant other; 7=friend; 8=mother or father; 9=other relative	1	9	NA	NA
+36	SRS_TOTAL_RAW	SRS Total Raw Score	Numeric		0	199	30	SRS_RAW_TOTAL
+37	SRS_AWARENESS_RAW	SRS Social Awareness Total Raw	Numeric		0	21	31	SRS_AWARENESS
+38	SRS_COGNITION_RAW	SRS Social Cognition Total Raw	Numeric		0	32	32	SRS_COGNITION
+39	SRS_COMMUNICATION_RAW	SRS Social Communication Total Raw	Numeric		0	55	33	SRS_COMMUNICATION
+40	SRS_MOTIVATION_RAW	SRS Social Motivation Total Raw	Numeric		0	32	34	SRS_MOTIVATION
+41	SRS_MANNERISMS_RAW	SRS Autistic Mannerisms Total Raw	Numeric		0	36	35	SRS_MANNERISMS
+42	SRS_TOTAL_T	SRS Total T Score	Numeric		34	116	NA	NA
+43	SRS_AWARENESS_T	SRS Social Awareness Total T	Numeric		30	100	NA	NA
+44	SRS_COGNITION_T	SRS Social Cognition T Score	Numeric		36	108	NA	NA
+45	SRS_COMMUNICATION_T	SRS Social Communication  T Score	Numeric		36	110	NA	NA
+46	SRS_MOTIVATION_T	SRS Social Motivation T Score	Numeric		37	113	NA	NA
+47	SRS_MANNERISMS_T	SRS Autistic Mannerisms T Score	Numeric		40	138	NA	NA
+48	SCQ_VERSION	Social Communication Questionnaire Version	Numeric	1=lifetime form; 2=current form	1	2	NA	NA
+49	SCQ_TOTAL	SCQ Total Raw Score	Numeric		0	34	36	SCQ_TOTAL
+50	AQ_TOTAL	Autism Quotient Total Raw Score	Numeric		9	47	37	AQ_TOTAL
+51	NONASD_PSYDX_ICD9CODE	International Classification of Diseases 9th Revision Code for Non-ASD Psychiatric Disorders	Numeric		-	-	NA	NA
+52	NONASD_PSYDX_LABEL	Non-ASD Psychiatric Disorders Label	String		-	-	38	COMORBIDITY
+53	CURRENT_MED_STATUS	Currently taking medications (within three months from scan)?	Numeric	0=no; 1=yes	0	1	39	CURRENT_MED_STATUS
+54	CURRENT_MEDICATION_NAME	Active Ingredient of Current Medications	String		-	-	40	MEDICATION_NAME
+55	OFF_STIMULANTS_AT_SCAN	Off stimulants 24 hours prior to scan?	Numeric	0=no; 1=yes	0	1	41	OFF_STIMULANTS_AT_SCAN
+56	EYE_STATUS_AT_SCAN	Eye Status During Rest Scan	Numeric	1=open; 2=closed	1	2	71	EYE_STATUS_AT_SCAN
+57	AGE_AT_MPRAGE	Age at anatomical scan in years if different from rest scan	Numeric				72	AGE_AT_MPRAGE
+58	BMI	Body Mass Index	Numeric		12.77	30.23	73	BMI
+59	VINELAND_RECEPTIVE_V_SCALED	Vineland Adaptive Behavior Scales 2nd Edition (Vineland-II) Receptive Language V Scaled Score	Numeric		4	18	42	VINELAND_RECEPTIVE_V_SCALED
+60	VINELAND_EXPRESSIVE_V_SCALED	Vineland-II Expressive Language V Scaled Score	Numeric		7	21	43	VINELAND_EXPRESSIVE_V_SCALED
+61	VINELAND_WRITTEN_V_SCALED	Vineland-II Written Language V Scaled Score	Numeric		8	21	44	VINELAND_WRITTEN_V_SCALED
+62	VINELAND_COMMUNICATION_STANDARD	Vineland-II Communication Standard Score	Numeric		32	130	45	VINELAND_COMMUNICATION_STANDARD
+63	VINELAND_PERSONAL_V_SCALED	Vineland-II  Personal Daily Living Skills V Scaled Score	Numeric		8	21	46	VINELAND_PERSONAL_V_SCALED
+64	VINELAND_DOMESTIC_V_SCALED	Vineland-II Domestic Daily Living Skills V Scaled Score	Numeric		6	19	47	VINELAND_DOMESTIC_V_SCALED
+65	VINELAND_COMMUNITY_V_SCALED	Vineland-II Community Daily Living Skills V Scaled Score	Numeric		8	20	48	VINELAND_COMMUNITY_V_SCALED
+66	VINELAND_DAILYLIVING_STANDARD	Vineland-II Daily Living Skills Standard Score	Numeric		59	121	49	VINELAND_DAILYLIVING_STANDARD
+67	VINELAND_INTERPERSONAL_V_SCALED	Vineland-II Interpersonal Relationships V Scaled Score	Numeric		4	20	50	VINELAND_INTERPERSONAL_V_SCALED
+68	VINELAND_PLAY_V_SCALED	Vineland-II Play and Leisure Time V Scaled Score	Numeric		3	19	51	VINELAND_PLAY_V_SCALED
+69	VINELAND_COPING_V_SCALED	Vineland-II Coping Skills V Scaled Score	Numeric		7	23	52	VINELAND_COPING_V_SCALED
+70	VINELAND_SOCIAL_STANDARD	Vineland-II Socialization Standard Score	Numeric		51	129	53	VINELAND_SOCIAL_STANDARD
+71	VINELAND_GROSS_V_SCALED	Vineland-II Gross Motor V Scaled Score	Numeric		8	19	NA	NA
+72	VINELAND_FINE_V_SCALED	Vineland-II Fine Motor V Scaled Score	Numeric		9	17	NA	NA
+73	VINELAND_MOTOR_STANDARD	Vineland-II Motor Skills Standard Score	Numeric		67	117	NA	NA
+74	VINELAND_SUM_SCORES	Sum of Vineland-II Standard Scores (Communication + Daily Living Skills + Socialization + Motor Skills)	Numeric		166	441	54	VINELAND_SUM_SCORES
+75	VINELAND_ABC_Standard	Vineland-II Adaptive Behavior Composite Standard Score	Numeric		48	122	55	VINELAND_ABC_Standard
+76	VINELAND_INFORMANT	Vineland-II Informant	Numeric	1=parent; 2=self; 3=other	1	2	56	VINELAND_INFORMANT
+77	RBSR_6SUBSCALE_STEREOTYPED	Repetitive Behaviors Scale-Revised 6 Subscales Scoring System Stereotyped Behavior Subscale Raw Score	Numeric		0	16	NA	NA
+78	RBSR_6SUBSCALE_SELF-INJURIOUS	RBS-R 6 Subscales Self-Injurious Behavior Subscale Raw Score	Numeric		0	16	NA	NA
+79	RBSR_6SUBSCALE_COMPULSIVE	RBS-R 6 Subscales Compulsive Behavior Subscale Raw Score	Numeric		0	22	NA	NA
+80	RBSR_6SUBSCALE_RITUALISTIC	RBS-R 6 Subscales Ritualistic Behavior Subscale Raw Score	Numeric		0	17	NA	NA
+81	RBSR_6SUBSCALE_SAMENESS	RBS-R 6 Subscales Sameness Behavior Subscale Raw Score	Numeric		0	28	NA	NA
+82	RBSR_6SUBSCALE_RESTRICTED	RBS-R 6 Subscales Restricted Interests Subscale Raw Score	Numeric		0	12	NA	NA
+83	RBSR_6SUBSCALE_TOTAL	RBS-R 6 Subscales Total Raw Score	Numeric		0	97	NA	NA
+84	RBSR_5SUBSCALE_STEREOTYPIC	RBS-R 5 Subscales Scoring System Stereotypic Behavior Subscale Raw Score	Numeric		0	21	NA	NA
+85	RBSR_5SUBSCALE_SELF-INJURIOUS	RBS-R 5 Subscales Self-Injurious Behavior Subscale Raw Score	Numeric		0	15	NA	NA
+86	RBSR_5SUBSCALE_COMPULSIVE	RBS-R 5 Subscales Compulsive Behavior Subscale Raw Score	Numeric		0	18	NA	NA
+87	RBSR_5SUBSCALE_RITUALISTIC	RBS-R 5 Subscales Ritualistic/Sameness Behavior Subscale Raw Score	Numeric		0	30	NA	NA
+88	RBSR_5SUBSCALE_RESTRICTED	RBS-R 5 Subscales Restricted Interests Subscale Raw Score	Numeric		0	9	NA	NA
+89	RBSR_5SUBSCALE_TOTAL	RBS-R 5 Subscales Total Raw Score	Numeric		0	84	NA	NA
+90	MASC_EDITION	Multidimensional Anxiety Scale for Children Edition	Numeric	1=MASC; 2=MASC 2	1	1	NA	NA
+91	MASC_TOTAL_T	MASC Total T Score	Numeric		31	88	NA	NA
+92	MASC_T/R_T	MASC Physical Symptoms Tense/Restless T Score	Numeric		35	84	NA	NA
+93	MASC_S/A_T	MASC Physical Symptoms Somatic/Autonomic T Score	Numeric		34	91	NA	NA
+94	MASC_PHYSICAL_TOTAL_T	MASC Physical Symptoms Total T Score	Numeric		33	86	NA	NA
+95	MASC_PER_T	MASC for Children Harm Avoidance Perfectionism T Score	Numeric		25	67	NA	NA
+96	MASC_AC_T	MASC Harm Avoidance Anxious/Coping T Score	Numeric		28	72	NA	NA
+97	MASC_HARM_TOTAL_T	MASC Harm Avoidance Total T Score	Numeric		25	72	NA	NA
+98	MASC_H/R_T	MASC Social Anxiety Humiliation/Rejection T Score	Numeric		13	81	NA	NA
+99	MASC_PP_T	MASC Social Anxiety Performance Fears T Score	Numeric		34	77	NA	NA
+100	MASC_SOCIAL_TOTAL_T	MASC Social Anxiety Total T Score	Numeric		32	83	NA	NA
+101	MASC_SEP_T	MASC Separation/Panic T Score	Numeric		32	93	NA	NA
+102	MASC_ADI_T	MASC Anxiety Disorder Index T Sore	Numeric		25	80	NA	NA
+103	MASC_INCONSISTENCY_SCORE	MASC Inconsistency Score	Numeric		0	15	NA	NA
+104	BRIEF_VERSION	Behavior Rating Inventory of Executive Function Version	Numeric	1=child form; 2=adult form	1	1	NA	NA
+105	BRIEF_INFORMANT	BRIEF Informant	Numeric	1=mother; 2=father; 3=both parents; 4=teacher; 5=self; 6=significant other; 7=friend; 8= mother or father; 9=other relative	1	9	NA	NA
+106	BRIEF_INHIBIT_T	BRIEF Inhibit T Score	Numeric		36	97	NA	NA
+107	BRIEF_SHIFT_T	BRIEF Shift T Score	Numeric		36	99	NA	NA
+108	BRIEF_EMOTIONAL_T	BRIEF Emotional Control T Score	Numeric		36	91	NA	NA
+109	BRIEF_BRI_T	BRIEF Behavioral Regulation Index T Score	Numeric		34	99	NA	NA
+110	BRIEF_INITIATE_T	BRIEF Initiate T Score	Numeric		35	95	NA	NA
+111	BRIEF_WORKING_T	BRIEF Working Memory T Score	Numeric		35	90	NA	NA
+112	BRIEF_PLAN_T	BRIEF Plan/Organize T Score	Numeric		33	95	NA	NA
+113	BRIEF_ORGANIZATION_T	BRIEF Organization of Materials T Score	Numeric		33	73	NA	NA
+114	BRIEF_MONITOR_T	BRIEF  Monitor T Score	Numeric		28	91	NA	NA
+115	BRIEF_MI_T	BRIEF Metacognition Index T Score	Numeric		30	92	NA	NA
+116	BRIEF_GEC_T	BRIEF Global Executive Composite T Score	Numeric		30	96	NA	NA
+117	BRIEF_INCONSISTENCY_SCORE	BRIEF Inconsistency Score	Numeric		0	10	NA	NA
+118	BRIEF_NEGATIVITY_SCORE	BRIEF Negativity Score	Numeric		0	9	NA	NA
+119	CBCL_6-18_ACTIVITIES_T	Child Behavior Checklist Ages 6-18 Activities T Score	Numeric		25	65	NA	NA
+120	CBCL_6-18_SOCIAL_T	CBCL 6-18 Social T Score	Numeric		23	65	NA	NA
+121	CBCL_6-18_SCHOOL_T	CBCL 6-18 School T Score	Numeric		25	55	NA	NA
+122	CBCL_6-18_TOTAL_COMPETENCE_T	CBCL 6-18 Total Competence T Score	Numeric		26	78	NA	NA
+123	CBCL_6-18_ANXIOUS_T	CBCL 6-18 Anxious/Depressed T Score	Numeric		50	87	NA	NA
+124	CBCL_6-18_WITHDRAWN_T	CBCL 6-18 Withdrawn/Depressed T Score	Numeric		50	91	NA	NA
+125	CBCL_6-18_SOMATIC_COMPAINT_T	CBCL 6-18 Somatic Complaints T Score	Numeric		50	88	NA	NA
+126	CBCL_6-18_SOCIAL_PROBLEM_T	CBCL 6-18 Social Problems T Score	Numeric		50	93	NA	NA
+127	CBCL_6-18_THOUGHT_T	CBCL 6-18 Thought Problems T Score	Numeric		50	88	NA	NA
+128	CBCL_6-18_ATTENTION_T	CBCL 6-18 Attention Problems T Score	Numeric		50	97	NA	NA
+129	CBCL_6-18_RULE_T	CBCL 6-18 Rule-Breaking Behavior T Score	Numeric		50	76	NA	NA
+130	CBCL_6-18_AGGRESSIVE_T	CBCL 6-18 Aggressive Behavior T Score	Numeric		50	84	NA	NA
+131	CBCL_6-18_INTERNAL_T	CBCL 6-18 Internalizing Problems T Score	Numeric		33	87	NA	NA
+132	CBCL_6-18_EXTERNAL_T	CBCL 6-18 Externalizing Problems T Score	Numeric		32	77	NA	NA
+133	CBCL_6-18_TOTAL_PROBLEM_T	CBCL 6-18 Total Problems T Score	Numeric		24	83	NA	NA
+134	CBCL_6-18_AFFECTIVE_T	CBCL 6-18 -Affective Problems T Score	Numeric		50	86	NA	NA
+135	CBCL_6-18_ANXIETY_T	CBCL 6-18 Anxiety Problems T Score	Numeric		50	79	NA	NA
+136	CBCL_6-18_SOMATIC_PROBLEM_T	CBCL 6-18 Somatic Problems T Score	Numeric		50	87	NA	NA
+137	CBCL_6-18_ATTENTION_DEFICIT_T	CBCL 6-18 Attention Deficit/Hyperactivity Problems T Score	Numeric		50	80	NA	NA
+138	CBCL_6-18_OPPOSITIONAL_T	CBCL 6-18 Oppositional Defiant Problems T Score	Numeric		50	80	NA	NA
+139	CBCL_6-18_CONDUCT_T	CBCL 6-18 Conduct Problems T Score	Numeric		50	77	NA	NA
+140	CBCL_6-18_SLUGGISH_T	CBCL 6-18 Sluggish Cognitive Tempo T Score	Numeric		50	80	NA	NA
+141	CBCL_6-18_OBSESSIVE_T	CBCL 6-18 Obsessive-Compulsive Problems T Score	Numeric		50	88	NA	NA
+142	CBCL_6-18_POST_TRAUMATIC_T	CBCL 6-18 Post-traumatic Stress Problems T Score	Numeric		50	93	NA	NA
+143	CBCL_1.5-5_EMOTION_T	CBCL Ages 1.5-5 Emotionally Reactive T Score	Numeric		50	87	NA	NA
+144	CBCL_1.5-5_ANXIOUS_T	CBCL 1.5-5 Anxious/Depressed T Score	Numeric		50	83	NA	NA
+145	CBCL_1.5-5_SOMANTIC_T	CBCL 1.5-5 Somatic Complaints T Score	Numeric		50	78	NA	NA
+146	CBCL_1.5-5_WITHDRAWN_T	CBCL 1.5-5 Withdrawn T Score	Numeric		50	82	NA	NA
+147	CBCL_1.5-5_SLEEP_T	CBCL 1.5-5 Sleep Problems T Score	Numeric		50	82	NA	NA
+148	CBCL_1.5-5_ATTENTION_PROBLEM_T	CBCL 1.5-5 Attention Problems T Score	Numeric		50	80	NA	NA
+149	CBCL_1.5-5_AGGRESSIVE_T	CBCL 1.5-5 Aggressive Behavior T Score	Numeric		50	91	NA	NA
+150	CBCL_1.5-5_INTERNAL_T	CBCL 1.5-5 Internalizaing Problems T Score	Numeric		33	80	NA	NA
+151	CBCL_1.5-5_EXTERNAL_T	CBCL 1.5-5 Externalizaing Problems T Score	Numeric		28	89	NA	NA
+152	CBCL_1.5-5_TOTAL_T	CBCL 1.5-5 Total Problems T Score	Numeric		29	89	NA	NA
+153	CBCL_1.5-5_STRESS_T	CBCL 1.5-5 Stress Problems T Score	Numeric		0	0	NA	NA
+154	CBCL_1.5-5_AFFECTIVE_T	CBCL 1.5-5 Affective Problems T Score	Numeric		50	84	NA	NA
+155	CBCL_1.5-5_ANXIETY_T	CBCL 1.5-5 Anxiety Problems T Score	Numeric		50	84	NA	NA
+156	CBCL_1.5-5_PERVASIVE_T	CBCL 1.5-5 Pervasive Developmental Problems T Score	Numeric		50	86	NA	NA
+157	CBCL_1.5-5_ATTENTION_DEFICIT_T	CBCL 1.5-5 Attention Deficit/Hyperactivity Problems T Score	Numeric		50	76	NA	NA
+158	CBCL_1.5-5_OPPOSITIONAL_T	CBCL 1.5-5 Oppositional Defiant Problems T Score	Numeric		50	80	NA	NA
+159	BDI_EDITION	Beck's Depression Inventory Edition	Numeric	1=BDI; 2=BDI-IA; 3=BDI-II	3	3	NA	NA
+160	BDI_TOTAL	BDI Total Raw Score	Numeric		0	43	NA	NA
+161	WIAT-II-A_WORD_T	Wechsler Individual Achievement Test Second Edition Abbreviated Word Reading Subtest T Score	Numeric		58	159	NA	NA
+162	WIAT-II-A_NUMERICAL_T	WIAT-II-A Numerical Operations Subtest T Score	Numeric		52	156	NA	NA
+163	WIAT-II-A_SPELLING_T	WIAT-II-A Spelling Subtest T Score	Numeric		62	158	NA	NA
+164	WIAT-II-A_TOTAL_COMPOSITE_S	WIAT-II-A Total Composite Standard Score	Numeric		65	154	NA	NA
+165	VMI_EDITION	Beery-Buktenica Developmental Test of Visual-Motor Integration Edition	Numeric	1=VMI 5th edition; 2=VMI 6th edition	2	2	NA	NA
+166	VMI_VMI_S	VMI Visual-Motor Integration Subtest Standard Score	Numeric		45	114	NA	NA
+167	CELF_EDITION	Clinical Evaluation of Language Fundamentals Edition	Numeric	1=CELF 3; 2=CELF 4	2	2	NA	NA
+168	CELF_5-8_CORE_S	CELF Ages 5-8 Core Language Standard Score	Numeric		42	118	NA	NA
+169	CELF_5-8_RECEPTIVE_S	CELF Ages 5-8  Receptive Language Standard Score	Numeric		42	113	NA	NA
+170	CELF_5-8_EXPRESSIVE_S	CELF Ages 5-8 Expressive Language Standard Score	Numeric		29	118	NA	NA
+171	CELF_9-21_CORE_S	CELF Ages 9-21 Core Language Standard Score	Numeric		56	127	NA	NA
+172	CELF_9-21_RECEPTIVE_S	CELF Ages 9-21 Receptive Language Standard Score	Numeric		60	131	NA	NA
+173	CELF_9-21_EXPRESSIVE_S	CELF Ages 9-21 Expressive Language Standard Score	Numeric		55	130	NA	NA
+174	BASC2_PRS_VERSION	Behavior Assessment System for Children Second Edition Parent Rating Scales Version	Numeric	1=child (6 to 11 years); 2=adolescent (12 to 21 years)	2	2	NA	NA
+175	BASC2_PRS_ANGER_T	BASC-2 Anger Control T Score	Numeric		41	64	NA	NA
+176	BASC2_PRS_HYPERACTIVITY_T	BASC-2 Hyperactivity T Score	Numeric		36	74	NA	NA
+177	BASC2_PRS_AGGRESSION_T	BASC-2 Aggression T Score	Numeric		37	73	NA	NA
+178	BASC2_PRS_CONDUCT_T	BASC-2 Conduct Problems T Score	Numeric		39	67	NA	NA
+179	BASC2_PRS_EXTERNAL_T	BASC-2 Externalizing Problems T Score	Numeric		34	85	NA	NA
+180	BASC2_PRS_EXTERNAL_MEAN_T	BASC-2 Externalizing Problems Mean T Score	Numeric		27	43	NA	NA
+181	BASC2_PRS_ANXIETY_T	BASC-2 Anxiety T Score	Numeric		31	66	NA	NA
+182	BASC2_PRS_DEPRESSION_T	BASC-2 Depression T Score	Numeric		38	88	NA	NA
+183	BASC2_PRS_SOMATIZATION_T	BASC-2 Somatization T Score	Numeric		38	89	NA	NA
+184	BASC2_PRS_INTERNAL_T	BASC-2 Internalizing Problems T Score	Numeric		30	94	NA	NA
+185	BASC2_PRS_INTERNAL_MEAN_T	BASC-2 Internalizing Problems Mean T Score	Numeric		35	55.889	NA	NA
+186	BASC2_PRS_ATYPICALITY_T	BASC-2 Atypicality T Score	Numeric		41	86	NA	NA
+187	BASC2_PRS_WITHDRAWAL_T	BASC-2 Withdrawal T Score	Numeric		36	93	NA	NA
+188	BASC2_PRS_ATTENTION_T	BASC-2 Attention Problems T Score	Numeric		35	69	NA	NA
+189	BASC2_PRS_BSI_T	BASC-2 Behavioral Systems Index T Score	Numeric		33	104	NA	NA
+190	BASC2_PRS_BSI_MEAN_T	BASC-2 Behavioral Systems Index Mean T Score	Numeric		37.333	70.63	NA	NA
+191	BASC2_PRS_ADAPTABILITY_T	BASC-2 Adaptability T Score	Numeric		22	65	NA	NA
+192	BASC2_PRS_SOCIAL_T	BASC-2 Social Skills T Score	Numeric		22	70	NA	NA
+193	BASC2_PRS_LEADERSHIP_T	BASC-2 Leadership T Score	Numeric		28	66	NA	NA
+194	BASC2_PRS_ACTIVITIES_T	BASC-2 Activities of Daily Living T Score	Numeric		17	70	NA	NA
+195	BASC2_PRS_FUNCTIONAL_T	BASC-2 Functional Communication T Score	Numeric		18	66	NA	NA
+196	BASC2_PRS_ADAPTIVE_T	BASC-2 Adaptive Skills T Score	Numeric		17	71	NA	NA
+197	BASC2_PRS_ADAPTIVE_MEAN_T	BASC-2 Adaptive Skills Mean T Score	Numeric		43.6	58	NA	NA
+198	BASC2_PRS_BULLY_T	BASC-2 Bullying T Score	Numeric		39	65	NA	NA
+199	BASC2_PRS_DSD_T	BASC-2 Developmental Social Disorders T Score	Numeric		34	81	NA	NA
+200	BASC2_PRS_EMOTIONAL_T	BASC-2 Emotional Self Control T Score	Numeric		38	73	NA	NA
+201	BASC2_PRS_EXECUTIVE_T	BASC-2 Executive Functioning T Score	Numeric		34	73	NA	NA
+202	BASC2_PRS_NEGATIVE_T	BASC-2 Negative Emotionality T Score	Numeric		33	74	NA	NA
+203	BASC2_PRS_RESILIENCY_T	BASC-2 Resiliency T Score	Numeric		21	65	NA	NA
+204	CPRS_OPP	Conners Parent Rating Scales Oppositional T Score	Numeric		38	90	NA	NA
+205	CPRS_COG-INATT	CPRS Cognitive Problems/Inattention T Score	Numeric		40	90	NA	NA
+206	CPRS_HYPERACT	CPRS Hyperactivity T Score	Numeric		39	90	NA	NA
+207	CPRS_ANX_SHY	CPRS Anxious Shy T Score	Numeric		38	90	NA	NA
+208	CPRS_PERFECT	CPRS Perfectioniam T Score	Numeric		39	90	NA	NA
+209	CPRS_SOCIAL_PROB	CPRS Social Problems T Score	Numeric		45	90	NA	NA
+210	CPRS_PSYCHO_SOMATIC	CPRS Psychosomatic T Score	Numeric		42	90	NA	NA
+211	CPRS_CONN_ADHD	CPRS Conners ADHD Index T Score	Numeric		39	90	NA	NA
+212	CPRS_REST_IMPULS	CPRS Conners Global Index: Restless-Impulsive T Score	Numeric		38	90	NA	NA
+213	CPRS_EMOT_LABILITY	CPRS Conners Global Index: Emotional Lability T Score	Numeric		39	85	NA	NA
+214	CPRS_CONN_GI_TOTAL	CPRS Conners Global Index Total T Score	Numeric		38	90	NA	NA
+215	CPRS_DSM_IV_INATT	CPRS DSM-IV: Inattentive T Score	Numeric		40	90	NA	NA
+216	CPRS_DSM_IV_HYPER_IMPUL	CPRS DSM-IV: Hyperactive-Impulsive T Score	Numeric		39	90	NA	NA
+217	CPRS_DSM_IV_TOTAL	CPRS DSM-IV: Total T Score	Numeric		39	90	NA	NA
+218	CPRS_INATT_SYMPTOMS	CPRS Inattentive Symptoms	Numeric		0	9	NA	NA
+219	CPRS_HYPER_IMPUL_SYMPTOMS	CPRS Hyperactive-Impulsive Symptoms	Numeric		0	9	NA	NA
+220	CASI_ADHD-I_CUTOFF	Child and Adolescent Symptom Inventory-4R ADHD Inattentive Type: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+221	CASI_ADHD-H_CUTOFF	CASI-4R ADHD Hyperactive-Impulsive Type: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+222	CASI_ADHD-C_CUTOFF	CASI-4R ADHD Combined Type: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+223	CASI_ODD_CUTOFF	CASI-4R Oppositional Defiant Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+224	CASI_CD_CUTOFF	CASI-4R Conduct Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+225	CASI_GAD_CUTOFF	CASI-4R Generalized Anxiety Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+226	CASI_SPECIFIC_PHOBIA_CUTOFF	CASI-4R Specific Phobia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+227	CASI_OBSESSIONS_CUTOFF	CASI-4R Obsessions: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+228	CASI_COMPULSIONS_CUTOFF	CASI-4R Compulsions: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+229	CASI_PTSD_CUTOFF	CASI-4R Posttraumatic Stress Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+230	CASI_MOTOR_TICS_CUTOFF	CASI-4R Motor Tics: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+231	CASI_VOCAL_TICS_CUTOFF	CASI-4R Specific Phobia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+232	CASI_SOCIAL_PHOBIA_CUTOFF	CASI-4R Social Phobia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+233	CASI_SEPARATION_CUTOFF	CASI-4R Separation Anxiety disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+234	CASI_SCHIZOPHRENIA_CUTOFF	CASI-4R Schizophrenia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+235	CASI_NOCTURNAL_ENURESIS_CUTOFF	CASI-4R Nocturnal Enuresis: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+236	CASI_ENURESIS_ENCOPRESIS_CUTOFF	CASI-4R Enuresis Encopresis: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+237	CASI_MDE_CUTOFF	CASI-4R Major Depressive Episode: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+238	CASI_DYSTHYMIC_CUTOFF	CASI-4R Dysthmic Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+239	CASI_AUTISTIC_CUTOFF	CASI-4R Autistic Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+240	CASI_ASPERGER_CUTOFF	CASI-4R Aspergers Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+241	CASI_ASPD_CUTOFF	CASI-4R Antisocial Personality Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+242	CASI_PANIC_ATTACKS_CUTOFF	CASI-4R Panic Attacks: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+243	CASI_SOMATIZATION_CUTOFF	CASI-4R Somatization Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+244	CASI_SCHIZOID_PERSONALITY_CUTOFF	CASI-4R Schizoid Personality: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+245	CASI_MANIC_EPISODE_CUTOFF	CASI-4R Manic Episode (bipolar disorder): Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+246	CASI_ANOREXIA_NERVOSA_CUTOFF	CASI-4R Anorexia Nervosa: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+247	CASI_BULIMIA_NERVOSA_CUTOFF	CASI-4R Builimia Nervosa: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+248	CASI_SUBSTANCE_USE_CUTOFF	CASI-4R Substance Abuse: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+249	CSI_ADHD-I_SEVERITY	Child Symptom Inventory-4 ADHD Inattentive Type: Symptom Severity Score	Numeric		0	26	NA	NA
+250	CSI_ADHD-I_CUTOFF	CSI-4 ADHD Inattentive Type: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+251	CSI_ADHD-H_SEVERITY	CSI-4 ADHD Hyperactive-Impulsive Type: Symptom Severity Score	Numeric		0	9	NA	NA
+252	CSI_ADHD-H_CUTOFF	CSI-4 ADHD Hyperactive-Impulsive Type: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+253	CSI_ADHD-C_SEVERITY	CSI-4 ADHD Combined Type: Symptom Severity Score	Numeric		0	34	NA	NA
+254	CSI_ADHD-C_CUTOFF	CSI-4 ADHD Combined Type: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+255	CSI_ODD_SEVERITY	CSI-4 Oppositional Defiant Disorder: Symptom Severity Score	Numeric		0	14	NA	NA
+256	CSI_ODD_ CUTOFF	CSI-4 Oppositional Defiant Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+257	CSI_CD_SEVERITY	CSI-4 Conduct Disorder: Symptom Severity Score	Numeric		0	1	NA	NA
+258	CSI_CD_CUTOFF	CSI-4 Conduct Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+259	CSI_GAD_SEVERITY	CSI-4 Generalized Anxiety Disorder: Symptom Severity Score	Numeric		0	16	NA	NA
+260	CSI_GAD_CUTOFF	CSI-4 Generalized Anxiety Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+261	CSI_SPECIFIC_PHOBIA_SEVERITY	CSI-4 Social Phobia: Symptom Severity Score	Numeric		0	3	NA	NA
+262	CSI_SPECIFIC_PHOBIA_CUTOFF	CSI-4 Social Phobia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+263	CSI_OBSESSIONS_SEVERITY	CSI-4 Obsessions: Symptom Severity Score	Numeric		0	3	NA	NA
+264	CSI_OBSESSIONS_CUTOFF	CSI-4 Obsessions: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+265	CSI_COMPULSIONS_SEVERITY	CSI-4 Compulsions: Symptom Severity Score	Numeric		0	2	NA	NA
+266	CSI_COMPULSIONS_CUTOFF	CSI-4 Compulsions: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+267	CSI_DISTURBING_EVENTS_SEVERITY	CSI-4 Disturbing Events: Symptom Severity Score	Numeric		0	3	NA	NA
+268	CSI_DISTURBING_EVENTS_CUTOFF	CSI-4 Disturbing Events: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+269	CSI_MOTOR_TICS_SEVERITY	CSI-4 Motor Tics: Symptom Severity Score	Numeric		0	3	NA	NA
+270	CSI_MOTOR_TICS_CUTOFF	CSI-4 Motor Tics: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+271	CSI_VOCAL_TICS_SEVERITY	CSI-4 Vocal Tics: Symptom Severity Score	Numeric		0	1	NA	NA
+272	CSI_VOCAL_TICS_CUTOFF	CSI-4 Vocal Tics: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+273	CSI_SCHIZOPHRENIA_SEVERITY	CSI-4 Schizophrenia: Symptom Severity Score	Numeric		0	6	NA	NA
+274	CSI_SCHIZOPHRENIA_CUTOFF	CSI-4 Schizophrenia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+275	CSI_MDD_SEVERITY	CSI-4 Major Depressive Disorder: Symptom Severity Score	Numeric		1	9	NA	NA
+276	CSI_MDD_CUTOFF	CSI-4 Major Depressive Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+277	CSI_DYSTHYMIC_SEVERITY	CSI-4 Dysthmic Disorder: Symptom Severity Score	Numeric		1.5	10.5	NA	NA
+278	CSI_DYSTHYMIC_CUTOFF	CSI-4 Dysthmic Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+279	CSI_AUTISTIC_SEVERITY	CSI-4 Autistic Disorder: Symptom Severity Score	Numeric		0	25	NA	NA
+280	CSI_AUTISTIC_CUTOFF	CSI-4 Autistic Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+281	CSI_ASPERGER_SEVERITY	CSI-4 Aspergers Disorder: Symptom Severity Score	Numeric		0	19	NA	NA
+282	CSI_ASPERGER_CUTOFF	CSI-4 Aspergers Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+283	CSI_SOCIAL_PHOBIA_SEVERITY	CSI-4 Social Phobia: Symptom Severity Score	Numeric		0	9	NA	NA
+284	CSI_SOCIAL_PHOBIA_CUTOFF	CSI-4 Social Phobia: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+285	CSI_SEPARATION_SEVERITY	CSI-4 Separation Anxiety Disorder: Symptom Severity Score	Numeric		0	1	NA	NA
+286	CSI_SEPARATION_CUTOFF	CSI-4 Separation Anxiety Disorder: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+287	CSI_ENURESIS_SEVERITY	CSI-4 Enuresis: Symptom Severity Score	Numeric		0	1	NA	NA
+288	CSI_ENURESIS_CUTOFF	CSI-4 Enuresis: Meet Cutoff?	Numeric	0=No; 1=Yes	0	1	NA	NA
+289	CSI_ENCOPRESIS_SEVERITY	CSI-4 Encopresis: Symptom Severity Score	Numeric		0	0	NA	NA
+290	CSI_ENCOPRESIS_CUTOFF	CSI-4 Encopresis: Meet Cutoff?	Numeric	0=No; 1=Yes	0	0	NA	NA
+291	ADI_R_A1_DIRECT_GAZE	Autism Diagnostic Interview-Revised Algorithm A1 50.Direct Gaze Score	Numeric		0	2	NA	NA
+292	ADI_R_A1_SOCIAL_SMILE	ADI-R Algorithm A1 51.Social Smiling Score	Numeric		0	2	NA	NA
+293	ADI_R_A1_FACIAL_EXPRESSIONS	ADI-R Algorithm A1 57.Range of Facial Expressions Used to Communicate Score	Numeric		0	2	NA	NA
+294	ADI_R_A1_TOTAL	ADI-R Algorithm A1 Total Score	Numeric		0	6	NA	NA
+295	ADI_R_A2_IMAGINATIVE_PLAY	ADI-R Algorithm A2 49.Imaginative Play with Peers Score	Numeric		0	2	NA	NA
+296	ADI_R_A2_INTEREST_IN_CHILDREN	ADI-R Algorithm A2 62.Interest in Children Score	Numeric		0	2	NA	NA
+297	ADI_R_A2_RESPONSE_TO_APPROACHES	ADI-R Algorithm A2 63. Response to Approaches of Other Children Score	Numeric		0	2	NA	NA
+298	ADI_R_A2_GROUP_PLAY	ADI-R Algorithm A2 64. Group Play with Peers Score	Numeric		1	9	NA	NA
+299	ADI_R_A2_HIGHER	ADI-R Algorithm A2 64 or 65	Numeric		0	2	NA	NA
+300	ADI_R_A2_FRIENDSHIPS	ADI-R Algorithm A2 65. Friendships Score	Numeric		0	9	NA	NA
+301	ADI_R_A2_TOTAL	ADI-R Algorithm A2 Total Score	Numeric		2	8	NA	NA
+302	ADI_R_A3_SHOWING_DIRECTING_ATTENTION	ADI-R Algorithm A3 52. Group Play with Peers Score	Numeric		0	2	NA	NA
+303	ADI_R_A3_OFFERING_TO_SHARE	ADI-R Algorithm A3 53. Group Play with Peers Score	Numeric		0	2	NA	NA
+304	ADI_R_A3_SEEKING_SHARE_ENJOYMENT	ADI-R Algorithm A3 54. Group Play with Peers Score	Numeric		0	2	NA	NA
+305	ADI_R_A3_Total	ADI-R Algorithm A3 Total Score	Numeric		0	6	NA	NA
+306	ADI_R_A4_USE_OTHERS_BODY	ADI-R Algorithm A4 31. Use of Other's Body to Communicate Score	Numeric		0	2	NA	NA
+307	ADI_R_A4_OFFERING_COMFORT	ADI-R Algorithm A4 55. Use of Other's Body to Communicate Score	Numeric		0	2	NA	NA
+308	ADI_R_A4_QUALITY_SOCIAL_OVERTURES	ADI-R Algorithm A4 56. Quality of Social Overtures Score	Numeric		0	2	NA	NA
+309	ADI_R_A4_INAPPROPRIATE_FACIAL_EXPRESSIONS	ADI-R Algorithm A4 58. Inappropriate Facial Expressions Score	Numeric		0	2	NA	NA
+310	ADI_R_A4_APPROPRIATE_SOCIAL_RESPONSES	ADI-R Algorithm A4 59. Appropriateness of Social Responses Score	Numeric		0	2	NA	NA
+311	ADI_R_A4_Total	ADI-R Algorithm A4 Total Score	Numeric		2	10	NA	NA
+312	ADI_R_B1_POINTING_EXPRESS_INTEREST	ADI-R Algorithm B1 42. Pointing to Express Interest Score	Numeric		0	2	NA	NA
+313	ADI_R_B1_NODDING	ADI-R Algorithm B1 43. Nodding Score	Numeric		0	2	NA	NA
+314	ADI_R_B1_HEAD_SHAKING	ADI-R Algorithm B1 44. Head Shaking Score	Numeric		0	2	NA	NA
+315	ADI_R_B1_CONVENTIONAL_GESTURES	ADI-R Algorithm B1 45. Conventional/Instrumental Gestures Score	Numeric		0	2	NA	NA
+316	ADI_R_B1_TOTAL	ADI-R Algorithm B1 Total Score	Numeric		0	8	NA	NA
+317	ADI_R_B4_SPONTANEOUS_IMITATION	ADI-R Algorithm B4 47. Spontaneous Imitation of Actions Score	Numeric		0	2	NA	NA
+318	ADI_R_B4_IMAGINATIVE_PLAY	ADI-R Algorithm B4 48. Imaginative Play Score	Numeric		0	2	NA	NA
+319	ADI_R_B4_IMITATIVE_SOCIAL_PLAY	ADI-R Algorithm B4 61. Imitative Social Play Score	Numeric		0	2	NA	NA
+320	ADI_R_B4_TOTAL	ADI-R Algorithm B4 Total Score	Numeric		1	6	NA	NA
+321	ADI_R_B2_SOCIAL_VERBALIZATION	ADI-R Algorithm B2 34. Social Verbalization/Chat Score	Numeric		0	2	NA	NA
+322	ADI_R_B2_RECIPROCAL_CONVERSATION	ADI-R Algorithm B2 35. Reciprocal Conversation Score	Numeric		0	2	NA	NA
+323	ADI_R_B2_TOTAL	ADI-R Algorithm B2 Total Score	Numeric		1	4	NA	NA
+324	ADI_R_B3_STEREOTYPED_UTTERANCES	ADI-R Algorithm B3 35. Reciprocal Conversation Score	Numeric		0	2	NA	NA
+325	ADI_R_B3_INAPPROPRIATE_QUESTIONS	ADI-R Algorithm B3 36. Inappropriate Questions or Statements Score	Numeric		0	2	NA	NA
+326	ADI_R_B3_PRONOMINAL_REVERSAL	ADI-R Algorithm B3 37. Prominal Reversal Score	Numeric		0	2	NA	NA
+327	ADI_R_B3_NEOLOGISMS	ADI-R Algorithm B3 38. Neologisms/Idiosyncratic Language Score	Numeric		0	2	NA	NA
+328	ADI_R_B3_Total	ADI-R Algorithm B3 Total Score	Numeric		0	6	NA	NA
+329	ADI_R_C1_UNUSUAL_PREOCCUPATIONS	ADI-R Algorithm C1 67. Unusual Preoccupations Score	Numeric		0	2	NA	NA
+330	ADI_R_C1_CIRCUMSCRIBED_INTERESTS	ADI-R Algorithm C1 68. Circumscribed Interests Score	Numeric		0	2	NA	NA
+331	ADI_R_C1_TOTAL	ADI-R Algorithm C1 Total Score	Numeric		0	4	NA	NA
+332	ADI_R_C2_VERBAL_RITUALS	ADI-R Algorithm C2 39. Verbal Rituals Score	Numeric		0	2	NA	NA
+333	ADI_R_C2_COMPULSIONS	ADI-R Algorithm C2 70. Compulsions/Rituals Score	Numeric		0	2	NA	NA
+334	ADI_R_C2_TOTAL	ADI-R Algorithm C2 Total Score	Numeric		0	4	NA	NA
+335	ADI_R_C3_HAND_FINGER_MANNERISMS	ADI-R Algorithm C3 77. Hand and Finger Mannerisms Score	Numeric		0	2	NA	NA
+336	ADI_R_C3_HIGHER	ADI-R Algorithm C3 Higher of 77 or 78	Numeric		0	2	NA	NA
+337	ADI_R_C3_OTHER_COMPLEX_MANNERISMS	ADI-R Algorithm C3 78. Other Complex Mannerisms or Stereotyped Body Movements Score	Numeric		0	2	NA	NA
+338	ADI_R_C3_TOTAL	ADI-R Algorithm C3 Total Score	Numeric		0	2	NA	NA
+339	ADI_R_C4_REPETITIVE_USE_OBJECTS	ADI-R Algorithm C4 69. Repetitive Use of Objects or Interest in Parts of Objects Score	Numeric		0	3	NA	NA
+340	ADI_R_C4_HIGHER	ADI-R Algorithm C4 Higher of 69 or 71	Numeric		0	2	NA	NA
+341	ADI_R_C4_UNUSUAL_SENSORY_INTERESTS	ADI-R Algorithm C4 71. Unusual Sensory Interests Score	Numeric		0	2	NA	NA
+342	ADI_R_C4_TOTAL	ADI-R Algorithm C4 Total Score	Numeric		0	12	NA	NA
+343	ADI_R_D_AGE_PARENT_NOTICED	ADI-R Algorithm D 2. Age Parents First Noticed Score	Numeric		0	1	NA	NA
+344	ADI_R_D_AGE_FIRST_SINGLE_WORDS	ADI-R Algorithm D 9. Age of First Single Words Score	Numeric		0	1	NA	NA
+345	ADI_R_D_AGE_FIRST_PHRASES	ADI-R Algorithm D 10. Age of First Phrases Score	Numeric		0	1	NA	NA
+346	ADI_R_D_AGE_WHEN_ABNORMALITY	ADI-R Algorithm D 86. Age When Abnormality First Evident Score	Numeric		0	1	NA	NA
+347	ADI_R_D_INTERVIEWER_JUDGMENT	ADI-R Algorithm D 87. Interviewer's Judgment on Age When Abnormalities First Manifest Score	Numeric		0	1	NA	NA

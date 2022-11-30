@@ -1,0 +1,90 @@
+INDEX	COLUMN LABEL	DESCRIPTION	VARIABLE TYPE	CODING SPECIFICATION	MIN	MAX
+1	SUB_ID	ABIDE unique ID Number	Numeric		50001	51607
+2	DX_GROUP	Diagnostic Group	Numeric	1 = Autism; 2 = Control	1	2
+3	DSM_IV_TR	DSM-IV-TR Diagnostic Category	Numeric	0 = Control; 1 = Autism; 2 = Aspergers; 3 = PDD-NOS; 4 = Aspergers or PDD-NOS	0	3
+4	AGE_AT_SCAN	Age at time of scan in years	Numeric		6.47	64
+5	SEX	Subject Gender	Numeric	1 = Male; 2 = Female	1	2
+6	HANDEDNESS_CATEGORY	Subject Handedness Category	String	R = Right; L = Left; Mixed; Ambi = Ambidexterous		
+7	HANDEDNESS_SCORES	Subject Handedness Scores	Numeric	Positive number = Right; Negative Number = Left; 0 = Ambidexterous	-100	100
+8	FIQ	FIQ Standard Score	Numeric	Differential Ability Scales II - School age (DAS-II)	30	170
+				Wechsler Abbreviated Scales of Intelligence (WASI)	50	160
+				Wechsler Intelligence Scale for Children (WISC)	50	160
+				Wechsler Adult Intelligence Scales (WAIS)	50	160
+				Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)	50	160
+				Wortschatztest (WST)	50	160
+				Groninger Intelligence Test (GIT)		
+9	VIQ	VIQ Standard Score	Numeric	Differential Ability Scales II - School age (DAS-II)	31	169
+				Wechsler Abbreviated Scales of Intelligence (WASI)	55	160
+				Wechsler Intelligence Scale for Children (WISC)	55	160
+				Wechsler Adult Intelligence Scales (WAIS)	55	160
+				Peabody Picture Vocabulary Test (PPVT)	40	160
+				Stanford Binet (STANFORD)	36	164
+10	PIQ	PIQ Standard Score	Numeric	Differential Ability Scales II - School age (DAS-II)	31	166
+				Wechsler Abbreviated Scales of Intelligence (WASI)	53	160
+				Wechsler Intelligence Scale for Children (WISC)	53	160
+				Wechsler Adult Intelligence Scales (WAIS)	53	160
+				Raven's Standard Progressive Matrices (RAVENS)	50	160
+				Stanford Binet (STANFORD)	36	164
+11	FIQ_TEST_TYPE	IQ Test Administered for Full Scale IQ	String	DAS_II_SA, GIT, HAWIK, WAIS_III, WASI, WISC_III, WISC_III_DUTCH, WISC_IV_4_SUBTESTS, WISC_IV_FULL, WST		
+12	VIQ_TEST_TYPE	IQ Test Administered for Verbal IQ	String	DAS_II_SA, GIT, HAWIK, PPVT, WAIS_III, WASI, WISC_III, WISC_III_DUTCH, WISC_IV_4_SUBTESTS, WISC_IV_FULL, WST		
+13	PIQ_TEST_TYPE	IQ Test Administered for Performance IQ	String	DAS_II_SA, GIT, HAWIK, RAVENS, WAIS_III, WASI, WISC_III, WISC_III_DUTCH, WISC_IV_4_SUBTESTS, WISC_IV_FULL, WST		
+14	ADI_R_SOCIAL_TOTAL A	Reciprocal Social Interaction subscore (A) Total for Autism Diagnostic Interview-Revised	Numeric		0	30
+15	ADI_R_VERBAL_TOTAL_BV	Abnormalities in Communication Subscore (B) Total for Autism Diagnostic Interview-Revised	Numeric		0	26
+16	ADI_R_RRB_TOTAL_C	Restricted, Repetitive, and Stereotyped Patterns of Behavior Subscore (C) Total for Autism Diagnostic Interview-Revised	Numeric		0	12
+17	ADI_R_ONSET_TOTAL_D	Abnormality of Development Evident at or Before 36 Months Subscore (D) Total for Autism Diagnostic Interview-Revised	Numeric		0	5
+18	ADI_R_RSRCH_RELIABLE	Was ADI scored and administered by research reliable personnel?	Numeric	0 = not research reliable; 1 = research reliable	0	1
+19	ADOS_MODULE	Autism Diagnostic Observation Schedule Module	Numeric		1	4
+20	ADOS_TOTAL	Classic Total ADOS Score (Communication subscore + Social Interaction subscore)	Numeric		0	22
+21	ADOS_COMM	Communication Total Subscore of the Classic ADOS	Numeric		0	8
+22	ADOS_SOCIAL	Social Total Subscore of the Classic ADOS	Numeric		0	14
+23	ADOS_STEREO_BEHAV	Sterotyped Behaviors and Rerstricted Interests Total Subscore of the Classic ADOS	Numeric		0	8
+24	ADOS_RSRCH_RELIABLE	Was ADOS scored and administered by research reliable personnel?	Numeric	0 = not research reliable; 1 = research reliable	0	1
+25	ADOS_GOTHAM_SOC_AFFECT	Social Affect Total Subscore for Gotham Algorithm of the ADOS	Numeric		0	20
+26	ADOS_GOTHAM_RRB	Restricted and Repetitive Behaviors Total Subscore for Gotham Algorithm of the ADOS	Numeric		0	8
+27	ADOS_GOTHAM_TOTAL	Social Affect Total + Restricted and Repetitive Behaviors Total	Numeric		0	28
+28	ADOS_GOTHAM_SEVERITY	Individually Calibrated Severity Score for Gotham Algorithm of the ADOS	Numeric		1	10
+29	SRS_VERSION	Social Responsiveness Scale Version	Numeric	1 = child; 2 = adult	1	2
+30	SRS_RAW_TOTAL	Total Raw Score the Social Responsiveness Scale	Numeric		0	≥117
+31	SRS_AWARENESS	Social Responsiveness Scale Social Awareness Subscore Raw Total	Numeric		0	≥19
+32	SRS_COGNITION	Social Responsiveness Scale Social Cognition Subscore Raw Total	Numeric		0	≥24
+33	SRS_COMMUNICATION	Social Responsiveness Scale Social Communication Subscore Raw Total	Numeric		0	≥43
+34	SRS_MOTIVATION	Social Responsiveness Scale Social Motivation Subscore Raw Total	Numeric		0	≥22
+35	SRS_MANNERISMS	Social Responsiveness Scale Autistic Mannerisms Subscore Raw Total	Numeric		0	≥22
+36	SCQ_TOTAL	Social Communication Questionnaire Total	Numeric		0	39
+37	AQ_TOTAL	Total Raw Score of the Autism Quotient	Numeric		0	50
+38	COMORBIDITY	Any other comorbidities?	String			
+39	CURRENT_MED_STATUS	Currently Taking Medications?	Numeric	0 = not taking medication; 1 = taking medication	0	1
+40	MEDICATION_NAME	Active ingredient of any current psychoactive medications	String			
+41	OFF_STIMULANTS_AT_SCAN	Off stimulants 24 hours prior to scan?	Numeric	0 = no; 1 = yes	0	1
+42	VINELAND_RECEPTIVE_V_SCALED	Vineland Adaptive Behavior Scales Receptive Language V Scaled Score	Numeric		1	24
+43	VINELAND_EXPRESSIVE_V_SCALED	Vineland Adaptive Behavior Scales Expressive Language V Scaled Score	Numeric		1	24
+44	VINELAND_WRITTEN_V_SCALED	Vineland Adaptive Behavior Scales Written Language V Scaled Score	Numeric		1	24
+45	VINELAND_COMMUNICATION_STANDARD	Vineland Adaptive Behavior Scales Communication Standard Score	Numeric		20	160
+46	VINELAND_PERSONAL_V_SCALED	Vineland Adaptive Behavior Scales Personal Daily Living Skills V Scaled Score	Numeric		1	24
+47	VINELAND_DOMESTIC_V_SCALED	Vineland Adaptive Behavior Scales Domestic Daily Living Skills V Scaled Score	Numeric		1	24
+48	VINELAND_COMMUNITY_V_SCALED	Vineland Adaptive Behavior ete Daily Living Skills V Scaled	Numeric		1	24
+49	VINELAND_DAILYLVNG_STANDARD	Vineland Adaptive Behavior Scales Daily Living Skills Standard Score	Numeric		20	160
+50	VINELAND_INTERPERSONAL_V_SCALED	Vineland Adaptive Behavior Scales Interpersonal Relationships V Scaled Score|	Numeric		1	24
+51	VINELAND_PLAY_V_SCALED	Vineland Adaptive Behavior Scales Play and Leisure Time V Scaled Score	Numeric		1	24
+52	VINELAND_COPING_V_SCALED	Vineland Adaptive Behavior Scales Coping Skills V Scaled Score	Numeric		1	24
+53	VINELAND_SOCIAL_STANDARD	Vineland Adaptive Behavior Scales Socialization Standard Score	Numeric		20	160
+54	VINELAND_SUM_SCORES	Sum of Vineland Standard Scores (communication + Daily Living Skills + Socialization)	Numeric		76	480
+55	VINELAND_ABC_STANDARD	Vineland Adaptive Behavior Composite Standard Score	Numeric		20	160
+56	VINELAND_INFORMANT	Vineland Adaptive Behavior Scales Informant	Numeric	1= parent; 2 = self	1	2
+57	WISC_IV_VCI	WISC-IV Verbal Comprehension Index	Numeric		3	57
+58	WISC_IV_PRI	WISC-IV Perceptual Reasoning Index	Numeric		3	57
+59	WISC_IV_WMI	WISC-IV Working Memory Index	Numeric		2	38
+60	WISC_IV_PSI	WISC-IV Processing Speed Index	Numeric		2	38
+61	WISC_IV_SIM_SCALED	WISC-IV Sim Scaled	Numeric		1	19
+62	WISC_IV_VOCAB_SCALED	WISC-IV Vocabulary Scaled	Numeric		1	19
+63	WISC_IV_INFO_SCALED	WISC-IV Information Scaled	Numeric		1	19
+64	WISC_IV_BLK_DSN_SCALED	WISC-IV Block Design Scaled	Numeric		1	19
+65	WISC_IV_PIC_CON_SCALED	WISC-IV Picture Concepts Scaled	Numeric		1	19
+66	WISC_IV_MATRIX_SCALED	WISC-IV Matrix Reasoning Scaled	Numeric		1	19
+67	WISC_IV_DIGIT_SPAN_SCALED	WISC-IV Digit Span Scaled	Numeric		1	19
+68	WISC_IV_LET_NUM_SCALED	WISC-IV Letter-Number Sequencing Scaled	Numeric		1	19
+69	WISC_IV_CODING_SCALED	WISC-IV Coding Scaled	Numeric		1	19
+70	WISC_IV_SYM_SCALED	WISC-IV Symbol Search Scaled	Numeric		1	19
+71	EYE_STATUS_AT_SCAN	Eye Status During Rest Scan	Numeric	1 = open; 2 = closed	1	2
+72	AGE_AT_MPRAGE	Age at Anatomical Scan in years	Numeric		6.47	64
+73	BMI	Body Mass Index	Numeric		15	40
