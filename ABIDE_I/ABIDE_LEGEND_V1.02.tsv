@@ -4,30 +4,30 @@ INDEX	COLUMN LABEL	DESCRIPTION	VARIABLE TYPE	CODING SPECIFICATION	MIN	MAX
 3	DSM_IV_TR	DSM-IV-TR Diagnostic Category	Numeric	0 = Control; 1 = Autism; 2 = Aspergers; 3 = PDD-NOS; 4 = Aspergers or PDD-NOS	0	3
 4	AGE_AT_SCAN	Age at time of scan in years	Numeric		6.47	64
 5	SEX	Subject Gender	Numeric	1 = Male; 2 = Female	1	2
-6	HANDEDNESS_CATEGORY	Subject Handedness Category	String	R = Right; L = Left; Mixed; Ambi = Ambidexterous		
+6	HANDEDNESS_CATEGORY	Subject Handedness Category	String	R = Right; L = Left; Mixed = Ambidexterous; Ambi = Ambidexterous		
 7	HANDEDNESS_SCORES	Subject Handedness Scores	Numeric	Positive number = Right; Negative Number = Left; 0 = Ambidexterous	-100	100
 8	FIQ	FIQ Standard Score	Numeric	Differential Ability Scales II - School age (DAS-II)	30	170
-				Wechsler Abbreviated Scales of Intelligence (WASI)	50	160
-				Wechsler Intelligence Scale for Children (WISC)	50	160
-				Wechsler Adult Intelligence Scales (WAIS)	50	160
-				Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)	50	160
-				Wortschatztest (WST)	50	160
-				Groninger Intelligence Test (GIT)		
+8	FIQ	FIQ Standard Score	Numeric	Wechsler Abbreviated Scales of Intelligence (WASI)	50	160
+8	FIQ	FIQ Standard Score	Numeric	Wechsler Intelligence Scale for Children (WISC)	50	160
+8	FIQ	FIQ Standard Score	Numeric	Wechsler Adult Intelligence Scales (WAIS)	50	160
+8	FIQ	FIQ Standard Score	Numeric	Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)	50	160
+8	FIQ	FIQ Standard Score	Numeric	Wortschatztest (WST)	50	160
+8	FIQ	FIQ Standard Score	Numeric	Groninger Intelligence Test (GIT)		
 9	VIQ	VIQ Standard Score	Numeric	Differential Ability Scales II - School age (DAS-II)	31	169
-				Wechsler Abbreviated Scales of Intelligence (WASI)	55	160
-				Wechsler Intelligence Scale for Children (WISC)	55	160
-				Wechsler Adult Intelligence Scales (WAIS)	55	160
-				Peabody Picture Vocabulary Test (PPVT)	40	160
-				Stanford Binet (STANFORD)	36	164
+9	VIQ	VIQ Standard Score	Numeric	Wechsler Abbreviated Scales of Intelligence (WASI)	55	160
+9	VIQ	VIQ Standard Score	Numeric	Wechsler Intelligence Scale for Children (WISC)	55	160
+9	VIQ	VIQ Standard Score	Numeric	Wechsler Adult Intelligence Scales (WAIS)	55	160
+9	VIQ	VIQ Standard Score	Numeric	Peabody Picture Vocabulary Test (PPVT)	40	160
+9	VIQ	VIQ Standard Score	Numeric	Stanford Binet (STANFORD)	36	164
 10	PIQ	PIQ Standard Score	Numeric	Differential Ability Scales II - School age (DAS-II)	31	166
-				Wechsler Abbreviated Scales of Intelligence (WASI)	53	160
-				Wechsler Intelligence Scale for Children (WISC)	53	160
-				Wechsler Adult Intelligence Scales (WAIS)	53	160
-				Raven's Standard Progressive Matrices (RAVENS)	50	160
-				Stanford Binet (STANFORD)	36	164
-11	FIQ_TEST_TYPE	IQ Test Administered for Full Scale IQ	String	DAS_II_SA, GIT, HAWIK, WAIS_III, WASI, WISC_III, WISC_III_DUTCH, WISC_IV_4_SUBTESTS, WISC_IV_FULL, WST		
-12	VIQ_TEST_TYPE	IQ Test Administered for Verbal IQ	String	DAS_II_SA, GIT, HAWIK, PPVT, WAIS_III, WASI, WISC_III, WISC_III_DUTCH, WISC_IV_4_SUBTESTS, WISC_IV_FULL, WST		
-13	PIQ_TEST_TYPE	IQ Test Administered for Performance IQ	String	DAS_II_SA, GIT, HAWIK, RAVENS, WAIS_III, WASI, WISC_III, WISC_III_DUTCH, WISC_IV_4_SUBTESTS, WISC_IV_FULL, WST		
+10	PIQ	PIQ Standard Score	Numeric	Wechsler Abbreviated Scales of Intelligence (WASI)	53	160
+10	PIQ	PIQ Standard Score	Numeric	Wechsler Intelligence Scale for Children (WISC)	53	160
+10	PIQ	PIQ Standard Score	Numeric	Wechsler Adult Intelligence Scales (WAIS)	53	160
+10	PIQ	PIQ Standard Score	Numeric	Raven's Standard Progressive Matrices (RAVENS)	50	160
+10	PIQ	PIQ Standard Score	Numeric	Stanford Binet (STANFORD)	36	164
+11	FIQ_TEST_TYPE	IQ Test Administered for Full Scale IQ	String	DAS_II_SA; GIT; HAWIK; WAIS_III; WASI; WISC_III; WISC_III_DUTCH; WISC_IV_4_SUBTESTS; WISC_IV_FULL; WST		
+12	VIQ_TEST_TYPE	IQ Test Administered for Verbal IQ	String	DAS_II_SA; GIT; HAWIK; PPVT; WAIS_III; WASI; WISC_III; WISC_III_DUTCH; WISC_IV_4_SUBTESTS; WISC_IV_FULL; WST		
+13	PIQ_TEST_TYPE	IQ Test Administered for Performance IQ	String	DAS_II_SA; GIT; HAWIK; RAVENS; WAIS_III; WASI; WISC_III; WISC_III_DUTCH; WISC_IV_4_SUBTESTS; WISC_IV_FULL; WST		
 14	ADI_R_SOCIAL_TOTAL A	Reciprocal Social Interaction subscore (A) Total for Autism Diagnostic Interview-Revised	Numeric		0	30
 15	ADI_R_VERBAL_TOTAL_BV	Abnormalities in Communication Subscore (B) Total for Autism Diagnostic Interview-Revised	Numeric		0	26
 16	ADI_R_RRB_TOTAL_C	Restricted, Repetitive, and Stereotyped Patterns of Behavior Subscore (C) Total for Autism Diagnostic Interview-Revised	Numeric		0	12
@@ -70,7 +70,7 @@ INDEX	COLUMN LABEL	DESCRIPTION	VARIABLE TYPE	CODING SPECIFICATION	MIN	MAX
 53	VINELAND_SOCIAL_STANDARD	Vineland Adaptive Behavior Scales Socialization Standard Score	Numeric		20	160
 54	VINELAND_SUM_SCORES	Sum of Vineland Standard Scores (communication + Daily Living Skills + Socialization)	Numeric		76	480
 55	VINELAND_ABC_STANDARD	Vineland Adaptive Behavior Composite Standard Score	Numeric		20	160
-56	VINELAND_INFORMANT	Vineland Adaptive Behavior Scales Informant	Numeric	1= parent; 2 = self	1	2
+56	VINELAND_INFORMANT	Vineland Adaptive Behavior Scales Informant	Numeric	1 = parent; 2 = self	1	2
 57	WISC_IV_VCI	WISC-IV Verbal Comprehension Index	Numeric		3	57
 58	WISC_IV_PRI	WISC-IV Perceptual Reasoning Index	Numeric		3	57
 59	WISC_IV_WMI	WISC-IV Working Memory Index	Numeric		2	38

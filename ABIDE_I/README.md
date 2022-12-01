@@ -29,6 +29,12 @@ From the [ABIDE I webpage](http://fcon_1000.projects.nitrc.org/indi/abide/abide_
 
 ## Steps to produce this study's data dictionary
 
+1. Install the required Python 3 library with the following line of code:
+
+    ```shell
+    python3 -m pip install --user pandas
+    ```
+
 1. Run the following line of code within the `ABIDE_I/` subfolder:
 
     ```shell
