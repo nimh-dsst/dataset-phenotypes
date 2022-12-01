@@ -79,17 +79,10 @@ with open(OUTPUT, 'w') as f:
         del dictionary[IQ]['Levels']
 
         # fill in the "Description"
-        if IQ == 'FIQ':
-            dictionary[IQ]['Description'] = 'Type: Numeric, from FIQ_TEST_TYPE'
-        elif IQ == 'VIQ':
-            dictionary[IQ]['Description'] = 'Type: Numeric, from VIQ_TEST_TYPE'
-        elif IQ == 'PIQ':
-            dictionary[IQ]['Description'] = 'Type: Numeric, from PIQ_TEST_TYPE'
+        dictionary[IQ]['Description'] = f'Type: Numeric, from {IQ}_TEST_TYPE'
 
-    # inject a simplified Description
-    dictionary['FIQ_TEST_TYPE']['Description'] = 'Type: String'
-    dictionary['VIQ_TEST_TYPE']['Description'] = 'Type: String'
-    dictionary['PIQ_TEST_TYPE']['Description'] = 'Type: String'
+        # inject a simplified Description
+        dictionary[f'{IQ}_TEST_TYPE']['Description'] = 'Type: String'
 
     # inject the correct "Levels" for *IQ_TEST_TYPEs
     dictionary['FIQ_TEST_TYPE']['Levels'] = {
