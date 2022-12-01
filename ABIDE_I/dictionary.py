@@ -75,8 +75,10 @@ with open(OUTPUT, 'w') as f:
 
     # manual corrections to IQ measurements
     for IQ in ['FIQ', 'VIQ', 'PIQ']:
+        # erroneoues "Levels" of only one of the IQ measurements
         del dictionary[IQ]['Levels']
 
+        # fill in the "Description"
         if IQ == 'FIQ':
             dictionary[IQ]['Description'] = 'Type: Numeric, from FIQ_TEST_TYPE'
         elif IQ == 'VIQ':
@@ -84,10 +86,12 @@ with open(OUTPUT, 'w') as f:
         elif IQ == 'PIQ':
             dictionary[IQ]['Description'] = 'Type: Numeric, from PIQ_TEST_TYPE'
 
+    # inject a simplified Description
     dictionary['FIQ_TEST_TYPE']['Description'] = 'Type: String'
     dictionary['VIQ_TEST_TYPE']['Description'] = 'Type: String'
     dictionary['PIQ_TEST_TYPE']['Description'] = 'Type: String'
 
+    # inject the correct "Levels" for *IQ_TEST_TYPEs
     dictionary['FIQ_TEST_TYPE']['Levels'] = {
         "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
         "GIT": "Groninger Intelligence Test (GIT)",
