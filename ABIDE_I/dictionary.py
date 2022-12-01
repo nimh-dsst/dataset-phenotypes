@@ -4,6 +4,7 @@
 # imports
 import json
 import pandas
+from copy import deepcopy
 from pathlib import Path
 
 
@@ -32,13 +33,13 @@ with open(OUTPUT, 'w') as f:
         except:
             continue
 
-        # construct the LongName from the "Path" and "Category" columns
+        # get the LongName from the "DESCRIPTION" column
         try:
             LongName = str(data['DESCRIPTION'][i])
         except:
             continue
 
-        # get the description from the "VARIABLE TYPE", "MIN", and "MAX" columns
+        # make the Description from "VARIABLE TYPE", "MIN", and "MAX" columns
         Description = 'Type: ' + str(data['VARIABLE TYPE'][i])
 
         if str(data['MIN'][i]) == '6.47':
@@ -51,7 +52,7 @@ with open(OUTPUT, 'w') as f:
         elif str(data['MAX'][i]) != 'nan':
             Description += ', Max: ' + str(int(data['MAX'][i]))
 
-        # get the field "Levels" from the codings and meanings
+        # get the field "Levels" from parsing semicolons and equal signs
         try:
             Levels = {}
             pairs = str(data['CODING SPECIFICATION'][i]).split('; ')
@@ -84,7 +85,7 @@ with open(OUTPUT, 'w') as f:
         # inject a simplified Description
         dictionary[f'{IQ}_TEST_TYPE']['Description'] = 'Type: String'
 
-    # inject the correct "Levels" for *IQ_TEST_TYPEs
+    # inject the correct "Levels" for {IQ}_TEST_TYPEs
     dictionary['FIQ_TEST_TYPE']['Levels'] = {
         "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
         "GIT": "Groninger Intelligence Test (GIT)",
@@ -97,32 +98,14 @@ with open(OUTPUT, 'w') as f:
         "WISC_IV_FULL": "The full Wechsler Intelligence Scale for Children (WISC-IV)",
         "WST": "Wortschatztest (WST)"
     }
-    dictionary['VIQ_TEST_TYPE']['Levels'] = {
-        "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
-        "GIT": "Groninger Intelligence Test (GIT)",
-        "HAWIK": "Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)",
-        "PPVT": "Peabody Picture Vocabulary Test (PPVT)",
-        "WAIS_III": "Wechsler Adult Intelligence Scales (WAIS)",
-        "WASI": "Wechsler Abbreviated Scales of Intelligence (WASI)",
-        "WISC_III": "Wechsler Intelligence Scale for Children (WISC-III)",
-        "WISC_III_DUTCH": "(Dutch) Wechsler Intelligence Scale for Children (WISC-III)",
-        "WISC_IV_4_SUBTESTS": "Subtests of Wechsler Intelligence Scale for Children (WISC-IV)",
-        "WISC_IV_FULL": "The full Wechsler Intelligence Scale for Children (WISC-IV)",
-        "WST": "Wortschatztest (WST)"
-    }
-    dictionary['PIQ_TEST_TYPE']['Levels'] = {
-        "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
-        "GIT": "Groninger Intelligence Test (GIT)",
-        "HAWIK": "Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)",
-        "RAVENS": "Raven's Standard Progressive Matrices (RAVENS)",
-        "WAIS_III": "Wechsler Adult Intelligence Scales (WAIS)",
-        "WASI": "Wechsler Abbreviated Scales of Intelligence (WASI)",
-        "WISC_III": "Wechsler Intelligence Scale for Children (WISC-III)",
-        "WISC_III_DUTCH": "(Dutch) Wechsler Intelligence Scale for Children (WISC-III)",
-        "WISC_IV_4_SUBTESTS": "Subtests of Wechsler Intelligence Scale for Children (WISC-IV)",
-        "WISC_IV_FULL": "The full Wechsler Intelligence Scale for Children (WISC-IV)",
-        "WST": "Wortschatztest (WST)"
-    }
+
+    # to save repetition, doing addepcopy of the same Levels, then adding PPVT
+    dictionary['VIQ_TEST_TYPE']['Levels'] = deepcopy(dictionary['FIQ_TEST_TYPE']['Levels'])
+    dictionary['VIQ_TEST_TYPE']['Levels']['PPVT'] = "Peabody Picture Vocabulary Test (PPVT)"
+
+    # to save repetition, doing addepcopy of the same Levels, then adding RAVENS
+    dictionary['PIQ_TEST_TYPE']['Levels'] = deepcopy(dictionary['FIQ_TEST_TYPE']['Levels'])
+    dictionary['PIQ_TEST_TYPE']['Levels']['RAVENS'] = "Raven's Standard Progressive Matrices (RAVENS)"
 
     # pretty print it out into the output file
     f.write(json.dumps(dictionary, indent=4))
