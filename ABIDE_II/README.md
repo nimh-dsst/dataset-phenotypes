@@ -25,6 +25,12 @@ From the [ABIDE II webpage](http://fcon_1000.projects.nitrc.org/indi/abide/abide
 
 ## Steps to produce this study's data dictionary
 
+1. Install the required Python 3 library with the following line of code:
+
+    ```shell
+    python3 -m pip install --user pandas
+    ```
+
 1. Run the following line of code within the `ABIDE_II/` subfolder:
 
     ```shell
@@ -32,3 +38,8 @@ From the [ABIDE II webpage](http://fcon_1000.projects.nitrc.org/indi/abide/abide
     ```
 
 ## Notes about this data dictionary
+
+1. The BIDS `Description` is mostly composed here of the comma-separated list of `VARIABLE TYPE` then `MIN` then `MAX` because the unique combination of these three describes the data in that field well.
+1. The entries for `FIQ`, `VIQ`, and `PIQ` were "manually" adjusted to have simplified `Description` and no more `Levels`.
+1. The entries for `FIQ_TEST_TYPE`, `VIQ_TEST_TYPE`, and `PIQ_TEST_TYPE` were "manually" adjusted to include better values in each level of the `Levels` and a shorted `Description`.
+1. You can review the exact manual fixes toward the bottom of the `dictionary.py` script.
