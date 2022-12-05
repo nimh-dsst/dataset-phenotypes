@@ -1,0 +1,32 @@
+"ElementName","DataType","Size","Required","ElementDescription","ValueRange","Notes","Aliases"
+"subjectkey","GUID","","Required","The NDAR Global Unique Identifier (GUID) for research subject","NDAR*","",""
+"src_subject_id","String","20","Required","Subject ID how it's defined in lab/project","","",""
+"interview_date","Date","","Required","Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY","","",""
+"interview_age","Integer","","Required","Age in months at the time of the interview/test/sampling/imaging.","0 :: 1260","Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",""
+"sex","String","20","Required","Sex of subject at birth","M;F; O; NR","M = Male; F = Female; O=Other; NR = Not reported","gender"
+"eventname","String","60","Required","The event name for which the data was collected","","",""
+"blood_pressure_start_time","Date","","Recommended","Start time","","","biospec_blood_pressure_start_time"
+"blood_pressure_refuse","String","120","Recommended","Participant Refused
+Please describe reason for refusal","","","biospec_blood_pressure_refuse"
+"blood_pressure_test_sys_1","Integer","","Recommended","Reading #1
+SYS (Systolic)","","","biospec_blood_pressure_test_sys_1"
+"blood_pressure_test_dia_1","Integer","","Recommended","Reading #1
+DIA (Diastolic)","","","biospec_blood_pressure_test_dia_1"
+"blood_pressure_pulse_1","Integer","","Recommended","Reading #1
+BPM (pulse/min)","","","biospec_blood_pressure_pulse_1"
+"blood_pressure_test_sys_2","Integer","","Recommended","Reading #2
+SYS (Systolic)","","","biospec_blood_pressure_test_sys_2"
+"blood_pressure_test_dia_2","Integer","","Recommended","Reading #2
+DIA (Diastolic)","","","biospec_blood_pressure_test_dia_2"
+"blood_pressure_pulse_2","Integer","","Recommended","Reading #2
+BPM (pulse/min)","","","biospec_blood_pressure_pulse_2"
+"blood_pressure_test_sys_3","Integer","","Recommended","Reading #3
+SYS (Systolic)","","","biospec_blood_pressure_test_sys_3"
+"blood_pressure_test_dia_3","Integer","","Recommended","Reading #3
+DIA (Diastolic)","","","biospec_blood_pressure_test_dia_3"
+"blood_pressure_pulse_3","Integer","","Recommended","Reading #3
+BPM (pulse/min)","","","biospec_blood_pressure_pulse_3"
+"blood_pressure_sys_mean","Float","","Recommended","Mean
+Systolic","","mean([blood_pressure_test_sys_1], [blood_pressure_test_sys_2], [blood_pressure_test_sys_3])","biospec_blood_pressure_sys_mean"
+"blood_pressure_dia_mean","Float","","Recommended","Mean
+Diastolic","","mean([blood_pressure_test_dia_1], [blood_pressure_test_dia_2], [blood_pressure_test_dia_3])","biospec_blood_pressure_dia_mean"

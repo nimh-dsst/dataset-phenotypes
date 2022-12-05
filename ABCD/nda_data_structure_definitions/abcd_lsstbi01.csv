@@ -1,0 +1,33 @@
+"ElementName","DataType","Size","Required","ElementDescription","ValueRange","Notes","Aliases"
+"subjectkey","GUID","","Required","The NDAR Global Unique Identifier (GUID) for research subject","NDAR*","",""
+"src_subject_id","String","20","Required","Subject ID how it's defined in lab/project","","",""
+"interview_age","Integer","","Required","Age in months at the time of the interview/test/sampling/imaging.","0 :: 1260","Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",""
+"interview_date","Date","","Required","Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY","","",""
+"sex","String","20","Required","Sex of subject at birth","M;F; O; NR","M = Male; F = Female; O=Other; NR = Not reported","gender"
+"eventname","String","60","Recommended","The event name for which the data was collected","","",""
+"tbi_ss_ntbiloc_l","Integer","","Recommended","Number of TBI-LOC (number of TBIs with loss consciousness): SUM(AND([tbi_1]=1,[tbi_1b]>0), AND([tbi_2]=1,[tbi_2b]>0,AND([tbi_3]=1,[tbi_3b]>0),AND([tbi_4]=1,[tbi_4b]>0),AND([tbi_5]=1,[tbi_5b]>0),[tbi_6p], AND([tbi_7a]=1,[tbi_7c1]>0)); Validation: No minimum","","","brain_injury_ss_ntbiloc_p_l"
+"tbi_ss_ntbiloc_nm_l","Integer","","Recommended","Number of TBI-LOC : Number missing","","","brain_injury_ss_ntbiloc_nm_p__l"
+"tbi_ss_ntbiloc30_l","Integer","","Recommended"," Number of TBI-LOC >= 30 (number of TBIs with loss of conscioiusness >= 30 minutes): SUM(AND([tbi_1]=1,[tbi_1b]>1), AND([tbi_2]=1,[tbi_2b]>1)AND(tbi_3]=1,[tbi_3b]>1), AND([tbi_4]=1,[tbi_4b]>1),AND([tbi_5]=1,[tbi_5b]>1),[tbi_6r], AND([tbi_7a]=1,[7c1]>1)); Validation: No minimum","","","brain_injury_ss_ntbiloc30_p_l"
+"tbi_ss_ntbiloc30_nm_l","Integer","","Recommended","Number of TBI_LOC >= 30: Number missing","","","brain_injury_ss_ntbiloc30_nm_p_l"
+"tbi_ss_nmrpi_l","Integer","","Recommended","Number of periods with multiple or repeated injuries: SUM([tbi_7a]); Validation: No minimum","","","brain_injury_ss_nmrpi_p_l"
+"tbi_ss_nmrpi_nm_l","Integer","","Recommended","Number of periods with multiple or repeated injuries: Number missing","","","brain_injury_ss_nmrpi_nm_p_l"
+"tbi_ss_agefirst_l","Float","","Recommended","Age at first TBI-LOC: IF(OR(AND([tbi_1]=1,[tbi_1b]>0),AND([tbi_2]=1,[tbi_2b]>0),AND([tbi_3]=1,[tbi_3b]>0), AND([tbi_4]=1,[tbi_4b]>0),AND([tbi_5]=1,[tbi_5b]>0),[tbi_6o]=1,AND([tbi_7a]=1,[tbi_7c1]>0)), MIN([tbi_1d],[tbi_2d],[tbi_3d],[tbi_4d],[tbi_5d],[tbi_6s],[tbi_7e],""""); Validation: No minimum","","","brain_injury_ss_agefirst_p_l"
+"tbi_ss_agefirst_nm_l","Integer","","Recommended","Age at first TBI-LOC: Number missing","","","brain_injury_ss_agefirst_nm_p_l"
+"tbi_ss_worst_overall_l","Integer","","Recommended","Worst Injury Overall: Worst TBI - 1, Improbable  TBI (no TBI or TBI w/o LOC or memory loss); 2, Possible mild TBI (TBI w/o LOC but memory loss); 3, Mild TBI (TBI w/LOC ≤ 30 min); 4, Moderate TBI (TBI w/LOC  30 min - 24 hrs); 5, Severe TBI (TBI w/ LOC ≥ 24 hrs)","1 ; 2 ; 3 ; 4 ; 5","1 = 1.  Improbable  TBI; 2 = 2.  Improbable TBI complex; 3 = 3. Mild TBI; 4 = 4. Moderate TBI; 5 = 5. Severe TBI","brain_injury_ss_worst_overall_p_l"
+"tbi_ss_before15_nm_l","Integer","","Recommended","TBI-LOC before age 15
+number missing","","","brain_injury_ss_before15_nm_p_l"
+"tbi_ss_worst1_l","Integer","","Recommended","Worst injury1 = improbable TBI
+(No TBI)","","","brain_injury_ss_worst1_p_l"
+"tbi_ss_worst1b_l","Integer","","Recommended","Worst injury1b = improbable TBI complex
+ (TBI w/o LOC or memory loss)","","","brain_injury_ss_worst1b_p_l"
+"tbi_ss_worst2_l","Integer","","Recommended","Worst Injury2 = possible mild TBI
+ (TBI w/o LOC but memory loss)","","","brain_injury_ss_worst2_p_l"
+"tbi_ss_worst3_l","Integer","","Recommended","Worst Injury3 = Mild TBI
+(TBI w/ LOC ≤ 30 m)","","","brain_injury_ss_worst3_p_l"
+"tbi_ss_worst4_l","Integer","","Recommended","Worst Injury4 = moderate TBI
+(TBI w/ LOC 30 m - 24 h)","","","brain_injury_ss_worst4_p_l"
+"tbi_ss_worst5_l","Integer","","Recommended","Worst Injury5 = Severe TBI
+(TBI w/ LOC ≥ 24 h)","","","brain_injury_ss_worst5_p_l"
+"tbi_ss_agefirst_nt_l","Integer","","Recommended","Age at first TBI-LOC
+","","","brain_injury_ss_agefirst_nt_p_l"
+"tbi_ss_before15_l","Integer","","Recommended","TBI-LOC before age 15","","","brain_injury_ss_before15_p_l"
