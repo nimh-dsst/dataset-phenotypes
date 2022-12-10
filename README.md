@@ -19,7 +19,8 @@ Do you not see your favorite neuroimaging dataset's phenotypic data here? Add a 
 
 Contributors are always welcome to add GitHub Issues describing any inaccuracies or feature requests. GitHub Pull Requests are also always welcome to initiate a review of some fix or addition to the repository.
 
-## Queue (last updated December 8th, 2022)
+## Queue (last updated December 9th, 2022)
 
-1. HBN data dictionaries
-1. All studies' phenotypic data BIDS TSV transformation scripts
+1. Add the HBN data dictionaries `dictionary.py`
+1. Add all present studies' phenotypic data BIDS TSV transformation scripts as `data_convert.py`
+1. Draft and create a phenotypic data browsing, filtering, and selection GUI with [PySimpleGUI](https://www.pysimplegui.org/en/latest/)
