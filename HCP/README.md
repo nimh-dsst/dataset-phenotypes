@@ -14,7 +14,7 @@ From the [Human Connectome Project Young Adult 1200 Subjects Data Release page](
 1. Install the required Python 3 library with the following line of code:
 
     ```shell
-    python3 -m pip install --user pandas
+    python3 -m pip install --user pandas openpyxl
     ```
 
 1. [Download the "Excel version" of the data dictionary](https://wiki.humanconnectome.org/display/PublicData/HCP-YA+Data+Dictionary-+Updated+for+the+1200+Subject+Release) into the `HCP/` subfolder.
