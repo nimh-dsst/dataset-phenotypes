@@ -44,7 +44,7 @@ for idx = 1:length(INPUTS)
 
     newdat2 = struct() ;
     for jdx = 1:length(newdat1)
-        ff = newdat1(jdx).QuestionID ; 
+        ff = matlab.lang.makeValidName(newdat1(jdx).QuestionID) ; 
         newdat2.(ff) = rmfield(newdat1(jdx),"QuestionID") ;
     end
 
@@ -52,6 +52,8 @@ for idx = 1:length(INPUTS)
 
     % print it!!!!
     [~,filename] = fileparts(INPUTS(idx).name) ; 
+    % replace space with underscore
+    filename = strrep(filename,' ','_') ;
 
     JSONFILENAME = [ OUTPUTDIR '/' filename '_dict.json' ] ;
     fid = fopen(JSONFILENAME,'w') ;
