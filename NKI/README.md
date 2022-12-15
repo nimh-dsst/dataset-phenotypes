@@ -6,10 +6,12 @@ From the [Enhanced Nathan Kline Institute - Rockland Sample](https://www.humanco
 
 ## Steps to produce this study's data dictionary
 
-1. Make sure you have Matlab 
-2. [Download the zip of the Assessment Documentation and unzip](https://fcon_1000.projects.nitrc.org/indi/enhanced/documentation.html) into the `NKI/` subfolder as a folder named `assessments_documentation`
+1. Make sure you have Matlab (built on 2022b)
+2. [Download the zip of the Assessment Documentation](https://fcon_1000.projects.nitrc.org/indi/enhanced/documentation.html) and unzip into the `NKI/` subfolder as a folder named `assessments_documentation`
 3. Run the `dictionary.m` script as a Matlab script
+
+Json of "QuestionID"s will output into the phenotypes directory!
 
 ## Notes 
 
-todo
+* translate into python! 
