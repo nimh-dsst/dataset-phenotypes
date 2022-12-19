@@ -6,10 +6,13 @@ import json
 import os
 import pandas
 from pathlib import Path
+import warnings
+
+warnings.simplefilter("ignore")
 
 # file path handling
 HERE = Path(__file__).parent.resolve()
-INPUT_DIR = HERE.joinpath('data_dictionaries')
+INPUT_DIR = HERE.joinpath('Data Dictionaries')
 OUTPUT_DIR = HERE.joinpath('phenotype')
 status = OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 file_format = '.xlsx'
@@ -178,15 +181,15 @@ for j, INPUT in enumerate(INPUTS):
             if Description:
                 dictionary[ShortName]["Description"] = Description
                 del Description
+            if levels_dic:
+                dictionary[ShortName]["Levels"] = levels_dic
+                del levels_dic
             if DataType:
                 dictionary[ShortName]["DataType"] = DataType
                 del DataType
             if ValueRange:
                 dictionary[ShortName]["ValueRange"] = ValueRange
                 del ValueRange
-            if levels_dic:
-                dictionary[ShortName]["Levels"] = levels_dic
-                del levels_dic
 
             # manual corrections, as necessary
             if basename == "ACE_BRT":
