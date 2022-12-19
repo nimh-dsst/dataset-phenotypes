@@ -15,8 +15,8 @@ status = OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 #file_format = '.csv'
 file_format = '.xlsx'
 
-# make input list of CSV files
-INPUTS = sorted(INPUT_DIR.glob(f'*{file_format}'))
+# make input list of CSV files (and exclude does starting with ~)
+INPUTS = sorted(INPUT_DIR.glob(f'[!~]*{file_format}'))
 
 # loop over and enumerate input files
 for j, INPUT in enumerate(INPUTS):
@@ -82,6 +82,10 @@ for j, INPUT in enumerate(INPUTS):
                         Description = str(data['Item'][i])
                     except:
                         Description = None
+            # If there
+            if Description:
+                Description = Description.rstrip()
+
 
             # if there is no short name continue to the next row
             if ShortName == 'nan':
@@ -101,7 +105,7 @@ for j, INPUT in enumerate(INPUTS):
 
             if basename == 'Dishion_Teacher':
                 # remove commas as they might be interpreted as dividers between the levels
-                levels = levels.replace(', ', '; ')
+                levels = levels.replace(', ', ' ')
 
             # get levels
             try:
@@ -181,12 +185,16 @@ for j, INPUT in enumerate(INPUTS):
             dictionary[ShortName] = {}
             if Description:
                 dictionary[ShortName]["Description"] = Description
+                del Description
             if DataType:
                 dictionary[ShortName]["DataType"] = DataType
+                del DataType
             if ValueRange:
                 dictionary[ShortName]["ValueRange"] = ValueRange
+                del ValueRange
             if levels_dic:
                 dictionary[ShortName]["Levels"] = levels_dic
+                del levels_dic
 
             # manual corrections, as necessary
             if basename == "ACE_BRT":
@@ -196,4 +204,3 @@ for j, INPUT in enumerate(INPUTS):
         f.write(json.dumps(dictionary, indent=4))
 
         # make sure that the important variables do not get passed to the next questionnaire
-        del Description, DataType, ValueRange, levels_dic
