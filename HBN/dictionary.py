@@ -12,7 +12,6 @@ HERE = Path(__file__).parent.resolve()
 INPUT_DIR = HERE.joinpath('data_dictionaries')
 OUTPUT_DIR = HERE.joinpath('phenotype')
 status = OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-#file_format = '.csv'
 file_format = '.xlsx'
 
 # make input list of CSV files (and exclude does starting with ~)
@@ -20,13 +19,6 @@ INPUTS = sorted(INPUT_DIR.glob(f'[!~]*{file_format}'))
 
 # loop over and enumerate input files
 for j, INPUT in enumerate(INPUTS):
-
-    # # debugging if statement with a print statement
-    # if j in list(range(0, 50, 1)):
-    #     print(j, INPUT.name)
-    #     pass
-    # else:
-    #     continue
 
     # assign output file name for each iteration/INPUT of the loop
     OUTPUT = OUTPUT_DIR.joinpath(INPUT.name.replace(f'{file_format}', '.json'))
