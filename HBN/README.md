@@ -29,10 +29,12 @@ Note: Some of the following COINS access instructions were copied from [the HBN 
     ```shell
     HBN/
     ├── all_data_dicts_Aug_2018.zip
-    ├── Data Dictionaries/
+    ├── data_dictionaries/
     ├── dictionary.py
     └── README.md
     ```
+Note: That the unziped file should be renamed from `Data Dictionaries/` to
+`data_dictionaries`
 
 1. Install the required Python 3 library with the following line of code:
 
@@ -47,3 +49,14 @@ Note: Some of the following COINS access instructions were copied from [the HBN 
     ```
 
 ## Notes about this data dictionary
+
+1. Some questionnaires (listed [here](https://github.com/ericearl/dataset-phenotypes/commit/b5c5a79b25e16ec52d5be95e823e7009bb54f437#diff-16cf6d43d5333bdca703a165d985b8db884e7ddb77798e3e377711026f02a6d3R50)) have an entry on the last line that states "Continue
+to" which is ignored when creating the corresponding `.json` files for that questionnaires. 
+
+1. On some questionnaires the ShortName is entered as `Variable Name` on others as `Variable`
+
+1. Similarly, the `Description` header, which contains the description for every
+   question on the questionnaire was entered as `Question`, `Question `,`Item`
+
+1. Some questionnaires used `Value Labels` instead of `Value Label` to describe
+   the range of possible values. 
