@@ -39,7 +39,7 @@ Note: Some of the following COINS access instructions were copied from [the HBN 
 1. Install the required Python 3 library with the following line of code:
 
     ```shell
-    python3 -m pip install --user pandas
+    python3 -m pip install --user pandas openpyxl
     ```
 
 1. Run the following line of code within the `HBN/` subfolder:
