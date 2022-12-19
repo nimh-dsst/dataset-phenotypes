@@ -46,6 +46,10 @@ for j, INPUT in enumerate(INPUTS):
                                   "ACE_Spatial_Span_F"]:
                     # skip the last column from these questionnaires
                     data = pandas.read_excel(handle, header=1, skipfooter=1)
+                elif basename == 'ESWAN':
+                    data = pandas.read_excel(handle, header=2)
+                    # Set the Value Lables to the same in each question of the dictionary.
+                    data.loc[2:, 'Value Labels'] = data.loc[2, 'Value Labels']
                 else:
                     data = pandas.read_excel(handle, header=1)
         else:
