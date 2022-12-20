@@ -57,6 +57,10 @@ to" which is ignored when creating the corresponding `.json` files for that ques
    question on the questionnaire was entered as `Question`, `Question `, or `Item`
 1. Some questionnaires used `Value Labels` instead of `Value Label` to describe
    the range of possible values.
-1. Also note that `Diagnosis_KSADS` will take a while (~7 min) to create only
-   the `diagnosis_ksads.json`. 
-1. `dictionary.py` should take ~10 min to run.
+1. Many of the levels from different questionnaire needed adjustments that were
+   provided as notes on the `.xlsx` file. The code has many different if
+   statements to handle the correct behaviour for each questionnaire.
+1. The `SWAN` questionnaire is provided twice with the same data with the name
+   `SWAN.xlsx` and `SWAN .xlsx`
+1. Some of the levels on `SCARED_P` AND `SCARED_SR` are defined as values that
+   are `>=` to a specific threshold
