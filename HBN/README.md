@@ -34,10 +34,12 @@ Note: Some of the following COINS access instructions were copied from [the HBN 
     └── README.md
     ```
 
+
+
 1. Install the required Python 3 library with the following line of code:
 
     ```shell
-    python3 -m pip install --user pandas
+    python3 -m pip install --user pandas openpyxl
     ```
 
 1. Run the following line of code within the `HBN/` subfolder:
@@ -47,3 +49,18 @@ Note: Some of the following COINS access instructions were copied from [the HBN 
     ```
 
 ## Notes about this data dictionary
+
+1. Some questionnaires (listed [here](https://github.com/ericearl/dataset-phenotypes/commit/b5c5a79b25e16ec52d5be95e823e7009bb54f437#diff-16cf6d43d5333bdca703a165d985b8db884e7ddb77798e3e377711026f02a6d3R50)) have an entry on the last line that states "Continue
+to" which is ignored when creating the corresponding `.json` files for that questionnaires.
+1. On some questionnaires the ShortName is entered as `Variable Name` on others as `Variable`
+1. Similarly, the `Description` header, which contains the description for every
+   question on the questionnaire was entered as `Question`, `Question `, or `Item`
+1. Some questionnaires used `Value Labels` instead of `Value Label` to describe
+   the range of possible values.
+1. Many of the levels from different questionnaire needed adjustments that were
+   provided as notes on the `.xlsx` file. The code has many different if
+   statements to handle the correct behaviour for each questionnaire.
+1. The `SWAN` questionnaire is provided twice with the same data with the name
+   `SWAN.xlsx` and `SWAN .xlsx`
+1. Some of the levels on `SCARED_P` AND `SCARED_SR` are defined as values that
+   are `>=` to a specific threshold
