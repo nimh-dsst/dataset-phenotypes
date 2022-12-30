@@ -26,9 +26,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
+      <td align="center"><a href="https://jessicadafflon.github.io/"><img src="https://avatars.githubusercontent.com/u/10345440?v=4?s=100" width="100px;" alt="Jessica Dafflon"/><br /><sub><b>Jessica Dafflon</b></sub></a><br /><a href="https://github.com/ericearl/dataset-phenotypes/commits?author=JessyD" title="Code">💻</a></td>
       <td align="center"><a href="https://faskowit.github.io/"><img src="https://avatars.githubusercontent.com/u/3308660?v=4?s=100" width="100px;" alt="Josh Faskowitz"/><br /><sub><b>Josh Faskowitz</b></sub></a><br /><a href="#ideas-faskowit" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center"><a href="https://github.com/RobertoFelipeSG"><img src="https://avatars.githubusercontent.com/u/38394703?v=4?s=100" width="100px;" alt="RobertoFelipeSG"/><br /><sub><b>RobertoFelipeSG</b></sub></a><br /><a href="#ideas-RobertoFelipeSG" title="Ideas, Planning, & Feedback">🤔</a></td>
-      <td align="center"><a href="https://jessicadafflon.github.io/"><img src="https://avatars.githubusercontent.com/u/10345440?v=4?s=100" width="100px;" alt="Jessica Dafflon"/><br /><sub><b>Jessica Dafflon</b></sub></a><br /><a href="https://github.com/ericearl/dataset-phenotypes/commits?author=JessyD" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
