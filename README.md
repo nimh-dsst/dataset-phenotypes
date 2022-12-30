@@ -12,13 +12,9 @@ These tools follow the guidelines of [BIDS Extension Proposal 36 (BEP036)](https
 
 Do you not see your favorite neuroimaging dataset's phenotypic data here? Add a GitHub Issue describing how to download the phenotypic data dictionaries and the phenotypic data and the dataset will be added to the queue.
 
-## Contributions
-
-Contributors are always welcome to add GitHub Issues describing any inaccuracies or feature requests. GitHub Pull Requests are also always welcome to initiate a review of some fix or addition to the repository.
-
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Contributors are always welcome to add GitHub Issues describing any inaccuracies or feature requests. GitHub Pull Requests are also always welcome to initiate a review of some fix or addition to the repository. Thanks especially go to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -39,4 +35,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
