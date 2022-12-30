@@ -1,4 +1,7 @@
 # "Big" Neuroimaging Dataset Phenotype BIDS Tools
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Preparatory scripts to output BIDS phenotypic data dictionaries and transform phenotypic data to BIDS TSVs for common neuroimaging datasets.
 
@@ -31,3 +34,25 @@ Contributors are always welcome to add GitHub Issues describing any inaccuracies
 1. Add the HBN data dictionaries `dictionary.py`
 1. Add all present studies' phenotypic data BIDS TSV transformation scripts as `data_convert.py`
 1. Draft and create a phenotypic data browsing, filtering, and selection GUI with [PySimpleGUI](https://www.pysimplegui.org/en/latest/)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://faskowit.github.io/"><img src="https://avatars.githubusercontent.com/u/3308660?v=4?s=100" width="100px;" alt="Josh Faskowitz"/><br /><sub><b>Josh Faskowitz</b></sub></a><br /><a href="#ideas-faskowit" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
