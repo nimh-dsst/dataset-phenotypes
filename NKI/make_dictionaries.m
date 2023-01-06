@@ -1,21 +1,19 @@
+INPUTDIR = [ pwd filesep 'assessments_documentation' filesep ] ;
+INPUTS = dir([INPUTDIR filesep '*.csv' ]) ; 
 
-
-INPUTDIR = [ pwd '/assessments_documentation/' ] ;
-INPUTS = dir([INPUTDIR '/*csv' ]) ; 
-
-OUTPUTDIR = [ pwd '/phenotype/' ] ;
-mkdir(OUTPUTDIR)
+OUTPUTDIR = [ pwd filesep 'phenotype' filesep ] ;
+madedir = mkdir(OUTPUTDIR) ;
 
 wantcol = {'QuestionLabel' 'QuestionDescription' 'QuestionID' ...
     'ResponseLabel' 'ResponseValue' 'is_released' } ; 
 
 for idx = 1:length(INPUTS)
 
-    # cmd line display to user
+    % cmd line display to user
     disp([num2str(idx) ' of ' num2str(length(INPUTS))  ': ' ...
         INPUTS(1).name ])
 
-    infile = [ INPUTS(idx).folder '/' INPUTS(idx).name ] ;
+    infile = [ INPUTS(idx).folder filesep INPUTS(idx).name ] ;
     dat = readtable(infile,"Delimiter",",") ;
 
     % make the input table a lil' smaller
@@ -54,7 +52,7 @@ for idx = 1:length(INPUTS)
         newdat2.(ff) = rmfield(newdat1(jdx),"QuestionID") ;
     end
 
-    # json string formatted human-readable
+    % json string formatted human-readable
     encodedJSON = jsonencode(newdat2,"PrettyPrint",true); 
 
     % file name formatting 
@@ -63,10 +61,9 @@ for idx = 1:length(INPUTS)
     filename = strrep(filename,' ','_') ;
 
     % write it to phenotypes dir
-    JSONFILENAME = [ OUTPUTDIR '/' filename '_dict.json' ] ;
+    JSONFILENAME = [ OUTPUTDIR filesep filename '.json' ] ;
     fid = fopen(JSONFILENAME,'w') ;
     fprintf(fid, encodedJSON);  
     fclose(fid) ;
 
 end
-
