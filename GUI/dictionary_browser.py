@@ -8,7 +8,6 @@ import pandas as pd
     Author: Roberto Salamanca-Giron
     Github: RobertoFelipeSG
     e-mail: robertofelipe.sg@gmail.com
-    V.1.0.
 """
 
 with open('phenotype/dictionary.json') as f:

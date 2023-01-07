@@ -1,0 +1,47 @@
+{
+    "[ABCD] ehi_y_ss_scoreb": {
+        "Description": "Handedness score rating | 1=right handed; 2=left handed; 3=mixed handed//Calculation: if ((mean([ehi1b], [ehi2b], [ehi3b],[ehi4b]) < -60),2, if ((mean([ehi1b], [ehi2b], [ehi3b],[ehi4b]) > 60),1,3)); 1.  Veale, J. F. (2014) Edinburgh Handedness Inventory - Short Form: a revised version based on confirmatory factor analysis. Laterality 19(2):164-77.  //If mixed handed, use the hand that the child writes with for NeuroCog and fMRI tasks.",
+        "DataType": "Float",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "right handed",
+            "2": "left handed",
+            "3": "mixed handed//Calculation: if ((mean([ehi1b], [ehi2b], [ehi3b],[ehi4b]) < -60),2, if ((mean([ehi1b], [ehi2b], [ehi3b],[ehi4b]) > 60),1,3))"
+        }
+    },
+    "[ABIDE_I] HANDEDNESS_CATEGORY": {
+        "LongName": "Subject Handedness Category",
+        "Description": "Type: String",
+        "Levels": {
+            "R": "Right",
+            "L": "Left",
+            "Mixed": "Ambidexterous",
+            "Ambi": "Ambidexterous"
+        }
+    },
+    "[ABIDE_II] HANDEDNESS_CATEGORY": {
+        "LongName": "Handedness Category",
+        "Description": "Type: Numeric, Min: 1, Max: 3",
+        "Levels": {
+            "1": "right handed",
+            "2": "left handed",
+            "3": "mixed handed"
+        }
+    },
+    "[HCP] Handedness": {
+        "LongName": "Subject Information|Demographics|Handedness",
+        "Description": "Handedness of participant from -100 to 100 assessed using the Edinburgh Handedness questionnaire [Oldfield RC (1971). The assessment and analysis of handedness: The Edinburgh inventory. Neuropsychologia, 9(1): 97-113.]. Negative numbers indicate that a subject is more left-handed than right-handed, while positive numbers indicate that a subject is more right-handed than left-handed. See Schachter et al., Associations of handedness with hair color and learning disabilities. Neuropsychologia, 25:269-276, 1987. for more information on how these laterality scores are calculated."
+    },
+    "[UKB] Handedness (chirality/laterality)": {
+        "LongName": "UK Biobank Assessment Centre|Touchscreen|Early life factors (Category 100033)",
+        "Description": "FieldID 1707: ACE touchscreen question 'Are you right or left handed?'   This question was dropped from the touchscreen protocol on 24/10/2016.",
+        "Levels": {
+            "-3": "Prefer not to answer",
+            "1": "Right-handed",
+            "2": "Left-handed",
+            "3": "Use both right and left hands equally"
+        },
+        "ValueType": "Categorical single",
+        "TermURL": "http://biobank.ndph.ox.ac.uk/ukb/field.cgi?id=1707"
+    }
+}
