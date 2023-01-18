@@ -11,7 +11,7 @@ From the [Human Connectome Project Young Adult 1200 Subjects Data Release page](
 
 ## Steps to produce this study's data dictionary
 
-1. Install the required Python 3 library with the following line of code:
+1. Install the required Python 3 libraries with the following line of code:
 
     ```shell
     python3 -m pip install --user pandas openpyxl
@@ -41,3 +41,43 @@ You may also notice some manual fixes toward the bottom of the `dictionary.py` s
 1. SSAGA_Times_Used_Illicits
 
 These corrections are due to the complex patterns within the levels of the original data dictionary which were easier to instead "inject".
+
+## Steps to produce this study's tabular data
+
+There are two sets, the "Unrestricted" (Open Access) and the "Restricted" datasets. Below are instructions for either separately and then after the same final steps to produce BIDS tabular TSV data.
+
+### For the HCP "Unrestricted" Data
+
+1. Request access to the HCP unrestricted data on ConnectomeDB by **FILL IN THE BLANK**.
+1. After approval, login and go to **WU-Minn HCP Data - 1200 Subjects** and click on the Open Dataset button there.
+1. It should open to the **HCP 1200 Subject Release "Open Access"** dataset and below in the **Resources** tab and on the left under **Quick Downloads** you can find and click **Behavioral Data** to get the "unrestricted" behavioral data.
+1. Save (without renaming) the `unrestricted_[your username]_[datetime of download].csv` to this `HCP/` subfolder. The script will expect the "as-is" original downloaded name of the CSV.
+
+### For the HCP "Restricted" Data
+
+1. Request access for a Principal Investigator (PI) to the HCP restricted data on ConnectomeDB by filling out the **HCP Restricted Data Terms of Use** form indicating you are the PI.
+1. Request access for yourself (if you are not the PI) to the HCP restricted data on ConnectomeDB by filling out the **HCP Restricted Data Terms of Use** form for yourself, but referencing your PI.
+1. After approval, login and go to **WU-Minn HCP Data - 1200 Subjects** and click on the Open Dataset button there.
+1. It should open to the **HCP 1200 Subject Release "Open Access"** dataset
+1. Access the restricted data by clicking where it says **"Open Access"** and choosing **"Restricted (1)"**
+1. Now below in the **Resources** tab and on the left under **Quick Downloads** you can find and click **Restricted Data** to get the full "restricted" behavioral dataset.
+1. Save (without renaming) the `RESTRICTED_[your username]_[datetime of download].csv` to this `HCP/` subfolder. The script will expect the "as-is" original downloaded name of the CSV.
+
+### Use these same final steps either way
+
+1. If you have not yet, Install the required Python 3 library with the following line of code:
+
+    ```shell
+    python3 -m pip install --user pandas
+    ```
+
+1. Run the following line of code within the `HCP/` subfolder:
+
+    ```shell
+    python3 data.py
+    ```
+
+## Notes about this tabular data
+
+1. Things.
+1. Stuff.
