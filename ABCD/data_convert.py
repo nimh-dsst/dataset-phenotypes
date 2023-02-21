@@ -1,20 +1,19 @@
+"""ABCD tabular data conversion from TXT to TSV format.
+
+This script finds the tabular data files as downloaded from NDA in .txt format and converts it to
+.tsv format to be in compliance with BIDS specification. The TSV files are deposited in the `phenotype/`
+directory along with data dictionaries in JSON format.
+"""
+
 import argparse
+import csv
 from pathlib import Path
 
-import pandas as pd
 
-
-def get_args():
+def help_text():
     parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description=__doc__)
-    parser.add_argument('-t', '--tabular-data', type=Path, action='store', dest='tab_data', metavar='TAB_DATA_DIR',
-                        help='Path to directory with tabular data files in \'.txt\' format.')
-    parser.add_argument('-d', '--dictionaries', type=Path, action='store', dest='dicts', metavar='DICTS_DIR',
-                        default=Path('.'), help="Path to directory with data dictionaries in \'.csv\' format.")
-    parser.add_argument('-o', '--output-dir', type=Path, action='store', dest='outdir', metavar='OUTPUT_DIR',
-                        default=Path('.'), help="Destination directory for the \'.tsv\' formatted files.")
     args = parser.parse_args()
-
-    return args.tab_data.resolve(), args.dicts.resolve(), args.outdir.resolve()
+    return args
 
 
 def data_summary(data_with_no_dict):
@@ -23,8 +22,13 @@ def data_summary(data_with_no_dict):
 
 
 def main():
-    # get command line arguments
-    tab_data_dir, data_dict_dir, outdir = get_args()
+    # calling help prompt
+    help_text()
+
+    # hard-coding file paths based on README instructions of dir organization
+    tab_data_dir = Path('data')
+    data_dict_dir = Path('nda_data_structure_definitions')
+    outdir = Path('phenotype')
 
     # extract nda short names into a list
     data_short_names = [i.name.split('.txt')[0] for i in
@@ -34,30 +38,22 @@ def main():
 
     for d in data_short_names:
         expected_dict = data_dict_dir.joinpath(d + '.csv')  # constructing dictionary filename
+        # take stock of data files without their corresponding dictionaries
         if expected_dict not in data_dicts:
             data_files_no_dict.append(d + '.txt')  # constructing data filename
-        else:
-            types_dict = {}  # dict of fields and data types
-            dict_df = pd.read_csv(expected_dict)
-            tsv_fields = dict_df['ElementName'].to_list()
 
-            # type casting fields once it's read into a dataframe
-            for col in tsv_fields:
-                datatype = dict_df.loc[dict_df['ElementName'] == col, 'DataType'].values
-                if datatype and datatype[0] == 'Integer':
-                    types_dict[col] = 'Int64'
-                elif datatype and datatype[0] == 'String':
-                    types_dict[col] = 'str'
-
-            data_df = pd.read_csv(tab_data_dir.joinpath(d + '.txt'), sep='\t', dtype=types_dict, skiprows=[1])
-            # # print(types_dict)
-            bids_data_df = data_df[tsv_fields]
-            print(bids_data_df.head())
-            # display(bids_data_df)
-            # bids_data_df.to_csv(f"../dataset-phenotypes/ABCD/phenotype/{d + '.tsv'}", sep='\t',
-            #                     quoting=csv.QUOTE_MINIMAL,
-            #                     index=False)
-
+        # creating a list of lists where each sub-list is a formatted row
+        rows = []
+        curr_f = open(tab_data_dir.joinpath(d + '.txt'), 'r')
+        for idx, line in enumerate(curr_f.readlines()):
+            if idx != 1:  # skip over row describing fields
+                line = ','.join(line.strip('\n').split('\t'))
+                new_line = [word.strip('\"') for word in line.split(',') if not word == ""]
+                rows.append(new_line)
+        # writing the list of lists as a TSV file
+        with open(outdir.joinpath(d + '.tsv'), 'w') as new_f:
+            wr = csv.writer(new_f, delimiter='\t', quoting=csv.QUOTE_MINIMAL)
+            wr.writerows(rows)
     data_summary(data_files_no_dict)
 
 
