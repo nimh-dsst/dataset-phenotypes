@@ -42,8 +42,8 @@ def main():
     data_dicts = list(data_dict_dir.glob('*.csv'))
     data_files_no_dict = []
     dict_no_data_files = []
-    for dict in data_dicts:
-        dict_prefix = dict.name.split('.')[0]
+    for data_dict in data_dicts:
+        dict_prefix = data_dict.stem
         expected_data_file = tab_data_dir.joinpath(dict_prefix + '.csv')
         if expected_data_file not in data_files:
             dict_no_data_files.append(expected_data_file.name)
