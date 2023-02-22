@@ -37,7 +37,7 @@ def main():
 
     # extract nda short names into a list
     data_files = list(tab_data_dir.glob('*.txt'))
-    data_short_names = [i.name.split('.txt')[0] for i in
+    data_short_names = [i.stem for i in
                         data_files]  # assert that this is indeed a list of strings.
     data_dicts = list(data_dict_dir.glob('*.csv'))
     data_files_no_dict = []
