@@ -56,12 +56,12 @@ def main():
 
         # creating a list of lists where each sub-list is a formatted row
         rows = []
-        curr_f = open(tab_data_dir.joinpath(d + '.txt'), 'r')
-        for idx, line in enumerate(curr_f.readlines()):
-            if idx != 1:  # skip over row describing fields
-                line = ','.join(line.strip('\n').split('\t'))
-                new_line = [word.strip('\"') for word in line.split(',') if not word == ""]
-                rows.append(new_line)
+        with open(tab_data_dir.joinpath(d + '.txt'), 'r') as curr_f:
+            for idx, line in enumerate(curr_f.readlines()):
+                if idx != 1:  # skip over row describing fields
+                    no_newline = line.rstrip('\n')
+                    new_line = [word.lstrip('"').rstrip('"') for word in no_newline.split('\t') if not word == ""]
+                    rows.append(new_line)
         # writing the list of lists as a TSV file
         with open(outdir.joinpath(d + '.tsv'), 'w') as new_f:
             wr = csv.writer(new_f, delimiter='\t', quoting=csv.QUOTE_MINIMAL)
