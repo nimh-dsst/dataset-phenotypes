@@ -60,8 +60,10 @@ def main():
             for idx, line in enumerate(curr_f.readlines()):
                 if idx != 1:  # skip over row describing fields
                     no_newline = line.rstrip('\n')
-                    new_line = [word.lstrip('"').rstrip('"') for word in no_newline.split('\t') if not word == ""]
+                    new_line = [word.lstrip('"').rstrip('"') if not word == "" else "n/a" for word in
+                                no_newline.split('\t')]
                     rows.append(new_line)
+
         # writing the list of lists as a TSV file
         with open(outdir.joinpath(d + '.tsv'), 'w') as new_f:
             wr = csv.writer(new_f, delimiter='\t', quoting=csv.QUOTE_MINIMAL)
