@@ -36,6 +36,15 @@ From the [ABCD Study's "About" webpage](https://abcdstudy.org/about/):
 
 1. Note: Many print statements will pop up, but these have all been reviewed manually and addressed programmatically, as necessary, in parts of the `dictionary.py` script.
 
+## Steps to convert this study's data files from TXT to TSV format files
+
+1. Download ABCD Release 4.0 Tabulated data package through the [NIMH Data Archive's (NDA) ABCD Study page](https://nda.nih.gov/general-query.html?q=query=featured-datasets:Adolescent%20Brain%20Cognitive%20Development%20Study%20(ABCD)).
+2. Place the downloaded data in a new subdirectory called `data/` within the `ABCD/` subdirectory of this repository.
+3. Run `data_convert.py` from the `ABCD/` directory to convert the data files in `.txt` format to BIDS recommended `.tsv` format. 
+    ```bash
+    python data_convert.py
+    ```
+
 ## Notes about these data dictionaries
 
 1. Though `DataType` is not a BIDS-valid field in the sidecar JSON, it has been included for reference.
