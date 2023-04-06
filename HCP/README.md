@@ -58,7 +58,7 @@ There are two sets, the "Unrestricted" (Open Access) and the "Restricted" datase
 1. Request access for a Principal Investigator (PI) to the HCP restricted data on ConnectomeDB by filling out the **HCP Restricted Data Terms of Use** form indicating you are the PI.
 1. Request access for yourself (if you are not the PI) to the HCP restricted data on ConnectomeDB by filling out the **HCP Restricted Data Terms of Use** form for yourself, but referencing your PI.
 1. After approval, login and go to **WU-Minn HCP Data - 1200 Subjects** and click on the Open Dataset button there.
-1. It should open to the **HCP 1200 Subject Release "Open Access"** dataset
+1. It should open to the **HCP 1200 Subject Release "Open Access"** dataset. This information can be seen on the top-left corner of the screen.
 1. Access the restricted data by clicking where it says **"Open Access"** and choosing **"Restricted (1)"**
 1. Now below in the **Resources** tab and on the left under **Quick Downloads** you can find and click **Restricted Data** to get the full "restricted" behavioral dataset.
 1. Save (without renaming) the `RESTRICTED_[your username]_[datetime of download].csv` to this `HCP/` subfolder. The script will expect the "as-is" original downloaded name of the CSV.
