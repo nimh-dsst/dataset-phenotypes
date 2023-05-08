@@ -31,7 +31,7 @@ def main():
 
     df = pd.read_csv(data, keep_default_na=False)
     df.rename(fieldname_changes, axis=1, inplace=True)
-    df.to_csv(phenotype_dir / 'phenotype.tsv', sep='\t', quoting=csv.QUOTE_MINIMAL, index=False)
+    df.to_csv(phenotype_dir / 'phenotype.tsv', sep='\t', index=False)
 
 
 if __name__ == '__main__':
