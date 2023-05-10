@@ -21,7 +21,7 @@ data = pandas.read_csv(INPUT, sep='\t')
 # start the output dictionary
 dictionary = {
     "SITE_ID": {
-        "LongName": "ABIDE Acquisition Site ID",
+        "LongName": "ABIDE I Acquisition Site ID",
         "Description": "Site at which data were acquired.",
         "Levels": {
             "CALTECH": "California Institute of Technology",

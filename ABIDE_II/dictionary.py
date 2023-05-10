@@ -19,7 +19,33 @@ status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 data = pandas.read_csv(INPUT, sep='\t')
 
 # start the output dictionary
-dictionary = {}
+dictionary = {
+    "SITE_ID": {
+        "LongName": "ABIDE II Acquisition Site ID",
+        "Description": "Site at which data were acquired.",
+        "Levels": {
+            "ABIDEII-BNI_1": "Barrow Neurological Institute",
+            "ABIDEII-EMC_1": "Erasmus University Medical Center Rotterdam",
+            "ABIDEII-ETH_1": "ETH Zürich",
+            "ABIDEII-GU_1": "Georgetown University",
+            "ABIDEII-IP_1": "Institut Pasteur and Robert Debré Hospital",
+            "ABIDEII-IU_1": "Indiana University",
+            "ABIDEII-KKI_1": "Kennedy Krieger Institute",
+            "ABIDEII-KUL_3": "Katholieke Universiteit Leuven",
+            "ABIDEII-NYU_1": "NYU Langone Medical Center: Sample 1",
+            "ABIDEII-NYU_2": "NYU Langone Medical Center: Sample 2",
+            "ABIDEII-OHSU_1": "Oregon Health and Science University",
+            "ABIDEII-OILH_2": "Olin Neuropsychiatry Research Center, Institute of Living at Hartford Hospital",
+            "ABIDEII-SDSU_1": "San Diego State University",
+            "ABIDEII-SU_2": "Stanford University",
+            "ABIDEII-TCD_1": "Trinity Centre for Health Sciences",
+            "ABIDEII-UCD_1": "University of California Davis",
+            "ABIDEII-UCLA_1": "University of California Los Angeles",
+            "ABIDEII-USM_1": "University of Utah School of Medicine",
+            "ABIDEII-U_MIA_1": "University of Miami"
+        }
+    }
+}
 
 # open up the output file to write the dictionary into it far below
 with open(OUTPUT, 'w') as f:
