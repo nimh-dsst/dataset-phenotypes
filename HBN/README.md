@@ -36,8 +36,6 @@ Note: Some of the following COINS access instructions were copied from [the HBN 
     └── README.md
     ```
 
-
-
 1. Install the required Python 3 library with the following line of code:
 
     ```shell

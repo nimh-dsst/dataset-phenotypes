@@ -10,7 +10,7 @@ import pandas as pd
     e-mail: robertofelipe.sg@gmail.com
 """
 
-with open('phenotype/dictionary.json') as f:
+with open('GUI/phenotype/dictionary.json') as f:
     js = json.load(f)
 print(type(js))
 len(js.keys())
