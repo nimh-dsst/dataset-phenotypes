@@ -36,16 +36,38 @@ From the [ABCD Study's "About" webpage](https://abcdstudy.org/about/):
 
 1. Note: Many print statements will pop up, but these have all been reviewed manually and addressed programmatically, as necessary, in parts of the `dictionary.py` script.
 
-## Steps to convert this study's data files from TXT to TSV format files
+## Steps to convert this study's data files
 
-1. Download ABCD Release 4.0 Tabulated data package through the [NIMH Data Archive's (NDA) ABCD Study page](https://nda.nih.gov/general-query.html?q=query=featured-datasets:Adolescent%20Brain%20Cognitive%20Development%20Study%20(ABCD)).
-2. Place the downloaded data in a new subdirectory called `data/` within the `ABCD/` subdirectory of this repository.
-3. Run `data_convert.py` from the `ABCD/` directory to convert the data files in `.txt` format to BIDS recommended `.tsv` format. 
-    ```bash
-    python data_convert.py
+1. Make sure the system you want to download the data to has at least 25 GB of space.
+1. Go to [the NIMH Data Archive's (NDA) ABCD Study page](https://nda.nih.gov/general-query.html?q=query=featured-datasets:Adolescent%20Brain%20Cognitive%20Development%20Study%20(ABCD)).
+1. Scroll down to the bottom and find the section labeled **Tabulated Datasets and Raw Behavioral Data**.
+1. Click the checkbox on the left side of the row labeled **Release 4.0 Tabulated Behavioral, Questionnaire, and Imaging Data - September 2021 (12 GB)**.
+1. An **Updating Data Structures...** modal will pop up. Wait for it to disappear.
+1. Click the orange **Add to Workspace** button on the bottom right of the page.
+1. Click the Filter icon on the right of the page and then click the **Submit to Filter Cart** button in the bottom of that same sidebar.
+1. Wait for the Filter Cart in the top right corner to update.
+1. Click the **Create Data Package/Add Data to Study** link in the top right corner.
+1. Click **Create Data Package** and give it a Package Name that has no spaces or symbols in it.
+1. Click the checkbox to the right of **Include associated data files** then click the large **Create Data Package** button in this dialog.
+1. It will offer you another modal with a link at the bottom that says "Click here to navigate to the dashboard" and you should click the **here** link.
+1. When the **Status** column of your new data package's row says **Ready to Download**, we recommend the Download Manager for downloading your data smoothly.
+1. Download the data to your computer.
+1. Place the downloaded data in a new subdirectory called `data/` within the `ABCD/` subdirectory of this repository. It should look something like this:
+
+    ```text
+    ABCD/data/
+    ├── FILLINTHEBLANK.txt
+    ├── ...
+    └── FILLINTHEBLANK.txt
     ```
 
-## Notes about these data dictionaries
+1. Run `data_convert.py` to convert the data files in `.txt` format to BIDS `.tsv` format.
+
+    ```shell
+    python3 data_convert.py
+    ```
+
+## Notes about the data dictionaries
 
 1. Though `DataType` is not a BIDS-valid field in the sidecar JSON, it has been included for reference.
 1. Likewise `ValueRange` has been included though it is not BIDS-valid.
