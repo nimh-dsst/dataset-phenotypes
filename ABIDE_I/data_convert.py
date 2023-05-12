@@ -6,7 +6,6 @@ converts it to .tsv format file to be in compliance with BIDS specification. The
 """
 
 import argparse
-import csv
 from pathlib import Path
 
 import pandas as pd
@@ -23,10 +22,8 @@ def get_args():
 
 
 def main():
-    # calling help prompt
-    args = get_args()
 
-    # hard-coding file paths based on README instructions of dir organization
+    args = get_args()
     data = args.input_file.resolve()
     phenotype_dir = args.output_dir.resolve() / 'phenotype'
     phenotype_dir.mkdir(parents=True, exist_ok=True)
