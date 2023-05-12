@@ -49,7 +49,16 @@ From the [ABIDE I webpage](http://fcon_1000.projects.nitrc.org/indi/abide/abide_
 1. You can review the exact manual fixes toward the bottom of the `dictionary.py` script.
 
 
-## Steps to produce this study's phenotype data file
+## Steps to convert this study's phenotype data file from CSV to TSV format
 
 1. Log in on [NITRC repository](https://www.nitrc.org/account/login.php). Register for an account, if you don't already have one.
-2. Download raw phenotype data from [ABIDE I page](http://www.nitrc.org/frs/downloadlink.php/4912)
+2. Download raw phenotype data from [ABIDE I page](http://www.nitrc.org/frs/downloadlink.php/4912).
+3. Run the following line of code within `ABIDE_I/` subfolder with appropriate file paths in place of `<INPUT_FILE>` and `<OUTPUT_DIR>`:
+    ```
+    python data_convert.py -i <INPUT_FILE> -o <OUTPUT_DIR>
+    ```
+    **NOTE** <INPUT_FILE> should be the path to file downloaded in step 2. 
+    
+## Notes about data conversion script
+1. The `ADI_RRB_TOTAL_C` field has been renamed to `ADI_R_RRB_TOTAL_C` to match the one in `dictionary.json`.
+2. The `ADOS_GOTHAM_SOCAFFECT` field has been renamed to `ADOS_GOTHAM_SOC_AFFECT` to match the one in `dictionary.json`.
