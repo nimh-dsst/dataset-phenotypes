@@ -61,4 +61,4 @@ From the [ABIDE I webpage](http://fcon_1000.projects.nitrc.org/indi/abide/abide_
     
 ## Notes about data conversion script
 1. The `ADI_RRB_TOTAL_C` field has been renamed to `ADI_R_RRB_TOTAL_C` to match the one in `dictionary.json`.
-2. The `ADOS_GOTHAM_SOCAFFECT` field has been renamed to `ADOS_GOTHAM_SOC_AFFECT` to match the one in `dictionary.json`.
+1. The `ADOS_GOTHAM_SOCAFFECT` field has been renamed to `ADOS_GOTHAM_SOC_AFFECT` to match the one in `dictionary.json`.
