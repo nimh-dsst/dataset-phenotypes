@@ -52,8 +52,8 @@ From the [ABIDE I webpage](http://fcon_1000.projects.nitrc.org/indi/abide/abide_
 ## Steps to convert this study's phenotype data file from CSV to TSV format
 
 1. Log in on [NITRC repository](https://www.nitrc.org/account/login.php). Register for an account, if you don't already have one.
-2. Download raw phenotype data from [ABIDE I page](http://www.nitrc.org/frs/downloadlink.php/4912).
-3. Run the following line of code within `ABIDE_I/` subfolder with appropriate file paths in place of `<INPUT_FILE>` and `<OUTPUT_DIR>`:
+1. Download raw phenotype data from [ABIDE I page](http://www.nitrc.org/frs/downloadlink.php/4912).
+1. Run the following line of code within `ABIDE_I/` subfolder with appropriate file paths in place of `<INPUT_FILE>` and `<OUTPUT_DIR>`:
     ```
     python data_convert.py -i <INPUT_FILE> -o <OUTPUT_DIR>
     ```
