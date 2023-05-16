@@ -13,9 +13,9 @@ import pandas as pd
 
 def get_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description=__doc__)
-    parser.add_argument('-i', '--input-file', type=Path, metavar='INPUT_FILE', required=True,
+    parser.add_argument('input', type=Path, metavar='INPUT_FILE', required=True,
                         help='Path to the phenotype file in CSV format as downloaded from ABIDE I webpage.')
-    parser.add_argument('-o', '--output-dir', type=Path, metavar='OUTPUT_DIR', required=False,
+    parser.add_argument('output', type=Path, metavar='OUTPUT_DIR', required=False,
                         default=Path(__file__).parent, help='Path to output BIDS formatted directory.')
     args = parser.parse_args()
     return args
