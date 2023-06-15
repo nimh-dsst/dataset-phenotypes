@@ -6,10 +6,17 @@ converts it to .tsv format file to be in compliance with BIDS specification. The
 """
 
 import argparse
+import pandas as pd
 from pathlib import Path
 
-import pandas as pd
+# file path handling
+HERE = Path(__file__).parent.resolve()
+INPUT = HERE.joinpath('Phenotypic_V1_0b.csv')
+OUTPUT = HERE.joinpath('phenotype', 'phenotype.tsv')
+status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
+# Hard coding minor changes to field names in phenotype file to match the one in the dictionary.json
+fieldname_changes = {"ADI_RRB_TOTAL_C": "ADI_R_RRB_TOTAL_C", "ADOS_GOTHAM_SOCAFFECT": "ADOS_GOTHAM_SOC_AFFECT"}
 
 def get_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description=__doc__)
@@ -22,19 +29,9 @@ def get_args():
 
 
 def main():
-
     args = get_args()
     data = args.input_file.resolve()
-    phenotype_dir = args.output_dir.resolve() / 'phenotype'
-    phenotype_dir.mkdir(parents=True, exist_ok=True)
 
-    # Hard coding minor changes to field names in phenotype file to match the one in the dictionary.json
-    fieldname_changes = {"ADI_RRB_TOTAL_C": "ADI_R_RRB_TOTAL_C", "ADOS_GOTHAM_SOCAFFECT": "ADOS_GOTHAM_SOC_AFFECT"}
-
-    df = pd.read_csv(data, keep_default_na=False)
+    df = pd.read_csv(INPUT, keep_default_na=False)
     df.rename(fieldname_changes, axis=1, inplace=True)
-    df.to_csv(phenotype_dir / 'phenotype.tsv', sep='\t', index=False)
-
-
-if __name__ == '__main__':
-    main()
+    df.to_csv(OUTPUT, sep='\t', index=False)

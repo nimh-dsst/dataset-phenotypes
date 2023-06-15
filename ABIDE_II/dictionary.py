@@ -11,7 +11,7 @@ from pathlib import Path
 # file path handling
 HERE = Path(__file__).parent.resolve()
 INPUT = HERE.joinpath('ABIDEII_Data_Legend.tsv')
-OUTPUT = HERE.joinpath('phenotype', 'dictionary.json')
+OUTPUT = HERE.joinpath('phenotype', 'phenotype.json')
 status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 
