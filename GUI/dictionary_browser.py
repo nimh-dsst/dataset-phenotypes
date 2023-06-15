@@ -8,10 +8,9 @@ import pandas as pd
     Author: Roberto Salamanca-Giron
     Github: RobertoFelipeSG
     e-mail: robertofelipe.sg@gmail.com
-    V.1.0.
 """
 
-with open('phenotype/dictionary.json') as f:
+with open('GUI/phenotype/dictionary.json') as f:
     js = json.load(f)
 print(type(js))
 len(js.keys())

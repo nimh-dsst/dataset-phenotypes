@@ -1,4 +1,4 @@
-# Philadelphia Neurodevelopment Cohort
+# Philadelphia Neurodevelopmental Cohort
 
 From the [Database of Genotypes and Phenotypes (dbGaP) page on Neurodevelopmental Genomics: Trajectories of Complex Phenotypes](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607.v3.p2):
 
@@ -41,3 +41,11 @@ The BIDS `Description` is either of:
 - `type` and `comment` from the XML separated by a comma and a space, when a `comment` is present.
 
 `Units` have been added as-is from the XML's `unit` field.
+
+## Steps to produce this study's tabular data
+
+1. Go to the [dbGaP Study Accession: phs000607.v3.p2 webpage](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607.v3.p2).
+1. At the top, just under the **dbGaP Study Accession: phs000607.v3.p2** heading, click on the **Request Access** button which should take you to [the dbGaP authored access portal](https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?login=&page=login).
+1. Click the **Log In to dbGaP** link toward the top of the content in the page.
+1. Fill out any missing required information.
+1. On the **My Research Projects** page, there should be...
