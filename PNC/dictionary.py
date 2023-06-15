@@ -11,7 +11,7 @@ from pathlib import Path
 # file path handling
 HERE = Path(__file__).parent.resolve()
 INPUT = HERE.joinpath('phs000607.v3.pht003445.v3.Neurodevelopmental_Genomics_Subject_Phenotypes.dictionary.xml')
-OUTPUT = HERE.joinpath('phenotype', 'dictionary.json')
+OUTPUT = HERE.joinpath('phenotype', 'phenotype.json')
 status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 

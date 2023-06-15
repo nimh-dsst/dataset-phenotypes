@@ -11,7 +11,7 @@ from pathlib import Path
 # file path handling
 HERE = Path(__file__).parent.resolve()
 INPUT = HERE.joinpath('ABIDE_LEGEND_V1.02.tsv')
-OUTPUT = HERE.joinpath('phenotype', 'dictionary.json')
+OUTPUT = HERE.joinpath('phenotype', 'phenotype.json')
 status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 
@@ -19,7 +19,34 @@ status = OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 data = pandas.read_csv(INPUT, sep='\t')
 
 # start the output dictionary
-dictionary = {}
+dictionary = {
+    "SITE_ID": {
+        "LongName": "ABIDE I Acquisition Site ID",
+        "Description": "Site at which data were acquired.",
+        "Levels": {
+            "CALTECH": "California Institute of Technology",
+            "CMU": "Carnegie Mellon University",
+            "KKI": "Kennedy Krieger Institute",
+            "LEUVEN_1": "University of Leuven: Sample 1",
+            "LEUVEN_2": "University of Leuven: Sample 2",
+            "MAX_MUN": "Ludwig Maximilians University Munich",
+            "NYU": "NYU Langone Medical Center",
+            "OHSU": "Oregon Health and Science University",
+            "OLIN": "Olin, Institute of Living at Hartford Hospital",
+            "PITT": "University of Pittsburgh School of Medicine",
+            "SBL": "Social Brain Lab, BCN NIC UMC Groningen, and Netherlands Institute for Neurosciences",
+            "SDSU": "San Diego State University",
+            "STANFORD": "Stanford University",
+            "TRINITY": "Trinity Centre for Health Sciences",
+            "UCLA_1": "University of California, Los Angeles: Sample 1",
+            "UCLA_2": "University of California, Los Angeles: Sample 2",
+            "UM_1": "University of Michigan: Sample 1",
+            "UM_2": "University of Michigan: Sample 2",
+            "USM": "University of Utah School of Medicine",
+            "YALE": "Yale Child Study Center"
+        }
+    }
+}
 
 # open up the output file to write the dictionary into it far below
 with open(OUTPUT, 'w') as f:
