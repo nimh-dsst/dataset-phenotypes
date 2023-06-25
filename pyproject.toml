@@ -1,14 +1,21 @@
 [tool.poetry]
-name = "bids-phenotype"
-version = "2.0.0"
+name = "bids_phenotype"
+version = "1.0.0"
 description = "A command-line interface to convert big neuroimaging dataset tabular phenotype data and dictionaries to BIDS format."
 authors = ["Eric Earl <eric.earl@nih.gov>"]
 license = "CC0 1.0 Universal"
+packages = [
+    {include = "bids_phenotype", from = "src"},
+    {include = "cli.py", from = "src/bids_phenotype"}
+]
+
+[tool.poetry.scripts]
+bids-phenotype = 'bids_phenotype.cli:main'
 
 [tool.poetry.dependencies]
-python = "^3.7"
-pandas = "^2.0.2"
+python = "^3.7,<4.0"
 openpyxl = "^3.1.2"
+pandas = "^2.0.2"
 xmltodict = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
