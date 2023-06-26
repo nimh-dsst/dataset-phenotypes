@@ -136,31 +136,31 @@ def main():
     args = cli()
 
     if args.dataset == 'ABCD_4':
-        from datasets.ABCD_4 import dictionary, data
+        from .datasets.ABCD_4 import dictionary, data
         info('ABCD_4 dictionary conversion will not use the provided INPUT. This program reads from self-contained/corrected data dictionaries.')
 
     elif args.dataset == 'ABIDE_I':
-        from datasets.ABIDE_I import dictionary, data
+        from .datasets.ABIDE_I import dictionary, data
         info('ABIDE_I dictionary conversion will not use the provided INPUT. This program reads from a self-contained/corrected data dictionary.')
 
     elif args.dataset == 'ABIDE_II':
-        from datasets.ABIDE_II import dictionary, data
+        from .datasets.ABIDE_II import dictionary, data
         info('ABIDE_II dictionary conversion will not use the provided INPUT. This program reads from a self-contained/corrected data dictionary.')
 
     elif args.dataset == 'HBN':
-        from datasets.HBN import dictionary, data
+        from .datasets.HBN import dictionary, data
 
     elif args.dataset == 'HCP_1200':
-        from datasets.HCP_1200 import dictionary, data
+        from .datasets.HCP_1200 import dictionary, data
 
     elif args.dataset == 'NKI':
-        from datasets.NKI import dictionary, data
+        from .datasets.NKI import dictionary, data
 
     elif args.dataset == 'PNC':
-        from datasets.PNC import dictionary, data
+        from .datasets.PNC import dictionary, data
 
     elif args.dataset == 'UKB':
-        from datasets.UKB import dictionary, data
+        from .datasets.UKB import dictionary, data
 
     else:
         raise ValueError(f"{args.dataset} is not a recognized dataset. Check either the DATASETS list or if/elif section in cli.py's main() function.")
