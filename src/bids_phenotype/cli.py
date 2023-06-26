@@ -31,7 +31,7 @@ DATASETS = [
     'ABIDE_I',
     'ABIDE_II',
     'HBN',
-    'HCP',
+    'HCP_1200',
     'NKI',
     'PNC',
     'UKB'
@@ -150,20 +150,20 @@ def main():
     elif args.dataset == 'HBN':
         from datasets.HBN import dictionary, data
 
-    # elif args.dataset == 'HCP':
-    #     from datasets.HCP import dictionary, data
+    elif args.dataset == 'HCP_1200':
+        from datasets.HCP_1200 import dictionary, data
 
     # elif args.dataset == 'NKI':
     #     from datasets.NKI import dictionary, data
 
-    # elif args.dataset == 'PNC':
-    #     from datasets.PNC import dictionary, data
+    elif args.dataset == 'PNC':
+        from datasets.PNC import dictionary, data
 
-    # elif args.dataset == 'UKB':
-    #     from datasets.UKB import dictionary, data
+    elif args.dataset == 'UKB':
+        from datasets.UKB import dictionary, data
 
     else:
-        raise ValueError(f"How did {args.dataset} happen?")
+        raise ValueError(f"{args.dataset} is not a recognized dataset. Check either the DATASETS list or if/elif section in cli.py's main() function.")
 
 
     if args.dictionary or args.both:
