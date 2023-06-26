@@ -153,8 +153,8 @@ def main():
     elif args.dataset == 'HCP_1200':
         from datasets.HCP_1200 import dictionary, data
 
-    # elif args.dataset == 'NKI':
-    #     from datasets.NKI import dictionary, data
+    elif args.dataset == 'NKI':
+        from datasets.NKI import dictionary, data
 
     elif args.dataset == 'PNC':
         from datasets.PNC import dictionary, data
