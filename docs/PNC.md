@@ -1,4 +1,4 @@
-# Philadelphia Neurodevelopmental Cohort
+# Philadelphia Neurodevelopmental Cohort (PNC)
 
 From the [Database of Genotypes and Phenotypes (dbGaP) page on Neurodevelopmental Genomics: Trajectories of Complex Phenotypes](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000607.v3.p2):
 
