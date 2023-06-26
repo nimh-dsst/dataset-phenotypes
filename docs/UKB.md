@@ -1,4 +1,4 @@
-# UK Biobank
+# United Kingdom Biobank (UKB)
 
 From the [UK Biobank "About Us" page](https://www.ukbiobank.ac.uk/learn-more-about-uk-biobank/about-us):
 
