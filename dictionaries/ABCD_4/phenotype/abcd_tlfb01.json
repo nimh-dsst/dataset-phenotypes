@@ -1,0 +1,1843 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_assess_date": {
+        "Description": "Assessment Date",
+        "DataType": "Date"
+    },
+    "tlfb_cal_scr_num_events": {
+        "Description": "Number of recorded substance used events. Multiple usages per day for a substance are pooled together.",
+        "DataType": "Integer"
+    },
+    "tlfb_cal_scr_num_bde": {
+        "Description": "Number of binge drinking episodes (use per event >= 4 for female, >= 5 for male)",
+        "DataType": "Integer"
+    },
+    "tlfb_cal_scr_tot_bde": {
+        "Description": "Binge drinking episodes total use",
+        "DataType": "Integer"
+    },
+    "tlfb_cal_scr_drinksperbinge": {
+        "Description": "Binge drinks per binge occasion",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_avg": {
+        "Description": "Average standard drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_ud": {
+        "Description": "Number of alcohol use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_td": {
+        "Description": "Total dose standard drinks",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_max": {
+        "Description": "Max dose standard drinks",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_wu": {
+        "Description": "Number of standard drinks weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_wt": {
+        "Description": "Standard drinks weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_lud": {
+        "Description": "Alcohol drinks last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_opiaterx_avg": {
+        "Description": "Average pain relievers on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_ud": {
+        "Description": "Number of pain relievers use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_td": {
+        "Description": "Total dose pain relievers",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_max": {
+        "Description": "Max dose pain relievers",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_wu": {
+        "Description": "Number of pain relievers weekend use",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_wt": {
+        "Description": "Pain relievers weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_lud": {
+        "Description": "Pain relievers last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_blunt_avg": {
+        "Description": "Average blunts on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_ud": {
+        "Description": "Number of blunts use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_td": {
+        "Description": "Total dose blunts",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_max": {
+        "Description": "Max dose blunts",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_wu": {
+        "Description": "Number of blunts weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_wt": {
+        "Description": "Blunts weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_lud": {
+        "Description": "Blunt last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_ket_avg": {
+        "Description": "Average Ketamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_ud": {
+        "Description": "Number of Ketamine use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_td": {
+        "Description": "Total dose Ketamine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_max": {
+        "Description": "Max dose Ketamine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_wu": {
+        "Description": "Number of Ketamine weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_wt": {
+        "Description": "Ketamine weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_lud": {
+        "Description": "Ketamine last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_nicrx_avg": {
+        "Description": "Average nicotine replacements on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_ud": {
+        "Description": "Number of nicotine replacement use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_td": {
+        "Description": "Total dose nicotine replacements",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_max": {
+        "Description": "Max dose nicotine replacements",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_wu": {
+        "Description": "Number of nicotine replacements weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_wt": {
+        "Description": "Nicotine replacements weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_lud": {
+        "Description": "Nicotine replacements last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_bthslt_avg": {
+        "Description": "Average cathiones on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_ud": {
+        "Description": "Number of cathiones use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_td": {
+        "Description": "Total dose cathiones",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_max": {
+        "Description": "Max dose cathiones",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_wu": {
+        "Description": "Number of cathiones weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_wt": {
+        "Description": "Cathiones weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_lud": {
+        "Description": "Cathiones last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_fake_avg": {
+        "Description": "Average bittamugen on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_ud": {
+        "Description": "Number of bittamugen use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_td": {
+        "Description": "Total dose bittamugen",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_max": {
+        "Description": "Max dose bittamugen",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_wu": {
+        "Description": "Number of bittamugen weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_wt": {
+        "Description": "Bittamugen weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_lud": {
+        "Description": "Bittamugen last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_roid_avg": {
+        "Description": "Average steroids on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_ud": {
+        "Description": "Number of steroids use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_td": {
+        "Description": "Total dose steroids",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_max": {
+        "Description": "Max dose steroids",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_wu": {
+        "Description": "Number of steroids weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_wt": {
+        "Description": "Steroids weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_lud": {
+        "Description": "Steroids last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_inhal_avg": {
+        "Description": "Average inhalants on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_ud": {
+        "Description": "Number of inhalants use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_td": {
+        "Description": "Total dose inhalants",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_max": {
+        "Description": "Max dose inhalants",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_wu": {
+        "Description": "Number of inhalants weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_wt": {
+        "Description": "Inhalants weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_lud": {
+        "Description": "Inhalants last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_shroom_avg": {
+        "Description": "Average magic mushrooms on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_ud": {
+        "Description": "Number of magic mushrooms use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_td": {
+        "Description": "Total dose magic mushrooms",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_max": {
+        "Description": "Max dose magic mushrooms",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_wu": {
+        "Description": "Number of magic mushrooms weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_wt": {
+        "Description": "Magic mushrooms weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_lud": {
+        "Description": "Magic mushrooms last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_sal_avg": {
+        "Description": "Average salvia on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_ud": {
+        "Description": "Number of salvia use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_td": {
+        "Description": "Total dose salvia",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_max": {
+        "Description": "Max dose salvia",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_wu": {
+        "Description": "Number of salvia weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_wt": {
+        "Description": "salvia weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_lud": {
+        "Description": "salvia last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_cg_avg": {
+        "Description": "Average cigars on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_ud": {
+        "Description": "Number of cigars use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_td": {
+        "Description": "Total dose cigars",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_max": {
+        "Description": "Max dose cigars",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_wu": {
+        "Description": "Number of cigars weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_wt": {
+        "Description": "Cigars weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_lud": {
+        "Description": "Cigars last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_pipe_avg": {
+        "Description": "Average pipe tobacco on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_ud": {
+        "Description": "Number of pipe tobacco use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_td": {
+        "Description": "Total dose pipe tobacco",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_max": {
+        "Description": "Max dose pipe tobacco",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_wu": {
+        "Description": "Number of pipe tobacco weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_wt": {
+        "Description": "Pipe tobacco weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_lud": {
+        "Description": "Pipe tobacco last use days",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_dxm_avg": {
+        "Description": "Average cough or cold medicine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_ud": {
+        "Description": "Number of cough or cold medicine use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_td": {
+        "Description": "Total dose cough or cold medicine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_max": {
+        "Description": "Max dose cough or cold medicine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_wu": {
+        "Description": "Number of cough or cold medicine weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_wt": {
+        "Description": "Cough or cold medicine weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_lud": {
+        "Description": "Cough and cold medicine last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_coc_avg": {
+        "Description": "Average cocaine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_ud": {
+        "Description": "Number of cocaine use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_td": {
+        "Description": "Total dose cocaine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_max": {
+        "Description": "Max dose cocaine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_wu": {
+        "Description": "Number of cocaine weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_wt": {
+        "Description": "Cocaine weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_lud": {
+        "Description": "Cocaine last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_gbh_avg": {
+        "Description": "Average GBH on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_ud": {
+        "Description": "Number of GBH use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_td": {
+        "Description": "Total dose GBH",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_max": {
+        "Description": "Max dose GBH",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_wu": {
+        "Description": "Number of GBH weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_wt": {
+        "Description": "GBH weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_lud": {
+        "Description": "GBH last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_ecig_avg": {
+        "Description": "Average E-cigarettes on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_ud": {
+        "Description": "Number of E-cigarettes use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_td": {
+        "Description": "Total dose E-cigarettes",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_max": {
+        "Description": "Max dose E-cigarettes",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_wu": {
+        "Description": "Number of E-cigarettes weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_wt": {
+        "Description": "E-cigarettes weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_lud": {
+        "Description": "E-cigarettes last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_mdma_avg": {
+        "Description": "Average Ecstasy on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_ud": {
+        "Description": "Number of ecstasy use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_td": {
+        "Description": "Total dose ecstasy",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_max": {
+        "Description": "Max dose ecstasy",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_wu": {
+        "Description": "Number of ecstasy weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_wt": {
+        "Description": "Ecstasy weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_lud": {
+        "Description": "Ecstasy last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_hall_avg": {
+        "Description": "Average hallucinogens on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_ud": {
+        "Description": "Number of hallucinogens use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_td": {
+        "Description": "Total dose hallucinogens",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_max": {
+        "Description": "Max dose hallucinogens",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_wu": {
+        "Description": "Number of hallucinogens weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_wt": {
+        "Description": "Hallucinogens weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_lud": {
+        "Description": "Hallucinogens last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_opiate_avg": {
+        "Description": "Average heroin on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_ud": {
+        "Description": "Number of heroin use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_td": {
+        "Description": "Total dose heroin",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_max": {
+        "Description": "Max dose heroin",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_wu": {
+        "Description": "Number of heroin weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_wt": {
+        "Description": "Heroin weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_lud": {
+        "Description": "Heroine last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_hooka_avg": {
+        "Description": "Average hookah on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_ud": {
+        "Description": "Number of hookah use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_td": {
+        "Description": "Total dose hookah",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_max": {
+        "Description": "Max dose hookah",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_wu": {
+        "Description": "Number of hookah weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_wt": {
+        "Description": "Hookah weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_lud": {
+        "Description": "Hookah last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_ot_avg": {
+        "Description": "Average other on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_ud": {
+        "Description": "Number of other use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_td": {
+        "Description": "Total dose other",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_max": {
+        "Description": "Max dose other",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_wu": {
+        "Description": "Number of other weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_wt": {
+        "Description": "Other weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_lud": {
+        "Description": "Other last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_smj_avg": {
+        "Description": "Average smoked MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_ud": {
+        "Description": "Number of smoked MJ use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_td": {
+        "Description": "Total dose smoked MJ",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_max": {
+        "Description": "Max dose smoked MJ",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_wu": {
+        "Description": "Number of smoked MJ weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_wt": {
+        "Description": "Smoked MJ weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_lud": {
+        "Description": "Smoked MJ last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_emj_avg": {
+        "Description": "Average edible MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_ud": {
+        "Description": "Number of edible MJ use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_td": {
+        "Description": "Total dose edible MJ",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_max": {
+        "Description": "Max dose edible MJ",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_wu": {
+        "Description": "Number of edible MJ weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_wt": {
+        "Description": "Edible MJ weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_lud": {
+        "Description": "Edible MJ last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_k2_avg": {
+        "Description": "Average synthetic MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_ud": {
+        "Description": "Number of synthetic MJ use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_td": {
+        "Description": "Total dose synthetic MJ",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_max": {
+        "Description": "Max dose synthetic MJ",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_wu": {
+        "Description": "Number of synthetic MJ weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_wt": {
+        "Description": "Synthetic MJ weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_lud": {
+        "Description": "Synthetic MJ last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_dab_avg": {
+        "Description": "Average MJ concentrates on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_ud": {
+        "Description": "Number of MJ concentrates use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_td": {
+        "Description": "Total dose MJ concentrates",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_max": {
+        "Description": "Max dose MJ concentrates",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_wu": {
+        "Description": "Number of MJ concentrates weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_wt": {
+        "Description": "MJ concentrates weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_lud": {
+        "Description": "MJ concentrates last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_mjalc_avg": {
+        "Description": "Average MJ infused alcohol drinks on use days",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_mjalc_ud": {
+        "Description": "Number of MJ infused alcohol drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_td": {
+        "Description": "Total dose MJ infused alcohol drinks",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_max": {
+        "Description": "Max dose MJ infused alcohol drinks",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_wu": {
+        "Description": "Number of MJ infused alcohol drinks weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_wt": {
+        "Description": "MJ infused alcohol drinks weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_lud": {
+        "Description": "MJ infused alcohol drinks last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_mjt_avg": {
+        "Description": "Average MJ tincture on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_ud": {
+        "Description": "Number of MJ tincture use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_td": {
+        "Description": "Total dose MJ tincture",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_max": {
+        "Description": "Max dose MJ tincture",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_wu": {
+        "Description": "Number of MJ tincture weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_wt": {
+        "Description": "MJ tincture weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_lud": {
+        "Description": "MJ tincture last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_stimrx_avg": {
+        "Description": "Average stimulant medications on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_ud": {
+        "Description": "Number of stimulant medication use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_td": {
+        "Description": "Total dose stimulant medications",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_max": {
+        "Description": "Max dose stimulant medications",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_wu": {
+        "Description": "Number of stimulant medications weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_wt": {
+        "Description": "Stimulant medications weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_lud": {
+        "Description": "Stimulant medication last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_meth_avg": {
+        "Description": "Average Methamphetamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_ud": {
+        "Description": "Number of Methamphetamine use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_td": {
+        "Description": "Total dose Methamphetamine",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_max": {
+        "Description": "Max dose Methamphetamines",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_wu": {
+        "Description": "Number of Methamphetamine weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_wt": {
+        "Description": "Methamphetamine weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_lud": {
+        "Description": "Methamphetamine last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_chew_avg": {
+        "Description": "Average tobacco chewed on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_ud": {
+        "Description": "Number of tobacco chewed use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_td": {
+        "Description": "Total dose tobacco chewed",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_max": {
+        "Description": "Max dose tobacco chewed",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_wu": {
+        "Description": "Number of tobacco chewed weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_wt": {
+        "Description": "Tobacco chewed weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_lud": {
+        "Description": "Tobacco chewed last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_cig_avg": {
+        "Description": "Average cigarettes smoked on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_ud": {
+        "Description": "Number of cigarettes smoked use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_td": {
+        "Description": "Total dose tobacco smoked",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_max": {
+        "Description": "Max dose cigarettes",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_wu": {
+        "Description": "Number of cigarettes weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_wt": {
+        "Description": "cigarettes weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_lud": {
+        "Description": "cigarettes last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_sedrx_avg": {
+        "Description": "Average tranquilizers or sedatives on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_ud": {
+        "Description": "Number of tranquilizers or sedatives use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_td": {
+        "Description": "Total dose tranquilizers or sedatives",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_max": {
+        "Description": "Max dose tranquilizers or sedatives",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_wu": {
+        "Description": "Number of tranquilizer weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_wt": {
+        "Description": "Tranquilizer weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_lud": {
+        "Description": "Tranquilizer last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_co_mjsd_drinks": {
+        "Description": "Average marijuana and standard drinks co-use drinks",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_co_mjsd_mj": {
+        "Description": "Average marijuana and standard drinks co-use marijuana (grams)",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_co_mjsd_num": {
+        "Description": "Number of co-use days of Marijuana and Alcohol",
+        "DataType": "Integer"
+    },
+    "tlfb_cal_scr_co_tomj_to": {
+        "Description": "Average tobacco and marijuana co-use tobacco occasions",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_co_tomj_mj": {
+        "Description": "Average tobacco and canabis co-use canabis occasions",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_co_tomj_num": {
+        "Description": "Number of co-use days of Tobacco and Canabis",
+        "DataType": "Integer"
+    },
+    "tlfb_cal_scr_co_toal_to": {
+        "Description": "Average Tobacco and Alcohol co-use Tobacco occasions",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_co_toal_al": {
+        "Description": "Average Tobacco and Alcohol co-use Alcohol occasions",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_co_toal_num": {
+        "Description": "Number of co-use days of Tobacco and Alcohol",
+        "DataType": "Integer"
+    },
+    "su_tlfb_cal_scr_nic_days_yr": {
+        "Description": "Combined count of total days of any type of nicotine use (cigarettes, ENDS, smokeless tobacco, cigars, hookah, pipe, nic replacement) in last year (detailed TLFB period= typically 9-12 months)",
+        "DataType": "Float"
+    },
+    "su_tlfb_cal_scr_mj_days_yr": {
+        "Description": "Combined count of total days of any type of cannabis use (smoked/vaped MJ flower, blunts, edibles, smoked/vaped concentrates, MJ alcohol drinks, MJ tinctures, synthetic MJ) in last year (detailed TLFB period= typically 9-12 months)",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_avg": {
+        "Description": "Average CBD on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_ud": {
+        "Description": "Number of CBD use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_td": {
+        "Description": "Total dose CBD",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_max": {
+        "Description": "Max dose CBD",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_wu": {
+        "Description": "Number of CBD weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_wt": {
+        "Description": "CBD weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_lud": {
+        "Description": "CBD last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_coc_avg_est": {
+        "Description": "Average standard units on use days, estimated period cocaine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_lud_est": {
+        "Description": "Last day used, estimated period pain relievers on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_lud_est": {
+        "Description": "Last day used, estimated period other on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_lud_est": {
+        "Description": "Last day used, estimated period pipe tobacco on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_lud_est": {
+        "Description": "Last day used, estimated period steroids on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_lud_est": {
+        "Description": "Last day used, estimated period saliva on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_lud_est": {
+        "Description": "Last day used, estimated period tranquilizers or sedatives on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_lud_est": {
+        "Description": "Last day used, estimated period magic mushrooms on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_lud_est": {
+        "Description": "Last day used, estimated period smoked MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_lud_est": {
+        "Description": "Last day used, estimated period stimulant medications on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_lud_est": {
+        "Description": "Last day used, estimated period Vaped MJ Flower on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_avg_est": {
+        "Description": "Average standard units on use days, estimated period MJ concentrates on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_lud_est": {
+        "Description": "Last day used, estimated period Vaped MJ oil on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_td_cum": {
+        "Description": "Combined count of total standard units of alcohol during entire cumulative period between sessions (detailed plus estimated TLFB periods)",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_td_cum": {
+        "Description": "'Combined count of total standard units of blunt during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_td_cum": {
+        "Description": "'Combined count of total standard units of bthslt during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_td_cum": {
+        "Description": "'Combined count of total standard units of cbd during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_td_cum": {
+        "Description": "'Combined count of total standard units of cg during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_td_cum": {
+        "Description": "'Combined count of total standard units of chew during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_td_cum": {
+        "Description": "'Combined count of total standard units of cig during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_td_cum": {
+        "Description": "'Combined count of total standard units of coc during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_td_cum": {
+        "Description": "'Combined count of total standard units of dab during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_avg_est": {
+        "Description": "Average standard units on use days, estimated period cough or cold medicine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_td_cum": {
+        "Description": "'Combined count of total standard units of dxm during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_td_cum": {
+        "Description": "'Combined count of total standard units of ecig during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_td_cum": {
+        "Description": "'Combined count of total standard units of emj during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_td_cum": {
+        "Description": "'Combined count of total standard units of fake during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_td_cum": {
+        "Description": "'Combined count of total standard units of gbh during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_td_cum": {
+        "Description": "'Combined count of total standard units of hall during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_td_cum": {
+        "Description": "'Combined count of total standard units of hooka during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_td_cum": {
+        "Description": "'Combined count of total standard units of inhal during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_td_cum": {
+        "Description": "'Combined count of total standard units of k2 during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_td_cum": {
+        "Description": "'Combined count of total standard units of ket during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_avg_est": {
+        "Description": "Average standard units on use days, estimated period E-cigarettes on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_td_cum": {
+        "Description": "'Combined count of total standard units of mdma during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_td_cum": {
+        "Description": "'Combined count of total standard units of meth during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_td_cum": {
+        "Description": "'Combined count of total standard units of mjalc during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_td_cum": {
+        "Description": "'Combined count of total standard units of mjt during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_td_cum": {
+        "Description": "'Combined count of total standard units of nicrx during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_td_cum": {
+        "Description": "'Combined count of total standard units of opiate during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_td_cum": {
+        "Description": "'Combined count of total standard units of opiaterx during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_td_cum": {
+        "Description": "'Combined count of total standard units of ot during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_td_cum": {
+        "Description": "'Combined count of total standard units of pipe during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_td_cum": {
+        "Description": "'Combined count of total standard units of roid during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_avg_est": {
+        "Description": "Average standard units on use days, estimated period edible MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_td_cum": {
+        "Description": "'Combined count of total standard units of sal during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_td_cum": {
+        "Description": "'Combined count of total standard units of sedrx during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_td_cum": {
+        "Description": "'Combined count of total standard units of shroom during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_td_cum": {
+        "Description": "'Combined count of total standard units of smj during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_td_cum": {
+        "Description": "'Combined count of total standard units of stimrx during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_td_cum": {
+        "Description": "'Combined count of total standard units of vmjf during entire cumulative period between sessions (detailed plus estimated TLFB periods)'",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_ud_cum": {
+        "Description": "Combined count of total days of alc_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_ud_cum": {
+        "Description": "Combined count of total days of blunt_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_ud_cum": {
+        "Description": "Combined count of total days of bthslt_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_ud_cum": {
+        "Description": "Combined count of total days of cbd_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_avg_est": {
+        "Description": "Average standard units on use days, estimated period bittamugen on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_ud_cum": {
+        "Description": "Combined count of total days of cg_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_ud_cum": {
+        "Description": "Combined count of total days of chew_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_ud_cum": {
+        "Description": "Combined count of total days of cig_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_ud_cum": {
+        "Description": "Combined count of total days of coc_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_ud_cum": {
+        "Description": "Combined count of total days of dab_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_ud_cum": {
+        "Description": "Combined count of total days of dxm_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_ud_cum": {
+        "Description": "Combined count of total days of ecig_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_ud_cum": {
+        "Description": "Combined count of total days of emj_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_ud_cum": {
+        "Description": "Combined count of total days of fake_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_ud_cum": {
+        "Description": "Combined count of total days of gbh_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_avg_est": {
+        "Description": "Average standard units on use days, estimated period GBH on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_ud_cum": {
+        "Description": "Combined count of total days of hall_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_ud_cum": {
+        "Description": "Combined count of total days of hooka_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_ud_cum": {
+        "Description": "Combined count of total days of inhal_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_ud_cum": {
+        "Description": "Combined count of total days of k2_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_ud_cum": {
+        "Description": "Combined count of total days of ket_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_ud_cum": {
+        "Description": "Combined count of total days of mdma_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_ud_cum": {
+        "Description": "Combined count of total days of meth_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_ud_cum": {
+        "Description": "Combined count of total days of mjalc_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_ud_cum": {
+        "Description": "Combined count of total days of mjt_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_ud_cum": {
+        "Description": "Combined count of total days of nicrx_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_avg_est": {
+        "Description": "Average standard units on use days, estimated period hallucinogens on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_ud_cum": {
+        "Description": "Combined count of total days of opiate_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_ud_cum": {
+        "Description": "Combined count of total days of opiaterx_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_ud_cum": {
+        "Description": "Combined count of total days of ot_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_ud_cum": {
+        "Description": "Combined count of total days of pipe_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_ud_cum": {
+        "Description": "Combined count of total days of roid_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_ud_cum": {
+        "Description": "Combined count of total days of sal_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_ud_cum": {
+        "Description": "Combined count of total days of sedrx_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_ud_cum": {
+        "Description": "Combined count of total days of shroom_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_ud_cum": {
+        "Description": "Combined count of total days of smj_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_ud_cum": {
+        "Description": "Combined count of total days of stimrx_ud use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_avg_est": {
+        "Description": "Average standard units on use days, estimated period hookah on use days",
+        "DataType": "Float"
+    },
+    "su_tlfb_cal_scr_nic_days_cum": {
+        "Description": "Combined count of total days of any type of nicotine use during entire cumulative period between sessions (detailed plus estimated TLFB periods). ",
+        "DataType": "Float"
+    },
+    "su_tlfb_cal_scr_mj_days_cum": {
+        "Description": "Combined count of total days of any type of marijuana (excluding CBD) use during entire cumulative period between sessions (detailed plus estimated TLFB periods).",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_tot_su_ud": {
+        "Description": "Combined count of total use days across all substances combined in last year (detailed TLFB period= typically 9-12 months)",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_avg_est": {
+        "Description": "Average standard units on use days, estimated period inhalants on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_avg_est": {
+        "Description": "Average standard units on use days, estimated period fake MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_avg_est": {
+        "Description": "Average standard units on use days, estimated period Ketamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_avg_est": {
+        "Description": "Average standard units on use days, estimated period Ecstasy on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_avg_est": {
+        "Description": "Average standard units on use days, estimated period Methamphetamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_avg_est": {
+        "Description": "Average standard units on use days, estimated period MJ infused alcohol drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_avg_est": {
+        "Description": "Average standard units on use days, estimated period MJ tincture on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_avg_est": {
+        "Description": "Average standard units on use days, estimated period nicotine replacements on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_avg_est": {
+        "Description": "Average standard units on use days, estimated period heroin on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_avg_est": {
+        "Description": "Average standard units on use days, estimated period pain relievers on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_avg_est": {
+        "Description": "Average standard units on use days, estimated period other on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_avg_est": {
+        "Description": "Average standard units on use days, estimated period standard drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_avg_est": {
+        "Description": "Average standard units on use days, estimated period pipe tobacco on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_avg_est": {
+        "Description": "Average standard units on use days, estimated period steroids on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_avg_est": {
+        "Description": "Average standard units on use days, estimated period saliva on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_avg_est": {
+        "Description": "Average standard units on use days, estimated period tranquilizers or sedatives on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_avg_est": {
+        "Description": "Average standard units on use days, estimated period magic mushrooms on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_avg_est": {
+        "Description": "Average standard units on use days, estimated period smoked MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_avg_est": {
+        "Description": "Average standard units on use days, estimated period stimulant medications on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_avg_est": {
+        "Description": "Average standard units on use days, estimated period Vaped MJ Flower on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_avg_est": {
+        "Description": "Average standard units on use days, estimated period Vaped MJ oil on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_ud_est": {
+        "Description": "Number of use days, estimated period standard drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_avg_est": {
+        "Description": "Average standard units on use days, estimated period blunts on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_ud_est": {
+        "Description": "Number of use days, estimated period blunts on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_ud_est": {
+        "Description": "Number of use days, estimated period cathiones on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_ud_est": {
+        "Description": "Number of use days, estimated period CBD on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_ud_est": {
+        "Description": "Number of use days, estimated period cigars on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_ud_est": {
+        "Description": "Number of use days, estimated period tobacco chewed on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_ud_est": {
+        "Description": "Number of use days, estimated period tobacco smoked on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_ud_est": {
+        "Description": "Number of use days, estimated period cocaine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_ud_est": {
+        "Description": "Number of use days, estimated period MJ concentrates on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_ud_est": {
+        "Description": "Number of use days, estimated period cough or cold medicine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_ud_est": {
+        "Description": "Number of use days, estimated period E-cigarettes on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_avg_est": {
+        "Description": "Average standard units on use days, estimated period cathiones on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_ud_est": {
+        "Description": "Number of use days, estimated period edible MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_ud_est": {
+        "Description": "Number of use days, estimated period bittamugen on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_ud_est": {
+        "Description": "Number of use days, estimated period GBH on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_ud_est": {
+        "Description": "Number of use days, estimated period hallucinogens on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_ud_est": {
+        "Description": "Number of use days, estimated period hookah on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_ud_est": {
+        "Description": "Number of use days, estimated period inhalants on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_ud_est": {
+        "Description": "Number of use days, estimated period fake MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_ud_est": {
+        "Description": "Number of use days, estimated period Ketamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_ud_est": {
+        "Description": "Number of use days, estimated period Ecstasy on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_ud_est": {
+        "Description": "Number of use days, estimated period Methamphetamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_avg_est": {
+        "Description": "Average standard units on use days, estimated period CBD on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_ud_est": {
+        "Description": "Number of use days, estimated period MJ infused alcohol drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_ud_est": {
+        "Description": "Number of use days, estimated period MJ tincture on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_ud_est": {
+        "Description": "Number of use days, estimated period nicotine replacements on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_ud_est": {
+        "Description": "Number of use days, estimated period heroin on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiaterx_ud_est": {
+        "Description": "Number of use days, estimated period pain relievers on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ot_ud_est": {
+        "Description": "Number of use days, estimated period other on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_pipe_ud_est": {
+        "Description": "Number of use days, estimated period pipe tobacco on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_roid_ud_est": {
+        "Description": "Number of use days, estimated period steroids on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sal_ud_est": {
+        "Description": "Number of use days, estimated period saliva on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_sedrx_ud_est": {
+        "Description": "Number of use days, estimated period tranquilizers or sedatives on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_avg_est": {
+        "Description": "Average standard units on use days, estimated period cigars on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_shroom_ud_est": {
+        "Description": "Number of use days, estimated period magic mushrooms on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_smj_ud_est": {
+        "Description": "Number of use days, estimated period smoked MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_stimrx_ud_est": {
+        "Description": "Number of use days, estimated period stimulant medications on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_ud_est": {
+        "Description": "Number of use days, estimated period Vaped MJ Flower on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_ud_est": {
+        "Description": "Number of use days, estimated period Vaped MJ oil on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_alc_lud_est": {
+        "Description": "Last day used, estimated period standard drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_blunt_lud_est": {
+        "Description": "Last day used, estimated period blunts on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_bthslt_lud_est": {
+        "Description": "Last day used, estimated period cathiones on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cbd_lud_est": {
+        "Description": "Last day used, estimated period CBD on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cg_lud_est": {
+        "Description": "Last day used, estimated period cigars on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_avg_est": {
+        "Description": "Average standard units on use days, estimated period tobacco chewed on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_chew_lud_est": {
+        "Description": "Last day used, estimated period tobacco chewed on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_lud_est": {
+        "Description": "Last day used, estimated period tobacco smoked on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_coc_lud_est": {
+        "Description": "Last day used, estimated period cocaine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dab_lud_est": {
+        "Description": "Last day used, estimated period MJ concentrates on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_dxm_lud_est": {
+        "Description": "Last day used, estimated period cough or cold medicine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ecig_lud_est": {
+        "Description": "Last day used, estimated period E-cigarettes on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_emj_lud_est": {
+        "Description": "Last day used, estimated period edible MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_fake_lud_est": {
+        "Description": "Last day used, estimated period bittamugen on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_gbh_lud_est": {
+        "Description": "Last day used, estimated period GBH on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hall_lud_est": {
+        "Description": "Last day used, estimated period hallucinogens on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_cig_avg_est": {
+        "Description": "Average standard units on use days, estimated period tobacco smoked on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_hooka_lud_est": {
+        "Description": "Last day used, estimated period hookah on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_inhal_lud_est": {
+        "Description": "Last day used, estimated period inhalants on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_k2_lud_est": {
+        "Description": "Last day used, estimated period fake MJ on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_ket_lud_est": {
+        "Description": "Last day used, estimated period Ketamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mdma_lud_est": {
+        "Description": "Last day used, estimated period Ecstasy on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_meth_lud_est": {
+        "Description": "Last day used, estimated period Methamphetamine on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjalc_lud_est": {
+        "Description": "Last day used, estimated period MJ infused alcohol drinks on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_mjt_lud_est": {
+        "Description": "Last day used, estimated period MJ tincture on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_nicrx_lud_est": {
+        "Description": "Last day used, estimated period nicotine replacements on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_opiate_lud_est": {
+        "Description": "Last day used, estimated period heroin on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_td": {
+        "Description": "Total dose Vaped MJ oil",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_max": {
+        "Description": "Max dose Vaped MJ oil",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_wu": {
+        "Description": "Number of Vaped MJ oil weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_ud": {
+        "Description": "Number of Vaped MJ oil  use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_wt": {
+        "Description": "Vaped MJ oil weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_lud": {
+        "Description": "Vaped MJ oil last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_vmjf_ud": {
+        "Description": "Vaped MJ Flower on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjo_ud_cum": {
+        "Description": "Combined Number of Vaped MJ oil use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_ud_cum": {
+        "Description": "Combined Vaped MJ Flower on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_wt": {
+        "Description": "Vaped MJ Flower weekend use total",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_avg": {
+        "Description": "Average Vaped MJ Flower on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_td": {
+        "Description": "Total dose Vaped MJ Flower",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_max": {
+        "Description": "Max dose Vaped MJ Flower",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_wu": {
+        "Description": "Number of Vaped MJ Flower weekend use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_vmjf_lud": {
+        "Description": "Vaped MJ Flower last use day",
+        "DataType": "String"
+    },
+    "tlfb_cal_scr_vmjo_avg": {
+        "Description": "Average Vaped MJ oil on use days",
+        "DataType": "Float"
+    },
+    "tlfb_cal_scr_tot_su_ud_cum": {
+        "Description": "Combined count of total use days across all substances combined since last session (detailed plus estimated TLFB period)",
+        "DataType": "Float"
+    }
+}

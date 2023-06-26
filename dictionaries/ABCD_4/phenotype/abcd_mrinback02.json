@@ -1,0 +1,2373 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_nback_beh_visitid": {
+        "Description": "Visit Name",
+        "DataType": "String"
+    },
+    "tfmri_nback_beh_switchflag": {
+        "Description": "Box was switched | 0= no switch; 1= switch",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "no switch",
+            "1": "switch"
+        }
+    },
+    "tfmri_nback_beh_performflag": {
+        "Description": "Whether the participant had an acceptable performance in the task; tfmri_nback_all_beh_correct.2.back_rate >= 0.6 & tfmri_nback_all_beh_correct.0.back_rate >= 0.6 | 0= not acceptable; 1= acceptable",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "not acceptable",
+            "1": "acceptable"
+        }
+    },
+    "tfmri_nback_beh_nruns": {
+        "Description": "Number of valid runs in the file",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_total_nt": {
+        "Description": "Total number of trials",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_total_nt": {
+        "Description": "Total number of trials in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_total_nt": {
+        "Description": "Total number of trials in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_ctotal_nt": {
+        "Description": "Total number of correct responses",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_ctotal_rate": {
+        "Description": "The rate of all correct responses",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_ctotal_mrt": {
+        "Description": "Mean reaction time for all correct responses",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_ctotal_stdrt": {
+        "Description": "Standard deviation of the reaction time reaction time for all correct responses",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2b_nt": {
+        "Description": "Number of times individual 2 back stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_2b_nt": {
+        "Description": "Number of times individual 2 back stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_2b_nt": {
+        "Description": "Number of times individual 2 back stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2b_nt": {
+        "Description": "Number of times individual 2 back stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2b_rate": {
+        "Description": "The rate of correct responses to 2 back stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2b_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2b_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2b_nt": {
+        "Description": "Number of times individual 2 back stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2b_rate": {
+        "Description": "The rate of correct responses to 2 back stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2b_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2b_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2b_nt": {
+        "Description": "Number of times individual 2 back stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2b_rate": {
+        "Description": "The rate of correct responses to 2 back stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2b_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2b_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_pf_nt": {
+        "Description": "Number of times individual positive face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_pf_nt": {
+        "Description": "Number of times individual positive face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_pf_nt": {
+        "Description": "Number of times individual positive face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cpf_nt": {
+        "Description": "Number of times individual positive face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cpf_rate": {
+        "Description": "The rate of correct responses to positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cpf_mrt": {
+        "Description": "Average reaction time for all correct responses to positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cpf_nt": {
+        "Description": "Number of times individual positive face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_cpf_rate": {
+        "Description": "The rate of correct responses to positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cpf_mrt": {
+        "Description": "Average reaction time for all correct responses to positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cpf_nt": {
+        "Description": "Number of times individual positive face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_cpf_rate": {
+        "Description": "The rate of correct responses to positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cpf_mrt": {
+        "Description": "Average reaction time for all correct responses to positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpf_nt": {
+        "Description": "Number of times individual 2 back with positive face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_2bpf_nt": {
+        "Description": "Number of times individual 2 back with positive face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_2bpf_nt": {
+        "Description": "Number of times individual 2 back with positive face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpf_nt": {
+        "Description": "Number of times individual 2 back with positive face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpf_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpf_nt": {
+        "Description": "Number of times individual 2 back with positive face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpf_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpf_nt": {
+        "Description": "Number of times individual 2 back with positive face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpf_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpft_nt": {
+        "Description": "Number of times individual 2 back with positive face target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpft_nt": {
+        "Description": "Number of times individual 2 back with positive face target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpft_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bpft_nt": {
+        "Description": "Number of times individual 2 back with positive face target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpft_nt": {
+        "Description": "Number of times individual 2 back with positive face target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpft_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bpft_nt": {
+        "Description": "Number of times individual 2 back with positive face target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpft_nt": {
+        "Description": "Number of times individual 2 back with positive face target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpft_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpfl_nt": {
+        "Description": "Number of times individual 2 back with positive face lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpfl_nt": {
+        "Description": "Number of times individual 2 back with positive face lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpfl_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bpfl_nt": {
+        "Description": "Number of times individual 2 back with positive face lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpfl_nt": {
+        "Description": "Number of times individual 2 back with positive face lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpfl_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bpfl_nt": {
+        "Description": "Number of times individual 2 back with positive face lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpfl_nt": {
+        "Description": "Number of times individual 2 back with positive face lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpfl_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpfnl_nt": {
+        "Description": "Number of times individual 2 back with positive face nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpfnl_nt": {
+        "Description": "Number of times individual 2 back with positive face nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bpfnl_nt": {
+        "Description": "Number of times individual 2 back with positive face nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpfnl_nt": {
+        "Description": "Number of times individual 2 back with positive face nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bpfnl_nt": {
+        "Description": "Number of times individual 2 back with positive face nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpfnl_nt": {
+        "Description": "Number of times individual 2 back with positive face nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with positive face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with positive face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with positive face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_nf_nt": {
+        "Description": "Number of times individual neutral face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_nf_nt": {
+        "Description": "Number of times individual neutral face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_nf_nt": {
+        "Description": "Number of times individual neutral face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cnf_nt": {
+        "Description": "Number of times individual neutral face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cnf_rate": {
+        "Description": "The rate of correct responses to neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cnf_mrt": {
+        "Description": "Average reaction time for all correct responses to neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cnf_nt": {
+        "Description": "Number of times individual neutral face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_cnf_rate": {
+        "Description": "The rate of correct responses to neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cnf_mrt": {
+        "Description": "Average reaction time for all correct responses to neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cnf_nt": {
+        "Description": "Number of times individual neutral face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_cnf_rate": {
+        "Description": "The rate of correct responses to neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cnf_mrt": {
+        "Description": "Average reaction time for all correct responses to neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bnf_nt": {
+        "Description": "Number of times individual 2 back with neutral face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_2bnf_nt": {
+        "Description": "Number of times individual 2 back with neutral face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_2bnf_nt": {
+        "Description": "Number of times individual 2 back with neutral face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnf_nt": {
+        "Description": "Number of times individual 2 back with neutral face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnf_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnf_nt": {
+        "Description": "Number of times individual 2 back with neutral face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnf_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnf_nt": {
+        "Description": "Number of times individual 2 back with neutral face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnf_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bnft_nt": {
+        "Description": "Number of times individual 2 back with neutral face target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnft_nt": {
+        "Description": "Number of times individual 2 back with neutral face target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnft_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bnft_nt": {
+        "Description": "Number of times individual 2 back with neutral face target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnft_nt": {
+        "Description": "Number of times individual 2 back with neutral face target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnft_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bnft_nt": {
+        "Description": "Number of times individual 2 back with neutral face target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnft_nt": {
+        "Description": "Number of times individual 2 back with neutral face target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnft_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bnfl_nt": {
+        "Description": "Number of times individual 2 back with neutral face lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnfl_nt": {
+        "Description": "Number of times individual 2 back with neutral face lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnfl_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bnfl_nt": {
+        "Description": "Number of times individual 2 back with neutral face lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnfl_nt": {
+        "Description": "Number of times individual 2 back with neutral face lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnfl_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bnfl_nt": {
+        "Description": "Number of times individual 2 back with neutral face lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnfl_nt": {
+        "Description": "Number of times individual 2 back with neutral face lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnfl_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bnfnl_nt": {
+        "Description": "Number of times individual 2 back with neutral face nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnfnl_nt": {
+        "Description": "Number of times individual 2 back with neutral face nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bnfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bnfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bnfnl_nt": {
+        "Description": "Number of times individual 2 back with neutral face nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnfnl_nt": {
+        "Description": "Number of times individual 2 back with neutral face nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bnfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bnfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bnfnl_nt": {
+        "Description": "Number of times individual 2 back with neutral face nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnfnl_nt": {
+        "Description": "Number of times individual 2 back with neutral face nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bnfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with neutral face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with neutral face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bnfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with neutral face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_ngf_nt": {
+        "Description": "Number of times individual negative face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_ngf_nt": {
+        "Description": "Number of times individual negative face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_ngf_nt": {
+        "Description": "Number of times individual negative face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cngf_nt": {
+        "Description": "Number of times individual negative face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cngf_rate": {
+        "Description": "The rate of correct responses to negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cngf_mrt": {
+        "Description": "Average reaction time for all correct responses to negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cngf_nt": {
+        "Description": "Number of times individual negative face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_cngf_rate": {
+        "Description": "The rate of correct responses to negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cngf_mrt": {
+        "Description": "Average reaction time for all correct responses to negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cngf_nt": {
+        "Description": "Number of times individual negative face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_cngf_rate": {
+        "Description": "The rate of correct responses to negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cngf_mrt": {
+        "Description": "Average reaction time for all correct responses to negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bngf_nt": {
+        "Description": "Number of times individual 2 back with negative face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_2bngf_nt": {
+        "Description": "Number of times individual 2 back with negative face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_2bngf_nt": {
+        "Description": "Number of times individual 2 back with negative face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngf_nt": {
+        "Description": "Number of times individual 2 back with negative face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngf_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngf_nt": {
+        "Description": "Number of times individual 2 back with negative face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngf_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngf_nt": {
+        "Description": "Number of times individual 2 back with negative face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngf_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngf_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bngft_nt": {
+        "Description": "Number of times individual 2 back with negative face target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngft_nt": {
+        "Description": "Number of times individual 2 back with negative face target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngft_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bngft_nt": {
+        "Description": "Number of times individual 2 back with negative face target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngft_nt": {
+        "Description": "Number of times individual 2 back with negative face target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngft_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bngft_nt": {
+        "Description": "Number of times individual 2 back with negative face target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngft_nt": {
+        "Description": "Number of times individual 2 back with negative face target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngft_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngft_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bngfl_nt": {
+        "Description": "Number of times individual 2 back with negative face lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngfl_nt": {
+        "Description": "Number of times individual 2 back with negative face lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngfl_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bngfl_nt": {
+        "Description": "Number of times individual 2 back with negative face lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngfl_nt": {
+        "Description": "Number of times individual 2 back with negative face lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngfl_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bngfl_nt": {
+        "Description": "Number of times individual 2 back with negative face lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngfl_nt": {
+        "Description": "Number of times individual 2 back with negative face lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngfl_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bngfnl_nt": {
+        "Description": "Number of times individual 2 back with negative face nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngfnl_nt": {
+        "Description": "Number of times individual 2 back with negative face nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bngfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bngfnl_stt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bngfnl_nt": {
+        "Description": "Number of times individual 2 back with negative face nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngfnl_nt": {
+        "Description": "Number of times individual 2 back with negative face nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bngfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bngfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bngfnl_nt": {
+        "Description": "Number of times individual 2 back with negative face nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngfnl_nt": {
+        "Description": "Number of times individual 2 back with negative face nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bngfnl_rate": {
+        "Description": "The rate of correct responses to 2 back with negative face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with negative face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bngfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with negative face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_place_nt": {
+        "Description": "Number of times individual place stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_place_nt": {
+        "Description": "Number of times individual place stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_place_nt": {
+        "Description": "Number of times individual place stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cplace_nt": {
+        "Description": "Number of times individual place stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_cplace_rate": {
+        "Description": "The rate of correct responses to place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cplace_mrt": {
+        "Description": "Average reaction time for all correct responses to place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_cplace_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cplace_nt": {
+        "Description": "Number of times individual place stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_cplace_rate": {
+        "Description": "The rate of correct responses to place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cplace_mrt": {
+        "Description": "Average reaction time for all correct responses to place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_cplace_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cplace_nt": {
+        "Description": "Number of times individual place stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_cplace_rate": {
+        "Description": "The rate of correct responses to place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cplace_mrt": {
+        "Description": "Average reaction time for all correct responses to place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_cplace_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bp_nt": {
+        "Description": "Number of times individual 2 back with place stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_2bp_nt": {
+        "Description": "Number of times individual 2 back with place stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_2bp_nt": {
+        "Description": "Number of times individual 2 back with place stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bp_nt": {
+        "Description": "Number of times individual 2 back with place stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bp_rate": {
+        "Description": "The rate of correct responses to 2 back with place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bp_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bp_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bp_nt": {
+        "Description": "Number of times individual 2 back with place stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bp_rate": {
+        "Description": "The rate of correct responses to 2 back with place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bp_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bp_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bp_nt": {
+        "Description": "Number of times individual 2 back with place stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bp_rate": {
+        "Description": "The rate of correct responses to 2 back with place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bp_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bp_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpt_nt": {
+        "Description": "Number of times individual 2 back with place target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpt_nt": {
+        "Description": "Number of times individual 2 back with place target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpt_rate": {
+        "Description": "The rate of correct responses to 2 back with place target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpt_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpt_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bpt_nt": {
+        "Description": "Number of times individual 2 back with place target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpt_nt": {
+        "Description": "Number of times individual 2 back with place target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpt_rate": {
+        "Description": "The rate of correct responses to 2 back with place target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpt_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpt_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bpt_nt": {
+        "Description": "Number of times individual 2 back with place target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpt_nt": {
+        "Description": "Number of times individual 2 back with place target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpt_rate": {
+        "Description": "The rate of correct responses to 2 back with place target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpt_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpt_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpl_nt": {
+        "Description": "Number of times individual 2 back with place lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpl_nt": {
+        "Description": "Number of times individual 2 back with place lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpl_rate": {
+        "Description": "The rate of correct responses to 2 back with place lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bpl_nt": {
+        "Description": "Number of times individual 2 back with place lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpl_nt": {
+        "Description": "Number of times individual 2 back with place lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpl_rate": {
+        "Description": "The rate of correct responses to 2 back with place lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bpl_nt": {
+        "Description": "Number of times individual 2 back with place lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpl_nt": {
+        "Description": "Number of times individual 2 back with place lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpl_rate": {
+        "Description": "The rate of correct responses to 2 back with place lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_2bpnl_nt": {
+        "Description": "Number of times individual 2 back with place nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpnl_nt": {
+        "Description": "Number of times individual 2 back with place nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c2bpnl_rate": {
+        "Description": "The rate of correct responses to 2 back with place nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c2bpnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_2bpnl_nt": {
+        "Description": "Number of times individual 2 back with place nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpnl_nt": {
+        "Description": "Number of times individual 2 back with place nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c2bpnl_rate": {
+        "Description": "The rate of correct responses to 2 back with place nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c2bpnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_2bpnl_nt": {
+        "Description": "Number of times individual 2 back with place nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpnl_nt": {
+        "Description": "Number of times individual 2 back with place nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c2bpnl_rate": {
+        "Description": "The rate of correct responses to 2 back with place nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 2 back with place nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c2bpnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 2 back with place nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0b_nt": {
+        "Description": "Number of times individual 0 back stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_0b_nt": {
+        "Description": "Number of times individual 0 back stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_0b_nt": {
+        "Description": "Number of times individual 0 back stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0b_nt": {
+        "Description": "Number of times individual 0 back stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0b_rate": {
+        "Description": "The rate of correct responses to 0 back stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0b_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0b_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0b_nt": {
+        "Description": "Number of times individual 0 back stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0b_rate": {
+        "Description": "The rate of correct responses to 0 back stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0b_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0b_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0b_nt": {
+        "Description": "Number of times individual 0 back stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0b_rate": {
+        "Description": "The rate of correct responses to 0 back stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0b_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0b_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpf_nt": {
+        "Description": "Number of times individual 0 back with positive face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_0bpf_nt": {
+        "Description": "Number of times individual 0 back with positive face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_0bpf_nt": {
+        "Description": "Number of times individual 0 back with positive face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpf_nt": {
+        "Description": "Number of times individual 0 back with positive face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpf_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpf_nt": {
+        "Description": "Number of times individual 0 back with positive face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpf_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpf_nt": {
+        "Description": "Number of times individual 0 back with positive face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpf_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpft_nt": {
+        "Description": "Number of times individual 0 back with positive face target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpft_nt": {
+        "Description": "Number of times individual 0 back with positive face target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpft_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bpft_nt": {
+        "Description": "Number of times individual 0 back with positive face target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpft_nt": {
+        "Description": "Number of times individual 0 back with positive face target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpft_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bpft_nt": {
+        "Description": "Number of times individual 0 back with positive face target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpft_nt": {
+        "Description": "Number of times individual 0 back with positive face target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpft_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpfl_nt": {
+        "Description": "Number of times individual 0 back with positive face lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpfl_nt": {
+        "Description": "Number of times individual 0 back with positive face lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpfl_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bpfl_nt": {
+        "Description": "Number of times individual 0 back with positive face lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpfl_nt": {
+        "Description": "Number of times individual 0 back with positive face lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpfl_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bpfl_nt": {
+        "Description": "Number of times individual 0 back with positive face lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpfl_nt": {
+        "Description": "Number of times individual 0 back with positive face lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpfl_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpfnl_nt": {
+        "Description": "Number of times individual 0 back with positive face nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpfnl_nt": {
+        "Description": "Number of times individual 0 back with positive face nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bpfnl_nt": {
+        "Description": "Number of times individual 0 back with positive face nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpfnl_nt": {
+        "Description": "Number of times individual 0 back with positive face nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bpfnl_nt": {
+        "Description": "Number of times individual 0 back with positive face nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpfnl_nt": {
+        "Description": "Number of times individual 0 back with positive face nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with positive face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with positive face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with positive face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bnf_nt": {
+        "Description": "Number of times individual 0 back with neutral face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_0bnf_nt": {
+        "Description": "Number of times individual 0 back with neutral face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_0bnf_nt": {
+        "Description": "Number of times individual 0 back with neutral face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnf_nt": {
+        "Description": "Number of times individual 0 back with neutral face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnf_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnf_nt": {
+        "Description": "Number of times individual 0 back with neutral face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnf_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnf_nt": {
+        "Description": "Number of times individual 0 back with neutral face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnf_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bnft_nt": {
+        "Description": "Number of times individual 0 back with neutral face target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnft_nt": {
+        "Description": "Number of times individual 0 back with neutral face target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnft_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bnft_nt": {
+        "Description": "Number of times individual 0 back with neutral face target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnft_nt": {
+        "Description": "Number of times individual 0 back with neutral face target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnft_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bnft_nt": {
+        "Description": "Number of times individual 0 back with neutral face target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnft_nt": {
+        "Description": "Number of times individual 0 back with neutral face target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnft_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bnfl_nt": {
+        "Description": "Number of times individual 0 back with neutral face lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnfl_nt": {
+        "Description": "Number of times individual 0 back with neutral face lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnfl_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bnfl_nt": {
+        "Description": "Number of times individual 0 back with neutral face lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnfl_nt": {
+        "Description": "Number of times individual 0 back with neutral face lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnfl_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bnfl_nt": {
+        "Description": "Number of times individual 0 back with neutral face lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnfl_nt": {
+        "Description": "Number of times individual 0 back with neutral face lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnfl_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bnfnl_nt": {
+        "Description": "Number of times individual 0 back with neutral face nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnfnl_nt": {
+        "Description": "Number of times individual 0 back with neutral face nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bnfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bnfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bnfnl_nt": {
+        "Description": "Number of times individual 0 back with neutral face nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnfnl_nt": {
+        "Description": "Number of times individual 0 back with neutral face nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bnfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bnfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bnfnl_nt": {
+        "Description": "Number of times individual 0 back with neutral face nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnfnl_nt": {
+        "Description": "Number of times individual 0 back with neutral face nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bnfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with neutral face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with neutral face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bnfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with neutral face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bngf_nt": {
+        "Description": "Number of times individual 0 back with negative face stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_0bngf_nt": {
+        "Description": "Number of times individual 0 back with negative face stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_0bngf_nt": {
+        "Description": "Number of times individual 0 back with negative face stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngf_nt": {
+        "Description": "Number of times individual 0 back with negative face stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngf_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngf_nt": {
+        "Description": "Number of times individual 0 back with negative face stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngf_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngf_nt": {
+        "Description": "Number of times individual 0 back with negative face stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngf_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngf_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngf_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bngft_nt": {
+        "Description": "Number of times individual 0 back with negative face target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngft_nt": {
+        "Description": "Number of times individual 0 back with negative face target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngft_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bngft_nt": {
+        "Description": "Number of times individual 0 back with negative face target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngft_nt": {
+        "Description": "Number of times individual 0 back with negative face target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngft_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bngft_nt": {
+        "Description": "Number of times individual 0 back with negative face target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngft_nt": {
+        "Description": "Number of times individual 0 back with negative face target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngft_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngft_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngft_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bngfl_nt": {
+        "Description": "Number of times individual 0 back with negative face lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngfl_nt": {
+        "Description": "Number of times individual 0 back with negative face lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngfl_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bngfl_nt": {
+        "Description": "Number of times individual 0 back with negative face lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngfl_nt": {
+        "Description": "Number of times individual 0 back with negative face lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngfl_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bngfl_nt": {
+        "Description": "Number of times individual 0 back with negative face lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngfl_nt": {
+        "Description": "Number of times individual 0 back with negative face lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngfl_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngfl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngfl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bngfnl_nt": {
+        "Description": "Number of times individual 0 back with negative face nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngfnl_nt": {
+        "Description": "Number of times individual 0 back with negative face nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bngfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bngfnl_stt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bngfnl_nt": {
+        "Description": "Number of times individual 0 back with negative face nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngfnl_nt": {
+        "Description": "Number of times individual 0 back with negative face nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bngfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bngfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bngfnl_nt": {
+        "Description": "Number of times individual 0 back with negative face nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngfnl_nt": {
+        "Description": "Number of times individual 0 back with negative face nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bngfnl_rate": {
+        "Description": "The rate of correct responses to 0 back with negative face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngfnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with negative face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bngfnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with negative face nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bp_nt": {
+        "Description": "Number of times individual 0 back with place stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_0bp_nt": {
+        "Description": "Number of times individual 0 back with place stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_0bp_nt": {
+        "Description": "Number of times individual 0 back with place stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bp_nt": {
+        "Description": "Number of times individual 0 back with place stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bp_rate": {
+        "Description": "The rate of correct responses to 0 back with place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bp_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bp_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bp_nt": {
+        "Description": "Number of times individual 0 back with place stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bp_rate": {
+        "Description": "The rate of correct responses to 0 back with place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bp_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bp_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bp_nt": {
+        "Description": "Number of times individual 0 back with place stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bp_rate": {
+        "Description": "The rate of correct responses to 0 back with place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bp_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bp_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpt_nt": {
+        "Description": "Number of times individual 0 back with place target stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpt_nt": {
+        "Description": "Number of times individual 0 back with place target stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpt_rate": {
+        "Description": "The rate of correct responses to 0 back with place target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpt_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpt_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place target stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bpt_nt": {
+        "Description": "Number of times individual 0 back with place target stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpt_nt": {
+        "Description": "Number of times individual 0 back with place target stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpt_rate": {
+        "Description": "The rate of correct responses to 0 back with place target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpt_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpt_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place target stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bpt_nt": {
+        "Description": "Number of times individual 0 back with place target stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpt_nt": {
+        "Description": "Number of times individual 0 back with place target stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpt_rate": {
+        "Description": "The rate of correct responses to 0 back with place target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpt_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpt_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place target stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpl_nt": {
+        "Description": "Number of times individual 0 back with place lure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpl_nt": {
+        "Description": "Number of times individual 0 back with place lure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpl_rate": {
+        "Description": "The rate of correct responses to 0 back with place lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place lure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bpl_nt": {
+        "Description": "Number of times individual 0 back with place lure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpl_nt": {
+        "Description": "Number of times individual 0 back with place lure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpl_rate": {
+        "Description": "The rate of correct responses to 0 back with place lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place lure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bpl_nt": {
+        "Description": "Number of times individual 0 back with place lure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpl_nt": {
+        "Description": "Number of times individual 0 back with place lure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpl_rate": {
+        "Description": "The rate of correct responses to 0 back with place lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place lure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_0bpnl_nt": {
+        "Description": "Number of times individual 0 back with place nonlure stimuli were shown during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpnl_nt": {
+        "Description": "Number of times individual 0 back with place nonlure stimuli were answered correctly during run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_all_beh_c0bpnl_rate": {
+        "Description": "The rate of correct responses to 0 back with place nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_all_beh_c0bpnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place nonlure stimuli during run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_0bpnl_nt": {
+        "Description": "Number of times individual 0 back with place nonlure stimuli were shown during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpnl_nt": {
+        "Description": "Number of times individual 0 back with place nonlure stimuli were answered correctly during run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r1_beh_c0bpnl_rate": {
+        "Description": "The rate of correct responses to 0 back with place nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r1_beh_c0bpnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place nonlure stimuli during run 1",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_0bpnl_nt": {
+        "Description": "Number of times individual 0 back with place nonlure stimuli were shown during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpnl_nt": {
+        "Description": "Number of times individual 0 back with place nonlure stimuli were answered correctly during run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_nb_r2_beh_c0bpnl_rate": {
+        "Description": "The rate of correct responses to 0 back with place nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpnl_mrt": {
+        "Description": "Average reaction time for all correct responses to 0 back with place nonlure stimuli during run 2",
+        "DataType": "Float"
+    },
+    "tfmri_nb_r2_beh_c0bpnl_stdrt": {
+        "Description": "Standard deviation of the reaction time for all correct responses to 0 back with place nonlure stimuli during run 2",
+        "DataType": "Float"
+    }
+}

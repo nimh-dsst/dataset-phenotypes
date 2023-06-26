@@ -1,0 +1,164 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "RLS_01": {
+        "LongName": "Do you have, or have you had, recurrent uncomfortable feelings or sensations in your legs while you are sitting or lying down?",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_02": {
+        "LongName": "Do you, or have you had, a recurrent need or urge to move your legs while you were sitting or lying down?",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_2A": {
+        "LongName": "Did you answer <b>YES</b> to either question 1 or 2 above?",
+        "Levels": {
+            "0": "No",
+            "1": "Yes",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_03": {
+        "LongName": "Are you more likely to have these feelings when you are resting (either sitting or lying down) or when you are physically active?",
+        "Levels": {
+            "1": "Resting",
+            "2": "Active",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_04": {
+        "LongName": "Do these feelings usually <i>start</i> when you are resting (either sitting or lying down)?",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_05": {
+        "LongName": "If you get up or move around when you have these feelings do these feelings get any better while you actually keep moving?",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "2": "Don&#39;t know",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_06": {
+        "LongName": "Which times of day are these feelings in your legs <u>most</u> likely to occur?",
+        "Levels": {
+            "1": "Morning",
+            "2": "Mid-day",
+            "3": "Afternoon",
+            "4": "Evening",
+            "5": "Night",
+            "6": "About equal at all times",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_07": {
+        "LongName": "Which times of day are these feelings in your legs <u>least</u> likely to occur?",
+        "Levels": {
+            "1": "Morning",
+            "2": "Mid-day",
+            "3": "Afternoon",
+            "4": "Evening",
+            "5": "Night",
+            "6": "About equal at all times",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_08": {
+        "LongName": "Will simply changing leg position by itself <i>once</i> without continuing to move usually relieve these feelings?",
+        "Levels": {
+            "1": "Usually relieves",
+            "2": "Does <i>not</i> usually relieve",
+            "3": "Don&#39;t know",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_9": {
+        "LongName": "Are these feelings <i>ever</i> due to muscle cramps?",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "2": "Don't know",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_9b": {
+        "LongName": "If so, are they <i>always</i> due to muscle cramps?",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "2": "Don&#39;t know",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_10": {
+        "LongName": "Do these feelings occur <i>only</i> when sitting or only when lying down?",
+        "Levels": {
+            "1": "Neither",
+            "2": "Only when sitting",
+            "3": "Only when lying down",
+            "4": "Both when sitting and when lying down",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_11": {
+        "LongName": "When you actually experience the feelings in your legs, how <i>distressing</i> are they?",
+        "Levels": {
+            "0": "Not at all distressing",
+            "1": "A little bit",
+            "2": "Moderately",
+            "3": "Extremely distressing",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_12": {
+        "LongName": "In the past 12 months, how often did you experience these feelings in your legs?",
+        "Levels": {
+            "6": "Every day",
+            "5": "4-5 days per wk",
+            "4": "2-3 days per wk",
+            "3": "1 day per wk",
+            "2": "2 days per month",
+            "1": "1 day per month or less",
+            "0": "Never",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "RLS_13": {
+        "LongName": "Approximately how old were you when you first noticed these feelings in your legs?"
+    },
+    "RLS_14": {
+        "LongName": "Definite RLS",
+        "Description": "The following questions must be answered as indicated for Clinically Typical (Definite) Restless Leg Syndrome: 1. yes; 2. yes; 3. resting; 4. yes; 5. yes; 6. must not be about equal or only morning; 7. must not be about equal or only evening or night; 8. Does not usually relieve or Don\u2019t know; 9a. no or 9b. no; 10. both sitting and lying OR only when lying | Calculation = iif ([RLS_01]==1, \niif ([RLS_02]==1, \niif ([RLS_03]==1, \niif ([RLS_04]==1, \niif ([RLS_06]>1, \niif ([RLS_06]<6, \niif ([RLS_08]==2, \niif ([RLS_9]==1, \niif ([RLS_9b]==1, \niif ([RLS_10]>=3, 'YES', 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO')"
+    },
+    "RLS_15": {
+        "LongName": "PROBABLE DIAGNOSIS OF RLS",
+        "Description": "A diagnosis of a probable RLS (not typical of clinical cases) is given in 2 cases. \r\nIn the first case is the following: 1. yes; 2. yes; 3. resting; 4. yes; 5. yes; 6. must not be about equal or only morning; 7. must not be about equal or only evening or night; 8. Does not usually relieve or Don\u2019t know; 9a. no or 9b. no; 10. only when sitting.  In the second case, all items are answered as follows: 1. no; 2. yes; 3. resting; 4. yes; 5. yes; 6. must not be about equal or only morning; 7. must not be about equal or only evening or night; 8. Does not usually relieve or Don\u2019t know; 9a. no or 9b. no; 10. both sitting and lying OR only when lying. | Calculation = iif ([RLS_01]==1, \r\niif ([RLS_02]==1, \r\niif ([RLS_03]==1, \r\niif ([RLS_04]==1, \r\niif ([RLS_06]>1, \r\niif ([RLS_06]<6, \r\niif ([RLS_08]==2, \r\niif ([RLS_9]==1, \r\niif ([RLS_9b]==1, \r\niif ([RLS_10]==2, 'YES', 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), \r\niif([RLS_02]==1,\r\niif ([RLS_03]==1, \r\niif ([RLS_04]==1, \r\niif ([RLS_06]>1, \r\niif ([RLS_06]<6, \r\niif ([RLS_08]==2, \r\niif ([RLS_9]==1, \r\niif ([RLS_9b]==1, \r\niif ([RLS_10]>=3, 'YES', 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), 'NO'), \r\n'NO')"
+    }
+}

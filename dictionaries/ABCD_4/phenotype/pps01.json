@@ -1,0 +1,669 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "visit": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "prodromal_1_y": {
+        "Description": "Did places that you know well, such as your bedroom, or other rooms in your home, your classroom or school yard, suddenly seem weird, strange or confusing to you; like not the real world? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_1_bother_yn": {
+        "Description": "Well known places. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_1b_y": {
+        "Description": "Well known places. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_2_y": {
+        "Description": "Did you hear strange sounds that you never noticed before like banging, clicking, hissing, clapping, or ringing in your ears? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_2_bother_yn": {
+        "Description": "Strange sounds. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_2b_y": {
+        "Description": "Strange sounds. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_3_y": {
+        "Description": "Do things that you see appear different from the way they usually do (brighter or duller, larger or smaller, or changed in some other way)? | 0= No; 1= Yes",
+        "DataType": "Integer",
+        "ValueRange": "0; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pps_3_bother_yn": {
+        "Description": "Things looked different. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_3b_y": {
+        "Description": "Things looked different.Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_4_y": {
+        "Description": "Did you feel like you had special, unusual powers like you could make things happen by magic, or that you could magically know what was inside another person's mind, or magically know what was going to happen in the future when other people could not? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_4_bother_yn": {
+        "Description": "Special powers. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_4b_y": {
+        "Description": "Special powers. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_5_y": {
+        "Description": "Did you feel that someone else, who is not you, has taken control over the private, personal, thoughts or ideas inside your head? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_5_bother_yn": {
+        "Description": "Someone else in control. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_5b_y": {
+        "Description": "Someone else in control. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_6_y": {
+        "Description": "Did you suddenly find it hard to figure out how to say something quickly and easily so that other people would understand what you meant? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_6_bother_yn": {
+        "Description": "Hard to figure out. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_6b_y": {
+        "Description": "Hard to figure out. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_7_y": {
+        "Description": "Did you ever feel very certain that you have very special abilities or magical talents that other people do not have? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_7_bother_yn": {
+        "Description": "Magical talents. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_7b_y": {
+        "Description": "Magical talents. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_8_y": {
+        "Description": "Did you suddenly feel that you could not trust other people because they seemed to be watching you or talking about you in an unfriendly way? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_8_bother_yn": {
+        "Description": "Could not trust. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_8b_y": {
+        "Description": "Could not trust. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_9_y": {
+        "Description": "Do you sometimes get strange feelings on or just beneath your skin, like bugs crawling? | 0= No; 1= Yes",
+        "DataType": "Integer",
+        "ValueRange": "0; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pps_9_bother_yn": {
+        "Description": "Strange skin feelings. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_9b_y": {
+        "Description": "Strange skin feelings. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_10_y": {
+        "Description": "Did you lose concentration because you noticed sounds in the distance that you usually don't hear? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_10_bother_yn": {
+        "Description": "Lose concentration. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_10b_y": {
+        "Description": "Lose concentration. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_11_y": {
+        "Description": "Although you could not see anything or anyone, did you suddenly start to feel that an invisible energy, creature, or some person was around you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_11_bother_yn": {
+        "Description": "Invisible energy. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_11b_y": {
+        "Description": "Invisible energy. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_12_y": {
+        "Description": "Did you start to worry at times that your mind was trying to trick you or was not working right? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_12_bother_yn": {
+        "Description": "Mind is trying to trick you. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_12b_y": {
+        "Description": "Mind is trying to trick you. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_13_y": {
+        "Description": "Did you feel that the world is not real, you are not real, or that you are dead? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_13_bother_yn": {
+        "Description": "World is not real. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_13b_y": {
+        "Description": "World is not real. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_14_y": {
+        "Description": "Did you feel confused because something you experienced didn't seem real or it seemed imaginary to you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_14_bother_yn": {
+        "Description": "Feel confused. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_14b_y": {
+        "Description": "Feel confused. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_15_y": {
+        "Description": "Did you honestly believe in things that other people would say are unusual or weird? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_15_bother_yn": {
+        "Description": "Did you honestly believe in things that other people would say are unusual or weird. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_15b_y": {
+        "Description": "Did you honestly believe in things that other people would say are unusual or weird. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_16_y": {
+        "Description": "Did you feel that parts of your body had suddenly changed or worked differently than before; like your legs had suddenly turned to something else or your nose could suddenly smell things you'd never actually smelled before? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_16_bother_yn": {
+        "Description": "Body changed. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_16b_y": {
+        "Description": "Body changed. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_17_y": {
+        "Description": "Did you feel that sometimes your thoughts were so strong you could almost hear them, as if another person, NOT you, spoke them? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_17_bother_yn": {
+        "Description": "Hear thoughts. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_17b_y": {
+        "Description": "Hear thoughts. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_18_y": {
+        "Description": "Did you feel that other people might want something bad to happen to you or that you could not trust other people? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_18_bother_yn": {
+        "Description": "People want bad things to happen.Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_18b_y": {
+        "Description": "People want bad things to happen.Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_19_y": {
+        "Description": "Did you suddenly start to see unusual things that you never saw before like flashes, flames, blinding light, or shapes floating in front of you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_19_bother_yn": {
+        "Description": "Unusual things. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_19b_y": {
+        "Description": "Unusual things. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_20_y": {
+        "Description": "Have you seen things that other people can't see or don't seem to see? | 0= No; 1= Yes",
+        "DataType": "Integer",
+        "ValueRange": "0; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pps_20_bother_yn": {
+        "Description": "Able to see more than others. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_20b_y": {
+        "Description": "Able to see more than others. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    },
+    "prodromal_21_y": {
+        "Description": "Did you suddenly start to notice that people sometimes had a hard time understanding what you were saying, even though they used to understand you well? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pps_21_bother_yn": {
+        "Description": "Hard time understanding you. Did it bother you? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "prodromal_21b_y": {
+        "Description": "Hard time understanding you. Please CHOOSE THE NUMBER below the appropriate picture that shows us how much that bothered you when it happened. | 1=Not very bothered ; 2=Slightly bothered ; 3=Moderately bothered ; 4=Very much bothered ; 5=Extremely bothered",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not very bothered",
+            "2": "Slightly bothered",
+            "3": "Moderately bothered",
+            "4": "Very much bothered",
+            "5": "Extremely bothered"
+        }
+    }
+}

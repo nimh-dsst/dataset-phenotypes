@@ -1,0 +1,686 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "hair_results_lan": {
+        "Description": "LAN",
+        "DataType": "Integer"
+    },
+    "hair_results_entityid": {
+        "Description": "entityid",
+        "DataType": "Float"
+    },
+    "hair_results_clientcode": {
+        "Description": "clientcode",
+        "DataType": "String"
+    },
+    "hair_results_section_begin": {
+        "Description": "reported section begin",
+        "DataType": "Float"
+    },
+    "hair_results_section_end": {
+        "Description": "reported section end",
+        "DataType": "Float"
+    },
+    "hair_results_cocaine_scrn": {
+        "Description": "Cocaine | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_opiates_scrn": {
+        "Description": "Opiates | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_pcp_scrn": {
+        "Description": "PCP | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_meth_scrn": {
+        "Description": "Amps (Meth/MDMA) | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_thc_scrn": {
+        "Description": "THC | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_etg_scrn": {
+        "Description": "EtG | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_cotinine_scrn": {
+        "Description": "Cotinine | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_adderal_scrn": {
+        "Description": "Amp (Adderal) | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_benzos1_scrn": {
+        "Description": "Benzos1 | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_benzos2_scrn": {
+        "Description": "Benzos2 | 0 = NEG; 1 = POS; 2 = QNS",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_sample_weight": {
+        "Description": "initial hair sample_weight",
+        "DataType": "Float"
+    },
+    "hair_results_meth_confirm": {
+        "Description": "Methamphetamine/MDMA (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_amp_confirm": {
+        "Description": "Amphetamine/Adderal  (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cthc_confirm": {
+        "Description": "Carboxy-THC (marijuana metabolite; pg/10 mg)",
+        "DataType": "String"
+    },
+    "hair_results_etg_confirm": {
+        "Description": "EtG (ethanol consumption; pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cot_confirm": {
+        "Description": "Cotinine (nicotine; ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_norocot_confirm": {
+        "Description": "Norcotinine (nicotine; ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_thc_confirm": {
+        "Description": "THC (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cbn_confirm": {
+        "Description": "CBN (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cbd_confirm": {
+        "Description": "CBD (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_thcv_confirm": {
+        "Description": "THCV (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_unexpected": {
+        "Description": "Unexpected result, based on self- and part-reported past-month meds and use? | 0 = no/expected; 1 = yes/unexpected",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "no/expected",
+            "1": "yes/unexpected"
+        }
+    },
+    "hair_benzoylecgonine_confirm": {
+        "Description": "benzoylecgonine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_cocaethylene_confirm": {
+        "Description": "cocaethylene confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_norcocaine_confirm": {
+        "Description": "norcocaine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_metahydroxycocaine_c": {
+        "Description": "meta-hydroxycocaine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_orthohydroxycocaine_c": {
+        "Description": "ortho-hydroxycocaine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_parahydroxycocaine_c": {
+        "Description": "para-hydroxycocaine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_codeine_confirm": {
+        "Description": "codeine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_morphine_confirm": {
+        "Description": "morphine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_6mam_confirm": {
+        "Description": "6monoacetylmorphine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_hydrocodone_confirm": {
+        "Description": "hydrocodone confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_hydromorphone_confirm": {
+        "Description": "hydromorphone confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_oxycodone_confirm": {
+        "Description": "oxycodone confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_oxymorphone_confirm": {
+        "Description": "oxymorphone confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_pcp_confirm": {
+        "Description": "pcp confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_thccooh_confirm": {
+        "Description": "Carboxy-THC confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_thc_confirmation": {
+        "Description": "THC confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_cbn_confirmation": {
+        "Description": "CBN confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_cbd_confirmation": {
+        "Description": "CBD confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_thcv_confirmation": {
+        "Description": "THCV confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_etg_con": {
+        "Description": "EtG confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_ccf_id": {
+        "Description": "Psychemedics Barcode Label",
+        "DataType": "String"
+    },
+    "hair_results_cotinine_con": {
+        "Description": "Cotinine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_t3hcotinine_con": {
+        "Description": "trans3hydroxycotinine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_norcotinine_con": {
+        "Description": "Norcotinine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_nornicotine_con": {
+        "Description": "Nornicotine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_amphet_confirm": {
+        "Description": "Amphetamine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_mda_confirm": {
+        "Description": "MDA confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_mdea_confirm": {
+        "Description": "MDEA confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_mdma_confirm": {
+        "Description": "MDMA confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_methamp_confirm": {
+        "Description": "Methamphetamine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_benzos1_c": {
+        "Description": "Benzos 1 confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_amph_scrn": {
+        "Description": "Amphetamines screen | 0=NEG;  1= POS; 2=QNS",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_benzos2_c": {
+        "Description": "Benzos 2 confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    },
+    "hair_results_amp_quant": {
+        "Description": "Quantification of Amphetamine/Adderal (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_mda_quant": {
+        "Description": "Quantification of MDA (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_mdea_quant": {
+        "Description": "Quantification of MDEA (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_mdma_quant": {
+        "Description": "Quantification of MDMA  (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_meth_quant": {
+        "Description": "Quantification of Methamphetamine/MDMA (ng/10 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_thccooh_quant": {
+        "Description": "Quantification of Carboxy-THC (marijuana metabolite; pg/10 mg)",
+        "DataType": "String"
+    },
+    "hair_results_etg_quant": {
+        "Description": "Quantification of EtG (ethanol consumption; pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cotinine_quant": {
+        "Description": "Quantification of Cotinine (nicotine; ng/mg hair)",
+        "DataType": "String"
+    },
+    "hair_r_t3hcotinine_q": {
+        "Description": "Quantification of trans-3-hydrocycotinine (pg/mg)",
+        "DataType": "String"
+    },
+    "hair_results_thccooh_scrn": {
+        "Description": "THCCOOH screen | 0=NEG;  1= POS; 2=QNS",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_r_norcotinine_quant": {
+        "Description": "Quantification of norcotinine (nicotine; ng/10mg)",
+        "DataType": "String"
+    },
+    "hair_results_nornicotine_quant": {
+        "Description": "Quantification of nornicotine",
+        "DataType": "String"
+    },
+    "hair_results_thc_quant": {
+        "Description": "Quantification of thc (ng/1 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cbn_quant": {
+        "Description": "Quantification of CBN (ng/1 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cbd_quant": {
+        "Description": "Quantification of CBD (ng/1 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_thcv_quant": {
+        "Description": "Quantification of THCV (ng/1 mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_cocaine_quant": {
+        "Description": "Quantification of Cocaine (ng/10 mg)",
+        "DataType": "String"
+    },
+    "hair_r_benzoylecgonine_q": {
+        "Description": "Quantification of Benzoylecgonine (ng/10 mg)",
+        "DataType": "String"
+    },
+    "hair_r_norcocaine_q": {
+        "Description": "Quantification of Norcocaine (ng/10 mg)",
+        "DataType": "String"
+    },
+    "hair_r_cocaethylene_q": {
+        "Description": "Quantification of Cocaethylene (ng/10 mg)",
+        "DataType": "String"
+    },
+    "hair_results_natcan_scrn": {
+        "Description": "Natural cannabinoids (e.g., THC) screen | 0=NEG;  1= POS; 2=QNS",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_r_metahydroxycoc_q": {
+        "Description": "Quantification of Meta-Hydroxycocaine (pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_r_orthohydroxycoc_q": {
+        "Description": "Quantification of Ortho-Hydroxycocaine (pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_r_parahydroxycoc_q": {
+        "Description": "Quantification of Para-Hydroxycocaine (pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_6mam_quant": {
+        "Description": "Quantification of 6-Monoacetylmorrphine (pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_morphine_q": {
+        "Description": "Quantification of Morpine (pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_oxycodone_q": {
+        "Description": "Quantification of Oxycodone (pg/mg hair)",
+        "DataType": "String"
+    },
+    "hair_results_benzo_scrn": {
+        "Description": "Benzos screen | 0=NEG;  1= POS; 2=QNS",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_results_fentanyl_scrn": {
+        "Description": "Fentanyl screen | 0=NEG;  1= POS; 2=QNS",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "NEG",
+            "1": "POS",
+            "2": "QNS"
+        }
+    },
+    "hair_cocaine_confirm": {
+        "Description": "cocaine confirmation MS analysis | 1=Pos; 2=Neg; 3=QNS",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "Pos",
+            "2": "Neg",
+            "3": "QNS"
+        }
+    }
+}

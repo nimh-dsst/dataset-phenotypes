@@ -1,0 +1,2831 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_sa_beta_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_sa_beta_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_sa_beta_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_sa_beta_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_sa_beta_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_sa_beta_stvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_sa_beta_mm": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sa_beta_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sa_beta_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sa_beta_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sa_beta_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_sa_beta_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_tplh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_cdelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_pulh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_pdlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_4thvte": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_bs": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_aylh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_csf": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_aalh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_lavterh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_tprh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_cderh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_purh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_pdrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_ayrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_aarh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_tplh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_cdelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_pulh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_pdlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_4thvte": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_bs": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_aylh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_csf": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_aalh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_lavterh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_tprh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_cderh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_purh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_pdrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_ayrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_aarh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_tplh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_cdelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_pulh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_pdlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_4thvte": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_bs": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_aylh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_csf": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_aalh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_lavterh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_tprh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_cderh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_purh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_pdrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_ayrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_aarh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_tplh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_cdelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_pulh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_pdlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_4thvte": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_bs": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_aylh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_csf": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_aalh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_lavterh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_tprh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_cderh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_purh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_pdrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_ayrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_aarh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_tplh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_cdelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_pulh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_pdlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_4thvte": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_bs": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_aylh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_csf": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_aalh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_lavterh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_tprh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_cderh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_purh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_pdrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_ayrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_aarh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_tplh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_cdelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_pulh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_pdlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_4thvte": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_bs": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_aylh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_csf": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_aalh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_lavterh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_tprh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_cderh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_purh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_pdrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_ayrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_aarh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_cbwmlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_lavtelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_inflatvtlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_crbwmlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_crbcxlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_tplh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_cdelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_pulh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_pdlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_3rdvte": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_4thvte": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_bs": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_hpuslh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_aylh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_csf": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_aalh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_vtdclh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_cbwmrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_lavterh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_inflatvtrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_crbwmrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_crbcxrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_tprh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_cderh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_purh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_pdrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_hpusrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_ayrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_aarh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bscs_vtdcrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_culh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_fflh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_lglh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pculh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_supalh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_smlh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_isalh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_curh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_suparh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_smrh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_frperh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacgvf_bcdk_isarh": {
+        "Description": "Mean beta weight for SST correct go versus fixation contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_culh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_fflh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_lglh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pculh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_supalh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_smlh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_isalh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_curh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_suparh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_smrh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_frperh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvcg_bcdk_isarh": {
+        "Description": "Mean beta weight for SST correct stop versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_culh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_fflh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_lglh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pculh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_supalh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_smlh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_isalh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_curh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_suparh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_smrh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_frperh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saisvcg_bcdk_isarh": {
+        "Description": "Mean beta weight for SST incorrect stop versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_culh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_fflh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_lglh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pculh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_supalh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_smlh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_isalh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_curh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_suparh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_smrh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_frperh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saasvcg_bcdk_isarh": {
+        "Description": "Mean beta weight for SST any stop versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_culh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_fflh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_lglh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pculh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_supalh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_smlh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_isalh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_curh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_suparh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_smrh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_frperh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sacsvis_bcdk_isarh": {
+        "Description": "Mean beta weight for SST correct stop versus incorrect stop contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_culh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_fflh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_lglh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pculh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_supalh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_smlh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_isalh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_curh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_suparh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_smrh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_frperh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvcg_bcdk_isarh": {
+        "Description": "Mean beta weight for SST incorrect go versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_bktslh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_cdacgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_cdmdfrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_culh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ehinallh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_fflh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ifpalh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_iftplh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ihcgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_laoclh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_laobofrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_lglh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_mobofrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_mdtplh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pahpallh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pacnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_psopelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_psobslh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pstglh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pcnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_postcnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pocgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_precnlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pculh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_racgelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_rmdfrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_sufrlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_supalh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_sutplh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_smlh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_frpelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_tppelh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_tvtplh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_isalh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_bktsrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_cdacgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_cdmdfrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_curh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ehinalrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ffrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ifparh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_iftprh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_ihcgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_laocrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_laobofrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_lgrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_mobofrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_mdtprh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pahpalrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pacnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_psoperh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_psobsrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pstgrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pcnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_postcnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pocgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_precnrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_pcurh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_racgerh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_rmdfrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_sufrrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_suparh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_sutprh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_smrh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_frperh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_tpperh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_tvtprh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_saigvis_bcdk_isarh": {
+        "Description": "Mean beta weight for SST incorrect go versus incorrect stop contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    }
+}

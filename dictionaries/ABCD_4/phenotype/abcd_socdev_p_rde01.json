@@ -1,0 +1,1340 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "socialdev_prd_01": {
+        "Description": "Has your child ever received an in-school detention? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_01a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_01b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_02": {
+        "Description": "Has your child received an in-school or out-of-school suspension? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_02a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_02b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_03": {
+        "Description": "Has your child been expelled from school? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_03a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_03b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_04": {
+        "Description": "Has your child cheated on school tests or assignments? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_04a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_04b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_04e": {
+        "Description": "Did you find out by your child telling you voluntarily? | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "socialdev_prd_05": {
+        "Description": "Has your child been <i>caught</i> cheating on school tests? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_05a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_05b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_06": {
+        "Description": "Has your child skipped school without an excuse (like without approval from you or another parent/caregiver for illness or a doctor's appointment)? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_06a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_06b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_07": {
+        "Description": "Has your child been sent home from school for bad behavior? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_07a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_07b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_08": {
+        "Description": "Has your child broken, damaged, or destroyed something on purpose that belonged to you or other people in your family? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_08a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_08b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_09": {
+        "Description": "Has your child broken, damaged, or destroyed something on purpose belonging to a school? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_09a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_09b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_10": {
+        "Description": "Has your child broken, damaged, or destroyed other things on purpose that did not belong to him/her, not counting things that belong to your family and school? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_10a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_10b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_11": {
+        "Description": "Has your child written things or sprayed paint on walls, sidewalks, or cars without permission? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_11a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_11b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_12": {
+        "Description": "Has your child purposely set fire to a building, a car, or something else or tried to do so? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_12a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_12b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_13": {
+        "Description": "Has your child stolen or tried to steal a bicycle or skateboard? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_13a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_13b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_14": {
+        "Description": "Has your child taken something from a store without paying for it? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_14a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_14b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_15": {
+        "Description": "Has your child taken money at home that did not belong to them, like from your or another family member's purse or wallet, dresser etc., without their knowledge? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_15a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_15b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_16": {
+        "Description": "Has your child taken anything at school from the teacher or other kids that did not belong to him/her? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_16a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_16b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_17": {
+        "Description": "Has your child taken something out of somebody's house or yard or garage that did not belong to him/her? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_17a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_17b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_18": {
+        "Description": "Has your child taken something from a car that did not belong to him/her? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_18a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_18b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_19": {
+        "Description": "Has your child gone into or tried to go into a building to steal something? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_19a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_19b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_20": {
+        "Description": "Has your child avoided paying for things such as movies, the bus, subway rides, or food? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_20a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_20b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_21": {
+        "Description": "Has your child snatched someone's purse or wallet or picked someone's pocket? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_21a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_21b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_22": {
+        "Description": "Has your child gone joyriding?  Like taken a motor vehicle, such as a car or motorcycle, for a ride or drive without the owner's permission? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_22a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_22b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_22e": {
+        "Description": "When your child stole a motor vehicle or went joyriding, did this occur from home? | 1=Yes; 0=No; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "1;0;99",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_23": {
+        "Description": "Has your child stolen while confronting someone, like in a mugging, purse snatching, or extortion? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_23a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_23b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_24": {
+        "Description": "Has your child hit a teacher or another grown-up at school? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_24a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_24b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_25": {
+        "Description": "Has your child hit other students or gotten into a physical fight with them? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_25a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_25b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_26": {
+        "Description": "Has your child hit a parent/caregiver? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_26a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_26b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_27": {
+        "Description": "Has your child hit a brother or sister or got into a physical fight with him/her? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say; 999=My child is an only child",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say",
+            "999": "My child is an only child"
+        }
+    },
+    "socialdev_prd_27a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_27b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_28": {
+        "Description": "Has your child <u>carried</u> a hidden weapon? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_28a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_28b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_28e": {
+        "Description": "What kind of weapon was it?  If this happened more than once think of the most dangerous weapon your child carried.",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_29": {
+        "Description": "Has your child thrown rocks or bottles at people? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_29a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_29b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_30": {
+        "Description": "Has your child bullied, threatened, or deliberately intimidated someone else? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_30a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_30b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_31": {
+        "Description": "Has your child been physically cruel to another person (causing harm)? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_31a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_31b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_32": {
+        "Description": "Has your child been physically cruel to an animal (causing harm)? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_32a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_32b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_33": {
+        "Description": "Has your child <u>threatened</u> anyone with a weapon (like a bat, brick, broken bottle, knife, or gun)? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_33a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_33b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_33e": {
+        "Description": "What kind of weapon was it?  If this happened more than once think of the most dangerous weapon your child used to threaten someone.",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_34": {
+        "Description": "Has your child been stopped and questioned by the police? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_34a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_34b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_35": {
+        "Description": "Has your child been arrested? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_35a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_35b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_35e": {
+        "Description": "Why was your child arrested the first time?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_36": {
+        "Description": "Has your child gone into someone's garden, backyard, house, or garage when they were not supposed to be there? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_36a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_36b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_37": {
+        "Description": "Has your child run away from home? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_37a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_37b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_37c": {
+        "Description": "Did your child do this activity: | 1=by him/herself; 2=with a friend; 3=in a group",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "by him/herself",
+            "2": "with a friend",
+            "3": "in a group"
+        }
+    },
+    "socialdev_prd_37e": {
+        "Description": "How long was your child away? | 0=30 minutes to two hours; 1=2 to 5 hours; 2=Overnight; 3=More than one night",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "30 minutes to two hours",
+            "1": "2 to 5 hours",
+            "2": "Overnight",
+            "3": "More than one night"
+        }
+    },
+    "socialdev_prd_38": {
+        "Description": "Has your child been loud, rowdy, or unruly in a public place so that people complained about it or your child got in trouble? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_38a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_38b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_39": {
+        "Description": "Has your child stayed out late at night without parent's permission (like past curfew or past midnight)? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_39a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_39b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_40": {
+        "Description": "Has your child sold marijuana (pot, grass, weed)? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_40a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_40b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_41": {
+        "Description": "Has your child sold hard drugs, such as heroin, cocaine (crack), or LSD? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_41a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_41b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_42": {
+        "Description": "Has your child sold prescription medication? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_42a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_42b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_43": {
+        "Description": "Has your child been involved in any gang activities? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_43a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_43b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_44": {
+        "Description": "Has your child used the internet to bother or harass, or to spread mean words or pictures/videos of someone? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_44a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_44b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_45": {
+        "Description": "Has your child used a cell phone (texting etc.) to bother or harass, or to spread mean words or pictures/videos about someone? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_45a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_45b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_46": {
+        "Description": "Has your child used a fake ID (such as a driver's license, student ID, etc.) to obtain goods or services or gain entrance where he/she wasn't eligible? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_46a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_46b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_47": {
+        "Description": "Has your child used or tried to use a credit card or bank card of someone your child KNOWS (family member, friend, partner, etc.) without the owner's permission? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_47a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_47b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_prd_48": {
+        "Description": "Has your child used or tried to use a credit card or bank card of someone your child DOES NOT KNOW without the owner's permission? | 0=Never; 1=Once or twice; 2=More often; 98=I don't know; 99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_prd_48a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes; 0=No; 98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_prd_48b": {
+        "Description": "How old was your child the first time this happened?",
+        "DataType": "Integer"
+    }
+}

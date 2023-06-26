@@ -1,0 +1,543 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "socialdev_papq_32_l": {
+        "Description": "Your child is at home without adult supervision. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_20_l": {
+        "Description": "You talk to your child about his/her friends. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_21_l": {
+        "Description": "Your child is out after dark without an adult with him/her. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_22_l": {
+        "Description": "You let your child out of a punishment early (like lift restrictions earlier than you originally said). | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_23_l": {
+        "Description": "Your child helps plan family activities. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_24_l": {
+        "Description": "You get so busy that you forgot where your child is and what he/she is doing. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_25_l": {
+        "Description": "Your child is not punished when he/she has done something wrong. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_26_l": {
+        "Description": "You attend PTA meetings, parent/teacher conferences, or other meetings at your child's school. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_27_l": {
+        "Description": "You tell your child that you like it when he/she helps out around the house. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_28_l": {
+        "Description": "You don't check that your child comes home at the time he/she was supposed to. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_29_l": {
+        "Description": "You don't tell your child where you are going. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_30_l": {
+        "Description": "Your child comes home from school more than an hour past the time you expect him/her. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_31_l": {
+        "Description": "The punishment you give your child depends on your mood. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_19_l": {
+        "Description": "Your child goes out without a set time to be home. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_33_l": {
+        "Description": "You spank your child with your hand when he/she is misbehaving. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_34_l": {
+        "Description": "You ignore your child when he/she is misbehaving. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_35_l": {
+        "Description": "You slap your child when he/she has dome something wrong. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_36_l": {
+        "Description": "You take away privileges or money from your child as a punishment. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_37_l": {
+        "Description": "You send your child to his/her room as a punishment. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_38_l": {
+        "Description": "You hit your child with a belt, switch, or other object when he/she has done something wrong. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_39_l": {
+        "Description": "You yell or scream at your child when he/she has done something wrong. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_40_l": {
+        "Description": "You calmly explain to your child why his/her behavior was wrong when he/she misbehaves. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_41_l": {
+        "Description": "You use time out (make him/her sit or stand in a corner) as a punishment. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_42_l": {
+        "Description": "You give your child extra chores as a punishment. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_18_l": {
+        "Description": "You hug or kiss your child when he/she does something well. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_01_l": {
+        "Description": "You have a friendly talk with your child. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_02_l": {
+        "Description": "You let your child know when he/she is doing a good job with something. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_03_l": {
+        "Description": "You threaten to punish your child and then do not actually punish him/her. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_04_l": {
+        "Description": "You volunteer to help with special activities that your child is involved in (such as sports, boy/girl scouts, church youth groups). | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_05_l": {
+        "Description": "You reward or give something extra to your child for obeying you or behaving well. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_06_l": {
+        "Description": "Your child fails to leave a note or to let you know where he/she is going. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_07_l": {
+        "Description": "You play games or do other fun things with your child. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_08_l": {
+        "Description": "Your child talks you out of being punished after he/she has done something wrong. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_09_l": {
+        "Description": "You ask your child about his/her day in school. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_10_l": {
+        "Description": "Your child stays out in the evening past the time he/she is supposed to be home. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_11_l": {
+        "Description": "You help your child with his/her homework. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_12_l": {
+        "Description": "You feel that getting your child to obey you is more trouble than it's worth. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_13_l": {
+        "Description": "You compliment your child when he/she does something well. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_14_l": {
+        "Description": "You ask your child what his/her plans are for the coming day. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_15_l": {
+        "Description": "You drive your child to a special activity. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_16_l": {
+        "Description": "You praise your child if he/she behaves well. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    },
+    "socialdev_papq_17_l": {
+        "Description": "Your child is out with friends you don't know. | 0=Never ; 1=Almost never ; 2=Sometimes ; 3=Often ; 4=Always",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Almost never",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Always"
+        }
+    }
+}

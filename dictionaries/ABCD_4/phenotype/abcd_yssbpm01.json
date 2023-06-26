@@ -1,0 +1,163 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "bpm_y_scr_attention_r": {
+        "Description": "Raw Score: bpm_1_y plus bpm_3_y plus bpm_4_y plus bpm_5_y plus bpm_10_y plus bpm_14_y; Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_scr_attention_t": {
+        "Description": "T-Score | T scores are based on the \"r\" score and the sex at birth (male or female) of the child",
+        "DataType": "String"
+    },
+    "bpm_y_scr_attention_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_scr_attention_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_ss_attention_mean": {
+        "Description": "Mean Score: Mean(bpm_1_y plus bpm_3_y plus bpm_4_y plus bpm_5_y plus bpm_10_y plus bpm_14_y); Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_ss_attention_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_ss_attention_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_scr_internal_r": {
+        "Description": "Raw Score: bpm_9_y plus bpm_11_y plus bpm_12_y plus bpm_13_y plus bpm_18_y plus bpm_19_y Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_scr_internal_t": {
+        "Description": "T-Score",
+        "DataType": "String"
+    },
+    "bpm_y_scr_internal_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_scr_internal_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_ss_internal_mean": {
+        "Description": "Mean Score: Mean(bpm_9_y plus bpm_11_y plus bpm_12_y plus bpm_13_y plus bpm_18_y plus bpm_19_y) Validation: Minimum of 4 items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_ss_internal_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_ss_internal_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_scr_external_r": {
+        "Description": "Raw Score: bpm_2_y plus bpm_6_y plus bpm_7_y plus bpm_8_y plus bpm_15_y plus bpm_16_y plus bpm_17_y; Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_scr_external_t": {
+        "Description": "T-Score",
+        "DataType": "String"
+    },
+    "bpm_y_scr_external_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_scr_external_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_ss_external_mean": {
+        "Description": "Mean Score: Mean(bpm_2_y plus bpm_6_y plus bpm_7_y plus bpm_8_y plus bpm_15_y plus bpm_16_y plus bpm_17_y); Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_ss_external_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_ss_external_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_scr_totalprob_r": {
+        "Description": "Raw Score: bpm_1_y plus bpm_2_y plus bpm_3_y plus bpm_4_y plus bpm_5_y plus bpm_6_y plus bpm_7_y plus bpm_8_y plus bpm_9_y plus bpm_10_y plus bpm_11_y plus bpm_12_y plus bpm_13_y plus bpm_14_y plus bpm_15_y plus bpm_16_y plus bpm_17_y plus bpm_18_y plus bpm_19_y; Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_scr_totalprob_t": {
+        "Description": "T-Score",
+        "DataType": "String"
+    },
+    "bpm_y_scr_totalprob_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_scr_totalprob_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "bpm_y_ss_totalprob_mean": {
+        "Description": "Mean: Mean(bpm_1_y plus bpm_2_y plus bpm_3_y plus bpm_4_y plus bpm_5_y plus bpm_6_y plus bpm_7_y plus bpm_8_y plus bpm_9_y plus bpm_10_y plus bpm_11_y plus bpm_12_y plus bpm_13_y plus bpm_14_y plus bpm_15_y plus bpm_16_y plus bpm_17_y plus bpm_18_y plus bpm_19_y); Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "bpm_y_ss_totalprob_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "bpm_y_ss_totalprob_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    },
+    "poa_y_ss_sum": {
+        "Description": "NIH Toolbox Positive Affect; Sum(poa_nihtb_1_y plus poa_nihtb_2_yplus  poa_nihtb_3_y plus poa_nihtb_4_y plus poa_nihtb_5_y plus poa_nihtb_6_y plus  poa_nihtb_7_y plus poa_nihtb_8_y]plus poa_nihtb_9_y); Validation: All items must be answered",
+        "DataType": "String"
+    },
+    "poa_y_ss_sum_nm": {
+        "Description": "Number Missing Answers",
+        "DataType": "String"
+    },
+    "poa_y_ss_sum_nt": {
+        "Description": "Number Total Questions",
+        "DataType": "String"
+    }
+}

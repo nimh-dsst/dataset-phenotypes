@@ -1,0 +1,409 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "fitbo_wear_survey_date": {
+        "Description": "fitbo_wear survey complete date",
+        "DataType": "Date"
+    },
+    "fitpo_wear": {
+        "Description": "Did you wear the Fitbit consistently?",
+        "DataType": "Integer"
+    },
+    "fitpo_taken_off": {
+        "Description": "How often did you have to take the Fitbit off? | 1= Never ; 2= Rarely ; 3= Sometimes ; 4= Often",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Never",
+            "2": "Rarely",
+            "3": "Sometimes",
+            "4": "Often"
+        }
+    },
+    "fitpo_tech_issues": {
+        "Description": "How often did you have technical issues? | 1= Never ; 2= Rarely ; 3= Sometimes ; 4= Often",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Never",
+            "2": "Rarely",
+            "3": "Sometimes",
+            "4": "Often"
+        }
+    },
+    "fitpo_check_tracker": {
+        "Description": "How often did you check the Fitbit tracker? | 1= Never ; 2= Rarely ; 3= Sometimes ; 4= Often",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Never",
+            "2": "Rarely",
+            "3": "Sometimes",
+            "4": "Often"
+        }
+    },
+    "fitpo_use_apps": {
+        "Description": "How often did you use the app and/or website to see your Fitbit activity? | 1= Never ; 2= Rarely ; 3= Sometimes ; 4= Often",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Never",
+            "2": "Rarely",
+            "3": "Sometimes",
+            "4": "Often"
+        }
+    },
+    "fitpo_overnight_wear": {
+        "Description": "How often did you have to take the Fitbit off just before going to bed, or during the night? | 1= Never ; 2= Rarely ; 3= Sometimes ; 4= Often",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Never",
+            "2": "Rarely",
+            "3": "Sometimes",
+            "4": "Often"
+        }
+    },
+    "fitpo_sports": {
+        "Description": "How often did you have to take the Fitbit off during Sports? | 1= Never ; 2= Rarely ; 3= Sometimes ; 4= Often",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Never",
+            "2": "Rarely",
+            "3": "Sometimes",
+            "4": "Often"
+        }
+    },
+    "fitpo_which_sports": {
+        "Description": "Please clarify which sports: | [fitpo_sports] > 1\"\"",
+        "DataType": "String"
+    },
+    "fitbo_when_sport": {
+        "Description": "When: | 1=Weekends only ; 2=Weekdays only ; 3=Both weekends and weekdays; [fitpo_sports] > 1\"\"",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "Weekends only",
+            "2": "Weekdays only",
+            "3": "Both weekends and weekdays"
+        }
+    },
+    "fitpo_experience": {
+        "Description": "My Fitbit experience was positive | 1=Strongly agree ; 2=Agree ; 3=Neither agree nor disagree ; 4=Disagree ; 5=Strongly disagree",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Strongly agree",
+            "2": "Agree",
+            "3": "Neither agree nor disagree",
+            "4": "Disagree",
+            "5": "Strongly disagree"
+        }
+    },
+    "fitpo_activity": {
+        "Description": "I changed my level of activity and/or sleep based on the information from the tracker | 1=Strongly agree ; 2=Agree ; 3=Neither agree nor disagree ; 4=Disagree ; 5=Strongly disagree",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Strongly agree",
+            "2": "Agree",
+            "3": "Neither agree nor disagree",
+            "4": "Disagree",
+            "5": "Strongly disagree"
+        }
+    },
+    "fitpo_longer_wear": {
+        "Description": "If asked, I would wear the Fitbit for longer | 1=Strongly agree ; 2=Agree ; 3=Neither agree nor disagree ; 4=Disagree ; 5=Strongly disagree",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Strongly agree",
+            "2": "Agree",
+            "3": "Neither agree nor disagree",
+            "4": "Disagree",
+            "5": "Strongly disagree"
+        }
+    },
+    "fitpo_own_tracker": {
+        "Description": "Have you got your own activity tracker that you use? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_past_3_weeks___1": {
+        "Description": "Please check the box for any of the following items that applied over the past 3 weeks: 1, were you in school | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_past_3_weeks___2": {
+        "Description": "Please check the box for any of the following items that applied over the past 3 weeks:  2, were you at home during the day? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_past_3_weeks___3": {
+        "Description": "Please check the box for any of the following items that applied over the past 3 weeks: 3, were you at camp (dat or overnight camp)? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_past_3_weeks___4": {
+        "Description": "Please check the box for any of the following items that applied over the past 3 weeks:  4, were you away on vacation? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_past_3_weeks___5": {
+        "Description": "Please check the box for any of the following items that applied over the past 3 weeks: 5, were you sick? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_past_3_weeks___6": {
+        "Description": "Please check the box for any of the following items that applied over the past 3 weeks: 6, were you in a different place from where you usually are? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_cv_situation": {
+        "Description": "Has your daily routine (I.e. things you typically do every day, at about the same time each day) changed due to the coronavirus situation? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_use_in_past_3_wks": {
+        "Description": "Which option below best describes your use of the Fitbit in the past 3 weeks? | 1=I wore the Fitbit more during the past 3 weeks compared to my first use ; 2=I wore the Fitbit the same during the past 3 weeks compared to my first use ; 3=I wore the Fitbit less during the past 3 weeks compared to my first use",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "I wore the Fitbit more during the past 3 weeks compared to my first use",
+            "2": "I wore the Fitbit the same during the past 3 weeks compared to my first use",
+            "3": "I wore the Fitbit less during the past 3 weeks compared to my first use"
+        }
+    },
+    "fitpo_sleep_time": {
+        "Description": "I have gone to sleep: | 1=more than 2 hours later than usual ; 2=1-2 hours later than usual ; 3=less than 1 hour later than usual ; 4=no change in bedtime ; 5=less than 1 hour earlier than usual ; 6=1-2 hours earlier than usual ; 7=more than 2 hours earlier than usual",
+        "DataType": "Integer",
+        "ValueRange": "1::7",
+        "Levels": {
+            "1": "more than 2 hours later than usual",
+            "2": "1-2 hours later than usual",
+            "3": "less than 1 hour later than usual",
+            "4": "no change in bedtime",
+            "5": "less than 1 hour earlier than usual",
+            "6": "1-2 hours earlier than usual",
+            "7": "more than 2 hours earlier than usual"
+        }
+    },
+    "fitpo_woken_up": {
+        "Description": "I have woken up: | 1=more than 2 hours later than usual ; 2=1-2 hours later than usual ; 3=less than 1 hour later than usual ; 4=no change in bedtime ; 5=less than 1 hour earlier than usual ; 6=1-2 hours earlier than usual ; 7=more than 2 hours earlier than usual",
+        "DataType": "Integer",
+        "ValueRange": "1::7",
+        "Levels": {
+            "1": "more than 2 hours later than usual",
+            "2": "1-2 hours later than usual",
+            "3": "less than 1 hour later than usual",
+            "4": "no change in bedtime",
+            "5": "less than 1 hour earlier than usual",
+            "6": "1-2 hours earlier than usual",
+            "7": "more than 2 hours earlier than usual"
+        }
+    },
+    "fitpo_sleeping": {
+        "Description": "I have been sleeping: | 1=much less than usual ; 2=less than usual ; 3=the same as usual ; 4=rather more than usual ; 5=much more than usual",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "much less than usual",
+            "2": "less than usual",
+            "3": "the same as usual",
+            "4": "rather more than usual",
+            "5": "much more than usual"
+        }
+    },
+    "fitpo_physical_activity": {
+        "Description": "I have been physically active: | 1=much less than usual ; 2=less than usual ; 3=the same as usual ; 4=rather more than usual ; 5=much more than usual",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "much less than usual",
+            "2": "less than usual",
+            "3": "the same as usual",
+            "4": "rather more than usual",
+            "5": "much more than usual"
+        }
+    },
+    "fitpo_how_phys_act___1": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 1, Walking | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___2": {
+        "Description": "How are you getting physical activity? (select all that are applicable)?  2, Bike ride | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___3": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 3, Work-out/aerobics | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___4": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 4, Yoga | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___5": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 6, Basketball | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___6": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 7, Scooter/skate-boarding | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___7": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 7, Scooter/skate-boarding | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___8": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 8, Swimming | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___9": {
+        "Description": "How are you getting physical activity? (select all that are applicable)?  9, Weight-lifting | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___10": {
+        "Description": "How are you getting physical activity? (select all that are applicable)?  10, Using exercise equipment (e.g. treadmill) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___11": {
+        "Description": "How are you getting physical activity? (select all that are applicable)? 11, Roller-skating/Roller-blading | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_how_phys_act___12": {
+        "Description": "How are you getting physical activity? (select all that are applicable)?  12, Other | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpo_other_describe": {
+        "Description": "If Other\"  please describe:\" | [fitpo_how_phys_act(12)] = '1'",
+        "DataType": "String"
+    }
+}

@@ -1,0 +1,773 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "respond": {
+        "Description": "Respondent | 1 = Parent; 2 = Teacher; 3=Self; 4= Other; 5= Significant other; 6 = Parent 1; 7 = Parent 2; 999 = Not available",
+        "DataType": "Integer",
+        "ValueRange": "1::7;999",
+        "Levels": {
+            "1": "Parent",
+            "2": "Teacher",
+            "3": "Self",
+            "4": "Other",
+            "5": "Significant other",
+            "6": "Parent 1",
+            "7": "Parent 2",
+            "999": "Not available"
+        }
+    },
+    "kbi_p_c_live_full_time": {
+        "Description": "Does your child live with you full time?/  \u00bfSu ni\u00f1o(a) vive con usted todo el tiempo? | 1 = Yes /S\u00ed; 0 = No /No; -1 = Not applicable /No aplica; Thanks for agreeing to do this interview. You will now complete several measures on your own. To begin, here are some background questions. If you don't know the answer to a question, please just respond the best you can. When typing in responses, please do not type any names or any other information that may identify you or your child. Gracias por acceder a esta entrevista.  Ahora va a completar varios cuestionarios por su propria cuenta. Las siguientes preguntas tratan sobre antecedentes generales. Si no est\u00c3\u00a1 seguro, por favor, d\u00c3\u00a9 su mejor respuesta. Cuando escriba alguna respuesta, por favor no escriba ning\u00c3\u00ban nombre o cualquier otra informaci\u00c3\u00b3n que pueda identificarlo(a) a usted o su ni\u00c3\u00b1o(a).",
+        "DataType": "Integer",
+        "ValueRange": "-1::1",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "-1": "Not applicable /No aplica"
+        }
+    },
+    "kbi_p_c_guard___1": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). (1, Biological Mother/ Madre biol\u00f3gica) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___2": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 2, Biological Father /Padre biol\u00f3gico) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___3": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 3, Stepmother/ Madrastra) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___4": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 4, Stepfather Padrastro) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___5": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 5, Adopted Mother /Madre adoptiva) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___6": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 6, Adopted Father/Padre adoptivo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___7": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 7, Foster Parent /Padre o madre de crianza temporal) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___8": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 8, Grandmother /Abuela) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___9": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 9, Grandfather/ Abuelo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___10": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 10, Aunt/ T\u00eda) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___11": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 11, Uncle /T\u00edo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___12": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( 12, Other /Otra) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_guard___13": {
+        "Description": "Who else does your child live with at least part of the time?/  \u00bfCon qui\u00e9n m\u00e1s pasa tiempo su ni\u00f1o(a)? (Lea la lista sin la opci\u00f3n seleccionada arriba). ( -1, Not applicable /No aplica) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict": {
+        "Description": "In general, how do you and your child get along? En general?/  \u00bfc\u00f3mo se llevan usted y su ni\u00f1o(a)? | 1 = Very well/ Muy bien; 2 = Some conflict /Con algo de conflicto; 3 = A lot of conflict /Con mucho conflicto; -1 = Not Applicable /No aplica",
+        "DataType": "Integer",
+        "ValueRange": "-1::3",
+        "Levels": {
+            "1": "Very well/ Muy bien",
+            "2": "Some conflict /Con algo de conflicto",
+            "3": "A lot of conflict /Con mucho conflicto",
+            "-1": "Not Applicable /No aplica"
+        }
+    },
+    "kbi_p_conflict_causes___1": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): (1, Chores /Quehaceres) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___2": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 2, Messy Room /Habitaci\u00f3n desordenada) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___3": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 3, Breaking Curfew /No respetar la hora l\u00edmite para regresar a casa) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___4": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 4, Conflict with Siblings /Conflicto con hermanos) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___5": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 5, Grades /Calificaciones) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___6": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 6, Trouble in School /Problemas en la escuela) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___7": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 7, Trouble with Police /Problemas con la polic\u00eda) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___8": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 8, Moods /Estados de \u00e1nimo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___9": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( 9, Other /Otra) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_conflict_causes___10": {
+        "Description": "Click the things that cause conflict between you and your child/ A continuaci\u00f3n, seleccione aquello que causa conflicto entre usted y su ni\u00f1o(a): ( -1, Not applicable /No aplica) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_school_setting": {
+        "Description": "Select your child's current school setting/ Seleccione la respuesta que mejor describa el entorno escolar actual de su ni\u00f1o(a): | 1 = Not in School /No asiste a la escuela; 2 = Regular Public School/ Escuela p\u00fablica com\u00fan; 3 = Regular Private School /Escuela privada com\u00fan; 4 = Vocational-Technical School/ Escuela vocacional o t\u00e9cnica; 9 = Charter School /Escuela aut\u00f3noma subsidiada por el gobierno (\"charter school\"); 5 = Cyber School/ Escuela virtual; 6 = Home School/ Educaci\u00f3n en casa; 7 = Specialized School for Youth with Emotional/Behavioral Problems /Escuela especializada para j\u00f3venes con problemas emocionales o de conducta; 8 = Other/ Otra",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "Not in School /No asiste a la escuela",
+            "2": "Regular Public School/ Escuela p\u00fablica com\u00fan",
+            "3": "Regular Private School /Escuela privada com\u00fan",
+            "4": "Vocational-Technical School/ Escuela vocacional o t\u00e9cnica",
+            "9": "Charter School /Escuela aut\u00f3noma subsidiada por el gobierno (\"charter school\")",
+            "5": "Cyber School/ Escuela virtual",
+            "6": "Home School/ Educaci\u00f3n en casa",
+            "7": "Specialized School for Youth with Emotional/Behavioral Problems /Escuela especializada para j\u00f3venes con problemas emocionales o de conducta",
+            "8": "Other/ Otra"
+        }
+    },
+    "kbi_p_how_well_c_school": {
+        "Description": "In general, how does your child do in school? En general?/  \u00bfc\u00f3mo le va a su ni\u00f1o(a) en la escuela? | 1 = Very well/ Muy bien; 2 = Average /Promedio; 3 = Below Average /Por debajo del promedio; 4 = Failing /Est\u00e1 reprobando o repitiendo un grado; -1 = Not applicable /No aplica",
+        "DataType": "Integer",
+        "ValueRange": "-1;1;2;3;4",
+        "Levels": {
+            "1": "Very well/ Muy bien",
+            "2": "Average /Promedio",
+            "3": "Below Average /Por debajo del promedio",
+            "4": "Failing /Est\u00e1 reprobando o repitiendo un grado",
+            "-1": "Not applicable /No aplica"
+        }
+    },
+    "kbi_p_grades_in_school": {
+        "Description": "What kind of grades does your child get on average?/  \u00bfCu\u00e1l es el promedio de calificaciones de su ni\u00f1o(a)? | 1 = A's / Excellent A / Excelente; 2 = B's / Good B / Bien; 3 = C's / Average C / Promedio; 4 = D's / Below Average D / Por debajo del promedio; 5 = F's / Struggling a lot F / Tiene mucha dificultad; 6 = ungraded No se le califica; -1 = Not applicable No aplica",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6 ; -1",
+        "Levels": {
+            "1": "A's / Excellent A / Excelente",
+            "2": "B's / Good B / Bien",
+            "3": "C's / Average C / Promedio",
+            "4": "D's / Below Average D / Por debajo del promedio",
+            "5": "F's / Struggling a lot F / Tiene mucha dificultad",
+            "6": "ungraded No se le califica",
+            "-1": "Not applicable No aplica"
+        }
+    },
+    "kbi_p_c_drop_in_grades": {
+        "Description": "In the past year or past several months, has there been a drop in your/your child's grades?/  \u00bfLas calificaciones de su ni\u00f1o(a) han bajado en el \u00faltimo a\u00f1o o en los \u00faltimos meses? | 1 = Yes /S\u00ed; 2 = No /No; -1 = Not applicable /No aplica",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; -1",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "2": "No /No",
+            "-1": "Not applicable /No aplica"
+        }
+    },
+    "kbi_p_c_spec_serv___1": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: (1, Full-time Emotional Support Classroom /Sal\u00f3n de clases con apoyo emocional todo el tiempo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___2": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 2, Full-time Learning Support Classroom /Sal\u00f3n de clases con apoyo para el aprendizaje todo el tiempo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___3": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 3, Full-time Aide /Auxiliar durante el d\u00eda escolar completo) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___4": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 4, Special Education for specific subjects (partially mainstreamed) /Educaci\u00f3n especial para asignaturas espec\u00edficas (parcialmente en un sal\u00f3n de educaci\u00f3n general)) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___5": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 5, Part-time Aide /Auxiliar durante parte del d\u00eda escolar) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___6": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 6, Resource Room /Sal\u00f3n de clases con recursos especiales) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___7": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 7, Tutoring Support /Recibe apoyo con clases particulares) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___8": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 8, Gifted Program /Programa para ni\u00f1os dotados) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___9": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 9, Other /Otro) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_spec_serv___10": {
+        "Description": "Does your child receive special services at school? /  \u00bfSu ni\u00f1o(a) recibe servicios especiales en la escuela?   Seleccione todas las opciones que correspondan o apliquen: ( 10, Child does not receive special services /Su ni\u00f1o(a) no recibe servicios especiales) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_susp": {
+        "Description": "In the past year, has you/your child had any detentions or suspensions? En el \u00faltimo a\u00f1o?/  \u00bfsu ni\u00f1o(a) ha tenido alguna detenci\u00f3n o suspensi\u00f3n en la escuela? | 1 = Yes ; 2 = No ; 3 = Not sure; 777= Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": "1::3;777",
+        "Levels": {
+            "1": "Yes",
+            "2": "No",
+            "3": "Not sure",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_p_c_det_reason___1": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: (1, Fighting/ Pelear) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason___2": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 2, Talking Back to a Teacher /Ser insolente o grosero con un maestro) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason___3": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 3, Threatening a Teacher/ Amenazar a un maestro) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason___4": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 4, Cutting Classes /Saltarse o escapar de clases) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason___5": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 5, Using Drugs at School /Consumir drogas en la escuela) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason___6": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 6, Drinking at School /Consumir alcohol en la escuela) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason___7": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 7, Bringing a Weapon to School/ Llevar un arma a la escuela) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason__999": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 999, Don't know/ No s\u00e9) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason__888": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 888, Decline to answer /Niego contestar) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_det_reason__8": {
+        "Description": "Detention or suspensions. Reason./  \u00bfPor qu\u00e9 motivo?  Seleccione todas las opciones que correspondan o apliquen: ( 8, Other/ Otra) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_best_friend": {
+        "Description": "Does your child have a best friend?/  \u00bfSu ni\u00f1o(a) tiene un mejor amigo o amiga? | 1 = Yes/ S\u00ed; 0= No /No; 3 = Not sure /No estoy seguro(a)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;3",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No /No",
+            "3": "Not sure /No estoy seguro(a)"
+        }
+    },
+    "kbi_p_c_best_friend_len": {
+        "Description": "How long has your child been friends with this best friend?/  \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) es amigo(a) de este mejor amigo o amiga? | 1 = Less than a year/ Menos de un a\u00f1o; 2 = 1-2 years /De 1 a 2 a\u00f1os; 3 = More than 3 years/ M\u00e1s de 3 a\u00f1os",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "Less than a year/ Menos de un a\u00f1o",
+            "2": "1-2 years /De 1 a 2 a\u00f1os",
+            "3": "More than 3 years/ M\u00e1s de 3 a\u00f1os"
+        }
+    },
+    "kbi_p_c_reg_friend_group": {
+        "Description": "Does your child have a regular group of kids he or she hangs out with at school or in your neighborhood?/  \u00bfSu ni\u00f1o(a) tiene un grupo de ni\u00f1os con quienes comparte habitualmente en la escuela o en su vecindario? | 1 = Yes/ S\u00ed; 0= No /No; 3 = Not sure /No estoy seguro(a)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;3",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No /No",
+            "3": "Not sure /No estoy seguro(a)"
+        }
+    },
+    "kbi_p_c_reg_friend_group_len": {
+        "Description": "How long has your child hung out with them?/  \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) comparte con ellos? | 1 = Less than a year /Menos de un a\u00f1o; 2 = 1-2 years/ De 1 a 2 a\u00f1os; 3 = More than 3 years /M\u00e1s de 3 a\u00f1os; 4 = Not sure /No estoy seguro(a)",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Less than a year /Menos de un a\u00f1o",
+            "2": "1-2 years/ De 1 a 2 a\u00f1os",
+            "3": "More than 3 years /M\u00e1s de 3 a\u00f1os",
+            "4": "Not sure /No estoy seguro(a)"
+        }
+    },
+    "kbi_p_c_reg_friend_group_opin": {
+        "Description": "Do you like your child's friends?/  \u00bfA usted le caen bien los amigos de su ni\u00f1o(a)? | 1 = Yes /S\u00c3\u00ad; 2 = Some /Algo; 3 = No/ No",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "Yes /S\u00c3\u00ad",
+            "2": "Some /Algo",
+            "3": "No/ No"
+        }
+    },
+    "kbi_p_c_bully": {
+        "Description": "Does your child have any problems with bullying at school or in your neighborhood?/  \u00bfSu ni\u00f1o(a) tiene alg\u00fan problema de acoso en la escuela o en su vecindario? | 1 = Yes /S\u00ed; 0 = No/ No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No/ No"
+        }
+    },
+    "kbi_p_c_gay": {
+        "Description": "Is you/your child gay?/  \u00bfSu ni\u00f1o(a) es homosexual? | 1 = Yes /S\u00ed; 2 = Maybe/Don't know /Tal vez/No s\u00e9; 0 = No/ No; 4 = Decline to answer /Niego contestar",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "2": "Maybe/Don't know /Tal vez/No s\u00e9",
+            "0": "No/ No",
+            "4": "Decline to answer /Niego contestar"
+        }
+    },
+    "kbi_p_c_gay_problems": {
+        "Description": "Has this caused any problems for you/your child with your family or with kids at school?/  \u00bfEsto le ha causado a su ni\u00f1o(a) alg\u00fan problema con su familia o con los ni\u00f1os en la escuela? | 1 = Not at all /Para nada; 2 = Some /Algo; 3 = A lot /Mucho; 4 = Decline to answer /Niego contestar",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Not at all /Para nada",
+            "2": "Some /Algo",
+            "3": "A lot /Mucho",
+            "4": "Decline to answer /Niego contestar"
+        }
+    },
+    "kbi_p_c_trans": {
+        "Description": "Is you/your child transgender?/  \u00bfSu ni\u00f1o(a) es transg\u00e9nero | 1 = Yes /S\u00ed; 2 = Maybe/Don't know /Tal vez/No s\u00e9; 0 = No/ No; 4 = Decline to answer /Niego contestar",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "2": "Maybe/Don't know /Tal vez/No s\u00e9",
+            "0": "No/ No",
+            "4": "Decline to answer /Niego contestar"
+        }
+    },
+    "kbi_p_c_trans_problems": {
+        "Description": "Has this caused any problems for you/your child with your family or with kids at school?/  \u00bfEsto le ha causado a su ni\u00f1o(a) alg\u00fan problema con su familia o con los ni\u00f1os en la escuela? | 1 = Not at all /Para nada; 2 = Some /Algo; 3 = A lot /Mucho; 4 = Decline to answer /Niego contestar",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Not at all /Para nada",
+            "2": "Some /Algo",
+            "3": "A lot /Mucho",
+            "4": "Decline to answer /Niego contestar"
+        }
+    },
+    "kbi_p_c_mh_sa": {
+        "Description": "Has your child ever received mental health or substance abuse services?/  \u00bfSu ni\u00f1o(a) ha recibido alguna vez servicios de salud mental o para el abuso de sustancias? | 1 = Yes/ S\u00ed; 0= No /No; 3 = Not sure /No estoy seguro(a)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;3",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No /No",
+            "3": "Not sure /No estoy seguro(a)"
+        }
+    },
+    "kbi_p_c_age_services": {
+        "Description": "How old was your child when they first received mental health or substance abuse services?/  \u00bfQu\u00e9 edad ten\u00eda su ni\u00f1o(a) cuando recibi\u00f3 por primera vez servicios de salud mental o para el abuso de sustancias?  An\u00f3tela en el espacio en blanco | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "kbi_p_c_age_services_bl_dk": {
+        "Description": "How old was your child when they first received mental health or substance abuse services. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "kbi_p_c_scheck1": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ (1, outpatient mental health /Atenci\u00f3n ambulatoria para la salud mental) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck2": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 2, partial hospital for mental health /Hospitalizaci\u00f3n parcial para la salud mental) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck3": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 3, inpatient for mental health /Hospitalizaci\u00f3n para la salud mental) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck4": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 4, outpatient substance abuse /Atenci\u00f3n ambulatoria para el abuso de sustancias) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck5": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 5, partial hospital for substance abuse /Hospitalizaci\u00f3n parcial por abuso de sustancias) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck6": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 6, inpatient for substance abuse /Hospitalizaci\u00f3n por abuso de sustancias) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck7": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 7, psychotherapy /Psicoterapia) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck8": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 8, medication management /Administraci\u00f3n de medicamentos) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck9": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 9, other /Otro) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_scheck10": {
+        "Description": "Types of mental health or substance abuse services your child has received/ Seleccione todos los tipos de servicios de salud mental o para el abuso de sustancias que haya recibido su ni\u00f1o(a)/ ( 10, none /Ninguno) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_p_c_mental_health": {
+        "Description": "How many times has your child been in the hospital for mental health problems?/  \u00bfCu\u00e1ntas veces ha estado su ni\u00f1o(a) en el hospital por problemas de salud mental? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "kbi_ss_c_mental_health_p": {
+        "Description": "How many times has your child been in the hospital for mental health problems? | When inpatient for mental health is not endorsed in kbi_p_c_services_checklist, values for kbi_p_c_mental_health are missing. Here, these missing values have been replaced with 0.",
+        "DataType": "Integer"
+    },
+    "kbi_p_c_mental_health_dk": {
+        "Description": "How many times has your child been in the hospital for mental health problems. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "kbi_p_c_substance_abuse": {
+        "Description": "How many times has your child been in the hospital for substance abuse problems?\u00bfCu\u00e1ntas veces ha estado su ni\u00f1o(a) en el hospital por problemas de abuso de sustancias? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "kbi_ss_c_substance_abuse_p": {
+        "Description": "How many times has your child been in the hospital for substance abuse problems? | When  inpatient for substance abuse is not endorsed in kbi_p_c_services_checklist, values form kbi_p_c_substance_abuse are missing. Here, these missing values have been replaced with 0.",
+        "DataType": "Integer"
+    },
+    "kbi_p_c_substance_abuse_dk": {
+        "Description": "How many times has your child been in the hospital for substance abuse problems. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "kbi_p_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    }
+}

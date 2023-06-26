@@ -1,0 +1,1765 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "SITE_ID": {
+        "LongName": "ABIDE II Acquisition Site ID",
+        "Description": "Site at which data were acquired.",
+        "Levels": {
+            "ABIDEII-BNI_1": "Barrow Neurological Institute",
+            "ABIDEII-EMC_1": "Erasmus University Medical Center Rotterdam",
+            "ABIDEII-ETH_1": "ETH Z\u00fcrich",
+            "ABIDEII-GU_1": "Georgetown University",
+            "ABIDEII-IP_1": "Institut Pasteur and Robert Debr\u00e9 Hospital",
+            "ABIDEII-IU_1": "Indiana University",
+            "ABIDEII-KKI_1": "Kennedy Krieger Institute",
+            "ABIDEII-KUL_3": "Katholieke Universiteit Leuven",
+            "ABIDEII-NYU_1": "NYU Langone Medical Center: Sample 1",
+            "ABIDEII-NYU_2": "NYU Langone Medical Center: Sample 2",
+            "ABIDEII-OHSU_1": "Oregon Health and Science University",
+            "ABIDEII-OILH_2": "Olin Neuropsychiatry Research Center, Institute of Living at Hartford Hospital",
+            "ABIDEII-SDSU_1": "San Diego State University",
+            "ABIDEII-SU_2": "Stanford University",
+            "ABIDEII-TCD_1": "Trinity Centre for Health Sciences",
+            "ABIDEII-UCD_1": "University of California Davis",
+            "ABIDEII-UCLA_1": "University of California Los Angeles",
+            "ABIDEII-USM_1": "University of Utah School of Medicine",
+            "ABIDEII-U_MIA_1": "University of Miami"
+        }
+    },
+    "SUB_ID": {
+        "LongName": "ABIDE II Unique ID Number",
+        "Description": "Type: Numeric, Min: 28675, Max: 30151"
+    },
+    "NDAR_GUID": {
+        "LongName": "National Database for Autism Research Global Unique Identifier",
+        "Description": "Type: String"
+    },
+    "DX_GROUP": {
+        "LongName": "Diagnostic Group",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "Autism",
+            "2": "Control"
+        }
+    },
+    "PDD_DSM_IV_TR": {
+        "LongName": "DSM-IV-TR PDD Category",
+        "Description": "Type: Numeric, Min: 0, Max: 3",
+        "Levels": {
+            "0": "none",
+            "1": "Autism",
+            "2": "Aspergers",
+            "3": "PDD-NOS"
+        }
+    },
+    "ASD_DSM_5": {
+        "LongName": "DSM-5 ASD Category",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "none",
+            "1": "ASD"
+        }
+    },
+    "AGE_AT_SCAN": {
+        "LongName": "Age at time of scan (years)",
+        "Description": "Type: Numeric, Min: 5.13, Max: 64"
+    },
+    "SEX": {
+        "LongName": "Gender",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "male",
+            "2": "female"
+        }
+    },
+    "HANDEDNESS_CATEGORY": {
+        "LongName": "Handedness Category",
+        "Description": "Type: Numeric, Min: 1, Max: 3",
+        "Levels": {
+            "1": "right handed",
+            "2": "left handed",
+            "3": "mixed handed"
+        }
+    },
+    "HANDEDNESS_SCORES": {
+        "LongName": "Handedness Scores",
+        "Description": "right handed: scores >= 50; left handed: scores <= -50; mixed handed: scores between -50 and 50, Type: Numeric, , Min: -100, Max: 100"
+    },
+    "FIQ": {
+        "LongName": "Full IQ Standard Score",
+        "Description": "Type: Numeric, from FIQ_TEST_TYPE"
+    },
+    "VIQ": {
+        "LongName": "Verbal IQ Standard Score",
+        "Description": "Type: Numeric, from VIQ_TEST_TYPE"
+    },
+    "PIQ": {
+        "LongName": "Perfomance IQ Standard Score",
+        "Description": "Type: Numeric, from PIQ_TEST_TYPE"
+    },
+    "FIQ_TEST_TYPE": {
+        "LongName": "IQ Test Used for Full Scale IQ",
+        "Description": "Type: String",
+        "Levels": {
+            "DAS": "Differential Ability Scale (DAS)",
+            "DAS-II": "Differential Ability Scale II (DAS-II)",
+            "WAIS-III": "Wechsler Adult Intelligence Scale III (WAIS-III)",
+            "WAIS-IV": "Wechsler Adult Intelligence Scale IV (WAIS-IV)",
+            "WAIS-IV-NL": "Wechsler Adult Intelligence Scale IV Dutch Language Version (WAIS-IV-NL)",
+            "WASI": "Wechsler Abbreviated Scale of Intelligence (WASI)",
+            "WASI-II": "Wechsler Abbreviated Scale of Intelligence II (WASI-II)",
+            "WISC-III": "Wechsler Intelligence Scale of Children III (WISC-III)",
+            "WISC-IV": "Wechsler Intelligence Scale of Children IV (WISC-IV)",
+            "WPPSI-III": "Wechsler Preschool and Primary Scale of Intelligence III (WPPSI-III)",
+            "KBIT-2": "Kaufman Brief Intellifence Test (KBIT-2)"
+        }
+    },
+    "VIQ_TEST_TYPE": {
+        "LongName": "IQ Test Used for Verbal IQ",
+        "Description": "Type: String",
+        "Levels": {
+            "DAS": "Differential Ability Scale (DAS)",
+            "DAS-II": "Differential Ability Scale II (DAS-II)",
+            "WAIS-III": "Wechsler Adult Intelligence Scale III (WAIS-III)",
+            "WAIS-IV": "Wechsler Adult Intelligence Scale IV (WAIS-IV)",
+            "WAIS-IV-NL": "Wechsler Adult Intelligence Scale IV Dutch Language Version (WAIS-IV-NL)",
+            "WASI": "Wechsler Abbreviated Scale of Intelligence (WASI)",
+            "WASI-II": "Wechsler Abbreviated Scale of Intelligence II (WASI-II)",
+            "WISC-III": "Wechsler Intelligence Scale of Children III (WISC-III)",
+            "WISC-IV": "Wechsler Intelligence Scale of Children IV (WISC-IV)",
+            "WPPSI-III": "Wechsler Preschool and Primary Scale of Intelligence III (WPPSI-III)"
+        }
+    },
+    "PIQ_TEST_TYPE": {
+        "LongName": "IQ Test Used for Performance IQ",
+        "Description": "Type: String",
+        "Levels": {
+            "DAS": "Differential Ability Scale (DAS)",
+            "DAS-II": "Differential Ability Scale II (DAS-II)",
+            "WAIS-III": "Wechsler Adult Intelligence Scale III (WAIS-III)",
+            "WAIS-IV": "Wechsler Adult Intelligence Scale IV (WAIS-IV)",
+            "WAIS-IV-NL": "Wechsler Adult Intelligence Scale IV Dutch Language Version (WAIS-IV-NL)",
+            "WASI": "Wechsler Abbreviated Scale of Intelligence (WASI)",
+            "WASI-II": "Wechsler Abbreviated Scale of Intelligence II (WASI-II)",
+            "WISC-III": "Wechsler Intelligence Scale of Children III (WISC-III)",
+            "WISC-IV": "Wechsler Intelligence Scale of Children IV (WISC-IV)",
+            "WPPSI-III": "Wechsler Preschool and Primary Scale of Intelligence III (WPPSI-III)",
+            "Raven": "Raven's Progressive Matrices (Raven)",
+            "SON-R": "Snijders-Oomen Nonverbal Intelligence (SON-R)"
+        }
+    },
+    "ADI_R_SOCIAL_TOTAL_A": {
+        "LongName": "Autism Diagnsoitc Interview-Revised Reciprocal Social Interaction Subscore (A) Total",
+        "Description": "Type: Numeric, Min: 0, Max: 30"
+    },
+    "ADI_R_VERBAL_TOTAL_BV": {
+        "LongName": "Abnormalities in Communication Subscore Verbal B(V) Total",
+        "Description": "Type: Numeric, Min: 0, Max: 25"
+    },
+    "ADI_R_NONVERBAL_TOTAL_BV": {
+        "LongName": "Abnormalities in Communication Subscore Nonverbal B(NV) Total",
+        "Description": "Type: Numeric, Min: 0, Max: 14"
+    },
+    "ADI_R_RRB_TOTAL_C": {
+        "LongName": "Restricted, Repetitive, and Sterestyped Patterns of Behavior (C) Total",
+        "Description": "Type: Numeric, Min: 0, Max: 12"
+    },
+    "ADI_R_ONSET_TOTAL_D": {
+        "LongName": "Abnormality of Development Evident at or Before 36 Months (D) Total",
+        "Description": "Type: Numeric, Min: 0, Max: 5"
+    },
+    "ADI_R_RSRCH_RELIABLE": {
+        "LongName": "Was AD-R scored/administered by research reliable personnel?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "no",
+            "1": "yes"
+        }
+    },
+    "ADOS_MODULE": {
+        "LongName": "Autism Diagnostic Observation Schedule Module",
+        "Description": "Type: Numeric, Min: 1, Max: 4"
+    },
+    "ADOS_RSRCH_RELIABLE": {
+        "LongName": "Was ADOS scored/administered by research reliable personnel?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "no",
+            "1": "yes"
+        }
+    },
+    "ADOS_G_TOTAL": {
+        "LongName": "ADOS Generic or ADOS-2 Module 4 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 23"
+    },
+    "ADOS_G_COMM": {
+        "LongName": "ADOS-G or ADOS-2 Module 4 Communication Total",
+        "Description": "Type: Numeric, Min: 0, Max: 10"
+    },
+    "ADOS_G_SOCIAL": {
+        "LongName": "ADOS-G or ADOS-2 Module 4 Reciprocal Social Interaction Total",
+        "Description": "Type: Numeric, Min: 0, Max: 14"
+    },
+    "ADOS_G_STEREO_BEHAV": {
+        "LongName": "ADOS-G or ADOS-2 Module 4 Stereotyped Behaviors and Restricted Interest Total",
+        "Description": "Type: Numeric, Min: 0, Max: 6"
+    },
+    "ADOS_G_CREATIVITY": {
+        "LongName": "ADOS-G or ADOS-2 Module 4 Imagination/Creativity Total",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADOS_2_SOCAFFECT": {
+        "LongName": "ADOS-2 Social Affect Total",
+        "Description": "Type: Numeric, Min: 0, Max: 20"
+    },
+    "ADOS_2_RRB": {
+        "LongName": "ADOS-2 Restricted and Repetitive Behavior Total",
+        "Description": "Type: Numeric, Min: 0, Max: 8"
+    },
+    "ADOS_2_TOTAL": {
+        "LongName": "ADOS-2 Total Score",
+        "Description": "Type: Numeric, Min: 1, Max: 25"
+    },
+    "ADOS_2_SEVERITY_TOTAL": {
+        "LongName": "ADOS-2 Calibrated Severity Total Score",
+        "Description": "Type: Numeric, Min: 1, Max: 10"
+    },
+    "SRS_EDITION": {
+        "LongName": "Social Responsiveness Scale Edition",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "SRS",
+            "2": "SRS-2"
+        }
+    },
+    "SRS_VERSION": {
+        "LongName": "SRS Version",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "child form",
+            "2": "adult form"
+        }
+    },
+    "SRS_INFORMANT": {
+        "LongName": "Who completed the SRS?",
+        "Description": "Type: Numeric, Min: 1, Max: 9",
+        "Levels": {
+            "1": "mother",
+            "2": "father",
+            "3": "both parents",
+            "4": "teacher",
+            "5": "self",
+            "6": "significant other",
+            "7": "friend",
+            "8": "mother or father",
+            "9": "other relative"
+        }
+    },
+    "SRS_TOTAL_RAW": {
+        "LongName": "SRS Total Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 199"
+    },
+    "SRS_AWARENESS_RAW": {
+        "LongName": "SRS Social Awareness Total Raw",
+        "Description": "Type: Numeric, Min: 0, Max: 21"
+    },
+    "SRS_COGNITION_RAW": {
+        "LongName": "SRS Social Cognition Total Raw",
+        "Description": "Type: Numeric, Min: 0, Max: 32"
+    },
+    "SRS_COMMUNICATION_RAW": {
+        "LongName": "SRS Social Communication Total Raw",
+        "Description": "Type: Numeric, Min: 0, Max: 55"
+    },
+    "SRS_MOTIVATION_RAW": {
+        "LongName": "SRS Social Motivation Total Raw",
+        "Description": "Type: Numeric, Min: 0, Max: 32"
+    },
+    "SRS_MANNERISMS_RAW": {
+        "LongName": "SRS Autistic Mannerisms Total Raw",
+        "Description": "Type: Numeric, Min: 0, Max: 36"
+    },
+    "SRS_TOTAL_T": {
+        "LongName": "SRS Total T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 116"
+    },
+    "SRS_AWARENESS_T": {
+        "LongName": "SRS Social Awareness Total T",
+        "Description": "Type: Numeric, Min: 30, Max: 100"
+    },
+    "SRS_COGNITION_T": {
+        "LongName": "SRS Social Cognition T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 108"
+    },
+    "SRS_COMMUNICATION_T": {
+        "LongName": "SRS Social Communication  T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 110"
+    },
+    "SRS_MOTIVATION_T": {
+        "LongName": "SRS Social Motivation T Score",
+        "Description": "Type: Numeric, Min: 37, Max: 113"
+    },
+    "SRS_MANNERISMS_T": {
+        "LongName": "SRS Autistic Mannerisms T Score",
+        "Description": "Type: Numeric, Min: 40, Max: 138"
+    },
+    "SCQ_VERSION": {
+        "LongName": "Social Communication Questionnaire Version",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "lifetime form",
+            "2": "current form"
+        }
+    },
+    "SCQ_TOTAL": {
+        "LongName": "SCQ Total Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 34"
+    },
+    "AQ_TOTAL": {
+        "LongName": "Autism Quotient Total Raw Score",
+        "Description": "Type: Numeric, Min: 9, Max: 47"
+    },
+    "NONASD_PSYDX_ICD9CODE": {
+        "LongName": "International Classification of Diseases 9th Revision Code for Non-ASD Psychiatric Disorders",
+        "Description": "Type: Numeric"
+    },
+    "NONASD_PSYDX_LABEL": {
+        "LongName": "Non-ASD Psychiatric Disorders Label",
+        "Description": "Type: String"
+    },
+    "CURRENT_MED_STATUS": {
+        "LongName": "Currently taking medications (within three months from scan)?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "no",
+            "1": "yes"
+        }
+    },
+    "CURRENT_MEDICATION_NAME": {
+        "LongName": "Active Ingredient of Current Medications",
+        "Description": "Type: String"
+    },
+    "OFF_STIMULANTS_AT_SCAN": {
+        "LongName": "Off stimulants 24 hours prior to scan?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "no",
+            "1": "yes"
+        }
+    },
+    "EYE_STATUS_AT_SCAN": {
+        "LongName": "Eye Status During Rest Scan",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "open",
+            "2": "closed"
+        }
+    },
+    "AGE_AT_MPRAGE": {
+        "LongName": "Age at anatomical scan in years if different from rest scan",
+        "Description": "Type: Numeric"
+    },
+    "BMI": {
+        "LongName": "Body Mass Index",
+        "Description": "Type: Numeric, Min: 12.77, Max: 30.23"
+    },
+    "VINELAND_RECEPTIVE_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales 2nd Edition (Vineland-II) Receptive Language V Scaled Score",
+        "Description": "Type: Numeric, Min: 4, Max: 18"
+    },
+    "VINELAND_EXPRESSIVE_V_SCALED": {
+        "LongName": "Vineland-II Expressive Language V Scaled Score",
+        "Description": "Type: Numeric, Min: 7, Max: 21"
+    },
+    "VINELAND_WRITTEN_V_SCALED": {
+        "LongName": "Vineland-II Written Language V Scaled Score",
+        "Description": "Type: Numeric, Min: 8, Max: 21"
+    },
+    "VINELAND_COMMUNICATION_STANDARD": {
+        "LongName": "Vineland-II Communication Standard Score",
+        "Description": "Type: Numeric, Min: 32, Max: 130"
+    },
+    "VINELAND_PERSONAL_V_SCALED": {
+        "LongName": "Vineland-II  Personal Daily Living Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 8, Max: 21"
+    },
+    "VINELAND_DOMESTIC_V_SCALED": {
+        "LongName": "Vineland-II Domestic Daily Living Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 6, Max: 19"
+    },
+    "VINELAND_COMMUNITY_V_SCALED": {
+        "LongName": "Vineland-II Community Daily Living Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 8, Max: 20"
+    },
+    "VINELAND_DAILYLIVING_STANDARD": {
+        "LongName": "Vineland-II Daily Living Skills Standard Score",
+        "Description": "Type: Numeric, Min: 59, Max: 121"
+    },
+    "VINELAND_INTERPERSONAL_V_SCALED": {
+        "LongName": "Vineland-II Interpersonal Relationships V Scaled Score",
+        "Description": "Type: Numeric, Min: 4, Max: 20"
+    },
+    "VINELAND_PLAY_V_SCALED": {
+        "LongName": "Vineland-II Play and Leisure Time V Scaled Score",
+        "Description": "Type: Numeric, Min: 3, Max: 19"
+    },
+    "VINELAND_COPING_V_SCALED": {
+        "LongName": "Vineland-II Coping Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 7, Max: 23"
+    },
+    "VINELAND_SOCIAL_STANDARD": {
+        "LongName": "Vineland-II Socialization Standard Score",
+        "Description": "Type: Numeric, Min: 51, Max: 129"
+    },
+    "VINELAND_GROSS_V_SCALED": {
+        "LongName": "Vineland-II Gross Motor V Scaled Score",
+        "Description": "Type: Numeric, Min: 8, Max: 19"
+    },
+    "VINELAND_FINE_V_SCALED": {
+        "LongName": "Vineland-II Fine Motor V Scaled Score",
+        "Description": "Type: Numeric, Min: 9, Max: 17"
+    },
+    "VINELAND_MOTOR_STANDARD": {
+        "LongName": "Vineland-II Motor Skills Standard Score",
+        "Description": "Type: Numeric, Min: 67, Max: 117"
+    },
+    "VINELAND_SUM_SCORES": {
+        "LongName": "Sum of Vineland-II Standard Scores (Communication + Daily Living Skills + Socialization + Motor Skills)",
+        "Description": "Type: Numeric, Min: 166, Max: 441"
+    },
+    "VINELAND_ABC_Standard": {
+        "LongName": "Vineland-II Adaptive Behavior Composite Standard Score",
+        "Description": "Type: Numeric, Min: 48, Max: 122"
+    },
+    "VINELAND_INFORMANT": {
+        "LongName": "Vineland-II Informant",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "parent",
+            "2": "self",
+            "3": "other"
+        }
+    },
+    "RBSR_6SUBSCALE_STEREOTYPED": {
+        "LongName": "Repetitive Behaviors Scale-Revised 6 Subscales Scoring System Stereotyped Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 16"
+    },
+    "RBSR_6SUBSCALE_SELF-INJURIOUS": {
+        "LongName": "RBS-R 6 Subscales Self-Injurious Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 16"
+    },
+    "RBSR_6SUBSCALE_COMPULSIVE": {
+        "LongName": "RBS-R 6 Subscales Compulsive Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 22"
+    },
+    "RBSR_6SUBSCALE_RITUALISTIC": {
+        "LongName": "RBS-R 6 Subscales Ritualistic Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 17"
+    },
+    "RBSR_6SUBSCALE_SAMENESS": {
+        "LongName": "RBS-R 6 Subscales Sameness Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 28"
+    },
+    "RBSR_6SUBSCALE_RESTRICTED": {
+        "LongName": "RBS-R 6 Subscales Restricted Interests Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 12"
+    },
+    "RBSR_6SUBSCALE_TOTAL": {
+        "LongName": "RBS-R 6 Subscales Total Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 97"
+    },
+    "RBSR_5SUBSCALE_STEREOTYPIC": {
+        "LongName": "RBS-R 5 Subscales Scoring System Stereotypic Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 21"
+    },
+    "RBSR_5SUBSCALE_SELF-INJURIOUS": {
+        "LongName": "RBS-R 5 Subscales Self-Injurious Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 15"
+    },
+    "RBSR_5SUBSCALE_COMPULSIVE": {
+        "LongName": "RBS-R 5 Subscales Compulsive Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 18"
+    },
+    "RBSR_5SUBSCALE_RITUALISTIC": {
+        "LongName": "RBS-R 5 Subscales Ritualistic/Sameness Behavior Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 30"
+    },
+    "RBSR_5SUBSCALE_RESTRICTED": {
+        "LongName": "RBS-R 5 Subscales Restricted Interests Subscale Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "RBSR_5SUBSCALE_TOTAL": {
+        "LongName": "RBS-R 5 Subscales Total Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 84"
+    },
+    "MASC_EDITION": {
+        "LongName": "Multidimensional Anxiety Scale for Children Edition",
+        "Description": "Type: Numeric, Min: 1, Max: 1",
+        "Levels": {
+            "1": "MASC",
+            "2": "MASC 2"
+        }
+    },
+    "MASC_TOTAL_T": {
+        "LongName": "MASC Total T Score",
+        "Description": "Type: Numeric, Min: 31, Max: 88"
+    },
+    "MASC_T/R_T": {
+        "LongName": "MASC Physical Symptoms Tense/Restless T Score",
+        "Description": "Type: Numeric, Min: 35, Max: 84"
+    },
+    "MASC_S/A_T": {
+        "LongName": "MASC Physical Symptoms Somatic/Autonomic T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 91"
+    },
+    "MASC_PHYSICAL_TOTAL_T": {
+        "LongName": "MASC Physical Symptoms Total T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 86"
+    },
+    "MASC_PER_T": {
+        "LongName": "MASC for Children Harm Avoidance Perfectionism T Score",
+        "Description": "Type: Numeric, Min: 25, Max: 67"
+    },
+    "MASC_AC_T": {
+        "LongName": "MASC Harm Avoidance Anxious/Coping T Score",
+        "Description": "Type: Numeric, Min: 28, Max: 72"
+    },
+    "MASC_HARM_TOTAL_T": {
+        "LongName": "MASC Harm Avoidance Total T Score",
+        "Description": "Type: Numeric, Min: 25, Max: 72"
+    },
+    "MASC_H/R_T": {
+        "LongName": "MASC Social Anxiety Humiliation/Rejection T Score",
+        "Description": "Type: Numeric, Min: 13, Max: 81"
+    },
+    "MASC_PP_T": {
+        "LongName": "MASC Social Anxiety Performance Fears T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 77"
+    },
+    "MASC_SOCIAL_TOTAL_T": {
+        "LongName": "MASC Social Anxiety Total T Score",
+        "Description": "Type: Numeric, Min: 32, Max: 83"
+    },
+    "MASC_SEP_T": {
+        "LongName": "MASC Separation/Panic T Score",
+        "Description": "Type: Numeric, Min: 32, Max: 93"
+    },
+    "MASC_ADI_T": {
+        "LongName": "MASC Anxiety Disorder Index T Sore",
+        "Description": "Type: Numeric, Min: 25, Max: 80"
+    },
+    "MASC_INCONSISTENCY_SCORE": {
+        "LongName": "MASC Inconsistency Score",
+        "Description": "Type: Numeric, Min: 0, Max: 15"
+    },
+    "BRIEF_VERSION": {
+        "LongName": "Behavior Rating Inventory of Executive Function Version",
+        "Description": "Type: Numeric, Min: 1, Max: 1",
+        "Levels": {
+            "1": "child form",
+            "2": "adult form"
+        }
+    },
+    "BRIEF_INFORMANT": {
+        "LongName": "BRIEF Informant",
+        "Description": "Type: Numeric, Min: 1, Max: 9",
+        "Levels": {
+            "1": "mother",
+            "2": "father",
+            "3": "both parents",
+            "4": "teacher",
+            "5": "self",
+            "6": "significant other",
+            "7": "friend",
+            "8": "mother or father",
+            "9": "other relative"
+        }
+    },
+    "BRIEF_INHIBIT_T": {
+        "LongName": "BRIEF Inhibit T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 97"
+    },
+    "BRIEF_SHIFT_T": {
+        "LongName": "BRIEF Shift T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 99"
+    },
+    "BRIEF_EMOTIONAL_T": {
+        "LongName": "BRIEF Emotional Control T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 91"
+    },
+    "BRIEF_BRI_T": {
+        "LongName": "BRIEF Behavioral Regulation Index T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 99"
+    },
+    "BRIEF_INITIATE_T": {
+        "LongName": "BRIEF Initiate T Score",
+        "Description": "Type: Numeric, Min: 35, Max: 95"
+    },
+    "BRIEF_WORKING_T": {
+        "LongName": "BRIEF Working Memory T Score",
+        "Description": "Type: Numeric, Min: 35, Max: 90"
+    },
+    "BRIEF_PLAN_T": {
+        "LongName": "BRIEF Plan/Organize T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 95"
+    },
+    "BRIEF_ORGANIZATION_T": {
+        "LongName": "BRIEF Organization of Materials T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 73"
+    },
+    "BRIEF_MONITOR_T": {
+        "LongName": "BRIEF  Monitor T Score",
+        "Description": "Type: Numeric, Min: 28, Max: 91"
+    },
+    "BRIEF_MI_T": {
+        "LongName": "BRIEF Metacognition Index T Score",
+        "Description": "Type: Numeric, Min: 30, Max: 92"
+    },
+    "BRIEF_GEC_T": {
+        "LongName": "BRIEF Global Executive Composite T Score",
+        "Description": "Type: Numeric, Min: 30, Max: 96"
+    },
+    "BRIEF_INCONSISTENCY_SCORE": {
+        "LongName": "BRIEF Inconsistency Score",
+        "Description": "Type: Numeric, Min: 0, Max: 10"
+    },
+    "BRIEF_NEGATIVITY_SCORE": {
+        "LongName": "BRIEF Negativity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "CBCL_6-18_ACTIVITIES_T": {
+        "LongName": "Child Behavior Checklist Ages 6-18 Activities T Score",
+        "Description": "Type: Numeric, Min: 25, Max: 65"
+    },
+    "CBCL_6-18_SOCIAL_T": {
+        "LongName": "CBCL 6-18 Social T Score",
+        "Description": "Type: Numeric, Min: 23, Max: 65"
+    },
+    "CBCL_6-18_SCHOOL_T": {
+        "LongName": "CBCL 6-18 School T Score",
+        "Description": "Type: Numeric, Min: 25, Max: 55"
+    },
+    "CBCL_6-18_TOTAL_COMPETENCE_T": {
+        "LongName": "CBCL 6-18 Total Competence T Score",
+        "Description": "Type: Numeric, Min: 26, Max: 78"
+    },
+    "CBCL_6-18_ANXIOUS_T": {
+        "LongName": "CBCL 6-18 Anxious/Depressed T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 87"
+    },
+    "CBCL_6-18_WITHDRAWN_T": {
+        "LongName": "CBCL 6-18 Withdrawn/Depressed T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 91"
+    },
+    "CBCL_6-18_SOMATIC_COMPAINT_T": {
+        "LongName": "CBCL 6-18 Somatic Complaints T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 88"
+    },
+    "CBCL_6-18_SOCIAL_PROBLEM_T": {
+        "LongName": "CBCL 6-18 Social Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 93"
+    },
+    "CBCL_6-18_THOUGHT_T": {
+        "LongName": "CBCL 6-18 Thought Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 88"
+    },
+    "CBCL_6-18_ATTENTION_T": {
+        "LongName": "CBCL 6-18 Attention Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 97"
+    },
+    "CBCL_6-18_RULE_T": {
+        "LongName": "CBCL 6-18 Rule-Breaking Behavior T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 76"
+    },
+    "CBCL_6-18_AGGRESSIVE_T": {
+        "LongName": "CBCL 6-18 Aggressive Behavior T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 84"
+    },
+    "CBCL_6-18_INTERNAL_T": {
+        "LongName": "CBCL 6-18 Internalizing Problems T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 87"
+    },
+    "CBCL_6-18_EXTERNAL_T": {
+        "LongName": "CBCL 6-18 Externalizing Problems T Score",
+        "Description": "Type: Numeric, Min: 32, Max: 77"
+    },
+    "CBCL_6-18_TOTAL_PROBLEM_T": {
+        "LongName": "CBCL 6-18 Total Problems T Score",
+        "Description": "Type: Numeric, Min: 24, Max: 83"
+    },
+    "CBCL_6-18_AFFECTIVE_T": {
+        "LongName": "CBCL 6-18 -Affective Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 86"
+    },
+    "CBCL_6-18_ANXIETY_T": {
+        "LongName": "CBCL 6-18 Anxiety Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 79"
+    },
+    "CBCL_6-18_SOMATIC_PROBLEM_T": {
+        "LongName": "CBCL 6-18 Somatic Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 87"
+    },
+    "CBCL_6-18_ATTENTION_DEFICIT_T": {
+        "LongName": "CBCL 6-18 Attention Deficit/Hyperactivity Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 80"
+    },
+    "CBCL_6-18_OPPOSITIONAL_T": {
+        "LongName": "CBCL 6-18 Oppositional Defiant Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 80"
+    },
+    "CBCL_6-18_CONDUCT_T": {
+        "LongName": "CBCL 6-18 Conduct Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 77"
+    },
+    "CBCL_6-18_SLUGGISH_T": {
+        "LongName": "CBCL 6-18 Sluggish Cognitive Tempo T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 80"
+    },
+    "CBCL_6-18_OBSESSIVE_T": {
+        "LongName": "CBCL 6-18 Obsessive-Compulsive Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 88"
+    },
+    "CBCL_6-18_POST_TRAUMATIC_T": {
+        "LongName": "CBCL 6-18 Post-traumatic Stress Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 93"
+    },
+    "CBCL_1.5-5_EMOTION_T": {
+        "LongName": "CBCL Ages 1.5-5 Emotionally Reactive T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 87"
+    },
+    "CBCL_1.5-5_ANXIOUS_T": {
+        "LongName": "CBCL 1.5-5 Anxious/Depressed T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 83"
+    },
+    "CBCL_1.5-5_SOMANTIC_T": {
+        "LongName": "CBCL 1.5-5 Somatic Complaints T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 78"
+    },
+    "CBCL_1.5-5_WITHDRAWN_T": {
+        "LongName": "CBCL 1.5-5 Withdrawn T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 82"
+    },
+    "CBCL_1.5-5_SLEEP_T": {
+        "LongName": "CBCL 1.5-5 Sleep Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 82"
+    },
+    "CBCL_1.5-5_ATTENTION_PROBLEM_T": {
+        "LongName": "CBCL 1.5-5 Attention Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 80"
+    },
+    "CBCL_1.5-5_AGGRESSIVE_T": {
+        "LongName": "CBCL 1.5-5 Aggressive Behavior T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 91"
+    },
+    "CBCL_1.5-5_INTERNAL_T": {
+        "LongName": "CBCL 1.5-5 Internalizaing Problems T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 80"
+    },
+    "CBCL_1.5-5_EXTERNAL_T": {
+        "LongName": "CBCL 1.5-5 Externalizaing Problems T Score",
+        "Description": "Type: Numeric, Min: 28, Max: 89"
+    },
+    "CBCL_1.5-5_TOTAL_T": {
+        "LongName": "CBCL 1.5-5 Total Problems T Score",
+        "Description": "Type: Numeric, Min: 29, Max: 89"
+    },
+    "CBCL_1.5-5_STRESS_T": {
+        "LongName": "CBCL 1.5-5 Stress Problems T Score",
+        "Description": "Type: Numeric, Min: 0, Max: 0"
+    },
+    "CBCL_1.5-5_AFFECTIVE_T": {
+        "LongName": "CBCL 1.5-5 Affective Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 84"
+    },
+    "CBCL_1.5-5_ANXIETY_T": {
+        "LongName": "CBCL 1.5-5 Anxiety Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 84"
+    },
+    "CBCL_1.5-5_PERVASIVE_T": {
+        "LongName": "CBCL 1.5-5 Pervasive Developmental Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 86"
+    },
+    "CBCL_1.5-5_ATTENTION_DEFICIT_T": {
+        "LongName": "CBCL 1.5-5 Attention Deficit/Hyperactivity Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 76"
+    },
+    "CBCL_1.5-5_OPPOSITIONAL_T": {
+        "LongName": "CBCL 1.5-5 Oppositional Defiant Problems T Score",
+        "Description": "Type: Numeric, Min: 50, Max: 80"
+    },
+    "BDI_EDITION": {
+        "LongName": "Beck's Depression Inventory Edition",
+        "Description": "Type: Numeric, Min: 3, Max: 3",
+        "Levels": {
+            "1": "BDI",
+            "2": "BDI-IA",
+            "3": "BDI-II"
+        }
+    },
+    "BDI_TOTAL": {
+        "LongName": "BDI Total Raw Score",
+        "Description": "Type: Numeric, Min: 0, Max: 43"
+    },
+    "WIAT-II-A_WORD_T": {
+        "LongName": "Wechsler Individual Achievement Test Second Edition Abbreviated Word Reading Subtest T Score",
+        "Description": "Type: Numeric, Min: 58, Max: 159"
+    },
+    "WIAT-II-A_NUMERICAL_T": {
+        "LongName": "WIAT-II-A Numerical Operations Subtest T Score",
+        "Description": "Type: Numeric, Min: 52, Max: 156"
+    },
+    "WIAT-II-A_SPELLING_T": {
+        "LongName": "WIAT-II-A Spelling Subtest T Score",
+        "Description": "Type: Numeric, Min: 62, Max: 158"
+    },
+    "WIAT-II-A_TOTAL_COMPOSITE_S": {
+        "LongName": "WIAT-II-A Total Composite Standard Score",
+        "Description": "Type: Numeric, Min: 65, Max: 154"
+    },
+    "VMI_EDITION": {
+        "LongName": "Beery-Buktenica Developmental Test of Visual-Motor Integration Edition",
+        "Description": "Type: Numeric, Min: 2, Max: 2",
+        "Levels": {
+            "1": "VMI 5th edition",
+            "2": "VMI 6th edition"
+        }
+    },
+    "VMI_VMI_S": {
+        "LongName": "VMI Visual-Motor Integration Subtest Standard Score",
+        "Description": "Type: Numeric, Min: 45, Max: 114"
+    },
+    "CELF_EDITION": {
+        "LongName": "Clinical Evaluation of Language Fundamentals Edition",
+        "Description": "Type: Numeric, Min: 2, Max: 2",
+        "Levels": {
+            "1": "CELF 3",
+            "2": "CELF 4"
+        }
+    },
+    "CELF_5-8_CORE_S": {
+        "LongName": "CELF Ages 5-8 Core Language Standard Score",
+        "Description": "Type: Numeric, Min: 42, Max: 118"
+    },
+    "CELF_5-8_RECEPTIVE_S": {
+        "LongName": "CELF Ages 5-8  Receptive Language Standard Score",
+        "Description": "Type: Numeric, Min: 42, Max: 113"
+    },
+    "CELF_5-8_EXPRESSIVE_S": {
+        "LongName": "CELF Ages 5-8 Expressive Language Standard Score",
+        "Description": "Type: Numeric, Min: 29, Max: 118"
+    },
+    "CELF_9-21_CORE_S": {
+        "LongName": "CELF Ages 9-21 Core Language Standard Score",
+        "Description": "Type: Numeric, Min: 56, Max: 127"
+    },
+    "CELF_9-21_RECEPTIVE_S": {
+        "LongName": "CELF Ages 9-21 Receptive Language Standard Score",
+        "Description": "Type: Numeric, Min: 60, Max: 131"
+    },
+    "CELF_9-21_EXPRESSIVE_S": {
+        "LongName": "CELF Ages 9-21 Expressive Language Standard Score",
+        "Description": "Type: Numeric, Min: 55, Max: 130"
+    },
+    "BASC2_PRS_VERSION": {
+        "LongName": "Behavior Assessment System for Children Second Edition Parent Rating Scales Version",
+        "Description": "Type: Numeric, Min: 2, Max: 2",
+        "Levels": {
+            "1": "child (6 to 11 years)",
+            "2": "adolescent (12 to 21 years)"
+        }
+    },
+    "BASC2_PRS_ANGER_T": {
+        "LongName": "BASC-2 Anger Control T Score",
+        "Description": "Type: Numeric, Min: 41, Max: 64"
+    },
+    "BASC2_PRS_HYPERACTIVITY_T": {
+        "LongName": "BASC-2 Hyperactivity T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 74"
+    },
+    "BASC2_PRS_AGGRESSION_T": {
+        "LongName": "BASC-2 Aggression T Score",
+        "Description": "Type: Numeric, Min: 37, Max: 73"
+    },
+    "BASC2_PRS_CONDUCT_T": {
+        "LongName": "BASC-2 Conduct Problems T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 67"
+    },
+    "BASC2_PRS_EXTERNAL_T": {
+        "LongName": "BASC-2 Externalizing Problems T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 85"
+    },
+    "BASC2_PRS_EXTERNAL_MEAN_T": {
+        "LongName": "BASC-2 Externalizing Problems Mean T Score",
+        "Description": "Type: Numeric, Min: 27, Max: 43"
+    },
+    "BASC2_PRS_ANXIETY_T": {
+        "LongName": "BASC-2 Anxiety T Score",
+        "Description": "Type: Numeric, Min: 31, Max: 66"
+    },
+    "BASC2_PRS_DEPRESSION_T": {
+        "LongName": "BASC-2 Depression T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 88"
+    },
+    "BASC2_PRS_SOMATIZATION_T": {
+        "LongName": "BASC-2 Somatization T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 89"
+    },
+    "BASC2_PRS_INTERNAL_T": {
+        "LongName": "BASC-2 Internalizing Problems T Score",
+        "Description": "Type: Numeric, Min: 30, Max: 94"
+    },
+    "BASC2_PRS_INTERNAL_MEAN_T": {
+        "LongName": "BASC-2 Internalizing Problems Mean T Score",
+        "Description": "Type: Numeric, Min: 35, Max: 55.889"
+    },
+    "BASC2_PRS_ATYPICALITY_T": {
+        "LongName": "BASC-2 Atypicality T Score",
+        "Description": "Type: Numeric, Min: 41, Max: 86"
+    },
+    "BASC2_PRS_WITHDRAWAL_T": {
+        "LongName": "BASC-2 Withdrawal T Score",
+        "Description": "Type: Numeric, Min: 36, Max: 93"
+    },
+    "BASC2_PRS_ATTENTION_T": {
+        "LongName": "BASC-2 Attention Problems T Score",
+        "Description": "Type: Numeric, Min: 35, Max: 69"
+    },
+    "BASC2_PRS_BSI_T": {
+        "LongName": "BASC-2 Behavioral Systems Index T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 104"
+    },
+    "BASC2_PRS_BSI_MEAN_T": {
+        "LongName": "BASC-2 Behavioral Systems Index Mean T Score",
+        "Description": "Type: Numeric, Min: 37.333, Max: 70.63"
+    },
+    "BASC2_PRS_ADAPTABILITY_T": {
+        "LongName": "BASC-2 Adaptability T Score",
+        "Description": "Type: Numeric, Min: 22, Max: 65"
+    },
+    "BASC2_PRS_SOCIAL_T": {
+        "LongName": "BASC-2 Social Skills T Score",
+        "Description": "Type: Numeric, Min: 22, Max: 70"
+    },
+    "BASC2_PRS_LEADERSHIP_T": {
+        "LongName": "BASC-2 Leadership T Score",
+        "Description": "Type: Numeric, Min: 28, Max: 66"
+    },
+    "BASC2_PRS_ACTIVITIES_T": {
+        "LongName": "BASC-2 Activities of Daily Living T Score",
+        "Description": "Type: Numeric, Min: 17, Max: 70"
+    },
+    "BASC2_PRS_FUNCTIONAL_T": {
+        "LongName": "BASC-2 Functional Communication T Score",
+        "Description": "Type: Numeric, Min: 18, Max: 66"
+    },
+    "BASC2_PRS_ADAPTIVE_T": {
+        "LongName": "BASC-2 Adaptive Skills T Score",
+        "Description": "Type: Numeric, Min: 17, Max: 71"
+    },
+    "BASC2_PRS_ADAPTIVE_MEAN_T": {
+        "LongName": "BASC-2 Adaptive Skills Mean T Score",
+        "Description": "Type: Numeric, Min: 43.6, Max: 58"
+    },
+    "BASC2_PRS_BULLY_T": {
+        "LongName": "BASC-2 Bullying T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 65"
+    },
+    "BASC2_PRS_DSD_T": {
+        "LongName": "BASC-2 Developmental Social Disorders T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 81"
+    },
+    "BASC2_PRS_EMOTIONAL_T": {
+        "LongName": "BASC-2 Emotional Self Control T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 73"
+    },
+    "BASC2_PRS_EXECUTIVE_T": {
+        "LongName": "BASC-2 Executive Functioning T Score",
+        "Description": "Type: Numeric, Min: 34, Max: 73"
+    },
+    "BASC2_PRS_NEGATIVE_T": {
+        "LongName": "BASC-2 Negative Emotionality T Score",
+        "Description": "Type: Numeric, Min: 33, Max: 74"
+    },
+    "BASC2_PRS_RESILIENCY_T": {
+        "LongName": "BASC-2 Resiliency T Score",
+        "Description": "Type: Numeric, Min: 21, Max: 65"
+    },
+    "CPRS_OPP": {
+        "LongName": "Conners Parent Rating Scales Oppositional T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 90"
+    },
+    "CPRS_COG-INATT": {
+        "LongName": "CPRS Cognitive Problems/Inattention T Score",
+        "Description": "Type: Numeric, Min: 40, Max: 90"
+    },
+    "CPRS_HYPERACT": {
+        "LongName": "CPRS Hyperactivity T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 90"
+    },
+    "CPRS_ANX_SHY": {
+        "LongName": "CPRS Anxious Shy T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 90"
+    },
+    "CPRS_PERFECT": {
+        "LongName": "CPRS Perfectioniam T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 90"
+    },
+    "CPRS_SOCIAL_PROB": {
+        "LongName": "CPRS Social Problems T Score",
+        "Description": "Type: Numeric, Min: 45, Max: 90"
+    },
+    "CPRS_PSYCHO_SOMATIC": {
+        "LongName": "CPRS Psychosomatic T Score",
+        "Description": "Type: Numeric, Min: 42, Max: 90"
+    },
+    "CPRS_CONN_ADHD": {
+        "LongName": "CPRS Conners ADHD Index T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 90"
+    },
+    "CPRS_REST_IMPULS": {
+        "LongName": "CPRS Conners Global Index: Restless-Impulsive T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 90"
+    },
+    "CPRS_EMOT_LABILITY": {
+        "LongName": "CPRS Conners Global Index: Emotional Lability T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 85"
+    },
+    "CPRS_CONN_GI_TOTAL": {
+        "LongName": "CPRS Conners Global Index Total T Score",
+        "Description": "Type: Numeric, Min: 38, Max: 90"
+    },
+    "CPRS_DSM_IV_INATT": {
+        "LongName": "CPRS DSM-IV: Inattentive T Score",
+        "Description": "Type: Numeric, Min: 40, Max: 90"
+    },
+    "CPRS_DSM_IV_HYPER_IMPUL": {
+        "LongName": "CPRS DSM-IV: Hyperactive-Impulsive T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 90"
+    },
+    "CPRS_DSM_IV_TOTAL": {
+        "LongName": "CPRS DSM-IV: Total T Score",
+        "Description": "Type: Numeric, Min: 39, Max: 90"
+    },
+    "CPRS_INATT_SYMPTOMS": {
+        "LongName": "CPRS Inattentive Symptoms",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "CPRS_HYPER_IMPUL_SYMPTOMS": {
+        "LongName": "CPRS Hyperactive-Impulsive Symptoms",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "CASI_ADHD-I_CUTOFF": {
+        "LongName": "Child and Adolescent Symptom Inventory-4R ADHD Inattentive Type: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ADHD-H_CUTOFF": {
+        "LongName": "CASI-4R ADHD Hyperactive-Impulsive Type: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ADHD-C_CUTOFF": {
+        "LongName": "CASI-4R ADHD Combined Type: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ODD_CUTOFF": {
+        "LongName": "CASI-4R Oppositional Defiant Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_CD_CUTOFF": {
+        "LongName": "CASI-4R Conduct Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_GAD_CUTOFF": {
+        "LongName": "CASI-4R Generalized Anxiety Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SPECIFIC_PHOBIA_CUTOFF": {
+        "LongName": "CASI-4R Specific Phobia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_OBSESSIONS_CUTOFF": {
+        "LongName": "CASI-4R Obsessions: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_COMPULSIONS_CUTOFF": {
+        "LongName": "CASI-4R Compulsions: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_PTSD_CUTOFF": {
+        "LongName": "CASI-4R Posttraumatic Stress Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_MOTOR_TICS_CUTOFF": {
+        "LongName": "CASI-4R Motor Tics: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_VOCAL_TICS_CUTOFF": {
+        "LongName": "CASI-4R Specific Phobia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SOCIAL_PHOBIA_CUTOFF": {
+        "LongName": "CASI-4R Social Phobia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SEPARATION_CUTOFF": {
+        "LongName": "CASI-4R Separation Anxiety disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SCHIZOPHRENIA_CUTOFF": {
+        "LongName": "CASI-4R Schizophrenia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_NOCTURNAL_ENURESIS_CUTOFF": {
+        "LongName": "CASI-4R Nocturnal Enuresis: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ENURESIS_ENCOPRESIS_CUTOFF": {
+        "LongName": "CASI-4R Enuresis Encopresis: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_MDE_CUTOFF": {
+        "LongName": "CASI-4R Major Depressive Episode: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_DYSTHYMIC_CUTOFF": {
+        "LongName": "CASI-4R Dysthmic Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_AUTISTIC_CUTOFF": {
+        "LongName": "CASI-4R Autistic Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ASPERGER_CUTOFF": {
+        "LongName": "CASI-4R Aspergers Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ASPD_CUTOFF": {
+        "LongName": "CASI-4R Antisocial Personality Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_PANIC_ATTACKS_CUTOFF": {
+        "LongName": "CASI-4R Panic Attacks: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SOMATIZATION_CUTOFF": {
+        "LongName": "CASI-4R Somatization Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SCHIZOID_PERSONALITY_CUTOFF": {
+        "LongName": "CASI-4R Schizoid Personality: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_MANIC_EPISODE_CUTOFF": {
+        "LongName": "CASI-4R Manic Episode (bipolar disorder): Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_ANOREXIA_NERVOSA_CUTOFF": {
+        "LongName": "CASI-4R Anorexia Nervosa: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_BULIMIA_NERVOSA_CUTOFF": {
+        "LongName": "CASI-4R Builimia Nervosa: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CASI_SUBSTANCE_USE_CUTOFF": {
+        "LongName": "CASI-4R Substance Abuse: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ADHD-I_SEVERITY": {
+        "LongName": "Child Symptom Inventory-4 ADHD Inattentive Type: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 26"
+    },
+    "CSI_ADHD-I_CUTOFF": {
+        "LongName": "CSI-4 ADHD Inattentive Type: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ADHD-H_SEVERITY": {
+        "LongName": "CSI-4 ADHD Hyperactive-Impulsive Type: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "CSI_ADHD-H_CUTOFF": {
+        "LongName": "CSI-4 ADHD Hyperactive-Impulsive Type: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ADHD-C_SEVERITY": {
+        "LongName": "CSI-4 ADHD Combined Type: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 34"
+    },
+    "CSI_ADHD-C_CUTOFF": {
+        "LongName": "CSI-4 ADHD Combined Type: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ODD_SEVERITY": {
+        "LongName": "CSI-4 Oppositional Defiant Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 14"
+    },
+    "CSI_ODD_ CUTOFF": {
+        "LongName": "CSI-4 Oppositional Defiant Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_CD_SEVERITY": {
+        "LongName": "CSI-4 Conduct Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "CSI_CD_CUTOFF": {
+        "LongName": "CSI-4 Conduct Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_GAD_SEVERITY": {
+        "LongName": "CSI-4 Generalized Anxiety Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 16"
+    },
+    "CSI_GAD_CUTOFF": {
+        "LongName": "CSI-4 Generalized Anxiety Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_SPECIFIC_PHOBIA_SEVERITY": {
+        "LongName": "CSI-4 Social Phobia: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 3"
+    },
+    "CSI_SPECIFIC_PHOBIA_CUTOFF": {
+        "LongName": "CSI-4 Social Phobia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_OBSESSIONS_SEVERITY": {
+        "LongName": "CSI-4 Obsessions: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 3"
+    },
+    "CSI_OBSESSIONS_CUTOFF": {
+        "LongName": "CSI-4 Obsessions: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_COMPULSIONS_SEVERITY": {
+        "LongName": "CSI-4 Compulsions: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "CSI_COMPULSIONS_CUTOFF": {
+        "LongName": "CSI-4 Compulsions: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_DISTURBING_EVENTS_SEVERITY": {
+        "LongName": "CSI-4 Disturbing Events: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 3"
+    },
+    "CSI_DISTURBING_EVENTS_CUTOFF": {
+        "LongName": "CSI-4 Disturbing Events: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_MOTOR_TICS_SEVERITY": {
+        "LongName": "CSI-4 Motor Tics: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 3"
+    },
+    "CSI_MOTOR_TICS_CUTOFF": {
+        "LongName": "CSI-4 Motor Tics: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_VOCAL_TICS_SEVERITY": {
+        "LongName": "CSI-4 Vocal Tics: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "CSI_VOCAL_TICS_CUTOFF": {
+        "LongName": "CSI-4 Vocal Tics: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_SCHIZOPHRENIA_SEVERITY": {
+        "LongName": "CSI-4 Schizophrenia: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 6"
+    },
+    "CSI_SCHIZOPHRENIA_CUTOFF": {
+        "LongName": "CSI-4 Schizophrenia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_MDD_SEVERITY": {
+        "LongName": "CSI-4 Major Depressive Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 1, Max: 9"
+    },
+    "CSI_MDD_CUTOFF": {
+        "LongName": "CSI-4 Major Depressive Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_DYSTHYMIC_SEVERITY": {
+        "LongName": "CSI-4 Dysthmic Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 1.5, Max: 10.5"
+    },
+    "CSI_DYSTHYMIC_CUTOFF": {
+        "LongName": "CSI-4 Dysthmic Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_AUTISTIC_SEVERITY": {
+        "LongName": "CSI-4 Autistic Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 25"
+    },
+    "CSI_AUTISTIC_CUTOFF": {
+        "LongName": "CSI-4 Autistic Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ASPERGER_SEVERITY": {
+        "LongName": "CSI-4 Aspergers Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 19"
+    },
+    "CSI_ASPERGER_CUTOFF": {
+        "LongName": "CSI-4 Aspergers Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_SOCIAL_PHOBIA_SEVERITY": {
+        "LongName": "CSI-4 Social Phobia: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "CSI_SOCIAL_PHOBIA_CUTOFF": {
+        "LongName": "CSI-4 Social Phobia: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_SEPARATION_SEVERITY": {
+        "LongName": "CSI-4 Separation Anxiety Disorder: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "CSI_SEPARATION_CUTOFF": {
+        "LongName": "CSI-4 Separation Anxiety Disorder: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ENURESIS_SEVERITY": {
+        "LongName": "CSI-4 Enuresis: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "CSI_ENURESIS_CUTOFF": {
+        "LongName": "CSI-4 Enuresis: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "CSI_ENCOPRESIS_SEVERITY": {
+        "LongName": "CSI-4 Encopresis: Symptom Severity Score",
+        "Description": "Type: Numeric, Min: 0, Max: 0"
+    },
+    "CSI_ENCOPRESIS_CUTOFF": {
+        "LongName": "CSI-4 Encopresis: Meet Cutoff?",
+        "Description": "Type: Numeric, Min: 0, Max: 0",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ADI_R_A1_DIRECT_GAZE": {
+        "LongName": "Autism Diagnostic Interview-Revised Algorithm A1 50.Direct Gaze Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A1_SOCIAL_SMILE": {
+        "LongName": "ADI-R Algorithm A1 51.Social Smiling Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A1_FACIAL_EXPRESSIONS": {
+        "LongName": "ADI-R Algorithm A1 57.Range of Facial Expressions Used to Communicate Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A1_TOTAL": {
+        "LongName": "ADI-R Algorithm A1 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 6"
+    },
+    "ADI_R_A2_IMAGINATIVE_PLAY": {
+        "LongName": "ADI-R Algorithm A2 49.Imaginative Play with Peers Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A2_INTEREST_IN_CHILDREN": {
+        "LongName": "ADI-R Algorithm A2 62.Interest in Children Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A2_RESPONSE_TO_APPROACHES": {
+        "LongName": "ADI-R Algorithm A2 63. Response to Approaches of Other Children Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A2_GROUP_PLAY": {
+        "LongName": "ADI-R Algorithm A2 64. Group Play with Peers Score",
+        "Description": "Type: Numeric, Min: 1, Max: 9"
+    },
+    "ADI_R_A2_HIGHER": {
+        "LongName": "ADI-R Algorithm A2 64 or 65",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A2_FRIENDSHIPS": {
+        "LongName": "ADI-R Algorithm A2 65. Friendships Score",
+        "Description": "Type: Numeric, Min: 0, Max: 9"
+    },
+    "ADI_R_A2_TOTAL": {
+        "LongName": "ADI-R Algorithm A2 Total Score",
+        "Description": "Type: Numeric, Min: 2, Max: 8"
+    },
+    "ADI_R_A3_SHOWING_DIRECTING_ATTENTION": {
+        "LongName": "ADI-R Algorithm A3 52. Group Play with Peers Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A3_OFFERING_TO_SHARE": {
+        "LongName": "ADI-R Algorithm A3 53. Group Play with Peers Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A3_SEEKING_SHARE_ENJOYMENT": {
+        "LongName": "ADI-R Algorithm A3 54. Group Play with Peers Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A3_Total": {
+        "LongName": "ADI-R Algorithm A3 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 6"
+    },
+    "ADI_R_A4_USE_OTHERS_BODY": {
+        "LongName": "ADI-R Algorithm A4 31. Use of Other's Body to Communicate Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A4_OFFERING_COMFORT": {
+        "LongName": "ADI-R Algorithm A4 55. Use of Other's Body to Communicate Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A4_QUALITY_SOCIAL_OVERTURES": {
+        "LongName": "ADI-R Algorithm A4 56. Quality of Social Overtures Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A4_INAPPROPRIATE_FACIAL_EXPRESSIONS": {
+        "LongName": "ADI-R Algorithm A4 58. Inappropriate Facial Expressions Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A4_APPROPRIATE_SOCIAL_RESPONSES": {
+        "LongName": "ADI-R Algorithm A4 59. Appropriateness of Social Responses Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_A4_Total": {
+        "LongName": "ADI-R Algorithm A4 Total Score",
+        "Description": "Type: Numeric, Min: 2, Max: 10"
+    },
+    "ADI_R_B1_POINTING_EXPRESS_INTEREST": {
+        "LongName": "ADI-R Algorithm B1 42. Pointing to Express Interest Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B1_NODDING": {
+        "LongName": "ADI-R Algorithm B1 43. Nodding Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B1_HEAD_SHAKING": {
+        "LongName": "ADI-R Algorithm B1 44. Head Shaking Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B1_CONVENTIONAL_GESTURES": {
+        "LongName": "ADI-R Algorithm B1 45. Conventional/Instrumental Gestures Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B1_TOTAL": {
+        "LongName": "ADI-R Algorithm B1 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 8"
+    },
+    "ADI_R_B4_SPONTANEOUS_IMITATION": {
+        "LongName": "ADI-R Algorithm B4 47. Spontaneous Imitation of Actions Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B4_IMAGINATIVE_PLAY": {
+        "LongName": "ADI-R Algorithm B4 48. Imaginative Play Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B4_IMITATIVE_SOCIAL_PLAY": {
+        "LongName": "ADI-R Algorithm B4 61. Imitative Social Play Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B4_TOTAL": {
+        "LongName": "ADI-R Algorithm B4 Total Score",
+        "Description": "Type: Numeric, Min: 1, Max: 6"
+    },
+    "ADI_R_B2_SOCIAL_VERBALIZATION": {
+        "LongName": "ADI-R Algorithm B2 34. Social Verbalization/Chat Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B2_RECIPROCAL_CONVERSATION": {
+        "LongName": "ADI-R Algorithm B2 35. Reciprocal Conversation Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B2_TOTAL": {
+        "LongName": "ADI-R Algorithm B2 Total Score",
+        "Description": "Type: Numeric, Min: 1, Max: 4"
+    },
+    "ADI_R_B3_STEREOTYPED_UTTERANCES": {
+        "LongName": "ADI-R Algorithm B3 35. Reciprocal Conversation Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B3_INAPPROPRIATE_QUESTIONS": {
+        "LongName": "ADI-R Algorithm B3 36. Inappropriate Questions or Statements Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B3_PRONOMINAL_REVERSAL": {
+        "LongName": "ADI-R Algorithm B3 37. Prominal Reversal Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B3_NEOLOGISMS": {
+        "LongName": "ADI-R Algorithm B3 38. Neologisms/Idiosyncratic Language Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_B3_Total": {
+        "LongName": "ADI-R Algorithm B3 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 6"
+    },
+    "ADI_R_C1_UNUSUAL_PREOCCUPATIONS": {
+        "LongName": "ADI-R Algorithm C1 67. Unusual Preoccupations Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C1_CIRCUMSCRIBED_INTERESTS": {
+        "LongName": "ADI-R Algorithm C1 68. Circumscribed Interests Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C1_TOTAL": {
+        "LongName": "ADI-R Algorithm C1 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 4"
+    },
+    "ADI_R_C2_VERBAL_RITUALS": {
+        "LongName": "ADI-R Algorithm C2 39. Verbal Rituals Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C2_COMPULSIONS": {
+        "LongName": "ADI-R Algorithm C2 70. Compulsions/Rituals Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C2_TOTAL": {
+        "LongName": "ADI-R Algorithm C2 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 4"
+    },
+    "ADI_R_C3_HAND_FINGER_MANNERISMS": {
+        "LongName": "ADI-R Algorithm C3 77. Hand and Finger Mannerisms Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C3_HIGHER": {
+        "LongName": "ADI-R Algorithm C3 Higher of 77 or 78",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C3_OTHER_COMPLEX_MANNERISMS": {
+        "LongName": "ADI-R Algorithm C3 78. Other Complex Mannerisms or Stereotyped Body Movements Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C3_TOTAL": {
+        "LongName": "ADI-R Algorithm C3 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C4_REPETITIVE_USE_OBJECTS": {
+        "LongName": "ADI-R Algorithm C4 69. Repetitive Use of Objects or Interest in Parts of Objects Score",
+        "Description": "Type: Numeric, Min: 0, Max: 3"
+    },
+    "ADI_R_C4_HIGHER": {
+        "LongName": "ADI-R Algorithm C4 Higher of 69 or 71",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C4_UNUSUAL_SENSORY_INTERESTS": {
+        "LongName": "ADI-R Algorithm C4 71. Unusual Sensory Interests Score",
+        "Description": "Type: Numeric, Min: 0, Max: 2"
+    },
+    "ADI_R_C4_TOTAL": {
+        "LongName": "ADI-R Algorithm C4 Total Score",
+        "Description": "Type: Numeric, Min: 0, Max: 12"
+    },
+    "ADI_R_D_AGE_PARENT_NOTICED": {
+        "LongName": "ADI-R Algorithm D 2. Age Parents First Noticed Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "ADI_R_D_AGE_FIRST_SINGLE_WORDS": {
+        "LongName": "ADI-R Algorithm D 9. Age of First Single Words Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "ADI_R_D_AGE_FIRST_PHRASES": {
+        "LongName": "ADI-R Algorithm D 10. Age of First Phrases Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "ADI_R_D_AGE_WHEN_ABNORMALITY": {
+        "LongName": "ADI-R Algorithm D 86. Age When Abnormality First Evident Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    },
+    "ADI_R_D_INTERVIEWER_JUDGMENT": {
+        "LongName": "ADI-R Algorithm D 87. Interviewer's Judgment on Age When Abnormalities First Manifest Score",
+        "Description": "Type: Numeric, Min: 0, Max: 1"
+    }
+}

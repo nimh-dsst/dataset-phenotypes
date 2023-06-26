@@ -1,0 +1,1079 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "rsfmri_cor_ngd_scs_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "rsfmri_cor_ngd_scs_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_scs_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "rsfmri_cor_ngd_scs_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "rsfmri_cor_ngd_scs_stnvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "rsfmri_cor_ngd_scs_stcgnvols": {
+        "Description": "Number of frames with FD < 0.2 and at least 5 contiguous, supra-threshold frames",
+        "DataType": "Integer"
+    },
+    "rsfmri_cor_ngd_scs_ntpoints": {
+        "Description": "Number of frames after excluding outlier frames (based on standard deviation across ROIs)",
+        "DataType": "Integer"
+    },
+    "rsfmri_cor_ngd_scs_meanmn": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_scs_maxmn": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_scs_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_scs_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_scs_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_scs_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_crcxlh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_thplh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_cdelh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_ptlh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_pllh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_bs": {
+        "Description": "Average correlation between auditory network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_hplh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_aglh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_aalh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_vtdclh": {
+        "Description": "Average correlation between auditory network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_crcxrh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_thprh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_cderh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_ptrh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_plrh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_hprh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_agrh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_aarh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_au_scs_vtdcrh": {
+        "Description": "Average correlation between auditory network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_crcxlh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_thplh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_cdelh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_ptlh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_pllh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_bs": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_hplh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_aglh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_aalh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_vtdclh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_crcxrh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_thprh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_cderh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_ptrh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_plrh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_hprh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_agrh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_aarh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_cerc_scs_vtdcrh": {
+        "Description": "Average correlation between cingulo-opercular network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_crcxlh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_thplh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_cdelh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_ptlh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_pllh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_bs": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_hplh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_aglh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_aalh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_vtdclh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_crcxrh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_thprh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_cderh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_ptrh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_plrh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_hprh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_agrh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_aarh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_copa_scs_vtdcrh": {
+        "Description": "Average correlation between cingulo-parietal network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_crcxlh": {
+        "Description": "Average correlation between default network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_thplh": {
+        "Description": "Average correlation between default network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_cdelh": {
+        "Description": "Average correlation between default network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_ptlh": {
+        "Description": "Average correlation between default network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_pllh": {
+        "Description": "Average correlation between default network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_bs": {
+        "Description": "Average correlation between default network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_hplh": {
+        "Description": "Average correlation between default network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_aglh": {
+        "Description": "Average correlation between default network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_aalh": {
+        "Description": "Average correlation between default network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_vtdclh": {
+        "Description": "Average correlation between default network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_crcxrh": {
+        "Description": "Average correlation between default network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_thprh": {
+        "Description": "Average correlation between default network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_cderh": {
+        "Description": "Average correlation between default network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_ptrh": {
+        "Description": "Average correlation between default network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_plrh": {
+        "Description": "Average correlation between default network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_hprh": {
+        "Description": "Average correlation between default network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_agrh": {
+        "Description": "Average correlation between default network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_aarh": {
+        "Description": "Average correlation between default network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_df_scs_vtdcrh": {
+        "Description": "Average correlation between default network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_crcxlh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_thplh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_cdelh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_ptlh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_pllh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_bs": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_hplh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_aglh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_aalh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_vtdclh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_crcxrh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_thprh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_cderh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_ptrh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_plrh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_hprh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_agrh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_aarh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_dsa_scs_vtdcrh": {
+        "Description": "Average correlation between dorsal attention network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_crcxlh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_thplh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_cdelh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_ptlh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_pllh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_bs": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_hplh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_aglh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_aalh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_vtdclh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_crcxrh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_thprh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_cderh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_ptrh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_plrh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_hprh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_agrh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_aarh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_fopa_scs_vtdcrh": {
+        "Description": "Average correlation between fronto-parietal network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_crcxlh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_thplh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_cdelh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_ptlh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_pllh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_bs": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_hplh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_aglh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_aalh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_vtdclh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_crcxrh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_thprh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_cderh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_ptrh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_plrh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_hprh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_agrh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_aarh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_none_scs_vtdcrh": {
+        "Description": "Average correlation between \"none\" network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_crcxlh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_thplh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_cdelh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_ptlh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_pllh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_bs": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_hplh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_aglh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_aalh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_vtdclh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_crcxrh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_thprh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_cderh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_ptrh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_plrh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_hprh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_agrh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_aarh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_rst_scs_vtdcrh": {
+        "Description": "Average correlation between retrosplenial temporal network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_crcxlh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_thplh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_cdelh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_ptlh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_pllh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_bs": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_hplh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_aglh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_aalh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_vtdclh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_crcxrh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_thprh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_cderh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_ptrh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_plrh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_hprh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_agrh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_aarh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smh_scs_vtdcrh": {
+        "Description": "Average correlation between sensorimotor hand network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_crcxlh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_thplh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_cdelh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_ptlh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_pllh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_bs": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_hplh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_aglh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_aalh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_vtdclh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_crcxrh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_thprh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_cderh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_ptrh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_plrh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_hprh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_agrh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_aarh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_smm_scs_vtdcrh": {
+        "Description": "Average correlation between sensorimotor mouth network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_crcxlh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_thplh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_cdelh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_ptlh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_pllh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_bs": {
+        "Description": "Average correlation between salience network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_hplh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_aglh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_aalh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_vtdclh": {
+        "Description": "Average correlation between salience network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_crcxrh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_thprh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_cderh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_ptrh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_plrh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_hprh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_agrh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_aarh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_sa_scs_vtdcrh": {
+        "Description": "Average correlation between salience network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_crcxlh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_thplh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_cdelh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_ptlh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_pllh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_bs": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_hplh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_aglh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_aalh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_vtdclh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_crcxrh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_thprh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_cderh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_ptrh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_plrh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_hprh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_agrh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_aarh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vta_scs_vtdcrh": {
+        "Description": "Average correlation between ventral attention network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_crcxlh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_thplh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_cdelh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_ptlh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_pllh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_bs": {
+        "Description": "Average correlation between visual network and ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_hplh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_aglh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_aalh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_vtdclh": {
+        "Description": "Average correlation between visual network and ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_crcxrh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_thprh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_cderh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_ptrh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_plrh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_hprh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_agrh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_aarh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_cor_ngd_vs_scs_vtdcrh": {
+        "Description": "Average correlation between visual network and ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    }
+}

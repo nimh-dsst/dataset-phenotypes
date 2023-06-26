@@ -1,0 +1,360 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "sleep_dis_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "sleepdisturb1_p": {
+        "Description": "How many hours of sleep does your child get on most nights? \u00bfCu\u00e1ntas horas duerme su ni\u00f1o(a) la mayor\u00eda de las noches? | 1 = 9-11 hours/ 9 a 11 horas; 2 = 8-9 hours /8 a 9 horas; 3 = 7-8 hours /7 a 8 horas; 4 = 5-7 hours /5 a 7 horas; 5 = Less than 5 hours/ Menos de 5 horas// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "9-11 hours/ 9 a 11 horas",
+            "2": "8-9 hours /8 a 9 horas",
+            "3": "7-8 hours /7 a 8 horas",
+            "4": "5-7 hours /5 a 7 horas",
+            "5": "Less than 5 hours/ Menos de 5 horas// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb2_p": {
+        "Description": "How long after going to bed does your child usually fall asleep? Despu\u00e9s de acostarse \u00bfgeneralmente cu\u00e1nto tiempo tarda su ni\u00f1o(a) en quedarse dormido(a)? | 1 = Less than 15 minutes /Menos de 15 minutos; 2 = 15-30 minutes 15 a 30 minutos; 3 = 30-45 minutes /30 a 45 minutos; 4 = 45-60 minutes /45 a 60 minutos; 5 = More than 60 minutes /M\u00e1s de 60 minutos//Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Less than 15 minutes /Menos de 15 minutos",
+            "2": "15-30 minutes 15 a 30 minutos",
+            "3": "30-45 minutes /30 a 45 minutos",
+            "4": "45-60 minutes /45 a 60 minutos",
+            "5": "More than 60 minutes /M\u00e1s de 60 minutos//Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb3_p": {
+        "Description": "The child goes to bed reluctantly. El ni\u00f1o/ la ni\u00f1a se va a la cama de mala gana. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb4_p": {
+        "Description": "The child has difficulty getting to sleep at night. El ni\u00f1o / la ni\u00f1a tiene dificultad qued\u00e1ndose dormido(a) en la noche. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb5_p": {
+        "Description": "The child feels anxious or afraid when falling asleep. El ni\u00f1o / la ni\u00f1a siente ansiedad o miedo cuando se est\u00e1 quedando dormido(a). | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb6_p": {
+        "Description": "The child startles or jerks parts of the body while falling asleep. El ni\u00f1o / la ni\u00f1a se sobresalta o sacude partes del cuerpo mientras se est\u00e1 quedando dormido(a). | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb7_p": {
+        "Description": "The child shows repetitive actions such as rocking or head banging while falling asleep. El ni\u00f1o / la ni\u00f1a muestra acciones repetitivas como mecerse o golpear la cabeza contra algo mientras se est\u00e1 quedando dormido(a). | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb8_p": {
+        "Description": "The child experiences vivid dream-like scenes while falling asleep. El ni\u00f1o / la ni\u00f1a experimenta escenas v\u00edvidas como si fuera un sue\u00f1o mientras se est\u00e1 quedando dormido(a). | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb9_p": {
+        "Description": "The child sweats excessively while falling asleep. El ni\u00f1o / la ni\u00f1a suda excesivamente mientras se est\u00e1 quedando dormido(a). | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb10_p": {
+        "Description": "The child wakes up more than twice per night. El ni\u00f1o / la ni\u00f1a se despierta m\u00e1s de dos veces por noche. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb11_p": {
+        "Description": "After waking up in the night, the child has difficulty to fall asleep again. Despu\u00e9s de despertarse en la noche, el ni\u00f1o / la ni\u00f1a tiene dificultad para quedarse dormido(a) de nuevo. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb12_p": {
+        "Description": "The child has frequent twitching or jerking of legs while asleep or often changes position during the night or kicks the covers off the bed. Al ni\u00f1o / A la ni\u00f1a se le contraen de repente o se le sacuden las piernas frecuentemente mientras duerme o a menudo cambia de posici\u00f3n durante la noche o patea las cobijas hasta tirarlas de la cama. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb13_p": {
+        "Description": "The child has difficulty in breathing during the night. El ni\u00f1o / la ni\u00f1a tiene dificultad respirando durante la noche. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb14_p": {
+        "Description": "The child gasps for breaths or is unable to breathe during sleep. El ni\u00f1o / la ni\u00f1a toma bocanadas de aire para respirar o no puede respirar mientras duerme. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb15_p": {
+        "Description": "The child snores. El ni\u00f1o / la ni\u00f1a ronca. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb16_p": {
+        "Description": "The child sweats excessively during the night. El ni\u00f1o / la ni\u00f1a suda en exceso durante la noche. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb17_p": {
+        "Description": "You have observed the child sleepwalking. Usted ha visto al ni\u00f1o / la ni\u00f1a caminar mientras duerme. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb18_p": {
+        "Description": "You have observed the child talking in their sleep. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb19_p": {
+        "Description": "The child grinds their teeth during sleep.  | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb20_p": {
+        "Description": "The child wakes from sleep screaming or confused so you cannot seem to get through to they, but has no memory of these events the next morning.  | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb21_p": {
+        "Description": "The child has nightmares which they don't remember the next day. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb22_p": {
+        "Description": "The child is unusuallly difficult to wake up in the morning. Es inusualmente dif\u00edcil despertar al ni\u00f1o / la ni\u00f1a en la ma\u00f1ana. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb23_p": {
+        "Description": "The child awakes in the morning feeling tired. El ni\u00f1o / la ni\u00f1a se despierta en la ma\u00f1ana sinti\u00e9ndose cansado(a). | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb24_p": {
+        "Description": "The child feels unable to move when waking up in the morning. El ni\u00f1o / la ni\u00f1a siente que no puede moverse cuando se despierta en la ma\u00f1ana. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb25_p": {
+        "Description": "The child experiences daytime sleepiness.  El ni\u00f1o / la ni\u00f1a siente sue\u00f1o durante el d\u00eda. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    },
+    "sleepdisturb26_p": {
+        "Description": "The child falls asleep suddenly in inappropriate situations. El ni\u00f1o / la ni\u00f1a se queda dormido(a) de repente en situaciones inapropiadas. | 1 = Never /Nunca; 2 = Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos); 3 = Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana); 4 = Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana); 5 = Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Never /Nunca",
+            "2": "Occasionally (once or twice per month or less) /Ocasionalmente (1 o 2 veces al mes o menos)",
+            "3": "Sometimes (once or twice per week) /A veces (1 o 2 veces a la semana)",
+            "4": "Often (3 or 5 times per week)/ A menudo (de 3 a 5 veces a la semana)",
+            "5": "Always (daily) /Siempre (diariamente)// Consider each question pertaining to the PAST 6 MONTHS of the child's life"
+        }
+    }
+}

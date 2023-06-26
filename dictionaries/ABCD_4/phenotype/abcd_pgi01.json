@@ -1,0 +1,420 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "gish_p_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "gish_m1_p": {
+        "Description": "His favorite playmates are Sus compa\u00f1eros favoritos de juego son: | 5 = Always boys Siempre ni\u00f1os ; 4 = Usually boys Por lo general; 3 = Boys and girls equally Ni\u00f1os y ni\u00f1as por igual ; 2 = Usually girls  Por lo general; 1 = Always girls  Siempre ni\u00f1as ; 0 = Does not play with other children No juega con otros ni\u00f1os/as ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 0 ; 777",
+        "Levels": {
+            "5": "Always boys Siempre ni\u00f1os",
+            "4": "Usually boys Por lo general",
+            "3": "Boys and girls equally Ni\u00f1os y ni\u00f1as por igual",
+            "2": "Usually girls  Por lo general",
+            "1": "Always girls  Siempre ni\u00f1as",
+            "0": "Does not play with other children No juega con otros ni\u00f1os/as",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m2_p": {
+        "Description": "He plays with girl-type dolls, such as \"Barbie\" Juega con mu\u00f1ecas \"para ni\u00f1as\", como \"Barbie\" | 1 = As a favorite toy Como juguete favorito ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite toy Como juguete favorito",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m3_p": {
+        "Description": "He plays with boy-type dolls such as action figures or \"GI-Joe\" Juega con mu\u00f1ecos \"para ni\u00f1os\", como \"GI-Joe\" | 5 = As a favorite toy Como juguete favorito ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite toy Como juguete favorito",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m4_p": {
+        "Description": "He experiments with cosmetics (makeup) and jewelry El experimenta con cosmeticos (maquillaje) y joyas | 1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite activity Como actividad favorita",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m5_p": {
+        "Description": "He imitates female characters seen on TV or in the movies Imita a personajes del sexo femenino que aparecen en televisi\u00f3n o en las pel\u00edculas | 1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite activity Como actividad favorita",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m6_p": {
+        "Description": "He imitates male characters seen on TV or in the movies Imita a personajes del sexo masculino que aparecen en televisi\u00f3n o en las pel\u00edculas | 5 = As a favorite activity Como actividad favorita ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite activity Como actividad favorita",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m7_p": {
+        "Description": "He plays sports with boys (but not girls) Practica deportes con ni\u00f1os (pero no con ni\u00f1as) | 5 = As a favorite activity Como actividad favorita ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite activity Como actividad favorita",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m8_p": {
+        "Description": "He plays sports with girls (but not boys) Practica deportes con ni\u00f1as (pero no con ni\u00f1os) | 1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite activity Como actividad favorita",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m9_p": {
+        "Description": "In playing \"mother/father\", \"house\", or \"school\" games, he takes the role of Cuando juega a \"la mam\u00e1 o el pap\u00e1\", \"la casita\" o \"la escuelita\", asume el papel de: | 1 = A girl or woman at all times Una ni\u00f1a o mujer; 2 = Usually a girl or woman Una ni\u00f1a o mujer; 3 = Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces; 4 = Usually a boy or man Un ni\u00f1o o un hombre; 5 = A boy or man at all times Un ni\u00f1o o un hombre; 0 = Does not play these games No juega estos juegos ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 0 ; 777",
+        "Levels": {
+            "1": "A girl or woman at all times Una ni\u00f1a o mujer",
+            "2": "Usually a girl or woman Una ni\u00f1a o mujer",
+            "3": "Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces",
+            "4": "Usually a boy or man Un ni\u00f1o o un hombre",
+            "5": "A boy or man at all times Un ni\u00f1o o un hombre",
+            "0": "Does not play these games No juega estos juegos",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m10_p": {
+        "Description": "He plays \"girl-type\" games (as compared to \"boy-type\" games Juega juegos \"para ni\u00f1as\" (en comparaci\u00f3n con el tipo de juegos \"para ni\u00f1os\") | 1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite activity Como actividad favorita",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m11_p": {
+        "Description": "In dress-up games, he likes to dress up as Cuando juega a disfrazarse, le gusta vestirse como: | 1 = A girl or woman at all times Una ni\u00f1a o mujer; 2 = Usually a girl or woman Una ni\u00f1a o mujer; 3 = Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces; 4 = Usually a boy or man Un ni\u00f1o o un hombre; 5 = A boy or man at all times Un ni\u00f1o o un hombre; 0 = Does not play these games No juega estos juegos ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 0 ; 777",
+        "Levels": {
+            "1": "A girl or woman at all times Una ni\u00f1a o mujer",
+            "2": "Usually a girl or woman Una ni\u00f1a o mujer",
+            "3": "Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces",
+            "4": "Usually a boy or man Un ni\u00f1o o un hombre",
+            "5": "A boy or man at all times Un ni\u00f1o o un hombre",
+            "0": "Does not play these games No juega estos juegos",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m12_p": {
+        "Description": "He states the wish to be a girl or woman Habla de su deseo de ser una ni\u00f1a o una mujer | 1 = Every day Todos los d\u00edas ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "Every day Todos los d\u00edas",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m13_p": {
+        "Description": "He states that he is a girl or woman Dice que es una ni\u00f1a o una mujer | 1 = Every day Todos los d\u00edas ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "Every day Todos los d\u00edas",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_m14_p": {
+        "Description": "He talks about not liking his sexual anatomy (private parts) Dice que no le gusta su anatom\u00eda sexual (sus partes privadas) | 1 = Every day Todos los d\u00edas ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca; 5 = Never Nunca ; 0 =  Does not talk about his sexual anatomy (private parts) No habla de su  anatom\u00eda sexual (sus partes privadas) ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 0 ; 777",
+        "Levels": {
+            "1": "Every day Todos los d\u00edas",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "0": "Does not talk about his sexual anatomy (private parts) No habla de su  anatom\u00eda sexual (sus partes privadas)",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f1_p": {
+        "Description": "Her favorite playmates are Sus compa\u00f1eros favoritos de juego son: | 1 = Always boys Siempre ni\u00f1os ; 2 = Usually boys Por lo general; 3 = Boys and girls equally Ni\u00f1os y ni\u00f1as por igual ; 4 = Usually girls  Por lo general; 5 = Always girls  Siempre ni\u00f1as ; 0 = Does not play with other children No juega con otros ni\u00f1os/as ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 0 ; 777",
+        "Levels": {
+            "1": "Always boys Siempre ni\u00f1os",
+            "2": "Usually boys Por lo general",
+            "3": "Boys and girls equally Ni\u00f1os y ni\u00f1as por igual",
+            "4": "Usually girls  Por lo general",
+            "5": "Always girls  Siempre ni\u00f1as",
+            "0": "Does not play with other children No juega con otros ni\u00f1os/as",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f2_p": {
+        "Description": "She plays with girl-type dolls, such as \"Barbie\" Juega con mu\u00f1ecas \"para ni\u00f1as\", como \"Barbie\" | 5 = As a favorite toy Como juguete favorito ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite toy Como juguete favorito",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f3_p": {
+        "Description": "She plays with boy-type dolls such as action figures or \"GI-Joe\"     Ella juega con mu\u00f1ecos para ni\u00f1os, como figuras de acci\u00f3n o \"GI-Joe\". | 1 = As a favorite toy Como juguete favorito ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite toy Como juguete favorito",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f4_p": {
+        "Description": "She experiments with cosmetics (makeup) and jewelry Ella experimenta con cosmeticos (maquillaje) y joyas | 5 = As a favorite activity Como actividad favorita ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite activity Como actividad favorita",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f5_p": {
+        "Description": "She imitates female characters seen on TV or in the movies Imita a personajes del sexo femenino que aparecen en televisi\u00f3n o en las pel\u00edculas | 5 = As a favorite activity Como actividad favorita ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite activity Como actividad favorita",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f6_p": {
+        "Description": "She imitates male characters seen on TV or in the movies Imita a personajes del sexo masculino que aparecen en televisi\u00f3n o en las pel\u00edculas | 1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite activity Como actividad favorita",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f7_p": {
+        "Description": "She plays sports with boys (but not girls) Practica deportes con ni\u00f1os (pero no con ni\u00f1as) | 1 = As a favorite activity Como actividad favorita ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "As a favorite activity Como actividad favorita",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f8_p": {
+        "Description": "She plays sports with girls (but not boys) Practica deportes con ni\u00f1as (pero no con ni\u00f1os) | 5 = As a favorite activity Como actividad favorita ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite activity Como actividad favorita",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f9_p": {
+        "Description": "In playing \"mother/father\", \"house\", or \"school\" games, she takes the role of Cuando juega a \"la mam\u00e1 o el pap\u00e1\", \"la casita\" o \"la escuelita\", asume el papel de: | 5 = A girl or woman at all times Una ni\u00f1a o mujer; 4 = Usually a girl or woman Una ni\u00f1a o mujer; 3 = Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces; 2 = Usually a boy or man Un ni\u00f1o o un hombre; 1 = A boy or man at all times Un ni\u00f1o o un hombre; 0 = Does not play these games No juega estos juegos ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 0 ; 777",
+        "Levels": {
+            "5": "A girl or woman at all times Una ni\u00f1a o mujer",
+            "4": "Usually a girl or woman Una ni\u00f1a o mujer",
+            "3": "Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces",
+            "2": "Usually a boy or man Un ni\u00f1o o un hombre",
+            "1": "A boy or man at all times Un ni\u00f1o o un hombre",
+            "0": "Does not play these games No juega estos juegos",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f10_p": {
+        "Description": "She plays \"girl-type\" games (as compared to \"boy-type\" games Juega juegos \"para ni\u00f1as\" (en comparaci\u00f3n con el tipo de juegos \"para ni\u00f1os\") | 5 = As a favorite activity Como actividad favorita ; 4 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 2 = Rarely Casi nunca ; 1 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 777",
+        "Levels": {
+            "5": "As a favorite activity Como actividad favorita",
+            "4": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "2": "Rarely Casi nunca",
+            "1": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f11_p": {
+        "Description": "In dress-up games, she likes to dress up as  Cuando juega a disfrazarse, le gusta vestirse como: | 5 = A girl or woman at all times Una ni\u00f1a o mujer; 4 = Usually a girl or woman Una ni\u00f1a o mujer; 3 = Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces; 2 = Usually a boy or man Un ni\u00f1o o un hombre; 1 = A boy or man at all times Un ni\u00f1o o un hombre; 0 = Does not play these games No juega estos juegos ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "5 ; 4 ; 3 ; 2 ; 1 ; 0 ; 777",
+        "Levels": {
+            "5": "A girl or woman at all times Una ni\u00f1a o mujer",
+            "4": "Usually a girl or woman Una ni\u00f1a o mujer",
+            "3": "Half the time a girl or woman and half the time a boy or man Una ni\u00f1a o mujer la mitad de las veces",
+            "2": "Usually a boy or man Un ni\u00f1o o un hombre",
+            "1": "A boy or man at all times Un ni\u00f1o o un hombre",
+            "0": "Does not play these games No juega estos juegos",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f12_p": {
+        "Description": "She states the wish to be a boy or man Habla de su deseo de ser un ni\u00f1o o un hombre | 1 = Every day Todos los d\u00edas ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "Every day Todos los d\u00edas",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f13_p": {
+        "Description": "She states that she is a boy or man Dice que es un ni\u00f1o o un hombre | 1 = Every day Todos los d\u00edas ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 777",
+        "Levels": {
+            "1": "Every day Todos los d\u00edas",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    },
+    "gish_f14_p": {
+        "Description": "She talks about not liking her sexual anatomy (private parts) Dice que no le gusta su anatom\u00eda sexual (sus partes privadas) | 1 = Every day Todos los d\u00edas ; 2 = Frequently Frecuentemente ; 3 = Once in a while De vez en cuando ; 4 = Rarely Casi nunca ; 5 = Never Nunca ; 0 =  Does not talk about her sexual anatomy (private parts) No habla de su anatom\u00eda sexual (sus partes privadas) ; 777 = Decline to answer Prefiero no responder",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 0 ; 777",
+        "Levels": {
+            "1": "Every day Todos los d\u00edas",
+            "2": "Frequently Frecuentemente",
+            "3": "Once in a while De vez en cuando",
+            "4": "Rarely Casi nunca",
+            "5": "Never Nunca",
+            "0": "Does not talk about her sexual anatomy (private parts) No habla de su anatom\u00eda sexual (sus partes privadas)",
+            "777": "Decline to answer Prefiero no responder"
+        }
+    }
+}

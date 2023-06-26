@@ -1,0 +1,329 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "socialdev_cfbi_08_l": {
+        "Description": "I felt comfortable in the interview room. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_01_l": {
+        "Description": "The staff was helpful and nice. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_02_l": {
+        "Description": "The staff told me about the study before we started. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_03_l": {
+        "Description": "When I filled out the questionnaire, I could ask a staff member to help me. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_04_l": {
+        "Description": "I understood all the questions. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_05_l": {
+        "Description": "There were many difficult words. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_06_l": {
+        "Description": "We had to wait for a long time before we got started. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_07_l": {
+        "Description": "Some of the questions made me uncomfortable. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_15_l": {
+        "Description": "I would participate in this study or similar studies again. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_09_l": {
+        "Description": "I felt comfortable with the staff person interviewing me. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_10_l": {
+        "Description": "I think this study took too long. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_11_l": {
+        "Description": "I prefer one longer study day, than two shorter. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_12_l": {
+        "Description": "I think the $40 I received was a good compensation for my time. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_13_l": {
+        "Description": "I would recommend this study to friends and family. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbi_14_l": {
+        "Description": "I would participate in this study or similar studies again. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '2'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_14_l": {
+        "Description": "I think the $40 I received was a good compensation for my time. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_01_l": {
+        "Description": "The staff was helpful and nice. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_02_l": {
+        "Description": "The staff told me about the study before we started. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_03_l": {
+        "Description": "When I filled out the questionnaire, I could ask a staff member to help me. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_04_l": {
+        "Description": "I understood all the questions. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_05_l": {
+        "Description": "There were many difficult words. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_06_l": {
+        "Description": "We had to wait for a long time before we got started. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_07_l": {
+        "Description": "Some of the questions made me uncomfortable. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_08_l": {
+        "Description": "I felt comfortable in the interview room. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_09_l": {
+        "Description": "I felt comfortable with the staff person interviewing me. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_10_l": {
+        "Description": "I would recommend this study to friends and family. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_11_l": {
+        "Description": "I think this study took too long. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_12_l": {
+        "Description": "The day was difficult because I did 2 studies. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_cfbc_13_l": {
+        "Description": "I prefer to do the 2 studies on different days. | 1=Yes ; 0=No ; 98=I don't know [socialdev_visit_01_l] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    }
+}

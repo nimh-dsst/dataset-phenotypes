@@ -1,0 +1,1843 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "rsfmri_var_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "rsfmri_var_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "rsfmri_var_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "rsfmri_var_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "rsfmri_var_subthreshnvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "rsfmri_var_subtcignvols": {
+        "Description": "Number of frames with FD < 0.2 and at least 5 contiguous, supra-threshold frames",
+        "DataType": "Integer"
+    },
+    "rsfmri_var_ntpoints": {
+        "Description": "Number of frames after excluding outlier frames (based on standard deviation across ROIs)",
+        "DataType": "Integer"
+    },
+    "rsfmri_var_meanmotion": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_var_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_var_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_var_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_var_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "rsfmri_var_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_banksstslh": {
+        "Description": "Temporal variance in APARC ROI left-bankssts",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_cdaclatelh": {
+        "Description": "Temporal variance in APARC ROI left-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_cdmdflh": {
+        "Description": "Temporal variance in APARC ROI left-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_cuneuslh": {
+        "Description": "Temporal variance in APARC ROI left-cuneus",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_entorhinallh": {
+        "Description": "Temporal variance in APARC ROI left-entorhinal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_fflh": {
+        "Description": "Temporal variance in APARC ROI left-fusiform",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_ifpalh": {
+        "Description": "Temporal variance in APARC ROI left-inferiorparietal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_iftlh": {
+        "Description": "Temporal variance in APARC ROI left-inferiorTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_ihclatelh": {
+        "Description": "Temporal variance in APARC ROI left-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_loccipitallh": {
+        "Description": "Temporal variance in APARC ROI left-lateraloccipital",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_loboflh": {
+        "Description": "Temporal variance in APARC ROI left-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_linguallh": {
+        "Description": "Temporal variance in APARC ROI left-lingual",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_moboflh": {
+        "Description": "Temporal variance in APARC ROI left-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_mdtlh": {
+        "Description": "Temporal variance in APARC ROI left-middleTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parahpallh": {
+        "Description": "Temporal variance in APARC ROI left-parahippocampal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_paracentrallh": {
+        "Description": "Temporal variance in APARC ROI left-paracentral",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parsopllh": {
+        "Description": "Temporal variance in APARC ROI left-parsopercularis",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parsobalislh": {
+        "Description": "Temporal variance in APARC ROI left-parsorbitalis",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parstularislh": {
+        "Description": "Temporal variance in APARC ROI left-parstriangularis",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_pericclh": {
+        "Description": "Temporal variance in APARC ROI left-pericalcarine",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_postcentrallh": {
+        "Description": "Temporal variance in APARC ROI left-postcentral",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_psclatelh": {
+        "Description": "Temporal variance in APARC ROI left-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_precentrallh": {
+        "Description": "Temporal variance in APARC ROI left-precentral",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_precuneuslh": {
+        "Description": "Temporal variance in APARC ROI left-precuneus",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_rlaclatelh": {
+        "Description": "Temporal variance in APARC ROI left-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_rlmdflh": {
+        "Description": "Temporal variance in APARC ROI left-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_suflh": {
+        "Description": "Temporal variance in APARC ROI left-superiorfrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_spetallh": {
+        "Description": "Temporal variance in APARC ROI left-superiorparietal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_sutlh": {
+        "Description": "Temporal variance in APARC ROI left-superiorTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_smlh": {
+        "Description": "Temporal variance in APARC ROI left-supramarginal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_fpolelh": {
+        "Description": "Temporal variance in APARC ROI left-frontalpole",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_tpolelh": {
+        "Description": "Temporal variance in APARC ROI left-Temporalpole",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_tvtlh": {
+        "Description": "Temporal variance in APARC ROI left-transverseTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_insulalh": {
+        "Description": "Temporal variance in APARC ROI left-insula",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_banksstsrh": {
+        "Description": "Temporal variance in APARC ROI right-bankssts",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_cdaclaterh": {
+        "Description": "Temporal variance in APARC ROI right-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_cdmdfrh": {
+        "Description": "Temporal variance in APARC ROI right-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_cuneusrh": {
+        "Description": "Temporal variance in APARC ROI right-cuneus",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_entorhinalrh": {
+        "Description": "Temporal variance in APARC ROI right-entorhinal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_ffrh": {
+        "Description": "Temporal variance in APARC ROI right-fusiform",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_ifparh": {
+        "Description": "Temporal variance in APARC ROI right-inferiorparietal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_iftrh": {
+        "Description": "Temporal variance in APARC ROI right-inferiorTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_ihclaterh": {
+        "Description": "Temporal variance in APARC ROI right-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_loccipitalrh": {
+        "Description": "Temporal variance in APARC ROI right-lateraloccipital",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_lobofrh": {
+        "Description": "Temporal variance in APARC ROI right-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_lingualrh": {
+        "Description": "Temporal variance in APARC ROI right-lingual",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_mobofrh": {
+        "Description": "Temporal variance in APARC ROI right-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_mdtrh": {
+        "Description": "Temporal variance in APARC ROI right-middleTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parahpalrh": {
+        "Description": "Temporal variance in APARC ROI right-parahippocampal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_paracentralrh": {
+        "Description": "Temporal variance in APARC ROI right-paracentral",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parsoplrh": {
+        "Description": "Temporal variance in APARC ROI right-parsopercularis",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parsobalisrh": {
+        "Description": "Temporal variance in APARC ROI right-parsorbitalis",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_parstularisrh": {
+        "Description": "Temporal variance in APARC ROI right-parstriangularis",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_periccrh": {
+        "Description": "Temporal variance in APARC ROI right-pericalcarine",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_postcentralrh": {
+        "Description": "Temporal variance in APARC ROI right-postcentral",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_psclaterh": {
+        "Description": "Temporal variance in APARC ROI right-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_precentralrh": {
+        "Description": "Temporal variance in APARC ROI right-precentral",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_precuneusrh": {
+        "Description": "Temporal variance in APARC ROI right-precuneus",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_rlaclaterh": {
+        "Description": "Temporal variance in APARC ROI right-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_rlmdfrh": {
+        "Description": "Temporal variance in APARC ROI right-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_sufrh": {
+        "Description": "Temporal variance in APARC ROI right-superiorfrontal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_spetalrh": {
+        "Description": "Temporal variance in APARC ROI right-superiorparietal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_sutrh": {
+        "Description": "Temporal variance in APARC ROI right-superiorTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_smrh": {
+        "Description": "Temporal variance in APARC ROI right-supramarginal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_fpolerh": {
+        "Description": "Temporal variance in APARC ROI right-frontalpole",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_tpolerh": {
+        "Description": "Temporal variance in APARC ROI right-Temporalpole",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_tvtrh": {
+        "Description": "Temporal variance in APARC ROI right-transverseTemporal",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cdk_insularh": {
+        "Description": "Temporal variance in APARC ROI right-insula",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp1lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 1",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp2lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 2",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp3lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 3",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp4lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 4",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp5lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 5",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp6lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 6",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp7lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 7",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp8lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 8",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp9lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 9",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp10lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 10",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp11lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 11",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp12lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 12",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp13lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 13",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp14lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 14",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp15lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 15",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp16lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 16",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp17lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 17",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp18lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 18",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp19lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 19",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp20lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 20",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp21lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 21",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp22lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 22",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp23lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 23",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp24lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 24",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp25lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 25",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp26lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 26",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp27lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 27",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp28lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 28",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp29lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 29",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp30lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 30",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp31lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 31",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp32lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 32",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp33lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 33",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp34lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 34",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp35lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 35",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp36lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 36",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp37lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 37",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp38lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 38",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp39lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 39",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp40lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 40",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp41lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 41",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp42lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 42",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp43lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 43",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp44lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 44",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp45lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 45",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp46lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 46",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp47lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 47",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp48lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 48",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp49lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 49",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp50lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 50",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp51lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 51",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp52lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 52",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp53lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 53",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp54lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 54",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp55lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 55",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp56lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 56",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp57lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 57",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp58lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 58",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp59lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 59",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp60lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 60",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp61lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 61",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp62lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 62",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp63lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 63",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp64lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 64",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp65lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 65",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp66lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 66",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp67lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 67",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp68lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 68",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp69lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 69",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp70lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 70",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp71lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 71",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp72lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 72",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp73lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 73",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp74lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 74",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp75lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 75",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp76lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 76",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp77lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 77",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp78lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 78",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp79lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 79",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp80lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 80",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp81lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 81",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp82lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 82",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp83lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 83",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp84lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 84",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp85lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 85",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp86lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 86",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp87lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 87",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp88lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 88",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp89lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 89",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp90lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 90",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp91lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 91",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp92lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 92",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp93lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 93",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp94lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 94",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp95lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 95",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp96lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 96",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp97lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 97",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp98lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 98",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp99lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 99",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp100lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 100",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp101lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 101",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp102lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 102",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp103lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 103",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp104lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 104",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp105lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 105",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp106lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 106",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp107lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 107",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp108lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 108",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp109lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 109",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp110lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 110",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp111lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 111",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp112lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 112",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp113lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 113",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp114lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 114",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp115lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 115",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp116lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 116",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp117lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 117",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp118lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 118",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp119lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 119",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp120lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 120",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp121lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 121",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp122lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 122",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp123lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 123",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp124lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 124",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp125lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 125",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp126lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 126",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp127lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 127",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp128lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 128",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp129lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 129",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp130lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 130",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp131lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 131",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp132lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 132",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp133lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 133",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp134lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 134",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp135lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 135",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp136lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 136",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp137lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 137",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp138lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 138",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp139lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 139",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp140lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 140",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp141lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 141",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp142lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 142",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp143lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 143",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp144lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 144",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp145lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 145",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp146lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 146",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp147lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 147",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp148lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 148",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp149lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 149",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp150lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 150",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp151lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 151",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp152lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 152",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp153lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 153",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp154lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 154",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp155lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 155",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp156lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 156",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp157lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 157",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp158lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 158",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp159lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 159",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp160lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 160",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp161lh": {
+        "Description": "Temporal variance in left hemisphere cortical Gordon parcel 161",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp162rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 162",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp163rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 163",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp164rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 164",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp165rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 165",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp166rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 166",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp167rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 167",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp168rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 168",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp169rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 169",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp170rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 170",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp171rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 171",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp172rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 172",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp173rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 173",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp174rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 174",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp175rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 175",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp176rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 176",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp177rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 177",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp178rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 178",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp179rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 179",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp180rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 180",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp181rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 181",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp182rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 182",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp183rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 183",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp184rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 184",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp185rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 185",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp186rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 186",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp187rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 187",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp188rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 188",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp189rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 189",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp190rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 190",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp191rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 191",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp192rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 192",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp193rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 193",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp194rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 194",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp195rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 195",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp196rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 196",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp197rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 197",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp198rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 198",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp199rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 199",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp200rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 200",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp201rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 201",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp202rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 202",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp203rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 203",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp204rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 204",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp205rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 205",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp206rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 206",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp207rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 207",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp208rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 208",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp209rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 209",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp210rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 210",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp211rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 211",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp212rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 212",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp213rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 213",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp214rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 214",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp215rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 215",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp216rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 216",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp217rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 217",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp218rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 218",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp219rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 219",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp220rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 220",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp221rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 221",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp222rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 222",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp223rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 223",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp224rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 224",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp225rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 225",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp226rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 226",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp227rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 227",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp228rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 228",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp229rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 229",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp230rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 230",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp231rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 231",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp232rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 232",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp233rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 233",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp234rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 234",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp235rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 235",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp236rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 236",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp237rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 237",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp238rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 238",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp239rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 239",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp240rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 240",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp241rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 241",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp242rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 242",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp243rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 243",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp244rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 244",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp245rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 245",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp246rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 246",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp247rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 247",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp248rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 248",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp249rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 249",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp250rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 250",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp251rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 251",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp252rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 252",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp253rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 253",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp254rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 254",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp255rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 255",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp256rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 256",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp257rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 257",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp258rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 258",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp259rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 259",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp260rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 260",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp261rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 261",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp262rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 262",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp263rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 263",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp264rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 264",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp265rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 265",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp266rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 266",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp267rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 267",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp268rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 268",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp269rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 269",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp270rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 270",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp271rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 271",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp272rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 272",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp273rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 273",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp274rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 274",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp275rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 275",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp276rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 276",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp277rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 277",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp278rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 278",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp279rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 279",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp280rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 280",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp281rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 281",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp282rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 282",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp283rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 283",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp284rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 284",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp285rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 285",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp286rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 286",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp287rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 287",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp288rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 288",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp289rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 289",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp290rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 290",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp291rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 291",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp292rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 292",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp293rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 293",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp294rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 294",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp295rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 295",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp296rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 296",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp297rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 297",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp298rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 298",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp299rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 299",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp300rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 300",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp301rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 301",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp302rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 302",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp303rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 303",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp304rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 304",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp305rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 305",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp306rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 306",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp307rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 307",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp308rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 308",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp309rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 309",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp310rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 310",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp311rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 311",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp312rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 312",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp313rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 313",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp314rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 314",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp315rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 315",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp316rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 316",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp317rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 317",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp318rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 318",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp319rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 319",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp320rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 320",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp321rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 321",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp322rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 322",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp323rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 323",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp324rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 324",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp325rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 325",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp326rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 326",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp327rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 327",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp328rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 328",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp329rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 329",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp330rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 330",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp331rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 331",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp332rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 332",
+        "DataType": "Float"
+    },
+    "rsfmri_var_cortgordon_gp333rh": {
+        "Description": "Temporal variance in right hemisphere cortical Gordon parcel 333",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_cbwmlh": {
+        "Description": "Temporal variance in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_cbcortexlh": {
+        "Description": "Temporal variance in ASEG ROI left-cerebral-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_lavlh": {
+        "Description": "Temporal variance in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_inflatventlh": {
+        "Description": "Temporal variance in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_crbwmlh": {
+        "Description": "Temporal variance in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_crbcortexlh": {
+        "Description": "Temporal variance in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_tplh": {
+        "Description": "Temporal variance in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_caudatelh": {
+        "Description": "Temporal variance in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_putamenlh": {
+        "Description": "Temporal variance in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_pallidumlh": {
+        "Description": "Temporal variance in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_3rdv": {
+        "Description": "Temporal variance in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_4thv": {
+        "Description": "Temporal variance in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_brainstem": {
+        "Description": "Temporal variance in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_hpuslh": {
+        "Description": "Temporal variance in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_amygdalalh": {
+        "Description": "Temporal variance in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_csf": {
+        "Description": "Temporal variance in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_lesionlh": {
+        "Description": "Temporal variance in ASEG ROI left-lesion",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_aalh": {
+        "Description": "Temporal variance in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_ventraldclh": {
+        "Description": "Temporal variance in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_cbwmrh": {
+        "Description": "Temporal variance in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_cbcortexrh": {
+        "Description": "Temporal variance in ASEG ROI right-cerebral-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_lavrh": {
+        "Description": "Temporal variance in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_inflatventrh": {
+        "Description": "Temporal variance in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_crbwmrh": {
+        "Description": "Temporal variance in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_crbcortexrh": {
+        "Description": "Temporal variance in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_tprh": {
+        "Description": "Temporal variance in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_caudaterh": {
+        "Description": "Temporal variance in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_putamenrh": {
+        "Description": "Temporal variance in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_pallidumrh": {
+        "Description": "Temporal variance in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_hpusrh": {
+        "Description": "Temporal variance in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_amygdalarh": {
+        "Description": "Temporal variance in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_lesionrh": {
+        "Description": "Temporal variance in ASEG ROI right-lesion",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_aarh": {
+        "Description": "Temporal variance in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_ventraldcrh": {
+        "Description": "Temporal variance in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_wmhypin": {
+        "Description": "Temporal variance in ASEG ROI wm-hypointensities",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_wmhypinlh": {
+        "Description": "Temporal variance in ASEG ROI left-wm-hypointensities",
+        "DataType": "Float"
+    },
+    "rsfmri_var_scs_wmhypinrh": {
+        "Description": "Temporal variance in ASEG ROI right-wm-hypointensities",
+        "DataType": "Float"
+    }
+}

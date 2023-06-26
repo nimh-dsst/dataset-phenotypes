@@ -1,0 +1,1044 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ptu_a_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying  one or two drinks of an alcoholic beverage (beer, wine, liquor) | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_alc_l  =='1' ||  tlfb_alc_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_b_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTaking one or two alcohol drinks nearly every day | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_alc_l  =='1'  ||  tlfb_alc_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_c_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nHaving five or more alcoholic drinks once or twice each weekend | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_alc_l  =='1'  ||  tlfb_alc_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_d_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying one or two cigarettes | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_e_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nSmoking cigarettes occasionally | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_f_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nSmoking one or more packs of cigarettes per day | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_g_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nUsing e-cigarettes regularly | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_h_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nUsing smokeless tobacco regularly | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_i_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying marijuana (pot, weed) once or twice | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_j_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nSmoking marijuana occasionally | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_k_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nSmoking marijuana regularly | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_l_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying liquid, sprays, and gases that people sniff or inhale to get high (such as gasoline, glue, and nitrous oxide) once or twice | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_inhalant_l   =='1' ||   tlfb_inhalant_c_l   =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_m_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying prescription pain relievers (such as Vicodin, hydrocodone, Oxycontin; not over the counter drugs like Tylenol) in a way that a doctor did not direct you to use it once or twice | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_rx_misuse_l   == '1' ||  tlfb_rx_misuse_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_n_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying prescription use of tranquilizers to relax people (such as Xanax or Ativan) in a way a doctor did not direct you to use it once or twice | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_rx_misuse_l   == '1' ||  tlfb_rx_misuse_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_o_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying prescription stimulants (such as Adderall or Ritalin that may be used for attention disorders) in a way a doctor did not direct you to use it once or twice | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_rx_misuse_l   == '1' ||  tlfb_rx_misuse_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "ptu_p_y": {
+        "Description": "How do you think your CLOSE FRIENDS feel (or would feel) about YOU doing each of the following things?\r\nTrying other drugs like cocaine, heroin, or methamphetamine | 0 = Not Disapprove; 1 = Disapprove; 2 = Strongly Disapprove; 999 = Don't Know / tlfb_list_l___1   == '1' ||  tlfb_list_l___2   == '1' ||  tlfb_list_l___3   == '1' ||   tlfb_list_l___4   == '1' ||  tlfb_list_l___5   == '1' ||  tlfb_list_l___6   == '1' ||  tlfb_list_l___7   == '1' ||  tlfb_list_l___8   == '1' ||   tlfb_list_l___9   == '1' ||  tlfb_list_l___10   == '1' ||  tlfb_list_l___11   == '1' ||  tlfb_list_l___12   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 999",
+        "Levels": {
+            "0": "Not Disapprove",
+            "1": "Disapprove",
+            "2": "Strongly Disapprove",
+            "999": "Don't Know"
+        }
+    },
+    "peer_deviance_1_l": {
+        "Description": "How many of your friends currently: smoke cigarettes | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_tob_l  =='1' ||  tlfb_tob_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_2_l": {
+        "Description": "How many of your friends currently: drink alcohol (full beer, wine or liquor) | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_alc_l  =='1' ||  tlfb_alc_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_3_l": {
+        "Description": "How many of your friends currently: get drunk | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_alc_l  =='1' ||  tlfb_alc_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_4_l": {
+        "Description": "How many of your friends currently: have problems with alcohol or other drugs | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_alc_l  =='1' ||  tlfb_tob_l  =='1' ||  tlfb_mj_l  =='1' ||  tlfb_mj_synth_l  =='1' ||  tlfb_bitta_l  =='1' ||  tlfb_list_yes_no_l  =='1' ||   tlfb_alc_c_l  =='1' ||  tlfb_tob_c_l  =='1' ||  tlfb_mj_c_l  =='1' ||  tlfb_mj_synth_c_l  =='1' ||  tlfb_bitta_c_l  =='1' ||  tlfb_list_yes_no_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_5_l": {
+        "Description": "How many of your friends currently: use marijuana | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_mj_l  =='1' ||  tlfb_mj_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_6_l": {
+        "Description": "How many of your friends currently: use inhalants (gas, glue, nitrous oxide) | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_inhalant_l   == '1' ||  tlfb_inhalant_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_7_l": {
+        "Description": "How many of your friends currently: use other drugs like cocaine, downers, or LSD (lysergic acid diethylamide) | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___2   == '1' ||  tlfb_list_l___3   == '1' ||   tlfb_list_l___4   == '1' ||  tlfb_list_l___5   == '1' ||  tlfb_list_l___6   == '1' ||  tlfb_list_l___7   == '1' ||  tlfb_list_l___8   == '1' ||   tlfb_list_l___9   == '1' ||  tlfb_list_l___10   == '1' ||  tlfb_list_l___11   == '1' ||  tlfb_list_l___12   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_8_l": {
+        "Description": "How many of your friends currently: sell or give drugs to others | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_alc_l  =='1' ||  tlfb_tob_l  =='1' ||  tlfb_mj_l  =='1' ||  tlfb_mj_synth_l  =='1' ||  tlfb_bitta_l  =='1' ||  tlfb_list_yes_no_l  =='1' ||  tlfb_alc_c_l  =='1' ||  tlfb_tob_c_l  =='1' ||  tlfb_mj_c_l  =='1' ||  tlfb_mj_synth_c_l  =='1' ||  tlfb_bitta_c_l  =='1' ||  tlfb_list_yes_no_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "peer_deviance_9_l": {
+        "Description": "How many of your friends currently: use other tobacco products like e-cigarettes, pipes, or hookah | 0 = None; 1 = A Few; 2 = Some; 3 = Most; 4 = All / tlfb_tob_l  =='1' ||  tlfb_tob_c_l  =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "None",
+            "1": "A Few",
+            "2": "Some",
+            "3": "Most",
+            "4": "All"
+        }
+    },
+    "path_alc_youth1_l": {
+        "Description": "Have you ever been curious about using a tobacco product such as cigarettes, e-cigarettes, hookah, or cigars? | 1 = Very curious; 2 = Somewhat curious; 3 = A little curious; 4 = Not at all curious; 5 = Don't Know; 6 = Refused /( tlfb_tob_l   == '1' ||   tlfb_tob_c_l   == '1') && ( tlfb_tob_puff_l  =='0' &&  tlfb_chew_use_l  =='0' &&  tlfb_cigar_use_l  =='0' &&  tlfb_hookah_use_l  =='0' &&  tlfb_pipes_use_l  =='0' &&  tlfb_nicotine_use_l  =='0' &&  tlfb_tob_puff_c_l  =='0' &&  tlfb_chew_use_c_l  =='0' &&  tlfb_cigar_use_c_l  =='0' &&  tlfb_hookah_use_c_l  =='0' &&  tlfb_pipes_use_c_l  =='0' &&  tlfb_nicotine_use_c_l  =='0')",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Very curious",
+            "2": "Somewhat curious",
+            "3": "A little curious",
+            "4": "Not at all curious",
+            "5": "Don't Know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth2_l": {
+        "Description": "Have you ever been curious about drinking alcohol? | 1 = Very curious; 2 = Somewhat curious; 3 = A little curious; 4 = Not at all curious; 5 = Don't Know; 6 = Refused /( tlfb_alc_l  == '1' ||  tlfb_alc_c_l   == '1') && ( tlfb_alc_sip_l  == '0' &&  tlfb_alc_sip_c_l  == '0')",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Very curious",
+            "2": "Somewhat curious",
+            "3": "A little curious",
+            "4": "Not at all curious",
+            "5": "Don't Know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth3_l": {
+        "Description": "Have you ever been curious about trying marijuana? | 1 = Very curious; 2 = Somewhat curious; 3 = A little curious; 4 = Not at all curious; 5 = Don't Know; 6 = Refused /( tlfb_mj_l  == '1' ||  tlfb_mj_c_l   == '1') &&  tlfb_mj_puff_l  =='0' &&  tlfb_mj_conc_use_l  =='0' &&  tlfb_mj_drink_use_l  =='0' &&  tlfb_tincture_use_l  =='0' &&  tlfb_mj_puff_c_l  =='0' &&  tlfb_mj_conc_use_c_l  =='0' &&  tlfb_mj_drink_use_c_l  =='0' &&  tlfb_tincture_use_c_l  =='0'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Very curious",
+            "2": "Somewhat curious",
+            "3": "A little curious",
+            "4": "Not at all curious",
+            "5": "Don't Know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth4_l": {
+        "Description": "Do you think you will try a tobacco product soon? | 1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_tob_l   == '1' ||   tlfb_tob_c_l   == '1') && ( tlfb_tob_puff_l  =='0' &&  tlfb_chew_use_l  =='0' &&  tlfb_cigar_use_l  =='0' &&  tlfb_hookah_use_l  =='0' &&  tlfb_pipes_use_l  =='0' &&  tlfb_nicotine_use_l  =='0' &&  tlfb_tob_puff_c_l  =='0' &&  tlfb_chew_use_c_l  =='0' &&  tlfb_cigar_use_c_l  =='0' &&  tlfb_hookah_use_c_l  =='0' &&  tlfb_pipes_use_c_l  =='0' &&  tlfb_nicotine_use_c_l  =='0')",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth5_l": {
+        "Description": "Do you think you will try alcohol soon? | 1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_alc_l  == '1' ||  tlfb_alc_c_l   == '1') && ( tlfb_alc_sip_l  == '0' &&  tlfb_alc_sip_c_l  == '0')",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth6_l": {
+        "Description": "Do you think you will try marijuana soon? | 1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_mj_l  == '1' ||  tlfb_mj_c_l   == '1') &&  tlfb_mj_puff_l  =='0' &&  tlfb_mj_conc_use_l  =='0' &&  tlfb_mj_drink_use_l  =='0' &&  tlfb_tincture_use_l  =='0' &&  tlfb_mj_puff_c_l  =='0' &&  tlfb_mj_conc_use_c_l  =='0' &&  tlfb_mj_drink_use_c_l  =='0' &&  tlfb_tincture_use_c_l  =='0'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth7_l": {
+        "Description": "If one of your best friends were to offer you a tobacco product, would you try it? | 1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_tob_l   == '1' ||   tlfb_tob_c_l   == '1') && ( tlfb_tob_puff_l  =='0' &&  tlfb_chew_use_l  =='0' &&  tlfb_cigar_use_l  =='0' &&  tlfb_hookah_use_l  =='0' &&  tlfb_pipes_use_l  =='0' &&  tlfb_nicotine_use_l  =='0' &&  tlfb_tob_puff_c_l  =='0' &&  tlfb_chew_use_c_l  =='0' &&  tlfb_cigar_use_c_l  =='0' &&  tlfb_hookah_use_c_l  =='0' &&  tlfb_pipes_use_c_l  =='0' &&  tlfb_nicotine_use_c_l  =='0')",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth8_l": {
+        "Description": "If one of your best friends were to offer you alcohol, would you try it? | 1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_alc_l  == '1' ||  tlfb_alc_c_l   == '1') && ( tlfb_alc_sip_l  == '0' &&  tlfb_alc_sip_c_l  == '0')",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused"
+        }
+    },
+    "path_alc_youth9_l": {
+        "Description": "If one of your best friends were to offer you marijuana, would you try it? | 1 = Definitely yes; 2 = Probably yes; 3 = Probably not; 4 = Definitely not; 5 = Don't know; 6 = Refused /( tlfb_mj_l  == '1' ||  tlfb_mj_c_l   == '1') &&  tlfb_mj_puff_l  =='0' &&  tlfb_mj_conc_use_l  =='0' &&  tlfb_mj_drink_use_l  =='0' &&  tlfb_tincture_use_l  =='0' &&  tlfb_mj_puff_c_l  =='0' &&  tlfb_mj_conc_use_c_l  =='0' &&  tlfb_mj_drink_use_c_l  =='0' &&  tlfb_tincture_use_c_l  =='0'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5 ; 6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused"
+        }
+    },
+    "phs_1_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try one or two drinks of an alcoholic beverage (beer, wine, liquor)? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_alc_l  =='1'  ||  tlfb_alc_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_2_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they take one or two drinks nearly every day? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_alc_l  =='1'  ||  tlfb_alc_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_3_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they have five or more drinks of an alcoholic beverage, once or twice each weekend? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_alc_l  =='1'  ||  tlfb_alc_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_4_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try one or two cigarettes? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_5_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they smoke cigarettes occasionally? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_6_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they smoking one or more packs of cigarettes per day? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_7_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they use e-cigarettes regularly? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_8_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they use smokeless tobacco regularly? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_tob_l   == '1' ||  tlfb_tob_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_9_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try marijuana once or twice? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_10_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they use marijuana occasionally? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_11_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they use marijuana regularly? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_mj_l  == '1' ||  tlfb_mj_c_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_12_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try liquid, sprays, and gases that people sniff or inhale to get high (such as gasoline, glue, and nitrous oxide) once or twice? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_inhalant_l   =='1' ||   tlfb_inhalant_c_l   =='1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_13_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try prescription pain relievers (such as Vicodin, hydrocodone, and Oxycontin; not over the counter drugs like Tylenol) in a way that a doctor did not direct them to use it once or twice? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_rx_misuse_l   == '1' ||  tlfb_rx_misuse_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_14_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try prescription use of tranquilizers to relax people (such as Xanax or Ativan) in a way a doctor did not direct them to use it once or twice? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_rx_misuse_l   == '1' ||  tlfb_rx_misuse_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_15_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try prescription stimulants (such as Adderall or Ritalin) in a way a doctor did not direct them to use it once or twice? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_rx_misuse_l   == '1' ||  tlfb_rx_misuse_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "phs_16_y": {
+        "Description": "How much do you think people risk harming themselves (physically or in other ways) if they try other drugs like cocaine, heroin, or methamphetamine? | 0 = No Risk; 1 = Slight Risk; 2 = Moderate Risk; 3 = Great Risk; 999 = Don't Know / tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___1   == '1' ||  tlfb_list_l___2   == '1' ||  tlfb_list_l___3   == '1' ||   tlfb_list_l___4   == '1' ||  tlfb_list_l___5   == '1' ||  tlfb_list_l___6   == '1' ||  tlfb_list_l___7   == '1' ||  tlfb_list_l___8   == '1' ||   tlfb_list_l___9   == '1' ||  tlfb_list_l___10   == '1' ||  tlfb_list_l___11   == '1' ||  tlfb_list_l___12   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 999",
+        "Levels": {
+            "0": "No Risk",
+            "1": "Slight Risk",
+            "2": "Moderate Risk",
+            "3": "Great Risk",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_1": {
+        "Description": "Cigarettes | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_2": {
+        "Description": "Alcohol (beer, wine, or liquor) | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_3": {
+        "Description": "Marijuana (cannabis, weed) | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_4": {
+        "Description": "Inhalants (gas, glue, nitrous oxide) | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_5": {
+        "Description": "Electronic nicotine or vaping products, such as e-cigarettes, vape pens, or Juuls | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_6": {
+        "Description": "Prescription stimulants (such as Adderall or Ritalin) that were not prescribed to them by a doctor. | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_7": {
+        "Description": "Prescription anxiolytics (such as Xanax and Ativan) that were not prescribed to them by a doctor | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_8": {
+        "Description": "Prescription pain relievers (such as Vicodin, hydrocodone, or Oxycontin) that were not prescribed to them by a doctor. | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_9": {
+        "Description": "Other drugs not listed yet, like cocaine, heroin, or LSD. | 0=None ; 1=Less than once a month ; 2=A Few Times a Month ; 3=A Few Times a Week ; 4=Every Day or Nearly Daily ; 5=Don't Know [su_sry_gate]=1",
+        "DataType": "Integer",
+        "ValueRange": "0::5",
+        "Levels": {
+            "0": "None",
+            "1": "Less than once a month",
+            "2": "A Few Times a Month",
+            "3": "A Few Times a Week",
+            "4": "Every Day or Nearly Daily",
+            "5": "Don't Know"
+        }
+    },
+    "su_sry_give_1": {
+        "Description": "Cigarettes | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_1]=1 or [su_sry_1]=2 or [su_sry_1]=3 or [su_sry_1]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_2": {
+        "Description": "Alcohol (beer, wine, or liquor) | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_2]=1 or [su_sry_2]=2 or [su_sry_2]=3 or [su_sry_2]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_3": {
+        "Description": "Marijuana (cannabis, weed) | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_3]=1 or [su_sry_3]=2 or [su_sry_3]=3 or [su_sry_3]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_4": {
+        "Description": "Inhalants (gas, glue, nitrous oxide) | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_4]=1 or [su_sry_4]=2 or [su_sry_4]=3 or [su_sry_4]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_5": {
+        "Description": "Electronic nicotine or vaping products, such as e-cigarettes, vape pens, or Juuls | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_5]=1 or [su_sry_5]=2 or [su_sry_5]=3 or [su_sry_5]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_6": {
+        "Description": "Prescription stimulants (such as Adderall or Ritalin) that were not prescribed to them by a doctor. | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_6]=1 or [su_sry_6]=2 or [su_sry_6]=3 or [su_sry_6]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_7": {
+        "Description": "Prescription anxiolytics (such as Xanax and Ativan) that were not prescribed to them by a doctor | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_7]=1 or [su_sry_7]=2 or [su_sry_7]=3 or [su_sry_7]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_8": {
+        "Description": "Prescription pain relievers (such as Vicodin, hydrocodone, or Oxycontin) that were not prescribed to them by a doctor. | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_8]=1 or [su_sry_8]=2 or [su_sry_8]=3 or [su_sry_8]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_give_9": {
+        "Description": "Other drugs not listed yet, like cocaine, heroin, or LSD. | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_9]=1 or [su_sry_9]=2 or [su_sry_9]=3 or [su_sry_9]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_1": {
+        "Description": "Cigarettes | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_1]=1 or [su_sry_1]=2 or [su_sry_1]=3 or [su_sry_1]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_2": {
+        "Description": "Alcohol (beer, wine, or liquor) | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_2]=1 or [su_sry_2]=2 or [su_sry_2]=3 or [su_sry_2]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "path_alc_youth1a_l": {
+        "Description": "Have you ever been curious about using a cigarette? | 1=Very curious ; 2=Somewhat curious ; 3=A little curious ; 4=Not at all curious ; 5=Don't Know ; 6=Refused  ([tlfb_tob_puff_l] !='1' and [tlfb_chew_use_l] !='1' and [tlfb_tob_puff_c_l] !='1' and [tlfb_chew_use_c_l] !='1') and ([event-name] = '3_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Very curious",
+            "2": "Somewhat curious",
+            "3": "A little curious",
+            "4": "Not at all curious",
+            "5": "Don't Know",
+            "6": "Refused  ("
+        }
+    },
+    "su_sry_seen_3": {
+        "Description": "Marijuana (cannabis, weed) | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_3]=1 or [su_sry_3]=2 or [su_sry_3]=3 or [su_sry_3]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_4": {
+        "Description": "Inhalants (gas, glue, nitrous oxide) | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_4]=1 or [su_sry_4]=2 or [su_sry_4]=3 or [su_sry_4]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_5": {
+        "Description": "Electronic nicotine or vaping products, such as e-cigarettes, vape pens, or Juuls | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_5]=1 or [su_sry_5]=2 or [su_sry_5]=3 or [su_sry_5]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_6": {
+        "Description": "Prescription stimulants (such as Adderall or Ritalin) that were not prescribed to them by a doctor. | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_6]=1 or [su_sry_6]=2 or [su_sry_6]=3 or [su_sry_6]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_7": {
+        "Description": "Prescription anxiolytics (such as Xanax and Ativan) that were not prescribed to them by a doctor | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_7]=1 or [su_sry_7]=2 or [su_sry_7]=3 or [su_sry_7]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_8": {
+        "Description": "Prescription pain relievers (such as Vicodin, hydrocodone, or Oxycontin) that were not prescribed to them by a doctor. | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_8]=1 or [su_sry_8]=2 or [su_sry_8]=3 or [su_sry_8]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "su_sry_seen_9": {
+        "Description": "Other drugs not listed yet, like cocaine, heroin, or LSD. | 0=Never ; 1=Just a few times ; 2=Many times ; 999=Don't Know [su_sry_9]=1 or [su_sry_9]=2 or [su_sry_9]=3 or [su_sry_9]=4",
+        "DataType": "Integer",
+        "ValueRange": "0::2;999",
+        "Levels": {
+            "0": "Never",
+            "1": "Just a few times",
+            "2": "Many times",
+            "999": "Don't Know"
+        }
+    },
+    "sua_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered ; 2=Youth Self_Administered ; 3=Combination [sched_delay] = '7'",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self_Administered",
+            "3": "Combination"
+        }
+    },
+    "path_alc_youth1b_l": {
+        "Description": "Have you ever been curious about using an electronic nicotine or vaping product | 1=Very curious ; 2=Somewhat curious ; 3=A little curious ; 4=Not at all curious ; 5=Don't Know ; 6=Refused  ([tlfb_tob_puff_l] !='1' and [tlfb_chew_use_l] !='1' and [tlfb_tob_puff_c_l] !='1' and [tlfb_chew_use_c_l] !='1') and ([event-name] = '3_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Very curious",
+            "2": "Somewhat curious",
+            "3": "A little curious",
+            "4": "Not at all curious",
+            "5": "Don't Know",
+            "6": "Refused  ("
+        }
+    },
+    "path_alc_youth4a_l": {
+        "Description": "Do you think you will try a cigarette soon? | 1=Definitely yes ; 2=Probably yes ; 3=Probably not ; 4=Definitely not ; 5=Don't know ; 6=Refused  ([tlfb_tob_puff_l] !='1' and [tlfb_chew_use_l] !='1' and [tlfb_tob_puff_c_l] !='1' and [tlfb_chew_use_c_l] !='1') and  ([event-name] ='3_year_follow_up_y_arm_1' or [event-name] ='4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused  ("
+        }
+    },
+    "path_alc_youth4b_l": {
+        "Description": "Do you think you will try an electronic nicotine or vaping product | 1=Definitely yes ; 2=Probably yes ; 3=Probably not ; 4=Definitely not ; 5=Don't know ; 6=Refused  ([tlfb_tob_puff_l] !='1' and [tlfb_chew_use_l] !='1' and [tlfb_tob_puff_c_l] !='1' and [tlfb_chew_use_c_l] !='1')  and  ([event-name] ='3_year_follow_up_y_arm_1' or [event-name] ='4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused  ("
+        }
+    },
+    "path_alc_youth7a_l": {
+        "Description": "If one of your best friends were to offer you a cigarette | 1=Definitely yes ; 2=Probably yes ; 3=Probably not ; 4=Definitely not ; 5=Don't know ; 6=Refused  ([tlfb_tob_puff_l] !='1' and [tlfb_chew_use_l] !='1' and [tlfb_tob_puff_c_l] !='1' and [tlfb_chew_use_c_l] !='1') and  ([event-name] ='3_year_follow_up_y_arm_1' or [event-name] ='4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused  ("
+        }
+    },
+    "path_alc_youth7b_l": {
+        "Description": "If one of your best friends were to offer you an electronic nicotine or vaping product | 1=Definitely yes ; 2=Probably yes ; 3=Probably not ; 4=Definitely not ; 5=Don't know ; 6=Refused  ([tlfb_tob_puff_l]!='1' and [tlfb_chew_use_l]!='1' and [tlfb_tob_puff_c_l]!='1' and [tlfb_chew_use_c_l]!='1') and  ([event-name] ='3_year_follow_up_y_arm_1' or [event-name] ='4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Definitely yes",
+            "2": "Probably yes",
+            "3": "Probably not",
+            "4": "Definitely not",
+            "5": "Don't know",
+            "6": "Refused  ("
+        }
+    },
+    "su_sry_gate": {
+        "Description": "Do you have any older siblings | 0=No ; 1=Yes  [event-name] = ''3_year_follow_up_y_arm_1'' or [event-name] = ''4_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    }
+}

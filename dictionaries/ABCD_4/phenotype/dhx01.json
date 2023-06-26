@@ -1,0 +1,1955 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "visit": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "accult_select_language": {
+        "Description": "Test given in Spanish? \u00c2\u00bfEspa\u00c3\u00b1ol? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "devhx_1_p": {
+        "Description": "Are you the child's biological mother?/ \u00bfEs usted la madre biol\u00f3gica del ni\u00f1o o de la ni\u00f1a? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "birth_weight_lbs": {
+        "Description": "Birth weight pounds",
+        "DataType": "Float"
+    },
+    "devhx_2_p_dk": {
+        "Description": "Birth weight, pounds. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "birth_weight_oz": {
+        "Description": "Birth weight ounces",
+        "DataType": "Float"
+    },
+    "devhx_2b_p_dk": {
+        "Description": "Birth weight, ounces. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_3_p": {
+        "Description": "How old were you/biological mother when the child was born? /\u00bfCu\u00e1ntos a\u00f1os ten\u00eda usted (o la madre biol\u00f3gica) cuando naci\u00f3 el ni\u00f1o o la ni\u00f1a? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float",
+        "ValueRange": "12::60"
+    },
+    "devhx_3_p_dk": {
+        "Description": "Age at birth of the child. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_4_p": {
+        "Description": "How old was the child's biological father when the child was born? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_4_p_dk": {
+        "Description": "How old was the child's biological father when the child was born? | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_5_p": {
+        "Description": "Does your child have a twin? /\u00bfSu ni\u00f1o(a) tiene un gemelo? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_6_p": {
+        "Description": "Was your pregnancy with this child a planned pregnancy? /Fue su embarazo con este(a) ni\u00f1o(a) un embarazo planeado? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_7_p": {
+        "Description": "How far along (in weeks) were you with your child when you found out that you were pregnant? /\u00bfQu\u00e9 tan avanzada (en semanas) estaba usted con su hijo(a) cuando se enter\u00f3 de que estaba embarazada? | weeks/semanas; If you don't know, please choose \"don't know\" in what follows below /   Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 40"
+    },
+    "devhx_7_p_dk": {
+        "Description": "Pregnancy time, when found out. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_prescript_yes": {
+        "Description": "Before  you found out you were pregnant, but while you might have been pregnant with this child, did you use any of the following? | Descriptive field",
+        "DataType": "String"
+    },
+    "devhx_8_prescript_med": {
+        "Description": "Before  the biological mother/you found out  she was pregnant, but while  she/you might have been pregnant with this child, did  she/you  use any of the following?/ Antes de que la madre biol\u00f3gica se halla enterado que estaba embarazada, pero mientras ella pudiera haber estado embarazada con este(a) ni\u00f1o(a), utiliz\u00f3 algo de los siguiente?  Prescription medications?  /\u00bfMedicamentos recetados? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_rxnorm_med1": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_8_med1_prn": {
+        "Description": "Before  the biological mother/you found out  she was pregnant, but while  she/you might have been pregnant with this child, did  she/you  use any of the following?/ Antes de que la madre biol\u00f3gica se halla enterado que estaba embarazada, pero mientras ella pudiera haber estado embarazada con este(a) ni\u00f1o(a), utiliz\u00f3 algo de los siguiente?  PRN (as needed) Medication? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_8_med1_times": {
+        "Description": "Before knowing of pregnancy. Medication 1 used. How many times per day?/ \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_8_med1_times_dk": {
+        "Description": "Before knowing of pregnancy. Medication 1 used. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_med1_how_much": {
+        "Description": "Before knowing of pregnancy. Medication 1 used. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_med1_how_much_dk": {
+        "Description": "Before knowing of pregnancy. Medication 1 used. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_med1_unit": {
+        "Description": "Before knowing of pregnancy. Medication 1 used. Unit(s)/ Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_8_med1_fu": {
+        "Description": "Before knowing of pregnancy. Any other prescription medications? /\u00bfAlg\u00fan otro medicamento recetado? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "devhx_8_rxnorm_med2": {
+        "Description": "Before knowing of pregnancy. Other Rx medication. Medication 2 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_8_med2_prn": {
+        "Description": "Before knowing of pregnancy. Other PRN (as needed) Medication? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_8_med2_times": {
+        "Description": "Before knowing of pregnancy. Medication 2. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_8_med2_times_dk": {
+        "Description": "Before knowing of pregnancy. Medication 2. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_med2_how_much": {
+        "Description": "Before knowing of pregnancy. Medication 2. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "devhx_8_med2_how_much_dk": {
+        "Description": "Before knowing of pregnancy. Medication 2. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_med2_unit": {
+        "Description": "Before knowing of pregnancy. Medication 2. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_8_med2_fu": {
+        "Description": "Before knowing of pregnancy. Any other (3)prescription medications? /\u00bfAlg\u00fan otro medicamento recetado? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "devhx_8_rxnorm_med3": {
+        "Description": "Before knowing of pregnancy. Other Rx medication. Medication 3 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_8_med3_prn": {
+        "Description": "Before knowing of pregnancy. Other PRN (as needed) Medication 3? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_8_med3_times": {
+        "Description": "Before knowing of pregnancy. Medication 3. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_8_med3_times_dk": {
+        "Description": "Before knowing of pregnancy. Medication 3. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_med3_how_much": {
+        "Description": "Before knowing of pregnancy. Medication 3. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_med3_how_much_dk": {
+        "Description": "Before knowing of pregnancy. Medication 3. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_med3_unit": {
+        "Description": "Before knowing of pregnancy. Medication 3. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_8_tobacco": {
+        "Description": "Before knowing of pregnancy. Tobacco? /\u00bfTabaco? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_cigs_per_day": {
+        "Description": "Before knowing of pregnancy. Tobacco? How many times per day?/ \u00bfCuantas veces al d\u00eda? | (cigarettes/day)  (cigarrillos al d\u00eda)If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_cigs_per_day_dk": {
+        "Description": "Before knowing of pregnancy. Tobacco? How many times per day? Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_alcohol": {
+        "Description": "Before knowing of pregnancy. Alcohol? /\u00bfAlcohol? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_alchohol_max": {
+        "Description": "Before knowing of pregnancy. Maximum drinks in one sitting? /\u00bfN\u00famero de bebidas m\u00e1ximas en una sola sesi\u00f3n? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_alchohol_max_dk": {
+        "Description": "Before knowing of pregnancy. Maximum drinks in one sitting? Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_alchohol_avg": {
+        "Description": "Before knowing of pregnancy. Average drinks per week /\u00bfPromedio de bebidas por semana? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_alchohol_avg_dk": {
+        "Description": "Before knowing of pregnancy. Average drinks per week. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_alcohol_effects": {
+        "Description": "Before knowing of pregnancy. How many drinks did it take to feel the effects of alcohol?/ \u00bfCu\u00e1ntas bebidas tomaba para sentir los efectos del alcohol? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_alcohol_effects_dk": {
+        "Description": "Before knowing of pregnancy. How many drinks did it take to feel the effects of alcohol. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_marijuana": {
+        "Description": "Before knowing of pregnancy. Marijuana? /\u00bfMarihuana? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_marijuana_amt": {
+        "Description": "Before knowing of pregnancy. Marijuana. How many times per day? \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_marijuana_amt_dk": {
+        "Description": "Before knowing of pregnancy. Marijuana. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_coc_crack": {
+        "Description": "Before knowing of pregnancy. Cocaine/Crack? /\u00bfCoca\u00edna/'crack'? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_coc_crack_amt": {
+        "Description": "Before knowing of pregnancy. Cocaine/Crack. How many times per day?/ \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_coc_crack_amt_dk": {
+        "Description": "Before knowing of pregnancy. Cocaine/Crack. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_her_morph": {
+        "Description": "Before knowing of pregnancy. Heroin/Morphine? /Hero\u00edna/Morfina? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_her_morph_amt": {
+        "Description": "Before knowing of pregnancy. Heroin/Morphine. How many times per day? \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_her_morph_amt_dk": {
+        "Description": "Before knowing of pregnancy. Heroin/Morphine. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_oxycont": {
+        "Description": "Before knowing of pregnancy. Oxycontin? /\u00bfOxycontin? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_oxycont_amt": {
+        "Description": "Before knowing of pregnancy. Oxycontin. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_oxycont_amt_dk": {
+        "Description": "Before knowing of pregnancy. Oxycontin. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other_drugs": {
+        "Description": "Before knowing of pregnancy. Any other drugs? /\u00bfAlguna otra droga? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_8_other1_name_2": {
+        "Description": "Before knowing of pregnancy. Drug 1/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_8_other1_name_oth": {
+        "Description": "Before knowing of pregnancy. Drug 1, specify",
+        "DataType": "String"
+    },
+    "devhx_8_other1_times": {
+        "Description": "Before knowing of pregnancy. Drug 1. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_8_other1_times_dk": {
+        "Description": "Before knowing of pregnancy. Drug 1. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other1_amt": {
+        "Description": "Before knowing of pregnancy. Drug 1. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_other1_amt_dk": {
+        "Description": "Before knowing of pregnancy. Drug 1. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other1_unit": {
+        "Description": "Before knowing of pregnancy. Drug 1. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_8_other2_name_2": {
+        "Description": "Before knowing of pregnancy. Drug 2/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_8_other2_name_oth": {
+        "Description": "Before knowing of pregnancy. Drug 2, specify",
+        "DataType": "String"
+    },
+    "devhx_8_other2_times": {
+        "Description": "Before knowing of pregnancy. Drug 2. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_8_other2_times_dk": {
+        "Description": "Before knowing of pregnancy. Drug 2. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other2_amt": {
+        "Description": "Before knowing of pregnancy. Drug 2. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_other2_amt_dk": {
+        "Description": "Before knowing of pregnancy. Drug 2. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other2_unit": {
+        "Description": "Before knowing of pregnancy. Drug 2. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_8_other3_name_2": {
+        "Description": "Before knowing of pregnancy. Drug 3/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_8_other3_name_oth": {
+        "Description": "Before knowing of pregnancy. Drug 3, specify",
+        "DataType": "String"
+    },
+    "devhx_8_other3_times": {
+        "Description": "Before knowing of pregnancy. Drug 3. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_8_other3_times_dk": {
+        "Description": "Before knowing of pregnancy. Drug 3. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other3_amt": {
+        "Description": "Before knowing of pregnancy. Drug 3. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_other3_amt_dk": {
+        "Description": "Before knowing of pregnancy. Drug 3. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other3_unit": {
+        "Description": "Before knowing of pregnancy. Drug 3. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_8_other4_name_2": {
+        "Description": "Before knowing of pregnancy. Drug 4/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_8_other4_name_oth": {
+        "Description": "Before knowing of pregnancy. Drug 4, specify",
+        "DataType": "String"
+    },
+    "devhx_8_other4_times": {
+        "Description": "Before knowing of pregnancy. Drug 4. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_8_other4_times_dk": {
+        "Description": "Before knowing of pregnancy. Drug 4. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other4_amt": {
+        "Description": "Before knowing of pregnancy. Drug 4. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_other4_amt_dk": {
+        "Description": "Before knowing of pregnancy. Drug 4. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other4_unit": {
+        "Description": "Before knowing of pregnancy. Drug 4. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_8_other5_name_2": {
+        "Description": "Before knowing of pregnancy. Drug 5/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_8_other5_name_oth": {
+        "Description": "Before knowing of pregnancy. Drug 5, specify",
+        "DataType": "String"
+    },
+    "devhx_8_other5_times": {
+        "Description": "Before knowing of pregnancy. Drug 5. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_8_other5_times_dk": {
+        "Description": "Before knowing of pregnancy. Drug 5. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other5_amt": {
+        "Description": "Before knowing of pregnancy. Drug 5. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_8_other5_amt_dk": {
+        "Description": "Before knowing of pregnancy. Drug 5. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_8_other5_unit": {
+        "Description": "Before knowing of pregnancy. Drug 5. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_9_prescript_med": {
+        "Description": "Once you /biomom knew you/she were pregnant, were  you/biomom using any of the following? \u00bfEstaba usted usando algo de lo siguiente ya sabiendo que estaba embarazada? Prescription medications? / \u00bfMedicamentos recetados? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_med1_rxnorm": {
+        "Description": "Knowing of pregnancy. Medication 1 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_9_med1_prn": {
+        "Description": "Knowing of pregnancy. Medication 1. PRN (as needed)? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_9_med1_times": {
+        "Description": "Knowing of pregnancy. Medication 1. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_9_med1_times_dk": {
+        "Description": "Knowing of pregnancy. Medication 1. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med1_how_much": {
+        "Description": "Knowing of pregnancy. Medication 2. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_med1_how_much_dk": {
+        "Description": "Knowing of pregnancy. Medication 1. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med1_unit": {
+        "Description": "Knowing of pregnancy. Medication 1. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_9_med1_fu": {
+        "Description": "Any other prescription medications. Medication 2?/ \u00bfAlg\u00fan otro medicamento recetado? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "devhx_9_med2_rxnorm": {
+        "Description": "Knowing of pregnancy. Medication 2 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_9_med2_prn": {
+        "Description": "Knowing of pregnancy. Medication 2. PRN (as needed)? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_9_med2_times": {
+        "Description": "Knowing of pregnancy. Medication 2. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_9_med2_rxnorm_dk": {
+        "Description": "Knowing of pregnancy. Medication 2. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med2_how_much": {
+        "Description": "Knowing of pregnancy. Medication 2. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_med2_how_much_dk": {
+        "Description": "Knowing of pregnancy. Medication 2. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med2_unit": {
+        "Description": "Knowing of pregnancy. Medication 2. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_9_med2_fu2": {
+        "Description": "Any other prescription medications. Medication 3?/ \u00bfAlg\u00fan otro medicamento recetado? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "devhx_9_med3_rxnorm": {
+        "Description": "Knowing of pregnancy. Medication 3 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_9_med3_prn": {
+        "Description": "Knowing of pregnancy. Medication 3. PRN (as needed)? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_9_med3_times": {
+        "Description": "Knowing of pregnancy. Medication 3. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_9_med3_times_dk": {
+        "Description": "Knowing of pregnancy. Medication 3. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med3_how_much": {
+        "Description": "Knowing of pregnancy. Medication 3. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_med3_how_much_dk": {
+        "Description": "Knowing of pregnancy. Medication 3. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med3_unit": {
+        "Description": "Knowing of pregnancy. Medication 3. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_9_med3_fu": {
+        "Description": "Any other prescription medications. Medication 4?/ \u00bfAlg\u00fan otro medicamento recetado? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "devhx_9_med4_rxnorm": {
+        "Description": "Knowing of pregnancy. Medication 4 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_9_med4_prn": {
+        "Description": "Knowing of pregnancy. Medication 4. PRN (as needed)? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_9_med4_times": {
+        "Description": "Knowing of pregnancy. Medication 4. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_9_med4_times_dk": {
+        "Description": "Knowing of pregnancy. Medication 4. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med4_how_much": {
+        "Description": "Knowing of pregnancy. Medication 4. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_med4_how_much_dk": {
+        "Description": "Knowing of pregnancy. Medication 4. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med4_unit": {
+        "Description": "Knowing of pregnancy. Medication 4. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_9_med4_fu": {
+        "Description": "Any other prescription medications. Medication 5?/ \u00bfAlg\u00fan otro medicamento recetado? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "devhx_9_med5_rxnorm": {
+        "Description": "Knowing of pregnancy. Medication 5 Name (please choose the formulation that most closely matches the medication; no need to include dosage)  /Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis)",
+        "DataType": "String"
+    },
+    "devhx_9_med5_prn": {
+        "Description": "Knowing of pregnancy. Medication 5. PRN (as needed)? / \u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999='Don't Know/No S\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "'Don't Know/No S\u00e9"
+        }
+    },
+    "devhx_9_med5_times": {
+        "Description": "Knowing of pregnancy. Medication 5. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 25"
+    },
+    "devhx_9_med5_times_dk": {
+        "Description": "Knowing of pregnancy. Medication 5. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med5_how_much": {
+        "Description": "Knowing of pregnancy. Medication 5. How much each time?/ \u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_med5_how_much_dk": {
+        "Description": "Knowing of pregnancy. Medication 5. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_med5_unit": {
+        "Description": "Knowing of pregnancy. Medication 5. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt); 10=International Unites (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)",
+            "10": "International Unites (IU)"
+        }
+    },
+    "devhx_9_tobacco": {
+        "Description": "Knowing of pregnancy. Tobacco? /\u00bfTabaco? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_cigs_per_day": {
+        "Description": "Knowing of pregnancy. Tobacco? How many times per day?/ \u00bfCuantas veces al d\u00eda? | (cigarettes/day)  (cigarrillos al d\u00eda)If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_cigs_per_day_dk": {
+        "Description": "Knowing of pregnancy. Tobacco? How many times per day? Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_alcohol": {
+        "Description": "Knowing of pregnancy. Alcohol? /\u00bfAlcohol? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_alchohol_max": {
+        "Description": "Knowing of pregnancy. Maximum drinks in one sitting? /\u00bfN\u00famero de bebidas m\u00e1ximas en una sola sesi\u00f3n? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_alchohol_max_dk": {
+        "Description": "Knowing of pregnancy. Maximum drinks in one sitting? Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_alchohol_avg": {
+        "Description": "Knowing of pregnancy. Average drinks per week /\u00bfPromedio de bebidas por semana? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_alchohol_avg_dk": {
+        "Description": "Knowing of pregnancy. Average drinks per week. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_alcohol_effects": {
+        "Description": "Knowing of pregnancy. How many drinks did it take to feel the effects of alcohol?/ \u00bfCu\u00e1ntas bebidas tomaba para sentir los efectos del alcohol? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_alcohol_effects_dk": {
+        "Description": "Knowing of pregnancy. How many drinks did it take to feel the effects of alcohol. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_marijuana": {
+        "Description": "Knowing of pregnancy. Marijuana? /\u00bfMarihuana? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_marijuana_amt": {
+        "Description": "Knowing of pregnancy. Marijuana. How many times per day? \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_marijuana_amt_dk": {
+        "Description": "Knowing of pregnancy. Marijuana. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_coc_crack": {
+        "Description": "Knowing of pregnancy. Cocaine/Crack? /\u00bfCoca\u00edna/'crack'? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_coc_crack_amt": {
+        "Description": "Knowing of pregnancy. Cocaine/Crack. How many times per day?/ \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_coc_crack_amt_dk": {
+        "Description": "Knowing of pregnancy. Cocaine/Crack. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_her_morph": {
+        "Description": "Knowing of pregnancy. Heroin/Morphine? /Hero\u00edna/Morfina? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_her_morph_amt": {
+        "Description": "Knowing of pregnancy. Heroin/Morphine. How many times per day? \u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_her_morph_amt_dk": {
+        "Description": "Knowing of pregnancy. Heroin/Morphine. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_oxycont": {
+        "Description": "Knowing of pregnancy. Oxycontin? /\u00bfOxycontin? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_oxycont_amt": {
+        "Description": "Knowing of pregnancy. Oxycontin. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_oxycont_amt_dk": {
+        "Description": "Knowing of pregnancy. Oxycontin. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other_drugs": {
+        "Description": "Knowing of pregnancy. Any other drugs? /\u00bfAlguna otra droga? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_9_other1_name_2": {
+        "Description": "Knowing of pregnancy. Drug 1/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_9_other1_name_oth": {
+        "Description": "Knowing of pregnancy. Drug 1, specify",
+        "DataType": "String"
+    },
+    "devhx_9_other1_times": {
+        "Description": "Knowing of pregnancy. Drug 1. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_9_other1_times_dk": {
+        "Description": "Knowing of pregnancy. Drug 1. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other1_amt": {
+        "Description": "Knowing of pregnancy. Drug 1. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_other1_amt_dk": {
+        "Description": "Knowing of pregnancy. Drug 1. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other1_unit": {
+        "Description": "Knowing of pregnancy. Drug 1. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_9_other2_name_2": {
+        "Description": "Knowing of pregnancy. Drug 2/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_9_other2_name_oth": {
+        "Description": "Knowing of pregnancy. Drug 2, specify",
+        "DataType": "String"
+    },
+    "devhx_9_other2_times": {
+        "Description": "Knowing of pregnancy. Drug 2. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_9_other2_times_dk": {
+        "Description": "Knowing of pregnancy. Drug 2. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other2_amt": {
+        "Description": "Knowing of pregnancy. Drug 2. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_other2_amt_dk": {
+        "Description": "Knowing of pregnancy. Drug 2. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other2_unit": {
+        "Description": "Knowing of pregnancy. Drug 2. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_9_other3_name_2": {
+        "Description": "Knowing of pregnancy. Drug 3/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_9_other3_name_oth": {
+        "Description": "Knowing of pregnancy. Drug 3, specify",
+        "DataType": "String"
+    },
+    "devhx_9_other3_times": {
+        "Description": "Knowing of pregnancy. Drug 3. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_9_other3_times_dk": {
+        "Description": "Knowing of pregnancy. Drug 3. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other3_unit": {
+        "Description": "Knowing of pregnancy. Drug 3. How much each time? /\u00bfQue tanto cada vez? | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_9_other3_amt": {
+        "Description": "Knowing of pregnancy. Drug 3. How much each time. Don't know /No lo s\u00e9 | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_other3_amt_dk": {
+        "Description": "Knowing of pregnancy. Drug 3. Unit(s)/Unidad(es) | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other4_name_2": {
+        "Description": "Knowing of pregnancy. Drug 4/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_9_other4_name_oth": {
+        "Description": "Knowing of pregnancy. Drug 4, specify",
+        "DataType": "String"
+    },
+    "devhx_9_other4_times": {
+        "Description": "Knowing of pregnancy. Drug 4. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_9_other4_times_dk": {
+        "Description": "Knowing of pregnancy. Drug 4. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other4_amt": {
+        "Description": "Knowing of pregnancy. Drug 4. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_other4_amt_dk": {
+        "Description": "Knowing of pregnancy. Drug 4. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other4_unit": {
+        "Description": "Knowing of pregnancy. Drug 4. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_9_other5_name_2": {
+        "Description": "Knowing of pregnancy. Drug 5/ Nombre de la droga | 0 = None; 1 = Amphetamines or methamphetamine (meth; 13 = Barbituates; 2 = Benzodiazepines; 3 = Caffeine; 4 = Cathinones (bath salts; 5 = Fake or synthetic marijuana (like spice or K2); 6 = GHB (liquid G or Georgia home boy); 7 = Hallucinogens (LSD or acid; 8 = Inhalants; 9 = Ketamine (special K); 10 = MDMA (ecstasy; 11 = Opioids; 12 = Other; 999 = Don't Know",
+        "DataType": "Integer",
+        "ValueRange": "0 ::13 ; 999",
+        "Levels": {
+            "0": "None",
+            "1": "Amphetamines or methamphetamine (meth",
+            "13": "Barbituates",
+            "2": "Benzodiazepines",
+            "3": "Caffeine",
+            "4": "Cathinones (bath salts",
+            "5": "Fake or synthetic marijuana (like spice or K2)",
+            "6": "GHB (liquid G or Georgia home boy)",
+            "7": "Hallucinogens (LSD or acid",
+            "8": "Inhalants",
+            "9": "Ketamine (special K)",
+            "10": "MDMA (ecstasy",
+            "11": "Opioids",
+            "12": "Other",
+            "999": "Don't Know"
+        }
+    },
+    "devhx_9_other5_name_oth": {
+        "Description": "Knowing of pregnancy. Drug 5, specify",
+        "DataType": "String"
+    },
+    "devhx_9_other5_times": {
+        "Description": "Knowing of pregnancy. Drug 5. How many times per day? /\u00bfCuantas veces al d\u00eda? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_9_other5_times_dk": {
+        "Description": "Knowing of pregnancy. Drug 5. How many times per day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other5_amt": {
+        "Description": "Knowing of pregnancy. Drug 5. How much each time? /\u00bfQue tanto cada vez? | If you don't know, please choose \"don't know\" in what follows below   / Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_9_other5_amt_dk": {
+        "Description": "Knowing of pregnancy. Drug 5. How much each time. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_9_other5_unit": {
+        "Description": "Knowing of pregnancy. Drug 5. Unit(s)/Unidad(es) | 1 = gram (g); 2 = microgram (msg); 3 = milligram (mg); 4 = kilogram (kg); 5 = megagram (MGG); 6 = liter (L); 7 = ounce (oz); 8 = pound (lb); 9 = quart (qt)",
+        "DataType": "Integer",
+        "ValueRange": "1::9",
+        "Levels": {
+            "1": "gram (g)",
+            "2": "microgram (msg)",
+            "3": "milligram (mg)",
+            "4": "kilogram (kg)",
+            "5": "megagram (MGG)",
+            "6": "liter (L)",
+            "7": "ounce (oz)",
+            "8": "pound (lb)",
+            "9": "quart (qt)"
+        }
+    },
+    "devhx_10": {
+        "Description": "Did you/biological mother take prenatal vitamins during the pregnancy? /\u00bfTomo usted o la madre biol\u00f3gica vitaminas prenatales durante el embarazo? | 1 = Yes /S\u00ed; 0 = No/ No; 999 = Don't know /No lo s\u00e9; -1 = Not applicable/ No aplica",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; -1",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No/ No",
+            "999": "Don't know /No lo s\u00e9",
+            "-1": "Not applicable/ No aplica"
+        }
+    },
+    "devhx_caffeine_11": {
+        "Description": "Did you/biological mother have any caffeine during pregnancy (from conception until delivery)?/ \u00bfConsumi\u00f3 usted o la madre biol\u00f3gica cafe\u00edna durante el embarazo (desde la concepci\u00f3n hasta el parto)? | 1 = Yes - at least once a day S\u00ed- por lo menos una vez al d\u00eda; 2 = Yes - less than once a day but more than once a week Si - menos de una vez al d\u00eda pero m\u00e1s de una vez a la semana; 3 = Yes - less than once a week S\u00ed - menos de una vez a la semana; 0 = No No; 999 = Don't know No lo s\u00e9; -1 = Not applicable No aplica",
+        "DataType": "Integer",
+        "ValueRange": "-1::3 ; 999",
+        "Levels": {
+            "1": "Yes - at least once a day S\u00ed- por lo menos una vez al d\u00eda",
+            "2": "Yes - less than once a day but more than once a week Si - menos de una vez al d\u00eda pero m\u00e1s de una vez a la semana",
+            "3": "Yes - less than once a week S\u00ed - menos de una vez a la semana",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "-1": "Not applicable No aplica"
+        }
+    },
+    "devhx_caffeine_amt": {
+        "Description": "During pregnancy. How much caffeine/day? /\u00bfCu\u00e1nta cafe\u00edna al d\u00eda? | (cups/day) (tazas por d\u00eda)If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_caffeine_amt_dk": {
+        "Description": "During pregnancy. How much caffeine/day. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_caff_amt_week": {
+        "Description": "During pregnancy. How much caffeine/week? /\u00bfCu\u00e1nta cafe\u00edna a la semana? | (cups/week) (tazas por semana)If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_caff_amt_week_dk": {
+        "Description": "During pregnancy. How much caffeine/week. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_caff_amt_month": {
+        "Description": "During pregnancy. How much caffeine/month? /\u00bfCu\u00e1nta cafe\u00edna al mes? | (cups/month) (tazas por mes)If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "devhx_caff_amt_month_dk": {
+        "Description": "During pregnancy. How much caffeine/month. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_10a3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Severe nausea and vomiting extending past the 6th month or accompanied by weight loss? /\u00bfN\u00e1useas y v\u00f3mitos severos que continuaron hasta despu\u00e9s del 6.\u00ba mes de embarazo o que estuvieron acompa\u00f1ados de una p\u00e9rdida de peso? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10b3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Heavy bleeding requiring bed rest or special treatment? /\u00bfSangrado abundante que requiri\u00f3 reposo en cama o tratamiento especial? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10c3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Pre-eclampsia, eclampsia, or toxemia? /\u00bfPre-eclampsia, eclampsia o toxemia? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10d3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Severe gall bladder attack? /\u00bfAtaque severo de la ves\u00edcula biliar? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10e3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Persistent proteinuria? /\u00bfProteinuria persistente? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10f3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Rubella (German measles) during first 3 months of pregnancy? /\u00bfRub\u00e9ola (sarampi\u00f3n alem\u00e1n) durante los primeros 3 meses de embarazo? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10g3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Severe anemia?/\u00bfAnemia grave? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10h3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Urinary tract infections? /\u00bfInfecciones de v\u00edas urinarias? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10i3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Pregnancy-related diabetes?/ \u00bfDiabetes relacionada con el embarazo? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10j3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Pregnancy-related high blood pressure? /\u00bfPresi\u00f3n arterial alta relacionada con el embarazo? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10k3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Previa, abruptio, or other problems with the placenta? /\u00bfPlacenta previa, desprendimiento de placenta u otros problemas con la placenta? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10l3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? An accident or injury requiring medical care? /\u00bfUn accidente o lesi\u00f3n que requiriera atenci\u00f3n m\u00e9dica? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_10m3_p": {
+        "Description": "During the pregnancy with this child, did you/biological mother have any of the following conditions? Any other conditions requiring medical care? /\u00bfAlg\u00fan otro padecimiento que requiriera atenci\u00f3n m\u00e9dica? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_11_p": {
+        "Description": "About how many times did you/biological mother see a doctor or other medical professional for prenatal care during this pregnancy? /\u00bfAproximadamente cu\u00e1ntas veces usted o la madre biol\u00f3gica visit\u00f3  a un m\u00e9dico u otro profesional de la salud para recibir atenci\u00f3n prenatal durante este embarazo? | 14=  Routine care/Cuidado rutinario.   If you don't know, please choose \"don't know\" in what follows below    /Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "devhx_11_p_dk": {
+        "Description": "Doctors visits during pregnancy. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_12a_p": {
+        "Description": "Was the child born prematurely? /\u00bfNaci\u00f3 el ni\u00f1o o la ni\u00f1a antes de tiempo? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_12_p": {
+        "Description": "About how many weeks  premature was the child when they were born? /\u00bfAproximadamente qu\u00e9 tan prematuro (en semanas) fue este ni\u00f1o(a)  al nacer? | 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = Greater than 12/Mas de 12; 999 = on't know/No lo s\u00e9| example:  full term = 40 weeks, born at 36 weeks = 4 weeks premature, born at 32 weeks = 8 weeks premature/ ejemplo: t\u00e9rmino completo = 40 semanas, nacido a las 36 semanas = 4 semanas prematuro(a), nacidos a las 32 semanas = 8 semanas prematuro(a)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::13 ; 999",
+        "Levels": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "Greater than 12/Mas de 12",
+            "999": "Don't know/No lo s\u00e9"
+        }
+    },
+    "devhx_13_3_p": {
+        "Description": "Was your child born by Caesarian section? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14a3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Blue at birth? /\u00bfColoraci\u00f3n azul (cianosis) al nacer? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14b3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Slow heart beat?/ \u00bfFrecuencia card\u00edaca lenta? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14c3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Did not breathe at first? /\u00bfNo respir\u00f3 al principio? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14d3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Convulsions? /\u00bfConvulsiones? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14e3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Jaundice needing treatment? /\u00bfIctericia que requiri\u00f3 tratamiento? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14f3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Required oxygen?/ \u00bfRequiri\u00f3 ox\u00edgeno? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14g3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Required blood transfusion? /\u00bfRequiri\u00f3 una transfusi\u00f3n sangu\u00ednea? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_14h3_p": {
+        "Description": "Did he/she have any of the following complications at birth? Rh incompatibility? /\u00bfIncompatibilidad de Rh? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_15": {
+        "Description": "For how many days  after birth was your child in an incubator?  | If he/she was never in an incubator, enter \"0\". Si nunca estuvo en una incubadora, ingrese \"0\". If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "devhx_15_dk": {
+        "Description": "How long in incubator. Don't know  | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_16_p": {
+        "Description": "About how many days  in the first 12 months of life, did your child have a fever of 104 degrees or greater? | If none, enter \"0\". Si la respuesta es \"ninguno\", ingrese \"0\". If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_16_p_dk": {
+        "Description": "How many days with fever. Don't know. About how many  days  in the first 12 months of life, did they have a fever of 104 degrees or greater? | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_17_p": {
+        "Description": "About how many days  in the first 12 months of life did your child have any infections or serious illnesses?  | If none, enter \"0\". Si la respuesta es \"ninguno\", ingrese \"0\". If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_17_p_dk": {
+        "Description": "About how many days  in the first 12 months of life did they have any infections or serious illnesses? | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_18_p": {
+        "Description": "For how many months  was your child breast fed?  | If he/she was not breast fed, enter \"0\", 1 year = 12 months, 2 years = 24 months, 3 years = 36 months, etc. Si no le/la amamant\u00f3, ingrese \"0\"; 1 a\u00f1o = 12 meses; 2 a\u00f1os = 24 meses; 3 a\u00f1os = 36 meses; etc. If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 84"
+    },
+    "devhx_18_p_dk": {
+        "Description": "For how many  months  was your child breast fed? | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_19a_p": {
+        "Description": "At approximately what age (number of months) was he/she FIRST able to do each of the following? Roll over? /\u00bfRodarse? | CDC Average = 4 months [late at six months]   CDC Promedio: 4 meses [ tarde a los 6 meses])  If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_19a_p_dk": {
+        "Description": "At approximately what age (number of months) was he/she FIRST able to do each of the following? Roll over. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_19b_p": {
+        "Description": "At approximately what age (number of months) was he/she FIRST able to do each of the following? Sit without assistance? /\u00bfSentarse sin ayuda? | CDC Average = 9 months,   CDC Promedio= 9 meses   If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_19b_p_dk": {
+        "Description": "At approximately what age (number of months) was he/she FIRST able to do each of the following? Sit without assistance. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_19c_p": {
+        "Description": "At approximately what age (number of months) was he/she FIRST able to do each of the following? Walk without assistance? /\u00bfCaminar sin ayuda? | CDC Average = 18 months,  CDC Promedio=18 meses   If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "devhx_19c_p_dk": {
+        "Description": "At approximately what age (number of months) was he/she FIRST able to do each of the following? Walk without assistance. Don't know /No lo s\u00e9 | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_19d_p": {
+        "Description": "At approximately what age (number of months) was your child FIRST able to do each of the following? Say his/her first word?  | CDC average = 12 months (if count mama/dada) CDC promedio= 12 meses (teniendo en cuenta mama/papa)   If you don't know, please choose \"don't know\" in what follows below    Si no sabe, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Integer"
+    },
+    "devhx_19d_p_dk": {
+        "Description": "At approximately what age (number of months) was your child FIRST able to do each of the following? Say his/her first word. Don't know  | 999 = Don't know /No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "devhx_20_p": {
+        "Description": "Would you say your child motor development (sitting, crawling, walking) was earlier, average, or later than most other children?  | 1 = Much earlier/ Mucho m\u00e1s temprano; 2 = Somewhat earlier /Un poco m\u00e1s temprano; 3 = About average /M\u00e1s o menos igual al promedio; 4 = Somewhat later /Un poco m\u00e1s tard\u00edo; 5 = Much later /Mucho m\u00e1s tard\u00edo; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 5 ; 999",
+        "Levels": {
+            "1": "Much earlier/ Mucho m\u00e1s temprano",
+            "2": "Somewhat earlier /Un poco m\u00e1s temprano",
+            "3": "About average /M\u00e1s o menos igual al promedio",
+            "4": "Somewhat later /Un poco m\u00e1s tard\u00edo",
+            "5": "Much later /Mucho m\u00e1s tard\u00edo",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_21_p": {
+        "Description": "Would you say his/her speech development was earlier, average,  or later than most other children?  | 1 = Much earlier/ Mucho m\u00e1s temprano; 2 = Somewhat earlier /Un poco m\u00e1s temprano; 3 = About average /M\u00e1s o menos igual al promedio; 4 = Somewhat later /Un poco m\u00e1s tard\u00edo; 5 = Much later /Mucho m\u00e1s tard\u00edo; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 5 ; 999",
+        "Levels": {
+            "1": "Much earlier/ Mucho m\u00e1s temprano",
+            "2": "Somewhat earlier /Un poco m\u00e1s temprano",
+            "3": "About average /M\u00e1s o menos igual al promedio",
+            "4": "Somewhat later /Un poco m\u00e1s tard\u00edo",
+            "5": "Much later /Mucho m\u00e1s tard\u00edo",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_22_3_p": {
+        "Description": "Has your child ever wet the bed at night?/ \u00bfAlguna vez su ni\u00f1o(a) se ha orinado en la cama por la noche? | 1 = Yes /S\u00ed; 0 = No /No; 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "Don't know/ No lo s\u00e9"
+        }
+    },
+    "devhx_23b_p": {
+        "Description": "At what age (in years) did they stop wetting the bed at night? | 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 12 = Still wets bed; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1:: 12 ; 999",
+        "Levels": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "12": "Still wets bed",
+            "999": "Don't know"
+        }
+    },
+    "devhx_10c3_c_p": {
+        "Description": "Toxemia | 1=Yes ; 0=No; 999=Don't know [devhx_10c3_p] = '1' AND [event-name] = '4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "devhx_10c3_a_p": {
+        "Description": "Pre-eclampsia | 1=Yes ; 0=No; 999=Don't know [devhx_10c3_p] = '1' AND [event-name] = '4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "devhx_10c3_b_p": {
+        "Description": "Eclampsia | 1=Yes ; 0=No; 999=Don't know [devhx_10c3_p] = '1' AND [event-name] = '4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    }
+}

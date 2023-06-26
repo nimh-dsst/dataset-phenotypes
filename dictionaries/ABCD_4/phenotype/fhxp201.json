@@ -1,0 +1,4340 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "visit": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "fam_history_7_yes_no": {
+        "Description": "7. Has ANY blood relative of your child ever had a period of time when others were concerned  because they suddenly became more active day and night and seemed not to need any sleep and talked much more than usual for them? \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) ha pasado alguna vez por un per\u00edodo en el que otras personas se preocuparan por \u00e9l o ella porque repentinamente se volvi\u00f3  m\u00e1s activo(a) de d\u00eda y de noche, parec\u00eda no necesitar dormir y hablaba mucho m\u00e1s de lo normal para \u00e9l o ella? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q7a_mania": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q7b_mania": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q7c_mania": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q7d_mania": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q7e_mania": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q7f_mania": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7g_pat_uncle1_mania": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7g_pat_uncle2_mania": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7g_pat_uncle3_mania": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7g_pat_uncle4_mania": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7g_pat_uncle5_mania": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7h_pat_aunt1_mania": {
+        "Description": "paternal aunt T\u00eda paterna  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7h_pat_aunt2_mania": {
+        "Description": "paternal aunt T\u00eda paterna  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7h_pat_aunt3_mania": {
+        "Description": "paternal aunt T\u00eda paterna  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7h_pat_aunt4_mania": {
+        "Description": "paternal aunt T\u00eda paterna  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7h_pat_aunt5_mania": {
+        "Description": "paternal aunt T\u00eda paterna  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7i_mat_uncle1_mania": {
+        "Description": "maternal uncle T\u00edo materno (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7i_mat_uncle2_mania": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7i_mat_uncle3_mania": {
+        "Description": "maternal uncle T\u00edo materno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7i_mat_uncle4_mania": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7i_mat_uncle5_mania": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7j_mat_aunt1_mania": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7j_mat_aunt2_mania": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7j_mat_aunt3_mania": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7j_mat_aunt4_mania": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7j_mat_aunt5_mania": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7k_full_sib_young1_mania": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7k_full_sib_young2_mania": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7k_full_sib_young3_mania": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7k_full_sib_young4_mania": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7k_full_sib_young5_mania": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7l_full_sib_old1_mania": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7l_full_sib_old2_mania": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7l_full_sib_old3_mania": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7l_full_sib_old4_mania": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7l_full_sib_old5_mania": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_half_sib_young1_mania": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_half_sib_young2_mania": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_half_sib_young3_mania": {
+        "Description": "half sibling-younger Medio hermano(a)- menor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_half_sib_young4_mania": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_half_sib_young5_mania": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7n_half_sib_old1_mania": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7n_half_sib_old2_mania": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7n_half_sib_old3_mania": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7n_half_sib_old4_mania": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7n_half_sib_old5_mania": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_full_sib_same1_mania": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q7m_full_sib_same2_mania": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_7_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_8_yes_no": {
+        "Description": "8. Has ANY blood relative of your child ever had a period lasting six months when they saw visions or heard voices or thought people were spying on them or plotting against them?  \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) ha pasado alguna vez por un per\u00edodo que haya durado seis meses en el que tuviese visiones o escuchara voces o pensara que la gente lo estaba espiando o conspirando en su contra? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q8a_visions": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q8b_visions": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q8c_visions": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q8d_visions": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q8e_visions": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q8f_visions": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8g_pat_uncle1_visions": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8g_pat_uncle2_visions": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8g_pat_uncle3_visions": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8g_pat_uncle4_visions": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8g_pat_uncle5_visions": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8h_pat_aunt1_visions": {
+        "Description": "paternal aunt T\u00eda paterna  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8h_pat_aunt2_visions": {
+        "Description": "paternal aunt T\u00eda paterna  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8h_pat_aunt3_visions": {
+        "Description": "paternal aunt T\u00eda paterna  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8h_pat_aunt4_visions": {
+        "Description": "paternal aunt T\u00eda paterna  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8h_pat_aunt5_visions": {
+        "Description": "paternal aunt T\u00eda paterna  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8i_mat_uncle1_visions": {
+        "Description": "maternal uncle T\u00edo materno (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8i_pat_uncle2_visions": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8i_mat_uncle3_visions": {
+        "Description": "maternal uncle T\u00edo materno (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8i_mat_uncle4_visions": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8i_mat_uncle5_visions": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8j_mat_aunt1_visions": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8j_mat_aunt2_visions": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8j_mat_aunt3_visions": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8j_mat_aunt4_visions": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8j_mat_aunt5_visions": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8k_full_sib_young1_visions": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8k_full_sib_young2_visions": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8k_full_sib_young3_visions": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8k_full_sib_young4_visions": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8k_full_sib_young5_visions": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8l_full_sib_old1_visions": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8l_full_sib_old2_visions": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8l_full_sib_old3_visions": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8l_full_sib_old4_visions": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8l_full_sib_old5_visions": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_half_sib_young1_visions": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_half_sib_young2_visions": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_half_sib_young3_visions": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_half_sib_young4_visions": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_half_sib_young5_visions": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8n_half_sib_old1_visions": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8n_half_sib_old2_visions": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8n_half_sib_old3_visions": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8n_half_sib_old4_visions": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8n_half_sib_old5_visions": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_full_sib_same1_visions": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q8m_full_sib_same2_visions": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_8_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_9_yes_no": {
+        "Description": "9. Has ANY blood relative of your child been the kind of person who never holds a job for long, or  gets into fights, or gets into trouble with the police from time to time, or had any trouble with the law as a child or an adult? \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) es el tipo de persona que nunca puede mantener un empleo por mucho tiempo, que de vez en cuando se mete en peleas o tiene problemas con la polic\u00eda o que ha tenido problemas con la ley, ya sea cuando ni\u00f1o o adulto? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q9a_trouble": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q9b_trouble": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q9c_trouble": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q9d_trouble": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q9e_trouble": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q9f_trouble": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9g_pat_uncle1_trouble": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9g_pat_uncle2_trouble": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9g_pat_uncle3_trouble": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9g_pat_uncle4_trouble": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9g_pat_uncle5_trouble": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9h_pat_aunt1_trouble": {
+        "Description": "paternal aunt T\u00eda paterna  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9h_pat_aunt2_trouble": {
+        "Description": "paternal aunt T\u00eda paterna  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9h_pat_aunt3_trouble": {
+        "Description": "paternal aunt T\u00eda paterna  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9h_pat_aunt4_trouble": {
+        "Description": "paternal aunt T\u00eda paterna  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9h_pat_aunt5_trouble": {
+        "Description": "paternal aunt T\u00eda paterna  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9i_mat_uncle1_trouble": {
+        "Description": "maternal uncle T\u00edo materno (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9i_mat_uncle2_trouble": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9i_mat_uncle3_trouble": {
+        "Description": "maternal uncle T\u00edo materno (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9i_mat_uncle4_trouble": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9i_mat_uncle5_trouble": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9j_mat_aunt1_trouble": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9j_mat_aunt2_trouble": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9j_mat_aunt3_trouble": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9j_mat_aunt4_trouble": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9j_mat_aunt5_trouble": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9k_full_sib_young1_trouble": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9k_full_sib_young2_trouble": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9k_full_sib_young3_trouble": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9k_full_sib_young4_trouble": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9k_full_sib_young5_trouble": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9l_full_sib_old1_trouble": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9l_full_sib_old2_trouble": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9l_full_sib_old3_trouble": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9l_full_sib_old4_trouble": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9l_full_sib_old5_trouble": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor   (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_half_sib_young1_trouble": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_half_sib_young2_trouble": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_half_sib_young3_trouble": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_half_sib_young4_trouble": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_half_sib_young5_trouble": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9n_half_sib_old1_trouble": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9n_half_sib_old2_trouble": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9n_half_sib_old3_trouble": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9n_half_sib_old4_trouble": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9n_half_sib_old5_trouble": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_full_sib_same1_trouble": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q9m_full_sib_same2_trouble": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_9_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_10_yes_no": {
+        "Description": "10. Has ANY blood relative of your child ever had any other problems with their nerves, or had a nervous breakdown? \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) ha tenido alguna vez problemas de los nervios o un colapso nervioso? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q10a_nerves": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q10b_nerves": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q10c_nerves": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q10d_nerves": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q10e_nerves": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q10f_nerves": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10g_pat_uncle1_nerves": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10g_pat_uncle2_nerves": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10g_pat_uncle3_nerves": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10g_pat_uncle4_nerves": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10g_pat_uncle5_nerves": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10h_pat_aunt1_nerves": {
+        "Description": "paternal aunt T\u00eda paterna  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10h_pat_aunt2_nerves": {
+        "Description": "paternal aunt T\u00eda paterna  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10h_pat_aunt3_nerves": {
+        "Description": "paternal aunt T\u00eda paterna  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10h_pat_aunt4_nerves": {
+        "Description": "paternal aunt T\u00eda paterna  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10h_pat_aunt5_nerves": {
+        "Description": "paternal aunt T\u00eda paterna  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10i_mat_uncle1_nerves": {
+        "Description": "maternal uncle T\u00edo materno (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10i_mat_uncle2_nerves": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10i_mat_uncle3_nerves": {
+        "Description": "maternal uncle T\u00edo materno (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10i_mat_uncle4_nerves": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10i_mat_uncle5_nerves": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10j_mat_aunt1_nerves": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10j_mat_aunt2_nerves": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10j_mat_aunt3_nerves": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10j_mat_aunt4_nerves": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10j_mat_aunt5_nerves": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10k_full_sib_young1_nerves": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10k_full_sib_young2_nerves": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10k_full_sib_young3_nerves": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10k_full_sib_young4_nerves": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10k_full_sib_young5_nerves": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10l_full_sib_old1_nerves": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10l_full_sib_old2_nerves": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10l_full_sib_old3_nerves": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10l_full_sib_old4_nerves": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor   (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10l_full_sib_old5_nerves": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_half_sib_young1_nerves": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_half_sib_young2_nerves": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_half_sib_young3_nerves": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_half_sib_young4_nerves": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_half_sib_young5_nerves": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10n_half_sib_old1_nerves": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10n_half_sib_old2_nerves": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10n_half_sib_old3_nerves": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10n_half_sib_old4_nerves": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10n_half_sib_old5_nerves": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_full_sib_same1_nerves": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q10m_full_sib_same2_nerves": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_10_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_11_yes_no": {
+        "Description": "11. Has ANY blood relative of your child ever been to a doctor or a counselor about any emotional  or mental problems, or problems with alcohol or drugs? \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) ha visitado alguna vez a un m\u00e9dico o terapeuta para tratar alg\u00fan problema emocional o mental o problemas con el alcohol o las drogas? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q11a_professional": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q11b_professional": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q11c_professional": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q11d_professional": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q11e_professional": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q11f_professional": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11g_pat_uncle1_professional": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11g_pat_uncle2_professional": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11g_pat_uncle3_professional": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11g_pat_uncle4_professional": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11g_pat_uncle5_professional": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11h_pat_aunt1_professional": {
+        "Description": "paternal aunt T\u00eda paterna  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11h_pat_aunt2_professional": {
+        "Description": "paternal aunt T\u00eda paterna  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11h_pat_aunt3_professional": {
+        "Description": "paternal aunt T\u00eda paterna  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11h_pat_aunt4_professional": {
+        "Description": "paternal aunt T\u00eda paterna  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11h_pat_aunt5_professional": {
+        "Description": "paternal aunt T\u00eda paterna  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11i_mat_uncle1_professional": {
+        "Description": "maternal uncle T\u00edo materno (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11i_mat_uncle2_professional": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11i_mat_uncle3_professional": {
+        "Description": "maternal uncle T\u00edo materno (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11i_mat_uncle4_professional": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11i_mat_uncle5_professional": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11j_mat_aunt1_professional": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11j_mat_aunt2_professional": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11j_mat_aunt3_professional": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11j_mat_aunt4_professional": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11j_mat_aunt5_professional": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11k_full_sib_young1_prof": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11k_full_sib_young2_prof": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11k_full_sib_young3_prof": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11k_full_sib_young4_prof": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11k_full_sib_young5_prof": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11l_full_sib_old1_prof": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11l_full_sib_old2_prof": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11l_full_sib_old3_prof": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11l_full_sib_old4_prof": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11l_full_sib_old5_prof": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_half_sib_young1_prof": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_half_sib_young2_prof": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_half_sib_young3_prof": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_half_sib_young4_prof": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_half_sib_young5_prof": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11n_half_sib_old1_prof": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11n_half_sib_old2_prof": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11n_half_sib_old3_prof": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11n_half_sib_old4_prof": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11n_half_sib_old5_prof": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_full_sib_same1_prof": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q11m_full_sib_same2_prof": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_11_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_12_yes_no": {
+        "Description": "12. Has ANY blood relative of your child ever been hospitalized because of emotional or mental problems, or drug or alcohol problems? \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) ha estado hospitalizado alguna vez por problemas emocionales o mentales, o por problemas con el alcohol o las drogas? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q12a_hospitalized": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q12b_hospitalized": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q12c_hospitalized": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q12d_hospitalized": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q12e_hospitalized": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q12f_hospitalized": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12g_pat_uncle1_hospitalized": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12g_pat_uncle2_hospitalized": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12g_pat_uncle3_hospitalized": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12g_pat_uncle4_hospitalized": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12g_pat_uncle5_hospitalized": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12h_pat_aunt1_hospitalized": {
+        "Description": "paternal aunt T\u00eda paterna  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12h_pat_aunt2_hospitalized": {
+        "Description": "paternal aunt T\u00eda paterna  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12h_pat_aunt3_hospitalized": {
+        "Description": "paternal aunt T\u00eda paterna  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12h_pat_aunt4_hospitalized": {
+        "Description": "paternal aunt T\u00eda paterna  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12h_pat_aunt5_hospitalized": {
+        "Description": "paternal aunt T\u00eda paterna  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12i_mat_uncle1_hospitalized": {
+        "Description": "maternal uncle T\u00edo materno (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12i_mat_uncle2_hospitalized": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12i_mat_uncle3_hospitalized": {
+        "Description": "maternal uncle T\u00edo materno (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12i_mat_uncle4_hospitalized": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12i_mat_uncle5_hospitalized": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12j_mat_aunt1_hospitalized": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12j_mat_aunt2_hospitalized": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12j_mat_aunt3_hospitalized": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12j_mat_aunt4_hospitalized": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12j_mat_aunt5_hospitalized": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12k_full_sib_young1_hosp": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12k_full_sib_young2_hosp": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12k_full_sib_young3_hosp": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12k_full_sib_young4_hosp": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12k_full_sib_young5_hosp": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12l_full_sib_old1_hosp": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12l_full_sib_old2_hosp": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12l_full_sib_old3_hosp": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12l_full_sib_old4_hosp": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12l_full_sib_old5_hosp": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_half_sib_young1_hosp": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_half_sib_young2_hosp": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_half_sib_young3_hosp": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_half_sib_young4_hosp": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_half_sib_young5_hosp": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12n_half_sib_old1_hosp": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12n_half_sib_old2_hosp": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12n_half_sib_old3_hosp": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12n_half_sib_old4_hosp": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12n_half_sib_old5_hosp": {
+        "Description": "half sibling-older Medio hermano(a)- mayor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_full_sib_same1_hosp": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q12m_full_sib_same2_hosp": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_12_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_13_yes_no": {
+        "Description": "13. Has ANY blood relative of your child ever attempted or committed suicide? \u00bfALG\u00daN pariente consangu\u00edneo de su ni\u00f1o(a) ha intentado alguna vez suicidarse o se ha suicidado? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9; 7 = Refuse to answer Niego contestar /  famhx_1   == 1",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9",
+            "7": "Refuse to answer Niego contestar"
+        }
+    },
+    "fam_history_q13a_suicide": {
+        "Description": "biological father Padre biol\u00f3gico | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q13b_suicide": {
+        "Description": "paternal grandfather Abuelo paterno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q13c_suicide": {
+        "Description": "paternal grandmother Abuela paterna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q13d_suicide": {
+        "Description": "biological mother Madre biol\u00f3gica | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q13e_suicide": {
+        "Description": "maternal grandfather Abuelo materno | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "fam_history_q13f_suicide": {
+        "Description": "maternal grandmother Abuela materna | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13g_pat_uncle1_suicide": {
+        "Description": "paternal uncle T\u00edo paterno  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13g_pat_uncle2_suicide": {
+        "Description": "paternal uncle T\u00edo paterno  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13g_pat_uncle3_suicide": {
+        "Description": "paternal uncle T\u00edo paterno  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13g_pat_uncle4_suicide": {
+        "Description": "paternal uncle T\u00edo paterno  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13g_pat_uncle5_suicide": {
+        "Description": "paternal uncle T\u00edo paterno  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13h_pat_aunt1_suicide": {
+        "Description": "paternal aunt T\u00eda paterna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13h_pat_aunt2_suicide": {
+        "Description": "paternal aunt T\u00eda paterna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13h_pat_aunt3_suicide": {
+        "Description": "paternal aunt T\u00eda paterna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13h_pat_aunt4_suicide": {
+        "Description": "paternal aunt T\u00eda paterna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13h_pat_aunt5_suicide": {
+        "Description": "paternal aunt T\u00eda paterna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_2b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13i_mat_uncle1_suicide": {
+        "Description": "maternal uncle T\u00edo materno 1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1a_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13i_mat_uncle2_suicide": {
+        "Description": "maternal uncle T\u00edo materno (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1a_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13i_mat_uncle3_suicide": {
+        "Description": "maternal uncle T\u00edo materno (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1a_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13i_mat_uncle4_suicide": {
+        "Description": "maternal uncle T\u00edo materno (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1a_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13i_mat_uncle5_suicide": {
+        "Description": "maternal uncle T\u00edo materno (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1a_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13j_mat_aunt1_suicide": {
+        "Description": "maternal aunt T\u00eda materna (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1b_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13j_mat_aunt2_suicide": {
+        "Description": "maternal aunt T\u00eda materna (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1b_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13j_mat_aunt3_suicide": {
+        "Description": "maternal aunt T\u00eda materna (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1b_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13j_mat_aunt4_suicide": {
+        "Description": "maternal aunt T\u00eda materna (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1b_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13j_mat_aunt5_suicide": {
+        "Description": "maternal aunt T\u00eda materna (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  famhx_1b_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13k_full_sib_young1_suicide": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13k_full_sib_young2_suicide": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13k_full_sib_young3_suicide": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13k_full_sib_young4_suicide": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13k_full_sib_young5_suicide": {
+        "Description": "full sibling-younger Hermano(a) de doble v\u00ednculo-menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13l_full_sib_old1_suicide": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13l_full_sib_old2_suicide": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13l_full_sib_old3_suicide": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13l_full_sib_old4_suicide": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13l_full_sib_old5_suicide": {
+        "Description": "full sibling-older Hermano(a) de doble v\u00ednculo-mayor  (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3f_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_half_sib_young1_suicide": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_half_sib_young2_suicide": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_half_sib_young3_suicide": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_half_sib_young4_suicide": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_half_sib_young5_suicide": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_younger_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13n_half_sib_old1_suicide": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_older_p  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13n_half_sib_old2_suicide": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_older_p  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13n_half_sib_old3_suicide": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (3) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_older_p  > 2 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13n_half_sib_old4_suicide": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (4) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_older_p  > 3 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13n_half_sib_old5_suicide": {
+        "Description": "half sibling-older Medio hermano(a)- mayor (5) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3h_older_p  > 4 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_full_sib_same1_suicide": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (1) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q13m_full_sib_same2_suicide": {
+        "Description": "full sibling-same age Hermano(a) de doble v\u00ednculo- con la misma edad   (2) | 0 = No No; 1 = Yes S\u00ed; 999 = Don't know No lo s\u00e9/  famhx_1   == 1 &&  fam_history_13_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1 ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 999",
+        "Levels": {
+            "0": "No No",
+            "1": "Yes S\u00ed",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "q4g_pat_uncle2_alc___888": {
+        "Description": "paternal uncle T??o paterno  (2) (Not Asked ??) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2a_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4g_pat_uncle3_alc___888": {
+        "Description": "paternal uncle T??o paterno  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2a_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4g_pat_uncle4_alc___888": {
+        "Description": "paternal uncle T??o paterno  (4) (No Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2a_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4g_pat_uncle5_alc___888": {
+        "Description": "paternal uncle T??o paterno  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2a_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4h_pat_aunt1_alc___888": {
+        "Description": "paternal aunt T??a paterna  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2b_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4h_pat_aunt2_alc___888": {
+        "Description": "paternal aunt T??a paterna  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2b_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4h_pat_aunt3_alc___888": {
+        "Description": "paternal aunt T??a paterna  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2b_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4h_pat_aunt4_alc___888": {
+        "Description": "paternal aunt T??a paterna  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2b_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4h_pat_aunt5_alc___888": {
+        "Description": "paternal aunt T??a paterna  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2b_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4i_mat_uncle1_alc___888": {
+        "Description": "maternal uncle T??o materno (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1a_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4i_mat_uncle2_alc___888": {
+        "Description": "maternal uncle T??o materno (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1a_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4i_mat_uncle3_alc___888": {
+        "Description": "maternal uncle T??o materno  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1a_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4i_mat_uncle4_alc___888": {
+        "Description": "maternal uncle T??o materno  (4) (Not asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1a_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4i_mat_uncle5_alc___888": {
+        "Description": "maternal uncle T??o materno  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1a_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4j_mat_aunt1_alc___888": {
+        "Description": "maternal aunt T??a materna (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1b_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4j_mat_aunt2_alc___888": {
+        "Description": "maternal aunt T??a materna  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1b_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4j_mat_aunt3_alc___888": {
+        "Description": "maternal aunt T??a materna  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1b_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4j_mat_aunt4_alc___888": {
+        "Description": "maternal aunt T??a materna  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1b_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4j_mat_aunt5_alc___888": {
+        "Description": "maternal aunt T??a materna  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_1b_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4k_full_sib_young1_alc___888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor    (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_younger_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "famhx4b_p___888": {
+        "Description": "paternal grandfather Abuelo paterno (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4k_full_sib_young2_alc___888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor    (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_younger_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4k_full_sib_young3_alc___888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor    (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_younger_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4k_full_sib_young4_alc___888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor    (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_younger_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4k_full_sib_young5_alc___888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor    (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_younger_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4l_full_sib_old1_alc___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_older_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4l_full_sib_old2_alc___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_older_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4l_full_sib_old3_alc___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_older_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4l_full_sib_old4_alc___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_older_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4l_full_sib_old5_alc___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3f_older_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_half_sib_young1_alc___888": {
+        "Description": "half sibling-younger Medio Hermano(a)- menor  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_younger_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "famhx4c_p___888": {
+        "Description": "paternal grandmother Abuela paterna  (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_half_sib_young2_alc___888": {
+        "Description": "half sibling-younger Medio Hermano(a)- menor (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_younger_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_half_sib_young3_alc___888": {
+        "Description": "half sibling-younger Medio Hermano(a)- menor  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_younger_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_half_sib_young4_alc___888": {
+        "Description": "half sibling-younger Medio Hermano(a)- menor  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_younger_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_half_sib_young5_alc___888": {
+        "Description": "half sibling-younger Medio Hermano(a)- menor  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_younger_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4n_half_sib_old1_alc___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_older_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4n_half_sib_old2_alc___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_older_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4n_half_sib_old3_alc___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_older_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4n_half_sib_old4_alc___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_older_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4n_half_sib_old5_alc___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3h_older_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_full_sib_same1_alc___888": {
+        "Description": "full sibling-same age Hermano(a) de doble v??nculo- con la misma edad   (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3c_sibs_same_birth  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "famhx_4d_p___888": {
+        "Description": "biological mother Madre biol??gica (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4m_full_sib_same2_alc___888": {
+        "Description": "full sibling-same age Hermano(a) de doble v??nculo- con la misma edad   (2) (not asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  fhx_3c_sibs_same_birth  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fam_history_q5a_drugs___888": {
+        "Description": "biological father Padre biol??gico (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fam_history_q5b_drugs___888": {
+        "Description": "paternal grandfather Abuelo paterno (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fam_history_q5c_drugs___888": {
+        "Description": "paternal grandmother Abuela paterna (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fam_history_q5d_drugs___888": {
+        "Description": "biological mother Madre biol??gica (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fam_history_q5e_drugs___888": {
+        "Description": "maternal grandfather Abuelo materno (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fam_history_q5f_drugs___888": {
+        "Description": "maternal grandmother Abuela materna (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5g_pat_uncle1_drugs___888": {
+        "Description": "paternal uncle T??o paterno  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5g_pat_uncle2_drugs___888": {
+        "Description": "paternal uncle T??o paterno  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5g_pat_uncle3_drugs___888": {
+        "Description": "paternal uncle T??o paterno  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "famhx_4e_p___888": {
+        "Description": "maternal grandfather Abuelo materno (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5g_pat_uncle4_drugs___888": {
+        "Description": "paternal uncle T??o paterno  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5g_pat_uncle5_drugs___888": {
+        "Description": "paternal uncle T??o paterno  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2a_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5h_pat_aunt1_drugs___888": {
+        "Description": "paternal aunt T??a paterna  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2b_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5h_pat_aunt2_drugs___888": {
+        "Description": "paternal aunt T??a paterna  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2b_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5h_pat_aunt3_drugs___888": {
+        "Description": "paternal aunt T??a paterna  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2b_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5h_pat_aunt4_drugs___888": {
+        "Description": "paternal aunt T??a paterna  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2b_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5h_pat_aunt5_drugs___888": {
+        "Description": "paternal aunt T??a paterna  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_2b_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5i_mat_uncle1_drugs___888": {
+        "Description": "maternal uncle T??o materno (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1a_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5i_mat_uncle2_drugs___888": {
+        "Description": "maternal uncle T??o materno (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1a_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5i_mat_uncle3_drugs___888": {
+        "Description": "maternal uncle T??o materno (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1a_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "famhx_4f_p___888": {
+        "Description": "maternal grandmother Abuela materna (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5i_mat_uncle4_drugs___888": {
+        "Description": "maternal uncle T??o materno (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1a_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5i_mat_uncle5_drugs___888": {
+        "Description": "maternal uncle T??o materno (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1a_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5j_mat_aunt1_drugs___888": {
+        "Description": "maternal aunt T??a materna (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1b_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5j_mat_aunt2_drugs___888": {
+        "Description": "maternal aunt T??a materna (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1b_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5j_mat_aunt3_drugs___888": {
+        "Description": "maternal aunt T??a materna (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1b_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5j_mat_aunt4_drugs___888": {
+        "Description": "maternal aunt T??a materna (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1b_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5j_mat_aunt5_drugs___888": {
+        "Description": "maternal aunt T??a materna (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  famhx_1b_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5k_full_sib_young1_drugs__888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_younger_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5k_full_sib_young2_drugs__888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_younger_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5k_full_sib_young3_drugs__888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_younger_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "famhx4a_p___888": {
+        "Description": "biological father Padre biol??gico (Not Asked ) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5k_full_sib_young4_drugs__888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_younger_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5k_full_sib_young5_drugs__888": {
+        "Description": "full sibling-younger Hermano(a) de doble v??nculo- menor (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_younger_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5l_full_sib_old1_drugs___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_older_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5l_full_sib_old2_drugs___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_older_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5l_full_sib_old3_drugs___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_older_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5l_full_sib_old4_drugs___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_older_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5l_full_sib_old5_drugs___888": {
+        "Description": "full sibling-older Hermano(a) de doble v??nculo- mayor  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3f_older_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_half_sib_young1_drugs__888": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_younger_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_half_sib_young2_drugs__888": {
+        "Description": "half sibling-younger Medio hermano(a)- menor  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_younger_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_half_sib_young3_drugs__888": {
+        "Description": "half sibling-younger Medio hermano(a)- menor (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_younger_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q4g_pat_uncle1_alc___888": {
+        "Description": "paternal uncle T??o paterno  (1) (Not Asked ??) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  famhx_4_p   == 1 &&  famhx_2a_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_half_sib_young4_drugs__888": {
+        "Description": "half sibling-younger Medio hermano(a)- menor  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_younger_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_half_sib_young5_drugs__888": {
+        "Description": "half sibling-younger Medio hermano(a)- menor  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_younger_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5n_half_sib_old1_drugs___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_older_p  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5n_half_sib_old2_drugs___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_older_p  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5n_half_sib_old3_drugs___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (3) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_older_p  > 2",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5n_half_sib_old4_drugs___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (4) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_older_p  > 3",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5n_half_sib_old5_drugs___888": {
+        "Description": "half sibling-older Medio Hermano(a)- mayor  (5) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3h_older_p  > 4",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_full_sib_same1_drugs___888": {
+        "Description": "full sibling-same age Hermano(a) de doble v??nculo- con la misma edad   (1) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 0",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "q5m_full_sib_same2_drugs___888": {
+        "Description": "full sibling-same age Hermano(a) de doble v??nculo- con la misma edad   (2) (Not Asked) | 0 = No; 1 = Yes /  famhx_1   == 1 &&  fam_history_5_yes_no   == 1 &&  fhx_3c_sibs_same_birth  > 1",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    }
+}

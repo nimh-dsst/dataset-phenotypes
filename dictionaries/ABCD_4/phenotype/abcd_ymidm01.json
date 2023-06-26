@@ -1,0 +1,1507 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "meeq_section_q01": {
+        "Description": "Marijuana makes it harder to think and do things (harder to concentrate or understand; slows people down when they move; harder to remember things). | 1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Disagree Strongly",
+            "2": "Disagree Somewhat",
+            "3": "Uncertain",
+            "4": "Agree Somewhat",
+            "5": "Agree Strongly"
+        }
+    },
+    "meeq_section_q02": {
+        "Description": "Marijuana helps a person relax and feel less tense (helps a person unwind and feel calm). | 1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Disagree Strongly",
+            "2": "Disagree Somewhat",
+            "3": "Uncertain",
+            "4": "Agree Somewhat",
+            "5": "Agree Strongly"
+        }
+    },
+    "meeq_section_q03": {
+        "Description": "Marijuana helps people get along better with others (talk more; feel more romantic). | 1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Disagree Strongly",
+            "2": "Disagree Somewhat",
+            "3": "Uncertain",
+            "4": "Agree Somewhat",
+            "5": "Agree Strongly"
+        }
+    },
+    "meeq_section_q04": {
+        "Description": "Marijuana makes people feel more creative and perceive things differently (music sounds different; things seem more interesting). | 1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Disagree Strongly",
+            "2": "Disagree Somewhat",
+            "3": "Uncertain",
+            "4": "Agree Somewhat",
+            "5": "Agree Strongly"
+        }
+    },
+    "meeq_section_q05": {
+        "Description": "Marijuana generally has bad effects on a person (people become angry or careless; after feeling high a person feels down). | 1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Disagree Strongly",
+            "2": "Disagree Somewhat",
+            "3": "Uncertain",
+            "4": "Agree Somewhat",
+            "5": "Agree Strongly"
+        }
+    },
+    "meeq_section_q06": {
+        "Description": "Marijuana has bad effects on a person's body and gives people cravings (get the munchies/hungry; have a dry mouth; hard to stop laughing). | 1 = Disagree Strongly; 2 = Disagree Somewhat; 3 = Uncertain; 4 = Agree Somewhat; 5 = Agree Strongly / tlfb_mj_l   == '1' ||   tlfb_mj_c_l   == '1' ||  tlfb_mj_synth_l   == '1' ||   tlfb_mj_synth_c_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Disagree Strongly",
+            "2": "Disagree Somewhat",
+            "3": "Uncertain",
+            "4": "Agree Somewhat",
+            "5": "Agree Strongly"
+        }
+    },
+    "sub_res_mj_q01_l": {
+        "Description": "When using marijuana the first time or two, did you: like the taste | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' ||  or  tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q02_l": {
+        "Description": "When using marijuana the first time or two, did you: cough | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' || tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q03_l": {
+        "Description": "When using marijuana the first time or two, did you: feel dizzy or light-headed | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' || tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q04_l": {
+        "Description": "When using marijuana the first time or two, did you: feel more relaxed | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' || tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q05_l": {
+        "Description": "When using marijuana the first time or two, did you: get a headache | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' || tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q06_l": {
+        "Description": "When using marijuana the first time or two, did you: feel a pleasurable rush or buzz | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' || or  tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q07_l": {
+        "Description": "When using marijuana the first time or two, did you: feel your heart racing | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' || tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q08_l": {
+        "Description": "When using marijuana the first time or two, did you: feel nauseated, like vomiting | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' ||  tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q09_l": {
+        "Description": "When using marijuana the first time or two, did you: feel your muscles tremble or become jittery | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' ||  tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q10_l": {
+        "Description": "When using marijuana the first time or two, did you: feeling burning in your throat | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' ||  tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "sub_res_mj_q11_l": {
+        "Description": "When using marijuana the first time or two, did you: feel confused | 1 = Not at all; 2 = A little bit; 3 = Some; 4 = Quite a bit; 5 = A great deal / tlfb_mj_use_l  == '1' ||  tlfb_blunt_use_l  == '1' ||  tlfb_edible_use_l  == '1' ||  tlfb_mj_conc_use_l  == '1' ||  tlfb_mj_drink_use_l  == '1' ||  tlfb_tincture_use_l  == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "Not at all",
+            "2": "A little bit",
+            "3": "Some",
+            "4": "Quite a bit",
+            "5": "A great deal"
+        }
+    },
+    "mapi_q01_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: not able to do your homework or study for a test. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q02_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: got into fights, acted bad, or did mean things. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q03_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: missed out on other things because you spent too much money on marijuana. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q04_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: went to work or school high. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q05_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: caused shame or embarrassment to someone. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q06_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: neglected your responsibilities. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q07_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: relatives avoided you. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q08_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: felt that you needed more marijuana than you used to use in order to get the same effect. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q09_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: tried to control your smoking by trying to smoke only at certain times of the day or certain places. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q10_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: had withdrawal symptoms, that is, felt sick because you stopped or cut down on smoking. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q11_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: noticed a change in your personality. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q12_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: felt that you had a problem with marijuana. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q13_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: missed a day (or part of a day) of school or work. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q14_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: suddenly found yourself in a place that you could not remember getting to. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q15_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: passed out or fainted suddenly. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q16_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: kept smoking when you promised yourself not to. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q17_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: felt physically or psychologically dependent on marijuana. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "mapi_q18_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were smoking marijuana or as the result of your marijuana use: were told by a friend or neighbor to stop or cut down smoking. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_mj_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q01_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): not able to do your homework or study for a test. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q02_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): got into fights, acted bad, or did mean things. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q03_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): missed out on other things because you spent too much money on drugs. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q04_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): went to work or school high. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q05_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): caused shame or embarrassment to someone. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q06_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): neglected your responsibilities. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q07_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): relatives avoided you. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q08_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): felt that you needed more drugs than you used to use in order to get the same effect. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q09_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): tried to control your use by trying to use drugs only at certain times of the day or certain places. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q10_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): had withdrawal symptoms, that is, felt sick because you stopped or cut down. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q11_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): noticed a change in your personality. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q12_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): felt that you had a problem with drugs. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q13_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): missed a day (or part of a day) of school or work. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q14_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): suddenly found yourself in a place that you could not remember getting to. | 0 = 0; 1 = 1-2; 2 = 3-5; 3 = 6-10; 4 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-5",
+            "3": "6-10",
+            "4": "10+"
+        }
+    },
+    "dapi_q15_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): passed out or fainted suddenly. | 1 = 0; 2 = 1-2; 3 = 3-5; 4 = 6-10; 5 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "0",
+            "2": "1-2",
+            "3": "3-5",
+            "4": "6-10",
+            "5": "10+"
+        }
+    },
+    "dapi_q16_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): kept consuming drugs when you promised yourself not to. | 1 = 0; 2 = 1-2; 3 = 3-5; 4 = 6-10; 5 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "0",
+            "2": "1-2",
+            "3": "3-5",
+            "4": "6-10",
+            "5": "10+"
+        }
+    },
+    "dapi_q17_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): felt physically or psychologically dependent on drugs. | 1 = 0; 2 = 1-2; 3 = 3-5; 4 = 6-10; 5 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "0",
+            "2": "1-2",
+            "3": "3-5",
+            "4": "6-10",
+            "5": "10+"
+        }
+    },
+    "dapi_q18_l": {
+        "Description": "Please indicate how many times each has happened to you during the last six months while you were consuming drugs or as the result of your drug use (consider any drugs you've used, except caffeine, alcohol, nicotine and marijuana): were told by a friend or neighbor to stop or cut down. | 1 = 0; 2 = 1-2; 3 = 3-5; 4 = 6-10; 5 = 10+ / xskipout_other_l   == '1'",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "0",
+            "2": "1-2",
+            "3": "3-5",
+            "4": "6-10",
+            "5": "10+"
+        }
+    },
+    "su_mj_motiv_08": {
+        "Description": "So that others won't kid me about not using marijuana | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_09": {
+        "Description": "Because it's exciting | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_10": {
+        "Description": "To get high | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_11": {
+        "Description": "Because it makes social gatherings more fun | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_12": {
+        "Description": "To fit in with the group I like | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_13": {
+        "Description": "Because it gives me a pleasant feeling | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_14": {
+        "Description": "Because it improves parties and celebration | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_15": {
+        "Description": "Because I feel more self-confident and sure of myself | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_16": {
+        "Description": "To celebrate a special occasion with friends | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_17": {
+        "Description": "To forget about my problems | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_18": {
+        "Description": "Because it's fun | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_19": {
+        "Description": "To be liked | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_20": {
+        "Description": "So I won't feel left out | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_21": {
+        "Description": "To know myself better | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_22": {
+        "Description": "Because it helps me be more creative and original | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_23": {
+        "Description": "To understand things differently | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_24": {
+        "Description": "To expand my awareness | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_25": {
+        "Description": "To be more open to experiences | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_vape_expect_01": {
+        "Description": "Vaping is less harmful to my health than smoking | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_02": {
+        "Description": "Vaping is less harmful to others' health than smoking | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_mj_motiv_03": {
+        "Description": "Because it helps me enjoy a party | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_vape_expect_03": {
+        "Description": "Vaping comes in flavors people like | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_04": {
+        "Description": "You can vape at times when or in places where smoking isn't allowed | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_05": {
+        "Description": "Vaping is low-cost | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_06": {
+        "Description": "Vaping doesn't smell | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_07": {
+        "Description": "Vaping looks cool | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_08": {
+        "Description": "Vaping is easier to hide | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_expect_09": {
+        "Description": "Vaping causes a stronger buzz or high | 1=Disagree strongly ; 2=Disagree somewhat ; 3=Uncertain ; 4=Agree somewhat ; 5=Agree strongly [xskipout_vape] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Disagree strongly",
+            "2": "Disagree somewhat",
+            "3": "Uncertain",
+            "4": "Agree somewhat",
+            "5": "Agree strongly"
+        }
+    },
+    "su_vape_motiv_01": {
+        "Description": "It is less harmful to my health than smoking | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_02": {
+        "Description": "It is less harmful to others' health than smoking | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_03": {
+        "Description": "It comes in flavors I like | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_mj_motiv_01": {
+        "Description": "To forget my worries | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_vape_motiv_04": {
+        "Description": "I can use it at times when or in places where smoking isn't allowed | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_05": {
+        "Description": "It is low-cost | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_06": {
+        "Description": "It doesn't smell | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_07": {
+        "Description": "It looks cool | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_08": {
+        "Description": "It's easier to hide | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_vape_motiv_09": {
+        "Description": "I get a stronger buzz or high | 1=Not at all true ; 2=A little true ; 3=Somewhat true ; 4=Pretty true ; 5=Very true [xskipout_vape] = '1' and ([event-name] = '2_year_follow_up_y_arm_1' or [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Not at all true",
+            "2": "A little true",
+            "3": "Somewhat true",
+            "4": "Pretty true",
+            "5": "Very true"
+        }
+    },
+    "su_cws_1": {
+        "Description": "Anger | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_2": {
+        "Description": "Aggression | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_3": {
+        "Description": "Irritability | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_4": {
+        "Description": "Nervousness or anxiety | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_mj_motiv_02": {
+        "Description": "Because my friends pressure me to use marijuana | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_cws_5": {
+        "Description": "Restlessness | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_6": {
+        "Description": "Depressed mood | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_7": {
+        "Description": "Low appetite | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_8": {
+        "Description": "Sleep problems | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_9": {
+        "Description": "Normal (usual) dreams | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_10": {
+        "Description": "Strange (unusual) dreams | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_11": {
+        "Description": "Chills | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_12": {
+        "Description": "Stomach pain | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_13": {
+        "Description": "Shakiness or hand tremors | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_14": {
+        "Description": "Sweating | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_mj_motiv_04": {
+        "Description": "Because it helps me when I feel depressed or nervous | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_cws_15": {
+        "Description": "Craving/wanting to use marijuana | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_16": {
+        "Description": "Body aches or pains | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_cws_17": {
+        "Description": "Concentration problems | 0=None ; 1=1 ; 2=2 ; 3=3 ; 4=Some ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=A Lot ; 10=10 [xskipout_mj_l] = '1' and [event-name] = '3_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "Some",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "A Lot",
+            "10": "10"
+        }
+    },
+    "su_mj_motiv_05": {
+        "Description": "To be sociable | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_06": {
+        "Description": "To cheer me up when I am in a bad mood | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_motiv_07": {
+        "Description": "Because I like the feeling | 1=almost never/never ; 2=some of the time ; 3=half of the time ; 4=most of the time ; 5=almost always/always [xskipout_mj_l] = '1' and [event-name] = 4_year_follow_up_y_arm_1''''",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "almost never/never",
+            "2": "some of the time",
+            "3": "half of the time",
+            "4": "most of the time",
+            "5": "almost always/always"
+        }
+    },
+    "su_mj_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered ; 2=Youth Self-Administered ; 3=Combination [sched_delay] = '7'",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination"
+        }
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "sag_p_select_language": {
+        "Description": "\u00bfEspa\u00f1ol? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "sag_miss_school_excuse_p": {
+        "Description": "How many days did your child miss school with an acceptable excuse during the past 4 weeks? / \u00c2\u00bfCu\u00c3\u00a1ntos d\u00c3\u00adas falt\u00c3\u00b3 su hijo/a a la escuela con una excusa aceptable durante las \u00c3\u00baltimas 4 semanas? | 0=0 days / 0 d\u00c3\u00adas; 1=  1 day / 1 d\u00c3\u00ada; 2=  2 days / 2 d\u00c3\u00adas; 3=  3 days / 3 d\u00c3\u00adas; 4=  4 -5 days / 4-5 d\u00c3\u00adas; 5=  6-10 days / 6-10 d\u00c3\u00adas; 6=  11+ days / 11+ d\u00c3\u00adas; -1=  Not Applicable / No corresponde",
+        "DataType": "Integer",
+        "ValueRange": " -1::6",
+        "Levels": {
+            "0": "0 days / 0 d\u00c3\u00adas",
+            "1": "1 day / 1 d\u00c3\u00ada",
+            "2": "2 days / 2 d\u00c3\u00adas",
+            "3": "3 days / 3 d\u00c3\u00adas",
+            "4": "4 -5 days / 4-5 d\u00c3\u00adas",
+            "5": "6-10 days / 6-10 d\u00c3\u00adas",
+            "6": "11+ days / 11+ d\u00c3\u00adas",
+            "-1": "Not Applicable / No corresponde"
+        }
+    },
+    "sag_miss_school_unexcuse_p": {
+        "Description": "How many days did your child miss school without an acceptable excuse during the past 4 weeks? / \u00c2\u00bfCu\u00c3\u00a1ntos d\u00c3\u00adas falt\u00c3\u00b3 su hijo/a a la escuela sin una excusa aceptable durante las \u00c3\u00baltimas 4 semanas? | 0=0 days / 0 d\u00c3\u00adas; 1=  1 day / 1 d\u00c3\u00ada; 2=  2 days / 2 d\u00c3\u00adas; 3=  3 days / 3 d\u00c3\u00adas; 4=  4 -5 days / 4-5 d\u00c3\u00adas; 5=  6-10 days / 6-10 d\u00c3\u00adas; 6=  11+ days / 11+ d\u00c3\u00adas; -1=  Not Applicable / No corresponde",
+        "DataType": "Integer",
+        "ValueRange": " -1::6",
+        "Levels": {
+            "0": "0 days / 0 d\u00c3\u00adas",
+            "1": "1 day / 1 d\u00c3\u00ada",
+            "2": "2 days / 2 d\u00c3\u00adas",
+            "3": "3 days / 3 d\u00c3\u00adas",
+            "4": "4 -5 days / 4-5 d\u00c3\u00adas",
+            "5": "6-10 days / 6-10 d\u00c3\u00adas",
+            "6": "11+ days / 11+ d\u00c3\u00adas",
+            "-1": "Not Applicable / No corresponde"
+        }
+    },
+    "sag_excused_absence_p": {
+        "Description": "How many excused absences from school did your child have in the last 12 months? / \u00c2\u00bfCu\u00c3\u00a1ntas ausencias justificadas a la escuela tuvo su hijo/a en los \u00c3\u00baltimos 12 meses? | 0=0; 1=1-2; 2=3-10; 3=11+; -1=Not Applicable / No corresponde",
+        "DataType": "Integer",
+        "ValueRange": "0::3;-1",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-10",
+            "3": "11+",
+            "-1": "Not Applicable / No corresponde"
+        }
+    },
+    "sag_unexcuse_absence_p": {
+        "Description": "How many unexcused absences from school did your child have in the last 12 months? / \u00c2\u00bfCu\u00c3\u00a1ntas ausencias injustificadas a la escuela tuvo su hijo/a en los \u00c3\u00baltimos 12 meses? | 0=0; 1=1-2; 2=3-10; 3=11+; -1=Not Applicable / No corresponde",
+        "DataType": "Integer",
+        "ValueRange": "0::3; -1",
+        "Levels": {
+            "0": "0",
+            "1": "1-2",
+            "2": "3-10",
+            "3": "11+",
+            "-1": "Not Applicable / No corresponde"
+        }
+    },
+    "sag_grade_type": {
+        "Description": "What grades did your child receive in school last year? / \u00c2\u00bfQu\u00c3\u00a9 calificaciones o notas obtuvo su hijo/a en la escuela el a\u00c3\u00b1o pasado? | Please look at the list and pick the line that best describes your childs grades in school last year. / Mire la lista y seleccione el rengl\u00c3\u00b3n que mejor describa las calificaciones o notas de su hijo/a en la escuela el a\u00c3\u00b1o pasado. 1=##en##A+ / 97-100 /4.0 or higher / Exceeding the Standards / Exceeds excellent##/en####es##A+ / 97-100 /4.0 o superior / Supera los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Supera excelente##/es##; 2=##en##A / 93-96 / 3.70-3.99 / Exceeding the Standards / Excellent##/en####es##A / 93-96 / 3.70-3.99 / Supera los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Excelente##/es##; 3=##en##A- / 90-92 / 3.5-3.69 /Meeting the Standards / Approaching Excellent##/en####es##A- / 90-92 / 3.5-3.69 / Cumple con los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Se acerca a excelente##/es##; 4=##en##B+ / 87-89 / 3.30-3.49 /Meeting the Standards / Very Good##/en####es##B+ / 87-89 / 3.30-3.49 /Cumple con los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Muy bien##/es##; 5=##en##B / 83-86 /3.00-3.29 / Meeting the Standards / Very Good##/en####es##B / 83-86 /3.00-3.29 / Cumple con los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Muy bien##/es##; 6=##en##B- / 80-82 / 2.70-2.99 / Approaching Proficiency / Approaching Very Good##/en####es##B- / 80-82 / 2.70-2.99 / Se acerca a la aptitud necesaria / Se acerca a muy bien##/es##; 7=##en##C+ / 77-79 / 2.30-2.69 / Approaching Proficiency / Good+##/en####es##C+ / 77-79 / 2.30-2.69 / Se acerca a la aptitud necesaria / Bien+##/es##; 8=##en##C / 73-76 / 2.29 - 2.29 / Approaching Proficiency / Good##/en####es##C / 73-76 / 2.29 - 2.29 / Se acerca a la aptitud necesaria / Bien##/es##; 9=##en##C- / 70-72 / 1.70-1.99 / Beginning / Approaching Good##/en####es##C- / 70-72 / 1.70-1.99 / B\u00c3\u00a1sico / Se acerca a bien##/es##; 10=##en##D+ / 67-69 / 1.30-1.69 / Beginning / Satisfactory##/en####es##D+ / 67-69 / 1.30-1.69 / B\u00c3\u00a1sico / Satisfactorio##/es##; 11=##en##D / 65-66 / 1.00-1.29 / Beginning / Sufficient##/en####es##D / 65-66 / 1.00-1.29 / B\u00c3\u00a1sico / Suficiente##/es##; 12=##en##F / 0-65 / 0.00 - 0.99 / No Evidence / Standards / Fail (Does not meet minimum standards)##/en####es##F / 0-65 / 0.00 - 0.99 / Sin evidencia / Par\u00c3\u00a1metros est\u00c3\u00a1ndar / Reprobado (No cumple con los par\u00c3\u00a1metros m\u00c3\u00adnimos est\u00c3\u00a1ndar)##/es##; -1=##en##Not Applicable##/en####es##No corresponde##/es##; 777=##en##Refuse to answer##/en####es##niego a contestar##/es##",
+        "DataType": "Integer",
+        "ValueRange": "1::12;-1;777",
+        "Levels": {
+            "Please look at the list and pick the line that best describes your childs grades in school last year. / Mire la lista y seleccione el rengl\u00c3\u00b3n que mejor describa las calificaciones o notas de su hijo/a en la escuela el a\u00c3\u00b1o pasado. 1": "##en##A+ / 97-100 /4.0 or higher / Exceeding the Standards / Exceeds excellent##/en####es##A+ / 97-100 /4.0 o superior / Supera los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Supera excelente##/es##",
+            "2": "##en##A / 93-96 / 3.70-3.99 / Exceeding the Standards / Excellent##/en####es##A / 93-96 / 3.70-3.99 / Supera los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Excelente##/es##",
+            "3": "##en##A- / 90-92 / 3.5-3.69 /Meeting the Standards / Approaching Excellent##/en####es##A- / 90-92 / 3.5-3.69 / Cumple con los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Se acerca a excelente##/es##",
+            "4": "##en##B+ / 87-89 / 3.30-3.49 /Meeting the Standards / Very Good##/en####es##B+ / 87-89 / 3.30-3.49 /Cumple con los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Muy bien##/es##",
+            "5": "##en##B / 83-86 /3.00-3.29 / Meeting the Standards / Very Good##/en####es##B / 83-86 /3.00-3.29 / Cumple con los par\u00c3\u00a1metros est\u00c3\u00a1ndar / Muy bien##/es##",
+            "6": "##en##B- / 80-82 / 2.70-2.99 / Approaching Proficiency / Approaching Very Good##/en####es##B- / 80-82 / 2.70-2.99 / Se acerca a la aptitud necesaria / Se acerca a muy bien##/es##",
+            "7": "##en##C+ / 77-79 / 2.30-2.69 / Approaching Proficiency / Good+##/en####es##C+ / 77-79 / 2.30-2.69 / Se acerca a la aptitud necesaria / Bien+##/es##",
+            "8": "##en##C / 73-76 / 2.29 - 2.29 / Approaching Proficiency / Good##/en####es##C / 73-76 / 2.29 - 2.29 / Se acerca a la aptitud necesaria / Bien##/es##",
+            "9": "##en##C- / 70-72 / 1.70-1.99 / Beginning / Approaching Good##/en####es##C- / 70-72 / 1.70-1.99 / B\u00c3\u00a1sico / Se acerca a bien##/es##",
+            "10": "##en##D+ / 67-69 / 1.30-1.69 / Beginning / Satisfactory##/en####es##D+ / 67-69 / 1.30-1.69 / B\u00c3\u00a1sico / Satisfactorio##/es##",
+            "11": "##en##D / 65-66 / 1.00-1.29 / Beginning / Sufficient##/en####es##D / 65-66 / 1.00-1.29 / B\u00c3\u00a1sico / Suficiente##/es##",
+            "12": "##en##F / 0-65 / 0.00 - 0.99 / No Evidence / Standards / Fail (Does not meet minimum standards)##/en####es##F / 0-65 / 0.00 - 0.99 / Sin evidencia / Par\u00c3\u00a1metros est\u00c3\u00a1ndar / Reprobado (No cumple con los par\u00c3\u00a1metros m\u00c3\u00adnimos est\u00c3\u00a1ndar)##/es##",
+            "-1": "##en##Not Applicable##/en####es##No corresponde##/es##",
+            "777": "##en##Refuse to answer##/en####es##niego a contestar##/es##"
+        }
+    },
+    "sag_iep_current_p": {
+        "Description": "Does your child currently have an Individualized Education Plan or IEP? / \u00c2\u00bfSu hijo/a tiene actualmente un Plan de Educaci\u00c3\u00b3n Individualizado o IEP (por sus siglas en ingl\u00c3\u00a9s)? | 1=Yes / S\u00c3\u00ad; 0=  No / No; 999=  Dont Know / No s\u00c3\u00a9",
+        "DataType": "Integer",
+        "ValueRange": " 1;0;999",
+        "Levels": {
+            "1": "Yes / S\u00c3\u00ad",
+            "0": "No / No",
+            "999": "Dont Know / No s\u00c3\u00a9"
+        }
+    },
+    "sag_iep_ever_p": {
+        "Description": "Has your child ever had an Individualized Education Plan or IEP? / \u00c2\u00bfAlguna vez ha tenido su hijo/a un Plan de Educaci\u00c3\u00b3n Individualizado o IEP (por sus siglas en ingl\u00c3\u00a9s)? | 1=  Yes / S\u00c3\u00ad; 0=  No / No; 999=  Dont Know / No s\u00c3\u00a9",
+        "DataType": "Integer",
+        "ValueRange": " 1;0;999",
+        "Levels": {
+            "1": "Yes / S\u00c3\u00ad",
+            "0": "No / No",
+            "999": "Dont Know / No s\u00c3\u00a9"
+        }
+    }
+}

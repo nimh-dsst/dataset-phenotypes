@@ -1,0 +1,205 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "pds_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pubertal_sex_p": {
+        "Description": "What sex was your child assigned at birth? \u00bfQu\u00e9 sexo le fue asignado a su ni\u00f1o(a) al nacer? | 1 = Male Masculino; 2 = Female Femenino",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Male Masculino",
+            "2": "Female Femenino"
+        }
+    },
+    "pds_1_p": {
+        "Description": "Would you say that your child's growth in height: Con respecto a la estatura de su ni\u00f1o(a), \u00bfdir\u00eda usted que...? | 1 = has not yet begun to spurt A\u00fan no ha empezado a crecer.; 2 = has barely started Apenas ha empezado a crecer.; 3 = is definitely underway Definitivamente est\u00e1 creciendo.; 4 = seems complete Parece haber terminado de crecer.; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "has not yet begun to spurt A\u00fan no ha empezado a crecer.",
+            "2": "has barely started Apenas ha empezado a crecer.",
+            "3": "is definitely underway Definitivamente est\u00e1 creciendo.",
+            "4": "seems complete Parece haber terminado de crecer.",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_2_p": {
+        "Description": "And how about the growth of your child's body hair (\"body hair\" means hair any place other than their head, such as under their arms)? Would you say that your child's body hair growth: \u00bfY qu\u00e9 dir\u00eda del crecimiento del vello corporal de su ni\u00f1o(a) (\"vello corporal\" se refiere al vello que crece en cualquier parte del cuerpo que no sea el pelo de la cabeza, como en las axilas)?\u00bfDir\u00eda usted que el vello corporal de su ni\u00f1o(a)...? | 1 = has not yet begun to grow A\u00fan no le ha empezado a salir.; 2 = has barely started to grow Apenas le est\u00e1 empezando a salir.; 3 = is definitely underway Definitivamente ya le est\u00e1 saliendo.; 4 = seems complete Parece haber terminado de salir.; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "has not yet begun to grow A\u00fan no le ha empezado a salir.",
+            "2": "has barely started to grow Apenas le est\u00e1 empezando a salir.",
+            "3": "is definitely underway Definitivamente ya le est\u00e1 saliendo.",
+            "4": "seems complete Parece haber terminado de salir.",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_3_p": {
+        "Description": "Have you noticed any changes to their skin, especially pimples? \u00bfHa notado cambios en la piel de su ni\u00f1o(a), particularmente acn\u00e9, granos o espinillas? | 1 = skin has not yet started changing Su piel a\u00fan no ha empezado a mostrar cambios.; 2 = skin has barely started changing Su piel apenas ha empezado a mostrar cambios.; 3 = skin changes are definitely underway Definitivamente ya est\u00e1n ocurriendo cambios en su piel.; 4 = skin changes seem complete Parece haber terminado de cambiarle la piel.; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "skin has not yet started changing Su piel a\u00fan no ha empezado a mostrar cambios.",
+            "2": "skin has barely started changing Su piel apenas ha empezado a mostrar cambios.",
+            "3": "skin changes are definitely underway Definitivamente ya est\u00e1n ocurriendo cambios en su piel.",
+            "4": "skin changes seem complete Parece haber terminado de cambiarle la piel.",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_m5_p": {
+        "Description": "Has he begun to grow hair on his face? \u00bfA su ni\u00f1o le ha empezado a crecer vello en la cara? | 1 = facial hair has not yet started growing A\u00fan no le ha empezado a salir vello facial.; 2 = facial hair has barely started growing Apenas le ha empezado a salir vello facial.; 3 = facial hair has definitely started Definitivamente ya le ha empezado a salir vello facial.; 4 = facial growth seems complete Ya parece haber terminado de salirle el vello facial.; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "facial hair has not yet started growing A\u00fan no le ha empezado a salir vello facial.",
+            "2": "facial hair has barely started growing Apenas le ha empezado a salir vello facial.",
+            "3": "facial hair has definitely started Definitivamente ya le ha empezado a salir vello facial.",
+            "4": "facial growth seems complete Ya parece haber terminado de salirle el vello facial.",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_m4_p": {
+        "Description": "Have you noticed a deepening of his voice? \u00bfHa notado que la voz de su ni\u00f1o se ha vuelto m\u00e1s profunda? | 1 = voice has not yet started changing Su voz a\u00fan no ha empezado a cambiar.; 2 = voice has barely started changing Su voz apenas ha empezado a cambiar.; 3 = voice changes are definitely underway Definitivamente ya est\u00e1n ocurriendo cambios en su voz.; 4 = voice changes seem complete Parece haber terminado de cambiar su voz.; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "voice has not yet started changing Su voz a\u00fan no ha empezado a cambiar.",
+            "2": "voice has barely started changing Su voz apenas ha empezado a cambiar.",
+            "3": "voice changes are definitely underway Definitivamente ya est\u00e1n ocurriendo cambios en su voz.",
+            "4": "voice changes seem complete Parece haber terminado de cambiar su voz.",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_f4_p": {
+        "Description": "Have you noticed that your child's breasts have begun to grow? \u00bfHa notado que los senos de su ni\u00f1a han empezado a crecer? | 1 = have not yet started growing A\u00fan no le han empezado a crecer.; 2 = have barely started growing Apenas le han empezado a crecer.; 3 = breast growth is definitely underway Definitivamente ya le est\u00e1n creciendo los senos.; 4 = breast growth seems complete Sus senos ya parecen haber terminado de crecer.; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "have not yet started growing A\u00fan no le han empezado a crecer.",
+            "2": "have barely started growing Apenas le han empezado a crecer.",
+            "3": "breast growth is definitely underway Definitivamente ya le est\u00e1n creciendo los senos.",
+            "4": "breast growth seems complete Sus senos ya parecen haber terminado de crecer.",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_f5b_p": {
+        "Description": "Has your child begun to menstruate? | 4 = Yes S\u00ed; 1 = No No; 999 = I don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "4 ; 1 ; 999",
+        "Levels": {
+            "4": "Yes S\u00ed",
+            "1": "No No",
+            "999": "I don't know No s\u00e9"
+        }
+    },
+    "pds_f6_p": {
+        "Description": "How old were they when they started to menstruate? | If you don't know, please choose \"don't know\" in what follows below  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo",
+        "DataType": "String"
+    },
+    "pds_f6_p_dk": {
+        "Description": "How old were they when they started to menstruate? | 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "menstrualcycle1_p": {
+        "Description": "What was the date of the first day of your child's last period?",
+        "DataType": "String"
+    },
+    "menstrualcycle2_p": {
+        "Description": "On average, how many days are there between the first day of their period and the first day of their next period? (e.g., 30 days) | If you don't know, please choose \"don't know\" in what follows below  Si no sabe, por favor escoja \"no se\" en lo que sigue abajo",
+        "DataType": "String"
+    },
+    "menstrualcycle2_p_dk": {
+        "Description": "On average, how many days are there between the first day of their period and the first day of their next period? (e.g., 30 days) | 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "menstrualcycle3_p": {
+        "Description": "Is your child's menstrual cycle regular? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No s\u00e9"
+        }
+    },
+    "menstrualcycle4_p": {
+        "Description": "Is your child currently using hormonal birth control (e.g. the pill, hormone patch, hormone injection)? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No s\u00e9"
+        }
+    },
+    "menstrualcycle5_p": {
+        "Description": "Do they experience premenstrual irritability, fatigue, tearfulness, etc., which start before their period and stop within a few days of bleeding? | 1 = Not at all Para nada; 2 = Mild Leves; 3 = Moderate Moderados; 4 = Severe Graves; 999 = Don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "Not at all Para nada",
+            "2": "Mild Leves",
+            "3": "Moderate Moderados",
+            "4": "Severe Graves",
+            "999": "Don't know No s\u00e9"
+        }
+    },
+    "menstrualcycle6_p": {
+        "Description": "Do their premenstrual symptoms interfere with their relationships with family and friends, productivity, and/or social life activities? | 1 = Not at all Para nada; 2 = Mild Leves; 3 = Moderate Moderados; 4 = Severe Graves; 999 = Don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 999",
+        "Levels": {
+            "1": "Not at all Para nada",
+            "2": "Mild Leves",
+            "3": "Moderate Moderados",
+            "4": "Severe Graves",
+            "999": "Don't know No s\u00e9"
+        }
+    }
+}

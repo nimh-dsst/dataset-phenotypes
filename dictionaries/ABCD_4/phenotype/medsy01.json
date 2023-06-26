@@ -1,0 +1,2869 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "brought_medications": {
+        "Description": "Did your child take any medications in the past two weeks and if so did you bring them with you? ? /\u00bfSu ni\u00f1o(a) tom\u00f3 alg\u00fan medicamento en las \u00faltimas dos semanas? Si la respuesta es s\u00ed, trajo todos los medicamentos de su ni\u00f1o(a) a esta visita? | 0 = Yes; 1 = Yes; 2 = Refused - Record reason for refusal in Comments Section Se neg\u00f3 - anote el motivo por el cual se neg\u00f3 en la secci\u00f3n de Comentarios.; 3 = Took No Medications No us\u00f3 ning\u00fan medicamento | Mark the form status as 'Unverified' if you are waiting on the parent to provide child's medications.//The ABCD Study will be describing all medications its participants are using, both prescription and over-the-counter. These include pills, liquid medications; skin patches, eye drops, creams, salves, inhalers and injections, as well as cold or allergy medications, vitamins, herbal remedies and other supplements",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;3;4",
+        "Levels": {
+            "0": "Yes",
+            "1": "Yes",
+            "2": "Refused - Record reason for refusal in Comments Section Se neg\u00f3 - anote el motivo por el cual se neg\u00f3 en la secci\u00f3n de Comentarios.",
+            "3": "Took No Medications No us\u00f3 ning\u00fan medicamento | Mark the form status as 'Unverified' if you are waiting on the parent to provide child's medications.//The ABCD Study will be describing all medications its participants are using, both prescription and over-the-counter. These include pills, liquid medications"
+        }
+    },
+    "med1_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication1_dosage": {
+        "Description": "First medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med1_dk": {
+        "Description": "Medication 1. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "rx_med1_units_p": {
+        "Description": "Medication 1. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "rx_med1_xr": {
+        "Description": "Medication 1. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "rx_med1_prn": {
+        "Description": "Medication 1. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "rx_med1_sched_p": {
+        "Description": "Medication 1. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med1_24": {
+        "Description": "Medication 1. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med1_ago": {
+        "Description": "Medication 1. P. How long ago did your son/daughter take the medication? / \u00c2\u00bfHace cu\u00c3\u00a1nto tiempo que su ni\u00c3\u00b1o(a) tom\u00c3\u00b3 o us\u00c3\u00b3 dicho medicamento? Y. How long ago did you take the medication?\r\n | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_2_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med2_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication2_dosage": {
+        "Description": "Second medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med2_dk": {
+        "Description": "Medication 2. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med2": {
+        "Description": "Medication 2. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med2_xr": {
+        "Description": "Medication 2. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "prn_medicine_rx_med2": {
+        "Description": "Medication 2. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_rxm_med2": {
+        "Description": "Medication 2. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med2_24": {
+        "Description": "Medication 2. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med2_ago": {
+        "Description": "Medication 2. P. How long ago did your son/daughter take the medication? / \u00c2\u00bfHace cu\u00c3\u00a1nto tiempo que su ni\u00c3\u00b1o(a) tom\u00c3\u00b3 o us\u00c3\u00b3 dicho medicamento? Y. How long ago did you take the medication?\r\n | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_3_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med3_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication3_dosage": {
+        "Description": "Third medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med3_dk": {
+        "Description": "Medication 3. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med3": {
+        "Description": "Medication 3. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med3_xr": {
+        "Description": "Medication 3. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "prn_medicine_rx_med3": {
+        "Description": "Medication 3. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_rxm_med3": {
+        "Description": "Medication 3. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med3_24": {
+        "Description": "Medication 3. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med3_ago": {
+        "Description": "Medication 3. P. How long ago did your son/daughter take the medication? / \u00c2\u00bfHace cu\u00c3\u00a1nto tiempo que su ni\u00c3\u00b1o(a) tom\u00c3\u00b3 o us\u00c3\u00b3 dicho medicamento? Y. How long ago did you take the medication?\r\n | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_4_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med4_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication4_dosage": {
+        "Description": "Fourth  medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med4_dk": {
+        "Description": "Medication 4. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med4": {
+        "Description": "Medication 4. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med4_xr": {
+        "Description": "Medication 4. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "prn_medicine_rx_med4": {
+        "Description": "Medication 4. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No; 999-Don't know/No se",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med4": {
+        "Description": "Medication 4. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med4_24": {
+        "Description": "Medication 4. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med4_ago": {
+        "Description": "Medication 4. P. How long ago did your son/daughter take the medication? / \u00c2\u00bfHace cu\u00c3\u00a1nto tiempo que su ni\u00c3\u00b1o(a) tom\u00c3\u00b3 o us\u00c3\u00b3 dicho medicamento? Y. How long ago did you take the medication?\r\n | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_5_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med5_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication5_dosage": {
+        "Description": "Fifth medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med5_dk": {
+        "Description": "Medication 5. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med5": {
+        "Description": "Medication 5. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med5_xr": {
+        "Description": "Medication 5. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "prn_medicine_rx_med5": {
+        "Description": "Medication 5. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1=Yes; 0=No; 999=Do not Know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Do not Know"
+        }
+    },
+    "number_rx_rxm_med5": {
+        "Description": "Medication 5. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med5_24": {
+        "Description": "Medication 5. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med5_ago": {
+        "Description": "Medication 5. P. How long ago did your son/daughter take the medication? / \u00c2\u00bfHace cu\u00c3\u00a1nto tiempo que su ni\u00c3\u00b1o(a) tom\u00c3\u00b3 o us\u00c3\u00b3 dicho medicamento? Y. How long ago did you take the medication?\r\n | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_6_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med6_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication6_dosage": {
+        "Description": "Sixth medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med6_dk": {
+        "Description": "Medication 6. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med6": {
+        "Description": "Medication 6. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med6_xr": {
+        "Description": "Medication 6. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "prn_medicine_rx_med6": {
+        "Description": "Medication 6. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med6": {
+        "Description": "Medication 6. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med6_24": {
+        "Description": "Medication 6. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med6_ago": {
+        "Description": "Medication 6. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_7_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med7_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication7_dosage": {
+        "Description": "Seventh medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med7_dk": {
+        "Description": "Medication 7. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med7": {
+        "Description": "Medication 7. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med7_xr": {
+        "Description": "Medication 7. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "prn_medicine_rx_med7": {
+        "Description": "Medication 7. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med7": {
+        "Description": "Medication 7. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med7_24": {
+        "Description": "Medication 7. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med7_ago": {
+        "Description": "Medication 7. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_8_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med8_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication8_dosage": {
+        "Description": "Eighth medication dosage | 0 = No medication; 999 = Missing",
+        "DataType": "String",
+        "Levels": {
+            "0": "No medication",
+            "999": "Missing"
+        }
+    },
+    "med8_dk": {
+        "Description": "Medication 8. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med8": {
+        "Description": "Medication 8. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med8_xr": {
+        "Description": "Medication 8. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med8": {
+        "Description": "Medication 8. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med8": {
+        "Description": "Medication 8. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med8_24": {
+        "Description": "Medication 8. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med8_ago": {
+        "Description": "Medication 8. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_9_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med9_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication9_dosage": {
+        "Description": "Ninth medication dosage",
+        "DataType": "String"
+    },
+    "med9_dk": {
+        "Description": "Medication 9. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med9": {
+        "Description": "Medication 9. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med9_xr": {
+        "Description": "Medication 9. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med9": {
+        "Description": "Medication 9. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med9": {
+        "Description": "Medication 9. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med9_24": {
+        "Description": "Medication 9. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med9_ago": {
+        "Description": "Medication 9. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_10_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med10_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication10_dosage": {
+        "Description": "Tenth medication dosage",
+        "DataType": "String"
+    },
+    "med10_dk": {
+        "Description": "Medication 10. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med10": {
+        "Description": "Medication 10. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med10_xr": {
+        "Description": "Medication 10. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med10": {
+        "Description": "Medication 10. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med10": {
+        "Description": "Medication 10. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med10_24": {
+        "Description": "Medication 10. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med10_ago": {
+        "Description": "Medication 10. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_11_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med11_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication11_dosage": {
+        "Description": "medication 11 dosage",
+        "DataType": "Float"
+    },
+    "med11_dk": {
+        "Description": "Medication 11. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med11": {
+        "Description": "Medication 11. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med11_xr": {
+        "Description": "Medication 11. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med11": {
+        "Description": "Medication 11. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med11": {
+        "Description": "Medication 11. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med11_24": {
+        "Description": "Medication 11. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med11_ago": {
+        "Description": "Medication 11. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_12_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med12_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication12_dosage": {
+        "Description": "medication 12 dosage",
+        "DataType": "Float"
+    },
+    "med12_dk": {
+        "Description": "Medication 12. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med12": {
+        "Description": "Medication 12. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med12_xr": {
+        "Description": "Medication 12. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med12": {
+        "Description": "Medication 12. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med12": {
+        "Description": "Medication 12. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med12_24": {
+        "Description": "Medication 12. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med12_ago": {
+        "Description": "Medication 12. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_13_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med13_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication13_dosage": {
+        "Description": "Medication 13 dosage",
+        "DataType": "String"
+    },
+    "med13_dk": {
+        "Description": "Medication 13. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med13": {
+        "Description": "Medication 13. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med13_xr": {
+        "Description": "Medication 13. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med13": {
+        "Description": "Medication 13. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med13": {
+        "Description": "Medication 13. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med13_24": {
+        "Description": "Medication 13. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med13_ago": {
+        "Description": "Medication 13. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_14_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med14_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication14_dosage": {
+        "Description": "Medication 14 dosage",
+        "DataType": "String"
+    },
+    "med14_dk": {
+        "Description": "Medication 14. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med14": {
+        "Description": "Medication 14. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med14_xr": {
+        "Description": "Medication 14. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med14": {
+        "Description": "Medication 14. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med14": {
+        "Description": "Medication 14. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med14_24": {
+        "Description": "Medication 14. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med14_ago": {
+        "Description": "Medication 14. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "prescribe_med_15_yn": {
+        "Description": "Does your child take any other prescription medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med15_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaciue mse aproxime a la medicaciomada por su ni); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "medication15_dosage": {
+        "Description": "Medication 15 dosage",
+        "DataType": "String"
+    },
+    "med15_dk": {
+        "Description": "Medication 15. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_rx_med15": {
+        "Description": "Medication 15. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::16",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "rx_med15_xr": {
+        "Description": "Medication 15. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "prn_medicine_rx_med15": {
+        "Description": "Medication 15. PRN (as needed) Medication? ? /\u00bfEs un medicamento PRN, es decir un medicamento que se puede tomar seg\u00fan necesidad? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_rxm_med15": {
+        "Description": "Medication 15. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day? En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "rx_med15_24": {
+        "Description": "Medication 15. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "rx_med15_ago": {
+        "Description": "Medication 15. How long ago did h/she take the medication?  /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "med_otc_1_rxnorm_p": {
+        "Description": "OTC Med 1. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication1": {
+        "Description": "OTC Med 1. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "med1_otc_dk": {
+        "Description": "OTC Med 1. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication1": {
+        "Description": "OTC Med 1. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "otc_med1_xr": {
+        "Description": "OTC Med 1. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_otc_med1": {
+        "Description": "OTC Med 1. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "otc_med1_24": {
+        "Description": "OTC Med 1. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med1_ago": {
+        "Description": "OTC Med 1. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "otc_med_2_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_2_rxnorm_p": {
+        "Description": "OTC Med 2. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication2": {
+        "Description": "OTC Med 2. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "med2_otc_dk": {
+        "Description": "OTC Med 2. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication2": {
+        "Description": "OTC Med 2. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "otc_med2_xr": {
+        "Description": "OTC Med 2. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_otc_med2": {
+        "Description": "OTC Med 2. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "String"
+    },
+    "otc_med2_24": {
+        "Description": "OTC Med 2. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med2_ago": {
+        "Description": "OTC Med 2. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "String"
+    },
+    "otc_med_3_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_3_rxnorm_p": {
+        "Description": "OTC Med 3. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication3": {
+        "Description": "OTC Med 3. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "String"
+    },
+    "med3_otc_dk": {
+        "Description": "OTC Med 3. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication3": {
+        "Description": "OTC Med 3. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "otc_med3_xr": {
+        "Description": "OTC Med 3. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_otc_med3": {
+        "Description": "OTC Med 3. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med3_24": {
+        "Description": "OTC Med 3. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med3_ago": {
+        "Description": "OTC Med 3. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_4_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_4_rxnorm_p": {
+        "Description": "OTC Med 4. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication4": {
+        "Description": "OTC Med 4. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med4_otc_dk": {
+        "Description": "OTC Med 4. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication4": {
+        "Description": "OTC Med 4. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "otc_med4_xr": {
+        "Description": "OTC Med 4. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_otc_med4": {
+        "Description": "OTC Med 4. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med4_24": {
+        "Description": "OTC Med 4. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med4_ago": {
+        "Description": "OTC Med 4. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_5_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_5_rxnorm_p": {
+        "Description": "OTC Med 5. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication5": {
+        "Description": "OTC Med 5. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med5_otc_dk": {
+        "Description": "OTC Med 5. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication5": {
+        "Description": "OTC Med 5. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "otc_med5_xr": {
+        "Description": "OTC Med 5. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "number_rx_otc_med5": {
+        "Description": "OTC Med 5. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med5_24": {
+        "Description": "OTC Med 5. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med5_ago": {
+        "Description": "OTC Med 5. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_6_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_6_rxnorm_p": {
+        "Description": "OTC Med 6. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication6": {
+        "Description": "OTC Med 6. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med6_otc_dk": {
+        "Description": "OTC Med 6. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication6": {
+        "Description": "OTC Med 6. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER; 17 = International Units (IU)",
+        "DataType": "Integer",
+        "ValueRange": "1 ::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER",
+            "17": "International Units (IU)"
+        }
+    },
+    "otc_med6_xr": {
+        "Description": "OTC Med 6. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med6": {
+        "Description": "OTC Med 6. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med6_24": {
+        "Description": "OTC Med 6. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med6_ago": {
+        "Description": "OTC Med 6. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_7_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_7_rxnorm_p": {
+        "Description": "OTC Med 7. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication7": {
+        "Description": "OTC Med 7. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med7_otc_dk": {
+        "Description": "OTC Med 7. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication7": {
+        "Description": "OTC Med 7. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med7_xr": {
+        "Description": "OTC Med 7. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med7": {
+        "Description": "OTC Med 7. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med7_24": {
+        "Description": "OTC Med 7. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med7_ago": {
+        "Description": "OTC Med 7. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_8_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_8_rxnorm_p": {
+        "Description": "OTC Med 8. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication8": {
+        "Description": "OTC Med 8. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med8_otc_dk": {
+        "Description": "OTC Med 8. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication8": {
+        "Description": "OTC Med 8. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med8_xr": {
+        "Description": "OTC Med 8. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med8": {
+        "Description": "OTC Med 8. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med8_24": {
+        "Description": "OTC Med 8. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med8_ago": {
+        "Description": "OTC Med 8. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_9_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_9_rxnorm_p": {
+        "Description": "OTC Med 9. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication9": {
+        "Description": "OTC Med 9. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med9_otc_dk": {
+        "Description": "OTC Med 9. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication9": {
+        "Description": "OTC Med 9. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med9_xr": {
+        "Description": "OTC Med 9. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med9": {
+        "Description": "OTC Med 9. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med9_24": {
+        "Description": "OTC Med 9. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med9_ago": {
+        "Description": "OTC Med 9. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_10_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_10_rxnorm_p": {
+        "Description": "OTC Med 10. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication10": {
+        "Description": "OTC Med 10. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med10_otc_dk": {
+        "Description": "OTC Med 10. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication10": {
+        "Description": "OTC Med 10. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med10_xr": {
+        "Description": "OTC Med 10. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med10": {
+        "Description": "OTC Med 10. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med10_24": {
+        "Description": "OTC Med 10. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med10_ago": {
+        "Description": "OTC Med 10. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_11_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_11_rxnorm_p": {
+        "Description": "OTC Med 11. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication11": {
+        "Description": "OTC Med 11. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med11_otc_dk": {
+        "Description": "OTC Med 11. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication11": {
+        "Description": "OTC Med 11. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med11_xr": {
+        "Description": "OTC Med 11. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med11": {
+        "Description": "OTC Med 11. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med11_24": {
+        "Description": "OTC Med 11. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med11_ago": {
+        "Description": "OTC Med 11. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_12_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_12_rxnorm_p": {
+        "Description": "OTC Med 12. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication12": {
+        "Description": "OTC Med 12. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med12_otc_dk": {
+        "Description": "OTC Med 12. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication12": {
+        "Description": "OTC Med 12. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med12_xr": {
+        "Description": "OTC Med 12. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med12": {
+        "Description": "OTC Med 12. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med12_24": {
+        "Description": "OTC Med 12. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med12_ago": {
+        "Description": "OTC Med 12. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_13_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_13_rxnorm_p": {
+        "Description": "OTC Med 13. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication13": {
+        "Description": "OTC Med 13. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med13_otc_dk": {
+        "Description": "OTC Med 13. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication13": {
+        "Description": "OTC Med 13. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med13_xr": {
+        "Description": "OTC Med 13. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med13": {
+        "Description": "OTC Med 13. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med13_24": {
+        "Description": "OTC Med 13. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med13_ago": {
+        "Description": "OTC Med 13. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_14_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_14_rxnorm_p": {
+        "Description": "OTC Med 14. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication14": {
+        "Description": "OTC Med 14. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med14_otc_dk": {
+        "Description": "OTC Med 14. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication14": {
+        "Description": "OTC Med 14. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med14_xr": {
+        "Description": "OTC Med 14. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med14": {
+        "Description": "OTC Med 14. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med14_24": {
+        "Description": "OTC Med 14. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med14_ago": {
+        "Description": "OTC Med 14. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24) / en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "otc_med_15_yn": {
+        "Description": "Does your child take any other over-the-counter medications? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "med_otc_15_rxnorm_p": {
+        "Description": "OTC Med 15. Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00c3\u00b3n que m\u00c3\u00a1s se aproxime a la medicaci\u00c3\u00b3n tomada por su ni\u00c3\u00b1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "strength_otc_medication15": {
+        "Description": "OTC Med 15. Strength dose (Enter the decimal as one of the digits): Potencia (Anote el n\u00famero\r\ncon un decimal) | For example 7.5, if you don't know the dose please choose \"don't know\" in what follows below Ejemplo 7.5, si no sabe la dosis, por favor escoja \"no se\" en lo que sigue abajo.",
+        "DataType": "Float"
+    },
+    "med15_otc_dk": {
+        "Description": "OTC Med 15. Strength dose. Don't know /No lo s\u00e9 | 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "999"
+    },
+    "units_otc_medication15": {
+        "Description": "OTC Med 15. Strength unit / Unidad | 1 = capsule (cap.; 12 = tablet (tab.); 11 = tablespoon (tbsp; 13 = teaspoon (tsp; 2 = drop (gtt); 3 = gram (g); 15 = milligram (mg); 16 = megagram (MGG); 4 = kilogram (kg); 5 = liter (L); 6 = microgram (msg); 7 = mililiter (mL); 8 = ounce (oz); 9 = pound (lb); 10 = quart (qt); 14 = OTHER",
+        "DataType": "Integer",
+        "ValueRange": "1::17",
+        "Levels": {
+            "1": "capsule (cap.",
+            "12": "tablet (tab.)",
+            "11": "tablespoon (tbsp",
+            "13": "teaspoon (tsp",
+            "2": "drop (gtt)",
+            "3": "gram (g)",
+            "15": "milligram (mg)",
+            "16": "megagram (MGG)",
+            "4": "kilogram (kg)",
+            "5": "liter (L)",
+            "6": "microgram (msg)",
+            "7": "mililiter (mL)",
+            "8": "ounce (oz)",
+            "9": "pound (lb)",
+            "10": "quart (qt)",
+            "14": "OTHER"
+        }
+    },
+    "otc_med15_xr": {
+        "Description": "OTC Med 15. Is the medication extended-release (XR)? /\u00bfEs un medicamento de liberaci\u00f3n prolongada? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "number_rx_otc_med15": {
+        "Description": "OTC Med 15. On average during the last two weeks, how many of these pills (or other medication items) did your child take per day?/En promedio durante las \u00faltimas dos semanas? /\u00bfcu\u00e1ntas de estas p\u00edldoras (u otros medicamentos) tom\u00f3 su hijo por d\u00eda? | RA: If participant took less than 1 pill per day, then input the decimal value representing daily use. For example, if someone took 1 pill in a week, enter 0.14 (i.e., 1 divided by 7 days).  If s/he took 1 pill in two weeks, enter 0.07 (i.e., 1 divided by 14 days). If s/he took less than 1 pill every two weeks, then enter 0.",
+        "DataType": "Float"
+    },
+    "otc_med15_24": {
+        "Description": "OTC Med 15. Did your child take this medication in the last 24 hours?? /\u00bfTom\u00f3 su ni\u00f1o(a) este medicamento en las \u00faltimas 24 horas? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "otc_med15_ago": {
+        "Description": "OTC Med 15. How long ago did h/she take the medication? ? /\u00bfHace cu\u00e1nto tiempo que \u00e9l/ella toma este medicamento? | (in hours; 30 mins=0.5, max hours = 24)  en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float"
+    },
+    "caff_24": {
+        "Description": "Has your child consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso or green tea, black tea, or sweet tea) in the last 24 hours? | 1 = Yes /S\u00ed; 0 = No /No; 999 = I don\u2019t know/ No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "999": "I don\u2019t know/ No lo s\u00e9"
+        }
+    },
+    "caff_ago": {
+        "Description": "How long ago did your child last consume a caffeinated beverage? | (in hours; 30 mins=0.5)(in hours; 30 mins=0.5, max hours = 24)  /en horas; 30 minutos=0.5, horas m\u00e1ximas=24)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5)(in hours"
+        }
+    },
+    "curr_time": {
+        "Description": "What is the current time/date? /\u00bfCu\u00e1l es la fecha y hora actual?",
+        "DataType": "String"
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "rx_med_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "cbd_usage_type__6": {
+        "Description": "During the past year, what type of CBD product did h/she use (choose all that apply)  En el ?ltimo a?o, /Qu? tipo de producto de CBD uso su hija/o? (elija todas las que correspondan)  999, Don't know | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "cbd_usage_type___5": {
+        "Description": "During the past year, what type of CBD product did they use (choose all that apply) : 5, Topical lotion or transdermal patch  | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "cbd_usage_type___999": {
+        "Description": "During the past year, what type of CBD product did they use (choose all that apply) : 999, Don't know | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "med_otc_1_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_1_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_1_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_1_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM ([brought_medications_1yr_p] = '1' or [brought_medications_1yr_p] = '2') and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_10_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_10_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_10_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_10_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_10_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_11_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_11_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_11_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_11_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_11_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_12_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_12_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_12_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_12_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_12_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_13_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_13_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_13_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_13_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_13_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_14_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_14_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_14_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_14_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_14_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_15_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_15_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_15_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_15_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_15_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_2_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_2_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_2_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_2_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_2_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_3_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_3_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_3_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_3_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_3_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "brought_medications_1yr_p": {
+        "Description": "Did your child take any medications in the <u><font color= purple>past year</u></font> </span> | 1=Yes ;0=Took No Medications ;777=Refused - Record reason for refusal in Comments Section  ;2=Yes, but unable to verify medications with parent within 30 days of assent date",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "Took No Medications",
+            "777": "Refused - Record reason for refusal in Comments Section",
+            "2": "Yes, but unable to verify medications with parent within 30 days of assent date"
+        }
+    },
+    "med_otc_4_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_4_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_4_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_4_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_4_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_5_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_5_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_5_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_5_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_5_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_6_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_6_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_6_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_6_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_6_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_7_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_7_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_7_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_7_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_7_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med_otc_8_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_8_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_8_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_8_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_8_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "cbd_permission": {
+        "Description": "Has your son/daughter used any CBD (or cannabidiol) products with your or your doctor's permission, such as Epidiolex or other over the counter CBD product, in the past year?  Su hija/hijo ha usado alg?n producto de CBD (cannabidiol) con su permiso o el permiso de su doctor, tales como Epidiolex u otro producto de venta libre de CBD en el ?ltimo a?o? | 1 = Yes /Si; 0 = No /No; 999 = I don?t know/ No lo s?",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0; 999",
+        "Levels": {
+            "1": "Yes /Si",
+            "0": "No /No",
+            "999": "I don?t know/ No lo s?"
+        }
+    },
+    "med_otc_9_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med_otc_9_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med_otc_9_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med_otc_9_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [otc_med_9_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med1_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med1_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med1_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med1_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM ([brought_medications_1yr_p] = '1' or [brought_medications_1yr_p] = '2')",
+        "DataType": "String"
+    },
+    "med10_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med10_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med10_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med10_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_10_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med11_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med11_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med11_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med11_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_11_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med12_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med12_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med12_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med12_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_12_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "cbd_usage_time": {
+        "Description": "During the past year, how often did h/she use CBD products?  En el ?ltimo a?o, /Qu? tan seguido su hija/o uso productos de CBD?  | 1=Every day or nearly daily / Todos los d?as o casi diariamente; 2= A few times a week / Unas cuantas veces por semana; 3=3-4 times a month/ 3-4 veces al mes; 4=12-24 times a year/ 12-24 veces al a?o; 5=1-11 times a year/1-11 veces al a?o; 999=Don't know / No se ",
+        "DataType": "Integer",
+        "ValueRange": "1::5;999",
+        "Levels": {
+            "1": "Every day or nearly daily / Todos los d?as o casi diariamente",
+            "2": "A few times a week / Unas cuantas veces por semana",
+            "3": "3-4 times a month/ 3-4 veces al mes",
+            "4": "12-24 times a year/ 12-24 veces al a?o",
+            "5": "1-11 times a year/1-11 veces al a?o",
+            "999": "Don't know / No se"
+        }
+    },
+    "med13_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med13_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med13_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med13_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_13_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med14_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med14_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med14_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med14_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_14_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med15_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med15_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med15_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med15_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_15_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med2_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med2_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med2_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med2_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_2_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med3_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med3_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med3_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med3_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_3_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "cbd_usage_type___1": {
+        "Description": "During the past year, what type of CBD product did they use (choose all that apply) :1, Epidiolex  | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "med4_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med4_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med4_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med4_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_4_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med5_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med5_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med5_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med5_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_5_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med6_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med6_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med6_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med6_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_6_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med7_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med7_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med7_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med7_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_7_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med8_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_8_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "med8_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med8_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med8_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "cbd_usage_type___2": {
+        "Description": "During the past year, what type of CBD product did they use (choose all that apply) : 2, Oil or tincture by mouth | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "med9_2wk_p": {
+        "Description": "Has your child taken this medication in the last two weeks? | 0 = No; 1 = Yes [med9_rxnorm_1yr_p] <> ''''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes [med9_rxnorm_1yr_p] <> ''''"
+        }
+    },
+    "med9_rxnorm_1yr_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage) | BIOPORTAL:RXNORM [prescribe_med_9_yn] = '1' and [event_name_number] > '30'",
+        "DataType": "String"
+    },
+    "cbd_usage_type___3": {
+        "Description": "During the past year, what type of CBD product did they use (choose all that apply) : 3, Inhaled or smoked product  | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "cbd_usage_type___4": {
+        "Description": "During the past year, what type of CBD product did they use (choose all that apply) : 4, Edible, capsule, or pill  | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    }
+}

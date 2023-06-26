@@ -1,0 +1,610 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "kbi_y_grade_repeat": {
+        "Description": "Have you ever repeated a grade? |  1 = Yes; 0 = No ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 0 ; 1 ; 777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_y_drop_in_grades": {
+        "Description": "Has there been a drop in your grades in the past year? |  1 = Yes; 0 = No ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 0 ; 1 ; 777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_y_det_susp": {
+        "Description": "In the past year, have you had any detentions or suspensions? |  1 = Yes; 0 = No ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 0 ; 1 ; 777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_y_det_reason___1": {
+        "Description": "For what? Click all that apply: (1, Fighting) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___2": {
+        "Description": "For what? Click all that apply: ( 2, Talking Back to a Teacher) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___3": {
+        "Description": "For what? Click all that apply: ( 3, Threatening a Teacher) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___4": {
+        "Description": "For what? Click all that apply: ( 4, Cutting Classes) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___5": {
+        "Description": "For what? Click all that apply: ( 5, Using Drugs at School) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___6": {
+        "Description": "For what? Click all that apply: ( 6, Drinking at School) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___7": {
+        "Description": "For what? Click all that apply: ( 7, Bringing a Weapon to School) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason___8": {
+        "Description": "For what? Click all that apply: ( 8, Other (fill in blank)) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_sex_orient": {
+        "Description": "Are you gay or bisexual? |  1 = Yes; 2 = Maybe; 3 = No; 4 = I do not understand this question ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 1 ; 2 ; 3 ; 4; 777",
+        "Levels": {
+            "1": "Yes",
+            "2": "Maybe",
+            "3": "No",
+            "4": "I do not understand this question",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_y_sex_orient_probs": {
+        "Description": "Has this caused any problems for you with your family or with kids at school? |  1 = Not at all; 2 = Some; 3 = A lot ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 1 ; 2 ; 3; 777",
+        "Levels": {
+            "1": "Not at all",
+            "2": "Some",
+            "3": "A lot",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_y_trans_id": {
+        "Description": "Are you transgender? |  1 = Yes; 2 = Maybe; 3 = No; 4 = I do not understand this question ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 1 ; 2 ; 3 ; 4; 777",
+        "Levels": {
+            "1": "Yes",
+            "2": "Maybe",
+            "3": "No",
+            "4": "I do not understand this question",
+            "777": "Decline to answer"
+        }
+    },
+    "kbi_y_trans_prob": {
+        "Description": "Has this caused any problems for you with your family or with kids at school? |  1 = Not at all; 2 = Some; 3 = A lot ;  777 = Decline to answer ",
+        "DataType": "Integer",
+        "ValueRange": " 1 ; 2 ; 3; 777",
+        "Levels": {
+            "1": "Not at all",
+            "2": "Some",
+            "3": "A lot",
+            "777": "Decline to answer"
+        }
+    },
+    "ksads_bully_raw_26": {
+        "Description": "Do you have any problems with bullying at school or in your neighborhood? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "kbi_y_det_reason___777": {
+        "Description": "For what? Click all that apply: ( 777 Decline to answer) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___2": {
+        "Description": "For what? Click all that apply: 2, 2, Talking Back to a Teacher  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___3": {
+        "Description": "For what? Click all that apply: 3, 3, Threatening a Teacher  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___4": {
+        "Description": "For what? Click all that apply: 4, 4, Cutting Classes  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___5": {
+        "Description": "For what? Click all that apply: 5, 5, Using Drugs at School  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___6": {
+        "Description": "For what? Click all that apply: 6, 6, Drinking at School  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___7": {
+        "Description": "For what? Click all that apply: 7, 7, Bringing a Weapon to School  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___8": {
+        "Description": "For what? Click all that apply: 8, 8, Dress code violation  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___9": {
+        "Description": "For what? Click all that apply: 9, 9, Stealing  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___10": {
+        "Description": "For what? Click all that apply: 10, 10, Throwing things,  breaking things, or vandalism  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___11": {
+        "Description": "For what? Click all that apply: 11, 11, Whole class got a suspension  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___12": {
+        "Description": "For what? Click all that apply: 12, 12, Smoking, vaping or cell use  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___13": {
+        "Description": "For what? Click all that apply: 13, 13, ''Bullying'' or threatening a student  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___14": {
+        "Description": "For what? Click all that apply: 14, 14, Physically hurting someone, intentionally or accidentally (but not as part of a fight, choose item #1 for a fight)  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___15": {
+        "Description": "For what? Click all that apply: 15, 15, Using bad language or saying mean or hurtful things  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___16": {
+        "Description": "For what? Click all that apply: 16, 16, Bringing something to school that is not allowed (other than a weapon, alcohol, or drugs, choose options # 5 for these)  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___17": {
+        "Description": "For what? Click all that apply: 17, 17, Being disruptive (e.g., talking or arguing in class, making noises, not following instructions, passing notes, standing on school bus, running in hallway, playing in class or in the bathroom)  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___18": {
+        "Description": "For what? Click all that apply: 18, 18, Not doing or not handing in homework  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___19": {
+        "Description": "For what? Click all that apply: 19, 19, Being late for class or school  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___20": {
+        "Description": "For what? Click all that apply: 20, 20, Other  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_y_det_reason_new___21": {
+        "Description": "For what? Click all that apply: 777, 21, Refuse to answer | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_remote___1": {
+        "Description": "Remote method of  KSADS Background Items & KSADS-5 administration [Check all that apply]:  1, Audio (i.e. phone call)  | 1 = Yes; 0 = No [sched_delay] = '9' or [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "kbi_desc_self": {
+        "Description": "Would you describe yourself as: | 1=Heterosexual (straight) ; 2=Other ; 3=Unsure ; 777=Decline to answer  ([kbi_y_sex_orient] = '3' AND [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::3;777",
+        "Levels": {
+            "1": "Heterosexual (straight)",
+            "2": "Other",
+            "3": "Unsure",
+            "777": "Decline to answer  ("
+        }
+    },
+    "kbi_desc_self_2": {
+        "Description": "Would you describe yourself as: | 1=Gay or lesbian ; 2=Bisexual ; 3=Other ; 4=Unsure ; 777=Decline to answer  ([kbi_y_sex_orient] = '1' AND [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Gay or lesbian",
+            "2": "Bisexual",
+            "3": "Other",
+            "4": "Unsure",
+            "777": "Decline to answer  ("
+        }
+    },
+    "kbi_desc_self_3": {
+        "Description": "Would you describe yourself as: | 1=Gay or lesbian ; 2=Bisexual ; 3=Heterosexual (straight) ; 4=Other ; 5=Unsure ; 777=Decline to answer  ([kbi_y_sex_orient] = '2' AND [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1::5;777",
+        "Levels": {
+            "1": "Gay or lesbian",
+            "2": "Bisexual",
+            "3": "Heterosexual (straight)",
+            "4": "Other",
+            "5": "Unsure",
+            "777": "Decline to answer  ("
+        }
+    },
+    "kbi_grades_repeated___1": {
+        "Description": " Please indicate what grades you repeated in the past: 1, 1st  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___2": {
+        "Description": " Please indicate what grades you repeated in the past:  2, 2nd  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___3": {
+        "Description": " Please indicate what grades you repeated in the past: 3, 3rd  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___4": {
+        "Description": " Please indicate what grades you repeated in the past: 4, 4th  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___5": {
+        "Description": " Please indicate what grades you repeated in the past:  5, 5th  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___6": {
+        "Description": " Please indicate what grades you repeated in the past:  6, 6th  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___7": {
+        "Description": " Please indicate what grades you repeated in the past:  7, 7th  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_remote___2": {
+        "Description": "Remote method of  KSADS Background Items & KSADS-5 administration [Check all that apply]:   2, Video/Webcam  | 1 = Yes; 0 = No [sched_delay] = '9' or [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "kbi_grades_repeated___8": {
+        "Description": " Please indicate what grades you repeated in the past:  8, 8th  | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_grades_repeated___777": {
+        "Description": " Please indicate what grades you repeated in the past:  777, Refuse to answer | 0=No ; 1=Yes  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_repeat_grade_before_pst_yr": {
+        "Description": "Have you repeated a grade before the past year? | 1=Yes ; 0=No ; 777=Refuse to answer  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "1;0;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refuse to answer"
+        }
+    },
+    "kbi_repeat_grade_pst_yr": {
+        "Description": "Have you repeated a grade in the past year? | 1=Yes ; 0=No ; 777=Refuse to answer  [kbi_y_grade_repeat] = '1' and [event-name] = ''3_year_follow_up_y_arm_1''",
+        "DataType": "Integer",
+        "ValueRange": "1;0;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refuse to answer"
+        }
+    },
+    "kbi_sex_assigned_at_birth": {
+        "Description": "What was your sex assigned at birth | 1=Male ; 2=Female ; 999=Don't know ; 777=Refuse to answer  [event_name_number] > '21'",
+        "DataType": "Integer",
+        "ValueRange": "1;2;999;777",
+        "Levels": {
+            "1": "Male",
+            "2": "Female",
+            "999": "Don't know",
+            "777": "Refuse to answer  [event_name_number] > '21'"
+        }
+    },
+    "kbi_remote___3": {
+        "Description": "Remote method of  KSADS Background Items & KSADS-5 administration [Check all that apply]:  3, Screen Sharing  | 1 = Yes; 0 = No [sched_delay] = '9' or [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "kbi_remote___4": {
+        "Description": "Remote method of  KSADS Background Items & KSADS-5 administration [Check all that apply]:  4, In person (ONLY if issues arise and hybrid) | 1 = Yes; 0 = No [sched_delay] = '9' or [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "kbi_device": {
+        "Description": "Youth's Device: | 1=Phone Screen ; 2=Tablet/iPad Screen ; 3=Computer Screen [kbi_remote(2)] = ''1'' or [kbi_remote(3)] = ''1''",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "Phone Screen",
+            "2": "Tablet/iPad Screen",
+            "3": "Computer Screen"
+        }
+    },
+    "kbi_gender": {
+        "Description": "What is your current gender identity? | 1=Boy ; 2=Girl ; 3=Another gender (e.g. nonbinary) ; 999=I don't understand the question ; 777=Refuse to answer ",
+        "DataType": "Integer",
+        "ValueRange": "1::3;777;999",
+        "Levels": {
+            "1": "Boy",
+            "2": "Girl",
+            "3": "Another gender (e.g. nonbinary)",
+            "999": "I don't understand the question",
+            "777": "Refuse to answer"
+        }
+    },
+    "kbi_y_det_reason_new___1": {
+        "Description": "For what? Click all that apply:1, 1, Fighting  | 0=No ; 1=Yes [kbi_y_det_susp] = '1' and [event_name_number] > '30'",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "kbi_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered ; 2=Youth Self-Administered ; 3=Combination [sched_delay] = '7' and ([event-name] = 2_year_follow_up_y_arm_1'' or [event-name] = ''3_year_follow_up_y_arm_1'')''",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination"
+        }
+    }
+}

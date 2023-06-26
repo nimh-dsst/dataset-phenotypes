@@ -1,0 +1,439 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ple_y_ss_total_number": {
+        "Description": "Total Number of Events\r: Validation: No Minimum | Calculation: sum([ple_died_y], [ple_injured_y], [ple_crime_y], [ple_friend_y], [ple_friend_injur_y], [ple_financial_y], [ple_sud_y], [ple_ill_y], [ple_injur_y], [ple_argue_y], [ple_job_y], [ple_away_y], [ple_arrest_y], [ple_friend_died_y], [ple_mh_y], [ple_sib_y], [ple_victim_y], [ple_separ_y], [ple_law_y], [ple_school_y], [ple_move_y], [ple_jail_y], [ple_step_fu_y], [ple_new_job_y], [ple_new_sib_y])",
+        "DataType": "Float"
+    },
+    "ple_y_ss_total_number_nm": {
+        "Description": "Total Number of Events\r: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_total_number_nt": {
+        "Description": "Total Number of Events\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_total_good": {
+        "Description": "Total Number of Good Events\r: Validation: No Minimum | Calculation: if([ple_died_fu_y] = '1',1,0) plus    if([ple_injured_fu_y] = '1',1,0) plus if([ple_crime_fu_y]= '1',1,0) plus   if([ple_friend_fu_y]= '1',1,0) plus   if([ple_friend_injur_fu_y]= '1',1,0) plus   if([ple_financial_fu_y]= '1',1,0) plus   if([ple_sud_fu_y]= '1',1,0) plus  if([ple_ill_fu_y]= '1',1,0) plus   if([ple_injur_fu_y]= '1',1,0) plus   if([ple_argue_fu_y]= '1',1,0) plus    if([ple_job_fu_y]= '1',1,0) plus   if([ple_away_fu_y]= '1',1,0) plus  if([ple_arrest_fu_y]= '1',1,0) plus   if([ple_friend_died_fu_y]= '1',1,0) plus   if([ple_mh_fu_y]= '1',1,0) plus    if([ple_sib_fu_y]= '1',1,0) plus   if([ple_victim_fu_y]= '1',1,0) plus   if([ple_separ_fu_y]= '1',1,0) plus    if([ple_law_fu_y]= '1',1,0) plus   if([ple_school_fu_y]= '1',1,0) plus   if([ple_move_fu_y]= '1',1,0) plus    if([ple_jail_fu_y]= '1',1,0) plus   if([ple_step_fu_y]= '1',1,0) plus   if([ple_new_job_fu_y]= '1',1,0) plus   if([ple_new_sib_fu_y] = '1',1,0)",
+        "DataType": "Float"
+    },
+    "ple_y_ss_total_good_nt": {
+        "Description": "Total Number of Good Events\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_total_bad": {
+        "Description": "Total Number of Bad Events\r: Validation: No Minimum | Calculation: if([ple_died_fu_y] = '2',1,0) plus    if([ple_injured_fu_y] = '2',1,0) plus if([ple_crime_fu_y]= '2',1,0) plus    if([ple_friend_fu_y]= '2',1,0) plus   if([ple_friend_injur_fu_y]= '2',1,0) plus   if([ple_financial_fu_y]= '2',1,0) plus   if([ple_sud_fu_y]= '2',1,0) plus   if([ple_ill_fu_y]= '2',1,0) plus   if([ple_injur_fu_y]= '2',1,0) plus    if([ple_argue_fu_y]= '2',1,0) plus    if([ple_job_fu_y]= '2',1,0) plus   if([ple_away_fu_y] = '2',1,0) plus  if([ple_arrest_fu_y]= '2',1,0) plus   if([ple_friend_died_fu_y]= '2',1,0) plus   if([ple_mh_fu_y]= '2',1,0) plus    if([ple_sib_fu_y]= '2',1,0) plus    if([ple_victim_fu_y]= '2',1,0) plus    if([ple_separ_fu_y]= '2',1,0) plus    if([ple_law_fu_y]= '2',1,0) plus   if([ple_school_fu_y]= '2',1,0) plus   if([ple_move_fu_y]= '2',1,0) plus     if([ple_jail_fu_y]= '2',1,0) plus    if([ple_step_fu_y]= '2',1,0) plus    if([ple_new_job_fu_y]= '2',1,0) plus   if([ple_new_sib_fu_y] = '2',1,0)",
+        "DataType": "Float"
+    },
+    "ple_y_ss_total_bad_nt": {
+        "Description": "Total Number of Bad Events\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_affect_sum": {
+        "Description": "How Much Affected - Sum\r: Validation: No Minimum | Calculation: sum([ple_died_fu2_y], [ple_injured_fu2_y], [ple_crime_fu2_y], [ple_friend_fu2_y], [ple_friend_injur_fu2_y], [ple_financial_fu2_y], [ple_sud_fu2_y], [ple_ill_fu2_y], [ple_injur_fu2_y], [ple_argue_fu2_y], [ple_job_fu2_y], [ple_away_fu2_y], [ple_arrest_fu2_y], [ple_friend_died_fu2_y], [ple_mh_fu2_y], [ple_sib_fu2_y], [ple_victim_fu2_y], [ple_separ_fu2_y], [ple_law_fu2_y], [ple_school_fu2_y], [ple_move_fu2_y], [ple_jail_fu2_y], [ple_step_fu2_y], [ple_new_job_fu2_y], [ple_new_sib_fu2_y] )",
+        "DataType": "Float"
+    },
+    "ple_y_ss_affect_sum_nt": {
+        "Description": "How Much Affected - Sum\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_affected_mean_nt": {
+        "Description": "How Much Affected - Mean\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_affected_good_sum": {
+        "Description": "How Much Affected Good - Sum\r: Validation: No Minimum | Calculation: if([ple_died_fu_y] = '1',[ple_died_fu2_y],0) plus  if([ple_injured_fu_y] = '1',[ple_injured_fu2_y],0) plus if([ple_crime_fu_y]= '1',[ple_crime_fu2_y],0) plus  if([ple_friend_fu_y]= '1',[ple_friend_fu2_y],0) plus   if([ple_friend_injur_fu_y] = '1',[ple_friend_injur_fu2_y],0) plus   if([ple_financial_fu_y] = '1',[ple_financial_fu2_y],0) plus  if([ple_sud_fu_y]= '1',[ple_sud_fu2_y],0) plus  if([ple_ill_fu_y]= '1',[ple_ill_fu2_y],0) plus  if([ple_injur_fu_y]= '1',[ple_injur_fu2_y],0) plus   if([ple_argue_fu_y]= '1',[ple_argue_fu2_y],0) plus   if([ple_job_fu_y]= '1',[ple_job_fu2_y],0) plus  if([ple_away_fu_y]= '1',[ple_away_fu2_y],0) plus  if([ple_arrest_fu_y]= '1',[ple_arrest_fu2_y],0) plus   if([ple_friend_died_fu_y]= '1',[ple_friend_died_fu2_y],0) plus   if([ple_mh_fu_y]= '1',[ple_mh_fu2_y],0) plus   if([ple_sib_fu_y]= '1',[ple_sib_fu2_y],0) plus if([ple_victim_fu_y]= '1',[ple_victim_fu2_y],0) plus if([ple_separ_fu_y]= '1',[ple_separ_fu2_y],0) plus if([ple_law_fu_y]= '1',[ple_law_fu2_y],0) plus if([ple_school_fu_y]= '1',[ple_school_fu2_y],0) plus if([ple_move_fu_y]= '1',[ple_move_fu2_y],0) plus if([ple_jail_fu_y]= '1',[ple_jail_fu2_y],0) plus if([ple_step_fu_y]= '1',[ple_step_fu2_y],0) plus if([ple_new_job_fu_y]= '1',[ple_new_job_fu2_y],0) plus if([ple_new_sib_fu_y] = '1',[ple_new_sib_fu2_y],0)",
+        "DataType": "Float"
+    },
+    "ple_y_ss_affected_good_sum_nt": {
+        "Description": "How Much Affected Good - Sum\r: Number Total",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_affected_good_mean": {
+        "Description": "How Much Affected Good - Mean\r: Validation: No Minimum | Calculation: [ple_y_ss_affected_good_sum] / [ple_y_ss_total_good]",
+        "DataType": "Float"
+    },
+    "ple_y_ss_affected_good_mean_nt": {
+        "Description": "How Much Affected Good - Mean\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_affected_bad_sum": {
+        "Description": "How Much Affected Bad - Sum\r: Validation: No Minimum | Calculation: if([ple_died_fu_y] = '2',[ple_died_fu2_y],0) plus   if([ple_injured_fu_y] = '2',[ple_injured_fu2_y],0) plus if([ple_crime_fu_y]= '2',[ple_crime_fu2_y],0) plus   if([ple_friend_fu_y]= '2',[ple_friend_fu2_y],0) plus   if([ple_friend_injur_fu_y] = '2',[ple_friend_injur_fu2_y],0) plus   if([ple_financial_fu_y]= '2',[ple_financial_fu2_y],0) plus  if([ple_sud_fu_y]= '2',[ple_sud_fu2_y],0) plus  if([ple_ill_fu_y]= '2',[ple_ill_fu2_y],0) plus  if([ple_injur_fu_y]= '2',[ple_injur_fu2_y],0) plus   if([ple_argue_fu_y]= '2',[ple_argue_fu2_y],0) plus   if([ple_job_fu_y]= '2',[ple_job_fu2_y],0) plus  if([ple_away_fu_y]= '2',[ple_away_fu2_y],0) plus  if([ple_arrest_fu_y]= '2',[ple_arrest_fu2_y],0) plus   if([ple_friend_died_fu_y]= '2',[ple_friend_died_fu2_y],0) plus if([ple_mh_fu_y]= '2',[ple_mh_fu2_y],0) plus if([ple_sib_fu_y]= '2',[ple_sib_fu2_y],0) plus if([ple_victim_fu_y]= '2',[ple_victim_fu2_y],0) plus if([ple_separ_fu_y]= '2',[ple_separ_fu2_y],0) plus if([ple_law_fu_y]= '2',[ple_law_fu2_y],0) plus   if([ple_school_fu_y]= '2',[ple_school_fu2_y],0) plus  if([ple_move_fu_y]= '2',[ple_move_fu2_y],0) plus if([ple_jail_fu_y]= '2',[ple_jail_fu2_y],0) plus if([ple_step_fu_y]= '2',[ple_step_fu2_y],0) plus if([ple_new_job_fu_y]= '2',[ple_new_job_fu2_y],0) plus if([ple_new_sib_fu_y] = '2',[ple_new_sib_fu2_y],0)",
+        "DataType": "Float"
+    },
+    "ple_y_ss_affected_bad_sum_nt": {
+        "Description": "How Much Affected Bad - Sum\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "ple_y_ss_affected_bad_mean": {
+        "Description": "How Much Affected Bad - Mean\r: Validation: No Minimum | Calculation: [ple_y_ss_affected_bad_sum] / [ple_y_ss_total_bad]",
+        "DataType": "Float"
+    },
+    "ple_y_ss_affected_bad_mean_nt": {
+        "Description": "How Much Affected Bad - Mean\r: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_number": {
+        "Description": "Prodromal Psychosis Scale: Number of Yes Responses Sum: prodromal_1_y, prodromal_2_y, prodromal_3_y, prodromal_4_y, prodromal_5_y, prodromal_6_y, prodromal_7_y, prodromal_8_y,  prodromal_9_y, prodromal_10_y, prodromal_11_y, prodromal_12_y, prodromal_13_y, prodromal_14_y, [prodromal_15_y,  prodromal_16_y, prodromal_17_y], prodromal_18_y, prodromal_19_y], prodromal_20_y], prodromal_21_y;  No minimum number of answers to be valid | Loewy, R. L.,  Pearson, R.,  et al. (2011)  Psychosis risk screening with the Prodromal Questionnaire--brief version (PQ-B).  Schizophr Res 129(1): 42-46.",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_number_nm": {
+        "Description": "Prodromal Psychosis Scale, Number of Yes Responses:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_number_nt": {
+        "Description": "Prodromal Psychosis Scale, Number of Yes Responses:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_bother_sum": {
+        "Description": "Prodromal Psychosis Scale, Number of Yes Responses to Did it Bother You?  Sum: pps_1_bother_yn, pps_2_bother_yn, pps_3_bother_yn, pps_4_bother_yn, pps_5_bother_yn, pps_6_bother_yn, pps_7_bother_yn, pps_8_bother_yn, pps_9_bother_yn, pps_10_bother_yn, pps_11_bother_yn, pps_12_bother_yn, pps_13_bother_yn, pps_14_bother_yn, pps_15_bother_yn, pps_16_bother_yn, pps_17_bother_yn, pps_18_bother_yn, pps_19_bother_yn, pps_20_bother_yn, pps_21_bother_yn; No minimum number of answers to be valid | Loewy, R. L.,  Pearson, R.,  et al. (2011)  Psychosis risk screening with the Prodromal Questionnaire--brief version (PQ-B).  Schizophr Res 129(1): 42-46.",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_bother_sum_nm": {
+        "Description": "Prodromal Psychosis Scale, Number of Yes Responses  to Did it Bother You?  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_bother_sum_nt": {
+        "Description": "Prodromal Psychosis Scale, Number of Yes Responses  to Did it Bother You?  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_bother_n_1": {
+        "Description": "Prodromal Psychosis Scale: Number of No Responses  to Did  it Bother You? Intermediate equation for Severity Score - Raw score of 0 (no) transformed to 1 (yes) and 1 (yes) transformed to 0 (no) sum(pps_1_bother_yn, pps_2_bother_yn, pps_3_bother_yn, pps_4_bother_yn, pps_5_bother_yn, pps_6_bother_yn, pps_7_bother_yn, pps_8_bother_yn, pps_9_bother_yn, pps_10_bother_yn, pps_11_bother_yn, pps_12_bother_yn, pps_13_bother_yn, pps_14_bother_yn, pps_15_bother_yn, pps_16_bother_yn, pps_17_bother_yn, pps_18_bother_yn, pps_19_bother_yn, pps_20_bother_yn, pps_21_bother_yn) No minimum number of answers to be valid",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_bother_n_1_nm": {
+        "Description": "Prodromal Psychosis Scale, Number of No Responses  to Did it Bother You?  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_bother_n_1_nt": {
+        "Description": "Prodromal Psychosis Scale, Number of No Responses  to Did it Bother You?  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_severity_score": {
+        "Description": "Prodromal Psychosis: Severity Score Sum: (prodromal_1b_y, prodromal_2b_y, prodromal_3b_y, prodromal_4b_y, prodromal_5b_y, prodromal_6b_y, prodromal_7b_y, prodromal_8b_y, prodromal_9b_y, prodromal_10b_y, prodromal_11b_y, prodromal_12b_y, prodromal_13b_y, prodromal_14b_y, [prodromal_15b_y, prodromal_16b_y, prodromal_17b_y, prodromal_18b_y, prodromal_19b_y, prodromal_20b_y, prodromal_21b_y) + (pps_y_ss_ bother_n_1), If  this score = \"\",  then score = pps_y_ss_number;  No minimum number of answers to be valid | Loewy, R. L.,  Pearson, R.,  et al. (2011)  Psychosis risk screening with the Prodromal Questionnaire--brief version (PQ-B).  Schizophr Res 129(1): 42-46.  In the Prodromal Psychosis survey, \"How much did it bother you?\"\u00a0is typically scored 2 - 6.  In the version used by ABCD, \u00a0this item was scored \u00a01 - 5.   Because the \"Did it bother you\" sum score is equal to the sum of the number of severity scores used in the severity score calculation, we were able to compensate for this scoring difference by adding the \"Did it bother you\" sum score to the severity score. \u00a0After applying this change, the severity scores reported here are comparable to those calculated using the \u00a0\"How much did it bother you\" \u00a02 - 6 \u00a0scoring range.",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_severity_score_nm": {
+        "Description": "Prodromal Psychosis, Severity Score:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pps_y_ss_severity_score_nt": {
+        "Description": "Prodromal Psychosis, Severity Score:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pps_ss_mean_severity": {
+        "Description": "Prodromal Psychosis: Mean Endorsed Severity Score\nPPS severity score/Number of yes response\npps_y_ss_severity_score / pps_y_ss_number",
+        "DataType": "Float"
+    },
+    "upps_y_ss_negative_urgency": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Negative Urgency: upps7_y + upps11_y + upps17_y +  upps20_y; Validation: Minimum of three items answered | Barch, D. M.,  Albaugh, M.D., et al. (2017)  Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. Dev Cogn Neurosci (In Press).",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_negative_urgency_nm": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Negative Urgency:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_negative_urgency_nt": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Negative Urgency:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_lack_of_planning": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version),  Lack of Planning: upps6_y + upps16_y + upps23_y + upps28_y; Validation: Minimum of three items answered | Barch, D. M.,  Albaugh, M.D., et al. (2017)  Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. Dev Cogn Neurosci (In Press).",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_lack_of_planning_nm": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Lack of Planning:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_lack_of_planning_nt": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Lack of Planning:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_sensation_seeking": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Sensation Seeking: upps12_y + upps18_y + upps21_y + upps27_y; Validation: Minimum of three items answered | Barch, D. M.,  Albaugh, M.D., et al. (2017)  Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. Dev Cogn Neurosci (In Press).",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_sensation_seeking_nm": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Sensation Seeking:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_sensation_seeking_nt": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Sensation Seeking:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_positive_urgency": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Positive Urgency: upps35_y + upps36_y + upps37_y + upps39_y; Validation: Minimum of three items answered | Barch, D. M.,  Albaugh, M.D., et al. (2017)  Demographic, physical and mental health assessments in the adolescent brain and cognitive development study: Rationale and description. Dev Cogn Neurosci (In Press).",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_positive_urgency_nm": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Positive Urgency:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_positive_urgency_nt": {
+        "Description": "UPPS-P for Children Short Form (ABCD-version), Positive Urgency:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_lack_of_perseverance": {
+        "Description": "UPPS: Lack of Perseverance (GSSF)\nupps15_y plus upps19_y plus upps22_y plus upps24_y\nValidation : Minimum of three items answered",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_lack_of_pers_nm": {
+        "Description": "UPPS: Lack of Perseverance (GSSF)\nNumber Missing Answers",
+        "DataType": "Integer"
+    },
+    "upps_y_ss_lack_of_pers_nt": {
+        "Description": "UPPS: Lack of Perseverance (GSSF)\nNumber Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bis_sum": {
+        "Description": "BIS/BAS: BIS Sum:  bisbas1_y + bisbas2_y + bisbas3_y + bisbas4_y + bisbas5_y + bisbas6_y+ bisbas7_y; Validation: All items must be answered | Carver, C. S. and  White, T. L. (1994) Behavioral inhibition, behavioral activation and affective responses to impending reward and punishment:  the BIS/BAS scales.  Journal of Personality and Social Psychology 67(2): 319-333.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bis_sum_nm": {
+        "Description": "BIS/BAS, BIS Sum: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bis_sum_nt": {
+        "Description": "BIS/BAS, BIS Sum: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_rr": {
+        "Description": "BIS/BAS: BAS Reward Responsiveness:  bisbas8_y +  bisbas9_y + bisbas10_y + bisbas11_y + bisbas12_y; Validation: All items must be answered | Carver, C. S. and  White, T. L. (1994) Behavioral inhibition, behavioral activation and affective responses to impending reward and punishment:  the BIS/BAS scales.  Journal of Personality and Social Psychology 67(2): 319-333.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_rr_nm": {
+        "Description": "BIS/BAS, BAS Reward Responsiveness:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_rr_nt": {
+        "Description": "BIS/BAS, BAS Reward Responsiveness:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_drive": {
+        "Description": "BIS/BAS: BAS drive:  bisbas13_y +  bisbas14_y + bisbas15_y + bisbas16_y; Validation: All items must be answered | Carver, C. S. and  White, T. L. (1994) Behavioral inhibition, behavioral activation and affective responses to impending reward and punishment:  the BIS/BAS scales.  Journal of Personality and Social Psychology 67(2): 319-333.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_drive_nm": {
+        "Description": "BIS/BAS, BAS drive:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_drive_nt": {
+        "Description": "BIS/BAS, BAS drive:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_fs": {
+        "Description": "BIS/BAS: BAS Fun Seeking: bisbas17_y + bisbas18_y + bisbas19_y + bisbas20_y; Validation: All items must be answered | Carver, C. S. and  White, T. L. (1994) Behavioral inhibition, behavioral activation and affective responses to impending reward and punishment:  the BIS/BAS scales.  Journal of Personality and Social Psychology 67(2): 319-333.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_fs_nm": {
+        "Description": "BIS/BAS, BAS Fun Seeking:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bas_fs_nt": {
+        "Description": "BIS/BAS, BAS Fun Seeking:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bism_sum": {
+        "Description": "BIS/BAS: BIS Sum (modified): bisbas2_y + bisbas3_y + bisbas4_y + bisbas6_y; Validation: All items must be answered | Pagliaccio, D., Luking, K. R., et al. (2016)  Revising the BIS/BAS Scale to study development: Measurement invariance and normative effects of age and sex from childhood through adulthood.  Psychol Assess 28(4): 429-442.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bism_sum_nm": {
+        "Description": "BIS/BAS, BIS Sum (modified):  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_bism_sum_nt": {
+        "Description": "BIS/BAS, BIS Sum (modified):  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_basm_rr": {
+        "Description": "BIS/BAS: BAS Reward Responsiveness (modified):  bisbas8_y + bisbas9_y + bisbas11_y + bisbas12_y; Validation: All items must be answered | Pagliaccio, D., Luking, K. R., et al. (2016)  Revising the BIS/BAS Scale to study development: Measurement invariance and normative effects of age and sex from childhood through adulthood.  Psychol Assess 28(4): 429-442.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_basm_rr_nm": {
+        "Description": "BIS/BAS, BAS Reward Responsiveness (modified):  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_basm_rr_nt": {
+        "Description": "BIS/BAS, BAS Reward Responsiveness (modified):  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_basm_drive": {
+        "Description": "BIS/BAS: BAS drive (modified): bisbas13_y + bisbas14_y + bisbas15_y + bisbas16_y; Validation: All items must be answered | Carver, C. S. and  White, T. L. (1994) Behavioral inhibition, behavioral activation and affective responses to impending reward and punishment:  the BIS/BAS scales.  Journal of Personality and Social Psychology 67(2): 319-333.",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_basm_drive_nm": {
+        "Description": "BIS/BAS, BAS drive (modified):  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "bis_y_ss_basm_drive_nt": {
+        "Description": "BIS/BAS, BAS drive (modified):  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "delq_y_ss_sum": {
+        "Description": "At 1 year followup: Sum of  Yes answers[delq_1_y] plus  [delq_2_y] plus [delq_3_y] plus [delq_4_y] plus [delq_5_y] plus [delq_6_y] plus [delq_7_y]  plus [delq_8_y]  plus [delq_9_y] plus [delq_10_y]  At 2 year followup through 2/18/20: After 2/18/20 [delq_7_y] will be added back and the 1 year sum score algorithm will be used. Sum of  Yes answers[delq_1_y] plus  [delq_2_y] plus [delq_3_y] plus [delq_4_y] plus [delq_5_y] plus [delq_6_y] plus [delq_8_y]  plus [delq_9_y] plus [delq_10_y]  Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "delq_y_ss_sum_nm": {
+        "Description": "Delinquency: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "delq_y_ss_sum_nt": {
+        "Description": "Delinquency: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sup_y_ss_sum": {
+        "Description": "7UP sum\r([sup_1_y]:[sup_7_y])\r; Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "sup_y_ss_sum_nm": {
+        "Description": "7UP sum: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sup_y_ss_sum_nt": {
+        "Description": "7UP sum : Number Total Questions",
+        "DataType": "Integer"
+    },
+    "gish_y_ss_m_sum": {
+        "Description": "Gish Male sum(gish_m1_y:gish_m4_y); Validation: All male items must be answered",
+        "DataType": "Integer"
+    },
+    "gish_y_ss_m_sum_nm": {
+        "Description": "GISH\r Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "gish_y_ss_m_sum_nt": {
+        "Description": "GISH Male Sum: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "gish_y_ss_f_sum": {
+        "Description": "GISH Female (gish_f_y:gish_f4_y); Validation: All female items must be answered",
+        "DataType": "Integer"
+    },
+    "gish_y_ss_f_sum_nm": {
+        "Description": "GISH Female Sum: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "gish_y_ss_f_sum_nt": {
+        "Description": "GISH female \nNumber Total Questions",
+        "DataType": "Float"
+    },
+    "peq_ss_relational_aggs_nm": {
+        "Description": "Peer Experiences: Relational Aggression Number Missing",
+        "DataType": "Integer"
+    },
+    "peq_ss_relational_aggs_nt": {
+        "Description": "Peer Experiences: Relational Aggression Total",
+        "DataType": "Integer"
+    },
+    "peq_ss_relational_victim": {
+        "Description": "Peer Experiences: Relational Victimization Summary Score; sum(peq_left_out_vic,peq_invite_vic, peq_exclude_vic); Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "peq_ss_relational_victim_nm": {
+        "Description": "Peer Experiences: Relational Victimization Number Missing",
+        "DataType": "Integer"
+    },
+    "peq_ss_relational_victim_nt": {
+        "Description": "Peer Experiences: Relational Victimization Number Total",
+        "DataType": "Integer"
+    },
+    "peq_ss_reputation_aggs": {
+        "Description": "Peer Experiences: Reputational Aggression Summary Score; sum(peq_rumor_perp, peq_gossip_perp, peq_loser_perp); Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "peq_ss_reputation_aggs_nm": {
+        "Description": "Peer Experiences: Reputational Aggression Number Missing",
+        "DataType": "Integer"
+    },
+    "peq_ss_reputation_aggs_nt": {
+        "Description": "Peer Experiences: Reputational Aggression Number Total",
+        "DataType": "Integer"
+    },
+    "peq_ss_reputation_victim": {
+        "Description": "Peer Experiences: Reputational Victimization Summary Score; sum(peq_rumor_vic, peq_gossip_vic, peq_loser_vic); Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "peq_ss_reputation_victim_nm": {
+        "Description": "Peer Experiences: Reputational Victimization Number Missing",
+        "DataType": "Integer"
+    },
+    "peq_ss_reputation_victim_nt": {
+        "Description": "Peer Experiences: Reputational Victimization Number Total",
+        "DataType": "Integer"
+    },
+    "peq_ss_overt_aggression": {
+        "Description": "Overt Aggression Summary Score; sum (peq_chase_perp, peq_threat_perp, peq_hit_perp); Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "peq_ss_overt_aggression_nm": {
+        "Description": "Peer Experiences: Overt Aggression Number Missing",
+        "DataType": "Integer"
+    },
+    "peq_ss_overt_aggression_nt": {
+        "Description": "Peer Experiences: Overt Aggression Number Total",
+        "DataType": "Integer"
+    },
+    "peq_ss_overt_victim": {
+        "Description": "Peer Experiences: Overt Victimization Summary Score; sum(peq_chase_vic, peq_threat_vic, peq_hit_vic); Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "peq_ss_overt_victim_nm": {
+        "Description": "Peer Experiences: Overt Victimization Number Missing",
+        "DataType": "Integer"
+    },
+    "peq_ss_overt_victim_nt": {
+        "Description": "Peer Experiences: Overt Victimization Number Total",
+        "DataType": "Integer"
+    },
+    "peq_ss_relational_aggs": {
+        "Description": "Peer Experiences: Relational Aggression Summary Score; sum(peq_left_out_perp, peq_invite_perp, peq_exclude_perp); Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "pstr_ss_pr": {
+        "Description": "prorate the  sum of the 10 questions",
+        "DataType": "Float"
+    },
+    "erq_ss_reappraisal_pr": {
+        "Description": "prorate the  sum of Qs 2,4,6",
+        "DataType": "Integer"
+    },
+    "erq_ss_suppress_pr": {
+        "Description": "prorate the  sum of Qs 1,3,5",
+        "DataType": "Integer"
+    }
+}

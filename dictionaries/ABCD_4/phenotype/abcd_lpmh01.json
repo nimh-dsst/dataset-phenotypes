@@ -1,0 +1,600 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "medhx_l_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "medhx_1a_l": {
+        "Description": "During the past year, has your child been to see a doctor, nurse, nurse practitioner, dentist, or any other health professional like that, OTHER than for regular checkups? En el \u00faltimo a\u00f1o, \u00bfsu ni\u00f1o(a) ha visto a un m\u00e9dico, enfermero(a), dentista o alg\u00fan otro profesional similar de la salud, por alg\u00fan motivo DISTINTO a sus chequeos peri\u00f3dicos? | 1 = Yes S\u00cd; 0 = No No; 6 = Don't know No s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No",
+            "6": "Don't know No s\u00e9"
+        }
+    },
+    "medhx_2a_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Asthma Asma | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2b_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Allergies Alergias | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2c_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Brain Injury Lesi\u00f3n Cerebral | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2d_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Bronchitis Bronquitus | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2e_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Cancer/Leukemia C\u00e1ncer/Leucimia | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2f_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Cerebral Palsy Par\u00e1lisis Cerebral | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2g_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Diabetes Diabetes | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2h_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Epilepsy or Seizures Epilepsia o convulsiones | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2i_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Hearing Problem Problema Auditivo | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2j_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Kidney Disease Enfermedad Renal | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2k_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Lead Poisoning Intoxicaci\u00f3n por Plomo | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2l_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Muscular Dystrophy Distrofia muscular | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2m_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Multiple Sclerosis Esclerosis m\u00faltiple | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2n_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Problems with Vision (including the need for glasses) Problemas de la vista (incluyendo la necesidad de lentes/gafas) | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2o_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Problems with Heart Problemas del coraz\u00f3n | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2p_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Sickle Cell Anemia Anemia de c\u00e9lulas falciformes | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2q_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Very Bad Headaches Dolores de cabeza muy intensos | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2r_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? An Operation Cirug\u00edas | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2_notes2_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Any Other Illness Cualquier otra enfermedad | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_4a_l": {
+        "Description": "Has your child been to an emergency room since we last saw you? | 1 = Yes S\u00ed; 0 = No No; 6 = Don't know No S\u00e9; 7 = Refuse to answer Niego contestar// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6 ; 7",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "6": "Don't know No S\u00e9",
+            "7": "Refuse to answer Niego contestar// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_4b_l": {
+        "Description": "How many times has your child been to the emergency room since we last saw you on [asnt_timestamp_c]? | 1 = 1 time 1 vez; 2 = 2 times 2 veces; 3 = 3-4 times 3-4 veces; 4 = 5-9 times 5-9 veces; 5 = 10+ times 10+ veces// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "1": "1 time 1 vez",
+            "2": "2 times 2 veces",
+            "3": "3-4 times 3-4 veces",
+            "4": "5-9 times 5-9 veces",
+            "5": "10+ times 10+ veces// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6a_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Broken Bones Fracturas | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6a_notes_l": {
+        "Description": "Broken Bones: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6b_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Sprains Esguinces | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6b_notes_l": {
+        "Description": "Sprains: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6c_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Cuts or Scrapes Cortadas o rasgu\u00f1os | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6c_times_l": {
+        "Description": "Cuts or Scrapes: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6d_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Stitches Suturas | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6d_notes_l": {
+        "Description": "Stitches: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6e_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Other Serious Wounds Otras heridas graves | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6e_times_l": {
+        "Description": "Other Serious Wounds: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6f_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Falls Ca\u00eddas | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6f_notes_l": {
+        "Description": "Falls: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6g_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Burns Quemaduras | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6g_times_l": {
+        "Description": "Burns: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6h_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? High Fever Fiebre alta | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6h_times_l": {
+        "Description": "High Fever: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6i_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Head Injury Lesi\u00f3n en la cabeza | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6i_times_l": {
+        "Description": "Head Injury: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6j_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Knocked Unconscious P\u00e9rdida del conocimiento | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6j_times_l": {
+        "Description": "Knocked Unconscious: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6k_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Bruises Moretones | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6k_times_l": {
+        "Description": "Bruises: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6l_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Asthma Attack Ataque de asma | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6l_notes_l": {
+        "Description": "Asthma Attack: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6m_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Broken Teeth Dientes rotos | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6m_times_l": {
+        "Description": "Broken Teeth: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6n_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Animal Bite Mordedura de animal | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6n_notes_l": {
+        "Description": "Animal Bite: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6o_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Overdose Sobredosis | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6o_notes_l": {
+        "Description": "Overdose: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6p_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Seizure Convulsi\u00f3n | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6p_notes_l": {
+        "Description": "Seizure: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6q_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Accidental Poisoning Envenenamiento accidental | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6q_notes_l": {
+        "Description": "Accidental Poisoning: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6r_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Gun Shot Wound Herida por arma de fuego | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6r_notes_l": {
+        "Description": "Gun Shot Wound: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6s_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Wound from knife or any other weapon Herida por cuchillo o cualquier otra arma | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6s_times_l": {
+        "Description": "Knife or Other Weapon Wound: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6t_l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Other Otro | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6t_times_l": {
+        "Description": "Other: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_8a_l": {
+        "Description": "Since we last saw you on [asnt_timestamp_c], has your child been in the hospital overnight or longer? | 1 = Yes S\u00ed; 0 = No No; 6 = Don't know No s\u00e9//Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "6": "Don't know No s\u00e9//Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_9a_l": {
+        "Description": "Since we last saw you on [asnt_timestamp_c],  has your child had general anesthesia or sedation for any surgery or procedure?  | 1 = Yes S\u00ed; 0 = No No; 6 = Don't know No s\u00e9//Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "6": "Don't know No s\u00e9//Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_9b_l": {
+        "Description": "General Anesthesia or Sedation: How many times? \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_9c_l": {
+        "Description": "At what age for the most recent time (years)? \u00bfA qu\u00e9 edad durante el tiempo m\u00e1s reciente? | Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Float",
+        "ValueRange": "7 :: 100"
+    },
+    "medhx_11_l": {
+        "Description": "Is your child able to see the difference between blue and green? | 1 = Yes S\u00ed; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No"
+        }
+    },
+    "medhx_12_l": {
+        "Description": "How about the difference between blue and yellow? \u00bfQu\u00e9 tal la diferencia entre el azul y el amarillo? | 1 = Yes S\u00ed; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No"
+        }
+    },
+    "medhx_2t_l": {
+        "Description": "Rare Medical Condition not on this list | 1=Yes; 0=No ([medhx_1a_l] = '1' or [medhx_1a_l] = '6') and ([event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "medhx_13_l": {
+        "Description": "Has your child ever received the HPV (human papillomavirus) vaccine? (This is a vaccination sometimes given at ages 11-12.) | 1=Yes ; 0=No ; 999=Not sure ; 777=Decline to answer",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Not sure",
+            "777": "Decline to answer"
+        }
+    }
+}

@@ -1,0 +1,1474 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "pain_last_month": {
+        "Description": "Over the past month, have you had any aches or pains in your body? | 1=Yes;  0=No;  777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1;0;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refused to answer"
+        }
+    },
+    "painscale": {
+        "Description": "Over the past month, how much did it hurt on AVERAGE (0 = not at all, 10 = the worst)? | 0=0;  1=1;  2=2;  3=3;  4=4;  5=5;  6=6;  7=7;  8=8;  9=9;  10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "pain_scale_worst": {
+        "Description": "Over the past month, how much did it hurt when it was the WORST 0 = not at all, 10 = the worst)? | 0=0;  1=1;  2=2;  3=3;  4=4;  5=5;  6=6;  7=7;  8=8;  9=9;  10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "pain_how_long": {
+        "Description": "How long do your aches or pains usually last? | 1=Less than 1 hour;  2=A few hours;  3=Half of the day;  4=All day",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "Less than 1 hour",
+            "2": "A few hours",
+            "3": "Half of the day",
+            "4": "All day"
+        }
+    },
+    "pain_limit": {
+        "Description": "Over the past month, how much did the pain stop you from doing your normal activities (0 = not at all, 10 = stop me from doing anything)? | 0=0;  1=1;  2=2;  3=3;  4=4;  5=5;  6=6;  7=7;  8=8;  9=9;  10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "pain_bodymap_male___f99": {
+        "Description": "Mouth | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f01": {
+        "Description": "Cranium (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f02": {
+        "Description": "Cranium (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f03": {
+        "Description": "Face (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f04": {
+        "Description": "Face (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f05": {
+        "Description": "Neck (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f06": {
+        "Description": "Neck (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f07": {
+        "Description": "Shoulder (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f08": {
+        "Description": "Chest (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f09": {
+        "Description": "Chest (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f10": {
+        "Description": "Shoulder (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f11": {
+        "Description": "Bicep (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f12": {
+        "Description": "Bicep (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f13": {
+        "Description": "Elbow (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f14": {
+        "Description": "Elbow (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f15": {
+        "Description": "Forearm (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f16": {
+        "Description": "Abdomen (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f17": {
+        "Description": "Abdomen (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f18": {
+        "Description": "Forearm (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f19": {
+        "Description": "Wrist (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f20": {
+        "Description": "Hip (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f21": {
+        "Description": "Pubic (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f22": {
+        "Description": "Pubic (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f23": {
+        "Description": "Hip (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f24": {
+        "Description": "Wrist (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f25": {
+        "Description": "Hand (palm-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f26": {
+        "Description": "Upper Leg (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f27": {
+        "Description": "Upper Leg (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f28": {
+        "Description": "Hand (palm-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f29": {
+        "Description": "Knee (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f30": {
+        "Description": "Knee (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f31": {
+        "Description": "Lower Leg (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f32": {
+        "Description": "Lower Leg (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f33": {
+        "Description": "Ankle (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f34": {
+        "Description": "Ankle (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f35": {
+        "Description": "Foot (top-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___f36": {
+        "Description": "Foot (top-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b01": {
+        "Description": "Cranium (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b02": {
+        "Description": "Cranium (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b03": {
+        "Description": "Head (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b04": {
+        "Description": "Head (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b05": {
+        "Description": "Neck (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b06": {
+        "Description": "Neck (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b07": {
+        "Description": "Shoulder (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b08": {
+        "Description": "Upper Back (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b09": {
+        "Description": "Upper Back (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b10": {
+        "Description": "Shoulder (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b11": {
+        "Description": "Bicep (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b12": {
+        "Description": "Middle Back (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b13": {
+        "Description": "Middle Back (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b14": {
+        "Description": "Bicep (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b15": {
+        "Description": "Elbow (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b16": {
+        "Description": "Elbow (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b17": {
+        "Description": "Forearm (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b18": {
+        "Description": "Lower Back (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b19": {
+        "Description": "Lower Back (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b20": {
+        "Description": "Forearm (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b21": {
+        "Description": "Wrist (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b22": {
+        "Description": "Hip (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b23": {
+        "Description": "Buttocks (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b24": {
+        "Description": "Buttocks (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b25": {
+        "Description": "Hip (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b26": {
+        "Description": "Wrist (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b27": {
+        "Description": "Hand (top-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b28": {
+        "Description": "Upper Leg (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b29": {
+        "Description": "Upper Leg (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b30": {
+        "Description": "Hand (top-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b31": {
+        "Description": "Knee (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b32": {
+        "Description": "Knee (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b33": {
+        "Description": "Lower Leg (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b34": {
+        "Description": "Lower Leg (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b35": {
+        "Description": "Ankle (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b36": {
+        "Description": "Ankle (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b37": {
+        "Description": "Foot (bottom-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_male___b38": {
+        "Description": "Foot (bottom-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f99": {
+        "Description": "Mouth | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f01": {
+        "Description": "Cranium (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f02": {
+        "Description": "Cranium (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f03": {
+        "Description": "Face (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f04": {
+        "Description": "Face (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f05": {
+        "Description": "Neck (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f06": {
+        "Description": "Neck (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f07": {
+        "Description": "Shoulder (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f08": {
+        "Description": "Chest (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f09": {
+        "Description": "Chest (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f10": {
+        "Description": "Shoulder (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f11": {
+        "Description": "Bicep (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f12": {
+        "Description": "Bicep (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f13": {
+        "Description": "Elbow (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f14": {
+        "Description": "Elbow (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f15": {
+        "Description": "Forearm (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f16": {
+        "Description": "Abdomen (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f17": {
+        "Description": "Abdomen (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f18": {
+        "Description": "Forearm (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f19": {
+        "Description": "Wrist (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f20": {
+        "Description": "Hip (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f21": {
+        "Description": "Pubic (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f22": {
+        "Description": "Pubic (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f23": {
+        "Description": "Hip (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f24": {
+        "Description": "Wrist (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f25": {
+        "Description": "Hand (palm-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f26": {
+        "Description": "Upper Leg (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f27": {
+        "Description": "Upper Leg (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f28": {
+        "Description": "Hand (palm-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f29": {
+        "Description": "Knee (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f30": {
+        "Description": "Knee (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f31": {
+        "Description": "Lower Leg (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f32": {
+        "Description": "Lower Leg (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f33": {
+        "Description": "Ankle (front-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f34": {
+        "Description": "Ankle (front-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f35": {
+        "Description": "Foot (top-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___f36": {
+        "Description": "Foot (top-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b01": {
+        "Description": "Cranium (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b02": {
+        "Description": "Cranium (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b03": {
+        "Description": "Head (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b04": {
+        "Description": "Head (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b05": {
+        "Description": "Neck (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b06": {
+        "Description": "Neck (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b07": {
+        "Description": "Shoulder (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b08": {
+        "Description": "Upper Back (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b09": {
+        "Description": "Upper Back (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b10": {
+        "Description": "Shoulder (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b11": {
+        "Description": "Bicep (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b12": {
+        "Description": "Middle Back (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b13": {
+        "Description": "Middle Back (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b14": {
+        "Description": "Bicep (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b15": {
+        "Description": "Elbow (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b16": {
+        "Description": "Elbow (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b17": {
+        "Description": "Forearm (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b18": {
+        "Description": "Lower Back (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b19": {
+        "Description": "Lower Back (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b20": {
+        "Description": "Forearm (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b21": {
+        "Description": "Wrist (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b22": {
+        "Description": "Hip (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b23": {
+        "Description": "Buttocks (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b24": {
+        "Description": "Buttocks (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b25": {
+        "Description": "Hip (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b26": {
+        "Description": "Wrist (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b27": {
+        "Description": "Hand (top-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b28": {
+        "Description": "Upper Leg (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b29": {
+        "Description": "Upper Leg (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b30": {
+        "Description": "Hand (top-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b31": {
+        "Description": "Knee (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b32": {
+        "Description": "Knee (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b33": {
+        "Description": "Lower Leg (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b34": {
+        "Description": "Lower Leg (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b35": {
+        "Description": "Ankle (back-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b36": {
+        "Description": "Ankle (back-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b37": {
+        "Description": "Foot (bottom-left) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_bodymap_female___b38": {
+        "Description": "Foot (bottom-right) | 1=Yes; 0=No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pain_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered ; 2=Youth Self-Administered ; 3=Combination [event_name_number] > '21'",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination [event_name_number] > '21'"
+        }
+    }
+}

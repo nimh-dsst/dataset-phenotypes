@@ -1,0 +1,1287 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_mid_all_sem_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_mid_all_sem_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_sem_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_sem_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_sem_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_sem_stnvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_sem_meanmotion": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_sem_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_sem_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_sem_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_sem_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_sem_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_inftvlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_celh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_bs": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_csf": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_inftvlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_celh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_bs": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_csf": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_smscs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_cbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_lcelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_inflatvlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_crbwmlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_crbcxlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_tplh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_celh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_ptlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_pdlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_3rdvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_4thvicle": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_bs": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_hpuslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_aylh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_csf": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_aalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_valdclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_cbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_lcerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_inflatvh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_crbwmrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_crbcxrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_tprh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_cerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_ptrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_pdrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_hpusrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_ayrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_smscs_aarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_sescs_valdcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    }
+}

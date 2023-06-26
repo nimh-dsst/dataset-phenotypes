@@ -1,0 +1,767 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "rsfmri_c_ngd_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "rsfmri_c_ngd_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "rsfmri_c_ngd_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "rsfmri_c_ngd_stnvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "rsfmri_c_ngd_stcontignvols": {
+        "Description": "Number of frames with FD < 0.2 and at least 5 contiguous, supra-threshold frames",
+        "DataType": "Integer"
+    },
+    "rsfmri_c_ngd_ntpoints": {
+        "Description": "Number of frames after excluding outlier frames (based on standard deviation across ROIs)",
+        "DataType": "Integer"
+    },
+    "rsfmri_c_ngd_meanmotion": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_ad": {
+        "Description": "Average correlation between auditory network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_cgc": {
+        "Description": "Average correlation between auditory network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_ca": {
+        "Description": "Average correlation between auditory network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_dt": {
+        "Description": "Average correlation between auditory network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_dla": {
+        "Description": "Average correlation between auditory network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_fo": {
+        "Description": "Average correlation between auditory network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_n": {
+        "Description": "Average correlation between auditory network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_rspltp": {
+        "Description": "Average correlation between auditory network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_smh": {
+        "Description": "Average correlation between auditory network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_smm": {
+        "Description": "Average correlation between auditory network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_sa": {
+        "Description": "Average correlation between auditory network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_vta": {
+        "Description": "Average correlation between auditory network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ad_ngd_vs": {
+        "Description": "Average correlation between auditory network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_ad": {
+        "Description": "Average correlation between cingulo-opercular network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_cgc": {
+        "Description": "Average correlation between cingulo-opercular network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_ca": {
+        "Description": "Average correlation between cingulo-opercular network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_dt": {
+        "Description": "Average correlation between cingulo-opercular network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_dla": {
+        "Description": "Average correlation between cingulo-opercular network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_fo": {
+        "Description": "Average correlation between cingulo-opercular network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_n": {
+        "Description": "Average correlation between cingulo-opercular network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_rspltp": {
+        "Description": "Average correlation between cingulo-opercular network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_smh": {
+        "Description": "Average correlation between cingulo-opercular network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_smm": {
+        "Description": "Average correlation between cingulo-opercular network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_sa": {
+        "Description": "Average correlation between cingulo-opercular network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_vta": {
+        "Description": "Average correlation between cingulo-opercular network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_cgc_ngd_vs": {
+        "Description": "Average correlation between cingulo-opercular network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_ad": {
+        "Description": "Average correlation between cingulo-parietal network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_cgc": {
+        "Description": "Average correlation between cingulo-parietal network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_ca": {
+        "Description": "Average correlation between cingulo-parietal network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_dt": {
+        "Description": "Average correlation between cingulo-parietal network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_dla": {
+        "Description": "Average correlation between cingulo-parietal network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_fo": {
+        "Description": "Average correlation between cingulo-parietal network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_n": {
+        "Description": "Average correlation between cingulo-parietal network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_rspltp": {
+        "Description": "Average correlation between cingulo-parietal network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_smh": {
+        "Description": "Average correlation between cingulo-parietal network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_smm": {
+        "Description": "Average correlation between cingulo-parietal network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_sa": {
+        "Description": "Average correlation between cingulo-parietal network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_vta": {
+        "Description": "Average correlation between cingulo-parietal network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_ca_ngd_vs": {
+        "Description": "Average correlation between cingulo-parietal network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_ad": {
+        "Description": "Average correlation between default network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_cgc": {
+        "Description": "Average correlation between default network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_ca": {
+        "Description": "Average correlation between default network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_dt": {
+        "Description": "Average correlation between default network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_dla": {
+        "Description": "Average correlation between default network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_fo": {
+        "Description": "Average correlation between default network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_n": {
+        "Description": "Average correlation between default network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_rspltp": {
+        "Description": "Average correlation between default network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_smh": {
+        "Description": "Average correlation between default network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_smm": {
+        "Description": "Average correlation between default network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_sa": {
+        "Description": "Average correlation between default network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_vta": {
+        "Description": "Average correlation between default network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dt_ngd_vs": {
+        "Description": "Average correlation between default network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_ad": {
+        "Description": "Average correlation between dorsal attention network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_cgc": {
+        "Description": "Average correlation between dorsal attention network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_ca": {
+        "Description": "Average correlation between dorsal attention network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_dt": {
+        "Description": "Average correlation between dorsal attention network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_dla": {
+        "Description": "Average correlation between dorsal attention network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_fo": {
+        "Description": "Average correlation between dorsal attention network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_n": {
+        "Description": "Average correlation between dorsal attention network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_rspltp": {
+        "Description": "Average correlation between dorsal attention network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_smh": {
+        "Description": "Average correlation between dorsal attention network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_smm": {
+        "Description": "Average correlation between dorsal attention network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_sa": {
+        "Description": "Average correlation between dorsal attention network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_vta": {
+        "Description": "Average correlation between dorsal attention network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_dla_ngd_vs": {
+        "Description": "Average correlation between dorsal attention network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_ad": {
+        "Description": "Average correlation between fronto-parietal network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_cgc": {
+        "Description": "Average correlation between fronto-parietal network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_ca": {
+        "Description": "Average correlation between fronto-parietal network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_dt": {
+        "Description": "Average correlation between fronto-parietal network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_dla": {
+        "Description": "Average correlation between fronto-parietal network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_fo": {
+        "Description": "Average correlation between fronto-parietal network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_n": {
+        "Description": "Average correlation between fronto-parietal network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_rspltp": {
+        "Description": "Average correlation between fronto-parietal network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_smh": {
+        "Description": "Average correlation between fronto-parietal network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_smm": {
+        "Description": "Average correlation between fronto-parietal network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_sa": {
+        "Description": "Average correlation between fronto-parietal network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_vta": {
+        "Description": "Average correlation between fronto-parietal network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_fo_ngd_vs": {
+        "Description": "Average correlation between fronto-parietal network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_ad": {
+        "Description": "Average correlation between \"none\" network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_cgc": {
+        "Description": "Average correlation between \"none\" network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_ca": {
+        "Description": "Average correlation between \"none\" network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_dt": {
+        "Description": "Average correlation between \"none\" network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_dla": {
+        "Description": "Average correlation between \"none\" network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_fo": {
+        "Description": "Average correlation between \"none\" network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_n": {
+        "Description": "Average correlation between \"none\" network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_rspltp": {
+        "Description": "Average correlation between \"none\" network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_smh": {
+        "Description": "Average correlation between \"none\" network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_smm": {
+        "Description": "Average correlation between \"none\" network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_sa": {
+        "Description": "Average correlation between \"none\" network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_vta": {
+        "Description": "Average correlation between \"none\" network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_n_ngd_vs": {
+        "Description": "Average correlation between \"none\" network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_ad": {
+        "Description": "Average correlation between retrosplenial temporal network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_cgc": {
+        "Description": "Average correlation between retrosplenial temporal network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_ca": {
+        "Description": "Average correlation between retrosplenial temporal network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_dt": {
+        "Description": "Average correlation between retrosplenial temporal network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_dla": {
+        "Description": "Average correlation between retrosplenial temporal network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_fo": {
+        "Description": "Average correlation between retrosplenial temporal network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_n": {
+        "Description": "Average correlation between retrosplenial temporal network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_rspltp": {
+        "Description": "Average correlation between retrosplenial temporal network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_smh": {
+        "Description": "Average correlation between retrosplenial temporal network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_smm": {
+        "Description": "Average correlation between retrosplenial temporal network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_sa": {
+        "Description": "Average correlation between retrosplenial temporal network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_vta": {
+        "Description": "Average correlation between retrosplenial temporal network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_rspltp_ngd_vs": {
+        "Description": "Average correlation between retrosplenial temporal network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_ad": {
+        "Description": "Average correlation between sensorimotor hand network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_cgc": {
+        "Description": "Average correlation between sensorimotor hand network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_ca": {
+        "Description": "Average correlation between sensorimotor hand network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_dt": {
+        "Description": "Average correlation between sensorimotor hand network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_dla": {
+        "Description": "Average correlation between sensorimotor hand network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_fo": {
+        "Description": "Average correlation between sensorimotor hand network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_n": {
+        "Description": "Average correlation between sensorimotor hand network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_rspltp": {
+        "Description": "Average correlation between sensorimotor hand network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_smh": {
+        "Description": "Average correlation between sensorimotor hand network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_smm": {
+        "Description": "Average correlation between sensorimotor hand network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_sa": {
+        "Description": "Average correlation between sensorimotor hand network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_vta": {
+        "Description": "Average correlation between sensorimotor hand network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smh_ngd_vs": {
+        "Description": "Average correlation between sensorimotor hand network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_ad": {
+        "Description": "Average correlation between sensorimotor mouth network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_cgc": {
+        "Description": "Average correlation between sensorimotor mouth network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_ca": {
+        "Description": "Average correlation between sensorimotor mouth network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_dt": {
+        "Description": "Average correlation between sensorimotor mouth network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_dla": {
+        "Description": "Average correlation between sensorimotor mouth network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_fo": {
+        "Description": "Average correlation between sensorimotor mouth network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_n": {
+        "Description": "Average correlation between sensorimotor mouth network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_rspltp": {
+        "Description": "Average correlation between sensorimotor mouth network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_smh": {
+        "Description": "Average correlation between sensorimotor mouth network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_smm": {
+        "Description": "Average correlation between sensorimotor mouth network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_sa": {
+        "Description": "Average correlation between sensorimotor mouth network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_vta": {
+        "Description": "Average correlation between sensorimotor mouth network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_smm_ngd_vs": {
+        "Description": "Average correlation between sensorimotor mouth network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_ad": {
+        "Description": "Average correlation between salience network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_cgc": {
+        "Description": "Average correlation between salience network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_ca": {
+        "Description": "Average correlation between salience network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_dt": {
+        "Description": "Average correlation between salience network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_dla": {
+        "Description": "Average correlation between salience network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_fo": {
+        "Description": "Average correlation between salience network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_n": {
+        "Description": "Average correlation between salience network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_rspltp": {
+        "Description": "Average correlation between salience network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_smh": {
+        "Description": "Average correlation between salience network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_smm": {
+        "Description": "Average correlation between salience network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_sa": {
+        "Description": "Average correlation between salience network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_vta": {
+        "Description": "Average correlation between salience network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_sa_ngd_vs": {
+        "Description": "Average correlation between salience network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_ad": {
+        "Description": "Average correlation between ventral attention network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_cgc": {
+        "Description": "Average correlation between ventral attention network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_ca": {
+        "Description": "Average correlation between ventral attention network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_dt": {
+        "Description": "Average correlation between ventral attention network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_dla": {
+        "Description": "Average correlation between ventral attention network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_fo": {
+        "Description": "Average correlation between ventral attention network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_n": {
+        "Description": "Average correlation between ventral attention network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_rspltp": {
+        "Description": "Average correlation between ventral attention network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_smh": {
+        "Description": "Average correlation between ventral attention network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_smm": {
+        "Description": "Average correlation between ventral attention network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_sa": {
+        "Description": "Average correlation between ventral attention network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_vta": {
+        "Description": "Average correlation between ventral attention network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vta_ngd_vs": {
+        "Description": "Average correlation between ventral attention network and visual network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_ad": {
+        "Description": "Average correlation between visual network and auditory network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_cgc": {
+        "Description": "Average correlation between visual network and cingulo-opercular network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_ca": {
+        "Description": "Average correlation between visual network and cingulo-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_dt": {
+        "Description": "Average correlation between visual network and default network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_dla": {
+        "Description": "Average correlation between visual network and dorsal attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_fo": {
+        "Description": "Average correlation between visual network and fronto-parietal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_n": {
+        "Description": "Average correlation between visual network and \"none\" network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_rspltp": {
+        "Description": "Average correlation between visual network and retrosplenial temporal network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_smh": {
+        "Description": "Average correlation between visual network and sensorimotor hand network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_smm": {
+        "Description": "Average correlation between visual network and sensorimotor mouth network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_sa": {
+        "Description": "Average correlation between visual network and salience network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_vta": {
+        "Description": "Average correlation between visual network and ventral attention network",
+        "DataType": "Float"
+    },
+    "rsfmri_c_ngd_vs_ngd_vs": {
+        "Description": "Average correlation between visual network and visual network",
+        "DataType": "Float"
+    }
+}

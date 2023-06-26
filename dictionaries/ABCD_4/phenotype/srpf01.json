@@ -1,0 +1,191 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "visit": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "school_2_y": {
+        "Description": "In my school, students have lots of chances to help decide things like class activities and rules. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_3_y": {
+        "Description": "I get along with my teachers. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_4_y": {
+        "Description": "My teacher(s) notices when I am doing a good job and lets me know about it. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_5_y": {
+        "Description": "There are lots of chances for students in my school to get involved in sports, clubs, or other school activities outside of class. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_6_y": {
+        "Description": "I feel safe at my school. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_7_y": {
+        "Description": "The school lets my parents know when I have done something well. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_8_y": {
+        "Description": "I like school because I do well in class. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_9_y": {
+        "Description": "I feel I'm just as smart as other kids my age. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_10_y": {
+        "Description": "There are lots of chances to be part of class discussions or activities. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_12_y": {
+        "Description": "In general, I like school a lot. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_15_y": {
+        "Description": "Usually, school bores me. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_17_y": {
+        "Description": "Getting good grades is not so important to me. | 1 = NO!; 2 = no; 3 = yes; 4 = YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you",
+        "DataType": "Integer",
+        "ValueRange": "1::4",
+        "Levels": {
+            "1": "NO!",
+            "2": "no",
+            "3": "yes",
+            "4": "YES! //Mark (the BIG) YES! if you think the statement is definitely true for you. Mark (the little) yes if you think the statement is mostly true for you. Mark (the little) no if you think the statement is mostly not true for you. Mark (the BIG) NO! if you think the statement is definitely not true for you"
+        }
+    },
+    "school_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered ; 2=Youth Self-Administered ; 3=Combination [event_name_number] > '21'",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination [event_name_number] > '21'"
+        }
+    },
+    "school_device": {
+        "Description": "Youth's Device: | 1=Phone Screen ; 2=Tablet/iPad Screen ; 3=Computer Screen  [school_remote(2)] = ''1'' or [school_remote(3)] = ''1''",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "Phone Screen",
+            "2": "Tablet/iPad Screen",
+            "3": "Computer Screen"
+        }
+    }
+}

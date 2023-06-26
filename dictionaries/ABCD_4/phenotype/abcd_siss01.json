@@ -1,0 +1,139 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "sit_scr_script_lastupdate": {
+        "Description": "Date of last update",
+        "DataType": "String"
+    },
+    "sit_scr_version": {
+        "Description": "Task Version Number",
+        "DataType": "String"
+    },
+    "sit_scr_values_startdate": {
+        "Description": "script.startdate:\r\n\r\nDate script was run",
+        "DataType": "String"
+    },
+    "sit_scr_script_starttime": {
+        "Description": "script.starttime:\r\n\r\nTime script was started",
+        "DataType": "String"
+    },
+    "sit_scr_script_subjectid": {
+        "Description": "script.subjectid:\r\n\r\nSubject id number",
+        "DataType": "String"
+    },
+    "sit_scr_script_groupid": {
+        "Description": "script.groupid:\r\n\r\nGroup id number",
+        "DataType": "String"
+    },
+    "sit_scr_event": {
+        "Description": "Event selected by RA if not 2-year follow-up",
+        "DataType": "Integer"
+    },
+    "sit_scr_session": {
+        "Description": "Session number (01,02,03)",
+        "DataType": "Integer"
+    },
+    "sit_scr_script_elapsedtime": {
+        "Description": "script.elapsedtime:\r\n\r\nTime it took to run script (in ms)",
+        "DataType": "Integer"
+    },
+    "sit_scr_computer_platform": {
+        "Description": "computer.platform:\r\n\r\nThe platform the script was run on",
+        "DataType": "String"
+    },
+    "sit_scr_expr_minitialrat": {
+        "Description": "expressions.meanInitialRating:\r\n\r\nThe mean initial rating",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mrt_initialrat": {
+        "Description": "expressions.meanRT_initialRating:\r\n\r\nMean reaction time (in ms) of submitting initial rating after onset of rating scale",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mfinalrat": {
+        "Description": "expressions.meanFinalRating:\r\n\r\nThe mean final rating",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mrt_finalrat": {
+        "Description": "expressions.meanRT_finalRating:\r\n\r\nMean reaction time (in ms) of submitting final rating after onset of rating scale\r\n\r\nNote: \r\npositive values => final rating was higher than initial rating\r\nnegative values => final rating was lower than initial rating",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mratdiff1": {
+        "Description": "expressions.meanRatingDiff1:\r\n\r\nThe mean difference in ratings (final - initial) for peer rating condition '-4'\r\n\r\nNote: positive values => final rating was higher than initial ratingnegative values => final rating was lower than initial rating",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mratdiff2": {
+        "Description": "expressions.meanRatingDiff2:\r\n\r\nThe mean difference in ratings (final - initial) for peer rating condition '-2'\r\n\r\nNote: positive values => final rating was higher than initial ratingnegative values => final rating was lower than initial rating",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mratdiff3": {
+        "Description": "expressions.meanRatingDiff3:\r\n\r\nThe mean difference in ratings (final - initial) for peer rating condition '+2'\r\n\r\nNote: positive values => final rating was higher than initial ratingnegative values => final rating was lower than initial rating",
+        "DataType": "Float"
+    },
+    "sit_scr_expr_mratdiff4": {
+        "Description": "expressions.meanRatingDiff4:\r\n\r\nThe mean difference in ratings (final - initial) for peer rating condition '+4'\r\n\r\nNote: positive values => final rating was higher than initial ratingnegative values => final rating was lower than initial rating",
+        "DataType": "Float"
+    },
+    "sit_scr_values_count1": {
+        "Description": "values.count1:\r\n\r\nCounts the number peer rating condition '-4' was run",
+        "DataType": "Integer"
+    },
+    "sit_scr_values_count2": {
+        "Description": "values.count2:\r\n\r\nCounts the number peer rating condition '-2' was run",
+        "DataType": "Integer"
+    },
+    "sit_scr_values_count3": {
+        "Description": "values.count3:\r\n\r\nCounts the number peer rating condition '+2' was run",
+        "DataType": "Integer"
+    },
+    "sit_scr_values_count4": {
+        "Description": "values.count4:\r\n\r\nCounts the number peer rating condition '+4' was run",
+        "DataType": "Integer"
+    },
+    "sit_scr_values_countflips": {
+        "Description": "values.countflips",
+        "DataType": "Integer"
+    },
+    "sit_scr_values_countnr_initial": {
+        "Description": "values.countNR_initial:\r\n\r\nCounts the number of 'no response' for initial rating trials",
+        "DataType": "Integer"
+    },
+    "sit_scr_values_countnr_final": {
+        "Description": "values.countNR_final:\r\n\r\nCounts the number of 'no response' for final rating trials",
+        "DataType": "Integer"
+    }
+}

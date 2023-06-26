@@ -1,0 +1,2759 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_ma_arvn_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_arvn_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of reward versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pcalh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvn_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of loss versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_culh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_curh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_rpvnfb_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all reward positive versus negative feedback contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_culh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_curh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_lpvnfb_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all loss positive versus negative feedback contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alrvn_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_asrvn_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of small reward versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsr_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large reward versus small reward contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_allvn_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large loss versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_aslvn_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of small loss versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_bstslh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_clancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_clmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_culh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ehinallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_fflh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ifpalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_iftllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ihcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_laocclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_laoftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_lglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_moftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_mdtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pahpallh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pactlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_psopclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_psoblh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pstglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pclh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_postctlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_prcglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_prectlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pculh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_rancglh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_rmdftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_suftlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_supalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_sutllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_smlh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ftpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_tlpolelh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_tvtllh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_inalh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_bstsrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_clancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_clmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_curh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ehinalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ffrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ifparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_iftlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ihcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_laoccrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_laoftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_lgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_moftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_mdtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pahpalrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pactrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_psopcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_psobrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pstgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pcrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_postctrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_prcgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_prectrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_pcurh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_rancgrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_rmdftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_suftrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_suparh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_sutlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_smrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_ftpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_tlpolerh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_tvtlrh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_ma_alvsl_secdk_inarh": {
+        "Description": "Standard error of the mean for MID all anticipation of large versus small loss contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    }
+}

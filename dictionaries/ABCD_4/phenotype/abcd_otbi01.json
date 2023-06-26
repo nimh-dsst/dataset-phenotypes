@@ -1,0 +1,327 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tbi_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "tbi_1": {
+        "Description": "Has your child ever been hospitalized or treated in an emergency room following an injury to his/her head or neck? \u00bfAlguna vez han hospitalizado a su ni\u00f1o/a o le han tratado en una sala de emergencias despu\u00e9s de sufrir una lesi\u00f3n en la cabeza o en el cuello? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_1b": {
+        "Description": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? \u00bfEstuvo \u00e9l o ella noqueado/a o perdi\u00f3 el conocimiento? \u00bfSi la respuesta es si, por cu\u00e1nto tiempo? | 0 = No LOC Sin p\u00e9rdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3",
+        "Levels": {
+            "0": "No LOC Sin p\u00e9rdida de conocimiento",
+            "1": "< 30min < 30min",
+            "2": "30min-24hrs 30min-24hrs",
+            "3": ">24 hrs >24 hrs"
+        }
+    },
+    "tbi_1c": {
+        "Description": "Was he/she dazed or did he/she have a gap in his/her memory from the injury? \u00bfSe sinti\u00f3 \u00e9l/ella aturdido, o tuvo lapsos de memoria  por causa de la lesi\u00f3n? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_1d": {
+        "Description": "How old was he/she? \u00bfQu\u00e9 edad ten\u00eda?",
+        "DataType": "String"
+    },
+    "tbi_2": {
+        "Description": "Has your child ever injured his/her head or neck in a car accident or from crashing some other moving vehicle like a bicycle, motorcyle, or ATV? \u00bfSu ni\u00f1o/a alguna vez se ha lastimado la cabeza o el cuello en un accidente de auto o por chocar cuando iba en alg\u00fan otro veh\u00edculo en movimiento, como una bicicleta, motocicleta o veh\u00edculo todo terreno? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_2b": {
+        "Description": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? \u00bfEstuvo \u00e9l o ella noqueado/a o perdi\u00f3 el conocimiento? \u00bfSi la respuesta es si, por cu\u00e1nto tiempo? | 0 = No LOC Sin p\u00e9rdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3",
+        "Levels": {
+            "0": "No LOC Sin p\u00e9rdida de conocimiento",
+            "1": "< 30min < 30min",
+            "2": "30min-24hrs 30min-24hrs",
+            "3": ">24 hrs >24 hrs"
+        }
+    },
+    "tbi_2c": {
+        "Description": "Was he/she dazed or did he/she have a gap in his/her memory from the injury? \u00bfSe sinti\u00f3 \u00e9l/ella aturdido, o tuvo lapsos de memoria  por causa de la lesi\u00f3n? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_2d": {
+        "Description": "How old was he/she? \u00bfQu\u00e9 edad ten\u00eda?",
+        "DataType": "String"
+    },
+    "tbi_3": {
+        "Description": "Has you child ever injured his/her head or neck in a fall or from being hit by something? (For example, falling from a bike or horse, rollerblading, falling on ice, being hit by a rock) Has your child ever injured his/her head or neck playing sports or on the playground? \u00bfSu ni\u00f1o/a alguna vez se ha lastimado la cabeza o el cuello en una ca\u00edda o porque algo le haya ca\u00eddo en la cabeza (p. ej., al caerse de una bicicleta o un caballo, al andar en patines, al caerse en el hielo o que le haya ca\u00eddo una roca)? \u00bfSu ni\u00f1o(a) alguna vez se ha lastimado la cabeza o el cuello haciendo deporte o jugando en un parque? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_3b": {
+        "Description": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? \u00bfEstuvo \u00e9l o ella noqueado/a o perdi\u00f3 el conocimiento? \u00bfSi la respuesta es si, por cu\u00e1nto tiempo? | 0 = No LOC Sin p\u00e9rdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3",
+        "Levels": {
+            "0": "No LOC Sin p\u00e9rdida de conocimiento",
+            "1": "< 30min < 30min",
+            "2": "30min-24hrs 30min-24hrs",
+            "3": ">24 hrs >24 hrs"
+        }
+    },
+    "tbi_3c": {
+        "Description": "Was he/she dazed or did he/she have a gap in his/her memory from the injury? \u00bfSe sinti\u00f3 \u00e9l/ella aturdido, o tuvo lapsos de memoria  por causa de la lesi\u00f3n? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_3d": {
+        "Description": "How old was he/she? \u00bfQu\u00e9 edad ten\u00eda?",
+        "DataType": "String"
+    },
+    "tbi_4": {
+        "Description": "Has your child ever injured his/her head or neck in a fight, from being hit by something, or from being shaken violently? Has your child ever been shot in the head? \u00bfSu ni\u00f1o/a alguna vez se ha lastimado la cabeza o el cuello en una pelea, al recibir un golpe de alg\u00fan objeto  o porque lo/la hayan sacudido con violencia? \u00bfSu ni\u00f1o(a) alguna vez ha recibido un disparo en la cabeza? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_4b": {
+        "Description": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? \u00bfEstuvo \u00e9l o ella noqueado/a o perdi\u00f3 el conocimiento? \u00bfSi la respuesta es si, por cu\u00e1nto tiempo? | 0 = No LOC Sin p\u00e9rdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3",
+        "Levels": {
+            "0": "No LOC Sin p\u00e9rdida de conocimiento",
+            "1": "< 30min < 30min",
+            "2": "30min-24hrs 30min-24hrs",
+            "3": ">24 hrs >24 hrs"
+        }
+    },
+    "tbi_4c": {
+        "Description": "Was he/she dazed or did he/she have a gap in his/her memory from the injury? \u00bfSe sinti\u00f3 \u00e9l/ella aturdido, o tuvo lapsos de memoria  por causa de la lesi\u00f3n? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_4d": {
+        "Description": "How old was he/she? \u00bfQu\u00e9 edad ten\u00eda?",
+        "DataType": "String"
+    },
+    "tbi_5": {
+        "Description": "Has your child ever been nearby when an explosion or blast has occurred? \u00bfSu ni\u00f1o/a alguna vez ha estado cerca de una explosi\u00f3n o un estallido? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_5b": {
+        "Description": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? \u00bfEstuvo \u00e9l o ella noqueado/a o perdi\u00f3 el conocimiento? \u00bfSi la respuesta es si, por cu\u00e1nto tiempo? | 0 = No LOC Sin p\u00e9rdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3",
+        "Levels": {
+            "0": "No LOC Sin p\u00e9rdida de conocimiento",
+            "1": "< 30min < 30min",
+            "2": "30min-24hrs 30min-24hrs",
+            "3": ">24 hrs >24 hrs"
+        }
+    },
+    "tbi_5c": {
+        "Description": "Was he/she dazed or did he/she have a gap in his/her memory from the injury? \u00bfSe sinti\u00f3 \u00e9l/ella aturdido, o tuvo lapsos de memoria  por causa de la lesi\u00f3n? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_5d": {
+        "Description": "How old was he/she? \u00bfQu\u00e9 edad ten\u00eda?",
+        "DataType": "String"
+    },
+    "tbi_6o": {
+        "Description": "Do you want to report any more injuries with LOC? \u00bfQuisiera reportar otras lesiones que hayan resultado en la p\u00e9rdida de conocimiento? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_6p": {
+        "Description": "If yes, how many more? \u00bfSi la respuesta fue s\u00ed, cuantas m\u00e1s?",
+        "DataType": "String"
+    },
+    "tbi_6q": {
+        "Description": "How many minutes was the longest knock out? \u00bfCu\u00e1ntos minutos dur\u00f3 el tiempo m\u00e1s largo que estuvo inconsciente?",
+        "DataType": "String"
+    },
+    "tbi_6r": {
+        "Description": "How many were more than or equal to 30 min? \u00bfCu\u00e1ntas veces ha estado inconsciente por \u2265 30 min o m\u00e1s?",
+        "DataType": "String"
+    },
+    "tbi_6s": {
+        "Description": "What was their youngest age? \u00bfA qu\u00e9 edad fue la primera vez que estuvo inconsciente?",
+        "DataType": "String"
+    },
+    "tbi_7a": {
+        "Description": "Did your child experience a period of time in his/her life when he/she experienced multiple, repeated impacts to the head? (e.g., abused, contact sports) \u00bfHubo alg\u00fan per\u00edodo en la vida de su ni\u00f1o/a en el que haya recibido golpes o impactos m\u00faltiples y repetidos a la cabeza (p. ej., abuso infantil, deportes de contacto)? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_7c1": {
+        "Description": "Was he/she knocked out or did he/she lose consciousness (LOC)? If yes, how long? \u00bfEstuvo \u00e9l o ella noqueado/a o perdi\u00f3 el conocimiento? \u00bfSi la respuesta es si, por cu\u00e1nto tiempo? | 0 = No LOC Sin p\u00e9rdida de conocimiento; 1 = < 30min < 30min; 2 = 30min-24hrs 30min-24hrs; 3 = >24 hrs >24 hrs",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3",
+        "Levels": {
+            "0": "No LOC Sin p\u00e9rdida de conocimiento",
+            "1": "< 30min < 30min",
+            "2": "30min-24hrs 30min-24hrs",
+            "3": ">24 hrs >24 hrs"
+        }
+    },
+    "tbl_7c2": {
+        "Description": "Was he/she dazed or did he/she have a gap in his/her memory from the injury? \u00bfSe sinti\u00f3 \u00e9l/ella aturdido, o tuvo lapsos de memoria  por causa de la lesi\u00f3n? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_7e": {
+        "Description": "At what age did these effects begin? \u00bfA qu\u00e9 edad comenzaron estos efectos?",
+        "DataType": "String"
+    },
+    "tbi_7f": {
+        "Description": "At what age did these effects end? \u00bfA qu\u00e9 edad terminaron estos efectos?",
+        "DataType": "String"
+    },
+    "tbi_7g": {
+        "Description": "Was there another instance where your child experienced a period of time in his/her life when he/she experienced multiple, repeated impacts to the head? \u00bfHubo alg\u00fan otro per\u00edodo en la vida de su ni\u00f1o(a) en el que haya recibido golpes o impactos m\u00faltiples y repetidos a la cabeza? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_7i": {
+        "Description": "What was the typical effect of the injury? Cu\u00e1l fue el efecto t\u00edpico de la lesi\u00f3n? | 1 = Dazed/memory gap; 2 = LOC p\u00e9rdida de conocimiento",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Dazed/memory gap",
+            "2": "LOC p\u00e9rdida de conocimiento"
+        }
+    },
+    "tbi_7k": {
+        "Description": "At what age did these effects begin? \u00bfA qu\u00e9 edad comenzaron estos efectos?",
+        "DataType": "String"
+    },
+    "tbi_7l": {
+        "Description": "At what age did these effects end? \u00bfA qu\u00e9 edad terminaron estos efectos?",
+        "DataType": "String"
+    },
+    "tbi_8g": {
+        "Description": "Was there another instance where your child experienced a period of time in his/her life when he/she experienced multiple, repeated impacts to the head? | 1 = Yes Si; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes Si",
+            "0": "No No"
+        }
+    },
+    "tbi_8i": {
+        "Description": "What was the typical effect of the injury? Cu\u00e1l fue el efecto t\u00edpico de la lesi\u00f3n? | 1 = Dazed/memory gap; 2 = LOC p\u00e9rdida de conocimiento",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Dazed/memory gap",
+            "2": "LOC p\u00e9rdida de conocimiento"
+        }
+    },
+    "tbi_8k": {
+        "Description": "At what age did these effects begin? \u00bfA qu\u00e9 edad comenzaron estos efectos?",
+        "DataType": "String"
+    },
+    "tbi_8l": {
+        "Description": "At what age did these effects end? \u00bfA qu\u00e9 edad terminaron estos efectos?",
+        "DataType": "String"
+    }
+}

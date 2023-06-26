@@ -1,0 +1,192 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "fitpr_select_language": {
+        "Description": "\u00bfEspa\u00f1ol? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "fitpr_physical_p": {
+        "Description": "In your opinion compared to other kids your child's age how much physical activity does your child engage in? / En su opini\u00c3\u00b3n en comparaci\u00c3\u00b3n con otros ni\u00c3\u00b1os(as) de la edad de su hijo/a \u00c2\u00bfcu\u00c3\u00a1nta actividad f\u00c3\u00adsica realiza su hijo/a? | 1= Much less / Mucho menos; 2 = A little less / Un poco menos; 3 =About the same / M\u00c3\u00a1s o menos la misma; 4=  A little more / Un poco m\u00c3\u00a1s; 5  =Much more / Mucho m\u00c3\u00a1s",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 5",
+        "Levels": {
+            "1": "Much less / Mucho menos",
+            "2": "A little less / Un poco menos",
+            "3": "About the same / M\u00c3\u00a1s o menos la misma",
+            "4": "A little more / Un poco m\u00c3\u00a1s",
+            "5": "Much more / Mucho m\u00c3\u00a1s"
+        }
+    },
+    "fitpr_physical_health_p": {
+        "Description": "In your opinion do you think the amount of physical activity your child does is healthy? / En su opini\u00c3\u00b3n \u00c2\u00bfcree usted que la cantidad de actividad f\u00c3\u00adsica que su hijo/a hace es saludable? | 1=Yes /Si; 0 = No / No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /Si",
+            "0": "No / No"
+        }
+    },
+    "fitpr_sedentary_p": {
+        "Description": "In your opinion compared to other kids your child's age how many sedentary behaviors does your child engage in? / En su opini\u00c3\u00b3n en comparaci\u00c3\u00b3n con otros ni\u00c3\u00b1os de la edad de su hijo/a \u00c2\u00bfen cu\u00c3\u00a1ntas conductas sedentarias participa su hijo/a? | 1= Much less / Mucho menos; 2 = A little less / Un poco menos; 3 =About the same / M\u00c3\u00a1s o menos la misma; 4=  A little more / Un poco m\u00c3\u00a1s; 5  =Much more / Mucho m\u00c3\u00a1s",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 5",
+        "Levels": {
+            "1": "Much less / Mucho menos",
+            "2": "A little less / Un poco menos",
+            "3": "About the same / M\u00c3\u00a1s o menos la misma",
+            "4": "A little more / Un poco m\u00c3\u00a1s",
+            "5": "Much more / Mucho m\u00c3\u00a1s"
+        }
+    },
+    "fitpr_sedentary_health_p": {
+        "Description": "In your opinion do you think the amount of sedentary behaviors your child engages in is healthy? / En su opini\u00c3\u00b3n \u00c2\u00bfcree usted que la cantidad de conductas sedentarias en las que su hijo/a participa es saludable? | 1=Yes /Si; 0 = No / No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /Si",
+            "0": "No / No"
+        }
+    },
+    "fitpr_worn_tracker_p": {
+        "Description": "Has your child ever worn a Fitbit or other activity tracker? / \u00c2\u00bfAlguna vez su hijo/a ha usado un Fitbit u otro dispositivo de seguimiento de actividades? | 1=Yes /Si; 0 = No / No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /Si",
+            "0": "No / No"
+        }
+    },
+    "fitpr_consistent_p": {
+        "Description": "Did s/he wear it consistently? / \u00c2\u00bfLo us\u00c3\u00b3 constantemente? | 1=Yes /Si; 0 = No / No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /Si",
+            "0": "No / No"
+        }
+    },
+    "fitpr_remove_amt_p": {
+        "Description": "How often did he/she have to remove it? / \u00c2\u00bfCon qu\u00c3\u00a9 frecuencia ten\u00c3\u00ada que quit\u00c3\u00a1rselo? | 1= Often / Con frecuencia; 2=  Sometimes / A veces; 3=  Infrequently / Con poca frecuencia; 4=  Never / Nunca",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 4",
+        "Levels": {
+            "1": "Often / Con frecuencia",
+            "2": "Sometimes / A veces",
+            "3": "Infrequently / Con poca frecuencia",
+            "4": "Never / Nunca"
+        }
+    },
+    "fitpr_sports_p": {
+        "Description": "Please clarify which sports: / Aclare qu\u00c3\u00a9 deportes:",
+        "DataType": "String"
+    },
+    "fitpr_other_p": {
+        "Description": "If Other  please describe: / Si es otro descr\u00c3\u00adbalo:",
+        "DataType": "String"
+    },
+    "fitpr_check_amt_p": {
+        "Description": "How often did s/he check the activity tracker throughout the day (while awake)? / \u00c2\u00bfCon qu\u00c3\u00a9 frecuencia revisaba el rastreador de actividades durante el d\u00c3\u00ada (mientras estaba despierto/a)? | 1= Several time per day / Varias veces al d\u00c3\u00ada; 2  =About once per day / Aproximadamente una vez al d\u00c3\u00ada; 3 = Several time per week / Varias veces a la semana; 4=  About once per week / Aproximadamente una vez a la semana",
+        "DataType": "Integer",
+        "ValueRange": "1 :: 4",
+        "Levels": {
+            "1": "Several time per day / Varias veces al d\u00c3\u00ada",
+            "2": "About once per day / Aproximadamente una vez al d\u00c3\u00ada",
+            "3": "Several time per week / Varias veces a la semana",
+            "4": "About once per week / Aproximadamente una vez a la semana"
+        }
+    },
+    "fitpr_change_p": {
+        "Description": "Has s/he changed her activity based on the Information from the tracker? / \u00c2\u00bfEl/ella ha modificado su actividad seg\u00c3\u00ban la Informaci\u00c3\u00b3n del dispositivo de seguimiento? | 1=Yes /Si; 0 = No / No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /Si",
+            "0": "No / No"
+        }
+    },
+    "fitpr_remove_p___1": {
+        "Description": "When did s/he take it off (during what activities)? Shower/Bath  | 1 =Yes; 0= No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "fitpr_remove_p___2": {
+        "Description": "When did s/he take it off (during what activities)? Sports  | 1 =Yes; 0= No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "fitpr_remove_p___3": {
+        "Description": "When did s/he take it off (during what activities)? Swimming | 1 =Yes; 0= No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "fitpr_remove_p___4": {
+        "Description": "When did s/he take it off (during what activities)? Sleep | 1 =Yes; 0= No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "fitpr_remove_p___5": {
+        "Description": "When did s/he take it off (during what activities)? Others | 1 =Yes; 0= No",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    }
+}

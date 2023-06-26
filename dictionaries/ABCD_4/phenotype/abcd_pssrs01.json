@@ -1,0 +1,169 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ssrs_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ssrs_6_p": {
+        "Description": "Would rather be alone than with others. Prefiere estar solo(a) que con otros. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_15r_p": {
+        "Description": "Is able to understand the meaning of other people's tone of voice and facial expressions. Es capaz de entender el significado del tono de voz y las expresiones faciales de otras personas. | 4 = Not True No es cierto; 3 = Sometimes True Algunas veces cierto; 2 = Often True Frequentemente cierto; 1 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "4 ; 3 ; 2 ; 1",
+        "Levels": {
+            "4": "Not True No es cierto",
+            "3": "Sometimes True Algunas veces cierto",
+            "2": "Often True Frequentemente cierto",
+            "1": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_16_p": {
+        "Description": "Avoids eye contact or has unusual eye contact. Evita el contacto con los ojos o tiene contacto visual inusual. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_18_p": {
+        "Description": "Has difficulty making friends, even when trying his or her best. Tiene dificultades para hacer amigos, incluso cuando intenta con su mejor esfuerzo. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_24_p": {
+        "Description": "Has more difficulty than other children with changes in his or her routine. Tiene m\u00e1s dificultad que otros ni\u00f1os/(as) con cambios en su rutina. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_29_p": {
+        "Description": "Is regarded by other children as odd or weird. Es considerado/a por otros ni\u00f1os como extra\u00f1o/a o raro/a. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_35_p": {
+        "Description": "Has trouble keeping up with the flow of normal conversation. Tiene problemas para mantener el flujo de una conversaci\u00f3n normal. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_37_p": {
+        "Description": "Has difficulty relating to peers. Tiene dificultades para relacionarse con sus compa\u00f1eros. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_39_p": {
+        "Description": "Has an unusually narrow range of interests. Tiene una gama inusualmente estrecha de intereses. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_42_p": {
+        "Description": "Seems overly sensitive to sounds, textures or smells. Parece demasiado/a sensible a los sonidos, las texturas o los olores. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    },
+    "ssrs_58_p": {
+        "Description": "Concentrates too much on parts of things rather than seeing the whole picture.  For example, if asked to describe what happened in a story, he or she may talk only about the kind of clothes the characters were wearing. Se concentra demasiado en partes de las cosas en vez de ver la imagen completa. Por ejemplo, si se le pide que describa lo que sucedi\u00f3 en una historia, \u00e9l o ella hablar\u00edan s\u00f3lo sobre la clase/tipo de ropas que los personajes llevaban. | 1 = Not True No es cierto; 2 = Sometimes True Algunas veces cierto; 3 = Often True Frequentemente cierto; 4 = Almost Always True Casi siempre cierto",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "1": "Not True No es cierto",
+            "2": "Sometimes True Algunas veces cierto",
+            "3": "Often True Frequentemente cierto",
+            "4": "Almost Always True Casi siempre cierto"
+        }
+    }
+}

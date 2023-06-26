@@ -1,0 +1,1164 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_1058_t": {
+        "Description": "Was there ever another time that you often stayed out past your curfew? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1049_t": {
+        "Description": "Was there ever another time that you broke in to a home, store, or building that you weren't supposed to go into? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1050_t": {
+        "Description": "In the past two weeks, how often have you threatened and robbed someone, or assaulted and robbed someone? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1051_t": {
+        "Description": "Was there ever a time that you threatened and robbed someone, or assaulted and robbed someone? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1052_t": {
+        "Description": "Was there ever another time that you threatened and robbed someone, or assaulted and robbed someone? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1053_t": {
+        "Description": "In the past two weeks, how often have you started a fire, outside of a fireplace or campfire, some place you weren't supposed to start a fire? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1054_t": {
+        "Description": "Was there ever a time you started a fire, outside of a fireplace or campfire, some place you weren't supposed to start a fire? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1055_t": {
+        "Description": "Was there ever another time you started a fire, outside of a fireplace or campfire, some place you weren't supposed to start a fire? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1056_t": {
+        "Description": "In the past two weeks, how often have you stayed out past your curfew? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1057_t": {
+        "Description": "Was there ever a time that you often stayed out past your curfew? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1048_t": {
+        "Description": "Was there ever a time that you broke in to a home, store, or building that you weren\u00c3\u00a2\u00c2\u0080\u00c2\u0099t supposed to go into? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1059_t": {
+        "Description": "In the past two weeks, have you stayed out all night without permission or run away? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1060_t": {
+        "Description": "Did you stay out all night or run away because someone was hurting or messing with you at home? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1061_t": {
+        "Description": "Was there ever a time that you stayed out all night without permission or ran away? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1062_t": {
+        "Description": "Was there ever another time that you stayed out all night without permission or ran away? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1063_t": {
+        "Description": "Did you stay out all night or run away because someone was hurting or messing with you at home? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1064_t": {
+        "Description": "In the past two weeks, have you threatened anyone with a brick, stick, knife, gun, or other weapon, or actually used some form of weapon to hurt someone? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1065_t": {
+        "Description": "Was there ever a time you threatened someone with a brick, stick, knife, gun, or other weapon, or actually used some form of weapon to hurt someone? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1066_t": {
+        "Description": "Was there ever another time you threatened someone with a brick, stick, knife, gun, or other weapon, or actually used some form of weapon to hurt someone? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_541_t": {
+        "Description": "You said that in the past you often told lies, cut school, got into physical fights with people and stole things.\u00c3\u0082\u00c2\u00a0When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_533_t": {
+        "Description": "You said that in the past you often told lies, often got into a lot of physical fights with people and often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_534_t": {
+        "Description": "You said that in the past you often told lies, often got into a lot of physical fights with people and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_535_t": {
+        "Description": "You said that in the past you often told lies, often made fun of or picked on other kids and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_536_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents, often got into a lot of physical fights with people and often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_537_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents, often got into a lot of physical fights with people and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_538_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents, often made fun of or picked on other kids and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_539_t": {
+        "Description": "You said that in the past you often got into a lot of physical fights with people, often made fun of or picked on other kids and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_540_t": {
+        "Description": "You said that in the past you often told lies, cut school, got into physical fights with people and made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_1067_t": {
+        "Description": "In the past two weeks, how often have you tripped someone on purpose, given someone a wedgie, or done something else to hurt someone on purpose? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_542_t": {
+        "Description": "You said that in the past you often told lies, got into physical fights with people, made fun of or picked on other kids and stole things. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_543_t": {
+        "Description": "You said that in the past you often cut school, got into physical fights with people, made fun of or picked on other kids and stole things. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_544_t": {
+        "Description": "You said that in the past you often told lies, cut school, got into physical fights with people, made fun of or picked on other kids and stole things. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_545_t": {
+        "Description": "You said that in the past you often told lies, cut school, made fun of or picked on other kids and stole things. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_1044_t": {
+        "Description": "In the past two weeks, how often have you on purpose, damaged or vandalized school property, someone's car, a fence, building, or something else? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1045_t": {
+        "Description": "Was there ever a time that on purpose you damaged or vandalized school property, someone's car, a fence, building, or something else? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1046_t": {
+        "Description": "Was there ever another time that on purpose you damaged or vandalized school property, someone's car, a fence, building, or something else? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1047_t": {
+        "Description": "In the past 2 weeks, how often have you broken in to a home, store, or building that you weren't supposed to go into? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1096_t": {
+        "Description": "Please read each statement and decide how well it describes you.I seem very cold and uncaring to others. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1087_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Lied | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1088_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Stole things worth $20 or more | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1089_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Stayed out past curfew | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1090_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Ran away | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1091_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Skipped school | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1093_t": {
+        "Description": "Please read each statement and decide how well it describes you.I am concerned about the feelings of others. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1094_t": {
+        "Description": "Please read each statement and decide how well it describes you.I do not care about doing things well. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1095_t": {
+        "Description": "Please read each statement and decide how well it describes you.I do not show my emotions to others. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1086_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Broke into home, store, or building | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1097_t": {
+        "Description": "Please read each statement and decide how well it describes you.Feels bad or guilty when I do something wrong. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1098_t": {
+        "Description": "Please read each statement and decide how well it describes you.I do not care who I hurt to get what I want. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1099_t": {
+        "Description": "Please read each statement and decide how well it describes you.The feelings of others are unimportant to me. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1100_t": {
+        "Description": "Please read each statement and decide how well it describes you.I do not feel remorseful when I do something wrong. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1101_t": {
+        "Description": "Please read each statement and decide how well it describes you.I try not to hurt others' feelings. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1102_t": {
+        "Description": "Please read each statement and decide how well it describes you.I do not care if I get into trouble. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1103_t": {
+        "Description": "Please read each statement and decide how well it describes you.I apologize (says I am sorry) to persons I hurt. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1104_t": {
+        "Description": "Please read each statement and decide how well it describes you.I do things to make others feel good. | 0=Not at all true; 1=Somewhat true; 2=Very true; 3=Definitely true",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not at all true",
+            "1": "Somewhat true",
+            "2": "Very true",
+            "3": "Definitely true"
+        }
+    },
+    "ksads_cdr_raw_1077_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Bullied others | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1068_t": {
+        "Description": "Was there ever a time you tripped someone on purpose, gave someone a wedgie, or did something else to hurt someone on purpose? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1069_t": {
+        "Description": "Was there ever another time you tripped someone on purpose, gave someone a wedgie, or did something else to hurt someone on purpose? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1070_t": {
+        "Description": "In the past two weeks, how often have you either forced someone to kiss you or touch you in your privates, or kissed or did something sexual to someone when they didn't want it? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1071_t": {
+        "Description": "Was there ever a time you either forced someone to kiss you or touch you in your privates, or kissed or did something sexual to someone when they didn't want it? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1072_t": {
+        "Description": "Was there ever another time you either forced someone to kiss you or touch you in your privates, or kissed or did something sexual to someone when they didn't want it? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1073_t": {
+        "Description": "In the past two weeks, how often have you hurt or tried to hurt an animal on purpose? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_1074_t": {
+        "Description": "Was there ever a time you hurt or tried to hurt an animal on purpose? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_1075_t": {
+        "Description": "Was there ever another time you hurt or tried to hurt an animal on purpose? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_532_t": {
+        "Description": "You said that in the past you often told lies, cut school without the permission of your parents; and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_1078_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Got in fights | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1079_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Used weapon | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1080_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Tripped or hurt others on purpose | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1081_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Hurt animals | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1082_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Robbed someone | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1083_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Forced someone to do something sexual | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1084_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Set fire(s) | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_1085_t": {
+        "Description": "Please review the symptoms you endorsed in the current and past questions and mark all the grades you did these things.Damaged or destroyed property | 1=3rd; 2=4th; 3=5th; 4=6th; 5=7th; 6=8th; 7=9th; 8=10th; 9=11th; 10=12th",
+        "DataType": "Integer",
+        "ValueRange": "1::10",
+        "Levels": {
+            "1": "3rd",
+            "2": "4th",
+            "3": "5th",
+            "4": "6th",
+            "5": "7th",
+            "6": "8th",
+            "7": "9th",
+            "8": "10th",
+            "9": "11th",
+            "10": "12th"
+        }
+    },
+    "ksads_cdr_raw_491_t": {
+        "Description": "You said that in the past two weeks you often told lies; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_483_t": {
+        "Description": "Was there ever another time that you often stole things worth at least $20? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_484_t": {
+        "Description": "You said that in the past two weeks you often told lies. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_485_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_486_t": {
+        "Description": "You said that in the past two weeks you often got into a lot of physical fights with people. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_487_t": {
+        "Description": "You said that in the past two weeks you often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_488_t": {
+        "Description": "You said that in the past two weeks you often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_489_t": {
+        "Description": "You said that in the past two weeks you often told lies; and cut school without the permission of your parents. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_490_t": {
+        "Description": "You said that in the past two weeks you often told lies; and often got into a lot of physical fights with people. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_482_t": {
+        "Description": "Was there ever a time that you often stole things worth at least $20? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_492_t": {
+        "Description": "You said that in the past two weeks you often told lies; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_493_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; and often got into a lot of physical fights with people. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_494_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_495_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_496_t": {
+        "Description": "You said that in the past two weeks you often got into a lot of physical fights with people; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_497_t": {
+        "Description": "You said that in the past two weeks you often got into a lot of physical fights with people; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_498_t": {
+        "Description": "You said that in the past two weeks you often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_474_t": {
+        "Description": "You said before you were having trouble with some bullies. Is that who you've been fighting with? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_466_t": {
+        "Description": "In the past two weeks, how often have you told a lie, not just to get out of trouble, but to try to con someone? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_467_t": {
+        "Description": "Was there ever a time that you often told lies? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_468_t": {
+        "Description": "Was there ever another time that you often told lies? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_469_t": {
+        "Description": "In the past two weeks, how often did you cut school without the permission of your parents? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_470_t": {
+        "Description": "Was there ever a time that you cut school without the permission of your parents? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_471_t": {
+        "Description": "Was there ever another time that you cut school without the permission of your parents? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_472_t": {
+        "Description": "How old were you the first time you cut school without the permission of your parents?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_473_t": {
+        "Description": "In the past two weeks, how often did you get into physical fights with someone other than your siblings? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_531_t": {
+        "Description": "You said that in the past you often told lies, cut school without the permission of your parents and often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_475_t": {
+        "Description": "Was there ever a time that you often got into a lot of physical fights? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_476_t": {
+        "Description": "Was there ever another time that you often got into a lot of physical fights? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_477_t": {
+        "Description": "Were the fights mostly with bullies, people who were picking on you? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_478_t": {
+        "Description": "In the past two weeks, how often have you made fun of, threatened, or bullied someone? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_479_t": {
+        "Description": "Was there ever a time that you often made fun of, threatened, or bullied people? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_480_t": {
+        "Description": "Was there ever another time that you often made fun of, threatened, or bullied other kids? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_cdr_raw_481_t": {
+        "Description": "In the past two weeks, how often did you steal something worth at least $20? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_cdr_raw_500_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school without the permission of your parents; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_530_t": {
+        "Description": "You said that in the past you often told lies, cut school without the permission of your parents and often got into a lot of physical fights with people. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_529_t": {
+        "Description": "You said that in the past you often made fun of or picked on other kids; and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_528_t": {
+        "Description": "You said that in the past you often got into a lot of physical fights with people; and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_527_t": {
+        "Description": "You said that in the past you often got into a lot of physical fights with people and often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_526_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_525_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents and often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_524_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents and often got into a lot of physical fights with people. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_523_t": {
+        "Description": "You said that in the past you often told lies, and often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_522_t": {
+        "Description": "You said that in the past you often told lies, and often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_521_t": {
+        "Description": "You said that in the past you often told lies, and often got into a lot of physical fights with people. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_520_t": {
+        "Description": "You said that in the past you often told lies, and cut school without the permission of your parents. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_519_t": {
+        "Description": "You said that in the past you often stole things worth at least $20. When was that? If this was true of you for a very long time, let me know when it started and when it was the worst.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_518_t": {
+        "Description": "You said that in the past you often made fun of or picked on other kids. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_517_t": {
+        "Description": "You said that in the past you often got into a lot of physical fights with people. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_516_t": {
+        "Description": "You said that in the past you often cut school without the permission of your parents. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_514_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school without the permission of your parents; often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_499_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school without the permission of your parents; and often got into a lot of physical fights with people. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_501_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school without the permission of your parents; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_502_t": {
+        "Description": "You said that in the past two weeks you often told lies; often got into a lot of physical fights with people; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_503_t": {
+        "Description": "You said that in the past two weeks you often told lies; often got into a lot of physical fights with people; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_504_t": {
+        "Description": "You said that in the past two weeks you often told lies; often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_505_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; often got into a lot of physical fights with people; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_506_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; often got into a lot of physical fights with people; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_507_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_508_t": {
+        "Description": "You said that in the past two weeks you often got into a lot of physical fights with people; often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_509_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school without the permission of your parents; often got into a lot of physical fights with people; and often made fun of or picked on other kids. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_510_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school without the permission of your parents; often got into a lot of physical fights with people; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_511_t": {
+        "Description": "You said that in the past two weeks you often told lies; often got into a lot of physical fights with people; often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_512_t": {
+        "Description": "You said that in the past two weeks you often cut school without the permission of your parents; often got into a lot of physical fights with people; often made fun of or picked on other kids; and often stole things worth at least $20. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_513_t": {
+        "Description": "You said that in the past two weeks you often told lies; cut school; got into physical fights with people; made fun of or picked on other kids; and stole things. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_cdr_raw_515_t": {
+        "Description": "You said that in the past you often told lies. When was that? If this was true of you for a very long time, let me know when it started.",
+        "DataType": "String"
+    }
+}

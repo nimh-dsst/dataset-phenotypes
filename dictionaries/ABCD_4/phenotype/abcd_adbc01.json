@@ -1,0 +1,1454 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "abcl_select_language___1": {
+        "Description": "Speak Spanish | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "abcl_about_p": {
+        "Description": "Your current relationship with this adult: | 0= Not Applicable/ No Aplica; 2= Spouse/ Cnyuge; 3=Former Spouse/Ex Cnyuge; 4 = Partner (never married) /Pareja (nunca casado); 5=  Former Partner (never married)/Ex Pareja (nunca casado); 6 = Other /Otro - por favor describa:=",
+        "DataType": "Integer",
+        "ValueRange": "0;2;3;4;5;6",
+        "Levels": {
+            "0": "Not Applicable/ No Aplica",
+            "2": "Spouse/ Cnyuge",
+            "3": "Former Spouse/Ex Cnyuge",
+            "4": "Partner (never married) /Pareja (nunca casado)",
+            "5": "Former Partner (never married)/Ex Pareja (nunca casado)",
+            "6": "Other /Otro - por favor describa:"
+        }
+    },
+    "abcl_about_other_p": {
+        "Description": "Your current relationship with this adult: Other",
+        "DataType": "String"
+    },
+    "abcl_about_rel_p": {
+        "Description": "Who this person is in relationship to the child | 1=Biological Mothe ; 2=Biological Father ; 3=Adoptive Mother ; 4=Adoptive Father ; 5=Custodial Mother ; 6=Custodial Father ; 7= Paternal Grandfather ; 8=Maternal Grandfather  ; 9=Paternal Grandmother ; 10=Maternal Grandmother ; 11=Other Female Relative ; 12=Other Male Relative ; 13=Other Female ; 14=Other Male",
+        "DataType": "Integer",
+        "ValueRange": "1::14",
+        "Levels": {
+            "1": "Biological Mothe",
+            "2": "Biological Father",
+            "3": "Adoptive Mother",
+            "4": "Adoptive Father",
+            "5": "Custodial Mother",
+            "6": "Custodial Father",
+            "7": "Paternal Grandfather",
+            "8": "Maternal Grandfather",
+            "9": "Paternal Grandmother",
+            "10": "Maternal Grandmother",
+            "11": "Other Female Relative",
+            "12": "Other Male Relative",
+            "13": "Other Female",
+            "14": "Other Male"
+        }
+    },
+    "abcl_about_age_p": {
+        "Description": "How old is this adult?",
+        "DataType": "Integer"
+    },
+    "abcl_about_gender_p": {
+        "Description": "What is this adult's gender identity? | 1= male/ masculino; 2= female/ feminino",
+        "DataType": "Integer",
+        "ValueRange": "1;2",
+        "Levels": {
+            "1": "male/ masculino",
+            "2": "female/ feminino"
+        }
+    },
+    "abcl_num_friends_p": {
+        "Description": "About how many close friends does he/she have? (Do not include family members.) | 0= None  ; 1= 1; 2= 2 or 3; 3= 4 or more",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "None",
+            "1": "1",
+            "2": "2 or 3",
+            "3": "4 or more"
+        }
+    },
+    "abcl_contact_p": {
+        "Description": "About how many times a month does he/she have contact with any close friends? (Include in-person contacts  phone  letters  e-mail. | 0=Less than 1; 1=1 or 2 ; 2=3 or 4 ; 3=5 or more",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Less than 1",
+            "1": "1 or 2",
+            "2": "3 or 4",
+            "3": "5 or more"
+        }
+    },
+    "abcl_get_along_p": {
+        "Description": "How well does he/she get along with close friends? | 0= Not well ; 1= Average/ Promedio; 2= Above average/ Mas que el promedio; 3= Far above average /Bastante mas que el promedio",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Not well",
+            "1": "Average/ Promedio",
+            "2": "Above average/ Mas que el promedio",
+            "3": "Far above average /Bastante mas que el promedio"
+        }
+    },
+    "abcl_visited_p": {
+        "Description": "About how many times a month do any friends or family visit him/her? | 0=Less than 1 ; 1=1 or 2 ; 2=3 or 4 ; 3=5 or more",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Less than 1",
+            "1": "1 or 2",
+            "2": "3 or 4",
+            "3": "5 or more"
+        }
+    },
+    "abcl_q01_p": {
+        "Description": "Is too forgetful | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q02_p": {
+        "Description": "Makes good use of his/her opportunities | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q03_p": {
+        "Description": "Argues a lot | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q04_p": {
+        "Description": "Works up to ability | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q05_p": {
+        "Description": "Blames others for own problems | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q06_p": {
+        "Description": "Uses drugs (other than alcohol or nicotine) for non medical purposes (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q07_p": {
+        "Description": "Bragging  boasting | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q08_p": {
+        "Description": "Can't concentrate  can't pay attention for long | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q09_p": {
+        "Description": "Can't get mind off certain thoughts; obsessions (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q10_p": {
+        "Description": "Can't sit still  restless  or hyperactive | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q11_p": {
+        "Description": "Too dependent on others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q12_p": {
+        "Description": "Complains of loneliness | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q13_p": {
+        "Description": "Confused or seems to be in a fog | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q14_p": {
+        "Description": "Cries a lot | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q15_p": {
+        "Description": "Is pretty honest | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q16_p": {
+        "Description": "Cruelty  bullying  or meanness to others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q17_p": {
+        "Description": "Daydreams or gets lost in his/her thoughts | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q18_p": {
+        "Description": "Deliberately harms self or attempts suicide | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q19_p": {
+        "Description": "Demands a lot of attention | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q20_p": {
+        "Description": "Damages or destroys his/her own things | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q21_p": {
+        "Description": "Damages or destroys things belonging to others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q22_p": {
+        "Description": "Worries about his/her future | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q23_p": {
+        "Description": "Breaks rules at work or elsewhere | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q24_p": {
+        "Description": "Doesn't eat well | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q25_p": {
+        "Description": "Doesn't get along with other people | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q26_p": {
+        "Description": "Doesn't seem to feel guilty after misbehaving | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q27_p": {
+        "Description": "Easily jealous | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q28_p": {
+        "Description": "Gets along badly with family | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q29_p": {
+        "Description": "Fears certain animals  situations  or places (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q30_p": {
+        "Description": "Poor relations with opposite sex | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q31_p": {
+        "Description": "Fears he/she might think or do something bad | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q32_p": {
+        "Description": "Feels he/she has to be perfect | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q33_p": {
+        "Description": "Feels or complains that no one loves him/her | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q34_p": {
+        "Description": "Feels others are out to get him/her | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q35_p": {
+        "Description": "Feels worthless or inferior | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q36_p": {
+        "Description": "Gets hurt a lot  accident-prone | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q37_p": {
+        "Description": "Gets in many fights | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q38_p": {
+        "Description": "His/her relations with neighbors are poor | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q39_p": {
+        "Description": "Hangs around people who get in trouble | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q40_p": {
+        "Description": "Hears sounds or voices that aren't there (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q41_p": {
+        "Description": "Impulsive or acts without thinking | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q42_p": {
+        "Description": "Would rather be alone than with others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q43_p": {
+        "Description": "Lying or cheating | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q44_p": {
+        "Description": "Feels overwhelmed by responsibilities | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q45_p": {
+        "Description": "Nervous  highstrung  or tense | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q46_p": {
+        "Description": "Nervous movements or twitching (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q47_p": {
+        "Description": "Lacks self-confidence | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q48_p": {
+        "Description": "Not liked by others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q49_p": {
+        "Description": "Can do certain things better than other people | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q50_p": {
+        "Description": "Too fearful or anxious | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q51_p": {
+        "Description": "Feels dizzy or lightheaded | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q52_p": {
+        "Description": "Feels too guilty | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q53_p": {
+        "Description": "Has trouble planning for the future | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q54_p": {
+        "Description": "Feels tired without good reason | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q55_p": {
+        "Description": "Moods swing between elation and depression | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56a_p": {
+        "Description": "Aches or pains (not stomach or headaches) | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56b_p": {
+        "Description": "Headaches | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56c_p": {
+        "Description": "Nausea  feels sick | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56d_p": {
+        "Description": "Problems with eyes (not if corrected by glasses) (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56e_p": {
+        "Description": "Rashes or other skin problems | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56f_p": {
+        "Description": "Stomachaches | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q56g_p": {
+        "Description": "Vomiting  throwing up | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q57_p": {
+        "Description": "Physically attacks people | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q58_p": {
+        "Description": "Picks skin or other parts of his/her body (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q59_p": {
+        "Description": "Fails to finish things he/she should do | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q60_p": {
+        "Description": "There is very little that he/she enjoys | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q61_p": {
+        "Description": "Poor work performance | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q62_p": {
+        "Description": "Poorly coordinated or clumsy | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q63_p": {
+        "Description": "Would rather be with older people than with people of own age | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q64_p": {
+        "Description": "Has trouble setting priorities | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q65_p": {
+        "Description": "Refuses to talk | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q66_p": {
+        "Description": "Repeats certain acts over and over; compulsions (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q67_p": {
+        "Description": "Has trouble making or keeping friends | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q68_p": {
+        "Description": "Screams or yells a lot | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q69_p": {
+        "Description": "Secretive  keeps things to self | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q70_p": {
+        "Description": "Sees things that aren't there (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q71_p": {
+        "Description": "Self-conscious or easily embarrassed | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q72_p": {
+        "Description": "Worries about his/her family | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q73_p": {
+        "Description": "Meets responsibilities to his/her family | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q74_p": {
+        "Description": "Showing off or clowning | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q75_p": {
+        "Description": "Too shy or timid | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q76_p": {
+        "Description": "Irresponsible behavior | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q77_p": {
+        "Description": "Sleeps more than most other people during day and/or night (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q78_p": {
+        "Description": "Has trouble making decisions | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q79_p": {
+        "Description": "Speech problem (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q80_p": {
+        "Description": "Stares blankly | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q81_p": {
+        "Description": "Very changeable behavior | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q82_p": {
+        "Description": "Steals | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q83_p": {
+        "Description": "Is easily bored | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q84_p": {
+        "Description": "Strange behavior (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q85_p": {
+        "Description": "Strange ideas (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q86_p": {
+        "Description": "Stubborn  sullen  or irritable | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q87_p": {
+        "Description": "Sudden changes in mood or feelings | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q88_p": {
+        "Description": "Enjoys being with people | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q89_p": {
+        "Description": "Rushes into things without considering the risks | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q90_p": {
+        "Description": "Drinks too much alcohol or gets drunk | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q91_p": {
+        "Description": "Talks about killing self | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q92_p": {
+        "Description": "Does things that may cause trouble with the law (describe): | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q93_p": {
+        "Description": "Talks too much | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q94_p": {
+        "Description": "Teases a lot | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q95_p": {
+        "Description": "Temper tantrums or hot temper | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q96_p": {
+        "Description": "Passive or lacks initiative | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q97_p": {
+        "Description": "Threatens to hurt people | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q98_p": {
+        "Description": "Likes to help others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q99_p": {
+        "Description": "Dislikes staying in one place for very long | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q100_p": {
+        "Description": "Has trouble sleeping | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q101_p": {
+        "Description": "Stays away from job even when not sick and not on vacation | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q102_p": {
+        "Description": "Underactive  slow moving  or lacks energy | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q103_p": {
+        "Description": "Unhappy  sad  or depressed | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q104_p": {
+        "Description": "Is unusually loud | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q105_p": {
+        "Description": "Is disorganized | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q106_p": {
+        "Description": "Tries to be fair to others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q107_p": {
+        "Description": "Feels he/she can't succeed | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q108_p": {
+        "Description": "Tends to lose things | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q109_p": {
+        "Description": "Likes to try new things | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q110_p": {
+        "Description": "Makes good decisions | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q111_p": {
+        "Description": "Withdrawn  doesnt get involved with others | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q112_p": {
+        "Description": "Worries | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q113_p": {
+        "Description": "Sulks a lot | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q114_p": {
+        "Description": "Fails to pay his/her debts or meet other financial responsibilities | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q115_p": {
+        "Description": "Is restless or fidgety | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q116_p": {
+        "Description": "Gets upset too easily | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q117_p": {
+        "Description": "Has trouble managing money or credit cards | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q118_p": {
+        "Description": "Is too impatient | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q119_p": {
+        "Description": "He/she is not good at details | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q120_p": {
+        "Description": "Drives too fast | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q121_p": {
+        "Description": "Tends to be late for appointments | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q122_p": {
+        "Description": "Has trouble keeping a job | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q123_p": {
+        "Description": "He/she is a happy person | 0= Not True (as far as you know)/ No es cierto (por lo que usted sabe); 1=  Somewhat or Sometimes True/ En cierta manera  algunas veces; 2=  Very True or Often True /Muy cierto o cierto a menudo",
+        "DataType": "Integer",
+        "ValueRange": "0::2",
+        "Levels": {
+            "0": "Not True (as far as you know)/ No es cierto (por lo que usted sabe)",
+            "1": "Somewhat or Sometimes True/ En cierta manera  algunas veces",
+            "2": "Very True or Often True /Muy cierto o cierto a menudo"
+        }
+    },
+    "abcl_q124_p": {
+        "Description": "In the past 6 months  about how many times per day did he/she use tobacco (including smokelesstobacco)? ___________ times per day.",
+        "DataType": "Integer"
+    },
+    "abcl_q125_p": {
+        "Description": "In the past 6 months  on how many dayswas he/she drunk? _________ days.",
+        "DataType": "Integer"
+    },
+    "abcl_q126_p": {
+        "Description": "In the past 6 months  on how many days did he/sheuse drugs for nonmedical purposes (includingmarijuana  cocaine  and other drugs  except alcoholand nicotine)? ________ days.",
+        "DataType": "Integer"
+    },
+    "abcl_lived_with_p": {
+        "Description": "Has the child lived with this person in the past year? | 1=Yes ; 0=No ([abcl_about_p] != '0' and [abcl_about_p] != '') and ([event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    }
+}

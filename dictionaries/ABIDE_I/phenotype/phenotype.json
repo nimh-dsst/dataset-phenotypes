@@ -1,0 +1,416 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "SITE_ID": {
+        "LongName": "ABIDE I Acquisition Site ID",
+        "Description": "Site at which data were acquired.",
+        "Levels": {
+            "CALTECH": "California Institute of Technology",
+            "CMU": "Carnegie Mellon University",
+            "KKI": "Kennedy Krieger Institute",
+            "LEUVEN_1": "University of Leuven: Sample 1",
+            "LEUVEN_2": "University of Leuven: Sample 2",
+            "MAX_MUN": "Ludwig Maximilians University Munich",
+            "NYU": "NYU Langone Medical Center",
+            "OHSU": "Oregon Health and Science University",
+            "OLIN": "Olin, Institute of Living at Hartford Hospital",
+            "PITT": "University of Pittsburgh School of Medicine",
+            "SBL": "Social Brain Lab, BCN NIC UMC Groningen, and Netherlands Institute for Neurosciences",
+            "SDSU": "San Diego State University",
+            "STANFORD": "Stanford University",
+            "TRINITY": "Trinity Centre for Health Sciences",
+            "UCLA_1": "University of California, Los Angeles: Sample 1",
+            "UCLA_2": "University of California, Los Angeles: Sample 2",
+            "UM_1": "University of Michigan: Sample 1",
+            "UM_2": "University of Michigan: Sample 2",
+            "USM": "University of Utah School of Medicine",
+            "YALE": "Yale Child Study Center"
+        }
+    },
+    "SUB_ID": {
+        "LongName": "ABIDE unique ID Number",
+        "Description": "Type: Numeric, Min: 50001, Max: 51607"
+    },
+    "DX_GROUP": {
+        "LongName": "Diagnostic Group",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "Autism",
+            "2": "Control"
+        }
+    },
+    "DSM_IV_TR": {
+        "LongName": "DSM-IV-TR Diagnostic Category",
+        "Description": "Type: Numeric, Min: 0, Max: 3",
+        "Levels": {
+            "0": "Control",
+            "1": "Autism",
+            "2": "Aspergers",
+            "3": "PDD-NOS",
+            "4": "Aspergers or PDD-NOS"
+        }
+    },
+    "AGE_AT_SCAN": {
+        "LongName": "Age at time of scan in years",
+        "Description": "Type: Numeric, Min: 6.47, Max: 64"
+    },
+    "SEX": {
+        "LongName": "Subject Gender",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "Male",
+            "2": "Female"
+        }
+    },
+    "HANDEDNESS_CATEGORY": {
+        "LongName": "Subject Handedness Category",
+        "Description": "Type: String",
+        "Levels": {
+            "R": "Right",
+            "L": "Left",
+            "Mixed": "Ambidexterous",
+            "Ambi": "Ambidexterous"
+        }
+    },
+    "HANDEDNESS_SCORES": {
+        "LongName": "Subject Handedness Scores",
+        "Description": "Type: Numeric, Min: -100, Max: 100",
+        "Levels": {
+            "Positive number": "Right",
+            "Negative Number": "Left",
+            "0": "Ambidexterous"
+        }
+    },
+    "FIQ": {
+        "LongName": "FIQ Standard Score",
+        "Description": "Type: Numeric, from FIQ_TEST_TYPE"
+    },
+    "VIQ": {
+        "LongName": "VIQ Standard Score",
+        "Description": "Type: Numeric, from VIQ_TEST_TYPE"
+    },
+    "PIQ": {
+        "LongName": "PIQ Standard Score",
+        "Description": "Type: Numeric, from PIQ_TEST_TYPE"
+    },
+    "FIQ_TEST_TYPE": {
+        "LongName": "IQ Test Administered for Full Scale IQ",
+        "Description": "Type: String",
+        "Levels": {
+            "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
+            "GIT": "Groninger Intelligence Test (GIT)",
+            "HAWIK": "Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)",
+            "WAIS_III": "Wechsler Adult Intelligence Scales (WAIS)",
+            "WASI": "Wechsler Abbreviated Scales of Intelligence (WASI)",
+            "WISC_III": "Wechsler Intelligence Scale for Children (WISC-III)",
+            "WISC_III_DUTCH": "(Dutch) Wechsler Intelligence Scale for Children (WISC-III)",
+            "WISC_IV_4_SUBTESTS": "Subtests of Wechsler Intelligence Scale for Children (WISC-IV)",
+            "WISC_IV_FULL": "The full Wechsler Intelligence Scale for Children (WISC-IV)",
+            "WST": "Wortschatztest (WST)"
+        }
+    },
+    "VIQ_TEST_TYPE": {
+        "LongName": "IQ Test Administered for Verbal IQ",
+        "Description": "Type: String",
+        "Levels": {
+            "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
+            "GIT": "Groninger Intelligence Test (GIT)",
+            "HAWIK": "Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)",
+            "WAIS_III": "Wechsler Adult Intelligence Scales (WAIS)",
+            "WASI": "Wechsler Abbreviated Scales of Intelligence (WASI)",
+            "WISC_III": "Wechsler Intelligence Scale for Children (WISC-III)",
+            "WISC_III_DUTCH": "(Dutch) Wechsler Intelligence Scale for Children (WISC-III)",
+            "WISC_IV_4_SUBTESTS": "Subtests of Wechsler Intelligence Scale for Children (WISC-IV)",
+            "WISC_IV_FULL": "The full Wechsler Intelligence Scale for Children (WISC-IV)",
+            "WST": "Wortschatztest (WST)",
+            "PPVT": "Peabody Picture Vocabulary Test (PPVT)"
+        }
+    },
+    "PIQ_TEST_TYPE": {
+        "LongName": "IQ Test Administered for Performance IQ",
+        "Description": "Type: String",
+        "Levels": {
+            "DAS_II_SA": "Differential Ability Scales II - School age (DAS-II)",
+            "GIT": "Groninger Intelligence Test (GIT)",
+            "HAWIK": "Hamburg-Wechsler Intelligence Test for Children (HAWIK-IV)",
+            "WAIS_III": "Wechsler Adult Intelligence Scales (WAIS)",
+            "WASI": "Wechsler Abbreviated Scales of Intelligence (WASI)",
+            "WISC_III": "Wechsler Intelligence Scale for Children (WISC-III)",
+            "WISC_III_DUTCH": "(Dutch) Wechsler Intelligence Scale for Children (WISC-III)",
+            "WISC_IV_4_SUBTESTS": "Subtests of Wechsler Intelligence Scale for Children (WISC-IV)",
+            "WISC_IV_FULL": "The full Wechsler Intelligence Scale for Children (WISC-IV)",
+            "WST": "Wortschatztest (WST)",
+            "RAVENS": "Raven's Standard Progressive Matrices (RAVENS)"
+        }
+    },
+    "ADI_R_SOCIAL_TOTAL A": {
+        "LongName": "Reciprocal Social Interaction subscore (A) Total for Autism Diagnostic Interview-Revised",
+        "Description": "Type: Numeric, Min: 0, Max: 30"
+    },
+    "ADI_R_VERBAL_TOTAL_BV": {
+        "LongName": "Abnormalities in Communication Subscore (B) Total for Autism Diagnostic Interview-Revised",
+        "Description": "Type: Numeric, Min: 0, Max: 26"
+    },
+    "ADI_R_RRB_TOTAL_C": {
+        "LongName": "Restricted, Repetitive, and Stereotyped Patterns of Behavior Subscore (C) Total for Autism Diagnostic Interview-Revised",
+        "Description": "Type: Numeric, Min: 0, Max: 12"
+    },
+    "ADI_R_ONSET_TOTAL_D": {
+        "LongName": "Abnormality of Development Evident at or Before 36 Months Subscore (D) Total for Autism Diagnostic Interview-Revised",
+        "Description": "Type: Numeric, Min: 0, Max: 5"
+    },
+    "ADI_R_RSRCH_RELIABLE": {
+        "LongName": "Was ADI scored and administered by research reliable personnel?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "not research reliable",
+            "1": "research reliable"
+        }
+    },
+    "ADOS_MODULE": {
+        "LongName": "Autism Diagnostic Observation Schedule Module",
+        "Description": "Type: Numeric, Min: 1, Max: 4"
+    },
+    "ADOS_TOTAL": {
+        "LongName": "Classic Total ADOS Score (Communication subscore + Social Interaction subscore)",
+        "Description": "Type: Numeric, Min: 0, Max: 22"
+    },
+    "ADOS_COMM": {
+        "LongName": "Communication Total Subscore of the Classic ADOS",
+        "Description": "Type: Numeric, Min: 0, Max: 8"
+    },
+    "ADOS_SOCIAL": {
+        "LongName": "Social Total Subscore of the Classic ADOS",
+        "Description": "Type: Numeric, Min: 0, Max: 14"
+    },
+    "ADOS_STEREO_BEHAV": {
+        "LongName": "Sterotyped Behaviors and Rerstricted Interests Total Subscore of the Classic ADOS",
+        "Description": "Type: Numeric, Min: 0, Max: 8"
+    },
+    "ADOS_RSRCH_RELIABLE": {
+        "LongName": "Was ADOS scored and administered by research reliable personnel?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "not research reliable",
+            "1": "research reliable"
+        }
+    },
+    "ADOS_GOTHAM_SOC_AFFECT": {
+        "LongName": "Social Affect Total Subscore for Gotham Algorithm of the ADOS",
+        "Description": "Type: Numeric, Min: 0, Max: 20"
+    },
+    "ADOS_GOTHAM_RRB": {
+        "LongName": "Restricted and Repetitive Behaviors Total Subscore for Gotham Algorithm of the ADOS",
+        "Description": "Type: Numeric, Min: 0, Max: 8"
+    },
+    "ADOS_GOTHAM_TOTAL": {
+        "LongName": "Social Affect Total + Restricted and Repetitive Behaviors Total",
+        "Description": "Type: Numeric, Min: 0, Max: 28"
+    },
+    "ADOS_GOTHAM_SEVERITY": {
+        "LongName": "Individually Calibrated Severity Score for Gotham Algorithm of the ADOS",
+        "Description": "Type: Numeric, Min: 1, Max: 10"
+    },
+    "SRS_VERSION": {
+        "LongName": "Social Responsiveness Scale Version",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "child",
+            "2": "adult"
+        }
+    },
+    "SRS_RAW_TOTAL": {
+        "LongName": "Total Raw Score the Social Responsiveness Scale",
+        "Description": "Type: Numeric, Min: 0, Max: >=117"
+    },
+    "SRS_AWARENESS": {
+        "LongName": "Social Responsiveness Scale Social Awareness Subscore Raw Total",
+        "Description": "Type: Numeric, Min: 0, Max: >=19"
+    },
+    "SRS_COGNITION": {
+        "LongName": "Social Responsiveness Scale Social Cognition Subscore Raw Total",
+        "Description": "Type: Numeric, Min: 0, Max: >=24"
+    },
+    "SRS_COMMUNICATION": {
+        "LongName": "Social Responsiveness Scale Social Communication Subscore Raw Total",
+        "Description": "Type: Numeric, Min: 0, Max: >=43"
+    },
+    "SRS_MOTIVATION": {
+        "LongName": "Social Responsiveness Scale Social Motivation Subscore Raw Total",
+        "Description": "Type: Numeric, Min: 0, Max: >=22"
+    },
+    "SRS_MANNERISMS": {
+        "LongName": "Social Responsiveness Scale Autistic Mannerisms Subscore Raw Total",
+        "Description": "Type: Numeric, Min: 0, Max: >=22"
+    },
+    "SCQ_TOTAL": {
+        "LongName": "Social Communication Questionnaire Total",
+        "Description": "Type: Numeric, Min: 0, Max: 39"
+    },
+    "AQ_TOTAL": {
+        "LongName": "Total Raw Score of the Autism Quotient",
+        "Description": "Type: Numeric, Min: 0, Max: 50"
+    },
+    "COMORBIDITY": {
+        "LongName": "Any other comorbidities?",
+        "Description": "Type: String"
+    },
+    "CURRENT_MED_STATUS": {
+        "LongName": "Currently Taking Medications?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "not taking medication",
+            "1": "taking medication"
+        }
+    },
+    "MEDICATION_NAME": {
+        "LongName": "Active ingredient of any current psychoactive medications",
+        "Description": "Type: String"
+    },
+    "OFF_STIMULANTS_AT_SCAN": {
+        "LongName": "Off stimulants 24 hours prior to scan?",
+        "Description": "Type: Numeric, Min: 0, Max: 1",
+        "Levels": {
+            "0": "no",
+            "1": "yes"
+        }
+    },
+    "VINELAND_RECEPTIVE_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Receptive Language V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_EXPRESSIVE_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Expressive Language V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_WRITTEN_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Written Language V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_COMMUNICATION_STANDARD": {
+        "LongName": "Vineland Adaptive Behavior Scales Communication Standard Score",
+        "Description": "Type: Numeric, Min: 20, Max: 160"
+    },
+    "VINELAND_PERSONAL_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Personal Daily Living Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_DOMESTIC_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Domestic Daily Living Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_COMMUNITY_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior ete Daily Living Skills V Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_DAILYLVNG_STANDARD": {
+        "LongName": "Vineland Adaptive Behavior Scales Daily Living Skills Standard Score",
+        "Description": "Type: Numeric, Min: 20, Max: 160"
+    },
+    "VINELAND_INTERPERSONAL_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Interpersonal Relationships V Scaled Score|",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_PLAY_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Play and Leisure Time V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_COPING_V_SCALED": {
+        "LongName": "Vineland Adaptive Behavior Scales Coping Skills V Scaled Score",
+        "Description": "Type: Numeric, Min: 1, Max: 24"
+    },
+    "VINELAND_SOCIAL_STANDARD": {
+        "LongName": "Vineland Adaptive Behavior Scales Socialization Standard Score",
+        "Description": "Type: Numeric, Min: 20, Max: 160"
+    },
+    "VINELAND_SUM_SCORES": {
+        "LongName": "Sum of Vineland Standard Scores (communication + Daily Living Skills + Socialization)",
+        "Description": "Type: Numeric, Min: 76, Max: 480"
+    },
+    "VINELAND_ABC_STANDARD": {
+        "LongName": "Vineland Adaptive Behavior Composite Standard Score",
+        "Description": "Type: Numeric, Min: 20, Max: 160"
+    },
+    "VINELAND_INFORMANT": {
+        "LongName": "Vineland Adaptive Behavior Scales Informant",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "parent",
+            "2": "self"
+        }
+    },
+    "WISC_IV_VCI": {
+        "LongName": "WISC-IV Verbal Comprehension Index",
+        "Description": "Type: Numeric, Min: 3, Max: 57"
+    },
+    "WISC_IV_PRI": {
+        "LongName": "WISC-IV Perceptual Reasoning Index",
+        "Description": "Type: Numeric, Min: 3, Max: 57"
+    },
+    "WISC_IV_WMI": {
+        "LongName": "WISC-IV Working Memory Index",
+        "Description": "Type: Numeric, Min: 2, Max: 38"
+    },
+    "WISC_IV_PSI": {
+        "LongName": "WISC-IV Processing Speed Index",
+        "Description": "Type: Numeric, Min: 2, Max: 38"
+    },
+    "WISC_IV_SIM_SCALED": {
+        "LongName": "WISC-IV Sim Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_VOCAB_SCALED": {
+        "LongName": "WISC-IV Vocabulary Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_INFO_SCALED": {
+        "LongName": "WISC-IV Information Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_BLK_DSN_SCALED": {
+        "LongName": "WISC-IV Block Design Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_PIC_CON_SCALED": {
+        "LongName": "WISC-IV Picture Concepts Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_MATRIX_SCALED": {
+        "LongName": "WISC-IV Matrix Reasoning Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_DIGIT_SPAN_SCALED": {
+        "LongName": "WISC-IV Digit Span Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_LET_NUM_SCALED": {
+        "LongName": "WISC-IV Letter-Number Sequencing Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_CODING_SCALED": {
+        "LongName": "WISC-IV Coding Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "WISC_IV_SYM_SCALED": {
+        "LongName": "WISC-IV Symbol Search Scaled",
+        "Description": "Type: Numeric, Min: 1, Max: 19"
+    },
+    "EYE_STATUS_AT_SCAN": {
+        "LongName": "Eye Status During Rest Scan",
+        "Description": "Type: Numeric, Min: 1, Max: 2",
+        "Levels": {
+            "1": "open",
+            "2": "closed"
+        }
+    },
+    "AGE_AT_MPRAGE": {
+        "LongName": "Age at Anatomical Scan in years",
+        "Description": "Type: Numeric, Min: 6.47, Max: 64"
+    },
+    "BMI": {
+        "LongName": "Body Mass Index",
+        "Description": "Type: Numeric, Min: 15, Max: 40"
+    }
+}

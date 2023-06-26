@@ -1,0 +1,608 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "medhx_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "medhx_1a": {
+        "Description": "During the past year, has your child been to see a doctor, nurse, nurse practitioner, dentist, or any other health professional like that, OTHER than for regular checkups? /En el \u00faltimo a\u00f1o? / \u00bfsu ni\u00f1o(a) ha visto a un m\u00e9dico, enfermero(a), dentista o alg\u00fan otro profesional similar de la salud, por alg\u00fan motivo distinto a sus chequeos peri\u00f3dicos? | 1 = Yes /S\u00ed; 0 = No/ No; 6 = Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No/ No",
+            "6": "Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_1b": {
+        "Description": "has your child been to see a doctor, nurse, nurse practitioner, dentist, or any other health professional like that, OTHER than for regular checkups. What about the rest of his/her life before the past year? / \u00bfY durante el resto de su vida antes del \u00faltimo a\u00f1o? | 1 = Yes /S\u00ed; 0 = No/ No; 6 = Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No/ No",
+            "6": "Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2a": {
+        "Description": "Asthma Asma | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2b": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Allergies Alergias | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2c": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Brain Injury /Lesi\u00f3n Cerebral | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2d": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Bronchitis /Bronquitus | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2e": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Cancer/Leukemia //C\u00e1ncer/Leucimia | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2f": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Cerebral Palsy Par\u00e1lisis Cerebral | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2g": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Diabetes Diabetes | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2h": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Epilepsy or Seizures Epilepsia o convulsiones | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2i": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Hearing Problem Problema Auditivo | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2j": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Kidney Disease /Enfermedad Renal | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2k": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Lead Poisoning /Intoxicaci\u00f3n por Plomo | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Has she/he ever been to a doctor for any of these things\u2026Muscular Dystrophy /Distrofia muscular | 1 = Yes S\u00cd; 0 = No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00cd",
+            "0": "No No// Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_2m": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Multiple Sclerosis Esclerosis m\u00faltiple | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2n": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Has she/he ever been to a doctor for any of these things\u2026Problems with Vision (including the need for glasses) /Problemas de la vista (incluyendo la necesidad de lentes/gafas) | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2o": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Problems with Heart Problemas del coraz\u00f3n | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "medhx_2p": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Sickle Cell Anemia /Anemia de c\u00e9lulas falciformes | 1 = Yes; 0 = No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2q": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Very Bad Headaches /Dolores de cabeza muy intensos | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2r": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026An Operation /Cirug\u00edas | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_2s": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026Any Other Illness /Cualquier otra enfermedad | 1 = Yes; 0 = No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No // Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_4a": {
+        "Description": "Has he/she been to an emergency room in the past year? / \u00bfSu ni\u00f1o(a) ha visitado una sala de emergencias en el \u00faltimo a\u00f1o? | 1 = Yes /S\u00ed; 0 = No /No; 6 = Don't know /No S\u00e9; 7 = Refuse to answer /Niego contestar //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6 ; 7",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "6": "Don't know /No S\u00e9",
+            "7": "Refuse to answer /Niego contestar //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_4b": {
+        "Description": "How many times has he/she been to the emergency room in that past year? / \u00bfCu\u00e1ntas veces ha visitado \u00e9l/ella la sala de emergencias en este \u00faltimo a\u00f1o? | 1 = 1 time /1 vez; 2 = 2 times /2 veces; 3 = 3-4 times/ 3-4 veces; 4 = 5-9 times /5-9 veces; 5 = 10+ times/ 10+ veces //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "1 time /1 vez",
+            "2": "2 times /2 veces",
+            "3": "3-4 times/ 3-4 veces",
+            "4": "5-9 times /5-9 veces",
+            "5": "10+ times/ 10+ veces //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_5a": {
+        "Description": "Has he/she been to the emergency room any time BEFORE this past year, that is, any other time in his/her whole life? / \u00bfSu ni\u00f1o(a) visit\u00f3 la sala de emergencias en alg\u00fan momento ANTES de este \u00faltimo a\u00f1o; es decir, en alg\u00fan otro momento de su vida? | 1 = Yes /S\u00ed; 0 = No /No; 6 = Don't know /No S\u00e9; 7 = Refuse to answer /Niego contestar //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6 ; 7",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No",
+            "6": "Don't know /No S\u00e9",
+            "7": "Refuse to answer /Niego contestar //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_5b": {
+        "Description": "How many times did s(he) go to the emergency room before the past year? / \u00bfCu\u00e1ntas veces acudi\u00f3 a la sala de emergencias antes de este \u00faltimo a\u00f1o ? | 1 = 1 time /1 vez; 2 = 2 times /2 veces; 3 = 3-4 times/ 3-4 veces; 4 = 5-9 times /5-9 veces; 5 = 10+ times/ 10+ veces //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "1 time /1 vez",
+            "2": "2 times /2 veces",
+            "3": "3-4 times/ 3-4 veces",
+            "4": "5-9 times /5-9 veces",
+            "5": "10+ times/ 10+ veces //Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6a": {
+        "Description": "Has she/he ever been to a doctor for any of these things\u2026 Broken Bones Fracturas | 1 = Yes S\u00ed; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No"
+        }
+    },
+    "medhx_6a_notes": {
+        "Description": "Broken Bones. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 20"
+    },
+    "medhx_6b": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Sprains /Esguinces | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6b_notes": {
+        "Description": "Sprains. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 20"
+    },
+    "medhx_6c": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Cuts or Scrapes /Cortadas o rasgu\u00f1os | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6c_times": {
+        "Description": "Cuts or Scrapes. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 50"
+    },
+    "medhx_6d": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Stitches /Suturas | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6d_notes": {
+        "Description": "Stitches. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float"
+    },
+    "medhx_6e": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Other Serious Wounds /Otras heridas graves | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6e_times": {
+        "Description": "Other Serious Wounds. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6f": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Falls/ Ca\u00eddas | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6f_notes": {
+        "Description": "Falls. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6g": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Burns /Quemaduras | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6g_times": {
+        "Description": "Burns. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 8"
+    },
+    "medhx_6h": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...High Fever /Fiebre alta | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6h_times": {
+        "Description": "High Fever. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0::20"
+    },
+    "medhx_6i": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Head Injury /Lesi\u00f3n en la cabeza | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6i_times": {
+        "Description": "Head Injury. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float"
+    },
+    "medhx_6j": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Knocked Unconscious/ P\u00e9rdida del conocimiento | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6j_times": {
+        "Description": "Knocked Unconscious. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 25"
+    },
+    "medhx_6k": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Bruises /Moretones | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6k_times": {
+        "Description": "Bruises. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float"
+    },
+    "medhx_6l": {
+        "Description": "Since we last saw you, has she/he been to a doctor for any of these things? Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Asthma Attack/ Ataque de asma | 1 = Yes S\u00ed; 0 = No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____. ",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No //Now I'd like to ask you about your child's use of health services since we last saw you on_____."
+        }
+    },
+    "medhx_6l_notes": {
+        "Description": "Asthma Attack. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float"
+    },
+    "medhx_6m": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Broken Teeth/ Dientes rotos | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6m_times": {
+        "Description": "Broken Teeth. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6n": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Animal Bite/ Mordedura de animal | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6n_notes": {
+        "Description": "Animal Bite. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6o": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Overdose/ Sobredosis | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6o_notes": {
+        "Description": "Overdose. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_6p": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Seizure/ Convulsi\u00f3n | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6p_notes": {
+        "Description": "Seizure. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 50"
+    },
+    "medhx_6q": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Accidental Poisoning/ Envenenamiento accidental | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6q_notes": {
+        "Description": "Accidental Poisoning. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6r": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Gun Shot Wound /Herida por arma de fuego | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6r_notes": {
+        "Description": "Gun Shot Wound. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6s": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Wound from knife or any other weapon /Herida por cuchillo o cualquier otra arma | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6s_times": {
+        "Description": "Wound from knife or any other weapon. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "1 :: 100"
+    },
+    "medhx_6t": {
+        "Description": "Has he/she ever been to a doctor, a nurse, nurse practitioner, the emergency room or a clinic because any of these things happened...Other /Otro hospitalization reasons | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_6t_times": {
+        "Description": "Other hospitalizations. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer"
+    },
+    "medhx_8a": {
+        "Description": "Has he/she ever been in the hospital overnight or longer? / \u00bf\u00c9l/ella ha pasado una noche o m\u00e1s  en el hospital? | 1 = Yes /S\u00ed; 0 = No/ No; 6 = Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No/ No",
+            "6": "Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_9a": {
+        "Description": "Has he/she ever had general anesthesia or sedation for any surgery or procedure? / \u00bfAlguna vez \u00e9l/ella ha estado bajo anestesia general o sedaci\u00f3n para alguna cirug\u00eda o procedimiento? | 1 = Yes /S\u00ed; 0 = No/ No; 6 = Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 6",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No/ No",
+            "6": "Don't know /No s\u00e9//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_9b": {
+        "Description": "general anesthesia or sedation for any surgery or procedure. How many times? / \u00bfCu\u00e1ntas veces? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 15"
+    },
+    "medhx_9c": {
+        "Description": "general anesthesia or sedation for any surgery or procedure. At what age for the most recent time? / \u00bfA qu\u00e9 edad durante el tiempo m\u00e1s reciente? | Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Float",
+        "ValueRange": "0 :: 10"
+    },
+    "medhx_11": {
+        "Description": "Is he/she able to see the difference between blue and green? / \u00bfEs su ni\u00f1o(a) capaz de ver la diferencia entre el azul y el verde? | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    },
+    "medhx_12": {
+        "Description": "How about the difference between blue and yellow? / \u00bfQu\u00e9 tal la diferencia entre el azul y el amarillo? | 1 = Yes/ S\u00ed; 0 = No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life.",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes/ S\u00ed",
+            "0": "No/ No//Now I'd like to ask you about your child's use of health services during the past year and throughout his/her whole life."
+        }
+    }
+}

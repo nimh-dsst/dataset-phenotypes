@@ -1,0 +1,183 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "sds_p_ss_dims": {
+        "Description": "Disorders of Initiating and Maintaining Sleep (DIMS) SUM:  sleepdisturb1_p +  sleepdisturb2_p + sleepdisturb3_p + sleepdisturb4_p + sleepdisturb5_p + sleepdisturb10_p + sleepdisturb11_p;  Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_dims_nm": {
+        "Description": "DIMS:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_dims_nt": {
+        "Description": "DIMS:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_sbd": {
+        "Description": "Sleep Breathing disorders (SBD):  SUM sleepdisturb13_p +  sleepdisturb14_p + sleepdisturb15_p; Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_sbd_nm": {
+        "Description": "SBD:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_sbd_nt": {
+        "Description": "SBD:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_da": {
+        "Description": "Disorder of Arousal (DA) SUM: sleepdisturb17_p +  sleepdisturb20_p + sleepdisturb21_p;  Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_da_nm": {
+        "Description": "DA:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_da_nt": {
+        "Description": "DA:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_swtd": {
+        "Description": "Sleep-Wake transition Disorders (SWTD) SUM: sleepdisturb6_p + sleepdisturb7_p + sleepdisturb8_p + sleepdisturb12_p +  sleepdisturb18_p + sleepdisturb19_p; Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_swtd_nm": {
+        "Description": "SWTD:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_swtd_nt": {
+        "Description": "SWTD:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_does": {
+        "Description": "Disorders of Excessive Somnolence (DOES) SUM:  sleepdisturb22_p + sleepdisturb23_p +  sleepdisturb24_p +  sleepdisturb25_p + sleepdisturb26_p; Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_does_nm": {
+        "Description": "DOES:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_does_nt": {
+        "Description": "DOES:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_shy": {
+        "Description": "Sleep Hyperhydrosis (SHY) SUM: sleepdisturb9_p + sleepdisturb16_p; Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_shy_nm": {
+        "Description": "SHY:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_shy_nt": {
+        "Description": "SHY:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_total": {
+        "Description": "Total Score (Sum of 6 Factors): sds_p_ss_dims + sds_p_ss_sbd + sds_p_ss_da + sds_p_ss_swtd + sds_p_ss_does + sds_p_ss_shy; Validation: All items must be answered | Bruni, O., Ottaviano, S., et al. (1996) The Sleep Disturbance Scale for Children (SDSC). Construction and validation of an instrument to evaluate sleep disturbances in childhood and adolescence. J Sleep Res 5(4): 251-261.",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_total_nm": {
+        "Description": "Total Score:  Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "sds_p_ss_total_nt": {
+        "Description": "Total Score:  Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_male_category": {
+        "Description": "Pubertal Developmental Scale Parent: Male Category pds_p_m_cat_sum (sum_p_m) = pds_bdyhair_y + pds_m4_p + pds_m5_p; 1 - prepuberty sum_p_m = 3; 2 - early puberty sum_p_m >= 4 and <= 5; 3 - mid puberty sum_p_m >= 6 and <= 8; 4 - late puberty sum_p_m >= 9 and <= 11; 5 - post puberty sum_p_m = 12; Validation: All items must be answered | Petersen, A. C., Crockett, L., et al. (1988)  A self-report measure of pubertal status: Reliability, validity, and initial norms. J Youth Adolesc 17(2): 117-133.",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_male_cat_nm": {
+        "Description": "Pubertal Developmental Scale Parent: Male Category Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_male_cat_nt": {
+        "Description": "Pubertal Developmental Scale Parent: Male Category Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_female_category": {
+        "Description": "Pubertal Developmental Scale Parent: Female Category: pds_p_m_cat_sum (sum_p_f) = pds_2_p + pds_f4_p;  1 - prepuberty - sum_p_f =  2 and pds_f5_p = 1,   2 - early puberty - sum_p_f = 3 and pds_f5_p = 1,   3 - mid puberty -   sum_p_f >= 3  and pds_f5_p = 1,  4 - late puberty -   sum_p_f  <= 7 and pds_f5_p = 4,   5 - post puberty -  sum_p_f =    8 and pds_f5_p = 4; Validation: All items must be answered | Petersen, A. C., Crockett, L., et al. (1988)  A self-report measure of pubertal status: Reliability, validity, and initial norms. J Youth Adolesc 17(2): 117-133.",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_female_cat_nm": {
+        "Description": "Pubertal Developmental Scale Parent: Female Category Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_female_cat_nt": {
+        "Description": "Pubertal Developmental Scale Parent: Female Category Number Total Questions",
+        "DataType": "Integer"
+    },
+    "cna_p_ss_sum": {
+        "Description": "Mind Diet Score: sum(cna_1_p:cna_14_p). Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "cna_p_ss_sum_nm": {
+        "Description": "Mind Diet \rSum: Number Missing Questions",
+        "DataType": "Integer"
+    },
+    "cna_p_ss_sum_nt": {
+        "Description": "Mind Diet Score: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_female_cat_2_nm": {
+        "Description": "Pubertal Developmental Scale Parent: Female Category; Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_female_cat_2_nt": {
+        "Description": "Pubertal Developmental Scale Parent: Female Category; Number Total Questions",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_female_category_2": {
+        "Description": "Pubertal Developmental Scale Parent: Female Category - based on sex at birth; pubertdev_sum_p_f = pubertdev_2_p plus pubertdev_f4_p;  1 - prepuberty - pubertdev_sum_p_f  =  2 and pubertdev_f5b_p= 1;  2 - early puberty - pubertdev_sum_p_f  = 3 and pubertdev_f5b_p = 1;  3 - mid puberty -   pubertdev_sum_p_f  > 3  and pubertdev_f5b_p = 1;  4 - late puberty -  pubertdev_sum_p_f   <= 7 and pubertdev_f5b_p = 4 ;  5 - post puberty - pubertdev_sum_p_f  = 8 and pubertdev_f5b_p = 4 ; Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_male_category_2": {
+        "Description": "Pubertal Developmental Scale Parent: Male Category - based on sex at birth; pubertdev_sum_p_m = pubertdev_2_p + pubertdev_m4_p + pubertdev_m5_p; 1 - prepuberty pubertdev_sum_p_m = 3; 2 - early puberty pubertdev_sum_p_m >= 4 and <=5; 3 - mid puberty pubertdev_sum_p_m >=6 and <=8; 4 - late puberty pubertdev_sum_p_m >= 9 and <= 11; 5 - post puberty pubertdev_sum_p_m = 12; Validation: All items must be answered",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_male_cat_2_nm": {
+        "Description": "Pubertal Developmental Scale Parent: Male Category; Number Missing Answers?",
+        "DataType": "Integer"
+    },
+    "pds_p_ss_male_cat_2_nt": {
+        "Description": "Pubertal Developmental Scale Parent: male Category; Number Total Questions?",
+        "DataType": "Integer"
+    }
+}

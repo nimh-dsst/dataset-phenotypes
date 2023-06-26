@@ -1,0 +1,2070 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "socialdev_crd_01": {
+        "Description": "Have you ever received an in-school detention? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_01a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_01b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_02": {
+        "Description": "Have you received an in-school or out-of-school suspension? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_02a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_02b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_03": {
+        "Description": "Have you been expelled from school? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_03a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_03b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_04": {
+        "Description": "Have you cheated on school tests or assignments? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_04a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_04b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_05": {
+        "Description": "Have you been <i>caught</i> cheating on school tests? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_05a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_05b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_06": {
+        "Description": "Have you skipped school without an excuse (like without approval from a parent for illness or a doctor's appointment)? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_06a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_06b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_06c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_06d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_07": {
+        "Description": "Have you been sent home from school for bad behavior? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_07a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_07b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_07c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_07d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_08": {
+        "Description": "Have you broken, damaged or destroyed something on purpose that belonged to your parents or other people in your family? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_08a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_08b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_08c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_08d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_09": {
+        "Description": "Have you broken, damaged or destroyed something on purpose belonging to a school? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_09a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_09b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_09c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_09d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_10": {
+        "Description": "Have you broken, damaged or destroyed other things on purpose that did not belong to you, not counting things that belong to your family and school? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_10a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_10b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_10c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_10d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_11": {
+        "Description": "Have you written things or sprayed paint on walls, sidewalks, or cars without permission? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_11a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_11b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_11c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_11d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_12": {
+        "Description": "Have you purposely set fire to a building, a car, or something else, or tried to do so? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_12a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_12b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_12c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_12d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_13": {
+        "Description": "Have you stolen or tried to steal a bicycle or skateboard? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_13a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_13b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_13c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_13d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_14": {
+        "Description": "Have you taken something from a store without paying for it? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_14a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_14b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_14c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_14d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_15": {
+        "Description": "Have you taken money at home that did not belong to you, like from your mother's purse or from your parents' dresser, without their knowledge? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_15a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_15b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_15c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_15d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_16": {
+        "Description": "Have you taken anything at school from the teacher or other kids that did not belong to you? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_16a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_16b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_16c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_16d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_17": {
+        "Description": "Have you taken something out of somebody's house, yard, or garage that did not belong to you? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_17a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_17b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_17c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_17d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_18": {
+        "Description": "Have you taken something from a car that did not belong to you? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_18a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_18b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_18c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_18d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_19": {
+        "Description": "Have you gone into or tried to go into a building to steal something? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_19a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_19b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_19c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_19d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_20": {
+        "Description": "Have you avoided paying for things such as movies, the bus, subway rides, or food? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_20a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_20b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_20c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_20d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_21": {
+        "Description": "Have you snatched someone's purse or wallet, or picked someone's pocket? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_21a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_21b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_21c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_21d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_22": {
+        "Description": "Have you gone joyriding?  Like taken a motor vehicle, such as a car or motorcycle, for a ride or drive without the owner's permission? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_22a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_22b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_22c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_22d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_22e": {
+        "Description": "When you stole a motor vehicle or went joyriding, did this occur from home? | 1=Yes;  0=No;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "1;0;99",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_23": {
+        "Description": "Have you stolen while confronting someone, like in a mugging, purse snatching, or extortion? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_23a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_23b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_23c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_23d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_24": {
+        "Description": "Have you hit a teacher or another grown-up at school? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_24a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_24b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_24c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_24d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_25": {
+        "Description": "Have you hit other students or got into a physical fight with them? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_25a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_25b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_25c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_25d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_26": {
+        "Description": "Have you hit one of your parents? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_26a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_26b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_26d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_27": {
+        "Description": "Have you hit a brother or sister or got into a physical fight with him/her? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say;  999=I don't have any brothers or sisters",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99; 999",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say",
+            "999": "I don't have any brothers or sisters"
+        }
+    },
+    "socialdev_crd_27a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_27b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_27d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_28": {
+        "Description": "Have you <u>carried</u> a hidden weapon? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_28a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_28b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_28c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_28d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_28e": {
+        "Description": "What kind of weapon was it?  If this happened more than once think of the most dangerous weapon you carried.",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_29": {
+        "Description": "Have you thrown rocks or bottles at people? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_29a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_29b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_29c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_29d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_30": {
+        "Description": "Have you bullied, threatened, or deliberately intimidated someone else? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_30a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_30b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_30c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_30d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_31": {
+        "Description": "Have you been physically cruel to another person (causing harm)? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_31a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_31b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_31c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_31d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_32": {
+        "Description": "Have you been physically cruel to an animal (causing harm)? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_32a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_32b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_32c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_32d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_33": {
+        "Description": "Have you <u>threatened</u> anyone with a weapon (like a bat, brick, broken bottle, knife, or gun)? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_33a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_33b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_33c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_33d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_33e": {
+        "Description": "What kind of weapon was it?  If this happened more than once think of the most dangerous weapon you used to threaten someone.",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_34": {
+        "Description": "Have you been stopped and questioned by the police? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_34a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_34b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_35": {
+        "Description": "Have you been arrested? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_35a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_35b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_35e": {
+        "Description": "Why were you arrested the first time?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_36": {
+        "Description": "Have you gone into someone's garden, backyard, house, or garage when you were not supposed to be there? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_36a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_36b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_36c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_36d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_37": {
+        "Description": "Have you run away from home? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_37a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_37b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_37c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_37d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_37e": {
+        "Description": "How long were you away? | 0=Less than 2 hours;  1=2 hours to all day;  2=Overnight;  3=More than 1 night",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Less than 2 hours",
+            "1": "2 hours to all day",
+            "2": "Overnight",
+            "3": "More than 1 night"
+        }
+    },
+    "socialdev_crd_38": {
+        "Description": "Have you been loud, rowdy, or unruly in a public place so that people complained about it or got you in trouble? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_38a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_38b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_38c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_38d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_39": {
+        "Description": "Have you stayed out late at night without your parent's permission (like past curfew or past midnight)? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_39a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_39b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_39c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_39d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_40": {
+        "Description": "Have you sold marijuana (pot, grass, weed)? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_40a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_40b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_40c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_40d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_41": {
+        "Description": "Have you sold hard drugs, such as heroin, cocaine (crack), or LSD? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_41a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_41b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_41c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_41d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_42": {
+        "Description": "Have you sold prescription medication? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_42a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_42b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_42c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_42d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_43": {
+        "Description": "Have you been involved in any gang activities? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_43a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_43b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_43d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_44": {
+        "Description": "Have you used the internet to bother or harass, or to spread mean words or pictures/videos of someone? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_44a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_44b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_44c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_44d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_45": {
+        "Description": "Have you used a cell phone (texting etc.) to bother or harass, or to spread mean words or pictures/videos about someone? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_45a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_45b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_45c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_45d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_46": {
+        "Description": "Have you used a fake ID (such as a driver's license, student ID, etc.) to obtain goods or services or gain entrance where you weren't eligible? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_46a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_46b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_46c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_46d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_47": {
+        "Description": "Have you used or tried to use a credit card or bank card of someone you KNOW (family member, friend, partner, etc.) without the owner's permission? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_47a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_47b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_47c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_47d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    },
+    "socialdev_crd_48": {
+        "Description": "Have you used or tried to use a credit card or bank card of someone you DON'T KNOW without the owner's permission? | 0=Never;  1=Once or twice;  2=More often;  98=I don't know;  99=I'd rather not say",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;98;99",
+        "Levels": {
+            "0": "Never",
+            "1": "Once or twice",
+            "2": "More often",
+            "98": "I don't know",
+            "99": "I'd rather not say"
+        }
+    },
+    "socialdev_crd_48a": {
+        "Description": "Did this happen in the last 12 months? | 1=Yes;  0=No;  98=I don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;98",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "98": "I don't know"
+        }
+    },
+    "socialdev_crd_48b": {
+        "Description": "How old were you the first time this happened?",
+        "DataType": "Integer"
+    },
+    "socialdev_crd_48c": {
+        "Description": "Did you do this activity: | 0=By yourself;  1=With a friend;  2=In a group",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;",
+        "Levels": {
+            "0": "By yourself",
+            "1": "With a friend",
+            "2": "In a group"
+        }
+    },
+    "socialdev_crd_48d": {
+        "Description": "Did you do this activity: | 0=While sober;  1=Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)",
+        "DataType": "Integer",
+        "ValueRange": "0;1;",
+        "Levels": {
+            "0": "While sober",
+            "1": "Under the influence of alcohol, marijuana, or other drugs (but NOT nicotine)"
+        }
+    }
+}

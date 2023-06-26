@@ -1,0 +1,187 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "comc_phenx_select_language": {
+        "Description": "\u00bfEspa\u00f1ol? | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "comc_phenx_close_knit_p": {
+        "Description": "This is a close-knit neighborhood. / Este es un vecindario muy unido. | 5= Strongly Agree / Totalmente de acuerdo;4=  Agree / De acuerdo; 3= Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo; 2=  Disagree / En desacuerdo; 1 = Strongly Disagree / Totalmente en desacuerdo; 999 = Don't Know / No s\u00c3\u00a9; 777=  Refused / niego a contestar\"",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Strongly Agree / Totalmente de acuerdo",
+            "4": "Agree / De acuerdo",
+            "3": "Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo",
+            "2": "Disagree / En desacuerdo",
+            "1": "Strongly Disagree / Totalmente en desacuerdo",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar\""
+        }
+    },
+    "comc_phenx_help_p": {
+        "Description": "People around here are willing to help their neighbors. / La gente de por aqu\u00c3\u00ad est\u00c3\u00a1 dispuesta a ayudar a sus vecinos. | 5= Strongly Agree / Totalmente de acuerdo;4=  Agree / De acuerdo; 3= Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo; 2=  Disagree / En desacuerdo; 1 = Strongly Disagree / Totalmente en desacuerdo; 999 = Don't Know / No s\u00c3\u00a9; 777=  Refused / niego a contestar\"",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Strongly Agree / Totalmente de acuerdo",
+            "4": "Agree / De acuerdo",
+            "3": "Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo",
+            "2": "Disagree / En desacuerdo",
+            "1": "Strongly Disagree / Totalmente en desacuerdo",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar\""
+        }
+    },
+    "comc_phenx_get_along_p": {
+        "Description": "People in this neighborhood generally don't get along with each other. / La gente en este vecindario por lo general no se lleva bien. | 1= Strongly Agree / Totalmente de acuerdo; 2=  Agree / De acuerdo; 3= Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo; 4  =Disagree / En desacuerdo; 5=  Strongly Disagree / Totalmente en desacuerdo; 999 = Don't Know / No s\u00c3\u00a9; 777=  Refused / niego a contestar\"",
+        "DataType": "Integer",
+        "ValueRange": "1;2;3;4;5;999;777",
+        "Levels": {
+            "1": "Strongly Agree / Totalmente de acuerdo",
+            "2": "Agree / De acuerdo",
+            "3": "Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo",
+            "4": "Disagree / En desacuerdo",
+            "5": "Strongly Disagree / Totalmente en desacuerdo",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar\""
+        }
+    },
+    "comc_phenx_share_values_p": {
+        "Description": "People in this neighborhood do not share the same values. / La gente de este vecindario no comparte los mismos valores. | 1= Strongly Agree / Totalmente de acuerdo; 2=  Agree / De acuerdo; 3= Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo; 4  =Disagree / En desacuerdo; 5=  Strongly Disagree / Totalmente en desacuerdo; 999 = Don't Know / No s\u00c3\u00a9; 777=  Refused / niego a contestar\"",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Agree / Totalmente de acuerdo",
+            "2": "Agree / De acuerdo",
+            "3": "Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo",
+            "4": "Disagree / En desacuerdo",
+            "5": "Strongly Disagree / Totalmente en desacuerdo",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar\""
+        }
+    },
+    "comc_phenx_trusted_p": {
+        "Description": "People in this neighborhood can be trusted. / La gente de este vecindario es de confianza. | 5= Strongly Agree / Totalmente de acuerdo;4=  Agree / De acuerdo; 3= Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo; 2=  Disagree / En desacuerdo; 1 = Strongly Disagree / Totalmente en desacuerdo; 999 = Don't Know / No s\u00c3\u00a9; 777=  Refused / niego a contestar\"",
+        "DataType": "Integer",
+        "ValueRange": "1;2;3;4;5;999;777",
+        "Levels": {
+            "5": "Strongly Agree / Totalmente de acuerdo",
+            "4": "Agree / De acuerdo",
+            "3": "Neither Agree Nor Disagree / Ni de acuerdo ni en desacuerdo",
+            "2": "Disagree / En desacuerdo",
+            "1": "Strongly Disagree / Totalmente en desacuerdo",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar\""
+        }
+    },
+    "comc_phenx_skip_p": {
+        "Description": "If a group of neighborhood children were skipping school and hanging out on a street corner how likely is that your neighbors would do something about it? / Si un grupo de ni\u00c3\u00b1os del vecindario estuviera faltando a la escuela y pasando el rato en una esquina \u00c2\u00bfqu\u00c3\u00a9 probabilidades hay de que sus vecinos hagan algo al respecto? | 5=Very Likely / Muy probable; 4= Likely / Probable; 3 = Neither Likely Nor Unlikely / Ni probable ni improbable; 2=  Unlikely / Improbable; 1= Very Unlikely / Muy improbable; 999 = Don't Know / No s\u00c3\u00a9; 777 = Refused / niego a contestar",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Very Likely / Muy probable",
+            "4": "Likely / Probable",
+            "3": "Neither Likely Nor Unlikely / Ni probable ni improbable",
+            "2": "Unlikely / Improbable",
+            "1": "Very Unlikely / Muy improbable",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar"
+        }
+    },
+    "comc_phenx_graffiti_p": {
+        "Description": "If some children were spray-painting graffiti on a local building how likely is it that your neighbors would do something about it? / Si algunos ni\u00c3\u00b1os estuvieran pintando grafiti con pintura en aerosol en un edificio local \u00c2\u00bfqu\u00c3\u00a9 probabilidades hay de que sus vecinos hagan algo al respecto? | 5=Very Likely / Muy probable; 4= Likely / Probable; 3 = Neither Likely Nor Unlikely / Ni probable ni improbable; 2=  Unlikely / Improbable; 1= Very Unlikely / Muy improbable; 999 = Don't Know / No s\u00c3\u00a9; 777 = Refused / niego a contestar",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Very Likely / Muy probable",
+            "4": "Likely / Probable",
+            "3": "Neither Likely Nor Unlikely / Ni probable ni improbable",
+            "2": "Unlikely / Improbable",
+            "1": "Very Unlikely / Muy improbable",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar"
+        }
+    },
+    "comc_phenx_disrespect_p": {
+        "Description": "If a child was showing disrespect to an adult how likely is it that people in your neighborhood would scold that child? / Si un ni\u00c3\u00b1o le estuviera faltando el respeto a un adulto \u00c2\u00bfqu\u00c3\u00a9 probabilidades hay de que la gente de su vecindario rega\u00c3\u00b1e a ese ni\u00c3\u00b1o? | 5=Very Likely / Muy probable; 4= Likely / Probable; 3 = Neither Likely Nor Unlikely / Ni probable ni improbable; 2=  Unlikely / Improbable; 1= Very Unlikely / Muy improbable; 999 = Don't Know / No s\u00c3\u00a9; 777 = Refused / niego a contestar",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Very Likely / Muy probable",
+            "4": "Likely / Probable",
+            "3": "Neither Likely Nor Unlikely / Ni probable ni improbable",
+            "2": "Unlikely / Improbable",
+            "1": "Very Unlikely / Muy improbable",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar"
+        }
+    },
+    "comc_phenx_fight_p": {
+        "Description": "If there was a fight in front of your house and someone was being beaten or threatened how likely is it that your neighbors would break it up? / Si hubiera una pelea enfrente de su casa y a alguien lo estuvieran golpeando o amenazando \u00c2\u00bfqu\u00c3\u00a9 probabilidades hay de que sus vecinos intervengan? | 5=Very Likely / Muy probable; 4= Likely / Probable; 3 = Neither Likely Nor Unlikely / Ni probable ni improbable; 2=  Unlikely / Improbable; 1= Very Unlikely / Muy improbable; 999 = Don't Know / No s\u00c3\u00a9; 777 = Refused / niego a contestar",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Very Likely / Muy probable",
+            "4": "Likely / Probable",
+            "3": "Neither Likely Nor Unlikely / Ni probable ni improbable",
+            "2": "Unlikely / Improbable",
+            "1": "Very Unlikely / Muy improbable",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar"
+        }
+    },
+    "comc_phenx_budget_p": {
+        "Description": "Suppose that because of budget cuts the fire station closest to your home was going to be closed down by the city. How likely is it that neighborhood residents would organize to try to do something to keep the fire station open? / Suponga que debido a los recortes de presupuesto la municipalidad fuese a cerrar la estacion de bomberos mas cercana a su casa. \u00c2\u00bfQu\u00c3\u00a9 tan probable es que los residentes de su vecindad se organicen para tratar de hacer algo para mantener la estaci\u00c3\u00b3n de bomberos abierta? | 5=Very Likely / Muy probable; 4= Likely / Probable; 3 = Neither Likely Nor Unlikely / Ni probable ni improbable; 2=  Unlikely / Improbable; 1= Very Unlikely / Muy improbable; 999 = Don't Know / No s\u00c3\u00a9; 777 = Refused / niego a contestar",
+        "DataType": "Integer",
+        "ValueRange": "5;4;3;2;1;999;777",
+        "Levels": {
+            "5": "Very Likely / Muy probable",
+            "4": "Likely / Probable",
+            "3": "Neither Likely Nor Unlikely / Ni probable ni improbable",
+            "2": "Unlikely / Improbable",
+            "1": "Very Unlikely / Muy improbable",
+            "999": "Don't Know / No s\u00c3\u00a9",
+            "777": "Refused / niego a contestar"
+        }
+    }
+}

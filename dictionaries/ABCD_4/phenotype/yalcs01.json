@@ -1,0 +1,118 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "bal_test1_result_y": {
+        "Description": "Breathalyzer Test 1 Result: | 3=Not applicable (not randomized) ; 1=Negative (.000) ; 2=Positive (.001 or above) ; 4=Participant unable to complete (tried 3 times) ; 5=Participant refused ; 7=Not collected - remote completion ; 8=Institution not authorized to collect samples due to COVID ; 9=Staff discomfort due to COVID ; 10=Exceed 15min of < 6ft distance from youth (COVID) ; 11=Not approved by ABCD for collection ; 6=Not collected (other)",
+        "DataType": "Integer",
+        "ValueRange": "1::11",
+        "Levels": {
+            "3": "Not applicable (not randomized)",
+            "1": "Negative (.000)",
+            "2": "Positive (.001 or above)",
+            "4": "Participant unable to complete (tried 3 times)",
+            "5": "Participant refused",
+            "7": "Not collected - remote completion",
+            "8": "Institution not authorized to collect samples due to COVID",
+            "9": "Staff discomfort due to COVID",
+            "10": "Exceed 15min of < 6ft distance from youth (COVID)",
+            "11": "Not approved by ABCD for collection",
+            "6": "Not collected (other)"
+        }
+    },
+    "bal1_dot_y": {
+        "Description": "Breathalyzer Test 1 Date Completed:",
+        "DataType": "Date"
+    },
+    "bal_test2_result_y": {
+        "Description": "Breathalyzer Test 2 Result: | 1 = Negative (.000); 2 = Positive (.001 or above); 4 = Participant unable to complete (tried 3 times); 5 = Participant refused; 6 = Not collected (other)",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Negative (.000)",
+            "2": "Positive (.001 or above)",
+            "4": "Participant unable to complete (tried 3 times)",
+            "5": "Participant refused",
+            "6": "Not collected (other)"
+        }
+    },
+    "bal2_dot_y": {
+        "Description": "Breathalyzer Test 2 Date Completed:",
+        "DataType": "Date"
+    },
+    "bal2_need": {
+        "Description": "Is BAL Test Day 2 needed for this participant? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "bal2_test1_result_y": {
+        "Description": "Breathalyzer Test 1 Day 2 Result: | 1 = Negative (.000); 2 = Positive (.001 or above); 4 = Participant unable to complete (tried 3 times); 5 = Participant refused; 6 = Not collected (other)",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Negative (.000)",
+            "2": "Positive (.001 or above)",
+            "4": "Participant unable to complete (tried 3 times)",
+            "5": "Participant refused",
+            "6": "Not collected (other)"
+        }
+    },
+    "bal21_dot_y": {
+        "Description": "Breathalyzer Test1 Day 2 Date Completed:",
+        "DataType": "Date"
+    },
+    "bal2_test2_result_y": {
+        "Description": "Breathalyzer Test 2 Day 2 Result: | 1 = Negative (.000); 2 = Positive (.001 or above); 4 = Participant unable to complete (tried 3 times); 5 = Participant refused; 6 = Not collected (other)",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Negative (.000)",
+            "2": "Positive (.001 or above)",
+            "4": "Participant unable to complete (tried 3 times)",
+            "5": "Participant refused",
+            "6": "Not collected (other)"
+        }
+    },
+    "bal22_dot_y": {
+        "Description": "Breathalyzer Test 2 Day 2 Date Completed:",
+        "DataType": "Date"
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    }
+}

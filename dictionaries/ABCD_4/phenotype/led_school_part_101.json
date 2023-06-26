@@ -1,0 +1,239 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "led_sch_seda_s_perhsp": {
+        "Description": "proportion hispanic (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_grdcenter": {
+        "Description": "Grade used for pooled centering",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_type": {
+        "Description": "school type (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_level": {
+        "Description": "school level (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mingrd": {
+        "Description": "min grade of grades 3-8 (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_maxgrd": {
+        "Description": "max grade of grades 3-8 (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_charter": {
+        "Description": "charter school (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_magnet": {
+        "Description": "magnet school (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_urbanicity": {
+        "Description": "urbanicity locale (CCD) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_sch_sped": {
+        "Description": "special education school indicator flag (CRDC) (2018)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_totenrl": {
+        "Description": "total enrollment (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perwht": {
+        "Description": "proportion white (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perind": {
+        "Description": "proportion native american (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perasn": {
+        "Description": "proportion asian (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_asmts": {
+        "Description": "Per grade number of math plus RLA cells for pooled estimates (tot_asmts/cellcount)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perblk": {
+        "Description": "proportion black (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perfl": {
+        "Description": "proportion free lunch eligible (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perrl": {
+        "Description": "proportion reduced lunch eligible (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perfrl": {
+        "Description": "proportion free or reduced lunch eligible (CCD) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_perecd": {
+        "Description": "proportion economically disadvantaged (Ed Facts) (2009-18 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_gifted_tot": {
+        "Description": "proportion classified as gifted (CRDC) (2012; 2014; 2016; 2018 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_disab_tot": {
+        "Description": "proportion classified as disabled (CRDC) (2012; 2014; 2016; 2018 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_disab_tot_idea": {
+        "Description": "proportion classified as disabled (IDEA Only) (CRDC) (2012; 2014; 2016; 2018 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_lep": {
+        "Description": "proportion limited english proficient (CRDC) (2012; 2014; 2016; 2018 weighted average)",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_gifted_flag": {
+        "Description": "school has 40% plus  gifted students",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_lep_flag": {
+        "Description": "school has 50%plus LEP students",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_spedidea_flag": {
+        "Description": "school has 40%plus sped students (IDEA only) OR is listed as sped school in CCD or CRDC",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_sped_flag": {
+        "Description": "school has 40%plus special education students or is listed as a special education school in CCD or CRDC",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_cellcount": {
+        "Description": "Total number of math plus RLA cells for pooled estimates EdFacts",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_derived_ss1": {
+        "Description": "derived summary score 1",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_derived_ss2": {
+        "Description": "derived summary score 2",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_derived_ss3": {
+        "Description": "derived summary score 3",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_derived_ss4": {
+        "Description": "derived summary score 4",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_avg_ol": {
+        "Description": "School Mean Ach; Math&ELA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_avg_eb": {
+        "Description": "School Mean Ach; Math&ELA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_avg_ol_se": {
+        "Description": "School SE of Mean Ach; Math&ELA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_avg_eb_se": {
+        "Description": "School SE of Mean Ach; Math&ELA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_grd_ol": {
+        "Description": "School Grade Slope of Mean Ach; Math&RLA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_grd_ol_se": {
+        "Description": "School SE of Grade Slope of Mean Ach; Math&RLA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_coh_ol": {
+        "Description": "School Cohort Slope of Mean Ach; Math&RLA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_coh_ol_se": {
+        "Description": "School SE of Cohort Slope of Mean Ach; Math&RLA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_grd_eb": {
+        "Description": "School Grade Slope of Mean Ach; Math&RLA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_grd_eb_se": {
+        "Description": "School SE of Grade Slope of Mean Ach; Math&RLA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_coh_eb": {
+        "Description": "School Cohort Slope of Mean Ach; Math&RLA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_mn_coh_eb_se": {
+        "Description": "School SE of Cohort Slope of Mean Ach; Math&RLA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_cs_mn_mth_ol": {
+        "Description": "School Math-RLA Diff in Mean Ach; Math&RLA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_cs_mn_mth_ol_se": {
+        "Description": "School SE of Math-RLA Diff in Mean Ach; Math&RLA; OLS est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_cs_mn_mth_eb": {
+        "Description": "School Math-RLA Diff in Mean Ach; Math&RLA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_cs_mn_mth_eb_se": {
+        "Description": "School SE of Math-RLA Diff in Mean Ach; Math&RLA; EB est; CS",
+        "DataType": "Float"
+    },
+    "led_sch_seda_s_tot_asmts": {
+        "Description": "Total number of math plus RLA tests for pooled estimates HML using SEDA HETOP EST",
+        "DataType": "Float"
+    }
+}

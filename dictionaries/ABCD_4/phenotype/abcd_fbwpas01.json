@@ -1,0 +1,141 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "fit_ss_protocol_startdate": {
+        "Description": "First day of (expected) wear of 3 week protocol",
+        "DataType": "Date"
+    },
+    "fit_ss_day_wkno": {
+        "Description": "Week number starting from first day of protocol wear",
+        "DataType": "Integer"
+    },
+    "fit_ss_day_weekend_ind": {
+        "Description": "0=weekdays only, 1=weekend only, 2=weekday and weekend",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2"
+    },
+    "fit_ss_wk_avg_day_min": {
+        "Description": "Average number of minutes of wear not excluded or considered sleep (by 60 second sleep record) | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_avg_sleep_min": {
+        "Description": "Average number of minutes of wear considered sleep (by 60 second sleep record) not excluded due to HR quality checks | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_total_steps": {
+        "Description": "Sum of steps during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_sedentary_min": {
+        "Description": "Sum of minutes spent in sedentary (<1.5 METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_light_active_min": {
+        "Description": "Sum of minutes spent in light (1.5-2.9METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_farily_active_min": {
+        "Description": "Sum of minutes spent in moderate (3-5.9 METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_very_active_min": {
+        "Description": "Sum of of minutes spent in vigorous (6+ METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_avg_steps": {
+        "Description": "Average number of daily steps during day_min during included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_average_met_value": {
+        "Description": "Average METS/min during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_avg_sedentary_min": {
+        "Description": "Average minutes spent in sedentary (<1.5 METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_avg_light_active_min": {
+        "Description": "Average minutes spent in light (1.5-2.9METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_avg_farily_at_min": {
+        "Description": "Average minutes spent in moderate (3-5.9 METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_wk_avg_very_active_min": {
+        "Description": "Average minutes spent in vigorous (>6 METS) activity during day_min on included days | Individual day only included if day minutes >599",
+        "DataType": "Float"
+    },
+    "fit_ss_fitbit_rest_hr": {
+        "Description": "Average resting heart rate from all included days from the daily level fitbit record | Low(er) resting heart rate is usually indicative of a) stronger cardiac muscle/better cardiorespiratory fitness and b) improved (para)sympathetic nervous tone",
+        "DataType": "Float"
+    },
+    "fit_ss_weekend_count": {
+        "Description": "Number of weekend days included in averages | Individual day only included if day minutes >599",
+        "DataType": "Integer"
+    },
+    "fit_ss_weekday_count": {
+        "Description": "Number of weekdays included in averages | Individual day only included if day minutes >599",
+        "DataType": "Integer"
+    },
+    "fit_ss_meet_abcd_rule": {
+        "Description": "0=no, 1=yes.  ABCD inclusion rule is minimum of 4 days, 1 of which must be a weekend day | Individual day only included if day minutes >599",
+        "DataType": "Integer",
+        "ValueRange": "0;1"
+    },
+    "fit_ss_perday_totalsteps": {
+        "Description": "Number of steps per day according to fitbit daily level summary | Individual day only included if day minutes >599 based upon ABCD QC record",
+        "DataType": "Float"
+    },
+    "fit_ss_perday_sedentarymin": {
+        "Description": "Average minutes spent in sedentary (<1.5 METS) activity during day_min on included days based upon daily level fitbit record | Individual day only included if day minutes >599 based upon ABCD QC record",
+        "DataType": "Float"
+    },
+    "fit_ss_perday_lightlyactivemin": {
+        "Description": "Average minutes spent in light (1.5-2.9METS) activity during day_min on included days based upon daily level fitbit record | Individual day only included if day minutes >599 based upon ABCD QC record",
+        "DataType": "Float"
+    },
+    "fit_ss_perday_fairlyactivemin": {
+        "Description": "Average minutes spent in moderate (3-5.9 METS) activity during day_min on included days based upon daily level fitbit record | Individual day only included if day minutes >599 based upon ABCD QC record",
+        "DataType": "Float"
+    },
+    "fit_ss_perday_veryactivemin": {
+        "Description": "Average minutes spent in vigorous (6+ METS) activity during day_min on included days based upon daily level fitbit record | Individual day only included if day minutes >599 based upon ABCD QC record",
+        "DataType": "Float"
+    }
+}

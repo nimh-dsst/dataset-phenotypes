@@ -1,0 +1,1199 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "bkfs_apples": {
+        "Description": "Apples, bananas, or oranges/Manzanas, pl\u00e1tanos, o naranjas",
+        "DataType": "Integer"
+    },
+    "bkfs_apples_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_applesauce": {
+        "Description": "Applesauce, fruit cocktail/Pur\u00e9 de manzana, c\u00f3ctel de frutas",
+        "DataType": "Integer"
+    },
+    "bkfs_applesauce_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_bars": {
+        "Description": "Breakfast bars, granola bars, Protein bars/Barras de desayuno, barras de granola, barras de prote\u00edna",
+        "DataType": "Integer"
+    },
+    "bkfs_bars_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_beans": {
+        "Description": "Chili beans, pinto beans, black beans, including in burritos/Frijoles pintos, frijoles negros, chile con frijoles o burritos de frijoles",
+        "DataType": "Integer"
+    },
+    "bkfs_beans_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_beef": {
+        "Description": "Beef like roast, steak or in sandwiches/Carne de res, asado, bistec, o en s\u00e1ndwiches",
+        "DataType": "Integer"
+    },
+    "bkfs_beef_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_bread": {
+        "Description": "Whole wheat bread or rolls (NOT white bread)/Pan de harina integral (NO pan blanco)",
+        "DataType": "Integer"
+    },
+    "bkfs_bread_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_burgers": {
+        "Description": "Hamburgers, cheeseburgers/Hamburguesas o hamburguesas con queso",
+        "DataType": "Integer"
+    },
+    "bkfs_burgers_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_burritos": {
+        "Description": "Burritos or tacos/Burritos o tacos",
+        "DataType": "Integer"
+    },
+    "bkfs_burritos_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_candy": {
+        "Description": "Candy, candy bars/Dulces o golosinas",
+        "DataType": "Integer"
+    },
+    "bkfs_candy_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_cereal": {
+        "Description": "Cereal, like cornflakes, Frosted Flakes</span><br/><span lang=\"es\" style=\"color:maroon;\">Cereal fr\u00edo, como Corn Flakes, Frosted Flakes",
+        "DataType": "Integer"
+    },
+    "bkfs_cereal_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_cereal_kind": {
+        "Description": "What kind of cereal did your child eat? (Select one)/\u00bfQu\u00e9 tipo de cereal comi\u00f3 su ni\u00f1o/a? (Marque s\u00f3lo uno.)",
+        "DataType": "Integer"
+    },
+    "bkfs_cheese": {
+        "Description": "Cheese, Remember cheese in sandwiches or nachos with cheese or quesadillas/Queso, recuerde el queso en s\u00e1ndwiches, nachos con queso, y quesadillas</span></font>",
+        "DataType": "Integer"
+    },
+    "bkfs_cheese_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_chicken": {
+        "Description": "Chicken, including nuggets, wings, tenders, also in sandwiches or stew/Pollo, incluyendo nuggets, alas, tiras de pollo, tambi\u00e9n en s\u00e1ndwiches o guisado",
+        "DataType": "Integer"
+    },
+    "bkfs_chicken_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_chips": {
+        "Description": "Snack chips like potato chips, Doritos, Fritos, tortilla chips/Papitas como Doritos, Fritos, o totopos ('chips')",
+        "DataType": "Integer"
+    },
+    "bkfs_chips_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_cooked_cereal": {
+        "Description": "Cooked cereal, like oatmeal</span><br/><span lang=\"es\" style=\"color:maroon;\">Cereal cocido como avena",
+        "DataType": "Integer"
+    },
+    "bkfs_cooked_cereal_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_cookies": {
+        "Description": "Cookies, donuts, cakes like Ho-Hos/Galletas, donas, pastelitos como Ho-Hos",
+        "DataType": "Integer"
+    },
+    "bkfs_cookies_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_eggs": {
+        "Description": "Eggs, breakfast sandwiches or breakfast burritos/Huevos, desayuno, sandwiches o burritos de desayuno",
+        "DataType": "Integer"
+    },
+    "bkfs_eggs_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_fish": {
+        "Description": "Fish, fish sticks or sandwiches, tuna, shrimp/Pescado, como s\u00e1ndwiches de pescado, palitos de pescado, camarones, o at\u00fan",
+        "DataType": "Integer"
+    },
+    "bkfs_fish_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_fries": {
+        "Description": "French fries, hash browns, tater tots/Papas fritas, 'tater tots,' 'hash browns",
+        "DataType": "Integer"
+    },
+    "bkfs_fries_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_green_beans": {
+        "Description": "Green beans or peas/Ejotes o ch\u00edcharos",
+        "DataType": "Integer"
+    },
+    "bkfs_green_beans_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_hotdogs": {
+        "Description": "Hot dogs, corn dogs, or sausage/'Hot Dogs', 'corn dogs', o salchicha",
+        "DataType": "Integer"
+    },
+    "bkfs_hotdogs_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_icecream": {
+        "Description": "Ice cream/Helados (nieve)",
+        "DataType": "Integer"
+    },
+    "bkfs_icecream_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_juice": {
+        "Description": "Real fruit juice, like orange juice, apple juice, or Mexican fruit drink like licuados (DO NOT include soda)/Cualquier jugo natural de fruta como jugo de naranja, jugo de manzana, o licuados (NO incluya sodas/refrescos)",
+        "DataType": "Integer"
+    },
+    "bkfs_juice_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_ketchup": {
+        "Description": "Ketchup or salsa/K\u00e9tchup or salsa",
+        "DataType": "Integer"
+    },
+    "bkfs_ketchup_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_lunch_meat": {
+        "Description": "Lunch meat like bologna, ham, Lunchables/Carnes fr\u00edas como bologna, jam\u00f3n, o 'Lunchables'",
+        "DataType": "Integer"
+    },
+    "bkfs_lunch_meat_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_mac_and_cheese": {
+        "Description": "Macaroni and cheese/Macarrones con queso",
+        "DataType": "Integer"
+    },
+    "bkfs_mac_and_cheese_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_meat": {
+        "Description": "Meat balls, meat loaf, beef stew, Hamburger Helper/Alb\u00f3ndigas, picadillo, guisado de res, Hamburger Helper",
+        "DataType": "Integer"
+    },
+    "bkfs_meat_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_milk": {
+        "Description": "Glasses of milk/Vasos de leche",
+        "DataType": "Integer"
+    },
+    "bkfs_milk_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_milk_kind": {
+        "Description": "What kind of milk did your child drink?/\u00bfQu\u00e9 tipo de leche bebe su ni\u00f1o(a)?",
+        "DataType": "Integer"
+    },
+    "bkfs_other_fruit": {
+        "Description": "Think about everything your child ate or drank  last week.   Remember what your child had for breakfast, lunch, dinner, after school, while watching TV, at bedtime, and on the weekend.</span><br/><span lang=\"es\" style=\"color:maroon;\">Piense en todo lo que su ni\u00f1o(a) comi\u00f3 o bebi\u00f3 la semana pasada. Recuerde lo que tuvo su ni\u00f1o(a) durante el desayuno, almuerzo, cena, despu\u00e9s de la escuela, mientras vi\u00f3 la televisi\u00f3n, a la hora de acostarse, y en el fin de semana.",
+        "DataType": "Integer"
+    },
+    "bkfs_other_fruit_1_day": {
+        "Description": "Any other fruit, like strawberries, grapes/Cualquier otra fruta, como fresas, uvas",
+        "DataType": "Integer"
+    },
+    "bkfs_pizza": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_pizza_1_day": {
+        "Description": "Pizza or pizza pockets/Pizza o Pizza Pockets",
+        "DataType": "Integer"
+    },
+    "bkfs_popcorn": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_popcorn_1_day": {
+        "Description": "Popcorn/Palomitas de ma\u00edz",
+        "DataType": "Integer"
+    },
+    "bkfs_pork": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_pork_1_day": {
+        "Description": "Pork, like chops, roast, ribs/Carne de cerdo, como chuletas, asada, costillas",
+        "DataType": "Integer"
+    },
+    "bkfs_potatoes": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_potatoes_1_day": {
+        "Description": "Other potatoes, like mashed or boiled/Cualquier otro tipo de papas, como pure de papas o hervidas",
+        "DataType": "Integer"
+    },
+    "bkfs_refried_beans": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_refried_beans_1_day": {
+        "Description": "Refried beans/Frijoles refritos",
+        "DataType": "Integer"
+    },
+    "bkfs_salad": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_salad_1_day": {
+        "Description": "Lettuce salad/Ensalada de lechuga",
+        "DataType": "Integer"
+    },
+    "bkfs_select_language": {
+        "Description": "bkfs_select_language",
+        "DataType": "Integer"
+    },
+    "bkfs_soda": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_soda_1_day": {
+        "Description": "Drinks like Coke or 7-Up, Sunny Delight, Hawaiian Punch, or aguas frescas (DO NOT include diet soda)/Refrescos como Coke, 7-Up, Sunny Delight, Hawaiian Punch, o agua frescas (NO incluya refrescos diet\u00e9ticos)</span>",
+        "DataType": "Integer"
+    },
+    "bkfs_soup": {
+        "Description": "Include sports drinks like Gatorade, Powerade, etc./Incluye bebidas deportivas como Gatorade, Powerade, etc.</span>\"",
+        "DataType": "Integer"
+    },
+    "bkfs_soup_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_spaghetti": {
+        "Description": "Vegetable soup, tomato soup, any soup or stew with vegetables in it/Sopa de verduras, sopa de tomate, cualquier sopa o guisado con verduras",
+        "DataType": "Integer"
+    },
+    "bkfs_spaghetti_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_tomatoes": {
+        "Description": "Spaghetti or ravioli with tomato sauce/Espagueti o ravioles con salsa de tomate",
+        "DataType": "Integer"
+    },
+    "bkfs_tomatoes_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "bkfs_vegetables": {
+        "Description": "Tomatoes, including on salad/Tomates, incluyendo en ensaladas",
+        "DataType": "Integer"
+    },
+    "bkfs_vegetables_1_day": {
+        "Description": "HOW MUCH IN ONE DAY?/\u00bfCU\u00c1NTO EN UN D\u00cdA?",
+        "DataType": "Integer"
+    },
+    "ra_confirm": {
+        "Description": "ra_confirm",
+        "DataType": "Integer"
+    },
+    "bkfs_respondentid": {
+        "Description": "Respondent ID #",
+        "DataType": "String"
+    },
+    "bkfs_sex": {
+        "Description": "Respondent's Sex",
+        "DataType": "String"
+    },
+    "bkfs_age": {
+        "Description": "Respondent's Age, years",
+        "DataType": "String"
+    },
+    "bkfs_coldcerealfreq": {
+        "Description": "Cold cereal, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_coldcerealquan": {
+        "Description": "Cold cereal, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_cookcerfreq": {
+        "Description": "Cooked cereal, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_cookcerquan": {
+        "Description": "Cooked cereal, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_eggfreq": {
+        "Description": "Eggs, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_eggquan": {
+        "Description": "Eggs, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_granbarfreq": {
+        "Description": "Breakfast bars..., Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_granbarquan": {
+        "Description": "Breakfast bars..., Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_milkfreq": {
+        "Description": "Glasses of milk, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_milkquan": {
+        "Description": "Glasses of milk, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_fruitjcfreq": {
+        "Description": "Real fruit juice, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_fruitjcquan": {
+        "Description": "Real fruit juice, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_sodafreq": {
+        "Description": "Drinks like Coke, soft drinks, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_sodaquan": {
+        "Description": "Drinks like Coke, soft drinks, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_applefreq": {
+        "Description": "Apples, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_applequan": {
+        "Description": "Apples, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_applscfreq": {
+        "Description": "Applesauce, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_applscquan": {
+        "Description": "Applesauce, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_othfrutfreq": {
+        "Description": "Any other fruit, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_othfrutquan": {
+        "Description": "Any other fruit, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_frenchfreq": {
+        "Description": "French fries, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_frenchquan": {
+        "Description": "French fries, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_othpotfreq": {
+        "Description": "Other potatoes, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_othpotquan": {
+        "Description": "Other potatoes, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_ketchupfreq": {
+        "Description": "Ketchup or salsa, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_ketchupquan": {
+        "Description": "Ketchup or salsa, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_lettucefreq": {
+        "Description": "Lettuce salad, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_lettucequan": {
+        "Description": "Lettuce salad, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_tomatofreq": {
+        "Description": "Tomatoes, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_tomatoquan": {
+        "Description": "Tomatoes, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_grnbeanfreq": {
+        "Description": "Green beans, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_grnbeanquan": {
+        "Description": "Green beans, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_othvegfreq": {
+        "Description": "Other vegetables, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_othvegquan": {
+        "Description": "Other vegetables, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_vegsoupfreq": {
+        "Description": "Vegetable soup, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_vegsoupquan": {
+        "Description": "Vegetable soup, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_pintofreq": {
+        "Description": "Chili beans, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_pintoquan": {
+        "Description": "Chili beans, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_refriedfreq": {
+        "Description": "Refried beans, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_refriedquan": {
+        "Description": "Refried beans, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_hambgrfreq": {
+        "Description": "Hamburgers, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_hambgrquan": {
+        "Description": "Hamburgers, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_hotdogfreq": {
+        "Description": "Hot dogs, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_hotdogquan": {
+        "Description": "Hot dogs, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_lunchmtfreq": {
+        "Description": "Lunch meat, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_lunchmtquan": {
+        "Description": "Lunch meat, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_pizzafreq": {
+        "Description": "Pizza, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_pizzaquan": {
+        "Description": "Pizza, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_spagfreq": {
+        "Description": "Spaghetti, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_spagquan": {
+        "Description": "Spaghetti, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_macfreq": {
+        "Description": "Macaroni and cheese, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_macquan": {
+        "Description": "Macaroni and cheese, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_chickfreq": {
+        "Description": "Chicken, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_chickquan": {
+        "Description": "Chicken, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_fishfreq": {
+        "Description": "Fish, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_fishquan": {
+        "Description": "Fish, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_burritofreq": {
+        "Description": "Burritos, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_burritoquan": {
+        "Description": "Burritos, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_rstbffreq": {
+        "Description": "Beef like roast, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_rstbfquan": {
+        "Description": "Beef like roast, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_othmeatfreq": {
+        "Description": "Meat balls, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_othmeatquan": {
+        "Description": "Meat balls, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_porkfreq": {
+        "Description": "Pork, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_porkquan": {
+        "Description": "Pork, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_popcornfreq": {
+        "Description": "Popcorn, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_popcornquan": {
+        "Description": "Popcorn, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_snkchpfreq": {
+        "Description": "Snack chips, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_snkchpquan": {
+        "Description": "Snack chips, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_icecrmfreq": {
+        "Description": "Ice cream, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_icecrmquan": {
+        "Description": "Ice cream, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_candyfreq": {
+        "Description": "Candy, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_candyquan": {
+        "Description": "Candy, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_cookiefreq": {
+        "Description": "Cookies, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_cookiequan": {
+        "Description": "Cookies, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_cheesefreq": {
+        "Description": "Cheese, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_cheesequan": {
+        "Description": "Cheese, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_wheatbrdfreq": {
+        "Description": "Whole wheat bread, Frequency last week",
+        "DataType": "String"
+    },
+    "bkfs_wheatbrdquan": {
+        "Description": "Whole wheat bread, Quantity in one day",
+        "DataType": "String"
+    },
+    "bkfs_coldcerealtype": {
+        "Description": "Cold cereal type",
+        "DataType": "String"
+    },
+    "bkfs_milktype": {
+        "Description": "Milk type",
+        "DataType": "String"
+    },
+    "bkfs_fruit_ce": {
+        "Description": "fruit_ce",
+        "DataType": "Float"
+    },
+    "bkfs_vegnopot_ce": {
+        "Description": "vegnopot_ce",
+        "DataType": "Float"
+    },
+    "bkfs_potato_ce": {
+        "Description": "potato_ce",
+        "DataType": "Float"
+    },
+    "bkfs_whlgrain_oze": {
+        "Description": "whlgrain_oze",
+        "DataType": "Float"
+    },
+    "bkfs_satfat_g": {
+        "Description": "satfat_g",
+        "DataType": "Float"
+    },
+    "bkfs_meatpoulfish_oze": {
+        "Description": "meatpoulfish_oze",
+        "DataType": "Float"
+    },
+    "bkfs_dairy_ce": {
+        "Description": "dairy_ce",
+        "DataType": "Float"
+    },
+    "bkfs_legumes_ce": {
+        "Description": "legumes_ce",
+        "DataType": "Float"
+    },
+    "bkfs_sugaradded_tsp": {
+        "Description": "sugaradded_tsp",
+        "DataType": "Float"
+    },
+    "bkfs_gi": {
+        "Description": "gi",
+        "DataType": "Float"
+    },
+    "bkfs_gl": {
+        "Description": "gl",
+        "DataType": "Float"
+    },
+    "bkfs_dt_kcal": {
+        "Description": "dt_kcal",
+        "DataType": "Float"
+    },
+    "bkfs_dt_prot": {
+        "Description": "dt_prot",
+        "DataType": "Float"
+    },
+    "bkfs_dt_tfat": {
+        "Description": "dt_tfat",
+        "DataType": "Float"
+    },
+    "bkfs_dt_carb": {
+        "Description": "dt_carb",
+        "DataType": "Float"
+    },
+    "bkfs_dt_fibe": {
+        "Description": "dt_fibe",
+        "DataType": "Float"
+    },
+    "bkfs_dt_sug_t": {
+        "Description": "dt_sug_t",
+        "DataType": "Float"
+    },
+    "bkfs_group_sugarybevg_t_kcal": {
+        "Description": "group_sugarybevg_total_kcal",
+        "DataType": "Float"
+    },
+    "bkfs_group_sugarybevg_total_fr": {
+        "Description": "group_sugarybevg_total_frequency",
+        "DataType": "Float"
+    },
+    "bkfs_group_solid_total_grams": {
+        "Description": "group_solid_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_foodsperday": {
+        "Description": "foodsperday",
+        "DataType": "Float"
+    },
+    "bkfs_group_solid_count": {
+        "Description": "group_solid_count",
+        "DataType": "Float"
+    },
+    "bkfs_group_solid_total_fr": {
+        "Description": "group_solid_total_frequency",
+        "DataType": "Float"
+    },
+    "bkfs_drximfat": {
+        "Description": "drximfat",
+        "DataType": "Float"
+    },
+    "bkfs_drxipfat": {
+        "Description": "drxipfat",
+        "DataType": "Float"
+    },
+    "bkfs_drxichol": {
+        "Description": "drxichol",
+        "DataType": "Float"
+    },
+    "bkfs_drxiatoc": {
+        "Description": "drxiatoc",
+        "DataType": "Float"
+    },
+    "bkfs_drxiret": {
+        "Description": "drxiret",
+        "DataType": "Float"
+    },
+    "bkfs_drxivara": {
+        "Description": "drxivara",
+        "DataType": "Float"
+    },
+    "bkfs_drxiacar": {
+        "Description": "drxiacar",
+        "DataType": "Float"
+    },
+    "bkfs_drxibcar": {
+        "Description": "drxibcar",
+        "DataType": "Float"
+    },
+    "bkfs_drxicryp": {
+        "Description": "drxicryp",
+        "DataType": "Float"
+    },
+    "bkfs_drxilyco": {
+        "Description": "drxilyco",
+        "DataType": "Float"
+    },
+    "bkfs_drxilz": {
+        "Description": "drxilz",
+        "DataType": "Float"
+    },
+    "bkfs_drxivb1": {
+        "Description": "drxivb1",
+        "DataType": "Float"
+    },
+    "bkfs_drxivb2": {
+        "Description": "drxivb2",
+        "DataType": "Float"
+    },
+    "bkfs_drxiniac": {
+        "Description": "drxiniac",
+        "DataType": "Float"
+    },
+    "bkfs_drxivb6": {
+        "Description": "drxivb6",
+        "DataType": "Float"
+    },
+    "bkfs_drxifola": {
+        "Description": "drxifola",
+        "DataType": "Float"
+    },
+    "bkfs_drxifa": {
+        "Description": "drxifa",
+        "DataType": "Float"
+    },
+    "bkfs_drxiff": {
+        "Description": "drxiff",
+        "DataType": "Float"
+    },
+    "bkfs_drxifdfe": {
+        "Description": "drxifdfe",
+        "DataType": "Float"
+    },
+    "bkfs_drxivb12": {
+        "Description": "drxivb12",
+        "DataType": "Float"
+    },
+    "bkfs_drxivc": {
+        "Description": "drxivc",
+        "DataType": "Float"
+    },
+    "bkfs_drxivk": {
+        "Description": "drxivk",
+        "DataType": "Float"
+    },
+    "bkfs_drxicalc": {
+        "Description": "drxicalc",
+        "DataType": "Float"
+    },
+    "bkfs_drxiphos": {
+        "Description": "drxiphos",
+        "DataType": "Float"
+    },
+    "bkfs_drximagn": {
+        "Description": "drximagn",
+        "DataType": "Float"
+    },
+    "bkfs_drxiiron": {
+        "Description": "drxiiron",
+        "DataType": "Float"
+    },
+    "bkfs_drxizinc": {
+        "Description": "drxizinc",
+        "DataType": "Float"
+    },
+    "bkfs_drxicopp": {
+        "Description": "drxicopp",
+        "DataType": "Float"
+    },
+    "bkfs_drdisodi": {
+        "Description": "drdisodi",
+        "DataType": "Float"
+    },
+    "bkfs_drxipota": {
+        "Description": "drxipota",
+        "DataType": "Float"
+    },
+    "bkfs_drxisele": {
+        "Description": "drxisele",
+        "DataType": "Float"
+    },
+    "bkfs_drxicaff": {
+        "Description": "drxicaff",
+        "DataType": "Float"
+    },
+    "bkfs_drxitheo": {
+        "Description": "drxitheo",
+        "DataType": "Float"
+    },
+    "bkfs_drxialco": {
+        "Description": "drxialco",
+        "DataType": "Float"
+    },
+    "bkfs_drximois": {
+        "Description": "drximois",
+        "DataType": "Float"
+    },
+    "bkfs_drxis040": {
+        "Description": "drxis040",
+        "DataType": "Float"
+    },
+    "bkfs_drxis060": {
+        "Description": "drxis060",
+        "DataType": "Float"
+    },
+    "bkfs_drxis080": {
+        "Description": "drxis080",
+        "DataType": "Float"
+    },
+    "bkfs_drxis100": {
+        "Description": "drxis100",
+        "DataType": "Float"
+    },
+    "bkfs_drxis120": {
+        "Description": "drxis120",
+        "DataType": "Float"
+    },
+    "bkfs_drxis140": {
+        "Description": "drxis140",
+        "DataType": "Float"
+    },
+    "bkfs_drxis160": {
+        "Description": "drxis160",
+        "DataType": "Float"
+    },
+    "bkfs_drxis180": {
+        "Description": "drxis180",
+        "DataType": "Float"
+    },
+    "bkfs_drxim161": {
+        "Description": "drxim161",
+        "DataType": "Float"
+    },
+    "bkfs_drxim181": {
+        "Description": "drxim181",
+        "DataType": "Float"
+    },
+    "bkfs_drxim201": {
+        "Description": "drxim201",
+        "DataType": "Float"
+    },
+    "bkfs_drxim221": {
+        "Description": "drxim221",
+        "DataType": "Float"
+    },
+    "bkfs_drxip182": {
+        "Description": "drxip182",
+        "DataType": "Float"
+    },
+    "bkfs_drxip183": {
+        "Description": "drxip183",
+        "DataType": "Float"
+    },
+    "bkfs_drxip184": {
+        "Description": "drxip184",
+        "DataType": "Float"
+    },
+    "bkfs_drxip204": {
+        "Description": "drxip204",
+        "DataType": "Float"
+    },
+    "bkfs_drxip205": {
+        "Description": "drxip205",
+        "DataType": "Float"
+    },
+    "bkfs_drxip225": {
+        "Description": "drxip225",
+        "DataType": "Float"
+    },
+    "bkfs_drxip226": {
+        "Description": "drxip226",
+        "DataType": "Float"
+    },
+    "bkfs_drxip227": {
+        "Description": "group_fd_cerealnotwgsweet_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip228": {
+        "Description": "group_fd_cookedcereal_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip229": {
+        "Description": "group_fd_eggsandwich_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip230": {
+        "Description": "group_fd_breakfastproteinbars_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip231": {
+        "Description": "group_fd_milk2pct_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip232": {
+        "Description": "group_fd_fruitjuice_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip233": {
+        "Description": "group_fd_softdrinks_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip234": {
+        "Description": "group_fd_applebananaorange_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip235": {
+        "Description": "group_fd_applesaucecannedfruit_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip236": {
+        "Description": "group_fd_anyotherfruit_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip237": {
+        "Description": "group_fd_friedpotatoes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip238": {
+        "Description": "group_fd_otherpotatoes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip239": {
+        "Description": "group_fd_ketchupsalsa_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip240": {
+        "Description": "group_fd_lettucesalad_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip241": {
+        "Description": "group_fd_tomatoes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip242": {
+        "Description": "group_fd_greenbeanspeas_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip243": {
+        "Description": "group_fd_othervegetables_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip244": {
+        "Description": "group_fd_vegetablesoupstew_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip245": {
+        "Description": "group_fd_chilibeans_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip246": {
+        "Description": "group_fd_refriedbeans_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip247": {
+        "Description": "group_fd_hamburgercheeseburger_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip248": {
+        "Description": "group_fd_hotdogssausage_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip249": {
+        "Description": "group_fd_lunchmeat_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip250": {
+        "Description": "group_fd_pizza_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip251": {
+        "Description": "group_fd_spaghettitomatosauce_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip252": {
+        "Description": "group_fd_macncheese_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip253": {
+        "Description": "group_fd_chickenndishes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip254": {
+        "Description": "group_fd_fishndishes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip255": {
+        "Description": "group_fd_burritostacos_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip256": {
+        "Description": "group_fd_beefroaststeak_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip257": {
+        "Description": "group_fd_meatballsbeefdishes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip258": {
+        "Description": "group_fd_pork_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip259": {
+        "Description": "group_fd_popcorn_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip260": {
+        "Description": "group_fd_chipscornpotato_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip261": {
+        "Description": "group_fd_icecream_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip262": {
+        "Description": "group_fd_candynbars_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip263": {
+        "Description": "group_fd_cookiedonutcake_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip264": {
+        "Description": "group_fd_cheesendishes_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip265": {
+        "Description": "group_fd_wholewheatbread_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip266": {
+        "Description": "group_fd_cerealwgnotsweet_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip267": {
+        "Description": "group_fd_cerealwgsweet_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip268": {
+        "Description": "group_fd_cerealnotwgnotsweet_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip269": {
+        "Description": "group_fd_milk4pct_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip270": {
+        "Description": "group_fd_milk1pct_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip271": {
+        "Description": "group_fd_milkchocolate_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip272": {
+        "Description": "group_fd_milklactosereduced_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip273": {
+        "Description": "group_fd_milknonfat_total_grams",
+        "DataType": "Float"
+    },
+    "bkfs_drxip274": {
+        "Description": "group_fd_milksoy_total_grams",
+        "DataType": "Float"
+    }
+}

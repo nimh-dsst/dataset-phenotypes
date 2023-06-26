@@ -1,0 +1,203 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "su_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "su_risk_p_1": {
+        "Description": "If your child wanted to get some beer, wine, or hard liquor (for example vodka, whiskey, or gin), how easy would it be for them to get some? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_2": {
+        "Description": "If your child wanted to get some cigarettes, how easy would it be for them to get some? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_3": {
+        "Description": "If your child wanted to get some electronic nicotine or vaping products, such as e-cigarettes, vape pens, or Juuls, how easy would it be for them to get some? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_4": {
+        "Description": "If your child wanted to get some marijuana, how easy would it be for them to get some? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_5": {
+        "Description": "If your child wanted to get a drug like cocaine, LSD, or amphetamines, how easy would it be for them to get some? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_6": {
+        "Description": "Is \"medical marijuana\" (marijuana prescribed by a doctor) legal in your state?  \u00bfEs la \"marihuana medicinal\" (marihuana recetada por un m\u00e9dico) legal en su estado? | 0 = Yes S\u00ed; 1 = No No; 2 = I do not know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2",
+        "Levels": {
+            "0": "Yes S\u00ed",
+            "1": "No No",
+            "2": "I do not know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_7": {
+        "Description": "If your child wanted to get medical marijuana from someone with a prescription, how easy would it be?  Si su ni\u00f1o(a) quisiera conseguir marihuana de alguien con una receta para uso medicinal, \u00bfqu\u00e9 tan f\u00e1cil le ser\u00eda? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_8": {
+        "Description": "If your child wanted to get a prescription for medical marijuana, how easy would it be? Si su ni\u00f1o(a) quisiera conseguir una receta de marihuana medicinal, \u00bfqu\u00e9 tan f\u00e1cil le ser\u00eda? | 0 = Very hard Muy dif\u00edcil; 1 = Sort of hard Algo dif\u00edcil; 2 = Sort of easy Algo f\u00e1cil; 3 = Very easy Muy f\u00e1cil; 4 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "Very hard Muy dif\u00edcil",
+            "1": "Sort of hard Algo dif\u00edcil",
+            "2": "Sort of easy Algo f\u00e1cil",
+            "3": "Very easy Muy f\u00e1cil",
+            "4": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_9": {
+        "Description": "How many of your friends or family members have a medical marijuana prescription? \u00bfCu\u00e1ntos de sus amigos(as) o familiares tienen una receta para marihuana medicinal? | 0 = 0; 8 = 1-3; 9 = 4-6; 10 = 7-9; 11 = 10 or more people 10 o m\u00e1s personas; 999 = Don't know No lo s\u00e9; Now I am going to ask you about how easy it is to get certain substances. /Ahora le voy a preguntar qu\u00c3\u00a9 tan f\u00c3\u00a1cil es conseguir ciertas sustancias.",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 8 ; 9 ; 10 ; 11 ; 999",
+        "Levels": {
+            "0": "0",
+            "8": "1-3",
+            "9": "4-6",
+            "10": "7-9",
+            "11": "10 or more people 10 o m\u00e1s personas",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "su_risk_p_10": {
+        "Description": "If your child wanted to get liquid, sprays, and gases that people sniff or inhale to get high (such as gasoline, glue, and nitrous oxide), how easy would it be for them to get some? | 0 = Very hard; 1 = Sort of hard; 2 = Sort of easy; 3 = Very easy; 4 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;3;4;",
+        "Levels": {
+            "0": "Very hard",
+            "1": "Sort of hard",
+            "2": "Sort of easy",
+            "3": "Very easy",
+            "4": "Don't know"
+        }
+    },
+    "su_risk_p_11": {
+        "Description": "If your child wanted to get prescription anxiolytics or tranquillizers (such as Xanax and Ativan) that were not prescribed to them by a doctor</u>, how easy would it be for your child to get some? | 0 = Very hard; 1 = Sort of hard; 2 = Sort of easy; 3 = Very easy; 4 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;3;4;",
+        "Levels": {
+            "0": "Very hard",
+            "1": "Sort of hard",
+            "2": "Sort of easy",
+            "3": "Very easy",
+            "4": "Don't know"
+        }
+    },
+    "su_risk_p_12": {
+        "Description": "If your child wanted to get prescription pain relievers (such as Vicodin, hydrocodone, or Oxycontin; not over the counter drugs like Tylenol) that were not prescribed to them by a doctor</u>, how easy would it be for your child to get some? | 0 = Very hard; 1 = Sort of hard; 2 = Sort of easy; 3 = Very easy; 4 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;3;4",
+        "Levels": {
+            "0": "Very hard",
+            "1": "Sort of hard",
+            "2": "Sort of easy",
+            "3": "Very easy",
+            "4": "Don't know"
+        }
+    },
+    "su_risk_p_13": {
+        "Description": "If your child wanted to get prescription stimulants (such as Adderall or Ritalin) <u>that were not prescribed to them by a doctor, how easy would it be for your child to get some? | 0 = Very hard; 1 = Sort of hard; 2 = Sort of easy; 3 = Very easy; 4 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0;1;2;3;4;",
+        "Levels": {
+            "0": "Very hard",
+            "1": "Sort of hard",
+            "2": "Sort of easy",
+            "3": "Very easy",
+            "4": "Don't know"
+        }
+    }
+}

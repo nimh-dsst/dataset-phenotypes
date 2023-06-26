@@ -1,0 +1,666 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1136_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Other (fill in) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1148_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child feels like he or she has no control when they binge eat | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1147_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child feels depressed after binge eating | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1146_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child feels disgusted or guilty after binge eating | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1145_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child eats alone because he or she is embarrassed | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1144_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child eats a lot even though he or she is not hungry | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1143_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child eats until he or she is uncomfortable and feels too full | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1142_p": {
+        "Description": "Note below all the things that are true when your child binge eats.My child eats much more rapidly than normal | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1140_p": {
+        "Description": "How long has your child been binge eating at least once a week? Please enter weeks, months, or years.",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1139_p": {
+        "Description": "You said before that sometimes your child binge eats. On average, does he or she binge eat at least once a week? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1138_p": {
+        "Description": "GetDynamicQuestion('2.13.8.Q2')",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1137_p": {
+        "Description": "On average, does your child use at least one of these methods to try to control his or her weight one or more times per week? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1149_p": {
+        "Description": "How much discomfort or distress does binge eating cause your child? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "ksads_eatingdis_raw_1135_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Only eating foods or drinks with minimal calories (e.g., carrots, celery, zero calorie drinks) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1134_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Exercising a lot | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1133_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Throwing up | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1132_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Water pills | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1131_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Laxatives | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1130_p": {
+        "Description": "Please note below all the different methods that your child currently uses to control his or her weight.Diet pills | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1128_p": {
+        "Description": "Does your child feel like his or her self-worth is tied to his or her weight? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_403_p": {
+        "Description": "You said that in the past there was a time when your child worried about becoming fat; made him or herself throw up, did things to control their weight, like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_402_p": {
+        "Description": "You said that in the past your child made him or herself throw up once a week or more, did things to control his or her weight like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_401_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat, did things to control their weight like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_400_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat, made him or herself throw up once a week or more and had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1161_p": {
+        "Description": "For how long back then did your child use this method to control their weight at least once a week? Please enter weeks, months, or years.",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1173_p": {
+        "Description": "How much discomfort or distress did binge eating cause your child back then? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "ksads_eatingdis_raw_1172_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child felt like he or she had no control when he or she binge ate | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1171_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child felt depressed after binge eating | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1170_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child felt disgusted or guilty after binge eating | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1169_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child ate alone because he or she was embarrassed | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1168_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child ate a lot even though he or she was not hungry | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1167_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child ate until he or she was uncomfortable and felt too full | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1166_p": {
+        "Description": "Note below all the things that were true when your child binge ate back then.My child ate much more rapidly than normal | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1164_p": {
+        "Description": "How long did your child binge eat at least once a week back then? Please enter weeks, months, or years.",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1163_p": {
+        "Description": "dbo.GetDynamicQuestion('2.13.9.Q3') | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1162_p": {
+        "Description": "For how long back then did your child use at least one of these methods one or more times a week? Please enter weeks, months, or years.",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_399_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat, made him or herself throw up once a week or more and did things to control their weight like exercise excessively, restrict food, took laxatives, or diet pills. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_1160_p": {
+        "Description": "On average back then, did your child use at least one of these methods to try to control his or her weight one or more times per week? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1159_p": {
+        "Description": "On average back then, did your child use this method to try to control his or her weight at least once per week? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1158_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Other (fill in) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1157_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Only drank zero calorie drinks and ate no food or only ate foods with minimal calories (e.g., carrots, celery) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1156_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Exercising a lot | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1155_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Throwing up | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1154_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Water pills | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1153_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Laxatives | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1152_p": {
+        "Description": "Please indicate below all the different methods that your child used back then to control his or her weight.Diet pills | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_1150_p": {
+        "Description": "dbo.GetDynamicQuestion('2.13.6.Q2') | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_367_p": {
+        "Description": "Was there ever another time, for a month or longer, that your child made himself or herself throw up once a week or more? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_377_p": {
+        "Description": "You said that in the past two weeks your child had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_376_p": {
+        "Description": "You said that in the past two weeks your child did things to control their weight, like exercise excessively, restrict food, took laxatives, or diet pills. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_375_p": {
+        "Description": "You said that in the past two weeks your child made himself or herself throw up once a week or more. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_374_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_373_p": {
+        "Description": "Was there ever another time, for a month or longer, that your child would go on eating binges a day or more a week? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_372_p": {
+        "Description": "Was there ever a time, for a month or longer, that your child would go on eating binges a day or more a week? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_371_p": {
+        "Description": "In the past two weeks, how often has your child had eating binges, when he or she lost control of their eating and ate way more than he or she needed to because your child was unable to stop himself or herself from eating? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_eatingdis_raw_370_p": {
+        "Description": "Was there ever another time, for a month or longer, that your child often did any of these things to control his or her weight? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_369_p": {
+        "Description": "Was there ever a time, for a month or longer, that your child often did any of these things to control their weight? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_368_p": {
+        "Description": "In the past two weeks, how many days has your child done other things to control his or her weight, like exercise excessively, restrict food, take laxatives, or diet pills? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_eatingdis_raw_398_p": {
+        "Description": "You said that in the past your child did things to control their weight like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_366_p": {
+        "Description": "Was there ever a time, for a month or longer, that your child made himself or herself throw up once a week or more? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_365_p": {
+        "Description": "In the past two weeks, how many days has your child made himself or herself throw up to try to control their weight or because your child was upset because he or she ate too much? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_eatingdis_raw_364_p": {
+        "Description": "When was your child at this height and weight?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_363_p": {
+        "Description": "What was your child's height and weight then (please make your best guess)?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_362_p": {
+        "Description": "Was there ever another time, for a month or longer, that your child worried all the time about gaining weight or becoming fat? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_361_p": {
+        "Description": "Was there ever a time, for a month or longer, that your child worried all the time about gaining weight or becoming fat? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_eatingdis_raw_360_p": {
+        "Description": "For how long has your child been around this weight?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_359_p": {
+        "Description": "What is your child's current height and weight (please make your best guess)?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_358_p": {
+        "Description": "These next questions are about your child's eating habits and feelings about his or her shape and weight. In the past two weeks, how often has your child been preoccupied with gaining weight or worrying a lot about being fat? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_eatingdis_raw_379_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat and did things to control his or her weight, like exercise excessively, restrict food, took laxatives, or diet pills. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_397_p": {
+        "Description": "You said that in the past your child made him or herself throw up once a week or more and had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_396_p": {
+        "Description": "You said that in the past your child made him or herself throw up once a week or more and did things to control their weight like exercise excessively, restrict food, took laxatives, or diet pills. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_395_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat and had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_394_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat and did things to control their weight, like exercise excessively, restrict food, took laxatives, or diet pills. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_393_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat and made him or herself throw up once a week or more. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_392_p": {
+        "Description": "You said that in the past your child had eating binges, when your child ate way more than he or she needed to the point of feeling sick. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_391_p": {
+        "Description": "You said that in the past your child did things to control their weight like exercise excessively, restrict food, took laxatives, or diet pills. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_390_p": {
+        "Description": "You said that in the past your child made him or herself throw up once a week or more. When was that? If this was true of your child more than once, let me know when it was the worst.",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_389_p": {
+        "Description": "You said that in the past your child worried all the time about becoming fat. When was that? If this was true of your child more than once, let me know when it was the worst",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_388_p": {
+        "Description": "You said that in the past two weeks your child often worried about becoming fat, made himself or herself throw up, did things to control his or her weight, like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_387_p": {
+        "Description": "You said that in the past two weeks your child made himself or herself throw up once a week or more, did things to control his or her weight, like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_386_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat, did things to control his or her weight, like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_385_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat, made himself or herself throw up once a week or more and had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_384_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat, made himself or herself throw up once a week or more and did things to control his or her weight like exercise excessively, restrict food, took laxatives, or diet pills. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_383_p": {
+        "Description": "You said that in the past two weeks your child did things to control his or her weight, like exercise excessively, restrict food, took laxatives, or diet pills and had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_382_p": {
+        "Description": "You said that in the past two weeks your child made himself or herself throw up once a week or more and had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_381_p": {
+        "Description": "You said that in the past two weeks your child made himself or herself throw up once a week or more and did things to control his or her weight, like exercise excessively, restrict food, took laxatives, or diet pills. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_380_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat and had eating binges, when he or she ate way more than they needed to the point of feeling sick. When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_eatingdis_raw_378_p": {
+        "Description": "You said that in the past two weeks your child worried all the time about becoming fat and made himself or herself throw up once a week or more. When did this begin?",
+        "DataType": "String"
+    }
+}

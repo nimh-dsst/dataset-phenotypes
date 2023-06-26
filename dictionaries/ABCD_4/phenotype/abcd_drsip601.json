@@ -1,0 +1,2991 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "dmri_rsihnt_fib_fxrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right fornix",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fxlh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left fornix",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cgcrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right cingulate cingulum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cgclh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left cingulate cingulum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cghrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right parahpcm cingulum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cghlh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left parahpcm cingulum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cstrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right corticospinal/pyramidal",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cstlh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left corticospinal/pyramidal",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_atrrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right anterior thalamic radiations",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_atrlh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left right anterior thalamic radiations",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_uncrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right uncinate fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_unclh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left uncinate",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_ilfrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right inferior longitudinal fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_ilflh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left inferior longitudinal fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_iforh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right inferior fronto-occipital fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_ifolh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left inferior fronto-occipital fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fmaj": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation forceps major",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fmin": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation forceps minor",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_cc": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation corpus callosum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_slfrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right superior longitudinal fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_slflh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left superior longitudinal fasciculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_tslfrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right temporal superior longitudinal fasiculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_tslflh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left temporal superior longitudinal fasiculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_pslfrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right parietal superior longitudinal fasiculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_pslflh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left parietal superior longitudinal fasiculus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_scsrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right superior corticostriate",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_scslh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left superior corticostriate",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fscsrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right superior corticostriate-frontal cortex only",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fscslh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left superior corticostriate-frontal cortex only",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_pscsrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right superior corticostriate-parietal cortex only",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_pscslh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left superior corticostriate-parietal cortex only",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_sifcrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right striatal inferior frontal cortex",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_sifclh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left striatal inferior frontal cortex",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_ifsfcrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right inferior frontal superior frontal cortex",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_ifsfclh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left inferior frontal superior frontal cortex",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fxcutrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right fornix, excluding fimbria",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_fxcutlh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left fornix, excluding fimbria",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_allfib": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation all fibers",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_afbncrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right hemisphere fibers without corpus callosum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_afbnclh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left hemisphere fibers without corpus callosum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_allfibrh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation right hemisphere fibers",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_fib_allfiblh": {
+        "Description": "hindered normalized total diffusion AtlasTrack fiber segmentation left hemisphere fibers",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cwmlh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_lvlh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_ilvlh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cbwmlh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cbclh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_tplh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cdlh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-caudate",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_ptlh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-putamen",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_pllh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-pallidum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_3rdv": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_4thv": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation 4th-ventricle",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_bs": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation brain-stem",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_hclh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-hippocampus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_aglh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-amygdala",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_csf": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation csf",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_ablh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-accumbens-area",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_vdclh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation left-ventraldc",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cwmrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_lvrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_ilvrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cbwmrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cbcrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_tprh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_cdrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-caudate",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_ptrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-putamen",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_plrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-pallidum",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_hcrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-hippocampus",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_agrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-amygdala",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_abrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-accumbens-area",
+        "DataType": "Float"
+    },
+    "dmri_rsihnt_scs_vdcrh": {
+        "Description": "hindered normalized total diffusion aseg subcortical segmentation right-ventraldc",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_bstslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere bankssts",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_caclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_cmflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_cnlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_erlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere entorhinal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_fflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere fusiform",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_iplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere inferiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_itlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere inferiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_iclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere isthmuscingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_lolh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere lateraloccipital",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_loflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_lglh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere lingual",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_moflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_mtlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere middletemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_phlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere parahippocampal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere paracentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_poplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere parsopercularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_poblh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere parsorbitalis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_ptglh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere parstriangularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pcclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere pericalcarine",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pctlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere postcentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pcglh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere posteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_prctlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere precentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_prcnlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_raclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_rmflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_sflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere superiorfrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_splh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere superiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_stlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere superiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_smlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere supramarginal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_fplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere frontalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_tplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere temporalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_ttlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere transversetemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_islh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_bstsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere bankssts",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_cacrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_cmfrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_cnrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_errh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere entorhinal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_ffrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere fusiform",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_iprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere inferiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_itrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere inferiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_icrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere isthmuscingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_lorh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere lateraloccipital",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_lofrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_lgrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere lingual",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_mofrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_mtrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere middletemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_phrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere parahippocampal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pcrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere paracentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_poprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere parsopercularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pobrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere parsorbitalis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_ptgrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere parstriangularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pccrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere pericalcarine",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pctrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere postcentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_pcgrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere posteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_prctrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere precentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_prcnrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_racrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_rmfrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_sfrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere superiorfrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_sprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere superiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_strh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere superiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_smrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere supramarginal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_fprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere frontalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_tprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere temporalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_ttrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere transversetemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_isrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_mean": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_meanlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation left hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdk_meanrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Desikan cortical parcellation right hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_bstslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere bankssts",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_caclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_cmflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_cnlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_erlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere entorhinal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_fflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere fusiform",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_iplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere inferiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_itlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere inferiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_iclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere isthmuscingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_lolh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere lateraloccipital",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_loflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_lglh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere lingual",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_moflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_mtlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere middletemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_phlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere parahippocampal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere paracentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_poplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere parsopercularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_poblh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere parsorbitalis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_ptglh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere parstriangularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pcclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere pericalcarine",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pctlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere postcentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pcglh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere posteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_prctlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere precentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_prcnlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_raclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_rmflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_sflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere superiorfrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_splh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere superiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_stlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere superiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_smlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere supramarginal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_fplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere frontalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_tplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere temporalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_ttlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere transversetemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_islh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_bstsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere bankssts",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_cacrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_cmfrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_cnrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_errh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere entorhinal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_ffrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere fusiform",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_iprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere inferiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_itrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere inferiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_icrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere isthmuscingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_lorh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere lateraloccipital",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_lofrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_lgrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere lingual",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_mofrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_mtrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere middletemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_phrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere parahippocampal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pcrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere paracentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_poprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere parsopercularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pobrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere parsorbitalis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_ptgrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere parstriangularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pccrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere pericalcarine",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pctrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere postcentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_pcgrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere posteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_prctrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere precentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_prcnrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_racrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_rmfrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_sfrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere superiorfrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_sprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere superiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_strh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere superiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_smrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere supramarginal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_fprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere frontalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_tprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere temporalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_ttrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere transversetemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_isrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_mean": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_meanlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation left hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdk_meanrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Desikan cortical parcellation right hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_bstslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere bankssts",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_caclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_cmflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_cnlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_erlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere entorhinal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_fflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere fusiform",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_iplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere inferiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_itlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere inferiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_iclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere isthmuscingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_lolh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere lateraloccipital",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_loflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_lglh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere lingual",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_moflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_mtlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere middletemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_phlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere parahippocampal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere paracentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_poplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere parsopercularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_poblh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere parsorbitalis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_ptglh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere parstriangularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pcclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere pericalcarine",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pctlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere postcentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pcglh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere posteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_prctlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere precentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_prcnlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_raclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_rmflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_sflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere superiorfrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_splh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere superiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_stlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere superiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_smlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere supramarginal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_fplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere frontalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_tplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere temporalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_ttlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere transversetemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_islh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_bstsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere bankssts",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_cacrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_cmfrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_cnrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_errh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere entorhinal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_ffrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere fusiform",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_iprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere inferiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_itrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere inferiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_icrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere isthmuscingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_lorh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere lateraloccipital",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_lofrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_lgrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere lingual",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_mofrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_mtrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere middletemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_phrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere parahippocampal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pcrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere paracentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_poprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere parsopercularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pobrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere parsorbitalis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_ptgrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere parstriangularis",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pccrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere pericalcarine",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pctrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere postcentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_pcgrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere posteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_prctrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere precentral",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_prcnrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_racrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_rmfrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_sfrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere superiorfrontal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_sprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere superiorparietal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_strh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere superiortemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_smrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere supramarginal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_fprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere frontalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_tprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere temporalpole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_ttrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere transversetemporal",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_isrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_mean": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_meanlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation left hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdk_meanrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Desikan cortical parcellation right hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gsfmlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gsoilh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gspclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gssclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gstflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gscalh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gscmalh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gscmplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gcpdlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gcpvlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gcnlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfiolh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfioblh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfitlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfmlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gilscilh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gislh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere short insular gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gomlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_goslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gotlflh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gotmllh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere lingual gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gotmplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_golh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere orbital gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpialh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere angular gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpislh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior parietal lobule",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere postcentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gprctlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere precentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gprcnlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_grlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere gyrus rectus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtsgttlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtsllh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtspplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtsptlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere planum temporale",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtilh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtmlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_lfahlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_lfavlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_lfplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_polh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere occipital pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_ptlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere temporal pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere calcarine sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere central sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scmlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scialh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sciilh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scislh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sctalh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sctplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sfilh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sfmlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sfslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sipjlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_siptlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_somllh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sostlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_soalh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sotllh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sotmllh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sollh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_somolh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sohslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere orbital sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spolh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spclh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spctlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere postcentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spriplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sprsplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_ssolh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere suborbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_ssplh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere subparietal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_stilh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_stslh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sttlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gsfmrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gsoirh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gspcrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gsscrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gstfrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gscarh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gscmarh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gscmprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gcpdrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gcpvrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gcnrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfiorh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfiobrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfitrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfmrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gfsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gilscirh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gisrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere short insular gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gomrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gosrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gotlfrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gotmlrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere lingual gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gotmprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gorh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere orbital gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpiarh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere angular gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpisrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior parietal lobule",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gpcrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere postcentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gprctrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere precentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gprcnrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_grrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere gyrus rectus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtsgttrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtslrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtspprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtsptrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere planum temporale",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtirh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_gtmrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_lfahrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_lfavrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_lfprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_porh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere occipital pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_ptrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere temporal pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sccrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere calcarine sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere central sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scmrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sciarh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sciirh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_scisrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sctarh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sctprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sfirh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sfmrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sfsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sipjrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_siptrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_somlrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sostrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_soarh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sotlrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sotmlrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_solrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_somorh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sohsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere orbital sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sporh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spcrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spctrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere postcentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_spriprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sprsprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_ssorh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere suborbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_ssprh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere subparietal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_stirh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_stsrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_sttrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_mean": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_meanlh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation left hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntwm_cdx_meanrh": {
+        "Description": "hindered normalized total diffusion peri-cortical white matter Destrieux cortical parcellation right hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gsfmlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gsoilh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gspclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gssclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gstflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gscalh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gscmalh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gscmplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gcpdlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gcpvlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gcnlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfiolh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfioblh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfitlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfmlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gilscilh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gislh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere short insular gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gomlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_goslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gotlflh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gotmllh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere lingual gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gotmplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_golh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere orbital gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpialh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere angular gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpislh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior parietal lobule",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere postcentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gprctlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere precentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gprcnlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_grlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere gyrus rectus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtsgttlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtsllh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtspplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtsptlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere planum temporale",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtilh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtmlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_lfahlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_lfavlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_lfplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_polh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere occipital pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_ptlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere temporal pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere calcarine sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere central sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scmlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scialh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sciilh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scislh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sctalh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sctplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sfilh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sfmlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sfslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sipjlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_siptlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_somllh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sostlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_soalh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sotllh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sotmllh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sollh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_somolh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sohslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere orbital sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spolh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spclh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spctlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere postcentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spriplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sprsplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_ssolh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere suborbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_ssplh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere subparietal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_stilh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_stslh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sttlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gsfmrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gsoirh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gspcrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gsscrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gstfrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gscarh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gscmarh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gscmprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gcpdrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gcpvrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gcnrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfiorh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfiobrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfitrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfmrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gfsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gilscirh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gisrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere short insular gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gomrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gosrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gotlfrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gotmlrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere lingual gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gotmprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gorh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere orbital gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpiarh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere angular gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpisrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior parietal lobule",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gpcrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere postcentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gprctrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere precentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gprcnrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_grrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere gyrus rectus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtsgttrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtslrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtspprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtsptrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere planum temporale",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtirh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_gtmrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_lfahrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_lfavrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_lfprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_porh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere occipital pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_ptrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere temporal pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sccrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere calcarine sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere central sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scmrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sciarh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sciirh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_scisrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sctarh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sctprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sfirh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sfmrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sfsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sipjrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_siptrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_somlrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sostrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_soarh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sotlrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sotmlrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_solrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_somorh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sohsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere orbital sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sporh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spcrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spctrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere postcentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_spriprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sprsprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_ssorh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere suborbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_ssprh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere subparietal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_stirh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_stsrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_sttrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_mean": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_meanlh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation left hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgm_cdx_meanrh": {
+        "Description": "hindered normalized total diffusion cortical gray matter Destrieux cortical parcellation right hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gsfmlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gsoilh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gspclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gssclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gstflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gscalh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gscmalh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gscmplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gcpdlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gcpvlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gcnlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfiolh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfioblh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfitlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfmlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gilscilh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gislh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere short insular gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gomlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_goslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gotlflh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gotmllh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere lingual gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gotmplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_golh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere orbital gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpialh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere angular gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpislh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior parietal lobule",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere postcentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gprctlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere precentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gprcnlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_grlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere gyrus rectus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtsgttlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtsllh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtspplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtsptlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere planum temporale",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtilh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtmlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_lfahlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_lfavlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_lfplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_polh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere occipital pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_ptlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere temporal pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere calcarine sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere central sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scmlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scialh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sciilh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scislh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sctalh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sctplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sfilh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sfmlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sfslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sipjlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_siptlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_somllh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sostlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_soalh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sotllh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sotmllh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sollh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_somolh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sohslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere orbital sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spolh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spclh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spctlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere postcentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spriplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sprsplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_ssolh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere suborbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_ssplh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere subparietal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_stilh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_stslh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sttlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gsfmrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gsoirh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gspcrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gsscrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gstfrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gscarh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gscmarh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gscmprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gcpdrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gcpvrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gcnrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere cuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfiorh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfiobrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfitrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfmrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gfsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gilscirh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gisrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere short insular gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gomrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gosrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gotlfrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gotmlrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere lingual gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gotmprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gorh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere orbital gyri",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpiarh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere angular gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpisrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior parietal lobule",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gpcrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere postcentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gprctrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere precentral gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gprcnrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere precuneus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_grrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere gyrus rectus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtsgttrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtslrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtspprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtsptrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere planum temporale",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtirh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_gtmrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_lfahrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_lfavrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_lfprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_porh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere occipital pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_ptrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere temporal pole",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sccrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere calcarine sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere central sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scmrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sciarh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sciirh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_scisrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sctarh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sctprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sfirh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sfmrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sfsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sipjrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_siptrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_somlrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sostrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_soarh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sotlrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sotmlrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_solrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_somorh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sohsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere orbital sulci",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sporh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spcrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spctrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere postcentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_spriprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sprsprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_ssorh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere suborbital sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_ssprh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere subparietal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_stirh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_stsrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_sttrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_mean": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_meanlh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation left hemisphere mean",
+        "DataType": "Float"
+    },
+    "dmri_rsihntgwc_cdx_meanrh": {
+        "Description": "hindered normalized total diffusion gray-white contrast Destrieux cortical parcellation right hemisphere mean",
+        "DataType": "Float"
+    }
+}

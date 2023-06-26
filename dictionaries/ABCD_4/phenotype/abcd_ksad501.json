@@ -1,0 +1,3855 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ksads_import_id_t": {
+        "Description": "Unique ID provided by KSADS for dataset",
+        "DataType": "String"
+    },
+    "ksads_1_1_t": {
+        "Description": "Symptom - Depressed Mood, Present",
+        "DataType": "String"
+    },
+    "ksads_1_2_t": {
+        "Description": "Symptom - Depressed Mood, Past",
+        "DataType": "String"
+    },
+    "ksads_1_3_t": {
+        "Description": "Symptom - Irritability, Present",
+        "DataType": "String"
+    },
+    "ksads_1_4_t": {
+        "Description": "Symptom - Irritability, Past",
+        "DataType": "String"
+    },
+    "ksads_1_5_t": {
+        "Description": "Symptom - Anhedonia, Present",
+        "DataType": "String"
+    },
+    "ksads_1_6_t": {
+        "Description": "Symptom - Anhedonia, Past",
+        "DataType": "String"
+    },
+    "ksads_2_7_t": {
+        "Description": "Symptom - Elevated Mood, Present",
+        "DataType": "String"
+    },
+    "ksads_2_8_t": {
+        "Description": "Symptom - Elevated Mood, Past",
+        "DataType": "String"
+    },
+    "ksads_2_9_t": {
+        "Description": "Symptom - Explosive Irritability, Present",
+        "DataType": "String"
+    },
+    "ksads_2_10_t": {
+        "Description": "Symptom - ExplosiveIrritability, PresentNext",
+        "DataType": "String"
+    },
+    "ksads_2_11_t": {
+        "Description": "Symptom - Explosive Irritability, Past",
+        "DataType": "String"
+    },
+    "ksads_2_12_t": {
+        "Description": "Symptom - Decreased Need for Sleep, Present",
+        "DataType": "String"
+    },
+    "ksads_2_13_t": {
+        "Description": "Symptom - Decreased Need for Sleep, Past",
+        "DataType": "String"
+    },
+    "ksads_2_14_t": {
+        "Description": "Symptom - Hypersexuality, Present",
+        "DataType": "String"
+    },
+    "ksads_2_15_t": {
+        "Description": "Symptom - Hypersexuality, Past",
+        "DataType": "String"
+    },
+    "ksads_4_16_t": {
+        "Description": "Symptom - Hallucinations, Present",
+        "DataType": "String"
+    },
+    "ksads_4_17_t": {
+        "Description": "Symptom - Hallucinations, Past",
+        "DataType": "String"
+    },
+    "ksads_4_18_t": {
+        "Description": "Symptom - Persecutory Delusions, Past two weeks, Present",
+        "DataType": "String"
+    },
+    "ksads_4_19_t": {
+        "Description": "Symptom - Persecutory Delusions, Past",
+        "DataType": "String"
+    },
+    "ksads_5_20_t": {
+        "Description": "Symptom - Panic Attacks, Present",
+        "DataType": "String"
+    },
+    "ksads_5_21_t": {
+        "Description": "Symptom - Panic Attacks, Past",
+        "DataType": "String"
+    },
+    "ksads_6_22_t": {
+        "Description": "Symptom - Agoraphobic of at least 2 situations, Present",
+        "DataType": "String"
+    },
+    "ksads_6_23_t": {
+        "Description": "Symptom - Agoraphobic of at least 2 situations, Past",
+        "DataType": "String"
+    },
+    "ksads_7_24_t": {
+        "Description": "Symptom - Distress upon separation from home/attachment figures, Present",
+        "DataType": "String"
+    },
+    "ksads_7_25_t": {
+        "Description": "Symptom - Distress upon separation from home/attachment figures, Past",
+        "DataType": "String"
+    },
+    "ksads_7_26_t": {
+        "Description": "Symptom - School Reluctance/Refusal, Present",
+        "DataType": "String"
+    },
+    "ksads_7_27_t": {
+        "Description": "Symptom - School Reluctance/Refusal, Past",
+        "DataType": "String"
+    },
+    "ksads_8_29_t": {
+        "Description": "Symptom - Fear of Social Situations Present",
+        "DataType": "String"
+    },
+    "ksads_8_30_t": {
+        "Description": "Symptom - Duration (at least 6 months) Present",
+        "DataType": "String"
+    },
+    "ksads_25_32_t": {
+        "Description": "Symptom - Failure to speak in social situations Present",
+        "DataType": "String"
+    },
+    "ksads_9_34_t": {
+        "Description": "Symptom - Marked fear of phobic object Present",
+        "DataType": "String"
+    },
+    "ksads_9_35_t": {
+        "Description": "Symptom - Marked fear of phobic object Past",
+        "DataType": "String"
+    },
+    "ksads_9_36_t": {
+        "Description": "Symptom - PhobicObjectSpecialCase Past",
+        "DataType": "String"
+    },
+    "ksads_9_37_t": {
+        "Description": "Symptom - Active avoidance of phobic object Present",
+        "DataType": "String"
+    },
+    "ksads_9_38_t": {
+        "Description": "Symptom - Active avoidance of phobic object Past",
+        "DataType": "String"
+    },
+    "ksads_9_39_t": {
+        "Description": "Symptom - Impairment due to fear or avoidance of phobic object Present",
+        "DataType": "String"
+    },
+    "ksads_9_40_t": {
+        "Description": "Symptom - Impairment due to fear or avoidance of phobic object Past",
+        "DataType": "String"
+    },
+    "ksads_9_41_t": {
+        "Description": "Symptom - Distress due to fear or avoidance of phobic object Present",
+        "DataType": "String"
+    },
+    "ksads_9_42_t": {
+        "Description": "Symptom - Distress due to fear or avoidance of phobic object Past",
+        "DataType": "String"
+    },
+    "ksads_9_43_t": {
+        "Description": "Symptom - Duration of phobia at least 6 months Present",
+        "DataType": "String"
+    },
+    "ksads_10_45_t": {
+        "Description": "Symptom - Excessive worries more days than not Present",
+        "DataType": "String"
+    },
+    "ksads_10_46_t": {
+        "Description": "Symptom - Excessive worries more days than not Past",
+        "DataType": "String"
+    },
+    "ksads_11_48_t": {
+        "Description": "Symptom - Obsessions, Present",
+        "DataType": "String"
+    },
+    "ksads_11_49_t": {
+        "Description": "Symptom - Obsessions, Past",
+        "DataType": "String"
+    },
+    "ksads_11_50_t": {
+        "Description": "Symptom - Compulsions, Present",
+        "DataType": "String"
+    },
+    "ksads_12_52_t": {
+        "Description": "Symptom - Enuresis Present",
+        "DataType": "String"
+    },
+    "ksads_12_53_t": {
+        "Description": "Symptom - Enuresis Past",
+        "DataType": "String"
+    },
+    "ksads_12_54_t": {
+        "Description": "Symptom - Enuresis at least twice a week for 3 months Present",
+        "DataType": "String"
+    },
+    "ksads_12_55_t": {
+        "Description": "Symptom - Enuresis at least twice a week for 3 months Past",
+        "DataType": "String"
+    },
+    "ksads_12_56_t": {
+        "Description": "Symptom - Enuresis causes significant distress Present",
+        "DataType": "String"
+    },
+    "ksads_12_57_t": {
+        "Description": "Symptom - Enuresis causes significant distress Past",
+        "DataType": "String"
+    },
+    "ksads_12_58_t": {
+        "Description": "Symptom - Impairment due to Enuresis Present",
+        "DataType": "String"
+    },
+    "ksads_12_59_t": {
+        "Description": "Symptom - Impairment due to Enuresis Past",
+        "DataType": "String"
+    },
+    "ksads_12_60_t": {
+        "Description": "Symptom - Encopresis Present",
+        "DataType": "String"
+    },
+    "ksads_12_61_t": {
+        "Description": "Symptom - Encopresis Past",
+        "DataType": "String"
+    },
+    "ksads_12_62_t": {
+        "Description": "Symptom - Encopresis at least once a month for \u00a03 months Present",
+        "DataType": "String"
+    },
+    "ksads_12_63_t": {
+        "Description": "Symptom - Encopresis at least once a month for \u00a03 months Past",
+        "DataType": "String"
+    },
+    "ksads_12_64_t": {
+        "Description": "Symptom - Encopresis not due to medical illness Present",
+        "DataType": "String"
+    },
+    "ksads_13_66_t": {
+        "Description": "Symptom - Fear of becoming obese Present",
+        "DataType": "String"
+    },
+    "ksads_13_67_t": {
+        "Description": "Symptom - Fear of becoming obese Past",
+        "DataType": "String"
+    },
+    "ksads_13_68_t": {
+        "Description": "Symptom - Emaciation Present",
+        "DataType": "String"
+    },
+    "ksads_13_69_t": {
+        "Description": "Symptom - Emaciation Past",
+        "DataType": "String"
+    },
+    "ksads_13_70_t": {
+        "Description": "Symptom - Weight control vomiting Present",
+        "DataType": "String"
+    },
+    "ksads_13_71_t": {
+        "Description": "Symptom - Weight control vomiting Past",
+        "DataType": "String"
+    },
+    "ksads_13_72_t": {
+        "Description": "Symptom - Weight control other (laxatives exercise dieting pills) Present",
+        "DataType": "String"
+    },
+    "ksads_13_73_t": {
+        "Description": "Symptom - Weight control other (laxatives exercise dieting pills) Past",
+        "DataType": "String"
+    },
+    "ksads_13_74_t": {
+        "Description": "Symptom - Binge Eating Present",
+        "DataType": "String"
+    },
+    "ksads_14_76_t": {
+        "Description": "Symptom - Difficulty sustaining attention Present",
+        "DataType": "String"
+    },
+    "ksads_14_77_t": {
+        "Description": "Symptom - Difficulty sustaining attention since elementary school Present",
+        "DataType": "String"
+    },
+    "ksads_14_78_t": {
+        "Description": "Symptom - Difficulty sustaining attention Past",
+        "DataType": "String"
+    },
+    "ksads_14_79_t": {
+        "Description": "Symptom - Difficulty sustaining attention for more than one school year Past",
+        "DataType": "String"
+    },
+    "ksads_14_80_t": {
+        "Description": "Symptom - Easily distracted Present",
+        "DataType": "String"
+    },
+    "ksads_14_81_t": {
+        "Description": "Symptom - Easily distracted since elementary school Present",
+        "DataType": "String"
+    },
+    "ksads_14_82_t": {
+        "Description": "Symptom - Easily distracted Past",
+        "DataType": "String"
+    },
+    "ksads_14_83_t": {
+        "Description": "Symptom - Easily distracted for more than one school year Past",
+        "DataType": "String"
+    },
+    "ksads_14_84_t": {
+        "Description": "Symptom - Difficulty remaining seated Present",
+        "DataType": "String"
+    },
+    "ksads_14_85_t": {
+        "Description": "Symptom - Difficulty remaining seated since elementary school \u00a0Present",
+        "DataType": "String"
+    },
+    "ksads_14_86_t": {
+        "Description": "Symptom - Difficulty remaining seated Past",
+        "DataType": "String"
+    },
+    "ksads_14_87_t": {
+        "Description": "Symptom - Difficulty remaining seated for more than one school year Past",
+        "DataType": "String"
+    },
+    "ksads_14_88_t": {
+        "Description": "Symptom - Impulsivity Present",
+        "DataType": "String"
+    },
+    "ksads_14_89_t": {
+        "Description": "Symptom - Impulsivity Past",
+        "DataType": "String"
+    },
+    "ksads_15_91_t": {
+        "Description": "Symptom - Often loses temper Present",
+        "DataType": "String"
+    },
+    "ksads_15_92_t": {
+        "Description": "Symptom - Often loses temper Past",
+        "DataType": "String"
+    },
+    "ksads_15_93_t": {
+        "Description": "Symptom - Often argues with adults/authority Present",
+        "DataType": "String"
+    },
+    "ksads_15_94_t": {
+        "Description": "Symptom - Often argues with adults/authority Past",
+        "DataType": "String"
+    },
+    "ksads_15_95_t": {
+        "Description": "Symptom - Often disobeys rules/requests Present",
+        "DataType": "String"
+    },
+    "ksads_15_96_t": {
+        "Description": "Symptom - Often disobeys rules/requests Past",
+        "DataType": "String"
+    },
+    "ksads_15_97_t": {
+        "Description": "Duration (at least 6 months) ODD, Past",
+        "DataType": "String"
+    },
+    "ksads_16_98_t": {
+        "Description": "Symptom - Often Lies, Present",
+        "DataType": "String"
+    },
+    "ksads_16_99_t": {
+        "Description": "Symptom - Often Lies, Past",
+        "DataType": "String"
+    },
+    "ksads_16_100_t": {
+        "Description": "Symptom - Truancy, Present",
+        "DataType": "String"
+    },
+    "ksads_16_101_t": {
+        "Description": "Symptom - Truancy, Past",
+        "DataType": "String"
+    },
+    "ksads_16_102_t": {
+        "Description": "Symptom - Often initiates physical fights, Present",
+        "DataType": "String"
+    },
+    "ksads_16_103_t": {
+        "Description": "Symptom - Often initiates physical fights, Past",
+        "DataType": "String"
+    },
+    "ksads_16_104_t": {
+        "Description": "Symptom - Often bullies others, Present",
+        "DataType": "String"
+    },
+    "ksads_16_105_t": {
+        "Description": "Symptom - Often bullies others, Past",
+        "DataType": "String"
+    },
+    "ksads_16_106_t": {
+        "Description": "Symptom - Stealing, Present",
+        "DataType": "String"
+    },
+    "ksads_16_107_t": {
+        "Description": "Symptom - Stealing, Past",
+        "DataType": "String"
+    },
+    "ksads_17_108_t": {
+        "Description": "Symptom - Motor Tics, Present",
+        "DataType": "String"
+    },
+    "ksads_17_109_t": {
+        "Description": "Symptom - Motor Tics, Past",
+        "DataType": "String"
+    },
+    "ksads_17_110_t": {
+        "Description": "Symptom - Phonic Tics, Present",
+        "DataType": "String"
+    },
+    "ksads_17_111_t": {
+        "Description": "Symptom - Phonic Tics, Past",
+        "DataType": "String"
+    },
+    "ksads_18_112_t": {
+        "Description": "Symptom - Unusual body movements, Present",
+        "DataType": "String"
+    },
+    "ksads_18_113_t": {
+        "Description": "Symptom - Unusual body movements, Past",
+        "DataType": "String"
+    },
+    "ksads_18_114_t": {
+        "Description": "Symptom - Strict Routines, Present",
+        "DataType": "String"
+    },
+    "ksads_18_115_t": {
+        "Description": "Symptom - Strict Routines, Past",
+        "DataType": "String"
+    },
+    "ksads_18_116_t": {
+        "Description": "Symptom - Poor Eye Contact, Present",
+        "DataType": "String"
+    },
+    "ksads_18_117_t": {
+        "Description": "Symptom - Poor Eye Contact, Past",
+        "DataType": "String"
+    },
+    "ksads_19_120_t": {
+        "Description": "Symptom - Often has three or more drinks a day, Present",
+        "DataType": "String"
+    },
+    "ksads_19_121_t": {
+        "Description": "Symptom - Often has three or more drinks a day, Past",
+        "DataType": "String"
+    },
+    "ksads_19_122_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, alcohol, Present",
+        "DataType": "String"
+    },
+    "ksads_19_123_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, alcohol, Past",
+        "DataType": "String"
+    },
+    "ksads_19_124_t": {
+        "Description": "Symptom - Frequency of drinks, Past",
+        "DataType": "String"
+    },
+    "ksads_20_126_t": {
+        "Description": "Symptom - Drugs tried, Present",
+        "DataType": "String"
+    },
+    "ksads_20_127_t": {
+        "Description": "Symptom - FrequencyDrugUse, Present",
+        "DataType": "String"
+    },
+    "ksads_20_128_t": {
+        "Description": "Symptom - FrequencyDrugUseSpecial, Present",
+        "DataType": "String"
+    },
+    "ksads_20_129_t": {
+        "Description": "Symptom - FrequencyDrugUse, Past",
+        "DataType": "String"
+    },
+    "ksads_20_130_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_131_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_132_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_133_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use, Past",
+        "DataType": "String"
+    },
+    "ksads_21_134_t": {
+        "Description": "Symptom - History of traumatic event, Present",
+        "DataType": "String"
+    },
+    "ksads_21_135_t": {
+        "Description": "Symptom - Efforts to avoids thoughts of trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_136_t": {
+        "Description": "Symptom - Efforts to avoids thoughts of trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_137_t": {
+        "Description": "Symptom - Nightmares, Present",
+        "DataType": "String"
+    },
+    "ksads_21_138_t": {
+        "Description": "Symptom - Nightmares, Past",
+        "DataType": "String"
+    },
+    "ksads_21_139_t": {
+        "Description": "Symptom - Distress at internal reminders of trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_140_t": {
+        "Description": "Symptom - Distress at internal reminders of trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_22_141_t": {
+        "Description": "Symptom - Insomnia, Present",
+        "DataType": "String"
+    },
+    "ksads_22_142_t": {
+        "Description": "Symptom - Insomnia, Past",
+        "DataType": "String"
+    },
+    "ksads_23_143_t": {
+        "Description": "Symptom - Self injurious behavior, Present",
+        "DataType": "String"
+    },
+    "ksads_23_144_t": {
+        "Description": "Symptom - Self injurious behavio, Past",
+        "DataType": "String"
+    },
+    "ksads_23_145_t": {
+        "Description": "Symptom - Wishes/Better off dead, Present",
+        "DataType": "String"
+    },
+    "ksads_23_146_t": {
+        "Description": "Symptom - Wishes/Better off dead, Past",
+        "DataType": "String"
+    },
+    "ksads_23_147_t": {
+        "Description": "Symptom - Suicidal Ideation, Present",
+        "DataType": "String"
+    },
+    "ksads_23_148_t": {
+        "Description": "Symptom - Suicidal Ideation, Past",
+        "DataType": "String"
+    },
+    "ksads_23_149_t": {
+        "Description": "Symptom - Suicidal Attempt, Present",
+        "DataType": "String"
+    },
+    "ksads_23_150_t": {
+        "Description": "Symptom - Suicidal Attempt, Past",
+        "DataType": "String"
+    },
+    "ksads_24_151_t": {
+        "Description": "Symptom - Homicidal Ideation, Present",
+        "DataType": "String"
+    },
+    "ksads_24_152_t": {
+        "Description": "Symptom - Homicidal Ideation, Past",
+        "DataType": "String"
+    },
+    "ksads_24_153_t": {
+        "Description": "Symptom - Homicide Planning, Present",
+        "DataType": "String"
+    },
+    "ksads_24_154_t": {
+        "Description": "Symptom - Homicide Planning, Past",
+        "DataType": "String"
+    },
+    "ksads_1_156_t": {
+        "Description": "Symptom - Insomnia when depressed, Past",
+        "DataType": "String"
+    },
+    "ksads_1_157_t": {
+        "Description": "Symptom - Hypersomnia, Present",
+        "DataType": "String"
+    },
+    "ksads_1_158_t": {
+        "Description": "Symptom - Hypersomnia, Past",
+        "DataType": "String"
+    },
+    "ksads_1_159_t": {
+        "Description": "Symptom - Fatigue, Present",
+        "DataType": "String"
+    },
+    "ksads_1_160_t": {
+        "Description": "Symptom - Fatigue, Past",
+        "DataType": "String"
+    },
+    "ksads_1_161_t": {
+        "Description": "Symptom - Concentration Disturbance, Present",
+        "DataType": "String"
+    },
+    "ksads_1_162_t": {
+        "Description": "Symptom - Concentration Disturbance, Past",
+        "DataType": "String"
+    },
+    "ksads_1_163_t": {
+        "Description": "Symptom - Indecision, Present",
+        "DataType": "String"
+    },
+    "ksads_1_164_t": {
+        "Description": "Symptom - Indecision, Past",
+        "DataType": "String"
+    },
+    "ksads_1_165_t": {
+        "Description": "Symptom - Decreased Appetite, Present",
+        "DataType": "String"
+    },
+    "ksads_1_166_t": {
+        "Description": "Symptom - Decreased Appetite, Past",
+        "DataType": "String"
+    },
+    "ksads_1_167_t": {
+        "Description": "Symptom - Weight Loss, Present",
+        "DataType": "String"
+    },
+    "ksads_1_168_t": {
+        "Description": "Symptom - Weight Loss, Past",
+        "DataType": "String"
+    },
+    "ksads_1_169_t": {
+        "Description": "Symptom - Increased Appetite, Present",
+        "DataType": "String"
+    },
+    "ksads_1_170_t": {
+        "Description": "Symptom - Increased Appetite, Past",
+        "DataType": "String"
+    },
+    "ksads_1_171_t": {
+        "Description": "Symptom - Weight Gain, Present",
+        "DataType": "String"
+    },
+    "ksads_1_172_t": {
+        "Description": "Symptom - Weight Gain, Past",
+        "DataType": "String"
+    },
+    "ksads_1_173_t": {
+        "Description": "Symptom - Psychomotor Agitation in Depressive Disorder, Present",
+        "DataType": "String"
+    },
+    "ksads_1_174_t": {
+        "Description": "Symptom - Psychomotor Agitation in Depressive Disorder, Past",
+        "DataType": "String"
+    },
+    "ksads_1_175_t": {
+        "Description": "Symptom - Psychomotor Retardation, Present",
+        "DataType": "String"
+    },
+    "ksads_1_176_t": {
+        "Description": "Symptom - Psychomotor Retardation, Past",
+        "DataType": "String"
+    },
+    "ksads_1_177_t": {
+        "Description": "Symptom - Guilt, Present",
+        "DataType": "String"
+    },
+    "ksads_1_178_t": {
+        "Description": "Symptom - Guilt, Past",
+        "DataType": "String"
+    },
+    "ksads_1_179_t": {
+        "Description": "Symptom - Hopeless, Present",
+        "DataType": "String"
+    },
+    "ksads_1_180_t": {
+        "Description": "Symptom - Hopeless, Past",
+        "DataType": "String"
+    },
+    "ksads_1_181_t": {
+        "Description": "Symptom - Decreased Self-Esteem, Present",
+        "DataType": "String"
+    },
+    "ksads_1_182_t": {
+        "Description": "Symptom - Decreased Self-Esteem, Past",
+        "DataType": "String"
+    },
+    "ksads_1_183_t": {
+        "Description": "Symptom - Impairment in functioning due to depression, Present",
+        "DataType": "String"
+    },
+    "ksads_1_184_t": {
+        "Description": "Symptom - Impairment in functioning due to depression, Past",
+        "DataType": "String"
+    },
+    "ksads_1_185_t": {
+        "Description": "Symptom - Presence of two or more depressive symptoms, Present",
+        "DataType": "String"
+    },
+    "ksads_1_186_t": {
+        "Description": "Symptom - Presence of two or more depressive symptoms, Past",
+        "DataType": "String"
+    },
+    "ksads_1_187_t": {
+        "Description": "Symptom - No two month symptom-free interval, Present",
+        "DataType": "String"
+    },
+    "ksads_1_188_t": {
+        "Description": "Symptom - No two month symptom-free interval, Past",
+        "DataType": "String"
+    },
+    "ksads_2_189_t": {
+        "Description": "Symptom - Preliminary substance rule out bipolar present",
+        "DataType": "String"
+    },
+    "ksads_2_190_t": {
+        "Description": "Symptom - Preliminary substance rule out bipolar past",
+        "DataType": "String"
+    },
+    "ksads_2_191_t": {
+        "Description": "Symptom - Elevated / Euphoric Mood, Present",
+        "DataType": "String"
+    },
+    "ksads_2_192_t": {
+        "Description": "Symptom - Manic Irritability, Present",
+        "DataType": "String"
+    },
+    "ksads_2_193_t": {
+        "Description": "Symptom - Elevated / Euphoric Mood, Past",
+        "DataType": "String"
+    },
+    "ksads_2_194_t": {
+        "Description": "Symptom - Manic Irritability, Past",
+        "DataType": "String"
+    },
+    "ksads_2_195_t": {
+        "Description": "Symptom - Grandiosity, Present",
+        "DataType": "String"
+    },
+    "ksads_2_196_t": {
+        "Description": "Symptom - Grandiosity, Past",
+        "DataType": "String"
+    },
+    "ksads_2_197_t": {
+        "Description": "Symptom - Pressured Speech, Present",
+        "DataType": "String"
+    },
+    "ksads_2_198_t": {
+        "Description": "Symptom - Pressured Speech, Past",
+        "DataType": "String"
+    },
+    "ksads_2_199_t": {
+        "Description": "Symptom - Racing Thoughts, Present",
+        "DataType": "String"
+    },
+    "ksads_2_200_t": {
+        "Description": "Symptom - Racing Thoughts, Past",
+        "DataType": "String"
+    },
+    "ksads_2_201_t": {
+        "Description": "Symptom - Flight of Ideas, Present",
+        "DataType": "String"
+    },
+    "ksads_2_202_t": {
+        "Description": "Symptom - Flight of Ideas, Past",
+        "DataType": "String"
+    },
+    "ksads_2_203_t": {
+        "Description": "Symptom - Increased Goal Directed Activity, Present",
+        "DataType": "String"
+    },
+    "ksads_2_204_t": {
+        "Description": "Symptom - Increased Goal Directed Activity, Past",
+        "DataType": "String"
+    },
+    "ksads_2_205_t": {
+        "Description": "Symptom - Increased Energy, Present",
+        "DataType": "String"
+    },
+    "ksads_2_206_t": {
+        "Description": "Symptom - Increased Energy, Past",
+        "DataType": "String"
+    },
+    "ksads_2_207_t": {
+        "Description": "Symptom - Psychomotor Agitation in Bipolar Disorder, Present",
+        "DataType": "String"
+    },
+    "ksads_2_208_t": {
+        "Description": "Symptom - Psychomotor Agitation in Bipolar Disorder, Past",
+        "DataType": "String"
+    },
+    "ksads_2_209_t": {
+        "Description": "Symptom - Distractibility, Present",
+        "DataType": "String"
+    },
+    "ksads_2_210_t": {
+        "Description": "Symptom - Increased Distractibility, Present",
+        "DataType": "String"
+    },
+    "ksads_2_211_t": {
+        "Description": "Symptom - Distractibility, Past",
+        "DataType": "String"
+    },
+    "ksads_2_212_t": {
+        "Description": "Symptom - Increased Distractibility, Past",
+        "DataType": "String"
+    },
+    "ksads_2_213_t": {
+        "Description": "Symptom - Excessive Involvement in high risk activities, Present",
+        "DataType": "String"
+    },
+    "ksads_2_214_t": {
+        "Description": "Symptom - Excessive Involvement in high risk activities, Past",
+        "DataType": "String"
+    },
+    "ksads_2_215_t": {
+        "Description": "Symptom - Impairment in functioning due to bipolar, Present",
+        "DataType": "String"
+    },
+    "ksads_2_216_t": {
+        "Description": "Symptom - Impairment in functioning due to bipolar, Past",
+        "DataType": "String"
+    },
+    "ksads_2_217_t": {
+        "Description": "Symptom - Hospitalized due to Bipolar Disorder, Present",
+        "DataType": "String"
+    },
+    "ksads_2_218_t": {
+        "Description": "Symptom - Hospitalized due to Bipolar Disorder, Past",
+        "DataType": "String"
+    },
+    "ksads_2_219_t": {
+        "Description": "Symptom - Lasting at least one week, Present",
+        "DataType": "String"
+    },
+    "ksads_2_220_t": {
+        "Description": "Symptom - Lasting at least one week, Past",
+        "DataType": "String"
+    },
+    "ksads_2_221_t": {
+        "Description": "Symptom - Lasting at least 4 days, Present",
+        "DataType": "String"
+    },
+    "ksads_2_222_t": {
+        "Description": "Symptom - Lasting at least 4 days, Past",
+        "DataType": "String"
+    },
+    "ksads_3_226_t": {
+        "Description": "Symptom - Temper outbursts occur 3 or more times per week",
+        "DataType": "String"
+    },
+    "ksads_3_227_t": {
+        "Description": "Symptom - Present at least 12 months",
+        "DataType": "String"
+    },
+    "ksads_3_228_t": {
+        "Description": "Symptom - No 3 month period without symptoms",
+        "DataType": "String"
+    },
+    "ksads_3_229_t": {
+        "Description": "Symptom - Temper/irritability present in at least 2 settings",
+        "DataType": "String"
+    },
+    "ksads_4_230_t": {
+        "Description": "Symptom - Auditory Hallucinations, Present",
+        "DataType": "String"
+    },
+    "ksads_4_231_t": {
+        "Description": "Symptom - Auditory Hallucinations, Past",
+        "DataType": "String"
+    },
+    "ksads_4_232_t": {
+        "Description": "Symptom - Other Hallucinations, Present",
+        "DataType": "String"
+    },
+    "ksads_4_233_t": {
+        "Description": "Symptom - Other Hallucinations, Past",
+        "DataType": "String"
+    },
+    "ksads_4_234_t": {
+        "Description": "Symptom - Location of voices/noises outside of one's head, Present",
+        "DataType": "String"
+    },
+    "ksads_4_235_t": {
+        "Description": "Symptom - OtherHallucinationsALTW, Present",
+        "DataType": "String"
+    },
+    "ksads_4_236_t": {
+        "Description": "Symptom - OtherHallucinationsAP, Present",
+        "DataType": "String"
+    },
+    "ksads_4_237_t": {
+        "Description": "Symptom - Hallucinations occur frequently, Present",
+        "DataType": "String"
+    },
+    "ksads_4_238_t": {
+        "Description": "Symptom - Hallucinations occur frequently, Past",
+        "DataType": "String"
+    },
+    "ksads_4_239_t": {
+        "Description": "Symptom - Hallucinations do not only occur when falling asleep, Present",
+        "DataType": "String"
+    },
+    "ksads_4_240_t": {
+        "Description": "Symptom - Hallucinations do not only occur when falling asleep, Past",
+        "DataType": "String"
+    },
+    "ksads_4_241_t": {
+        "Description": "Symptom - Hallucinations associated with possible affective Illness, Present",
+        "DataType": "String"
+    },
+    "ksads_4_242_t": {
+        "Description": "Symptom - Hallucinations associated with possible affective Illness, Past",
+        "DataType": "String"
+    },
+    "ksads_4_243_t": {
+        "Description": "Symptom - Hallucinations associated with drug use, Present",
+        "DataType": "String"
+    },
+    "ksads_4_244_t": {
+        "Description": "Symptom - Hallucinations associated with drug use, Past",
+        "DataType": "String"
+    },
+    "ksads_4_245_t": {
+        "Description": "Symptom - Impairment in functioning due to hallucinations, Present",
+        "DataType": "String"
+    },
+    "ksads_4_246_t": {
+        "Description": "Symptom - Impairment in functioning due to hallucinations, Past",
+        "DataType": "String"
+    },
+    "ksads_4_247_t": {
+        "Description": "Symptom - Impairment in functioning due to delusions, Present",
+        "DataType": "String"
+    },
+    "ksads_4_248_t": {
+        "Description": "Symptom - Other Delusions past two weeks, Present",
+        "DataType": "String"
+    },
+    "ksads_4_249_t": {
+        "Description": "Symptom - Other Delusions, Past",
+        "DataType": "String"
+    },
+    "ksads_4_250_t": {
+        "Description": "Symptom - Tenacity of belief that delusion is true, Present",
+        "DataType": "String"
+    },
+    "ksads_4_251_t": {
+        "Description": "Symptom - Tenacity of belief that delusion is true, Past",
+        "DataType": "String"
+    },
+    "ksads_4_252_t": {
+        "Description": "Symptom - Delusions associated with possible affective Illness, Present",
+        "DataType": "String"
+    },
+    "ksads_4_253_t": {
+        "Description": "Symptom - Delusions associated with possible affective Illness, Past",
+        "DataType": "String"
+    },
+    "ksads_4_254_t": {
+        "Description": "Symptom - Delusions associated with drug use, Present",
+        "DataType": "String"
+    },
+    "ksads_4_255_t": {
+        "Description": "Symptom - Delusions associated with drug use, Past",
+        "DataType": "String"
+    },
+    "ksads_4_256_t": {
+        "Description": "Symptom - Impairment associated with delusions, Present",
+        "DataType": "String"
+    },
+    "ksads_4_257_t": {
+        "Description": "Symptom - Impairment associated with delusions, Past",
+        "DataType": "String"
+    },
+    "ksads_4_258_t": {
+        "Description": "Symptom - Associated Psychotic Symptoms, Present",
+        "DataType": "String"
+    },
+    "ksads_4_259_t": {
+        "Description": "Symptom - Associated Psychotic Symptoms, Past",
+        "DataType": "String"
+    },
+    "ksads_4_260_t": {
+        "Description": "Symptom - No three month interval without symptoms, Past",
+        "DataType": "String"
+    },
+    "ksads_5_261_t": {
+        "Description": "Symptom - Panic Symptoms, Present",
+        "DataType": "String"
+    },
+    "ksads_5_262_t": {
+        "Description": "Symptom - Panic Symptoms, Past",
+        "DataType": "String"
+    },
+    "ksads_5_263_t": {
+        "Description": "Symptom - Persistent worry about additional attacks or their consequences, Present",
+        "DataType": "String"
+    },
+    "ksads_5_264_t": {
+        "Description": "Symptom - Persistent worry about additional attacks or their consequences, Past",
+        "DataType": "String"
+    },
+    "ksads_5_265_t": {
+        "Description": "Symptom - Maladaptive change in behavior due to attacks, Present",
+        "DataType": "String"
+    },
+    "ksads_5_266_t": {
+        "Description": "Symptom - Maladaptive change in behavior due to attacks, Past",
+        "DataType": "String"
+    },
+    "ksads_5_267_t": {
+        "Description": "Symptom - Duration of worry or maladaptive behavior at least 1 month, Present",
+        "DataType": "String"
+    },
+    "ksads_5_268_t": {
+        "Description": "Symptom - Duration of worry or maladaptive behavior at least 1 month, Past",
+        "DataType": "String"
+    },
+    "ksads_5_269_t": {
+        "Description": "Symptom - Attacks not attributable to substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_5_270_t": {
+        "Description": "Symptom - Attacks not attributable to substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_6_272_t": {
+        "Description": "Symptom - Excessive avoidance of agoraphobic situations, Present",
+        "DataType": "String"
+    },
+    "ksads_6_273_t": {
+        "Description": "Symptom - Excessive avoidance of agoraphobic situations, Past",
+        "DataType": "String"
+    },
+    "ksads_6_274_t": {
+        "Description": "Symptom - Reason for agoraphobic avoidance, Present",
+        "DataType": "String"
+    },
+    "ksads_6_275_t": {
+        "Description": "Symptom - Reason for agoraphobic avoidance, Past",
+        "DataType": "String"
+    },
+    "ksads_6_276_t": {
+        "Description": "Symptom - Impairment in functioning due to Agoraphobia, Present",
+        "DataType": "String"
+    },
+    "ksads_6_277_t": {
+        "Description": "Symptom - Impairment in functioning due to Agoraphobia, Past",
+        "DataType": "String"
+    },
+    "ksads_6_278_t": {
+        "Description": "Symptom - Clinically significant distress due to Agoraphobia, Present",
+        "DataType": "String"
+    },
+    "ksads_6_279_t": {
+        "Description": "Symptom - Clinically significant distress due to Agoraphobia, Past",
+        "DataType": "String"
+    },
+    "ksads_7_281_t": {
+        "Description": "Symptom - Fears calamitous event that will cause separation, Present",
+        "DataType": "String"
+    },
+    "ksads_7_282_t": {
+        "Description": "Symptom - Fears calamitous event that will cause separation, Past",
+        "DataType": "String"
+    },
+    "ksads_7_283_t": {
+        "Description": "Symptom - Worry about harm befalling attachment figure, Present",
+        "DataType": "String"
+    },
+    "ksads_7_284_t": {
+        "Description": "Symptom - Worry about harm befalling attachment figure, Past",
+        "DataType": "String"
+    },
+    "ksads_7_285_t": {
+        "Description": "Symptom - Fear of being alone without attachment figure, Present",
+        "DataType": "String"
+    },
+    "ksads_7_286_t": {
+        "Description": "Symptom - Fear of being alone without attachment figure, Past",
+        "DataType": "String"
+    },
+    "ksads_7_287_t": {
+        "Description": "Symptom - Refusal to sleep without attachment figure near, Present",
+        "DataType": "String"
+    },
+    "ksads_7_288_t": {
+        "Description": "Symptom - Refusal to sleep without attachment figure near, Past",
+        "DataType": "String"
+    },
+    "ksads_7_289_t": {
+        "Description": "Symptom - Nightmares about separation themes, Present",
+        "DataType": "String"
+    },
+    "ksads_7_290_t": {
+        "Description": "Symptom - Nightmares about separation themes, Past",
+        "DataType": "String"
+    },
+    "ksads_7_291_t": {
+        "Description": "Symptom - Physical symptoms when separated from attachment figure, Present",
+        "DataType": "String"
+    },
+    "ksads_7_292_t": {
+        "Description": "Symptom - Physical symptoms when separated from attachment figure, Past",
+        "DataType": "String"
+    },
+    "ksads_7_293_t": {
+        "Description": "Symptom - Impairment in functioning due to separation anxiety, Present",
+        "DataType": "String"
+    },
+    "ksads_7_294_t": {
+        "Description": "Symptom - Impairment in functioning due to separation anxiety, Past",
+        "DataType": "String"
+    },
+    "ksads_7_295_t": {
+        "Description": "Symptom - Clinically significant distress due to separation anxiety, Present",
+        "DataType": "String"
+    },
+    "ksads_7_296_t": {
+        "Description": "Symptom - Clinically significant distress due to separation anxiety, Past",
+        "DataType": "String"
+    },
+    "ksads_7_297_t": {
+        "Description": "Symptom - Separation anxiety duration is at least 4 weeks, Present",
+        "DataType": "String"
+    },
+    "ksads_7_298_t": {
+        "Description": "Symptom - Separation anxiety duration was at least 4 weeks, Past",
+        "DataType": "String"
+    },
+    "ksads_7_299_t": {
+        "Description": "Symptom - Separation anxiety duration is at least 2 weeks",
+        "DataType": "String"
+    },
+    "ksads_7_300_t": {
+        "Description": "Symptom - Separation anxiety (past) duration was at least 2 weeks",
+        "DataType": "String"
+    },
+    "ksads_8_301_t": {
+        "Description": "Symptom - Social situations invariably provoke anxiety, Present",
+        "DataType": "String"
+    },
+    "ksads_8_302_t": {
+        "Description": "Symptom - Social situations invariably provoke anxiety, Past",
+        "DataType": "String"
+    },
+    "ksads_8_303_t": {
+        "Description": "Symptom - Social situations avoided or endured with distress, Present",
+        "DataType": "String"
+    },
+    "ksads_8_304_t": {
+        "Description": "Symptom - Social situations avoided or endured with distress, Past",
+        "DataType": "String"
+    },
+    "ksads_8_307_t": {
+        "Description": "Symptom - Social fear is excessive given threat or sociocultural context, Present",
+        "DataType": "String"
+    },
+    "ksads_8_308_t": {
+        "Description": "Symptom - Social fear is excessive given threat or sociocultural context, Past",
+        "DataType": "String"
+    },
+    "ksads_8_309_t": {
+        "Description": "Symptom - Impairment in functioning due to social anxiety, Present",
+        "DataType": "String"
+    },
+    "ksads_8_310_t": {
+        "Description": "Symptom - Impairment in functioning due to social anxiety, Past",
+        "DataType": "String"
+    },
+    "ksads_8_311_t": {
+        "Description": "Symptom - Clinically significant distress due to Social Anxiety, Present",
+        "DataType": "String"
+    },
+    "ksads_8_312_t": {
+        "Description": "Symptom - Clinically significant distress due to Social Anxiety, Past",
+        "DataType": "String"
+    },
+    "ksads_8_313a_t": {
+        "Description": "Symptom - Duration (at least 6 months), Past",
+        "DataType": "String"
+    },
+    "ksads_8_313b_t": {
+        "Description": "Symptom - Duration (at least 6 months), Past",
+        "DataType": "String"
+    },
+    "ksads_25_314_t": {
+        "Description": "Symptom - Reasons for mutism not due to inability to speak language, Present",
+        "DataType": "String"
+    },
+    "ksads_25_315_t": {
+        "Description": "Symptom - Reasons for mutism not due to inability to speak language, Past",
+        "DataType": "String"
+    },
+    "ksads_25_316_t": {
+        "Description": "Symptom - Impairment in functioning due to selective mutism, Present",
+        "DataType": "String"
+    },
+    "ksads_25_317_t": {
+        "Description": "Symptom - Impairment in functioning due to selective mutism, Past",
+        "DataType": "String"
+    },
+    "ksads_25_318_t": {
+        "Description": "Symptom - Duration at least month for selective mutism, Present",
+        "DataType": "String"
+    },
+    "ksads_25_319_t": {
+        "Description": "Symptom - Duration at least month for selective mutism, Past",
+        "DataType": "String"
+    },
+    "ksads_10_320_t": {
+        "Description": "Symptom - Excessive worries across breadth of domains, Present",
+        "DataType": "String"
+    },
+    "ksads_10_321_t": {
+        "Description": "Symptom - Excessive worries across breadth of domains, Past",
+        "DataType": "String"
+    },
+    "ksads_10_322_t": {
+        "Description": "Symptom - Worry associated with defined symptom(s), Present",
+        "DataType": "String"
+    },
+    "ksads_10_323_t": {
+        "Description": "Symptom - Worry associated with defined symptom(s), Past",
+        "DataType": "String"
+    },
+    "ksads_10_324_t": {
+        "Description": "Symptom - Difficulty controlling worries, Present",
+        "DataType": "String"
+    },
+    "ksads_10_325_t": {
+        "Description": "Symptom - Difficulty controlling worries, Past",
+        "DataType": "String"
+    },
+    "ksads_10_326_t": {
+        "Description": "Symptom - Impairment in functioning due to worries, Present",
+        "DataType": "String"
+    },
+    "ksads_10_327_t": {
+        "Description": "Symptom - Impairment in functioning due to worries, Past",
+        "DataType": "String"
+    },
+    "ksads_10_328_t": {
+        "Description": "Symptom - Clinically significant distress due to worries, Present",
+        "DataType": "String"
+    },
+    "ksads_10_329_t": {
+        "Description": "Symptom - Clinically significant distress due to worries, Past",
+        "DataType": "String"
+    },
+    "ksads_10_330_t": {
+        "Description": "Symptom - Worrying has lasted at least 6 months, Past",
+        "DataType": "String"
+    },
+    "ksads_11_331_t": {
+        "Description": "Symptom - Obsessive thoughts experienced as Intrusive/unwanted, Present",
+        "DataType": "String"
+    },
+    "ksads_11_332_t": {
+        "Description": "Symptom - Obsessive thoughts experienced as Intrusive/unwanted, Past",
+        "DataType": "String"
+    },
+    "ksads_11_333_t": {
+        "Description": "Symptom - Attempts to suppress or neutralize thoughts, Present",
+        "DataType": "String"
+    },
+    "ksads_11_334_t": {
+        "Description": "Symptom - Attempts to suppress or neutralize thoughts, Past",
+        "DataType": "String"
+    },
+    "ksads_11_335_t": {
+        "Description": "Symptom - Obsessions time consuming, Present",
+        "DataType": "String"
+    },
+    "ksads_11_336_t": {
+        "Description": "Symptom - Obsessions time consuming, Past",
+        "DataType": "String"
+    },
+    "ksads_11_337_t": {
+        "Description": "Symptom - Impairment in functioning due to obsessions, Present",
+        "DataType": "String"
+    },
+    "ksads_11_338_t": {
+        "Description": "Symptom - Impairment in functioning due to obsessions, Past",
+        "DataType": "String"
+    },
+    "ksads_11_339_t": {
+        "Description": "Symptom - Clinically significant distress due to obsessions, Present",
+        "DataType": "String"
+    },
+    "ksads_11_340_t": {
+        "Description": "Symptom - Clinically significant distress due to obsessions, Past",
+        "DataType": "String"
+    },
+    "ksads_11_341_t": {
+        "Description": "Symptom - Compulsions time consuming, Present",
+        "DataType": "String"
+    },
+    "ksads_11_342_t": {
+        "Description": "Symptom - Compulsions time consuming, Past",
+        "DataType": "String"
+    },
+    "ksads_11_343_t": {
+        "Description": "Symptom - Purpose of compulsions to prevent/reduce anxiety or prevent dreaded event, Present",
+        "DataType": "String"
+    },
+    "ksads_11_344_t": {
+        "Description": "Symptom - Purpose of compulsions to prevent/reduce anxiety or prevent dreaded event, Past",
+        "DataType": "String"
+    },
+    "ksads_11_345_t": {
+        "Description": "Symptom - Impairment in functioning due to compulsions, Present",
+        "DataType": "String"
+    },
+    "ksads_11_346_t": {
+        "Description": "Symptom - Impairment in functioning due to compulsions, Past",
+        "DataType": "String"
+    },
+    "ksads_11_347_t": {
+        "Description": "Symptom - Clinically significant distress due to compulsions, Present",
+        "DataType": "String"
+    },
+    "ksads_11_348_t": {
+        "Description": "Symptom - Clinically significant distress due to compulsions, Past",
+        "DataType": "String"
+    },
+    "ksads_21_349_t": {
+        "Description": "Symptom - Intrusive distressing thoughts about the trauma , Present",
+        "DataType": "String"
+    },
+    "ksads_21_350_t": {
+        "Description": "Symptom - Intrusive distressing thoughts about the trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_351_t": {
+        "Description": "Symptom - Dissociative reactions (flashbacks), Present",
+        "DataType": "String"
+    },
+    "ksads_21_352_t": {
+        "Description": "Symptom - Dissociative reactions (flashbacks), Past",
+        "DataType": "String"
+    },
+    "ksads_21_353_t": {
+        "Description": "Symptom - Distress at reminders, external cues, Present",
+        "DataType": "String"
+    },
+    "ksads_21_354_t": {
+        "Description": "Symptom - Distress at reminders, external cues, Past",
+        "DataType": "String"
+    },
+    "ksads_21_355_t": {
+        "Description": "Symptom - Physiological reactivity to reminders of trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_356_t": {
+        "Description": "Symptom - Physiological reactivity to reminders of trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_357_t": {
+        "Description": "Symptom - Inability to recall aspects of trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_358_t": {
+        "Description": "Symptom - Inability to recall aspects of trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_359_t": {
+        "Description": "Symptom - Persistent negative beliefs or expectations, Present",
+        "DataType": "String"
+    },
+    "ksads_21_360_t": {
+        "Description": "Symptom - Persistent negative beliefs or expectations, Past",
+        "DataType": "String"
+    },
+    "ksads_21_361_t": {
+        "Description": "Symptom - Distorted cognitions about the causes of the trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_362_t": {
+        "Description": "Symptom - Distorted cognitions about the causes of the trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_363_t": {
+        "Description": "Symptom - Distorted cognitions about the consequences of the trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_364_t": {
+        "Description": "Symptom - Distorted cognitions about the consequences of the trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_365_t": {
+        "Description": "Symptom - Persistent negative emotional states, Present",
+        "DataType": "String"
+    },
+    "ksads_21_366_t": {
+        "Description": "Symptom - Persistent negative emotional states, Past",
+        "DataType": "String"
+    },
+    "ksads_21_367_t": {
+        "Description": "Symptom - Feelings of Feelings of detachment, Present",
+        "DataType": "String"
+    },
+    "ksads_21_368_t": {
+        "Description": "Symptom - Feelings of detachment, Past",
+        "DataType": "String"
+    },
+    "ksads_21_369_t": {
+        "Description": "Symptom - Inability to experience positive emotions, Present",
+        "DataType": "String"
+    },
+    "ksads_21_370_t": {
+        "Description": "Symptom - Inability to experience positive emotions, Past",
+        "DataType": "String"
+    },
+    "ksads_21_371_t": {
+        "Description": "Symptom - Irritable or aggressive behavior, Present",
+        "DataType": "String"
+    },
+    "ksads_21_372_t": {
+        "Description": "Symptom - Irritable or aggressive behavior, Past",
+        "DataType": "String"
+    },
+    "ksads_21_373_t": {
+        "Description": "Symptom - Reckless or self-destructive behavior, Present",
+        "DataType": "String"
+    },
+    "ksads_21_374_t": {
+        "Description": "Symptom - Reckless or self-destructive behavior, Past",
+        "DataType": "String"
+    },
+    "ksads_21_375_t": {
+        "Description": "Symptom - Hypervigilance, Present",
+        "DataType": "String"
+    },
+    "ksads_21_376_t": {
+        "Description": "Symptom - Hypervigilance, Past",
+        "DataType": "String"
+    },
+    "ksads_21_377_t": {
+        "Description": "Symptom - Exaggerated startle response, Present",
+        "DataType": "String"
+    },
+    "ksads_21_378_t": {
+        "Description": "Symptom - Exaggerated startle response, Past",
+        "DataType": "String"
+    },
+    "ksads_21_379_t": {
+        "Description": "Symptom - Concentration problems, Present",
+        "DataType": "String"
+    },
+    "ksads_21_380_t": {
+        "Description": "Symptom - Concentration problems, Past",
+        "DataType": "String"
+    },
+    "ksads_21_381_t": {
+        "Description": "Symptom - Sleep disturbance, Present",
+        "DataType": "String"
+    },
+    "ksads_21_382_t": {
+        "Description": "Symptom - Sleep disturbance, Past",
+        "DataType": "String"
+    },
+    "ksads_21_383_t": {
+        "Description": "Symptom - Efforts to avoid external reminders of trauma, Present",
+        "DataType": "String"
+    },
+    "ksads_21_384_t": {
+        "Description": "Symptom - Efforts to avoid external reminders of trauma, Past",
+        "DataType": "String"
+    },
+    "ksads_21_385_t": {
+        "Description": "Symptom - Impairment in functioning due to PTSD, Present",
+        "DataType": "String"
+    },
+    "ksads_21_386_t": {
+        "Description": "Symptom - Impairment in functioning due to PTSD, Past",
+        "DataType": "String"
+    },
+    "ksads_21_387_t": {
+        "Description": "Symptom - Clinically significant distress due to PTSD, Present",
+        "DataType": "String"
+    },
+    "ksads_21_388_t": {
+        "Description": "Symptom - Clinically significant distress due to PTSD, Past",
+        "DataType": "String"
+    },
+    "ksads_21_389_t": {
+        "Description": "Symptom - Anhedonia related to PTSD, Present",
+        "DataType": "String"
+    },
+    "ksads_21_390_t": {
+        "Description": "Symptom - Anhedonia related to PTSD, Past",
+        "DataType": "String"
+    },
+    "ksads_21_391_t": {
+        "Description": "Symptom - Duration at least one month, Present",
+        "DataType": "String"
+    },
+    "ksads_21_392_t": {
+        "Description": "Symptom - Duration at least one month, Past",
+        "DataType": "String"
+    },
+    "ksads_14_394_t": {
+        "Description": "Symptom - Often makes careless mistakes, Present",
+        "DataType": "String"
+    },
+    "ksads_14_395_t": {
+        "Description": "Symptom - Often doesn't seem to listen when spoken to, Present",
+        "DataType": "String"
+    },
+    "ksads_14_396_t": {
+        "Description": "Symptom - Difficulty following Instructions, Present",
+        "DataType": "String"
+    },
+    "ksads_14_397_t": {
+        "Description": "Symptom - Difficulty organizing tasks, Present",
+        "DataType": "String"
+    },
+    "ksads_14_398_t": {
+        "Description": "Symptom - Avoids tasks requiring attention, Present",
+        "DataType": "String"
+    },
+    "ksads_14_399_t": {
+        "Description": "Symptom - Often loses things, Present",
+        "DataType": "String"
+    },
+    "ksads_14_400_t": {
+        "Description": "Symptom - Forgetful in daily activities, Present",
+        "DataType": "String"
+    },
+    "ksads_14_401_t": {
+        "Description": "Symptom - Fidgets, Present",
+        "DataType": "String"
+    },
+    "ksads_14_402_t": {
+        "Description": "Symptom - Runs or climbs excessively, Present",
+        "DataType": "String"
+    },
+    "ksads_14_403_t": {
+        "Description": "Symptom - Acts like driven by a motor, Present",
+        "DataType": "String"
+    },
+    "ksads_14_404_t": {
+        "Description": "Symptom - Difficulty playing quietly, Present",
+        "DataType": "String"
+    },
+    "ksads_14_405_t": {
+        "Description": "Symptom - Blurts out answers, Present",
+        "DataType": "String"
+    },
+    "ksads_14_406_t": {
+        "Description": "Symptom - Difficulty waiting turn, Present",
+        "DataType": "String"
+    },
+    "ksads_14_407_t": {
+        "Description": "Symptom - Often Interrupts or intrudes on others, Present",
+        "DataType": "String"
+    },
+    "ksads_14_408_t": {
+        "Description": "Symptom - Often talks excessively, Present",
+        "DataType": "String"
+    },
+    "ksads_14_409_t": {
+        "Description": "Symptom - Symptoms interfere with social, academic or occupational functioning, Present",
+        "DataType": "String"
+    },
+    "ksads_14_410_t": {
+        "Description": "Symptom - Often makes careless mistakes, Past",
+        "DataType": "String"
+    },
+    "ksads_14_411_t": {
+        "Description": "Symptom - Often doesn't seem to listen when spoken to, Past",
+        "DataType": "String"
+    },
+    "ksads_14_412_t": {
+        "Description": "Symptom - Difficulty following Instructions, Past",
+        "DataType": "String"
+    },
+    "ksads_14_413_t": {
+        "Description": "Symptom - Difficulty organizing tasks, Past",
+        "DataType": "String"
+    },
+    "ksads_14_414_t": {
+        "Description": "Symptom - Avoids tasks requiring attention, Past",
+        "DataType": "String"
+    },
+    "ksads_14_415_t": {
+        "Description": "Symptom - Often loses things, Past",
+        "DataType": "String"
+    },
+    "ksads_14_416_t": {
+        "Description": "Symptom - Forgetful in daily activities, Past",
+        "DataType": "String"
+    },
+    "ksads_14_417_t": {
+        "Description": "Symptom - Fidgets, Past",
+        "DataType": "String"
+    },
+    "ksads_14_418_t": {
+        "Description": "Symptom - Runs or climbs excessively, Past",
+        "DataType": "String"
+    },
+    "ksads_14_419_t": {
+        "Description": "Symptom - Acts like driven by a motor, Past",
+        "DataType": "String"
+    },
+    "ksads_14_420_t": {
+        "Description": "Symptom - Difficulty playing quietly, Past",
+        "DataType": "String"
+    },
+    "ksads_14_421_t": {
+        "Description": "Symptom - Blurts out answers, Past",
+        "DataType": "String"
+    },
+    "ksads_14_422_t": {
+        "Description": "Symptom - Difficulty waiting turn, Past",
+        "DataType": "String"
+    },
+    "ksads_14_423_t": {
+        "Description": "Symptom - Often Interrupts or intrudes on others, Past",
+        "DataType": "String"
+    },
+    "ksads_14_424_t": {
+        "Description": "Symptom - Often talks excessively, Past",
+        "DataType": "String"
+    },
+    "ksads_14_425_t": {
+        "Description": "Symptom - Symptoms interfere with social, academic or occupational functioning, Past",
+        "DataType": "String"
+    },
+    "ksads_14_429_t": {
+        "Description": "Symptom - Several symptoms present prior to age 12 years, Present",
+        "DataType": "String"
+    },
+    "ksads_14_430_t": {
+        "Description": "Symptom - Several symptoms present prior to age 12 years, Past",
+        "DataType": "String"
+    },
+    "ksads_15_431_t": {
+        "Description": "Symptom - Alcohol Use, Past",
+        "DataType": "String"
+    },
+    "ksads_15_432_t": {
+        "Description": "Symptom - Often touchy or easily annoyed, Present",
+        "DataType": "String"
+    },
+    "ksads_15_433_t": {
+        "Description": "Symptom - Often angry or resentful, Present",
+        "DataType": "String"
+    },
+    "ksads_15_434_t": {
+        "Description": "Symptom - Spiteful or vindictive, Present",
+        "DataType": "String"
+    },
+    "ksads_15_435_t": {
+        "Description": "Symptom - Often deliberatively annoys people, Present",
+        "DataType": "String"
+    },
+    "ksads_15_436_t": {
+        "Description": "Symptom - Often blames others for own mistakes, Present",
+        "DataType": "String"
+    },
+    "ksads_15_437_t": {
+        "Description": "Symptom - Causes problems in functioning or distress in self or others, Present",
+        "DataType": "String"
+    },
+    "ksads_15_438_t": {
+        "Description": "Symptom - Duration of at least 6 months, Present",
+        "DataType": "String"
+    },
+    "ksads_15_439_t": {
+        "Description": "Symptom - Often touchy or easily annoyed, Past",
+        "DataType": "String"
+    },
+    "ksads_15_440_t": {
+        "Description": "Symptom - Often angry or resentful, Past",
+        "DataType": "String"
+    },
+    "ksads_15_441_t": {
+        "Description": "Symptom - Spiteful or vindictive, Past",
+        "DataType": "String"
+    },
+    "ksads_15_442_t": {
+        "Description": "Symptom - Often deliberatively annoys people, Past",
+        "DataType": "String"
+    },
+    "ksads_15_443_t": {
+        "Description": "Symptom - Often blames others for own mistakes, Past",
+        "DataType": "String"
+    },
+    "ksads_15_444_t": {
+        "Description": "Symptom - Causes problems in functioning or distress in self or others, Past",
+        "DataType": "String"
+    },
+    "ksads_15_445_t": {
+        "Description": "Symptom - Duration of at least 6 months, Past",
+        "DataType": "String"
+    },
+    "ksads_15_446_t": {
+        "Description": "Symptom - ODD Six month free, Past",
+        "DataType": "String"
+    },
+    "ksads_16_447_t": {
+        "Description": "Symptom - Vandalism, Present",
+        "DataType": "String"
+    },
+    "ksads_16_448_t": {
+        "Description": "Symptom - Vandalism, Past",
+        "DataType": "String"
+    },
+    "ksads_16_449_t": {
+        "Description": "Symptom - Breaking and entering, Present",
+        "DataType": "String"
+    },
+    "ksads_16_450_t": {
+        "Description": "Symptom - Breaking and entering, Past",
+        "DataType": "String"
+    },
+    "ksads_16_451_t": {
+        "Description": "Symptom - Stealing while confronting victim, Present",
+        "DataType": "String"
+    },
+    "ksads_16_452_t": {
+        "Description": "Symptom - Stealing while confronting victim, Past",
+        "DataType": "String"
+    },
+    "ksads_16_453_t": {
+        "Description": "Symptom - Fire setting, Present",
+        "DataType": "String"
+    },
+    "ksads_16_454_t": {
+        "Description": "Symptom - Fire setting, Past",
+        "DataType": "String"
+    },
+    "ksads_16_455_t": {
+        "Description": "Symptom - Stays out late at night despite parental prohibition, Present",
+        "DataType": "String"
+    },
+    "ksads_16_456_t": {
+        "Description": "Symptom - Stays out late at night despite parental prohibition, Past",
+        "DataType": "String"
+    },
+    "ksads_16_457_t": {
+        "Description": "Symptom - Ran away overnight, Present",
+        "DataType": "String"
+    },
+    "ksads_16_458_t": {
+        "Description": "Symptom - Ran away overnight, Past",
+        "DataType": "String"
+    },
+    "ksads_16_459_t": {
+        "Description": "Symptom - Use of a weapon that can cause serious harm, Present",
+        "DataType": "String"
+    },
+    "ksads_16_460_t": {
+        "Description": "Symptom - Use of a weapon that can cause serious harm, Past",
+        "DataType": "String"
+    },
+    "ksads_16_461_t": {
+        "Description": "Symptom - Has been physically cruel to people, Present",
+        "DataType": "String"
+    },
+    "ksads_16_462_t": {
+        "Description": "Symptom - Has been physically cruel to people, Past",
+        "DataType": "String"
+    },
+    "ksads_16_463_t": {
+        "Description": "Symptom - Forced someone into sexual activity, Present",
+        "DataType": "String"
+    },
+    "ksads_16_464_t": {
+        "Description": "Symptom - Forced someone into sexual activity, Past",
+        "DataType": "String"
+    },
+    "ksads_16_465_t": {
+        "Description": "Symptom - Has been physically cruel to animals, Present",
+        "DataType": "String"
+    },
+    "ksads_16_466_t": {
+        "Description": "Symptom - Has been physically cruel to animals, Past",
+        "DataType": "String"
+    },
+    "ksads_13_469_t": {
+        "Description": "Symptom - Self-worth tied to weight, Present",
+        "DataType": "String"
+    },
+    "ksads_13_470_t": {
+        "Description": "Symptom - Inappropriate compensatory behaviors to prevent weight gain, Present",
+        "DataType": "String"
+    },
+    "ksads_13_471_t": {
+        "Description": "Symptom - Compensatory behaviors occur at least 1x/week for 3 months, Present",
+        "DataType": "String"
+    },
+    "ksads_13_472_t": {
+        "Description": "Symptom - Binge eating occur at least 1x/week for 3 months, Present",
+        "DataType": "String"
+    },
+    "ksads_13_473_t": {
+        "Description": "Symptom - CharacteristicsofBinge Eating, Present",
+        "DataType": "String"
+    },
+    "ksads_13_474_t": {
+        "Description": "Symptom - Binge-eating associated with 3 or more associated symptoms, Past",
+        "DataType": "String"
+    },
+    "ksads_13_475_t": {
+        "Description": "Symptom - Distress associated with binge eating, Present",
+        "DataType": "String"
+    },
+    "ksads_13_476_t": {
+        "Description": "Symptom - Self-worth tied to weight, Past",
+        "DataType": "String"
+    },
+    "ksads_13_477_t": {
+        "Description": "Symptom - Inappropriate compensatory behaviors to prevent weight gain, Past",
+        "DataType": "String"
+    },
+    "ksads_13_478_t": {
+        "Description": "Symptom - Compensatory behaviors occurred at least 1x/week for 3 months, Past",
+        "DataType": "String"
+    },
+    "ksads_13_479_t": {
+        "Description": "Symptom - Binge eating occur at least 1x/week for 3 months, Past",
+        "DataType": "String"
+    },
+    "ksads_13_480_t": {
+        "Description": "Symptom - Distress associated with binge eating, Past",
+        "DataType": "String"
+    },
+    "ksads_19_481_t": {
+        "Description": "Symptom - Drinks More than Planned, Present",
+        "DataType": "String"
+    },
+    "ksads_19_482_t": {
+        "Description": "Symptom - Often drinks more than planned, Past",
+        "DataType": "String"
+    },
+    "ksads_19_483_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to alcohol use, Present",
+        "DataType": "String"
+    },
+    "ksads_19_484_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to alcohol use, Past",
+        "DataType": "String"
+    },
+    "ksads_19_485_t": {
+        "Description": "Symptom - Recurrent alcohol use in situations that are physically hazardous, Present",
+        "DataType": "String"
+    },
+    "ksads_19_486_t": {
+        "Description": "Symptom - Use of alcohol/intoxicated while driving, Present",
+        "DataType": "String"
+    },
+    "ksads_19_487_t": {
+        "Description": "Symptom - Recurrent alcohol use in situations that are physically hazardous, Past",
+        "DataType": "String"
+    },
+    "ksads_19_488_t": {
+        "Description": "Symptom - Use of alcohol/intoxicated while driving, Past",
+        "DataType": "String"
+    },
+    "ksads_19_489_t": {
+        "Description": "Symptom - Recurrent physical problems due to alcohol, Present",
+        "DataType": "String"
+    },
+    "ksads_19_490_t": {
+        "Description": "Symptom - Recurrent physical problems due to alcohol, Past",
+        "DataType": "String"
+    },
+    "ksads_19_491_t": {
+        "Description": "Symptom - Recurrent psychological problems due to alcohol, Present",
+        "DataType": "String"
+    },
+    "ksads_19_492_t": {
+        "Description": "Symptom - Recurrent psychological problems due to alcohol, Past",
+        "DataType": "String"
+    },
+    "ksads_19_493_t": {
+        "Description": "Symptom - Craving, or a strong desire to use alcohol, Present",
+        "DataType": "String"
+    },
+    "ksads_19_494_t": {
+        "Description": "Symptom - Craving, or a strong desire to use alcohol, Past",
+        "DataType": "String"
+    },
+    "ksads_19_495_t": {
+        "Description": "Symptom - Important activities given up or reduced due to alcohol, Present",
+        "DataType": "String"
+    },
+    "ksads_19_496_t": {
+        "Description": "Symptom - Important activities given up or reduced due to alcohol, Past",
+        "DataType": "String"
+    },
+    "ksads_19_497_t": {
+        "Description": "Symptom - Persistent desire to reduce alcohol use, Present",
+        "DataType": "String"
+    },
+    "ksads_19_498_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce alcohol use, Present",
+        "DataType": "String"
+    },
+    "ksads_19_499_t": {
+        "Description": "Symptom - Alcohol Withdrawal, Present",
+        "DataType": "String"
+    },
+    "ksads_19_500_t": {
+        "Description": "Symptom - Alcohol Tolerance, Present",
+        "DataType": "String"
+    },
+    "ksads_19_501_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from alcohol, Present",
+        "DataType": "String"
+    },
+    "ksads_19_502_t": {
+        "Description": "Symptom - Persistent desire to reduce alcohol use, Past",
+        "DataType": "String"
+    },
+    "ksads_19_503_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce alcohol use, Past",
+        "DataType": "String"
+    },
+    "ksads_19_504_t": {
+        "Description": "Symptom - Alcohol Withdrawal, Past",
+        "DataType": "String"
+    },
+    "ksads_19_505_t": {
+        "Description": "Symptom - Alcohol Tolerance, Past",
+        "DataType": "String"
+    },
+    "ksads_19_506_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from alcohol, Past",
+        "DataType": "String"
+    },
+    "ksads_19_508_t": {
+        "Description": "Symptom - Alcohol Abstinence, Present",
+        "DataType": "String"
+    },
+    "ksads_20_509_t": {
+        "Description": "Symptom - Often used more of substance than planned, Present",
+        "DataType": "String"
+    },
+    "ksads_20_510_t": {
+        "Description": "Symptom - Often used more of substance than planned, Past",
+        "DataType": "String"
+    },
+    "ksads_20_511_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_512_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_513_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations, Present",
+        "DataType": "String"
+    },
+    "ksads_20_514_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving, Present",
+        "DataType": "String"
+    },
+    "ksads_20_515_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations, Past",
+        "DataType": "String"
+    },
+    "ksads_20_516_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving, Past",
+        "DataType": "String"
+    },
+    "ksads_20_517_t": {
+        "Description": "Symptom - Physical problems due to substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_518_t": {
+        "Description": "Symptom - Physical problems due to substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_519_t": {
+        "Description": "Symptom - Psychological problems due to substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_520_t": {
+        "Description": "Symptom - Psychological problems due to substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_521_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance, Present",
+        "DataType": "String"
+    },
+    "ksads_20_522_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance, Past",
+        "DataType": "String"
+    },
+    "ksads_20_523_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_524_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_525_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_526_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_527_t": {
+        "Description": "Symptom - Substance Withdrawal, Present",
+        "DataType": "String"
+    },
+    "ksads_20_528_t": {
+        "Description": "Symptom - Substance Tolerance, Present",
+        "DataType": "String"
+    },
+    "ksads_20_529_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use, Present",
+        "DataType": "String"
+    },
+    "ksads_20_530_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_531_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_532_t": {
+        "Description": "Symptom - Substance Withdrawal, Past",
+        "DataType": "String"
+    },
+    "ksads_20_533_t": {
+        "Description": "Symptom - Substance Tolerance, Past",
+        "DataType": "String"
+    },
+    "ksads_20_534_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use, Past",
+        "DataType": "String"
+    },
+    "ksads_20_536_t": {
+        "Description": "Symptom - Substance Use Abstinence, Present",
+        "DataType": "String"
+    },
+    "ksads_20_537_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_538_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_539_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_540_t": {
+        "Description": "Symptom - Often used more of substance than planned (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_541_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_542_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_543_t": {
+        "Description": "Symptom - Physical problems due to substance use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_544_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_545_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_546_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_547_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_548_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_549_t": {
+        "Description": "Symptom - Substance Withdrawal (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_550_t": {
+        "Description": "Symptom - Substance Tolerance (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_551_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Cannabis), Present",
+        "DataType": "String"
+    },
+    "ksads_20_552_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_553_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_554_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_555_t": {
+        "Description": "Symptom - Often used more of substance than planned (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_556_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_557_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_558_t": {
+        "Description": "Symptom - Physical problems due to substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_559_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_560_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_561_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_562_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_563_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_564_t": {
+        "Description": "Symptom - Substance Withdrawal (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_565_t": {
+        "Description": "Symptom - Substance Tolerance (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_566_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Stimulants), Present",
+        "DataType": "String"
+    },
+    "ksads_20_567_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_568_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_569_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_570_t": {
+        "Description": "Symptom - Often used more of substance than planned (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_571_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_572_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_573_t": {
+        "Description": "Symptom - Physical problems due to substance use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_574_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_575_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_576_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_577_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_578_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_579_t": {
+        "Description": "Symptom - Substance Withdrawal (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_580_t": {
+        "Description": "Symptom - Substance Tolerance (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_581_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Sedatives), Present",
+        "DataType": "String"
+    },
+    "ksads_20_582_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_583_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_584_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_585_t": {
+        "Description": "Symptom - Often used more of substance than planned (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_586_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_587_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_588_t": {
+        "Description": "Symptom - Physical problems due to substance use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_589_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_590_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_591_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_592_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_593_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_594_t": {
+        "Description": "Symptom - Substance Withdrawal (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_595_t": {
+        "Description": "Symptom - Substance Tolerance (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_596_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Cocaine), Present",
+        "DataType": "String"
+    },
+    "ksads_20_597_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_598_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_599_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_600_t": {
+        "Description": "Symptom - Often used more of substance than planned (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_601_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_602_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_603_t": {
+        "Description": "Symptom - Physical problems due to substance use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_604_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_605_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_606_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_607_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_608_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_609_t": {
+        "Description": "Symptom - Substance Withdrawal (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_610_t": {
+        "Description": "Symptom - Substance Tolerance (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_611_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Opioid), Present",
+        "DataType": "String"
+    },
+    "ksads_20_612_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_613_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_614_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_615_t": {
+        "Description": "Symptom - Often used more of substance than planned (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_616_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_617_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_618_t": {
+        "Description": "Symptom - Physical problems due to substance use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_619_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_620_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_621_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_622_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_623_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_624_t": {
+        "Description": "Symptom - Substance Withdrawal (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_625_t": {
+        "Description": "Symptom - Substance Tolerance (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_626_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Hallucinogen), Present",
+        "DataType": "String"
+    },
+    "ksads_20_627_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_628_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_629_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_630_t": {
+        "Description": "Symptom - Often used more of substance than planned (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_631_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_632_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_633_t": {
+        "Description": "Symptom - Physical problems due to substance use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_634_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_635_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_636_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_637_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_638_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_639_t": {
+        "Description": "Symptom - Substance Withdrawal (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_640_t": {
+        "Description": "Symptom - Substance Tolerance (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_641_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Tobacco), Present",
+        "DataType": "String"
+    },
+    "ksads_20_642_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_643_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_644_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_645_t": {
+        "Description": "Symptom - Often used more of substance than planned (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_646_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_647_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_648_t": {
+        "Description": "Symptom - Physical problems due to substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_649_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_650_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_651_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_652_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_653_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_654_t": {
+        "Description": "Symptom - Substance Withdrawal (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_655_t": {
+        "Description": "Symptom - Substance Tolerance (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_656_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Solvent), Present",
+        "DataType": "String"
+    },
+    "ksads_20_657_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_658_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_659_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_660_t": {
+        "Description": "Symptom - Often used more of substance than planned (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_661_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_662_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_663_t": {
+        "Description": "Symptom - Physical problems due to substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_664_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_665_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_666_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_667_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_668_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_669_t": {
+        "Description": "Symptom - Substance Withdrawal (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_670_t": {
+        "Description": "Symptom - Substance Tolerance (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_671_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Other Drugs), Present",
+        "DataType": "String"
+    },
+    "ksads_20_672_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_673_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_674_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_675_t": {
+        "Description": "Symptom - Often used more of substance than planned (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_676_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_677_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_678_t": {
+        "Description": "Symptom - Physical problems due to substance use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_679_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_680_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_681_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_682_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_683_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_684_t": {
+        "Description": "Symptom - Substance Withdrawal (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_685_t": {
+        "Description": "Symptom - Substance Tolerance (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_686_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Cannabis), Past",
+        "DataType": "String"
+    },
+    "ksads_20_687_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_688_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_689_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_690_t": {
+        "Description": "Symptom - Often used more of substance than planned (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_691_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_692_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_693_t": {
+        "Description": "Symptom - Physical problems due to substance use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_694_t": {
+        "Description": "Symptom - Psychological problems due to substance use(Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_695_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_696_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_697_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_698_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_699_t": {
+        "Description": "Symptom - Substance Withdrawal (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_700_t": {
+        "Description": "Symptom - Substance Tolerance (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_701_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Stimulants), Past",
+        "DataType": "String"
+    },
+    "ksads_20_702_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_703_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_704_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_705_t": {
+        "Description": "Symptom - Often used more of substance than planned (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_706_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_707_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_708_t": {
+        "Description": "Symptom - Physical problems due to substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_709_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_710_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_711_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_712_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_713_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_714_t": {
+        "Description": "Symptom - Substance Withdrawal (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_715_t": {
+        "Description": "Symptom - Substance Tolerance (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_716_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Sedatives), Past",
+        "DataType": "String"
+    },
+    "ksads_20_717_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_718_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_719_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_720_t": {
+        "Description": "Symptom - Often used more of substance than planned (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_721_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_722_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_723_t": {
+        "Description": "Symptom - Physical problems due to substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_724_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_725_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_726_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_727_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_728_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_729_t": {
+        "Description": "Symptom - Substance Withdrawal (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_730_t": {
+        "Description": "Symptom - Substance Tolerance (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_731_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Cocaine), Past",
+        "DataType": "String"
+    },
+    "ksads_20_732_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_733_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_734_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_735_t": {
+        "Description": "Symptom - Often used more of substance than planned (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_736_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_737_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_738_t": {
+        "Description": "Symptom - Physical problems due to substance use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_739_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_740_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_741_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_742_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_743_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use in (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_744_t": {
+        "Description": "Symptom - Substance Withdrawal (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_745_t": {
+        "Description": "Symptom - Substance Tolerance (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_746_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Opioid), Past",
+        "DataType": "String"
+    },
+    "ksads_20_747_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_748_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_749_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_750_t": {
+        "Description": "Symptom - Often used more of substance than planned (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_751_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_752_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_753_t": {
+        "Description": "Symptom - Physical problems due to substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_754_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_755_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_756_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_757_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_758_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_759_t": {
+        "Description": "Symptom - Substance Withdrawal (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_760_t": {
+        "Description": "Symptom - Substance Tolerance (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_761_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Hallucinogen), Past",
+        "DataType": "String"
+    },
+    "ksads_20_762_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_763_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_764_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_765_t": {
+        "Description": "Symptom - Often used more of substance than planned (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_766_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_767_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_768_t": {
+        "Description": "Symptom - Physical problems due to substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_769_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_770_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_771_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_772_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_773_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_774_t": {
+        "Description": "Symptom - Substance Withdrawal (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_775_t": {
+        "Description": "Symptom - Substance Tolerance (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_776_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Tobacco), Past",
+        "DataType": "String"
+    },
+    "ksads_20_777_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_778_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_779_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_780_t": {
+        "Description": "Symptom - Often used more of substance than planned (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_781_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_782_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_783_t": {
+        "Description": "Symptom - Physical problems due to substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_784_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_785_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_786_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_787_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_788_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_789_t": {
+        "Description": "Symptom - Substance Withdrawal (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_790_t": {
+        "Description": "Symptom - Substance Tolerance (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_791_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Solvent), Past",
+        "DataType": "String"
+    },
+    "ksads_20_792_t": {
+        "Description": "Symptom - Negative impact role obligations, miss work, drug use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_793_t": {
+        "Description": "Symptom - Failure to fulfill major role responsibilities due to substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_794_t": {
+        "Description": "Symptom - Negative impact interpersonal problems, drug use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_795_t": {
+        "Description": "Symptom - Often used more of substance than planned (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_796_t": {
+        "Description": "Symptom - Use of substance/intoxicated while driving (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_797_t": {
+        "Description": "Symptom - Substance use in physically dangerous situations (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_798_t": {
+        "Description": "Symptom - Physical problems due to substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_799_t": {
+        "Description": "Symptom - Psychological problems due to substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_800_t": {
+        "Description": "Symptom - Craving, or strong desire to use substance (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_801_t": {
+        "Description": "Symptom - Important activities given up or reduced due to substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_802_t": {
+        "Description": "Symptom - Persistent desire to reduce substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_803_t": {
+        "Description": "Symptom - Unsuccessful efforts to reduce substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_804_t": {
+        "Description": "Symptom - Substance Withdrawal (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_805_t": {
+        "Description": "Symptom - Substance Tolerance (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_20_806_t": {
+        "Description": "Symptom - Great deal of time obtaining, using or recovering from substance use (Other Drugs), Past",
+        "DataType": "String"
+    },
+    "ksads_23_807_t": {
+        "Description": "Symptom - Self-injury, intent to die, Present",
+        "DataType": "String"
+    },
+    "ksads_23_808_t": {
+        "Description": "Symptom - Self-Injury, thought could die from behavior, Present",
+        "DataType": "String"
+    },
+    "ksads_23_809_t": {
+        "Description": "Symptom - Suicidal ideation thought of method, Present",
+        "DataType": "String"
+    },
+    "ksads_23_810_t": {
+        "Description": "Symptom - Suicidal ideation, intent to act, Present",
+        "DataType": "String"
+    },
+    "ksads_23_811_t": {
+        "Description": "Symptom - Suicidal ideation, specific plan, Present",
+        "DataType": "String"
+    },
+    "ksads_23_812_t": {
+        "Description": "Symptom - Suicidal behavior, made preparations, Present",
+        "DataType": "String"
+    },
+    "ksads_23_813_t": {
+        "Description": "Symptom - Aborted or interrupted suicide attempts, Present",
+        "DataType": "String"
+    },
+    "ksads_23_814_t": {
+        "Description": "Symptom - Method of actual suicide attempt, Present",
+        "DataType": "String"
+    },
+    "ksads_23_815_t": {
+        "Description": "Symptom - Suicide attempt, thought could die, Present",
+        "DataType": "String"
+    },
+    "ksads_23_816_t": {
+        "Description": "Symptom - Self-injury, intent to die, Past",
+        "DataType": "String"
+    },
+    "ksads_23_817_t": {
+        "Description": "Symptom - Self-Injury, thought could die from behavior, Past",
+        "DataType": "String"
+    },
+    "ksads_23_818_t": {
+        "Description": "Symptom - Suicidal ideation thought of method, Past",
+        "DataType": "String"
+    },
+    "ksads_23_819_t": {
+        "Description": "Symptom - Suicidal ideation, intent to act, Past",
+        "DataType": "String"
+    },
+    "ksads_23_820_t": {
+        "Description": "Symptom - Suicidal ideation, specific plan, Past",
+        "DataType": "String"
+    },
+    "ksads_23_821_t": {
+        "Description": "Symptom - Suicidal behavior, made preparations, Past",
+        "DataType": "String"
+    },
+    "ksads_23_822_t": {
+        "Description": "Symptom - Aborted or interrupted suicide attempts, Past",
+        "DataType": "String"
+    },
+    "ksads_23_823_t": {
+        "Description": "Symptom - Number of suicide attempts, Past",
+        "DataType": "String"
+    },
+    "ksads_23_824_t": {
+        "Description": "Symptom - Suicide attempt, method, Past",
+        "DataType": "String"
+    },
+    "ksads_23_825_t": {
+        "Description": "Symptom - Expect could die from suicide attempt, past",
+        "DataType": "String"
+    },
+    "ksads_4_826_t": {
+        "Description": "Diagnosis - Hallucinations (Present)",
+        "DataType": "String"
+    },
+    "ksads_4_827_t": {
+        "Description": "Diagnosis - Hallucinations (Past)",
+        "DataType": "String"
+    },
+    "ksads_4_828_t": {
+        "Description": "Diagnosis - Delusions (Present)",
+        "DataType": "String"
+    },
+    "ksads_4_829_t": {
+        "Description": "Diagnosis - Delusions (Past)",
+        "DataType": "String"
+    },
+    "ksads_2_830_t": {
+        "Description": "Diagnosis - Bipolar I Disorder, current episode manic (F31.1x)",
+        "DataType": "String"
+    },
+    "ksads_2_831_t": {
+        "Description": "Diagnosis - Bipolar I Disorder, current episode depressed, F31.3x",
+        "DataType": "String"
+    },
+    "ksads_2_832_t": {
+        "Description": "Diagnosis - Bipolar I Disorder, currently hypomanic  F31.0",
+        "DataType": "String"
+    },
+    "ksads_2_833_t": {
+        "Description": "Diagnosis - Bipolar I Disorder, most recent past episode manic (F31.1x)",
+        "DataType": "String"
+    },
+    "ksads_2_834_t": {
+        "Description": "Diagnosis - Bipolar I Disorder, most recent past episode depressed (F31.1.3x)",
+        "DataType": "String"
+    },
+    "ksads_2_835_t": {
+        "Description": "Diagnosis - Bipolar II Disorder, currently hypomanic F31.81",
+        "DataType": "String"
+    },
+    "ksads_2_836_t": {
+        "Description": "Diagnosis - Bipolar II Disorder, currently depressed F31.81",
+        "DataType": "String"
+    },
+    "ksads_2_837_t": {
+        "Description": "Diagnosis - Bipolar II Disorder, most recent past hypomanic F31.81",
+        "DataType": "String"
+    },
+    "ksads_2_838_t": {
+        "Description": "Diagnosis - Unspecified Bipolar and Related Disorder, current (F31.9)",
+        "DataType": "String"
+    },
+    "ksads_2_839_t": {
+        "Description": "Diagnosis - Unspecified Bipolar and Related Disorder, PAST (F31.9)",
+        "DataType": "String"
+    },
+    "ksads_1_840_t": {
+        "Description": "Diagnosis - Major Depressive Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_1_841_t": {
+        "Description": "Diagnosis - Major Depressive Disorder, Current, in Partial Remission (F32.4)",
+        "DataType": "String"
+    },
+    "ksads_1_842_t": {
+        "Description": "Diagnosis - Major Depressive Disorder, Past (F32.9)",
+        "DataType": "String"
+    },
+    "ksads_1_843_t": {
+        "Description": "Diagnosis - Persistent Depressive Disorder (Dysthymia) PRESENT F34.1",
+        "DataType": "String"
+    },
+    "ksads_1_844_t": {
+        "Description": "Diagnosis - Persistent Depressive Disorder (Dysthymia) In Partial Remission F34.1",
+        "DataType": "String"
+    },
+    "ksads_1_845_t": {
+        "Description": "Diagnosis - Persistent Depressive Disorder (Dysthymia) PAST F34.1",
+        "DataType": "String"
+    },
+    "ksads_1_846_t": {
+        "Description": "Diagnosis - Unspecified Depressive Disorder Current (F32.9)",
+        "DataType": "String"
+    },
+    "ksads_1_847_t": {
+        "Description": "Diagnosis - Unspecified Depressive Disorder PAST (F32.9)",
+        "DataType": "String"
+    },
+    "ksads_3_848_t": {
+        "Description": "Diagnosis - Disruptive Mood Dysregulation Disorder (DMDD) Current (F34.8)",
+        "DataType": "String"
+    },
+    "ksads_4_849_t": {
+        "Description": "Diagnosis - Associated Psychotic Symptoms Current",
+        "DataType": "String"
+    },
+    "ksads_4_850_t": {
+        "Description": "Diagnosis - Associated Psychotic Symptoms Past",
+        "DataType": "String"
+    },
+    "ksads_4_851_t": {
+        "Description": "Diagnosis - Unspecified Schizophrenia Spectrum and Other Psychotic Disorder F29 (Current)",
+        "DataType": "String"
+    },
+    "ksads_4_852_t": {
+        "Description": "Diagnosis - Unspecified Schizophrenia Spectrum and Other Psychotic Disorder F29 (Past)",
+        "DataType": "String"
+    },
+    "ksads_14_853_t": {
+        "Description": "Diagnosis - Attention-Deficit/Hyperactivity Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_14_854_t": {
+        "Description": "Diagnosis - Attention-Deficit/Hyperactivity Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_14_855_t": {
+        "Description": "Diagnosis - Attention-Deficit/Hyperactivity Disorder, IN PARTIAL REMISSION",
+        "DataType": "String"
+    },
+    "ksads_14_856_t": {
+        "Description": "Diagnosis - Unspecified Attention-Deficit/Hyperactivity Disorder (F90.9)",
+        "DataType": "String"
+    },
+    "ksads_5_857_t": {
+        "Description": "Diagnosis - Panic Disorder (F41.0) PRESENT",
+        "DataType": "String"
+    },
+    "ksads_5_858_t": {
+        "Description": "Diagnosis - Panic Disorder (F41.0) PAST",
+        "DataType": "String"
+    },
+    "ksads_6_859_t": {
+        "Description": "Diagnosis - Agoraphobia (F40.00) PRESENT",
+        "DataType": "String"
+    },
+    "ksads_6_860_t": {
+        "Description": "Diagnosis - Agoraphobia (F40.00) PAST",
+        "DataType": "String"
+    },
+    "ksads_7_861_t": {
+        "Description": "Diagnosis - Separation Anxiety Disorder (F93.00) PRESENT",
+        "DataType": "String"
+    },
+    "ksads_7_862_t": {
+        "Description": "Diagnosis - Separation Anxiety Disorder (F93.00) PAST",
+        "DataType": "String"
+    },
+    "ksads_8_863_t": {
+        "Description": "Diagnosis - Social Anxiety Disorder (F40.10) PRESENT",
+        "DataType": "String"
+    },
+    "ksads_8_864_t": {
+        "Description": "Diagnosis - Social Anxiety Disorder (F40.10) PAST",
+        "DataType": "String"
+    },
+    "ksads_25_865_t": {
+        "Description": "Diagnosis - Selective Mutism (F94.0) PRESENT",
+        "DataType": "String"
+    },
+    "ksads_25_866_t": {
+        "Description": "Diagnosis - Selective Mutism (F94.0) PAST",
+        "DataType": "String"
+    },
+    "ksads_9_867_t": {
+        "Description": "Diagnosis - Specific Phobia \u00a5\u00cb_\u00a5\u00cb_PRESENT (F40.2XX)",
+        "DataType": "String"
+    },
+    "ksads_9_868_t": {
+        "Description": "Diagnosis - Specific Phobia \u00a5\u00cb_\u00a5\u00cb_PAST (F40.2XX)",
+        "DataType": "String"
+    },
+    "ksads_10_869_t": {
+        "Description": "Diagnosis - Generalized Anxiety Disorder Present (F41.1)",
+        "DataType": "String"
+    },
+    "ksads_10_870_t": {
+        "Description": "Diagnosis - Generalized Anxiety Disorder Past (F41.1)",
+        "DataType": "String"
+    },
+    "ksads_20_871_t": {
+        "Description": "Diagnosis - Cannabis Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_872_t": {
+        "Description": "Diagnosis - Stimulant Use Disorder Present: Amphetamine-type substance",
+        "DataType": "String"
+    },
+    "ksads_20_873_t": {
+        "Description": "Diagnosis - Sedative, Hypnotic or Anxiolytic Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_874_t": {
+        "Description": "Diagnosis - Stimulant Use Disorder Present: Cocaine",
+        "DataType": "String"
+    },
+    "ksads_20_875_t": {
+        "Description": "Diagnosis - Opiod Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_876_t": {
+        "Description": "Diagnosis - Other Hallucinagen Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_877_t": {
+        "Description": "Diagnosis - Phencycllidine (PCP) Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_878_t": {
+        "Description": "Diagnosis - Inhalant Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_879_t": {
+        "Description": "Diagnosis - Other Drugs Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_20_880_t": {
+        "Description": "Diagnosis - Cannabis Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_881_t": {
+        "Description": "Diagnosis - Stimulant Use Disorder Past: Amphetamine-type substance",
+        "DataType": "String"
+    },
+    "ksads_20_882_t": {
+        "Description": "Diagnosis - Sedative, Hypnotic or Anxiolytic Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_883_t": {
+        "Description": "Diagnosis - Stimulant Use Disorder Past: Cocaine",
+        "DataType": "String"
+    },
+    "ksads_20_884_t": {
+        "Description": "Diagnosis - Opiod Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_885_t": {
+        "Description": "Diagnosis - Other Hallucinagen Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_886_t": {
+        "Description": "Diagnosis - Phencycllidine (PCP) Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_887_t": {
+        "Description": "Diagnosis - Inhalant Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_888_t": {
+        "Description": "Diagnosis - Other Drugs Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_889_t": {
+        "Description": "Diagnosis - Substance Use Disorder CURRENT",
+        "DataType": "String"
+    },
+    "ksads_20_890_t": {
+        "Description": "Diagnosis - Substance Use Disorder PAST",
+        "DataType": "String"
+    },
+    "ksads_19_891_t": {
+        "Description": "Diagnosis - Alcohol Use Disorder Present",
+        "DataType": "String"
+    },
+    "ksads_19_892_t": {
+        "Description": "Diagnosis - Alcohol Use Disorder Past",
+        "DataType": "String"
+    },
+    "ksads_20_893_t": {
+        "Description": "Diagnosis - Unspecified Substance Related Disorder, Present (F10.99)",
+        "DataType": "String"
+    },
+    "ksads_20_894_t": {
+        "Description": "Diagnosis - Unspecified Substance Related Disorder, Past (F10.99)",
+        "DataType": "String"
+    },
+    "ksads_19_895_t": {
+        "Description": "Diagnosis - Unspecified Alcohol-Related Disorder, present (F10.99)",
+        "DataType": "String"
+    },
+    "ksads_19_896_t": {
+        "Description": "Diagnosis - Unspecified Alcohol-Related Disorder, past (F10.99)",
+        "DataType": "String"
+    },
+    "ksads_16_897_t": {
+        "Description": "Diagnosis - Conduct Disorder, present childhood onset (F91.1)",
+        "DataType": "String"
+    },
+    "ksads_16_898_t": {
+        "Description": "Diagnosis - Conduct Disorder, present adolescent onset (F91.2)",
+        "DataType": "String"
+    },
+    "ksads_16_899_t": {
+        "Description": "Diagnosis - Conduct Disorder, past, childhood onset (F91.1)",
+        "DataType": "String"
+    },
+    "ksads_16_900_t": {
+        "Description": "Diagnosis - Conduct Disorder, past, adolescent onset (F91.2)",
+        "DataType": "String"
+    },
+    "ksads_15_901_t": {
+        "Description": "Diagnosis - Oppositional Defiant Disorder, Present F91.3",
+        "DataType": "String"
+    },
+    "ksads_15_902_t": {
+        "Description": "Diagnosis - Oppositional Defiant Disorder, Past F91.3",
+        "DataType": "String"
+    },
+    "ksads_18_903_t": {
+        "Description": "Diagnosis - Other Specified Neurodevelopmental Disorder, Autism Spectrum Disorder, full criteria not assessed (F88.0)",
+        "DataType": "String"
+    },
+    "ksads_17_904_t": {
+        "Description": "Diagnosis - Unspecified Tic Disorder, present (F95.9)",
+        "DataType": "String"
+    },
+    "ksads_17_905_t": {
+        "Description": "Diagnosis - Unspecified Tic Disorder, past (F95.9)",
+        "DataType": "String"
+    },
+    "ksads_5_906_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Panic Disorder, impairment, does not meet full criteria), F41.8",
+        "DataType": "String"
+    },
+    "ksads_5_907_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder, PAST, (Panic Disorder, impairment, does not meet full criteria), F41.8",
+        "DataType": "String"
+    },
+    "ksads_6_908_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Agoraphobia, impairment, does not meet full criteria), F41.8",
+        "DataType": "String"
+    },
+    "ksads_7_909_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Separation Anxiety Disorder, impairment, does not meet full criteria), F41.8",
+        "DataType": "String"
+    },
+    "ksads_7_910_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Separation Anxiety Disorder, impairment, does not meet full criteria) PAST, F41.8",
+        "DataType": "String"
+    },
+    "ksads_8_911_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Social Anxiety Disorder, impairment, does not meet minimum duration) F41.8",
+        "DataType": "String"
+    },
+    "ksads_8_912_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Social Anxiety Disorder, impairment, does not meet minimum duration), PAST, F41.8",
+        "DataType": "String"
+    },
+    "ksads_10_913_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Generalized Anxiety Disorder, impairment, does not meet minimum duration) F41.8",
+        "DataType": "String"
+    },
+    "ksads_10_914_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Generalized Anxiety Disorder, impairment, does not meet minimum duration), PAST, F41.8",
+        "DataType": "String"
+    },
+    "ksads_25_915_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Selective Mutism, , does not meet minimum duration) F41.8",
+        "DataType": "String"
+    },
+    "ksads_25_916_t": {
+        "Description": "Diagnosis - Other Specified Anxiety Disorder (Selective Mutism, does not meet minimum duration), PAST ,F41.8",
+        "DataType": "String"
+    },
+    "ksads_11_917_t": {
+        "Description": "Diagnosis - Obsessive-Compulsive Disorder Present (F42)",
+        "DataType": "String"
+    },
+    "ksads_11_918_t": {
+        "Description": "Diagnosis - Obsessive-Compulsive Disorder Past (F42)",
+        "DataType": "String"
+    },
+    "ksads_11_919_t": {
+        "Description": "Diagnosis - Other Specified Obsessive-Compulsive and Related Disorder, present , does not meet full criteria (F42)",
+        "DataType": "String"
+    },
+    "ksads_11_920_t": {
+        "Description": "Diagnosis - Other Specified Obsessive-Compulsive and Related Disorder, past, does not meet full criteria (F42)",
+        "DataType": "String"
+    },
+    "ksads_21_921_t": {
+        "Description": "Diagnosis - Post-Traumatic Stress Disorder PRESENT (F94.1)",
+        "DataType": "String"
+    },
+    "ksads_21_922_t": {
+        "Description": "Diagnosis - Post-Traumatic Stress Disorder PAST (F94.1)",
+        "DataType": "String"
+    },
+    "ksads_21_923_t": {
+        "Description": "Diagnosis - Other Specified Trauma-and Stressor-Related Disorder, present (PTSD, impairment, does not meet full criteria (F43.8)",
+        "DataType": "String"
+    },
+    "ksads_21_924_t": {
+        "Description": "Diagnosis - Other Specified Trauma-and Stressor-Related Disorder, PAST, PTSD, impairment, does not meet full criteria (F43.8)",
+        "DataType": "String"
+    },
+    "ksads_12_925_t": {
+        "Description": "Diagnosis - Enuresis, Present (F98.0)",
+        "DataType": "String"
+    },
+    "ksads_12_926_t": {
+        "Description": "Diagnosis - Enuresis, Past (F98.0)",
+        "DataType": "String"
+    },
+    "ksads_12_927_t": {
+        "Description": "Diagnosis - Encopresis, Present (F98.1)",
+        "DataType": "String"
+    },
+    "ksads_12_928_t": {
+        "Description": "Diagnosis - Encopresis, Past (F98.1)",
+        "DataType": "String"
+    },
+    "ksads_13_929_t": {
+        "Description": "Diagnosis - Anorexia Nervosa (F50.02) Binge eating/purging subtype, PRESENT",
+        "DataType": "String"
+    },
+    "ksads_13_930_t": {
+        "Description": "Diagnosis - Anorexia Nervosa (F50.02) Binge eating/purging subtype, PRESENT, IN PARTIAL REMISSION",
+        "DataType": "String"
+    },
+    "ksads_13_931_t": {
+        "Description": "Diagnosis - Anorexia Nervosa (F50.02) Binge eating/purging subtype, PAST",
+        "DataType": "String"
+    },
+    "ksads_13_932_t": {
+        "Description": "Diagnosis - Anorexia Nervosa (F50.01) Restricting subtype, PRESENT",
+        "DataType": "String"
+    },
+    "ksads_13_933_t": {
+        "Description": "Diagnosis - Anorexia Nervosa (F50.01) Restricting subtype, PRESENT, IN PARTIAL REMISSION",
+        "DataType": "String"
+    },
+    "ksads_13_934_t": {
+        "Description": "Diagnosis - Anorexia Nervosa (F50.01) Restricting subtype,PAST",
+        "DataType": "String"
+    },
+    "ksads_13_935_t": {
+        "Description": "Diagnosis - Bulimia Nervosa (F50.2) PRESENT",
+        "DataType": "String"
+    },
+    "ksads_13_936_t": {
+        "Description": "Diagnosis - Bulimia Nervosa (F50.2) PAST",
+        "DataType": "String"
+    },
+    "ksads_13_937_t": {
+        "Description": "Diagnosis - Bulimia Nervosa Partial Remission Present",
+        "DataType": "String"
+    },
+    "ksads_13_938_t": {
+        "Description": "Diagnosis - Binge-Eating Disorder (F50.8) CURRENT",
+        "DataType": "String"
+    },
+    "ksads_13_939_t": {
+        "Description": "Diagnosis - Binge-Eating Disorder (F50.8) current, in partial remission",
+        "DataType": "String"
+    },
+    "ksads_13_940_t": {
+        "Description": "Diagnosis - Binge-Eating Disorder (F50.8) PAST",
+        "DataType": "String"
+    },
+    "ksads_13_941_t": {
+        "Description": "Diagnosis - Other Specified Feeding or Eating Disorder, Anorexia Nervosa, current, does not meet full criteria (F50.8)",
+        "DataType": "String"
+    },
+    "ksads_13_942_t": {
+        "Description": "Diagnosis - Other Specified Feeding or Eating Disorder, Bulimia Nervosa, current, does not meet full criteria (F50.8)",
+        "DataType": "String"
+    },
+    "ksads_13_943_t": {
+        "Description": "Diagnosis - Other Specified Feeding or Eating Disorder, Bulimia Nervosa, PAST, does not meet full criteria (F50.8)",
+        "DataType": "String"
+    },
+    "ksads_13_944_t": {
+        "Description": "Diagnosis - Other Specified Feeding or Eating Disorder, Binge Eating Disorder, present, does not meet full criteria (F50.8)",
+        "DataType": "String"
+    },
+    "ksads_23_945_t": {
+        "Description": "Diagnosis - SelfInjuriousBehaviorwithoutsuicidalintentPresent",
+        "DataType": "String"
+    },
+    "ksads_23_946_t": {
+        "Description": "Diagnosis - SuicidalideationPassivePresent",
+        "DataType": "String"
+    },
+    "ksads_23_947_t": {
+        "Description": "Diagnosis - SuicidalideationActivenonspecificPresent",
+        "DataType": "String"
+    },
+    "ksads_23_948_t": {
+        "Description": "Diagnosis - SuicidalideationActivemethodPresent",
+        "DataType": "String"
+    },
+    "ksads_23_949_t": {
+        "Description": "Diagnosis - SuicidalideationActiveintentPresent",
+        "DataType": "String"
+    },
+    "ksads_23_950_t": {
+        "Description": "Diagnosis - SuicidalideationActiveplanPresent",
+        "DataType": "String"
+    },
+    "ksads_23_951_t": {
+        "Description": "Diagnosis - PreparatoryActionstowardimminentSuicidalbehaviorPresent",
+        "DataType": "String"
+    },
+    "ksads_23_952_t": {
+        "Description": "Diagnosis - InterruptedAttemptPresent",
+        "DataType": "String"
+    },
+    "ksads_23_953_t": {
+        "Description": "Diagnosis - AbortedAttemptPresent",
+        "DataType": "String"
+    },
+    "ksads_23_954_t": {
+        "Description": "Diagnosis - SuicideAttemptPresent",
+        "DataType": "String"
+    },
+    "ksads_23_955_t": {
+        "Description": "Diagnosis - NosuicidalideationorbehaviorPresent",
+        "DataType": "String"
+    },
+    "ksads_23_956_t": {
+        "Description": "Diagnosis - SelfInjuriousBehaviorwithoutsuicidalintentPast",
+        "DataType": "String"
+    },
+    "ksads_23_957_t": {
+        "Description": "Diagnosis - SuicidalideationPassivePast",
+        "DataType": "String"
+    },
+    "ksads_23_958_t": {
+        "Description": "Diagnosis - SuicidalideationActivenonspecificPast",
+        "DataType": "String"
+    },
+    "ksads_23_959_t": {
+        "Description": "Diagnosis - SuicidalideationActivemethodPast",
+        "DataType": "String"
+    },
+    "ksads_23_960_t": {
+        "Description": "Diagnosis - SuicidalideationActiveintentPast",
+        "DataType": "String"
+    },
+    "ksads_23_961_t": {
+        "Description": "Diagnosis - SuicidalideationActiveplanPast",
+        "DataType": "String"
+    },
+    "ksads_23_962_t": {
+        "Description": "Diagnosis - PreparatoryActionstowardimminentSuicidalbehaviorPast",
+        "DataType": "String"
+    },
+    "ksads_23_963_t": {
+        "Description": "Diagnosis - InterruptedAttemptPast",
+        "DataType": "String"
+    },
+    "ksads_23_964_t": {
+        "Description": "Diagnosis - AbortedAttemptPast",
+        "DataType": "String"
+    },
+    "ksads_23_965_t": {
+        "Description": "Diagnosis - SuicideAttemptPast",
+        "DataType": "String"
+    },
+    "ksads_23_966_t": {
+        "Description": "Diagnosis - NopastsuicidalideationorbehaviorPast",
+        "DataType": "String"
+    },
+    "ksads_24_967_t": {
+        "Description": "Diagnosis - HOMICIDAL IDEATION AND BEHAVIOR, Present",
+        "DataType": "String"
+    },
+    "ksads_24_968_t": {
+        "Description": "Diagnosis - HOMICIDAL IDEATION AND BEHAVIOR, Past",
+        "DataType": "String"
+    },
+    "ksads_22_969_t": {
+        "Description": "Diagnosis - SLEEP PROBLEMS, Present",
+        "DataType": "String"
+    },
+    "ksads_22_970_t": {
+        "Description": "Diagnosis - SLEEP PROBLEMS, Past",
+        "DataType": "String"
+    },
+    "ksads_8_31_t": {
+        "Description": "Symptom - Fear of Social Situations, Past",
+        "DataType": "String"
+    },
+    "ksads_9_44_t": {
+        "Description": "Symptom - Duration of past phobia at least 6 months, Present",
+        "DataType": "String"
+    },
+    "ksads_10_47_t": {
+        "Description": "Symptom - Worrying has lasted at least 6 months, Present",
+        "DataType": "String"
+    },
+    "ksads_11_51_t": {
+        "Description": "Symptom - Compulsions, Past",
+        "DataType": "String"
+    },
+    "ksads_12_65_t": {
+        "Description": "Symptom - Encopresis not due to medical illness, Past",
+        "DataType": "String"
+    },
+    "ksads_13_75_t": {
+        "Description": "Symptom - Binge Eating, Past",
+        "DataType": "String"
+    },
+    "ksads_14_90_t": {
+        "Description": "Symptom - Impulsivity for more than one school year, Past",
+        "DataType": "String"
+    },
+    "ksads_25_33_t": {
+        "Description": "Symptom - Failure to speak in social situations, Past",
+        "DataType": "String"
+    },
+    "ksads_timestamp_t": {
+        "Description": "Starting timestamp for the survey",
+        "DataType": "String"
+    },
+    "ksads_duration_t": {
+        "Description": "Time duration for the survey",
+        "DataType": "String"
+    }
+}

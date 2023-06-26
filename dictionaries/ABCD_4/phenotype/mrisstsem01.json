@@ -1,0 +1,2831 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_sst_all_sem_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_sst_all_sem_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_sem_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_sem_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_sem_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_sem_sthnvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_sem_mm": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_sem_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_sem_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_sem_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_sem_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_sem_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_1": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_2": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_3": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_4": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_5": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_6": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_7": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_8": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_9": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_10": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_11": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_12": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_13": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_14": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_15": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_16": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_17": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_18": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_19": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_20": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_21": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_22": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_23": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_24": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_25": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_26": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_27": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_28": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_29": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_30": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_31": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_32": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_33": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_34": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_35": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_36": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_37": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_38": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_39": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_40": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_41": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_42": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_43": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_44": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_45": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_46": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_47": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_48": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_49": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_50": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_51": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_52": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_53": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_54": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_55": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_56": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_57": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_58": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_59": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_60": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_61": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_62": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_63": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_64": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_65": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_66": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_67": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_68": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_69": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_70": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_71": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_72": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_73": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_74": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_75": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_76": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_77": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_78": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_79": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_80": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_81": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_82": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_83": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_84": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_85": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_86": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_87": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_88": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_89": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_90": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_91": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_92": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_93": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_94": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_95": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_96": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_97": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_98": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_99": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_100": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_101": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_102": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_103": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_104": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_105": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_106": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_107": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_108": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_109": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_110": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_111": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_112": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_113": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_114": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_115": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_116": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_117": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_118": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_119": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_120": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_121": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_122": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_123": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_124": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_125": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_126": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_127": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_128": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_129": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_130": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_131": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_132": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_133": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_134": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_135": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_136": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_137": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_138": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_139": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_140": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_141": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_142": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_143": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_144": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_145": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_146": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_147": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_148": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_149": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_150": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_151": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_152": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_153": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_154": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_155": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_156": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_157": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_158": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_159": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_160": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_161": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_162": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_163": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_164": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_165": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_166": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_167": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_168": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_169": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_170": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_171": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_172": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_173": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_174": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_175": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_176": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_177": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_178": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_179": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_180": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_181": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_182": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_183": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_184": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_185": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_186": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_187": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_188": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_189": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_190": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_191": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_192": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_193": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_194": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_195": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_196": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_197": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_198": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_199": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_200": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_201": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_202": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_203": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_204": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_205": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_206": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_207": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_208": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_209": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_210": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_211": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_212": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_213": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_214": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_215": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_216": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_217": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_218": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_219": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_220": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_221": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_222": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_223": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_224": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_225": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_226": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_227": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_228": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_229": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_230": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_231": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_232": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_233": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_234": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_235": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_236": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_237": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_238": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_239": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_240": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_241": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_242": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_243": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_244": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_245": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_246": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_247": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_248": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_249": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_250": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_251": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_252": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_253": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_254": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_255": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_256": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_257": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_258": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_259": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_260": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_261": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_262": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_263": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_264": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_265": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_266": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_267": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_268": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_269": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_270": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_271": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_272": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_273": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_274": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_275": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_276": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_277": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_278": {
+        "Description": "Standard error of the mean for SST correct go versus fixation contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_279": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_280": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_281": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_282": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_283": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_284": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_285": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_286": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_287": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_288": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_289": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_290": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_291": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_292": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_293": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_294": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_295": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_296": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_297": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_298": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_299": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_300": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_301": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_302": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_303": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_304": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_305": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_306": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_307": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_308": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_309": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_310": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_311": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_312": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_313": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_314": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_315": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_316": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_317": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_318": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_319": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_320": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_321": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_322": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_323": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_324": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_325": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_326": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_327": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_328": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_329": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_330": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_331": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_332": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_333": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_334": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_335": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_336": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_337": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_338": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_339": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_340": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_341": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_342": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_343": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_344": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_345": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_346": {
+        "Description": "Standard error of the mean for SST correct stop versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_347": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_348": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_349": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_350": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_351": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_352": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_353": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_354": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_355": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_356": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_357": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_358": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_359": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_360": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_361": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_362": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_363": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_364": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_365": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_366": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_367": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_368": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_369": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_370": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_371": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_372": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_373": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_374": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_375": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_376": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_377": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_378": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_379": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_380": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_381": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_382": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_383": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_384": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_385": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_386": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_387": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_388": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_389": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_390": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_391": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_392": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_393": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_394": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_395": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_396": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_397": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_398": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_399": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_400": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_401": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_402": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_403": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_404": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_405": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_406": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_407": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_408": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_409": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_410": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_411": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_412": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_413": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_414": {
+        "Description": "Standard error of the mean for SST incorrect stop versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_415": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_416": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_417": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_418": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_419": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_420": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_421": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_422": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_423": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_424": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_425": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_426": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_427": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_428": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_429": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_430": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_431": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_432": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_433": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_434": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_435": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_436": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_437": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_438": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_439": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_440": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_441": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_442": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_443": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_444": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_445": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_446": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_447": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_448": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_449": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_450": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_451": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_452": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_453": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_454": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_455": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_456": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_457": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_458": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_459": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_460": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_461": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_462": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_463": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_464": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_465": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_466": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_467": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_468": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_469": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_470": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_471": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_472": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_473": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_474": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_475": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_476": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_477": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_478": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_479": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_480": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_481": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_482": {
+        "Description": "Standard error of the mean for SST any stop versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_483": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_484": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_485": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_486": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_487": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_488": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_489": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_490": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_491": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_492": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_493": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_494": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_495": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_496": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_497": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_498": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_499": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_500": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_501": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_502": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_503": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_504": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_505": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_506": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_507": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_508": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_509": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_510": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_511": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_512": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_513": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_514": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_515": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_516": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_517": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_518": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_519": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_520": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_521": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_522": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_523": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_524": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_525": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_526": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_527": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_528": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_529": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_530": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_531": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_532": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_533": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_534": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_535": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_536": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_537": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_538": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_539": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_540": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_541": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_542": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_543": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_544": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_545": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_546": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_547": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_548": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_549": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_550": {
+        "Description": "Standard error of the mean for SST correct stop versus incorrect stop contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_551": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_552": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_553": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_554": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_555": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_556": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_557": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_558": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_559": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_560": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_561": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_562": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_563": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_564": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_565": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_566": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_567": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_568": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_569": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_570": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_571": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_572": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_573": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_574": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_575": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_576": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_577": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_578": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_579": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_580": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_581": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_582": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_583": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_584": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_585": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_586": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_587": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_588": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_589": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_590": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_591": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_592": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_593": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_594": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_595": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_596": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_597": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_598": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_599": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_600": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_601": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_602": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_603": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_604": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_605": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_606": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_607": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_608": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_609": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_610": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_611": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_612": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_613": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_614": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_615": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_616": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_617": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_618": {
+        "Description": "Standard error of the mean for SST incorrect go versus correct go contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_619": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_620": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_621": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_622": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_623": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_624": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_625": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_626": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_627": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_628": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_629": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_630": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_631": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_632": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_633": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_634": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_635": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_636": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_637": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_638": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_639": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_640": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_641": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_642": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_643": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_644": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_645": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_646": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_647": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_648": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_649": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_650": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_651": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_652": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_653": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_654": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_655": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_656": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_657": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_658": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_659": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_660": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_661": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_662": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_663": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_664": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_665": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_666": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_667": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_668": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_669": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_670": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_671": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_672": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_673": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_674": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_675": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_676": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_677": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_678": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_679": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_680": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_681": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_682": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_683": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_684": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_685": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_686": {
+        "Description": "Standard error of the mean for SST incorrect go versus incorrect stop contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    }
+}

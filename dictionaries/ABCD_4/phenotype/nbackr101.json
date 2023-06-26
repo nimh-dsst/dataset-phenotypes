@@ -1,0 +1,3615 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_nback_run1_beta_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_nback_run1_beta_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_nback_run1_beta_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_run1_beta_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_run1_beta_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_run1_beta_sthnvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_run1_beta_mm": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_run1b_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_run1b_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_run1_beta_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_run1_beta_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_nback_run1_beta_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_1": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_2": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_3": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_4": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_5": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_6": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_7": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_8": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_9": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_10": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_11": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_12": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_13": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_14": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_15": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_16": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_17": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_18": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_19": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_20": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_21": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_22": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_23": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_24": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_25": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_26": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_27": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_28": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_29": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_30": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_31": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_32": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_33": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_34": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_35": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_36": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_37": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_38": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_39": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_40": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_41": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_42": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_43": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_44": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_45": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_46": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_47": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_48": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_49": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_50": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_51": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_52": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_53": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_54": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_55": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_56": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_57": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_58": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_59": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_60": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_61": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_62": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_63": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_64": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_65": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_66": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_67": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_68": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_69": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_70": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_71": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_72": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_73": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_74": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_75": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_76": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_77": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_78": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_79": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_80": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_81": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_82": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_83": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_84": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_85": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_86": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_87": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_88": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_89": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_90": {
+        "Description": "Mean beta weight for nBack run 1 place condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_91": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_92": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_93": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_94": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_95": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_96": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_97": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_98": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_99": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_100": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_101": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_102": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_103": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_104": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_105": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_106": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_107": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_108": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_109": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_110": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_111": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_112": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_113": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_114": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_115": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_116": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_117": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_118": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_119": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_120": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_121": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_122": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_123": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_124": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_125": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_126": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_127": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_128": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_129": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_130": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_131": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_132": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_133": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_134": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_135": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_136": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_137": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_138": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_139": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_140": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_141": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_142": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_143": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_144": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_145": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_146": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_147": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_148": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_149": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_150": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_151": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_152": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_153": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_154": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_155": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_156": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_157": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_158": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_159": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_160": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_161": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_162": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_163": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_164": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_165": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_166": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_167": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_168": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_169": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_170": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_171": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_172": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_173": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_174": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_175": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_176": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_177": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_178": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_179": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_180": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_181": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_182": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_183": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_184": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_185": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_186": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_187": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_188": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_189": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_190": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_191": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_192": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_193": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_194": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_195": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_196": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_197": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_198": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_199": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_200": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_201": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_202": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_203": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_204": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_205": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_206": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_207": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_208": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_209": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_210": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_211": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_212": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_213": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_214": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_215": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_216": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_217": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_218": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_219": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_220": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_221": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_222": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_223": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_224": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_225": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_226": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_227": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_228": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_229": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_230": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_231": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_232": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_233": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_234": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_235": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_236": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_237": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_238": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_239": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_240": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_241": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_242": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_243": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_244": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_245": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_246": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_247": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_248": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_249": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_250": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_251": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_252": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_253": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_254": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_255": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_256": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_257": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_258": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_259": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_260": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_261": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_262": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_263": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_264": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_265": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_266": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_267": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_268": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_269": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_270": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_271": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_272": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_273": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_274": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_275": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_276": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_277": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_278": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_279": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_280": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_281": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_282": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_283": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_284": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_285": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_286": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_287": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_288": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_289": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_290": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_291": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_292": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_293": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_294": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_295": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_296": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_297": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_298": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_299": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_300": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_301": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_302": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_303": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_304": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_305": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_306": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_307": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_308": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_309": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_310": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_311": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_312": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_313": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_314": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_315": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_316": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_317": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_318": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_319": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_320": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_321": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_322": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_323": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_324": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_325": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_326": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_327": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_328": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_329": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_330": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_331": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_332": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_333": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_334": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_335": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_336": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_337": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_338": {
+        "Description": "Mean beta weight for nBack run 1 0 back condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_339": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_340": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_341": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_342": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_343": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_344": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_345": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_346": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_347": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_348": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_349": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_350": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_351": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_352": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_353": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_354": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_355": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_356": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_357": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_358": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_359": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_360": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_361": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_362": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_363": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_364": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_365": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_366": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_367": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_368": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_369": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_370": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_371": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_372": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_373": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_374": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_375": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_376": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_377": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_378": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_379": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_380": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_381": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_382": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_383": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_384": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_385": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_386": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_387": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_388": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_389": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_390": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_391": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_392": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_393": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_394": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_395": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_396": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_397": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_398": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_399": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_400": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_401": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_402": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_403": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_404": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_405": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_406": {
+        "Description": "Mean beta weight for nBack run 1 2 back condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_407": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_408": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_409": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_410": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_411": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_412": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_413": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_414": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_415": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_416": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_417": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_418": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_419": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_420": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_421": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_422": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_423": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_424": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_425": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_426": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_427": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_428": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_429": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_430": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_431": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_432": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_433": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_434": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_435": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_436": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_437": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_438": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_439": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_440": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_441": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_442": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_443": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_444": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_445": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_446": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_447": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_448": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_449": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_450": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_451": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_452": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_453": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_454": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_455": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_456": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_457": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_458": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_459": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_460": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_461": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_462": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_463": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_464": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_465": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_466": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_467": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_468": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_469": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_470": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_471": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_472": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_473": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_474": {
+        "Description": "Mean beta weight for nBack run 1 place condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_475": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_476": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_477": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_478": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_479": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_480": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_481": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_482": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_483": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_484": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_485": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_486": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_487": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_488": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_489": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_490": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_491": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_492": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_493": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_494": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_495": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_496": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_497": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_498": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_499": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_500": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_501": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_502": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_503": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_504": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_505": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_506": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_507": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_508": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_509": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_510": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_511": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_512": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_513": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_514": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_515": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_516": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_517": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_518": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_519": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_520": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_521": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_522": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_523": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_524": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_525": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_526": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_527": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_528": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_529": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_530": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_531": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_532": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_533": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_534": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_535": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_536": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_537": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_538": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_539": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_540": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_541": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_542": {
+        "Description": "Mean beta weight for nBack run 1 emotion condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_543": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_544": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_545": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_546": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_547": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_548": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_549": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_550": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_551": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_552": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_553": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_554": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_555": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_556": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_557": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_558": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_559": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_560": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_561": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_562": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_563": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_564": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_565": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_566": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_567": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_568": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_569": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_570": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_571": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_572": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_573": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_574": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_575": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_576": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_577": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_578": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_579": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_580": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_581": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_582": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_583": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_584": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_585": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_586": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_587": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_588": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_589": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_590": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_591": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_592": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_593": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_594": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_595": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_596": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_597": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_598": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_599": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_600": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_601": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_602": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_603": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_604": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_605": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_606": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_607": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_608": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_609": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_610": {
+        "Description": "Mean beta weight for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_611": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_612": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_613": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_614": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_615": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_616": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_617": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_618": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_619": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_620": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_621": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_622": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_623": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_624": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_625": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_626": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_627": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_628": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_629": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_630": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_631": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_632": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_633": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_634": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_635": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_636": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_637": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_638": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_639": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_640": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_641": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_642": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_643": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_644": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_645": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_646": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_647": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_648": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_649": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_650": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_651": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_652": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_653": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_654": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_655": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_656": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_657": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_658": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_659": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_660": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_661": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_662": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_663": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_664": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_665": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_666": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_667": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_668": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_669": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_670": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_671": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_672": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_673": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_674": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_675": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_676": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_677": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_678": {
+        "Description": "Mean beta weight for nBack run 1 face versus place contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_679": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_680": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_681": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_682": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_683": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_684": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_685": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_686": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_687": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_688": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_689": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_690": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_691": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_692": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_693": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_694": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_695": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_696": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_697": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_698": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_699": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_700": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_701": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_702": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_703": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_704": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_705": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_706": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_707": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_708": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_709": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_710": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_711": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_712": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_713": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_714": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_715": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_716": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_717": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_718": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_719": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_720": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_721": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_722": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_723": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_724": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_725": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_726": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_727": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_728": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_729": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_730": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_731": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_732": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_733": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_734": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_735": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_736": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_737": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_738": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_739": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_740": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_741": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_742": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_743": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_744": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_745": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_746": {
+        "Description": "Mean beta weight for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_747": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_748": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_749": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_750": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_751": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_752": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_753": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_754": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_755": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_756": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_757": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_758": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_759": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_760": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_761": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_762": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_763": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_764": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_765": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_766": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_767": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_768": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_769": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_770": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_771": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_772": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_773": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_774": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_775": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_776": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_777": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_778": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_779": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_780": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_781": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_782": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_783": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_784": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_785": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_786": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_787": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_788": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_789": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_790": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_791": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_792": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_793": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_794": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_795": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_796": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_797": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_798": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_799": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_800": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_801": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_802": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_803": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_804": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_805": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_806": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_807": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_808": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_809": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_810": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_811": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_812": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_813": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_814": {
+        "Description": "Mean beta weight for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_815": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_816": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_817": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_818": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_819": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_820": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_821": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_822": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_823": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_824": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_825": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_826": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_827": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_828": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_829": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_830": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_831": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_832": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_833": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_834": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_835": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_836": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_837": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_838": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_839": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_840": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_841": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_842": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_843": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_844": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_845": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_846": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_847": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_848": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_849": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_850": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_851": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_852": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_853": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_854": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_855": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_856": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_857": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_858": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_859": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_860": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_861": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_862": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_863": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_864": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_865": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_866": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_867": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_868": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_869": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_870": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_871": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_872": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_873": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_874": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_875": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_876": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_877": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_878": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_879": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_880": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_881": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_882": {
+        "Description": "Mean beta weight for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    }
+}

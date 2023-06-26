@@ -1,0 +1,112 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "gdt_scr_script_subjectid": {
+        "Description": "script.subjectid: \r\n\r\nSubject ID Number",
+        "DataType": "String"
+    },
+    "gdt_scr_event": {
+        "Description": "Event selected by RA if not 2-year follow-up (HIDEFROMCOMPLETION)",
+        "DataType": "String"
+    },
+    "gdt_scr_session": {
+        "Description": "Session number (01,02,03)",
+        "DataType": "Integer"
+    },
+    "gdt_scr_script_startdate": {
+        "Description": "script.startdate:\r\n\r\nDate script was run",
+        "DataType": "String"
+    },
+    "gdt_scr_script_starttime": {
+        "Description": "script.starttime:\r\n\r\nTime script was started",
+        "DataType": "String"
+    },
+    "gdt_scr_script_elapsedtime": {
+        "Description": "script.elapsedtime:\r\n\r\nTime it took to run script (in ms)",
+        "DataType": "Integer"
+    },
+    "gdt_scr_parameters_gdtversion": {
+        "Description": "parameters.GDTversion:\r\n1 = original version with feedback (default); \r\n2 = version without feedback | 1=Original Version with Feedback (Default); 2=Version without Feedback",
+        "DataType": "Integer",
+        "ValueRange": "1;2",
+        "Levels": {
+            "1": "Original Version with Feedback (Default)",
+            "2": "Version without Feedback"
+        }
+    },
+    "gdt_scr_values_account_balance": {
+        "Description": "values.account_balance:\r\n\r\nAmount participant owns at the end",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_single": {
+        "Description": "values.single:\r\n\r\nCounts how many times participant has bet on 1 specific dice face",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_double": {
+        "Description": "values.double:\r\n\r\nCounts how many times participant has bet on 2 specific dice face",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_triple": {
+        "Description": "values.triple:\r\n\r\nCounts how many times participant has bet on 3 specific dice face",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_quadruple": {
+        "Description": "values.quadruple:\r\n\r\nCounts how many times participant has bet on 4 possible dice faces",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_safe": {
+        "Description": "values.safe:\r\n\r\nCounts how many times participants selected a safe bet (bets on 3 or 4 dice faces)",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_risky": {
+        "Description": "values.risky:\r\n\r\nCounts how many times participants selected a risky bet (bets on 1 or 2 dice faces)",
+        "DataType": "Integer"
+    },
+    "gdt_scr_expressions_net_score": {
+        "Description": "expressions.net_score:\r\n\r\nReflects the number of safe (bets on 3 or 4 numbers) vs. risky (bets on 1 or 2 numbers) choices. It is computed as number of safe bets minus number of risky bets.",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_wins": {
+        "Description": "values.wins:\r\n\r\nAdds the number of winning bets",
+        "DataType": "Integer"
+    },
+    "gdt_scr_values_losses": {
+        "Description": "values.losses:\r\n\r\nAdds the number of losing bets",
+        "DataType": "Integer"
+    }
+}

@@ -1,0 +1,478 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ncog_device": {
+        "Description": "What was the make and model of the phone with technical issues? (e.g. iPhone 8, iPhone XR, Samsung Galaxy S10e, Pixel 3 XL, OnePlus 7T Pro, LG G8 ThinkQ, etc) | [ncog_session] = '2' or [ncog_session] = '3' or [ncog_session] = '5'",
+        "DataType": "String"
+    },
+    "neurocog_2_device": {
+        "Description": "NCog Session: | 1=Completed in full without disruption ; 2=Completed in full with temporary technical disruption ; 3=Completed partially due to technical disruption ; 4=Completed partially due to not having a smart phone ; 5=Did not complete due to other technical issues [sched_delay] = '9'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Completed in full without disruption",
+            "2": "Completed in full with temporary technical disruption",
+            "3": "Completed partially due to technical disruption",
+            "4": "Completed partially due to not having a smart phone",
+            "5": "Did not complete due to other technical issues"
+        }
+    },
+    "neurocog_device": {
+        "Description": "NCog Session: | 1=Completed in full without disruption ; 2=Completed in full with temporary technical disruption ; 3=Completed partially due to technical disruption ; 4=Did not complete due to not being able to share screen ; 5=Did not complete due to technical issues [sched_delay] = '9'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "Completed in full without disruption",
+            "2": "Completed in full with temporary technical disruption",
+            "3": "Completed partially due to technical disruption",
+            "4": "Did not complete due to not being able to share screen",
+            "5": "Did not complete due to technical issues"
+        }
+    },
+    "neurocog_2_lmt___1": {
+        "Description": "Method of LMT administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_lmt___2": {
+        "Description": "Method of LMT administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_lmt___3": {
+        "Description": "Method of LMT administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_god___1": {
+        "Description": "Method of GoD administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_god___2": {
+        "Description": "Method of GoD administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_god___3": {
+        "Description": "Method of GoD administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_flanker___1": {
+        "Description": "Method of Flanker administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_flanker___2": {
+        "Description": "Method of Flanker administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_flanker___3": {
+        "Description": "Method of Flanker administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_sit___1": {
+        "Description": "Method of SIT administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_sit___2": {
+        "Description": "Method of SIT administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_sit___3": {
+        "Description": "Method of SIT administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_ravlt___1": {
+        "Description": "Method of RAVLT administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1' and [event-name]!='4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_ravlt___2": {
+        "Description": "Method of RAVLT administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1' and [event-name]!='4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_ravlt___3": {
+        "Description": "Method of RAVLT administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1' and [event-name]!='4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_remote___1": {
+        "Description": "Remote method of Neurocognitive tasks pt 2 administration [Check all that apply]:  1, Audio | 1=Yes; 0=No  [sched_delay] = '9' AND [sched_hybrid] = '0'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_remote___2": {
+        "Description": "Remote method of Neurocognitive tasks pt 2 administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No  [sched_delay] = '9' AND [sched_hybrid] = '0'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_2_bird___1": {
+        "Description": "Method of BIRD administration [Check all that apply]: 1, Audio | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') and [event-name] = '4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_2_bird___2": {
+        "Description": "Method of BIRD administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') and [event-name] = '4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_2_bird___3": {
+        "Description": "Method of BIRD administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') and [event-name] = '4_year_follow_up_y_arm_1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_card___1": {
+        "Description": "Method of  Dimensional Change Card Sort administration [Check all that apply]: 1, Audio | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') AND ([event-name] != '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_card___2": {
+        "Description": "Method of  Dimensional Change Card Sort administration [Check all that apply]: 2, Video/Webcam | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') AND ([event-name] != '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_card___3": {
+        "Description": "Method of  Dimensional Change Card Sort administration [Check all that apply]:  3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') AND ([event-name] != '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_flanker___1": {
+        "Description": "Method of Flanker (in-person only) administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_flanker___2": {
+        "Description": "Method of Flanker (in-person only) administration [Check all that apply]: 2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_flanker___3": {
+        "Description": "Method of Flanker (in-person only) administration [Check all that apply]:  3, In person (REQUIRED) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_intro_ipad_y": {
+        "Description": "Which iPAD model will you use? | 1=iPad Air II (otterbox defender series cover) ; 2=9.7'' iPad PRO (otterbox defender series cover) ; 4=9.7'' iPad (NON-Pro) (otterbox defender series cover) ; 5=10.2'' iPad (NON-Pro) (otterbox defender series cover) ; 3=Other iPad model or Model/cover combination [sched_delay] = '9' and [sched_hybrid] = '0'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "iPad Air II (otterbox defender series cover)",
+            "2": "9.7'' iPad PRO (otterbox defender series cover)",
+            "4": "9.7'' iPad (NON-Pro) (otterbox defender series cover)",
+            "5": "10.2'' iPad (NON-Pro) (otterbox defender series cover)",
+            "3": "Other iPad model or Model/cover combination"
+        }
+    },
+    "neurocog_intro2_ipad_y": {
+        "Description": "Which iPAD model will you use? | 1=iPad Air II (otterbox defender series cover) ; 2=9.7'' iPad PRO (otterbox defender series cover) ; 4=9.7'' iPad (NON-Pro) (otterbox defender series cover) ; 5=10.2'' iPad (NON-Pro) (otterbox defender series cover) ; 3=Other iPad model or Model/cover combination [sched_delay] = '7'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "1": "iPad Air II (otterbox defender series cover)",
+            "2": "9.7'' iPad PRO (otterbox defender series cover)",
+            "4": "9.7'' iPad (NON-Pro) (otterbox defender series cover)",
+            "5": "10.2'' iPad (NON-Pro) (otterbox defender series cover)",
+            "3": "Other iPad model or Model/cover combination"
+        }
+    },
+    "neurocog_pattern___1": {
+        "Description": "Method of Pattern Comparison Processing Speed (in-person only) administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pattern___2": {
+        "Description": "Method of Pattern Comparison Processing Speed (in-person only) administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pattern___3": {
+        "Description": "Method of Pattern Comparison Processing Speed (in-person only) administration [Check all that apply]:  3, In person (REQUIRED) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pic_sequence___1": {
+        "Description": "Method of Picture Sequencing Memory Test administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pic_sequence___2": {
+        "Description": "Method of Picture Sequencing Memory Test administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pic_sequence___3": {
+        "Description": "Method of Picture Sequencing Memory Test administration [Check all that apply]:  3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pic_vocab___1": {
+        "Description": "Method of Picture Vocabulary Test administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pic_vocab___2": {
+        "Description": "Method of Picture Vocabulary Test administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_pic_vocab___3": {
+        "Description": "Method of Picture Vocabulary Test administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_reading___1": {
+        "Description": "Method of Oral Reading Recognition administration [Check all that apply]: 1, Audio | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_reading___2": {
+        "Description": "Method of Oral Reading Recognition administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_reading___3": {
+        "Description": "Method of Oral Reading Recognition administration [Check all that apply]: 3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No [sched_hybrid] = '1'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_remote___1": {
+        "Description": "Additional methods of neurocognitive tasks pt 1 administration: 1, Audio | 1=Yes; 0=No [sched_delay] = '9' AND [sched_hybrid] = '0'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_remote___2": {
+        "Description": "Additional methods of neurocognitive tasks pt 1 administration: 2, Video/Webcam | 1=Yes; 0=No [sched_delay] = '9' AND [sched_hybrid] = '0'",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "neurocog_working_mem___1": {
+        "Description": "Method of List Sorting Working Memory administration [Check all that apply]: 1, Audio | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') AND ([event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_working_mem___2": {
+        "Description": "Method of List Sorting Working Memory administration [Check all that apply]:  2, Video/Webcam | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') AND ([event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    },
+    "neurocog_working_mem___3": {
+        "Description": "Method of List Sorting Working Memory administration [Check all that apply]:  3, In person (ONLY if issues arise and hybrid) | 1=Yes; 0=No ([sched_delay] = '9' and [sched_hybrid] = '1') AND ([event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "1;0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No ("
+        }
+    }
+}

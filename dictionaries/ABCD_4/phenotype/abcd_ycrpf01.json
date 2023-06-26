@@ -1,0 +1,214 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "su_crpf_avail_1": {
+        "Description": "If you wanted to get some beer, wine, or hard liquor (for example vodka, whiskey, or gin), how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_2": {
+        "Description": "If you wanted to get some cigarettes, how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_3": {
+        "Description": "If you wanted to get some electronic nicotine or vaping products, such as e-cigarettes, vape pens, or Juuls,  how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_4": {
+        "Description": "If you wanted to get some marijuana, how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_6": {
+        "Description": "Is medical marijuana\" (marijuana prescribed by a doctor) legal in your state? \" | 1=Yes; 0=No; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0;1;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_7": {
+        "Description": "If you wanted to get medical marijuana from someone with a prescription, how easy would it be? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_8": {
+        "Description": "If you wanted to get a prescription for yourself for medical marijuana, how easy would it be? | 1=Very hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_9": {
+        "Description": "How many of your parents, friends, or other family members have a medical marijuana prescription? | 0=0; 1=1-3; 2=4-6; 3=7-9; 4=10 or more people; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0; 1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "0": "0",
+            "1": "1-3",
+            "2": "4-6",
+            "3": "7-9",
+            "4": "10 or more people",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_5": {
+        "Description": "If you wanted to get some drug like cocaine, LSD, or amphetamines, how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_10": {
+        "Description": "If you wanted to get liquid, sprays, and gases that people sniff or inhale to get high (such as gasoline, glue, and nitrous oxide), how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_11": {
+        "Description": "If you wanted to get prescription pain relievers (such as Vicodin, hydrocodone, or Oxycontin; not over the counter drugs like Tylenol) that were not prescribed to you by a doctor, how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_12": {
+        "Description": "If you wanted to get prescription anxiolytics or tranquilizers (such as Xanax and Ativan) that were not prescribed to you by a doctor, how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "su_crpf_avail_13": {
+        "Description": "If you wanted to get prescription stimulants (such as Adderall or Ritalin) that were not prescribed to you by a doctor, how easy would it be for you to get some? | 1=Very Hard; 2=Sort of hard; 3=Sort of easy; 4=Very easy; 999=Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3 ; 4; 999",
+        "Levels": {
+            "1": "Very Hard",
+            "2": "Sort of hard",
+            "3": "Sort of easy",
+            "4": "Very easy",
+            "999": "Don't know"
+        }
+    },
+    "crpf_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered ; 2=Youth Self-Administered ; 3=Combination [event_name_number] > '21'",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination [event_name_number] > '21'"
+        }
+    },
+    "crpf_device": {
+        "Description": "Youth's Device: | 1=Phone Screen ; 2=Tablet/iPad Screen ; 3=Computer Screen  [crpf_remote(2)] = ''1'' or [crpf_remote(3)] = ''1''",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "Phone Screen",
+            "2": "Tablet/iPad Screen",
+            "3": "Computer Screen"
+        }
+    }
+}

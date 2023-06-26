@@ -1,0 +1,370 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_anxdep_r": {
+        "Description": "AnxDep CBCL Syndrome Scale (raw score) = cbcl_q14_p and cbcl_q29_p and cbcl_q30_p and cbcl_q31_p and cbcl_q32_p and cbcl_q33_p and cbcl_q35_p and cbcl_q45_p and cbcl_q50_p and cbcl_q52_p and cbcl_q71_p and cbcl_q91_p and cbcl_q112_p | 0= Image artifacts prevent radiology read; \r\n1= No abnormal findings\r\n; 2 =Normal anatomical variant of no clinical significance; \r\n3 =Consider clinical referral; \r\n4-=Consider immediate clinical referral",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "Image artifacts prevent radiology read",
+            "1": "No abnormal findings",
+            "2": "Normal anatomical variant of no clinical significance",
+            "3": "Consider clinical referral",
+            "4-": "Consider immediate clinical referral"
+        }
+    },
+    "cbcl_scr_syn_anxdep_t": {
+        "Description": "AnxDep CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_anxdep_m": {
+        "Description": "AnxDep CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_anxdep_nm": {
+        "Description": "AnxDep CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_withdep_r": {
+        "Description": "WithDep CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_withdep_t": {
+        "Description": "WithDep CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_withdep_m": {
+        "Description": "WithDep CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_withdep_nm": {
+        "Description": "WithDep CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_somatic_r": {
+        "Description": "Somatic CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_somatic_t": {
+        "Description": "Somatic CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_somatic_m": {
+        "Description": "Somatic CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_somatic_nm": {
+        "Description": "Somatic CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_social_r": {
+        "Description": "Social CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_social_t": {
+        "Description": "Social CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_social_m": {
+        "Description": "Social CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_social_nm": {
+        "Description": "Social CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_thought_r": {
+        "Description": "Thought CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_thought_t": {
+        "Description": "Thought CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_thought_m": {
+        "Description": "Thought CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_thought_nm": {
+        "Description": "Thought CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_attention_r": {
+        "Description": "Attention CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_attention_t": {
+        "Description": "Attention CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_attention_m": {
+        "Description": "Attention CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_attention_nm": {
+        "Description": "Attention CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_rulebreak_r": {
+        "Description": "RuleBreak CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_rulebreak_t": {
+        "Description": "RuleBreak CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_rulebreak_m": {
+        "Description": "RuleBreak CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_rulebreak_nm": {
+        "Description": "RuleBreak CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_aggressive_r": {
+        "Description": "Aggressive CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_aggressive_t": {
+        "Description": "Aggressive CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_aggressive_m": {
+        "Description": "Aggressive CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_aggressive_nm": {
+        "Description": "Aggressive CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_internal_r": {
+        "Description": "Internal CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_internal_t": {
+        "Description": "Internal CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_internal_m": {
+        "Description": "Internal CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_internal_nm": {
+        "Description": "Internal CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_external_r": {
+        "Description": "External CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_external_t": {
+        "Description": "External CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_external_m": {
+        "Description": "External CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_external_nm": {
+        "Description": "External CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_totprob_r": {
+        "Description": "TotProb CBCL Syndrome Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_totprob_t": {
+        "Description": "TotProb CBCL Syndrome Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_syn_totprob_m": {
+        "Description": "TotProb CBCL Syndrome Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_syn_totprob_nm": {
+        "Description": "TotProb CBCL Syndrome Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_depress_r": {
+        "Description": "Depress CBCL DSM5 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_depress_t": {
+        "Description": "Depress CBCL DSM5 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_depress_m": {
+        "Description": "Depress CBCL DSM5 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_dsm5_depress_nm": {
+        "Description": "Depress CBCL DSM5 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_anxdisord_r": {
+        "Description": "AnxDisord CBCL DSM5 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_anxdisord_t": {
+        "Description": "AnxDisord CBCL DSM5 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_anxdisord_m": {
+        "Description": "AnxDisord CBCL DSM5 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_dsm5_anxdisord_nm": {
+        "Description": "AnxDisord CBCL DSM5 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_somaticpr_r": {
+        "Description": "SomaticPr CBCL DSM5 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_somaticpr_t": {
+        "Description": "SomaticPr CBCL DSM5 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_somaticpr_m": {
+        "Description": "SomaticPr CBCL DSM5 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_dsm5_somaticpr_nm": {
+        "Description": "SomaticPr CBCL DSM5 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_adhd_r": {
+        "Description": "ADHD CBCL DSM5 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_adhd_t": {
+        "Description": "ADHD CBCL DSM5 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_adhd_m": {
+        "Description": "ADHD CBCL DSM5 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_dsm5_adhd_nm": {
+        "Description": "ADHD CBCL DSM5 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_opposit_r": {
+        "Description": "Opposit CBCL DSM5 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_opposit_t": {
+        "Description": "Opposit CBCL DSM5 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_opposit_m": {
+        "Description": "Opposit CBCL DSM5 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_dsm5_opposit_nm": {
+        "Description": "Opposit CBCL DSM5 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_conduct_r": {
+        "Description": "Conduct CBCL DSM5 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_conduct_t": {
+        "Description": "Conduct CBCL DSM5 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_dsm5_conduct_m": {
+        "Description": "Conduct CBCL DSM5 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_dsm5_conduct_nm": {
+        "Description": "Conduct CBCL DSM5 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_sct_r": {
+        "Description": "Sluggish Cognitive Tempo (SCT) CBCL Scale2007 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_sct_t": {
+        "Description": "Sluggish Cognitive Tempo (SCT) CBCL Scale2007 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_sct_m": {
+        "Description": "Sluggish Cognitive Tempo (SCT) CBCL Scale2007 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_07_sct_nm": {
+        "Description": "Sluggish Cognitive Tempo (SCT) CBCL Scale2007 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_ocd_r": {
+        "Description": "Obsessive-Compulsive Problems (OCD) CBCL Scale2007 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_ocd_t": {
+        "Description": "Obsessive-Compulsive Problems (OCD) CBCL Scale2007 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_ocd_m": {
+        "Description": "Obsessive-Compulsive Problems (OCD) CBCL Scale2007 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_07_ocd_nm": {
+        "Description": "Obsessive-Compulsive Problems (OCD) CBCL Scale2007 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_stress_r": {
+        "Description": "Stress CBCL Scale2007 Scale (raw score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_stress_t": {
+        "Description": "Stress CBCL Scale2007 Scale (t-score)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_stress_m": {
+        "Description": "Stress CBCL Scale2007 Scale (missing values)",
+        "DataType": "String"
+    },
+    "cbcl_scr_07_stress_nm": {
+        "Description": "Stress CBCL Scale2007 Scale (number of missing values)",
+        "DataType": "Integer"
+    },
+    "cbcl_scr_07_stress_nm_2": {
+        "Description": "Stress CBCL Scale2007 Scale (number of missing values)",
+        "DataType": "Integer"
+    }
+}

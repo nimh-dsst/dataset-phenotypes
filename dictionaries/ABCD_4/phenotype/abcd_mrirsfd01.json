@@ -1,0 +1,631 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "mrirsfd1": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd2": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd3": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd4": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd5": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd6": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd7": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd8": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd9": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd10": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd11": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI cuneus",
+        "DataType": "Float"
+    },
+    "mrirsfd12": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd13": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd14": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd15": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd16": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd17": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd18": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI short insular gyri",
+        "DataType": "Float"
+    },
+    "mrirsfd19": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd20": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd21": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd22": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI lingual gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd23": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd24": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI orbital gyri",
+        "DataType": "Float"
+    },
+    "mrirsfd25": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI angular gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd26": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd27": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior parietal lobule",
+        "DataType": "Float"
+    },
+    "mrirsfd28": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI postcentral gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd29": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI precentral gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd30": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI precuneus",
+        "DataType": "Float"
+    },
+    "mrirsfd31": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI gyrus rectus",
+        "DataType": "Float"
+    },
+    "mrirsfd32": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd33": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd34": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd35": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd36": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI planum temporale",
+        "DataType": "Float"
+    },
+    "mrirsfd37": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd38": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd39": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd40": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd41": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd42": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI occipital pole",
+        "DataType": "Float"
+    },
+    "mrirsfd43": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI temporal pole",
+        "DataType": "Float"
+    },
+    "mrirsfd44": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI calcarine sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd45": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI central sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd46": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd47": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd48": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd49": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd50": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd51": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd52": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd53": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd54": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd55": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "mrirsfd56": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd57": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd58": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd59": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "mrirsfd60": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd61": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd62": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd63": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd64": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI orbital sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd65": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd66": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI s.pericallosal",
+        "DataType": "Float"
+    },
+    "mrirsfd67": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI postcentral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd68": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd69": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd70": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI suborbital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd71": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI subparietal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd72": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd73": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd74": {
+        "Description": "Temporal variance in left hemisphere cortical Destrieux ROI transverse temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd75": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI fronto-marginal gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd76": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI inferior occipital gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd77": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI paracentral lobule and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd78": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI subcentral gyrus and sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd79": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI transverse frontopolar gyri and sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd80": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd81": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle-anterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd82": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle-posterior part of the cingulate gyrus and sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd83": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI posterior-dorsal part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd84": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI posterior-ventral part of the cingulate gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd85": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI cuneus",
+        "DataType": "Float"
+    },
+    "mrirsfd86": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI opercular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd87": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI orbital part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd88": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI triangular part of the inferior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd89": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd90": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior frontal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd91": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI long insular gyrus and central sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd92": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI short insular gyri",
+        "DataType": "Float"
+    },
+    "mrirsfd93": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle occipital gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd94": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior occipital gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd95": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI lateral occipito-temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd96": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI lingual gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd97": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI parahippocampal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd98": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI orbital gyri",
+        "DataType": "Float"
+    },
+    "mrirsfd99": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI angular gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd100": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI supramarginal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd101": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior parietal lobule",
+        "DataType": "Float"
+    },
+    "mrirsfd102": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI postcentral gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd103": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI precentral gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd104": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI precuneus",
+        "DataType": "Float"
+    },
+    "mrirsfd105": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI gyrus rectus",
+        "DataType": "Float"
+    },
+    "mrirsfd106": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI subcallosal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd107": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI anterior transverse temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd108": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI lateral aspect of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd109": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI planum polare of the superior temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd110": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI planum temporale",
+        "DataType": "Float"
+    },
+    "mrirsfd111": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI inferior temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd112": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle temporal gyrus",
+        "DataType": "Float"
+    },
+    "mrirsfd113": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI horizontal ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd114": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI vertical ramus of the anterior segment of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd115": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI posterior ramus of the lateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd116": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI occipital pole",
+        "DataType": "Float"
+    },
+    "mrirsfd117": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI temporal pole",
+        "DataType": "Float"
+    },
+    "mrirsfd118": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI calcarine sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd119": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI central sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd120": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI marginal branch of the cingulate sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd121": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI anterior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd122": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI inferior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd123": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior segment of the circular sulcus of the insula",
+        "DataType": "Float"
+    },
+    "mrirsfd124": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI anterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd125": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI posterior transverse collateral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd126": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI inferior frontal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd127": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle frontal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd128": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior frontal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd129": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI sulcus intermedius primus",
+        "DataType": "Float"
+    },
+    "mrirsfd130": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI intraparietal sulcus and transverse parietal sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd131": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI middle occipital sulcus and lunatus sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd132": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior occipital sulcus and transverse occipital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd133": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI anterior occipital sulcus and preoccipital notch",
+        "DataType": "Float"
+    },
+    "mrirsfd134": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI lateral occipito-temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd135": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI medial occipito-temporal sulcus and lingual sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd136": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI lateral orbital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd137": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI medial orbital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd138": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI orbital sulci",
+        "DataType": "Float"
+    },
+    "mrirsfd139": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI parieto-occipital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd140": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI pericallosal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd141": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI postcentral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd142": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI inferior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd143": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior part of the precentral sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd144": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI suborbital sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd145": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI subparietal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd146": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI inferior temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd147": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI superior temporal sulcus",
+        "DataType": "Float"
+    },
+    "mrirsfd148": {
+        "Description": "Temporal variance in right hemisphere cortical Destrieux ROI transverse temporal sulcus",
+        "DataType": "Float"
+    }
+}

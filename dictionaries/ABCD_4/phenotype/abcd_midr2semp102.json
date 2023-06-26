@@ -1,0 +1,1287 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_mid_run2_sem_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_mid_run2_sem_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_mid_run2_sem_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_run2_sem_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_run2_sem_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_run2_sem_sthvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_run2_sem_mm": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_run2_sem_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_run2_sem_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_run2_sem_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mid_run2_sem_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_mid_run2_sem_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmrimr2_1": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_2": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_3": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_4": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_5": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_6": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_7": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_8": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_9": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_10": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_11": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_12": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_13": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_14": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_15": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_16": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_17": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_18": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_19": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_20": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_21": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_22": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_23": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_24": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_25": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_26": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_27": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_28": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_29": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_30": {
+        "Description": "Standard error of the mean for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_31": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_32": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_33": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_34": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_35": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_36": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_37": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_38": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_39": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_40": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_41": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_42": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_43": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_44": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_45": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_46": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_47": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_48": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_49": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_50": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_51": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_52": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_53": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_54": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_55": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_56": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_57": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_58": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_59": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_60": {
+        "Description": "Standard error of the mean for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_61": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_62": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_63": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_64": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_65": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_66": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_67": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_68": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_69": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_70": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_71": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_72": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_73": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_74": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_75": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_76": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_77": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_78": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_79": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_80": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_81": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_82": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_83": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_84": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_85": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_86": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_87": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_88": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_89": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_90": {
+        "Description": "Standard error of the mean for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_91": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_92": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_93": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_94": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_95": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_96": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_97": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_98": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_99": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_100": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_101": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_102": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_103": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_104": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_105": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_106": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_107": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_108": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_109": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_110": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_111": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_112": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_113": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_114": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_115": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_116": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_117": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_118": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_119": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_120": {
+        "Description": "Standard error of the mean for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_121": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_122": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_123": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_124": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_125": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_126": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_127": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_128": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_129": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_130": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_131": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_132": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_133": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_134": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_135": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_136": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_137": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_138": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_139": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_140": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_141": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_142": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_143": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_144": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_145": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_146": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_147": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_148": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_149": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_150": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_151": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_152": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_153": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_154": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_155": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_156": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_157": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_158": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_159": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_160": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_161": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_162": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_163": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_164": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_165": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_166": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_167": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_168": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_169": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_170": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_171": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_172": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_173": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_174": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_175": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_176": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_177": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_178": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_179": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_180": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_181": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_182": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_183": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_184": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_185": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_186": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_187": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_188": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_189": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_190": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_191": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_192": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_193": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_194": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_195": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_196": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_197": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_198": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_199": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_200": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_201": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_202": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_203": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_204": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_205": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_206": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_207": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_208": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_209": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_210": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_211": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_212": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_213": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_214": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_215": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_216": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_217": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_218": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_219": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_220": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_221": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_222": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_223": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_224": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_225": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_226": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_227": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_228": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_229": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_230": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_231": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_232": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_233": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_234": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_235": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_236": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_237": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_238": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_239": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_240": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_241": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_242": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_243": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_244": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_245": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_246": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_247": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_248": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_249": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_250": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_251": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_252": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_253": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_254": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_255": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_256": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_257": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_258": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_259": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_260": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_261": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_262": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_263": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_264": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_265": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_266": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_267": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_268": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_269": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_270": {
+        "Description": "Standard error of the mean for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_271": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_272": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_273": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_274": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_275": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_276": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_277": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_278": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_279": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_280": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_281": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_282": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmrimr2_283": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_284": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_285": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmrimr2_286": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_287": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmrimr2_288": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_289": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmrimr2_290": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmrimr2_291": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmrimr2_292": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmrimr2_293": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmrimr2_294": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmrimr2_295": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmrimr2_296": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmrimr2_297": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmrimr2_298": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmrimr2_299": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmrimr2_300": {
+        "Description": "Standard error of the mean for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    }
+}

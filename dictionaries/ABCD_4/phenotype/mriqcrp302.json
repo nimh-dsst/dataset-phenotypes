@@ -1,0 +1,1032 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "iqc_initial_rec": {
+        "Description": "DAIC has received at least one series for this pGUID",
+        "DataType": "Integer"
+    },
+    "iqc_event_qcd": {
+        "Description": "DAIC has received full protocol for this pGUID and it has been QC'ed",
+        "DataType": "Integer"
+    },
+    "iqc_event_rsfmri_autoqcd": {
+        "Description": "rsfMRI: Decide whether rsfmri series in a given pguidevent pass qc or not. | 1 = all rsfmri series pass qc;  0 = NOT all rsfmri series pass qc",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "all rsfmri series pass qc",
+            "0": "NOT all rsfmri series pass qc"
+        }
+    },
+    "iqc_eventcomplete": {
+        "Description": "DAIC has received entire protocol for this pGUID (at least one T1, at least T2, at least one dMRI, at least 3 rsfMRI runs with corresponding field maps, and at least 2 runs of each task with corresponding field maps)",
+        "DataType": "Integer"
+    },
+    "iqc_eventcomplete_c_pc_qc": {
+        "Description": "DAIC has received full protocol for this pGUID and everything was complete, passed QC and protocol compliance",
+        "DataType": "Integer"
+    },
+    "iqc_t1_received": {
+        "Description": "T1: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_t1_unpacked": {
+        "Description": "T1: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_t1_unpack_err": {
+        "Description": "T1: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_t1_imported": {
+        "Description": "T1: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_t2_received": {
+        "Description": "T2: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_t2_unpacked": {
+        "Description": "T2: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_t2_unpack_err": {
+        "Description": "T2: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_t2_imported": {
+        "Description": "T2: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_received": {
+        "Description": "dMRI: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_unpacked": {
+        "Description": "dMRI: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_unpack_err": {
+        "Description": "dMRI: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_recon_req": {
+        "Description": "dMRI: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_missing_ks": {
+        "Description": "dMRI: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_reconned": {
+        "Description": "dMRI: Total number reconned",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_recon_err": {
+        "Description": "dMRI: Total number with recon errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_imported": {
+        "Description": "dMRI: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_received": {
+        "Description": "dMRI_FM: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_unpacked": {
+        "Description": "dMRI_FM: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_unpack_err": {
+        "Description": "dMRI_FM: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_recon_req": {
+        "Description": "dMRI_FM: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_missing_ks": {
+        "Description": "dMRI_FM: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_reconned": {
+        "Description": "dMRI_FM: Total number reconstructed",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_recon_err": {
+        "Description": "dMRI_FM: Total number with reconstruction errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_imported": {
+        "Description": "dMRI_FM: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_received": {
+        "Description": "dMRI_FM_AP: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_unpacked": {
+        "Description": "dMRI_FM_AP: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_unpack_err": {
+        "Description": "dMRI_FM_AP: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_recon_req": {
+        "Description": "dMRI_FM_AP: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_missing_ks": {
+        "Description": "dMRI_FM_AP: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_reconned": {
+        "Description": "dMRI_FM_AP: Total number reconstructed",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_recon_err": {
+        "Description": "dMRI_FM_AP: Total number with reconstruction errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_ap_imported": {
+        "Description": "dMRI_FM_AP: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_received": {
+        "Description": "dMRI_FM_PA: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_unpacked": {
+        "Description": "dMRI_FM_PA: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_unpack_err": {
+        "Description": "dMRI_FM_PA: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_recon_req": {
+        "Description": "dMRI_FM_PA: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_missing_ks": {
+        "Description": "dMRI_FM_PA: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_reconned": {
+        "Description": "dMRI_FM_PA: Total number reconstructed",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_recon_err": {
+        "Description": "dMRI_FM_PA: Total number with reconstruction errors",
+        "DataType": "Integer"
+    },
+    "iqc_dmri_fm_pa_imported": {
+        "Description": "dMRI_FM_PA: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_received": {
+        "Description": "rsMRI: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_unpacked": {
+        "Description": "rsfMRI: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_unpack_err": {
+        "Description": "rsfMRI: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_recon_req": {
+        "Description": "rsfMRI: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_missing_ks": {
+        "Description": "rsfMRI: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_reconned": {
+        "Description": "rsfMRI: Total number reconned",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_recon_err": {
+        "Description": "rsfMRI: Total number with recon errors",
+        "DataType": "Integer"
+    },
+    "iqc_rsfmri_imported": {
+        "Description": "rsfMRI: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_received": {
+        "Description": "fMRI_FM: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_unpacked": {
+        "Description": "fMRI_FM: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_unpack_err": {
+        "Description": "fMRI_FM: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_imported": {
+        "Description": "fMRI_FM: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_ap_received": {
+        "Description": "fMRI_FM_AP: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_ap_unpacked": {
+        "Description": "fMRI_FM_AP: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_ap_unpack_err": {
+        "Description": "fMRI_FM_AP: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_ap_imported": {
+        "Description": "fMRI_FM_AP: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_pa_received": {
+        "Description": "fMRI_FM_PA: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_pa_unpacked": {
+        "Description": "fMRI_FM_PA: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_pa_unpack_err": {
+        "Description": "fMRI_FM_PA: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_fmri_fm_pa_imported": {
+        "Description": "fMRI_FM_PA: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_mid_received": {
+        "Description": "MID: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_mid_unpacked": {
+        "Description": "MID: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_mid_unpack_err": {
+        "Description": "MID: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_mid_recon_req": {
+        "Description": "MID: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_mid_missing_ks": {
+        "Description": "MID: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_mid_reconned": {
+        "Description": "MID: Total number reconstructed",
+        "DataType": "Integer"
+    },
+    "iqc_mid_recon_err": {
+        "Description": "MID: Total number with reconstruction errors",
+        "DataType": "Integer"
+    },
+    "iqc_mid_imported": {
+        "Description": "MID: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_sst_received": {
+        "Description": "SST: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_sst_unpacked": {
+        "Description": "SST: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_sst_unpack_err": {
+        "Description": "SST: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_sst_recon_req": {
+        "Description": "SST: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_sst_missing_ks": {
+        "Description": "SST: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_sst_reconned": {
+        "Description": "SST: Total number reconstructed",
+        "DataType": "Integer"
+    },
+    "iqc_sst_recon_err": {
+        "Description": "SST: Total number with reconstruction errors",
+        "DataType": "Integer"
+    },
+    "iqc_sst_imported": {
+        "Description": "SST: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_nback_received": {
+        "Description": "nBACK: Total number received",
+        "DataType": "Integer"
+    },
+    "iqc_nback_unpacked": {
+        "Description": "nBACK: Total number unpacked",
+        "DataType": "Integer"
+    },
+    "iqc_nback_unpack_err": {
+        "Description": "nBACK: Total number with unpack errors",
+        "DataType": "Integer"
+    },
+    "iqc_nback_recon_req": {
+        "Description": "nBACK: Total number require reconstruction",
+        "DataType": "Integer"
+    },
+    "iqc_nback_missing_ks": {
+        "Description": "nBACK: Total number with missing kspace data",
+        "DataType": "Integer"
+    },
+    "iqc_nback_reconned": {
+        "Description": "nBACK: Total number reconstructed",
+        "DataType": "Integer"
+    },
+    "iqc_nback_recon_err": {
+        "Description": "nBACK: Total number with reconstruction errors",
+        "DataType": "Integer"
+    },
+    "iqc_nback_imported": {
+        "Description": "nBACK: Total number imported",
+        "DataType": "Integer"
+    },
+    "iqc_unpack_err": {
+        "Description": "Series has unpack error",
+        "DataType": "String"
+    },
+    "iqc_missing_ks": {
+        "Description": "Series has missing kspace data",
+        "DataType": "String"
+    },
+    "iqc_recon_err": {
+        "Description": "Series has reconstruction errors",
+        "DataType": "String"
+    },
+    "iqc_t1_missing": {
+        "Description": "T1: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_t2_missing": {
+        "Description": "T2: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_dmri_missing": {
+        "Description": "dMRI: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_rsfmri_missing": {
+        "Description": "rsfMRI: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_mid_missing": {
+        "Description": "MID: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_sst_missing": {
+        "Description": "SST: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_nback_missing": {
+        "Description": "nBACK: Total number missing",
+        "DataType": "String"
+    },
+    "iqc_series_missing": {
+        "Description": "Total number missing series",
+        "DataType": "String"
+    },
+    "iqc_incomingtopc_event": {
+        "Description": "Given series has been sent to PC check",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_file_found": {
+        "Description": "MID E-prime file found and readable",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_folder_found": {
+        "Description": "MID E-prime folder found and readable",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_pguid_match": {
+        "Description": "MID E-prime file has matched pGUID",
+        "DataType": "String"
+    },
+    "iqc_mid_eprime_missing": {
+        "Description": "MID E-prime file missing",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_file_found": {
+        "Description": "nBACK E-prime file found and readable",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_folder_found": {
+        "Description": "nBACK E-prime folder found and readable",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_pguid_match": {
+        "Description": "nBACK E-prime file has matched pGUID",
+        "DataType": "String"
+    },
+    "iqc_nback_epx_file_found": {
+        "Description": "nBACK extra E-prime file found and readable",
+        "DataType": "String"
+    },
+    "iqc_nback_epx_folder_found": {
+        "Description": "nBACK extra E-prime folder found and readable",
+        "DataType": "String"
+    },
+    "iqc_nback_epx_pguid_match": {
+        "Description": "nBACK extra E-prime has match pGUID",
+        "DataType": "String"
+    },
+    "iqc_nback_eprime_missing": {
+        "Description": "nBACK E-prime file missing",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_file_found": {
+        "Description": "SST E-prime file found and readable",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_folder_found": {
+        "Description": "SST E-prime folder found and readable",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_pguid_match": {
+        "Description": "SST E-prime file has match pGUID",
+        "DataType": "String"
+    },
+    "iqc_sst_eprime_missing": {
+        "Description": "SST E-prime file missing",
+        "DataType": "String"
+    },
+    "iqc_eprime_missing": {
+        "Description": "Event has missing E-prime file",
+        "DataType": "String"
+    },
+    "iqc_nback_epx_missing": {
+        "Description": "nBACK extra E-prime file missing",
+        "DataType": "String"
+    },
+    "iqc_ra_series_missing_memo": {
+        "Description": "RA report missing series memo",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_pguid_mis": {
+        "Description": "SST eprime data file has mismatched pGUID",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_pguid_mis": {
+        "Description": "MID eprime data file has mismatched pGUID",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_pguid_mis": {
+        "Description": "nBack eprime data file has mismatched pGUID",
+        "DataType": "String"
+    },
+    "iqc_nback_epx_pguid_mis": {
+        "Description": "nBack extra eprime data file has mismatched pGUID",
+        "DataType": "String"
+    },
+    "iqc_event_revdisagree": {
+        "Description": "A given pguidevent has at least one series with reviewer disagreement",
+        "DataType": "String"
+    },
+    "iqc_event_multirev": {
+        "Description": "A given pguidevent has all series reviewed by at least two reviewers (which also means this pguidevent passed QC totally)",
+        "DataType": "String"
+    },
+    "iqc_event_waitautoqc": {
+        "Description": "A given pguidevent has at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_event_procfail": {
+        "Description": "A given pguidevent has at least one series with process error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_event_needrawqc": {
+        "Description": "A  given pguidevent has at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_lap_missing": {
+        "Description": "SST eprime file (laptop) missing",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_scan_missing": {
+        "Description": "SST eprime file (scanner) missing",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_lap_missing": {
+        "Description": "MID eprime file (laptop) missing",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_scan_missing": {
+        "Description": "MID eprime file (scanner) missing",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_lap_missing": {
+        "Description": "Nback eprime file (laptop) missing",
+        "DataType": "String"
+    },
+    "iqc_eprime_lap_missing": {
+        "Description": "Event has missing eprime files collected from laptop",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_scan_missing": {
+        "Description": "Nback eprime file (scanner) missing",
+        "DataType": "String"
+    },
+    "iqc_eprime_scan_missing": {
+        "Description": "Event has missing eprime files collected in scanner",
+        "DataType": "String"
+    },
+    "iqc_t1_waitautoqc": {
+        "Description": "T1: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_t2_waitautoqc": {
+        "Description": "T2:  at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_waitautoqc": {
+        "Description": "dMRI: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_waitautoqc": {
+        "Description": "dMRI FM: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_ap_waitautoqc": {
+        "Description": "dMRI FM AP: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_pa_waitautoqc": {
+        "Description": "dMRI FM PA: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_waitautoqc": {
+        "Description": "fMRI FM: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_ap_waitautoqc": {
+        "Description": "fMRI FM AP: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_pa_waitautoqc": {
+        "Description": "fMRI FM PA:  at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_mid_waitautoqc": {
+        "Description": "MID: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_sst_waitautoqc": {
+        "Description": "SST: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_nback_waitautoqc": {
+        "Description": "nBack: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_rsfmri_waitautoqc": {
+        "Description": "rsfMRI: at least one series is waiting for autoQC",
+        "DataType": "String"
+    },
+    "iqc_t1_needrawqc": {
+        "Description": "T1: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_t2_needrawqc": {
+        "Description": "T2: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_needrawqc": {
+        "Description": "dMRI: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_needrawqc": {
+        "Description": "dMRI FM: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_ap_needrawqc": {
+        "Description": "dMRI FM AP: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_pa_needrawqc": {
+        "Description": "dMRI FM AP: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_needrawqc": {
+        "Description": "fMRI FM: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_ap_needrawqc": {
+        "Description": "fMRI FM AP: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_pa_needrawqc": {
+        "Description": "fMRI FM PA: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_mid_needrawqc": {
+        "Description": "MID: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_sst_needrawqc": {
+        "Description": "SST: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_nback_needrawqc": {
+        "Description": "nBack: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_rsfmri_needrawqc": {
+        "Description": "rsfMRI: at least one series needs rawQC",
+        "DataType": "String"
+    },
+    "iqc_t1_procfail": {
+        "Description": "T1: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_t2_procfail": {
+        "Description": "T2: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_procfail": {
+        "Description": "dMRI: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_ap_procfail": {
+        "Description": "dMRI FM AP: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_pa_procfail": {
+        "Description": "dMRI FM PA: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_ap_procfail": {
+        "Description": "fMRI FM AP: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_pa_procfail": {
+        "Description": "fMRI FM PA: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_mid_procfail": {
+        "Description": "MID: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_sst_procfail": {
+        "Description": "SST: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_nback_procfail": {
+        "Description": "nBack: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_rsfmri_procfail": {
+        "Description": "rsfMRI: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_procfail": {
+        "Description": "dMRI FM: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_procfail": {
+        "Description": "fMRI FM: at least one series has a processing error before autoQC",
+        "DataType": "String"
+    },
+    "iqc_eprime_scan_t_match": {
+        "Description": "Imaging-series and behavioral-data files match for all tasks.  i.e. time differences are less than a threshold time. | -1= Either file not found; 0= No match; 1= Match",
+        "DataType": "Integer",
+        "ValueRange": "-1 ; 0 ; 1",
+        "Levels": {
+            "-1": "Either file not found",
+            "0": "No match",
+            "1": "Match"
+        }
+    },
+    "iqc_study_date": {
+        "Description": "Imaging-series date",
+        "DataType": "String"
+    },
+    "iqc_1st_series_time": {
+        "Description": "Time of first series",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_datetime_found": {
+        "Description": "Eprime SST file found and readable | 0= Not Found; 1= Found",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "Not Found",
+            "1": "Found"
+        }
+    },
+    "iqc_sst_ep_file_resf": {
+        "Description": "Diagnostic number, formed by summing:       File found?   0  -->  [Unable to find file];    Encoding:   1,      2  -->  ['utf-8','utf-16'];   Separator: 10,     20  -->  [Tab, Comma];    Quoted rows?   0,    100  -->  [No, Yes];  Start_time_info:              0,   1000  -->  [Found, Unable to extract]; File read?  0,  10000  -->  [Yes,   Unable to read];  Filename contains '()':   100000  -->  [Yes];   Experiment matches filename?    1000000  -->  [No]",
+        "DataType": "String"
+    },
+    "iqc_sst_study_date": {
+        "Description": "Date of first SST imaging series",
+        "DataType": "String"
+    },
+    "iqc_sst_series_time": {
+        "Description": "Time of first SST imaging series",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_date": {
+        "Description": "Eprime SST date",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_time": {
+        "Description": "Eprime SST starting time",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_t_rel_to_series_min": {
+        "Description": "Minimum time difference found between E-prime SST file and associated fMRI or MRI from the same session   (Float),  minutes.",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_t_rel_to_series_max": {
+        "Description": "Maximum time difference found between E-prime SST file and associated fMRI or MRI from the same session  (Float),  minutes.",
+        "DataType": "String"
+    },
+    "iqc_sst_ep_t_series_match": {
+        "Description": "SST imaging-series and behavioral-data files match, i.e. time difference less than a threshold time. | -1= Either file not found; 0= No match; 1= Match",
+        "DataType": "Integer",
+        "ValueRange": "-1 ; 0 ; 1",
+        "Levels": {
+            "-1": "Either file not found",
+            "0": "No match",
+            "1": "Match"
+        }
+    },
+    "iqc_mid_ep_datetime_found": {
+        "Description": "Eprime MID file found and readable | 0= Not Found; 1= Found",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "Not Found",
+            "1": "Found"
+        }
+    },
+    "iqc_mid_ep_file_resf": {
+        "Description": "Diagnostic number, formed by summing:       File found?   0  -->  [Unable to find file];    Encoding:   1,      2  -->  ['utf-8','utf-16'];   Separator: 10,     20  -->  [Tab, Comma];    Quoted rows?   0,    100  -->  [No, Yes];  Start_time_info:              0,   1000  -->  [Found, Unable to extract]; File read?  0,  10000  -->  [Yes,   Unable to read];  Filename contains '()':   100000  -->  [Yes];   Experiment matches filename?    1000000  -->  [No]",
+        "DataType": "String"
+    },
+    "iqc_mid_study_date": {
+        "Description": "Date of first MID imaging series",
+        "DataType": "String"
+    },
+    "iqc_mid_series_time": {
+        "Description": "Time of first MID imaging series",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_date": {
+        "Description": "Eprime MID date",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_time": {
+        "Description": "Eprime MID starting time",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_t_rel_to_series_min": {
+        "Description": "Minimum time difference found between E-prime MID file and associated fMRI or MRI from the same session.   (Float),  minutes.",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_t_rel_to_series_max": {
+        "Description": "Maximum time difference found between E-prime MID file and associated fMRI or MRI from the same session.   (Float),  minutes.",
+        "DataType": "String"
+    },
+    "iqc_mid_ep_t_series_match": {
+        "Description": "MID imaging-series and behavioral-data files match, i.e. time difference less than a threshold time. | -1= Either file not found; 0= No match; 1= Match",
+        "DataType": "Integer",
+        "ValueRange": "-1 ; 0 ; 1",
+        "Levels": {
+            "-1": "Either file not found",
+            "0": "No match",
+            "1": "Match"
+        }
+    },
+    "iqc_nback_ep_datetime_found": {
+        "Description": "Eprime nBack file found and readable | 0= Not Found; 1= Found",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "Not Found",
+            "1": "Found"
+        }
+    },
+    "iqc_nback_ep_file_resf": {
+        "Description": "Diagnostic number, formed by summing:       File found?   0  -->  [Unable to find file];    Encoding:   1,      2  -->  ['utf-8','utf-16'];   Separator: 10,     20  -->  [Tab, Comma];    Quoted rows?   0,    100  -->  [No, Yes];  Start_time_info:              0,   1000  -->  [Found, Unable to extract]; File read?  0,  10000  -->  [Yes,   Unable to read];  Filename contains '()':   100000  -->  [Yes];   Experiment matches filename?    1000000  -->  [No]",
+        "DataType": "String"
+    },
+    "iqc_nback_study_date": {
+        "Description": "Date of first NBACK imaging series",
+        "DataType": "String"
+    },
+    "iqc_nback_series_time": {
+        "Description": "Time of first NBACK imaging series",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_date": {
+        "Description": "Eprime nBack date",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_time": {
+        "Description": "Eprime nBack starting time",
+        "DataType": "String"
+    },
+    "iqcnbackeptreltoseriesmin": {
+        "Description": "Minimum time difference found between E-prime nBack file and associated fMRI or MRI from the same session   (Float),  minutes.",
+        "DataType": "String"
+    },
+    "iqcnbackeptreltoseriesmax": {
+        "Description": "Maximum time difference found between E-prime nBack file and associated fMRI or MRI from the same session   (Float),  minutes.",
+        "DataType": "String"
+    },
+    "iqc_nback_ep_t_series_match": {
+        "Description": "NBACK imaging-series and behavioral-data files match, i.e. time difference less than a threshold time. | -1= Either file not found; 0= No match; 1= Match",
+        "DataType": "Integer",
+        "ValueRange": "-1 ; 0 ; 1",
+        "Levels": {
+            "-1": "Either file not found",
+            "0": "No match",
+            "1": "Match"
+        }
+    },
+    "iqc_eprime_lost_sst": {
+        "Description": "Is the E-Prime SST data for this participant lost? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "iqc_eprime_lost_mid": {
+        "Description": "Is the E-Prime MID data for this participant lost? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "iqc_eprime_lost_nback": {
+        "Description": "Is the E-Prime N-BACK data for this participant lost? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "iqc_eprime_lost_nback_rec": {
+        "Description": "Is the E-Prime N-BACK REC data for this participant lost? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "eprime_mismatch_ok_mid": {
+        "Description": "Ignore difference between time of MID image series and MID E-prime file | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "eprime_mismatch_ok_sst": {
+        "Description": "Ignore difference between time of SST image series and SST E-prime file | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "eprime_mismatch_ok_nback": {
+        "Description": "Ignore difference between time of nBack image series and nBack E-prime file | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "iqc_eprime_status": {
+        "Description": "Status of the E-Prime data (DAIC use only). | 1 = ok; 2 = questionable timing relative to image data (>12min); 3 = should be excluded",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2 ; 3",
+        "Levels": {
+            "1": "ok",
+            "2": "questionable timing relative to image data (>12min)",
+            "3": "should be excluded"
+        }
+    },
+    "iqc_t1_rename_err": {
+        "Description": "T1: Total number with rename errors",
+        "DataType": "String"
+    },
+    "iqc_t2_rename_err": {
+        "Description": "T2: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_dmri_rename_err": {
+        "Description": "dMRI: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_rename_err": {
+        "Description": "dMRI FM: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_ap_rename_err": {
+        "Description": "dMRI_FM_AP: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_dmri_fm_pa_rename_err": {
+        "Description": "dMRI_FM_PA: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_rsfmri_rename_err": {
+        "Description": "rsFMRI: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_rename_err": {
+        "Description": "fMRI FM: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_ap_rename_err": {
+        "Description": "fMRI_FM_AP: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_fmri_fm_pa_rename_err": {
+        "Description": "fMRI_FM_PA: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_mid_rename_err": {
+        "Description": "MID: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_sst_rename_err": {
+        "Description": "SST: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_nback_rename_err": {
+        "Description": "nBack: Total number with rename error",
+        "DataType": "String"
+    },
+    "iqc_rename_err": {
+        "Description": "Total number of rename error",
+        "DataType": "String"
+    }
+}

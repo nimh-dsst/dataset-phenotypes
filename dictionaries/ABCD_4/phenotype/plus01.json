@@ -1,0 +1,738 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "plus2_bl1": {
+        "Description": "Participant is completing their baseline visit in one day. Please change form status to 'complete' and then submit. | Descriptive field",
+        "DataType": "String"
+    },
+    "pls2_need_p": {
+        "Description": "Will Neurocog and/or MRI be completed in this session? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_select_language___1": {
+        "Description": "\u00bfEspa\u00f1ol? (1, S\u00ed) | 0 = No; 1 = Yes",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_p_intro": {
+        "Description": "Please take a moment to answer some questions about your son/daughter's medication use within the past day.\r\n\r\nIf medication is not listed in the drop-down menu (with the exception of multivitamins), scroll down to notes section and enter information there. For multivitamins, please choose  \"Vitamin\" from the drop-down menu. Por favor dedique unos momentos a contestar algunas preguntas sobre los medicamentos que ha tomado o usado su ni\u00f1o(a) en el \u00faltimo d\u00eda.\r\n\r\nSi la medicaci\u00f3n no est\u00e1 en el men\u00fa desplegable (con la excepci\u00f3n de multivitaminas), despl\u00e1cese hacia abajo a la secci\u00f3n de notas e ingrese la informaci\u00f3n ah\u00ed. Para multivitaminas, por favor escoja \"Vitamina\" en el men\u00fa desplegable. | Descriptive field",
+        "DataType": "String"
+    },
+    "pls2_p_used_med": {
+        "Description": "P. Has your son/daughter used any Over-the-Counter or Prescription medications in the last 24 hours? / \u00bfSu ni\u00f1o(a) ha tomado o usado alg\u00fan medicamento recetado o de venta libre en las \u00faltimas 24 horas? Y. Have you used any over-the-counter or prescription medications in the last 24 hours? | 1 = Yes /S\u00ed; 0 = No /No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes /S\u00ed",
+            "0": "No /No"
+        }
+    },
+    "pls2_p_med1_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_p_otc_rx_days_y": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls2_p_youth_ago": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls2_p_med2_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_p_otc_rx_days_y_2": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls2_p_youth_ago_2": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls2_p_med3_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_p_otc_rx_days_y_3": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls2_p_youth_ago_3": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls2_p_med4_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_p_otc_rx_days_y_4": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls2_p_youth_ago_4": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls2_p_med5_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_p_otc_rx_days_y_5": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls2_p_youth_ago_5": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls2_p_caf": {
+        "Description": "Has your son/daughter consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso or green tea, black tea, or sweet tea) in the last 24 hours? \u00bfHa consumido su ni\u00f1o(a) en las \u00faltimas 24 horas alguna bebida con cafe\u00edna (tal como, Mountain Dew, Coca-cola, Pepsi, Barq's root beer, bebidas energizantes como Red Bull o Monster, caf\u00e9, o t\u00e9 verde, t\u00e9 negro, o 'sweet tea')? | 1 = Yes S\u00ed; 0 = No No; 999 = Don't know No lo s\u00e9",
+        "DataType": "Integer",
+        "ValueRange": "0; 1; 999",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No",
+            "999": "Don't know No lo s\u00e9"
+        }
+    },
+    "pls2_p_caf_ago": {
+        "Description": "How long ago did your son/daughter last consume a caffeinated beverage? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) consumi\u00f3 una bebida con cafe\u00edna? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls2_p_date_year": {
+        "Description": "What is the current time/date: Time(hh:mm) AM/PM Date(dd/mm/yyyy): Hora y fecha actual: Hora (hh:mm) a.m./p.m.  Fecha (dd/mm/aaaa):",
+        "DataType": "String"
+    },
+    "pls3_need_p": {
+        "Description": "For RA ONLY: Will Neurocog and/or MRI be completed in Session 3? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_p_intro": {
+        "Description": "Please take a moment to answer some questions about your son/daughter's medication use within the past day.\r\n\r\nIf medication is not listed in the drop-down menu (with the exception of multivitamins), scroll down to notes section and enter information there. For multivitamins, please choose  \"Vitamin\" from the drop-down menu. Por favor dedique unos momentos a contestar algunas preguntas sobre los medicamentos que ha tomado o usado su ni\u00f1o(a) en el \u00faltimo d\u00eda.\r\n\r\nSi la medicaci\u00f3n no est\u00e1 en el men\u00fa desplegable (con la excepci\u00f3n de multivitaminas), despl\u00e1cese hacia abajo a la secci\u00f3n de notas e ingrese la informaci\u00f3n ah\u00ed. Para multivitaminas, por favor escoja \"Vitamina\" en el men\u00fa desplegable. | Descriptive field",
+        "DataType": "String"
+    },
+    "pls3_used_med_p": {
+        "Description": "Has your son/daughter used any Over-the-Counter or Prescription medications in the last 24 hours? \u00bfSu ni\u00f1o(a) ha tomado o usado alg\u00fan medicamento recetado o de venta libre en las \u00faltimas 24 horas? | 1 = Yes S\u00ed; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No"
+        }
+    },
+    "pls3_med1_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_med1_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls3_med1_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls3_med2_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_med2_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls3_med2_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls3_med3_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_med3_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls3_med3_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls3_med4_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_med4_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls3_med4_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls3_med5_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_med5_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls3_med5_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls3_caf_p": {
+        "Description": "Has your son/daughter consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso or green tea, black tea, or sweet tea) in the last 24 hours? \u00bfHa consumido su ni\u00f1o(a) en las \u00faltimas 24 horas alguna bebida con cafe\u00edna (tal como, Mountain Dew, Coca-cola, Pepsi, Barq's root beer, bebidas energizantes como Red Bull o Monster, caf\u00e9, o t\u00e9 verde, t\u00e9 negro, o 'sweet tea')? | 1=Yes; 0=No; 999=Do not know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Do not know"
+        }
+    },
+    "pls3_caf_ago_p": {
+        "Description": "How long ago did your son/daughter last consume a caffeinated beverage? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) consumi\u00f3 una bebida con cafe\u00edna? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls3_date_year_p": {
+        "Description": "What is the current time/date: Time(hh:mm) AM/PM Date(dd/mm/yyyy): Hora y fecha actual: Hora (hh:mm) a.m./p.m.  Fecha (dd/mm/aaaa):",
+        "DataType": "String"
+    },
+    "pls4_need_p": {
+        "Description": "For RA ONLY: Will Neurocog and/or MRI be completedin Session 4? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls4_intro_p": {
+        "Description": "Please take a moment to answer some questions about your son/daughter's medication use within the past day.\r\n\r\nIf medication is not listed in the drop-down menu (with the exception of multivitamins), scroll down to notes section and enter information there. For multivitamins, please choose  \"Vitamin\" from the drop-down menu. Por favor dedique unos momentos a contestar algunas preguntas sobre los medicamentos que ha tomado o usado su ni\u00f1o(a) en el \u00faltimo d\u00eda.\r\n\r\nSi la medicaci\u00f3n no est\u00e1 en el men\u00fa desplegable (con la excepci\u00f3n de multivitaminas), despl\u00e1cese hacia abajo a la secci\u00f3n de notas e ingrese la informaci\u00f3n ah\u00ed. Para multivitaminas, por favor escoja \"Vitamina\" en el men\u00fa desplegable. | Descriptive field",
+        "DataType": "String"
+    },
+    "pls4_used_med_p": {
+        "Description": "Has your son/daughter used any Over-the-Counter or Prescription medications in the last 24 hours? \u00bfSu ni\u00f1o(a) ha tomado o usado alg\u00fan medicamento recetado o de venta libre en las \u00faltimas 24 horas? | 1 = Yes S\u00ed; 0 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes S\u00ed",
+            "0": "No No"
+        }
+    },
+    "pls4_med1_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_med1_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls4_med1_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls4_med2_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_med2_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls4_med2_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls4_med3_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_med3_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls4_med3_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls4_med4_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_med4_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls4_med4_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls4_med5_rxnorm_p": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication taken by your child; no need to include dosage)  Nombre del Medicamento (por favor, elija la formulaci\u00f3n que m\u00e1s se aproxime a la medicaci\u00f3n tomada por su ni\u00f1o(a); no hay necesidad de incluir la dosis) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_med5_days_p": {
+        "Description": "Is the medication extended-release (XR)? \u00bfEl medicamento es de liberaci\u00f3n prolongada (XR)?M | 1 = Yes; 2 = No No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 2",
+        "Levels": {
+            "1": "Yes",
+            "2": "No No"
+        }
+    },
+    "pls4_med5_youth_ago_p": {
+        "Description": "How long ago did your son/daughter take the medication? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) tom\u00f3 o us\u00f3 dicho medicamento? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls4_caf_p": {
+        "Description": "Has your son/daughter consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso or green tea, black tea, or sweet tea) in the last 24 hours? \u00bfHa consumido su ni\u00f1o(a) en las \u00faltimas 24 horas alguna bebida con cafe\u00edna (tal como, Mountain Dew, Coca-cola, Pepsi, Barq's root beer, bebidas energizantes como Red Bull o Monster, caf\u00e9, o t\u00e9 verde, t\u00e9 negro, o 'sweet tea')? | 1=Yes; 0=No; 999=Do not know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Do not know"
+        }
+    },
+    "pls4_caf_ago_p": {
+        "Description": "How long ago did your son/daughter last consume a caffeinated beverage? \u00bfHace cu\u00e1nto tiempo que su ni\u00f1o(a) consumi\u00f3 una bebida con cafe\u00edna? | (in hours; 30 mins=0.5) (en horas; 30 min = 0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5) (en horas",
+            "30 min": "0.5)"
+        }
+    },
+    "pls4_date_year_p": {
+        "Description": "What is the current time/date: Time(hh:mm) AM/PM Date(dd/mm/yyyy): Hora y fecha actual: Hora (hh:mm) a.m./p.m.  Fecha (dd/mm/aaaa):",
+        "DataType": "String"
+    },
+    "pls3_cbd_product_p__6": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)  Don't know / No s? | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls4_cbd_p": {
+        "Description": "Has your son/daughter used any CBD (or cannabidiol) products with your or your doctor's permission, such as Epidiolex or other over the counter CBD product, in the last 24 hours?  Su hija/hijo ha usado alg?n producto de CBD (cannabidiol) con su permiso o el permiso de su doctor, tales como Epidiolex u otro producto de venta libre de CBD en las ultimas 24 horas? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls4_cbd_ago_p": {
+        "Description": "How long ago did h/she last use the CBD product? /Hace cuanto tiempo uso el producto de CBD?",
+        "DataType": "Float"
+    },
+    "pls4_cbd_product_p__1": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)  Epidiolex / Epidiolex | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls4_cbd_product_p__2": {
+        "Description": "What type of CBD product did they use? (Choose all that apply)  Qu? tipo de producto uso (Eliga todas las que correspondan)  Oil or tincture by mouth / Aceite o infusi?n oral | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls4_cbd_product_p__3": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)   Inhaled or smoked product / Inhalado o producto fumado | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls4_cbd_product_p__4": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)   Edible, capsule, or pill / Comestible, c?psula, o p?ldora | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls4_cbd_product_p__5": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)  : Topical lotion or transdermal patch / Loci?n t?pica o parche transd?rmico | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls4_cbd_product_p__6": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)  : Don't know / No s? | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_cbd_p": {
+        "Description": "Has your son/daughter used any CBD (or cannabidiol) products with your or your doctor's permission, such as Epidiolex or other over the counter CBD product, in the last 24 hours? Su hija/hijo ha usado alg?n producto de CBD (cannabidiol) con su permiso o el permiso de su doctor, tales como Epidiolex u otro producto de venta libre de CBD en las ultimas 24 horas? | 1 = Yes ;0 = No ;999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls2_cbd_ago_p": {
+        "Description": "How long ago did h/she last use the CBD product?   Hace cuanto tiempo uso el producto de CBD?",
+        "DataType": "Float"
+    },
+    "pls2_cbd_product_p__1": {
+        "Description": "What type of CBD product did h/she use? (Choose all that apply)  Loci?n t?pica o parche transd?rmico (Eliga todas las que correspondan) :  Epidiolex  / Epidiolex | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_cbd_product_p__2": {
+        "Description": "What type of CBD product did h/she use? (Choose all that apply)  Loci?n t?pica o parche transd?rmico (Eliga todas las que correspondan) : Oil or tincture by mouth / Aceite o infusi?n oral | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_cbd_product_p__3": {
+        "Description": "What type of CBD product did h/she use? (Choose all that apply)  Loci?n t?pica o parche transd?rmico (Eliga todas las que correspondan) :  Inhaled or smoked product/Inhalado o producto fumado | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_cbd_product_p__4": {
+        "Description": "What type of CBD product did h/she use? (Choose all that apply)  Loci?n t?pica o parche transd?rmico (Eliga todas las que correspondan) :  Edible, capsule, or pill / Comestible, c?psula, o p?ldora | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_cbd_product_p__5": {
+        "Description": "What type of CBD product did h/she use? (Choose all that apply)  Loci?n t?pica o parche transd?rmico (Eliga todas las que correspondan) : Topical lotion or transdermal patch / Loci?n t?pica o parche transd?rmico | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls2_cbd_product_p__6": {
+        "Description": "What type of CBD product did h/she use? (Choose all that apply)  Loci?n t?pica o parche transd?rmico (Eliga todas las que correspondan) : Don't know / No s? | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls3_cbd_p": {
+        "Description": "Has your son/daughter used any CBD (or cannabidiol) products with your or your doctor's permission, such as Epidiolex or other over the counter CBD product, in the last 24 hours?  Su hija/hijo ha usado alg?n producto de CBD (cannabidiol) con su permiso o el permiso de su doctor, tales como Epidiolex u otro producto de venta libre de CBD en las ultimas 24 horas? | 1 = Yes ; 0 = No; 999 = Don't know ",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls3_cbd_ago_p": {
+        "Description": "How long ago did h/she last use the CBD product?  Hace cuanto tiempo uso el producto de CBD?",
+        "DataType": "Float"
+    },
+    "pls3_cbd_product_p__1": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan): Epidiolex / Epidiolex | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls3_cbd_product_p__2": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan) Oil or tincture by mouth / Aceite o infusi?n oral | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls3_cbd_product_p__3": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan) Inhaled or smoked product / Inhalado o producto fumado | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls3_cbd_product_p__4": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan) : Edible, capsule, or pill / Comestible, c?psula, o p?ldora | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "pls3_cbd_product_p__5": {
+        "Description": "What type of CBD product did they use? (Choose all that apply) Qu? tipo de producto uso (Eliga todas las que correspondan)  Topical lotion or transdermal patch / Loci?n t?pica o parche transd?rmico | 0 = No; 1 = Yes ",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "parent_rules_q_10": {
+        "Description": "What are the family rules about using electronic nicotine or vaping products | 1=Not allowed to use electronic nicotine products under any circumstances ; 2=Not allowed to use electronic nicotine products in home - no family rules outside home ; 3=Allowed to use electronic nicotine products in designated areas at home ; 4=Allowed to use electronic nicotine products anywhere ; 5=I don't set rules about using electronic nicotine products ; 6=I haven't made rules yet about my child using electronic nicotine products",
+        "DataType": "Integer",
+        "ValueRange": "1::6",
+        "Levels": {
+            "1": "Not allowed to use electronic nicotine products under any circumstances",
+            "2": "Not allowed to use electronic nicotine products in home - no family rules outside home",
+            "3": "Allowed to use electronic nicotine products in designated areas at home",
+            "4": "Allowed to use electronic nicotine products anywhere",
+            "5": "I don't set rules about using electronic nicotine products",
+            "6": "I haven't made rules yet about my child using electronic nicotine products"
+        }
+    },
+    "parent_rules_q_11": {
+        "Description": "Are these the same rules for all family members?  | 1=No, applies only to children, not teen or adults ; 2=No, applies only to children and teen, not adult ; 3=Yes, applies to everyone",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "No, applies only to children, not teen or adults",
+            "2": "No, applies only to children and teen, not adult",
+            "3": "Yes, applies to everyone"
+        }
+    },
+    "parent_rules_q_12": {
+        "Description": "Do you enforce penalties for violating family rules about using electronic nicotine or vaping products? | 0=Never ; 1=Rarely  ; 2=Sometimes ; 3=Often ; 4=I have not had to enforce these rules",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Never",
+            "1": "Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "I have not had to enforce these rules"
+        }
+    }
+}

@@ -1,0 +1,3615 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_nback_r1_sem_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_nback_r1_sem_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_sem_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_r1_sem_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_r1_sem_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_r1_sem_sthvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_nback_r1_sem_mm": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_sem_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_sem_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_sem_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_sem_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1_sem_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_1": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_2": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_3": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_4": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_5": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_6": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_7": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_8": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_9": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_10": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_11": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_12": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_13": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_14": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_15": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_16": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_17": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_18": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_19": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_20": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_21": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_22": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_23": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_24": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_25": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_26": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_27": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_28": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_29": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_30": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_31": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_32": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_33": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_34": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_35": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_36": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_37": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_38": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_39": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_40": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_41": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_42": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_43": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_44": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_45": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_46": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_47": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_48": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_49": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_50": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_51": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_52": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_53": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_54": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_55": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_56": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_57": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_58": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_59": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_60": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_61": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_62": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_63": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_64": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_65": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_66": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_67": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_68": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_69": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_70": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_71": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_72": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_73": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_74": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_75": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_76": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_77": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_78": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_79": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_80": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_81": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_82": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_83": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_84": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_85": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_86": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_87": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_88": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_89": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_90": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_91": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_92": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_93": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_94": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_95": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_96": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_97": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_98": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_99": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_100": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_101": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_102": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_103": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_104": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_105": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_106": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_107": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_108": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_109": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_110": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_111": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_112": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_113": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_114": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_115": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_116": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_117": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_118": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_119": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_120": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_121": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_122": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_123": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_124": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_125": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_126": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_127": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_128": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_129": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_130": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_131": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_132": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_133": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_134": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_135": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_136": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_137": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_138": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_139": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_140": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_141": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_142": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_143": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_144": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_145": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_146": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_147": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_148": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_149": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_150": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_151": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_152": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_153": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_154": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_155": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_156": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_157": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_158": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_159": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_160": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_161": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_162": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_163": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_164": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_165": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_166": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_167": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_168": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_169": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_170": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_171": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_172": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_173": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_174": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_175": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_176": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_177": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_178": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_179": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_180": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_181": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_182": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_183": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_184": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_185": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_186": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_187": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_188": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_189": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_190": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_191": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_192": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_193": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_194": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_195": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_196": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_197": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_198": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_199": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_200": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_201": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_202": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_203": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_204": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_205": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_206": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_207": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_208": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_209": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_210": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_211": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_212": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_213": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_214": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_215": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_216": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_217": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_218": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_219": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_220": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_221": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_222": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_223": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_224": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_225": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_226": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_227": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_228": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_229": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_230": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_231": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_232": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_233": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_234": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_235": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_236": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_237": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_238": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_239": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_240": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_241": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_242": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_243": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_244": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_245": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_246": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_247": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_248": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_249": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_250": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_251": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_252": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_253": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_254": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_255": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_256": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_257": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_258": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_259": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_260": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_261": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_262": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_263": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_264": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_265": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_266": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_267": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_268": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_269": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_270": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_271": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_272": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_273": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_274": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_275": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_276": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_277": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_278": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_279": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_280": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_281": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_282": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_283": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_284": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_285": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_286": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_287": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_288": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_289": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_290": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_291": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_292": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_293": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_294": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_295": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_296": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_297": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_298": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_299": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_300": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_301": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_302": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_303": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_304": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_305": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_306": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_307": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_308": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_309": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_310": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_311": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_312": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_313": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_314": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_315": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_316": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_317": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_318": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_319": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_320": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_321": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_322": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_323": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_324": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_325": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_326": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_327": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_328": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_329": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_330": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_331": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_332": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_333": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_334": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_335": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_336": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_337": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_338": {
+        "Description": "Standard error of the mean for nBack run 1 0 back condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_339": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_340": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_341": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_342": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_343": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_344": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_345": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_346": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_347": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_348": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_349": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_350": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_351": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_352": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_353": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_354": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_355": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_356": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_357": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_358": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_359": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_360": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_361": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_362": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_363": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_364": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_365": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_366": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_367": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_368": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_369": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_370": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_371": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_372": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_373": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_374": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_375": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_376": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_377": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_378": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_379": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_380": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_381": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_382": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_383": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_384": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_385": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_386": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_387": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_388": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_389": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_390": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_391": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_392": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_393": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_394": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_395": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_396": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_397": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_398": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_399": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_400": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_401": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_402": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_403": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_404": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_405": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_406": {
+        "Description": "Standard error of the mean for nBack run 1 2 back condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_407": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_408": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_409": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_410": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_411": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_412": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_413": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_414": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_415": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_416": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_417": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_418": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_419": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_420": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_421": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_422": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_423": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_424": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_425": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_426": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_427": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_428": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_429": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_430": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_431": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_432": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_433": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_434": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_435": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_436": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_437": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_438": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_439": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_440": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_441": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_442": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_443": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_444": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_445": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_446": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_447": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_448": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_449": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_450": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_451": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_452": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_453": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_454": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_455": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_456": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_457": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_458": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_459": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_460": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_461": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_462": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_463": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_464": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_465": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_466": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_467": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_468": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_469": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_470": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_471": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_472": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_473": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_474": {
+        "Description": "Standard error of the mean for nBack run 1 place condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_475": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_476": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_477": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_478": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_479": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_480": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_481": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_482": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_483": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_484": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_485": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_486": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_487": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_488": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_489": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_490": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_491": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_492": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_493": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_494": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_495": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_496": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_497": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_498": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_499": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_500": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_501": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_502": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_503": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_504": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_505": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_506": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_507": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_508": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_509": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_510": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_511": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_512": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_513": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_514": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_515": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_516": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_517": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_518": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_519": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_520": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_521": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_522": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_523": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_524": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_525": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_526": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_527": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_528": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_529": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_530": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_531": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_532": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_533": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_534": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_535": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_536": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_537": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_538": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_539": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_540": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_541": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_542": {
+        "Description": "Standard error of the mean for nBack run 1 emotion condition in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_543": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_544": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_545": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_546": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_547": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_548": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_549": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_550": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_551": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_552": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_553": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_554": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_555": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_556": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_557": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_558": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_559": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_560": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_561": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_562": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_563": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_564": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_565": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_566": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_567": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_568": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_569": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_570": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_571": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_572": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_573": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_574": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_575": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_576": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_577": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_578": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_579": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_580": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_581": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_582": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_583": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_584": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_585": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_586": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_587": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_588": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_589": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_590": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_591": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_592": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_593": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_594": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_595": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_596": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_597": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_598": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_599": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_600": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_601": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_602": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_603": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_604": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_605": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_606": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_607": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_608": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_609": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_610": {
+        "Description": "Standard error of the mean for nBack run 1 2 back versus 0 back contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_611": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_612": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_613": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_614": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_615": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_616": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_617": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_618": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_619": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_620": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_621": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_622": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_623": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_624": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_625": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_626": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_627": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_628": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_629": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_630": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_631": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_632": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_633": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_634": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_635": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_636": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_637": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_638": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_639": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_640": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_641": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_642": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_643": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_644": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_645": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_646": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_647": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_648": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_649": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_650": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_651": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_652": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_653": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_654": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_655": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_656": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_657": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_658": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_659": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_660": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_661": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_662": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_663": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_664": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_665": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_666": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_667": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_668": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_669": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_670": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_671": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_672": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_673": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_674": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_675": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_676": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_677": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_678": {
+        "Description": "Standard error of the mean for nBack run 1 face versus place contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_679": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_680": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_681": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_682": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_683": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_684": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_685": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_686": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_687": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_688": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_689": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_690": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_691": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_692": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_693": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_694": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_695": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_696": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_697": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_698": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_699": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_700": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_701": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_702": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_703": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_704": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_705": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_706": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_707": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_708": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_709": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_710": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_711": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_712": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_713": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_714": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_715": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_716": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_717": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_718": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_719": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_720": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_721": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_722": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_723": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_724": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_725": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_726": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_727": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_728": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_729": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_730": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_731": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_732": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_733": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_734": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_735": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_736": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_737": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_738": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_739": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_740": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_741": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_742": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_743": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_744": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_745": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_746": {
+        "Description": "Standard error of the mean for nBack run 1 emotion versus neutral face contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_747": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_748": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_749": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_750": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_751": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_752": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_753": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_754": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_755": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_756": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_757": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_758": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_759": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_760": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_761": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_762": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_763": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_764": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_765": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_766": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_767": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_768": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_769": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_770": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_771": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_772": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_773": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_774": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_775": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_776": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_777": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_778": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_779": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_780": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_781": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_782": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_783": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_784": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_785": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_786": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_787": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_788": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_789": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_790": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_791": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_792": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_793": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_794": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_795": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_796": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_797": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_798": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_799": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_800": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_801": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_802": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_803": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_804": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_805": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_806": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_807": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_808": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_809": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_810": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_811": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_812": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_813": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_814": {
+        "Description": "Standard error of the mean for nBack run 1 negative face versus neutral face contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_815": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_816": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_817": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_818": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_819": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_820": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_821": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_822": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_823": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_824": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_825": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_826": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_827": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_828": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_829": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_830": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_831": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_832": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_833": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_834": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_835": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_836": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_837": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_838": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_839": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_840": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_841": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_842": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_843": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_844": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_845": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_846": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_847": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_848": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_849": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_850": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_851": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_852": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_853": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_854": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_855": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_856": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_857": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_858": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_859": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_860": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_861": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_862": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_863": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_864": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_865": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_866": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_867": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_868": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_869": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_870": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_871": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_872": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_873": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_874": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_875": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_876": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_877": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_878": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_879": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_880": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_881": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_nback_r1sem_882": {
+        "Description": "Standard error of the mean for nBack run 1 positive face versus neutral face contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    }
+}

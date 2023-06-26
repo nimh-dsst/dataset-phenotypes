@@ -1,0 +1,58 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "BIKE_01": {
+        "LongName": "Age"
+    },
+    "BIKE_02": {
+        "LongName": "Gender",
+        "Levels": {
+            "1": "Male",
+            "2": "Female",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "BIKE_03": {
+        "LongName": "Weight (Kgs)"
+    },
+    "BIKE_04": {
+        "LongName": "Resistance level",
+        "Levels": {
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "DK": "Don't Know",
+            "MD": "Missing Data"
+        }
+    },
+    "BIKE_05": {
+        "LongName": "Initial heart rate at idle-BIKE"
+    },
+    "BIKE_05a": {
+        "LongName": "Initial heart rate at idle-PULSE OX"
+    },
+    "BIKE_06": {
+        "LongName": "Final heart rate-BIKE"
+    },
+    "BIKE_06a": {
+        "LongName": "Final heart rate -PULSE OX"
+    },
+    "BIKE_07": {
+        "LongName": "If applicable, failure time"
+    },
+    "BIKE_08": {
+        "LongName": "Change in heart rate",
+        "Description": "Heart rate is collected at rest and after 6 minutes of pedaling at 70rpm at age-determined resistance level. | Calculation = [BIKE_06]-[BIKE_05]"
+    },
+    "BIKE_09": {
+        "LongName": "Wattage"
+    },
+    "BIKE_10": {
+        "LongName": "VO2 max:",
+        "Description": "Predicted VO2max is in L/min, HRss is the steady heart rate after 6 min of exercise, \u2028and the workload in kg.m/min. To convert a load in watts to kg.m/min, multiply the watts by 6.12.\u2028\u2028 Females: VO2max = (0.00193 x workload + 0.326) / (0.769 x HRss - 56.1) x 100\u2028; Males: VO2max = (0.00212 x workload + 0.299) / (0.769 x HRss - 48.5) x 100\r\n\r\nRange should be between 12-90 | Calculation = iif([BIKE_02]==1,((0.00212*([BIKE_09]*6.12)+0.299)/((0.769*([BIKE_06])-48.5))*100), \r\n        iif([BIKE_02]==2,((0.00193*([BIKE_09]*6.12)+0.326)/((0.769*([BIKE_06])-56.1))*100), 'Gender not entered'))"
+    }
+}

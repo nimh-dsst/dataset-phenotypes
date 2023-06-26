@@ -1,0 +1,233 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "experiment_id": {
+        "Description": "ID for the Experiment/settings/run",
+        "DataType": "Integer"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sample_description": {
+        "Description": "Sample description: tissue type, i.e. blood, saliva, brain etc.",
+        "DataType": "String",
+        "ValueRange": "whole blood; saliva; brain; urine; serum; plasma; CSF; IPS; Fibroblast; Neuronal Progenitor; skin biopsy; temporal cortex; lymphoblastoid cell line; unknown; semen; frontal cortex; parietal cortex; basal ganglia; Placenta; hair; occipital visual cortex; cerebellum; spleen; stool; muscle; kidney; liver; heart; cord blood; nasal swab; DNA; RNA"
+    },
+    "sample_id_original": {
+        "Description": "Original, user-defined Sample ID",
+        "DataType": "String"
+    },
+    "organism": {
+        "Description": "Organism",
+        "DataType": "String"
+    },
+    "sample_amount": {
+        "Description": "Sample amount",
+        "DataType": "Float"
+    },
+    "sample_unit": {
+        "Description": "Measurement unit for Sample",
+        "DataType": "String"
+    },
+    "data_code": {
+        "Description": "Comments about experiment details",
+        "DataType": "String"
+    },
+    "data_file1_type": {
+        "Description": "type of data file 1",
+        "DataType": "String"
+    },
+    "data_file1": {
+        "Description": "Data file 1",
+        "DataType": "File"
+    },
+    "data_file2_type": {
+        "Description": "data file 2 type/description",
+        "DataType": "String"
+    },
+    "data_file2": {
+        "Description": "data file 2",
+        "DataType": "File"
+    },
+    "data_file3": {
+        "Description": "Data file 3",
+        "DataType": "File"
+    },
+    "data_file3_type": {
+        "Description": "Data file 3 type",
+        "DataType": "String"
+    },
+    "data_file4": {
+        "Description": "Data file 4",
+        "DataType": "File"
+    },
+    "data_file4_type": {
+        "Description": "Data file 4 type",
+        "DataType": "String"
+    },
+    "storage_protocol": {
+        "Description": "Description of Storage Protocol",
+        "DataType": "String"
+    },
+    "data_file_location": {
+        "Description": "dbGaP; NDAR; NIMH Genetics; AGRE; Sfari",
+        "DataType": "String"
+    },
+    "biorepository": {
+        "Description": "Sample provider: i.e. NIMH_Genetics; ATP; Correil",
+        "DataType": "String"
+    },
+    "patient_id_biorepository": {
+        "Description": "Biorepository Patient ID",
+        "DataType": "String"
+    },
+    "sample_id_biorepository": {
+        "Description": "Biorepository Sample ID",
+        "DataType": "String"
+    },
+    "cell_id_original": {
+        "Description": "Original, user-defined cell line ID",
+        "DataType": "String"
+    },
+    "cell_id_biorepository": {
+        "Description": "Biorepository cell line ID",
+        "DataType": "String"
+    },
+    "comments_misc": {
+        "Description": "Miscellaneous comments on study, interview, methodology relevant to this form data",
+        "DataType": "String"
+    },
+    "site": {
+        "Description": "Site | Study Site",
+        "DataType": "String"
+    },
+    "rat280": {
+        "Description": "Ratio of absorbance at 260nm and 280nm",
+        "DataType": "Float"
+    },
+    "rat230": {
+        "Description": "Ratio of absorbance at 260nm and 230nm",
+        "DataType": "Float"
+    },
+    "gqn": {
+        "Description": "genomic DNA quality number",
+        "DataType": "Float"
+    },
+    "seq_batch": {
+        "Description": "Sequencing batch: Date sent to sequencing facility",
+        "DataType": "Date"
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "assay_marker": {
+        "Description": "Antibody used against histone protein in order to immuno-precipitate the chromatin",
+        "DataType": "String"
+    },
+    "flowcell_given_to_core": {
+        "Description": "Flowcell identifier",
+        "DataType": "String"
+    },
+    "flowcell_2": {
+        "Description": "CMC_HBCC-specific flowcell identifier",
+        "DataType": "String"
+    },
+    "flowcell_name": {
+        "Description": "flowcell identifier",
+        "DataType": "String"
+    },
+    "flowcell_name_2": {
+        "Description": "CMC_HBCC-specific flowcell name",
+        "DataType": "String"
+    },
+    "flowcell_lane_a": {
+        "Description": "Flowcell lane",
+        "DataType": "String"
+    },
+    "flowcell_lane_b": {
+        "Description": "Flowcell lane",
+        "DataType": "String"
+    },
+    "flowcell_id": {
+        "Description": "Flowcell identifier | multiple flowcells separated by ::",
+        "DataType": "String"
+    },
+    "lane_id": {
+        "Description": "Flowcell lane identifier",
+        "DataType": "String"
+    },
+    "array_chip_platform": {
+        "Description": "Name of genotyping array chip used",
+        "DataType": "String"
+    },
+    "array_chip_version": {
+        "Description": "Version of genotyping array chip used",
+        "DataType": "String"
+    },
+    "brain_rin": {
+        "Description": "RNA integrity number",
+        "DataType": "Float"
+    },
+    "rine": {
+        "Description": "RIN equivalent (RINe) value for assigning integrity values to RNA",
+        "DataType": "Float"
+    },
+    "source_tissue": {
+        "Description": "Brain tissue used to isolate the DNA/RNA i.e. | anterior cingulate cortex (ACC); dorsal anterior cingulate cortex (dACC); dorsolateral prefrontal cortex (DLPFC); cerebellum (CER); superior temporal gyrus (STG); Dura mater (Dura); Hippocampus (Hippo);",
+        "DataType": "String",
+        "ValueRange": "ACC; DLPFC; CER; dACC; STG; Dura; Hippo"
+    },
+    "sample_prep_batch": {
+        "Description": "Sample preparation batch OR DNA/RNA Isolation batch OR experimental batch",
+        "DataType": "String"
+    },
+    "total_rna_dna": {
+        "Description": "Total RNA (micrograms) OR Total DNA (micrograms)",
+        "DataType": "Float"
+    },
+    "library_prep_batch": {
+        "Description": "Sequencing library batch",
+        "DataType": "String"
+    },
+    "ribozero_batch": {
+        "Description": "Ribozero treatment batch",
+        "DataType": "String"
+    },
+    "sequencing_batch": {
+        "Description": "Sequencing batch",
+        "DataType": "String"
+    },
+    "flowcell_batch": {
+        "Description": "Multiplex batch",
+        "DataType": "String"
+    }
+}

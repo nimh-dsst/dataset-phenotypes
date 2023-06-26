@@ -1,0 +1,958 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "PENNCNP_0001": {
+        "LongName": "test_sessions_handedness",
+        "Description": "Handedness"
+    },
+    "PENNCNP_0002": {
+        "LongName": "MPRACT_test",
+        "Description": "MPRACT Test"
+    },
+    "PENNCNP_0003": {
+        "LongName": "MPRACT_ERROR",
+        "Description": "Scoring Error"
+    },
+    "PENNCNP_0004": {
+        "LongName": "MPRACT_MP2",
+        "Description": "Mouse Praxis Correct Responses Trial 2"
+    },
+    "PENNCNP_0005": {
+        "LongName": "MPRACT_MP1RT",
+        "Description": "Median Response Time for Mouse Praxis Trial 1 (ms)"
+    },
+    "PENNCNP_0006": {
+        "LongName": "MPRACT_MP2RTCR",
+        "Description": "Median Response Time for Mouse Praxis Trial 2 Correct Responses (ms)"
+    },
+    "PENNCNP_0007": {
+        "LongName": "MPRACT_MP_EFF",
+        "Description": "Efficiency = MP2/log(MP2RTCR)"
+    },
+    "PENNCNP_0008": {
+        "LongName": "CPT_test",
+        "Description": "CPT Test"
+    },
+    "PENNCNP_0009": {
+        "LongName": "SPCPTNL_SCPN_TP",
+        "Description": "SPCPTNL True Positive Responses for Number Trials"
+    },
+    "PENNCNP_0010": {
+        "LongName": "SPCPTNL_SCPN_FP",
+        "Description": "SPCPTNL False Positive Responses for Number Trials"
+    },
+    "PENNCNP_0011": {
+        "LongName": "SPCPTNL_SCPN_TN",
+        "Description": "SPCPTNL True Negative Responses for Number Trials"
+    },
+    "PENNCNP_0012": {
+        "LongName": "SPCPTNL_SCPN_FN",
+        "Description": "SPCPTNL False Negative Responses for Number Trials"
+    },
+    "PENNCNP_0013": {
+        "LongName": "SPCPTNL_SCPN_TPRT",
+        "Description": "Median Response Time for SPCPTNL True Positive Responses for Number Trials(ms)"
+    },
+    "PENNCNP_0014": {
+        "LongName": "SPCPTNL_SCPN_FPRT",
+        "Description": "Median Response Time for SPCPTNL False Positive Responses for Number Trials (ms)"
+    },
+    "PENNCNP_0015": {
+        "LongName": "SPCPTNL_SCPL_TP",
+        "Description": "SPCPTNL True Positive Responses for Letter Trials"
+    },
+    "PENNCNP_0016": {
+        "LongName": "SPCPTNL_SCPL_FP",
+        "Description": "SPCPTNL False Positive Responses for Letter Trials"
+    },
+    "PENNCNP_0017": {
+        "LongName": "SPCPTNL_SCPL_TN",
+        "Description": "SPCPTNL True Negative Responses for Letter Trials"
+    },
+    "PENNCNP_0018": {
+        "LongName": "SPCPTNL_SCPL_FN",
+        "Description": "SPCPTNL False Negative Responses for Letter Trials"
+    },
+    "PENNCNP_0019": {
+        "LongName": "SPCPTNL_SCPL_TPRT",
+        "Description": "Median Response Time for SPCPTNL True Positive Responses for Letter Trials (ms)"
+    },
+    "PENNCNP_0020": {
+        "LongName": "SPCPTNL_SCPL_FPRT",
+        "Description": "Median Response Time for SPCPTNL False Positive Responses for Letter Trials (ms)"
+    },
+    "PENNCNP_0021": {
+        "LongName": "SPCPTNL_SCPT_FN",
+        "Description": "SPCPTNL CPT False Negatives - Sum of SCPN_FN and SCPL_FN"
+    },
+    "PENNCNP_0022": {
+        "LongName": "SPCPTNL_SCPT_FP",
+        "Description": "SPCPTNL CPT False Positives - Sum of SCPN_FP and SCPL_FP"
+    },
+    "PENNCNP_0023": {
+        "LongName": "SPCPTNL_SCPT_TP",
+        "Description": "SPCPTNL CPT True Positives - Sum of SCPN_TP and SCPL_TP"
+    },
+    "PENNCNP_0024": {
+        "LongName": "SPCPTNL_SCPT_TN",
+        "Description": "SPCPTNL CPT True Negatives - Sum of SCPN_TN and SCPL_TN"
+    },
+    "PENNCNP_0025": {
+        "LongName": "SPCPTNL_SCPT_TPRT",
+        "Description": "Median Response Time for SPCPTNL True Positive Responses (ms)"
+    },
+    "PENNCNP_0026": {
+        "LongName": "SPCPTNL_SCPT_FPRT",
+        "Description": "Median Response Time for SPCPTNL False Positive Responses (ms)"
+    },
+    "PENNCNP_0027": {
+        "LongName": "SPCPTNL_SCPN_RT",
+        "Description": "median Response Time for All Number Positive Responses (ms)"
+    },
+    "PENNCNP_0028": {
+        "LongName": "SPCPTNL_SCPL_RT",
+        "Description": "Median Response Time for All Letter Positive Responses (ms)"
+    },
+    "PENNCNP_0029": {
+        "LongName": "SPCPTNL_SCPT_RT",
+        "Description": "Median Response Time for All SPCPTNL Positive Responses (ms)"
+    },
+    "PENNCNP_0030": {
+        "LongName": "SPCPTNL_SCPT_SEN",
+        "Description": "Sensitivity= SCPT_TP/(SCPT_TP+SCPT_FN)"
+    },
+    "PENNCNP_0031": {
+        "LongName": "SPCPTNL_SCPT_SPEC",
+        "Description": "Specificity= SCPT_TN/(SCPT_TN+SCPT_FP)"
+    },
+    "PENNCNP_0032": {
+        "LongName": "SPCPTNL_SCPT_EFF",
+        "Description": "Efficiency= SCPT_TP/log(SCPT_TPRT)"
+    },
+    "PENNCNP_0033": {
+        "LongName": "SPCPTNL_SCPT_LRNR",
+        "Description": "SPCPTNL CPT Longest Run of Non-Responses"
+    },
+    "PENNCNP_0034": {
+        "LongName": "SPCPTNL_SCPT_FRNR",
+        "Description": "SPCPTNL CPT Final Run of Non-Responses"
+    },
+    "PENNCNP_0035": {
+        "LongName": "SLNB_test",
+        "Description": "SLNB2 Test"
+    },
+    "PENNCNP_0036": {
+        "LongName": "SLNB2_SLNB_TP",
+        "Description": "True Positive Responses"
+    },
+    "PENNCNP_0037": {
+        "LongName": "SLNB2_SLNB_FP",
+        "Description": "False Positive Responses"
+    },
+    "PENNCNP_0038": {
+        "LongName": "SLNB2_SLNB_RTC",
+        "Description": "True Positive Responses"
+    },
+    "PENNCNP_0039": {
+        "LongName": "SLNB2_SLNB_TP0",
+        "Description": "True Positive Responses for 0-Back Trials"
+    },
+    "PENNCNP_0040": {
+        "LongName": "SLNB2_SLNB_FP0",
+        "Description": "False Positive Responses for 0-Back Trials"
+    },
+    "PENNCNP_0041": {
+        "LongName": "SLNB2_SLNB_RTC0",
+        "Description": "Median Response Time for Correct 0-Back Trials (ms)"
+    },
+    "PENNCNP_0042": {
+        "LongName": "SLNB2_SLNB_TP1",
+        "Description": "True Positive Responses for 1-Back Trials"
+    },
+    "PENNCNP_0043": {
+        "LongName": "SLNB2_SLNB_FP1",
+        "Description": "False Positive Responses for 1- Back Trials"
+    },
+    "PENNCNP_0044": {
+        "LongName": "SLNB2_SLNB_RTC1",
+        "Description": "Median Response Time for Correct 1-Back Trials (ms)"
+    },
+    "PENNCNP_0045": {
+        "LongName": "SLNB2_SLNB_TP2",
+        "Description": "True Positive Responses for 2-Back Trials"
+    },
+    "PENNCNP_0046": {
+        "LongName": "SLNB2_SLNB_FP2",
+        "Description": "False Positive Responses for 2-Back Trials"
+    },
+    "PENNCNP_0047": {
+        "LongName": "SLNB2_SLNB_RTC2",
+        "Description": "Median Response Time for Correct 2-Back Trials (ms)"
+    },
+    "PENNCNP_0048": {
+        "LongName": "SLNB2_SLNB_MCR",
+        "Description": "True Positive Responses for 1-Back and 2-Back Trials"
+    },
+    "PENNCNP_0049": {
+        "LongName": "SLNB2_SLNB_MRTC",
+        "Description": "Mean of Median Reaction Time for True Positive Responses for 1-Back and for 2-Back Trials (ms)"
+    },
+    "PENNCNP_0050": {
+        "LongName": "SLNB2_SLNB_MEFF",
+        "Description": "Efficiency for Correct 1-Bck and 2-Back = SLNB_MCR/log(SLNB_MTRC)"
+    },
+    "PENNCNP_0051": {
+        "LongName": "SLNB2_SLNB_LRNR",
+        "Description": "Longest Run of Non-Responses"
+    },
+    "PENNCNP_0052": {
+        "LongName": "SLNB2_SLNB_FRNR",
+        "Description": "Final Run of Non-Responses"
+    },
+    "PENNCNP_0053": {
+        "LongName": "PCET_test",
+        "Description": "PCET Test"
+    },
+    "PENNCNP_0054": {
+        "LongName": "PCET_PCETCR",
+        "Description": "PCET Number of Correct Responses"
+    },
+    "PENNCNP_0055": {
+        "LongName": "PCET_PCETRTCR",
+        "Description": "Median Response Time for PCET Correct Responses (ms)"
+    },
+    "PENNCNP_0056": {
+        "LongName": "PCET_PCETER",
+        "Description": "PCET Number of Incorrect Responses"
+    },
+    "PENNCNP_0057": {
+        "LongName": "PCET_PCETRTER",
+        "Description": "Median Response Time For PCET Incorrect Responses (ms)"
+    },
+    "PENNCNP_0058": {
+        "LongName": "PCET_PCET_NUM",
+        "Description": "Total Number of Trials"
+    },
+    "PENNCNP_0059": {
+        "LongName": "PCET_PCET_CAT",
+        "Description": "Number of PCET Categories Achieved"
+    },
+    "PENNCNP_0060": {
+        "LongName": "PCET_CAT1_TR",
+        "Description": "Number of Trials Required To Achieve Category 1"
+    },
+    "PENNCNP_0061": {
+        "LongName": "PCET_CAT2_TR",
+        "Description": "Number of Trials Required to Achieve Category 2"
+    },
+    "PENNCNP_0062": {
+        "LongName": "PCET_CAT3_TR",
+        "Description": "Number of Trials Required to Achieve Category 3"
+    },
+    "PENNCNP_0063": {
+        "LongName": "PCET_PER_ER",
+        "Description": "PCET Number of Perseverative Errors"
+    },
+    "PENNCNP_0064": {
+        "LongName": "PCET_PER_RES",
+        "Description": "PCET Perseverative Errors Plus Correct Persverative Responses"
+    },
+    "PENNCNP_0065": {
+        "LongName": "PCET_PCET_ACC",
+        "Description": "PECT Accuracy = PCET_CAT*PCETCR/(PCETCR+PCETER)"
+    },
+    "PENNCNP_0066": {
+        "LongName": "PCET_PCET_ACC2",
+        "Description": "PECT Accuracy2 = (PCET_CAT+1)*PCETCR/(PCETCR+PCETER)"
+    },
+    "PENNCNP_0067": {
+        "LongName": "PCET_PCET_EFF",
+        "Description": "PCET Efficiency = PCET_ACC/log(PCETRTCR)"
+    },
+    "PENNCNP_0068": {
+        "LongName": "MEDF_test",
+        "Description": "MEDF Test"
+    },
+    "PENNCNP_069": {
+        "LongName": "MEDF36_MEDF36_HAP_CR",
+        "Description": "Correct Responses for Measured Emodiff Happy Trials"
+    },
+    "PENNCNP_0070": {
+        "LongName": "MEDF36_MEDF36_SAD_CR",
+        "Description": "Correct Responses for Measured Emodiff Sad Trials"
+    },
+    "PENNCNP_0071": {
+        "LongName": "MEDF36_MEDF36_ANG_CR",
+        "Description": "Correct Responses for Measured Emodiff Angry Trials"
+    },
+    "PENNCNP_0072": {
+        "LongName": "MEDF36_MEDF36_FEAR_CR",
+        "Description": "Correct Responses for Measured Emodiff Fear Trials"
+    },
+    "PENNCNP_0073": {
+        "LongName": "MEDF36_MEDF36_HAP_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff Happy Trials (ms)"
+    },
+    "PENNCNP_0074": {
+        "LongName": "MEDF36_MEDF36_SAD_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff Sad Trials (ms)"
+    },
+    "PENNCNP_0075": {
+        "LongName": "MEDF36_MEDF36_ANG_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff Angry Trials (ms)"
+    },
+    "PENNCNP_0076": {
+        "LongName": "MEDF36_MEDF36_FEAR_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff Fear Trials (ms)"
+    },
+    "PENNCNP_0077": {
+        "LongName": "MEDF36_MEDF36_HAP_RTER",
+        "Description": "Median Response Time for Incorrect Measured Emodiff Happy Trials(ms)"
+    },
+    "PENNCNP_0078": {
+        "LongName": "MEDF36_MEDF36_SAD_RTER",
+        "Description": "Median Response Time for Incorrect Measured Emodiff Sad Trials(ms)"
+    },
+    "PENNCNP_0079": {
+        "LongName": "MEDF36_MEDF36_ANG_RTER",
+        "Description": "Median Response Time for Incorrect Measured Emodiff Angry Trials(ms)"
+    },
+    "PENNCNP_0080": {
+        "LongName": "MEDF36_MEDF36_FEAR_RTER",
+        "Description": "Median Response Time for Incorrect Measured Emodiff Fear Trials(ms)"
+    },
+    "PENNCNP_0081": {
+        "LongName": "MEDF36_MEDF36_PCT10_CR",
+        "Description": "Correct Responses for Measured Emodiff 10 Percent Difference Trials"
+    },
+    "PENNCNP_0082": {
+        "LongName": "MEDF36_MEDF36_PCT20_CR",
+        "Description": "Correct Responses for Measured Emodiff 20 Percent Difference Trials"
+    },
+    "PENNCNP_0083": {
+        "LongName": "MEDF36_MEDF36_PCT30_CR",
+        "Description": "Correct Responses for Measured Emodiff 30 Percent Difference Trials"
+    },
+    "PENNCNP_0084": {
+        "LongName": "MEDF36_MEDF36_PCT40_CR",
+        "Description": "Correct Responses for Measured Emodiff 40 Percent Difference Trials"
+    },
+    "PENNCNP_0085": {
+        "LongName": "MEDF36_MEDF36_PCT50_CR",
+        "Description": "Correct Responses for Measured Emodiff 50 Percent Difference Trials"
+    },
+    "PENNCNP_0086": {
+        "LongName": "MEDF36_MEDF36_PCT60_CR",
+        "Description": "Correct Responses for Measured Emodiff 60 Percent Difference Trials"
+    },
+    "PENNCNP_0087": {
+        "LongName": "MEDF36_MEDF36_SAME_CR",
+        "Description": "Correct Responses for Measured Emodiff No Difference Trials"
+    },
+    "PENNCNP_0088": {
+        "LongName": "MEDF36_MEDF36_PCT10_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff 10 Percent Difference Trials"
+    },
+    "PENNCNP_0089": {
+        "LongName": "MEDF36_MEDF36_PCT20_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff 20 Percent Difference Trials"
+    },
+    "PENNCNP_0090": {
+        "LongName": "MEDF36_MEDF36_PCT30_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff 30 Percent Difference Trials"
+    },
+    "PENNCNP_0091": {
+        "LongName": "MEDF36_MEDF36_PCT40_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff 40 Percent Difference Trials"
+    },
+    "PENNCNP_0092": {
+        "LongName": "MEDF36_MEDF36_PCT50_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff 50 Percent Difference Trials"
+    },
+    "PENNCNP_0093": {
+        "LongName": "MEDF36_MEDF36_PCT60_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff 60 Percent Difference Trials"
+    },
+    "PENNCNP_0094": {
+        "LongName": "MEDF36_MEDF36_SAME_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff No Difference Trials"
+    },
+    "PENNCNP_0095": {
+        "LongName": "MEDF36_MEDF36_NS_CR",
+        "Description": "Correct Responses for Measured Emodiff Non-Same Difference Trials (excluding same\" trials)\""
+    },
+    "PENNCNP_0096": {
+        "LongName": "MEDF36_MEDF36_NS_RTCR",
+        "Description": "Median Response Time for Correct Measured Emodiff Non-Same Difference Trials (all trials, excluding same\")\""
+    },
+    "PENNCNP_0097": {
+        "LongName": "MEDF36_MEDF36_A",
+        "Description": "Total Correct Measured Emodiff Trials"
+    },
+    "PENNCNP_0098": {
+        "LongName": "MEDF36_MEDF36_T",
+        "Description": "Median Response Time for All Measured Emodiff Trials"
+    },
+    "PENNCNP_0099": {
+        "LongName": "k-CPW_test",
+        "Description": "Median Response Time for All Measured Emodiff Trials"
+    },
+    "PENNCNP_0100": {
+        "LongName": "KCPW_KCPWTP",
+        "Description": "CPW True Positive Responses"
+    },
+    "PENNCNP_0101": {
+        "LongName": "KCPW_KCPWTN",
+        "Description": "CPW True Negative Responses"
+    },
+    "PENNCNP_0102": {
+        "LongName": "KCPW_KCPWFP",
+        "Description": "CPW False Positive Responses"
+    },
+    "PENNCNP_0103": {
+        "LongName": "KCPW_KCPWFN",
+        "Description": "CPW False Negative Responses"
+    },
+    "PENNCNP_0104": {
+        "LongName": "KCPW_KCPWTPRT",
+        "Description": "Median Response Time for CPW True Positive Responses (ms)"
+    },
+    "PENNCNP_0105": {
+        "LongName": "KCPW_KCPWTNRT",
+        "Description": "Median Response Time For CPW True Negative Responses (ms)"
+    },
+    "PENNCNP_0106": {
+        "LongName": "KCPW_KCPWFPRT",
+        "Description": "Median Response Time for CPW False Positive Responses (ms)"
+    },
+    "PENNCNP_0107": {
+        "LongName": "KCPW_KCPWFNRT",
+        "Description": "Median Response Time for CPW False Negative Responses (ms)"
+    },
+    "PENNCNP_0108": {
+        "LongName": "KCPW_KIWRD_TOT",
+        "Description": "CPW Total Correct Responses"
+    },
+    "PENNCNP_0109": {
+        "LongName": "KCPW_KIWRD_RTC",
+        "Description": "Median Response Time for KCPW Total Correct Responses (ms)"
+    },
+    "PENNCNP_0110": {
+        "LongName": "KCPW_KCPW_DY",
+        "Description": "CPW Definitely Yes Responses"
+    },
+    "PENNCNP_0111": {
+        "LongName": "KCPW_KCPW_DN",
+        "Description": "CPW Definitely No Responses"
+    },
+    "PENNCNP_0112": {
+        "LongName": "KCPW_KCPW_PY",
+        "Description": "CPW Probably Yes Responses"
+    },
+    "PENNCNP_0113": {
+        "LongName": "KCPW_KCPW_PN",
+        "Description": "CPW Probably No Responses"
+    },
+    "PENNCNP_0114": {
+        "LongName": "KCPW_KCPWTP_DEF",
+        "Description": "CPW True Positives- Definitely"
+    },
+    "PENNCNP_0115": {
+        "LongName": "KCPW_KCPWTP_PROB",
+        "Description": "CPW True Positives- Probably"
+    },
+    "PENNCNP_0116": {
+        "LongName": "KCPW_KCPWTN_DEF",
+        "Description": "CPW True Negatives- Definitely"
+    },
+    "PENNCNP_0117": {
+        "LongName": "KCPW_KCPWTN_PROB",
+        "Description": "CPW True Negatives- Probably"
+    },
+    "PENNCNP_0118": {
+        "LongName": "KCPW_KCPWFP_DEF",
+        "Description": "CPW False Positives- Definitely"
+    },
+    "PENNCNP_0119": {
+        "LongName": "KCPW_KCPWFP_PROB",
+        "Description": "CPW False Positives- Probably"
+    },
+    "PENNCNP_0120": {
+        "LongName": "KCPW_KCPWFN_DEF",
+        "Description": "CPW False Negatives- Definitely"
+    },
+    "PENNCNP_0121": {
+        "LongName": "KCPW_KCPWFN_PROB",
+        "Description": "CPW False Negatives- Probably"
+    },
+    "PENNCNP_0122": {
+        "LongName": "SCTAP_test",
+        "Description": "SCTAP Test"
+    },
+    "PENNCNP_0123": {
+        "LongName": "SCTAP_STAP_HAND",
+        "Description": "SCTAP Dominant Hand"
+    },
+    "PENNCNP_0124": {
+        "LongName": "SCTAP_STAP_DOM",
+        "Description": "Mean Taps For SCTAP Dominant Hand"
+    },
+    "PENNCNP_0125": {
+        "LongName": "SCTAP_STAP_NON",
+        "Description": "Mean Taps For SCTAP Non-Dominant Hand"
+    },
+    "PENNCNP_0126": {
+        "LongName": "SCTAP_STAP_DOMSD",
+        "Description": "Standard Deviation of SCTAP-DOM Responses"
+    },
+    "PENNCNP_0127": {
+        "LongName": "SCTAP_STAP_NONSD",
+        "Description": "Standard Deviation of SCTAP-NON Responses"
+    },
+    "PENNCNP_0128": {
+        "LongName": "SCTAP_STAP_TOT",
+        "Description": "Sum of SCTAP_DOM and SCTAP_NON"
+    },
+    "PENNCNP_0129": {
+        "LongName": "ER40_test",
+        "Description": "ER40 Test"
+    },
+    "PENNCNP_0130": {
+        "LongName": "ER40D_ER40_CR",
+        "Description": "ER40 Correct Responses"
+    },
+    "PENNCNP_0131": {
+        "LongName": "ER40D_ER40_CRT",
+        "Description": "ER40 Correct Responses Median Response Time (ms)"
+    },
+    "PENNCNP_0132": {
+        "LongName": "ER40D_ER40_FC",
+        "Description": "ER40 Correct Female Identifications"
+    },
+    "PENNCNP_0133": {
+        "LongName": "ER40D_ER40_MC",
+        "Description": "ER40 Correct Male Identifications"
+    },
+    "PENNCNP_0134": {
+        "LongName": "ER40D_ER40FCRT",
+        "Description": "ER40 Correct Female Identifications Median Response Time (ms)"
+    },
+    "PENNCNP_0135": {
+        "LongName": "ER40D_ER40MCRT",
+        "Description": "ER40 Correct Male Identifications Median Response Time (ms)"
+    },
+    "PENNCNP_0136": {
+        "LongName": "ER40D_ER40ANG",
+        "Description": "ER40 Correct Anger Identifications"
+    },
+    "PENNCNP_0137": {
+        "LongName": "ER40D_ER40FEAR",
+        "Description": "ER40 Correct Fear Identifications"
+    },
+    "PENNCNP_0138": {
+        "LongName": "ER40D_ER40HAP",
+        "Description": "ER40 Correct Happy Identifications"
+    },
+    "PENNCNP_0139": {
+        "LongName": "ER40D_ER40NOE",
+        "Description": "ER40 Correct No Emotion Identifications"
+    },
+    "PENNCNP_0140": {
+        "LongName": "ER40D_ER40SAD",
+        "Description": "ER40 Correct Sad Identifications"
+    },
+    "PENNCNP_0141": {
+        "LongName": "ER40D_ER40FACR",
+        "Description": "ER40 Correct Anger Identifications for Female faces"
+    },
+    "PENNCNP_0142": {
+        "LongName": "ER40D_ER40FFCR",
+        "Description": "ER40 Correct Fear Identifications for Female faces"
+    },
+    "PENNCNP_0143": {
+        "LongName": "ER40D_ER40FHCR",
+        "Description": "ER40 Correct Happy Identifications for Female faces"
+    },
+    "PENNCNP_0144": {
+        "LongName": "ER40D_ER40FNCR",
+        "Description": "ER40 Correct No Emotion Identifications for Female faces"
+    },
+    "PENNCNP_0145": {
+        "LongName": "ER40D_ER40FSCR",
+        "Description": "ER40 Correct Sad Identifications for Female faces"
+    },
+    "PENNCNP_0146": {
+        "LongName": "ER40D_ER40MACR",
+        "Description": "ER40 Correct Anger Identifications for Male faces"
+    },
+    "PENNCNP_0147": {
+        "LongName": "ER40D_ER40MFCR",
+        "Description": "ER40 Correct Fear Identifications for Male faces"
+    },
+    "PENNCNP_0148": {
+        "LongName": "ER40D_ER40MHCR",
+        "Description": "ER40 Correct Happy Identifications for Male faces"
+    },
+    "PENNCNP_0149": {
+        "LongName": "ER40D_ER40MNCR",
+        "Description": "ER40 Correct No Emotion Identifications for Male faces"
+    },
+    "PENNCNP_0150": {
+        "LongName": "ER40D_ER40MSCR",
+        "Description": "ER40 Correct Sad Identifications for Male faces"
+    },
+    "PENNCNP_0151": {
+        "LongName": "ER40D_ER40_FPA",
+        "Description": "ER40 False Positive Anger Responses"
+    },
+    "PENNCNP_0152": {
+        "LongName": "ER40D_ER40_FPF",
+        "Description": "ER40 False Positive Fear Responses"
+    },
+    "PENNCNP_0153": {
+        "LongName": "ER40D_ER40_FPH",
+        "Description": "ER40 False Positive Happy Responses"
+    },
+    "PENNCNP_0154": {
+        "LongName": "ER40D_ER40_FPN",
+        "Description": "ER40 False Positive No Emotion Responses"
+    },
+    "PENNCNP_0155": {
+        "LongName": "ER40D_ER40_FPS",
+        "Description": "ER40 False Positive Sad Responses"
+    },
+    "PENNCNP_0156": {
+        "LongName": "ER40D_ER40ANGRT",
+        "Description": "Median Response Time for ER40 Correct Anger Identifications (ms)"
+    },
+    "PENNCNP_0157": {
+        "LongName": "ER40D_ER40FEARRT",
+        "Description": "Median Response Time for ER40 Correct Fear Identifications (ms)"
+    },
+    "PENNCNP_0158": {
+        "LongName": "ER40D_ER40HAPRT",
+        "Description": "Median Response Time for ER40 Correct Happy Identifications (ms)"
+    },
+    "PENNCNP_0159": {
+        "LongName": "ER40D_ER40NOERT",
+        "Description": "Median Response Time for ER40 Correct No Emotion Identifications (ms)"
+    },
+    "PENNCNP_0160": {
+        "LongName": "ER40D_ER40SADRT",
+        "Description": "Median Response Time for ER40 Correct Sad Identifications (ms)"
+    },
+    "PENNCNP_0161": {
+        "LongName": "ER40D_ER40FART",
+        "Description": "Median Response Time for ER40 Correct Anger Identifications for Female faces(ms)"
+    },
+    "PENNCNP_0162": {
+        "LongName": "ER40D_ER40FFRT",
+        "Description": "Median Response Time for ER40 Correct Fear Identifications for Female faces(ms)"
+    },
+    "PENNCNP_0163": {
+        "LongName": "ER40D_ER40FHRT",
+        "Description": "Median Response Time for ER40 Correct Happy Identifications for Female faces(ms)"
+    },
+    "PENNCNP_0164": {
+        "LongName": "ER40D_ER40FNRT",
+        "Description": "Median Response Time for ER40 Correct No Emotion Identifications for Female faces(ms)"
+    },
+    "PENNCNP_0165": {
+        "LongName": "ER40D_ER40FSRT",
+        "Description": "Median Response Time For ER40 Correct Sad Identifications for Female Faces (ms)"
+    },
+    "PENNCNP_0166": {
+        "LongName": "ER40D_ER40MART",
+        "Description": "Median Response Time For ER40 Correct Anger Identifications for Male faces (ms)"
+    },
+    "PENNCNP_00167": {
+        "LongName": "ER40D_ER40MFRT",
+        "Description": "Median Response Time For ER40 Correct Fear Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0168": {
+        "LongName": "ER40D_ER40MHRT",
+        "Description": "Median Response Time For ER40 Correct Happy Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0169": {
+        "LongName": "ER40D_ER40MNRT",
+        "Description": "Median Response Time For ER40 Correct No Emotion Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0170": {
+        "LongName": "ER40D_ER40MSRT",
+        "Description": "Median Response Time For ER40 Correct Sad Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0171": {
+        "LongName": "ER40D_ER40FAERT",
+        "Description": "Median Response Time For ER40 Incorrect Anger identifications for Female faces (ms)"
+    },
+    "PENNCNP_0172": {
+        "LongName": "ER40D_ER40FFERT",
+        "Description": "Median Response Time For ER40 Incorrect Fear identifications for Female faces (ms)"
+    },
+    "PENNCNP_0173": {
+        "LongName": "ER40D_ER40FHERT",
+        "Description": "Median Response Time For ER40 Incorrect Happy identifications for Female faces (ms)"
+    },
+    "PENNCNP_0174": {
+        "LongName": "ER40D_ER40FNERT",
+        "Description": "Median Response Time For ER40 Incorrect No Emotion identifications for Female faces (ms)"
+    },
+    "PENNCNP_0175": {
+        "LongName": "ER40D_ER40FSERT",
+        "Description": "Median Response Time For ER40 Incorrect Sad identifications for Female faces (ms)"
+    },
+    "PENNCNP_0176": {
+        "LongName": "ER40D_ER40MAERT",
+        "Description": "Median Response Time For ER40 Incorrect Anger Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0177": {
+        "LongName": "ER40D_ER40MFERT",
+        "Description": "Median Response Time For ER40 Incorrect Fear Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0178": {
+        "LongName": "ER40D_ER40MHERT",
+        "Description": "Median Response Time For ER40 Incorrect Happy Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0179": {
+        "LongName": "ER40D_ER40MNERT",
+        "Description": "Median Response Time For ER40 Incorrect No Emotion Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0180": {
+        "LongName": "ER40D_ER40MSERT",
+        "Description": "Median Response Time For ER40 Incorrect Sad Identifications for Male faces (ms)"
+    },
+    "PENNCNP_0181": {
+        "LongName": "ER40D_ER40_FPART",
+        "Description": "Median Response Time for ER40 False positive Anger Responses (ms)"
+    },
+    "PENNCNP_0182": {
+        "LongName": "ER40D_ER40_FPFRT",
+        "Description": "Median Response Time for ER40 False positive Fear Responses (ms)"
+    },
+    "PENNCNP_0183": {
+        "LongName": "ER40D_ER40_FPHRT",
+        "Description": "Median Response Time for ER40 False positive Happy Responses (ms)"
+    },
+    "PENNCNP_0184": {
+        "LongName": "ER40D_ER40_FPNRT",
+        "Description": "Median Response Time for ER40 False positive No Emotion Responses (ms)"
+    },
+    "PENNCNP_0185": {
+        "LongName": "ER40D_ER40_FPSRT",
+        "Description": "Median Response Time for ER40 False positive Sad Responses (ms)"
+    },
+    "PENNCNP_0186": {
+        "LongName": "ER40D_ER40CACR",
+        "Description": "ER40 Correct Identifications of Caucasian faces"
+    },
+    "PENNCNP_0187": {
+        "LongName": "ER40D_ER40AACR",
+        "Description": "ER40 Correct Identifications of African American faces"
+    },
+    "PENNCNP_0188": {
+        "LongName": "ER40D_ER40OTHCR",
+        "Description": "ER40 Correct Identifications of Other Ethnicity faces"
+    },
+    "PENNCNP_0189": {
+        "LongName": "ER40D_ER40CACRT",
+        "Description": "ER40 Median Response Time for Incorrect Identifications of Caucasian faces (ms)"
+    },
+    "PENNCNP_0190": {
+        "LongName": "ER40D_ER40AACRT",
+        "Description": "ER40 Median Response Time for Incorrect Identifications of African American faces (ms)"
+    },
+    "PENNCNP_0191": {
+        "LongName": "ER40D_ER40OTHCRT",
+        "Description": "ER40 Median Response Time for Incorrect Identifications of Other Ethnicity faces (ms)"
+    },
+    "PENNCNP_0192": {
+        "LongName": "ER40D_ER40_EFF",
+        "Description": "ER40 Efficiency = ER40_CR/log(ER40_CRT)"
+    },
+    "PENNCNP_0193": {
+        "LongName": "PVRT_TEST",
+        "Description": "KSPVRT Test, Form C"
+    },
+    "PENNCNP_0194": {
+        "LongName": "KSPVRTC_PVRT_FORM",
+        "Description": "Form of this administration"
+    },
+    "PENNCNP_0195": {
+        "LongName": "KSPVRTC_K_SPVRT_C_CR",
+        "Description": "Correct Responses"
+    },
+    "PENNCNP_0196": {
+        "LongName": "KSPVRTC_K_SPVRT_C_PC",
+        "Description": "Percent Correct"
+    },
+    "PENNCNP_0197": {
+        "LongName": "KSPVRTC_K_SPVRT_C_RTTO",
+        "Description": "All Responses Median Response Time (ms)"
+    },
+    "PENNCNP_0198": {
+        "LongName": "KSPVRTC_K_SPVRT_C_RTCR",
+        "Description": "KSPVRT Median Response Time for Correct Responses (ms)"
+    },
+    "PENNCNP_0199": {
+        "LongName": "KSPVRTC_K_SPVRT_C_RTER",
+        "Description": "KVSRT Median Response Time for Incorrect Responses (ms)"
+    },
+    "PENNCNP_0200": {
+        "LongName": "KSPVRTC_K_SPVRT_C_EFF",
+        "Description": "ER40 Efficiency = ER40_CR/log(ER40_CRT)"
+    },
+    "PENNCNP_0201": {
+        "LongName": "CPF_test",
+        "Description": "CPF Test"
+    },
+    "PENNCNP_0202": {
+        "LongName": "CPF_CPFTP",
+        "Description": "CPF True Positives"
+    },
+    "PENNCNP_0203": {
+        "LongName": "CPF_CPFTN",
+        "Description": "CPF True Negatives"
+    },
+    "PENNCNP_0204": {
+        "LongName": "CPF_CPFFP",
+        "Description": "CPF False Positives"
+    },
+    "PENNCNP_0205": {
+        "LongName": "CPF_CPFFN",
+        "Description": "CPF False Negatives"
+    },
+    "PENNCNP_0206": {
+        "LongName": "CPF_CPFTPRT",
+        "Description": "CPF True Positives Median Response Time (ms)"
+    },
+    "PENNCNP_0207": {
+        "LongName": "CPF_CPFTNRT",
+        "Description": "CPF True Negatives Median Response Time (ms)"
+    },
+    "PENNCNP_0208": {
+        "LongName": "CPF_CPFFPRT",
+        "Description": "CPF False Positives Median Response Time (ms)"
+    },
+    "PENNCNP_0209": {
+        "LongName": "CPF_CPFFNRT",
+        "Description": "CPF False Negatives Median Response Time (ms)"
+    },
+    "PENNCNP_0210": {
+        "LongName": "CPF_IFAC_TOT",
+        "Description": "CPF Total Correct Responses"
+    },
+    "PENNCNP_0211": {
+        "LongName": "CPF_IFAC_RTC",
+        "Description": "CPF Median Total Correct Response Time (ms)"
+    },
+    "PENNCNP_0212": {
+        "LongName": "CPF_CPF_DY",
+        "Description": "CPF Definitely Yes Responses"
+    },
+    "PENNCNP_0213": {
+        "LongName": "CPF_CPF_DN",
+        "Description": "CPF Definitely No Responses"
+    },
+    "PENNCNP_0214": {
+        "LongName": "CPF_CPF_PY",
+        "Description": "CPF Probably Yes Responses"
+    },
+    "PENNCNP_0215": {
+        "LongName": "CPF_CPF_PN",
+        "Description": "CPF Probably No Responses"
+    },
+    "PENNCNP_0216": {
+        "LongName": "CPF_CPFTP_DEF",
+        "Description": "CPF True Positives- Definitely"
+    },
+    "PENNCNP_0217": {
+        "LongName": "CPF_CPFTP_PROB",
+        "Description": "CPF True Positives- Probably"
+    },
+    "PENNCNP_0218": {
+        "LongName": "CPF_CPFTN_DEF",
+        "Description": "CPF True Negatives- Definitely"
+    },
+    "PENNCNP_0219": {
+        "LongName": "CPF_CPFTN_PROB",
+        "Description": "CPF True Negatives- Probably"
+    },
+    "PENNCNP_0220": {
+        "LongName": "CPF_CPFFP_DEF",
+        "Description": "CPF False Positives- Definitely"
+    },
+    "PENNCNP_0221": {
+        "LongName": "CPF_CPFFP_PROB",
+        "Description": "CPF False Positives- Probably"
+    },
+    "PENNCNP_0222": {
+        "LongName": "CPF_CPFFN_DEF",
+        "Description": "CPF False Negatives- Definitely"
+    },
+    "PENNCNP_0223": {
+        "LongName": "CPF_CPFFN_PROB",
+        "Description": "CPF False Negatives- Probably"
+    },
+    "PENNCNP_0224": {
+        "LongName": "CPF_CPF_LRSR",
+        "Description": "CPF- Longest Run of Same Responses"
+    },
+    "PENNCNP_0225": {
+        "LongName": "sVOLT_test",
+        "Description": "SVOLT Test"
+    },
+    "PENNCNP_0226": {
+        "LongName": "SHORTVOLT_SVT",
+        "Description": "Short VOLT Total Correct"
+    },
+    "PENNCNP_0227": {
+        "LongName": "SHORTVOLT_SVTRT",
+        "Description": "Median Response Time for Short VOLT All Responses (ms)"
+    },
+    "PENNCNP_0228": {
+        "LongName": "SHORTVOLT_SVTCRT",
+        "Description": "Median Response Time for Short VOLT Correct Responses (ms)"
+    },
+    "PENNCNP_0229": {
+        "LongName": "SHORTVOLT_SVTIRT",
+        "Description": "Median Response Time for Short VOLT Incorrect Responses (ms)"
+    },
+    "PENNCNP_0230": {
+        "LongName": "SHORTVOLT_SVTTP",
+        "Description": "Short VOLT True Positive Responses"
+    },
+    "PENNCNP_0231": {
+        "LongName": "SHORTVOLT_SVTTN",
+        "Description": "Short VOLT True Negative Responses"
+    },
+    "PENNCNP_0232": {
+        "LongName": "SHORTVOLT_SVTFP",
+        "Description": "Short VOLT False Positive Responses"
+    },
+    "PENNCNP_0233": {
+        "LongName": "SHORTVOLT_SVTFN",
+        "Description": "Short VOLT False Negative Responses"
+    },
+    "PENNCNP_0234": {
+        "LongName": "SHORTVOLT_SVTTPRT",
+        "Description": "Short VOLT True Positive Median Response Time (ms)"
+    },
+    "PENNCNP_0235": {
+        "LongName": "SHORTVOLT_SVTTNRT",
+        "Description": "Short VOLT True Negative Median Response Time (ms)"
+    },
+    "PENNCNP_0236": {
+        "LongName": "SHORTVOLT_SVTFPRT",
+        "Description": "Short VOLT False Positive Median Response Time (ms)"
+    },
+    "PENNCNP_0237": {
+        "LongName": "SHORTVOLT_SVTFNRT",
+        "Description": "Short VOLT False Negative Median Response Time (ms)"
+    },
+    "PENNCNP_0238": {
+        "LongName": "SHORTVOLT_SVT_EFF",
+        "Description": "Short VOLT Efficiency"
+    }
+}

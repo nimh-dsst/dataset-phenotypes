@@ -1,0 +1,427 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_date": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 DateFinished",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_language": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_uncorrected": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_agecorrected": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_v": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ Version",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_date": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 DateFinished",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_language": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_uncorrected": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_agecorrected": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_v": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 Version",
+        "DataType": "String"
+    },
+    "nihtbx_list_date": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Date Finished",
+        "DataType": "String"
+    },
+    "nihtbx_list_language": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_list_uncorrected": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_list_agecorrected": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_list_v": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ Version",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_date": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 DateFinished",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_language": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_uncorrected": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_agecorrected": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_v": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 Version",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_date": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 DateFinished",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_language": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_uncorrected": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_agecorrected": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_v": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ Version",
+        "DataType": "String"
+    },
+    "nihtbx_picture_date": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 DateFinished",
+        "DataType": "String"
+    },
+    "nihtbx_picture_language": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_picture_uncorrected": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_picture_agecorrected": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_picture_v": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A Version",
+        "DataType": "String"
+    },
+    "nihtbx_reading_date": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 DateFinished",
+        "DataType": "String"
+    },
+    "nihtbx_reading_language": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 Language",
+        "DataType": "String"
+    },
+    "nihtbx_reading_uncorrected": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_reading_agecorrected": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_reading_v": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ Version",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_language": {
+        "Description": "Cognition Fluid Composite Language",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_uncorrected": {
+        "Description": "Cognition Fluid Composite Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_agecorrected": {
+        "Description": "Cognition Fluid Composite Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_v": {
+        "Description": "Cognition Fluid Composite Version",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_language": {
+        "Description": "Crystallized Composite Language",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_uncorrected": {
+        "Description": "Crystallized Composite Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_agecorrected": {
+        "Description": "Crystallized Composite Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_v": {
+        "Description": "Crystallized Composite Version",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_language": {
+        "Description": "Cognition Total Composite Score Language",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_uncorrected": {
+        "Description": "Cognition Total Composite Score Uncorrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_agecorrected": {
+        "Description": "Cognition Total Composite Score Age-Corrected Standard Score",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_v": {
+        "Description": "Cognition Total Composite Score Version",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_rs": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_theta": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_itmcnt": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_cs": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_picvocab_fc": {
+        "Description": "NIH Toolbox Picture Vocabulary Test Age 3+ v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_rawscore": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_theta": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_itmcnt": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_cs": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_flanker_fc": {
+        "Description": "NIH Toolbox Flanker Inhibitory Control and Attention Test Ages 8-11 v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_list_rawscore": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Raw Score",
+        "DataType": "String"
+    },
+    "nihtbx_list_theta": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_list_itmcnt": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_list_cs": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_list_fc": {
+        "Description": "NIH Toolbox List Sorting Working Memory Test Age 7+ v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_rawscore": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_theta": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_itmcnt": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_cs": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_cardsort_fc": {
+        "Description": "NIH Toolbox Dimensional Change Card Sort Test Ages 8-11 v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_rawscore": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_theta": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_itmcnt": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_cs": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_pattern_fc": {
+        "Description": "NIH Toolbox Pattern Comparison Processing Speed Test Age 7+ v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_picture_rawscore": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_picture_theta": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_picture_itmcnt": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_picture_cs": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_picture_fc": {
+        "Description": "NIH Toolbox Picture Sequence Memory Test Age 8+ Form A v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_reading_rawscore": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_reading_theta": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 Theta",
+        "DataType": "String"
+    },
+    "nihtbx_reading_itmcnt": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_reading_cs": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_reading_fc": {
+        "Description": "NIH Toolbox Oral Reading Recognition Test Age 3+ v2.0 Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_rs": {
+        "Description": "Cognition Fluid Composite RawScore",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_theta": {
+        "Description": "Cognition Fluid Composite Theta",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_itmcnt": {
+        "Description": "Cognition Fluid Composite ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_cs": {
+        "Description": "Cognition Fluid Composite Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_fluidcomp_fc": {
+        "Description": "Cognition Fluid Composite Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_rawscore": {
+        "Description": "Crystallized Composite Raw Score",
+        "DataType": "Integer"
+    },
+    "nihtbx_cryst_theta": {
+        "Description": "Crystallized Composite Theta",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_itmcnt": {
+        "Description": "Crystallized Composite ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_cs": {
+        "Description": "Crystallized Composite Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_cryst_fc": {
+        "Description": "Crystallized Composite Fully-Corrected T-score",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_rawscore": {
+        "Description": "Total Cognition Composite  Raw Score",
+        "DataType": "Integer"
+    },
+    "nihtbx_totalcomp_theta": {
+        "Description": "Cognition Total Composite Score Theta",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_itmcnt": {
+        "Description": "Cognition Total Composite Score ItmCnt",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_cs": {
+        "Description": "Cognition Total Composite Score Computed Score",
+        "DataType": "String"
+    },
+    "nihtbx_totalcomp_fc": {
+        "Description": "Cognition Total Composite Score Fully-Corrected T-score",
+        "DataType": "String"
+    }
+}

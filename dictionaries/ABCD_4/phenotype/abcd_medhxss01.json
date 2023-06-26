@@ -1,0 +1,170 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "medhx_ss_4b_p": {
+        "Description": "How many times has he/she been to the emergency room in that past year? | 0 = 0; 1 = 1 time; 2 = 2 times; 3 = 3-4 times; 4 = 5-9 times; 5 = >10+ times | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_4b].",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "0": "0",
+            "1": "1 time",
+            "2": "2 times",
+            "3": "3-4 times",
+            "4": "5-9 times",
+            "5": ">10+ times | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_4b]."
+        }
+    },
+    "medhx_ss_5b_p": {
+        "Description": "How many times did s(he) go to the emergency room before the past year? | 0 = 0; 1 = 1 time; 2 = 2 times; 3 = 3-4 times; 4 = 5-9 times; 5 = >10+ times | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_5b].",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4 ; 5",
+        "Levels": {
+            "0": "0",
+            "1": "1 time",
+            "2": "2 times",
+            "3": "3-4 times",
+            "4": "5-9 times",
+            "5": ">10+ times | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_5b]."
+        }
+    },
+    "medhx_ss_6a_times_p": {
+        "Description": "Broken Bones\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6a_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 20"
+    },
+    "medhx_ss_6b_times_p": {
+        "Description": "Sprains\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6b_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 20"
+    },
+    "medhx_ss_6c_times_p": {
+        "Description": "Scrapes\r: How many times | If yes is endorsed, parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6c_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 50"
+    },
+    "medhx_ss_6d_times_p": {
+        "Description": "Stitches\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6d_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6e_times_p": {
+        "Description": "Other Serious Wounds\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6e_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6f_times_p": {
+        "Description": "Falls\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6f_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 30"
+    },
+    "medhx_ss_6g_times_p": {
+        "Description": "Burns\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6g_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 5"
+    },
+    "medhx_ss_6h_times_p": {
+        "Description": "High Fever\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6h_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 25"
+    },
+    "medhx_ss_6i_times_p": {
+        "Description": "Head Injury: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6i_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6j_times_p": {
+        "Description": "Knocked Unconscious\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6j_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6k_times_p": {
+        "Description": "Bruises: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6k_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6l_times_p": {
+        "Description": "Asthma Attack\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6l_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 50"
+    },
+    "medhx_ss_6m_times_p": {
+        "Description": "Broken Teeth\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6m_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6n_times_p": {
+        "Description": "Animal Bite\r: How many times? [medhx_6m_times] | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6n_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6o_times_p": {
+        "Description": "Overdose\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6o_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6p_times_p": {
+        "Description": "Seizure\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6p_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6q_times_p": {
+        "Description": "Accidental Poisoning\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6q_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6r_times_p": {
+        "Description": "Gun Shot Wound\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6r_notes].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_6s_times_p": {
+        "Description": "Wound from knife or any other weapon\r: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6s_times].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 100"
+    },
+    "medhx_ss_9b_p": {
+        "Description": "Has he/she ever had general anesthesia or sedation for any surgery or procedure: How many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_9b].",
+        "DataType": "Float",
+        "ValueRange": "0 :: 15"
+    },
+    "medhx_ss_6t_times_p": {
+        "Description": "Other\nHow many times? | If yes is endorsed,  parent is then asked \"How many times.\" If no is endorsed, \"0\" has replaced missing [medhx_6t_times].",
+        "DataType": "Float",
+        "ValueRange": "0::100;999"
+    }
+}

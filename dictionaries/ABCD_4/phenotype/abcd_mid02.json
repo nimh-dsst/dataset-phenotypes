@@ -1,0 +1,1022 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_mid_beh_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_mid_beh_switchflag": {
+        "Description": "Whether the button box responses were switched | 1= switch;0= no switch",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "switch",
+            "0": "no switch"
+        }
+    },
+    "tfmri_mid_beh_performflag": {
+        "Description": "Whether the participant had an acceptable performance in the task; must have at least 20 responses per run | 1= acceptable; 0= not acceptable",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "acceptable",
+            "0": "not acceptable"
+        }
+    },
+    "tfmri_mid_beh_nruns": {
+        "Description": "Number of valid runs in the file",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_t_nt": {
+        "Description": "Total number of trials",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_t_nt": {
+        "Description": "Total number of trials for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_t_nt": {
+        "Description": "Total number of trials for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_srw_nt": {
+        "Description": "Total number of small reward trials for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_srw_mrt": {
+        "Description": "Average reaction time for small reward trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srw_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srw_nt": {
+        "Description": "Total number of small reward trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_srw_mrt": {
+        "Description": "Average reaction time for small reward trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srw_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srw_nt": {
+        "Description": "Total number of small reward trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_srw_mrt": {
+        "Description": "Average reaction time for small reward trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srw_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srwpfb_nt": {
+        "Description": "Total number of small reward trials answered correctly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_srwpfb_rate": {
+        "Description": "Number of small reward trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of small reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srwpfb_mrt": {
+        "Description": "Average reaction time for small reward trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward trials with positive feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srwpfb_nt": {
+        "Description": "Total number of small reward trials answered correctly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_srwpfb_rate": {
+        "Description": "Number of small reward trials that yielded positive feedback in run 1 divided by the total number of small reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srwpfb_mrt": {
+        "Description": "Average reaction time for small reward trials with positive feedback run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward with positive feedback run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srwpfb_nt": {
+        "Description": "Total number of small reward trials answered correctly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_srwpfb_rate": {
+        "Description": "Number of small reward trials that yielded positive feedback in run 2 divided by the total number of small reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srwpfb_mrt": {
+        "Description": "Average reaction time for small reward trials with positive feedback run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward with positive feedback run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srwnfb_nt": {
+        "Description": "Total number of small reward trials answered incorrectly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_srwnfb_rate": {
+        "Description": "Number of small reward trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of small reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srwnfb_mrt": {
+        "Description": "Average reaction time for small reward trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_srwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srwnfb_nt": {
+        "Description": "Total number of small reward trials answered incorrectly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_srwnfb_rate": {
+        "Description": "Number of small reward trials that yielded negative feedback in run 1 divided by the total number of small reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srwnfb_mrt": {
+        "Description": "Average reaction time for small reward trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_srwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srwnfb_nt": {
+        "Description": "Total number of small reward trials answered incorrectly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_srwnfb_rate": {
+        "Description": "Number of small reward trials that yielded negative feedback in run 2 divided by the total number of small reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srwnfb_mrt": {
+        "Description": "Average reaction time for small reward trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_srwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small reward with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrw_nt": {
+        "Description": "Total number of large reward trials for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_lrw_mrt": {
+        "Description": "Average reaction time for large reward trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrw_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrw_nt": {
+        "Description": "Total number of large reward trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_lrw_mrt": {
+        "Description": "Average reaction time for large reward trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrw_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrw_nt": {
+        "Description": "Total number of large reward trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_lrw_mrt": {
+        "Description": "Average reaction time for large reward trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrw_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrwpfb_nt": {
+        "Description": "Total number of large reward trials answered correctly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_lrwpfb_rate": {
+        "Description": "Number of large reward trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of large reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrwpfb_mrt": {
+        "Description": "Average reaction time for large reward trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward trials with positive feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrwpfb_nt": {
+        "Description": "Total number of large reward trials answered correctly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_lrwpfb_rate": {
+        "Description": "Number of large reward trials that yielded positive feedback in run 1 divided by the total number of large reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrwpfb_mrt": {
+        "Description": "Average reaction time for large reward trials with positive feedback run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward with positive feedback run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrwpfb_nt": {
+        "Description": "Total number of large reward trials answered correctly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_lrwpfb_rate": {
+        "Description": "Number of large reward trials that yielded positive feedback in run 2 divided by the total number of large reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrwpfb_mrt": {
+        "Description": "Average reaction time for large reward trials with positive feedback run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward with positive feedback run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrwnfb_nt": {
+        "Description": "Total number of large reward trials answered incorrectly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_lrwnfb_rate": {
+        "Description": "Number of large reward trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of large reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrwnfb_mrt": {
+        "Description": "Average reaction time for large reward trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_lrwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward trials with negative feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrwnfb_nt": {
+        "Description": "Total number of large reward trials answered incorrectly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_lrwnfb_rate": {
+        "Description": "Number of large reward trials that yielded negative feedback in run 1 divided by the total number of large reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrwnfb_mrt": {
+        "Description": "Average reaction time for large reward trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_lrwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrwnfb_nt": {
+        "Description": "Total number of large reward trials answered incorrectly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_lrwnfb_rate": {
+        "Description": "Number of large reward trials that yielded negative feedback in run 2 divided by the total number of large reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrwnfb_mrt": {
+        "Description": "Average reaction time for large reward trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_lrwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large reward with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_sl_nt": {
+        "Description": "Total number of small loss trials for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_sl_mrt": {
+        "Description": "Average reaction time for small loss trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_sl_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_sl_nt": {
+        "Description": "Total number of small loss trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_sl_mrt": {
+        "Description": "Average reaction time for small loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_sl_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_sl_nt": {
+        "Description": "Total number of small loss trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_sl_mrt": {
+        "Description": "Average reaction time for small loss trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_sl_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_slpfb_nt": {
+        "Description": "Total number of small loss trials answered correctly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_slpfb_rate": {
+        "Description": "Number of small loss trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of small loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_slpfb_mrt": {
+        "Description": "Average reaction time for small loss trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_slpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials with positive feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_slpfb_nt": {
+        "Description": "Total number of small loss trials answered correctly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_slpfb_rate": {
+        "Description": "Number of small loss trials that yielded positive feedback in run 1 divided by the total number of small loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_slpfb_mrt": {
+        "Description": "Average reaction time for small loss trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_slpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_slpfb_nt": {
+        "Description": "Total number of small loss trials answered correctly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_slpfb_rate": {
+        "Description": "Number of small loss trials that yielded positive feedback in run 2 divided by the total number of small loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_slpfb_mrt": {
+        "Description": "Average reaction time for small loss trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_slpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_slnfb_nt": {
+        "Description": "Total number of small loss trials answered incorrectly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_slnfb_rate": {
+        "Description": "Number of small loss trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of small loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_slnfb_mrt": {
+        "Description": "Average reaction time for small loss trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_slnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials with negative feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_slnfb_nt": {
+        "Description": "Total number of small loss trials answered incorrectly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_slnfb_rate": {
+        "Description": "Number of small loss trials that yielded negative feedback in run 1 divided by the total number of small loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_slnfb_mrt": {
+        "Description": "Average reaction time for small loss trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_slnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_slnfb_nt": {
+        "Description": "Total number of small loss trials answered incorrectly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_slnfb_rate": {
+        "Description": "Number of small loss trials that yielded negative feedback in run 2 divided by the total number of small loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_slnfb_mrt": {
+        "Description": "Average reaction time for small loss trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_slnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for small loss trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ll_nt": {
+        "Description": "Total number of number of large loss trials for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_ll_mrt": {
+        "Description": "Average reaction time for large loss trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ll_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ll_nt": {
+        "Description": "Total number of large loss trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_ll_mrt": {
+        "Description": "Average reaction time for large loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ll_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ll_nt": {
+        "Description": "Total number of large loss trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_ll_mrt": {
+        "Description": "Average reaction time for large loss trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ll_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_llpfb_nt": {
+        "Description": "Total number of large loss trials answered correctly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_llpfb_rate": {
+        "Description": "Number of large loss trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of large loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_llpfb_mrt": {
+        "Description": "Average reaction time for large loss trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_llpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials with positive feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_llpfb_nt": {
+        "Description": "Total number of large loss trials answered correctly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_llpfb_rate": {
+        "Description": "Number of large loss trials that yielded positive feedback in run 1 divided by the total number of large loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_llpfb_mrt": {
+        "Description": "Average reaction time for large loss trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_llpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_llpfb_nt": {
+        "Description": "Total number of large loss trials answered correctly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_llpfb_rate": {
+        "Description": "Number of large loss trials that yielded positive feedback in run 2 divided by the total number of large loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_llpfb_mrt": {
+        "Description": "Average reaction time for large loss trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_llpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_llnfb_nt": {
+        "Description": "Total number of number of large loss trials answered incorrectly for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_llnfb_rate": {
+        "Description": "Number of large loss trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of large loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_llnfb_mrt": {
+        "Description": "Average reaction time for large loss trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_llnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials with negative feedback run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_llnfb_nt": {
+        "Description": "Total number of large loss trials answered incorrectly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_llnfb_rate": {
+        "Description": "Number of large loss trials that yielded negative feedback in run 1 divided by the total number of large loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_llnfb_mrt": {
+        "Description": "Average reaction time for large loss trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_llnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_llnfb_nt": {
+        "Description": "Total number of large loss trials answered incorrectly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_llnfb_rate": {
+        "Description": "Number of large loss trials that yielded negative feedback in run 2 divided by the total number of large loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_llnfb_mrt": {
+        "Description": "Average reaction time for large loss trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_llnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large loss trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_nt_nt": {
+        "Description": "Total number of neutral trials shown for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_nt_mrt": {
+        "Description": "Average reaction time for neutral trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_nt_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_nt_nt": {
+        "Description": "Total number of neutral trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_nt_mrt": {
+        "Description": "Average reaction time for neutral trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_nt_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_nt_nt": {
+        "Description": "Total number of neutral trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_nt_mrt": {
+        "Description": "Average reaction time for neutral trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_nt_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ntpfb_nt": {
+        "Description": "Total number of neutral trials with positive feedback for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_ntpfb_rate": {
+        "Description": "Number of neutral trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of neutral trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ntpfb_mrt": {
+        "Description": "Average reaction time for neutral trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ntpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ntpfb_nt": {
+        "Description": "Total number of neutral trials answered correctly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_ntpfb_rate": {
+        "Description": "Number of neutral trials that yielded positive feedback in run 1 divided by the total number of neutral trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ntpfb_mrt": {
+        "Description": "Average reaction time for neutral trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ntpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trialswith positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ntpfb_nt": {
+        "Description": "Total number of neutral trials answered correctly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_ntpfb_rate": {
+        "Description": "Number of neutral trials that yielded positive feedback in run 2 divided by the total number of neutral trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ntpfb_mrt": {
+        "Description": "Average reaction time for neutral trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ntpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ntnfb_nt": {
+        "Description": "Total number of neutral trials with negative feedback for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_ntnfb_rate": {
+        "Description": "Number of neutral trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of neutral trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ntnfb_mrt": {
+        "Description": "Average reaction time for neutral trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_ntnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ntnfb_nt": {
+        "Description": "Total number of neutral trials answered incorrectly for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_ntnfb_rate": {
+        "Description": "Number of neutral trials that yielded negative feedback in run 1 divided by the total number of neutral trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ntnfb_mrt": {
+        "Description": "Average reaction time for neutral trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_ntnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ntnfb_nt": {
+        "Description": "Total number of neutral trials answered incorrectly for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_ntnfb_rate": {
+        "Description": "Number of neutral trials that yielded negative feedback in run 2 divided by the total number of neutral trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ntnfb_mrt": {
+        "Description": "Average reaction time for neutral trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_ntnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for neutral trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrw_nt": {
+        "Description": "Total number of large and small reward trials shown for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_hrw_mrt": {
+        "Description": "Average reaction time for large and small reward trials for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrw_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials shown for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrw_nt": {
+        "Description": "Total number of large and small reward trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_hrw_mrt": {
+        "Description": "Average reaction time for large and small reward trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrw_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials shown for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrw_nt": {
+        "Description": "Total number of large and small reward trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_hrw_mrt": {
+        "Description": "Average reaction time for large and small reward trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrw_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials shown for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrwpfb_nt": {
+        "Description": "Total number of large and small reward trials with positive feedback for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_hrwpfb_rate": {
+        "Description": "Number of large and small reward trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrwpfb_mrt": {
+        "Description": "Average reaction time for large and small reward trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrwpfb_nt": {
+        "Description": "Total number of large and small reward trials with positive feedback for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_hrwpfb_rate": {
+        "Description": "Number of large and small reward trials that yielded positive feedback in run 1 divided by the total number of reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrwpfb_mrt": {
+        "Description": "Average reaction time for large and small reward trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrwpfb_nt": {
+        "Description": "Total number of large and small reward trials with positive feedback for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_hrwpfb_rate": {
+        "Description": "Number of large and small reward trials that yielded positive feedback in run 2 divided by the total number of reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrwpfb_mrt": {
+        "Description": "Average reaction time for large and small reward trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrwpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrwnfb_nt": {
+        "Description": "Total number of large and small reward trials with negative feedback for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_hrwnfb_rate": {
+        "Description": "Number of large and small reward trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrwnfb_mrt": {
+        "Description": "Average reaction time for large and small reward trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hrwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrwnfb_nt": {
+        "Description": "Total number of large and small reward trials with negative feedback for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_hrwnfb_rate": {
+        "Description": "Number of large and small reward trials that yielded negative feedback in run 1 divided by the total number of reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrwnfb_mrt": {
+        "Description": "Average reaction time for large and small reward trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hrwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrwnfb_nt": {
+        "Description": "Total number of large and small reward trials with negative feedback for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_hrwnfb_rate": {
+        "Description": "Number of large and small reward trials that yielded negative feedback in run 2 divided by the total number of reward trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrwnfb_mrt": {
+        "Description": "Average reaction time for large and small reward trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hrwnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small reward trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hl_nt": {
+        "Description": "Total number of large and small loss trials shown for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_hl_mrt": {
+        "Description": "Average reaction time for large and small loss conditions for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hl_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials shown for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hl_nt": {
+        "Description": "Total number of large and small loss trials shown for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_hl_mrt": {
+        "Description": "Average reaction time for large and small loss trials for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hl_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials shown for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hl_nt": {
+        "Description": "Total number of large and small loss trials shown for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_hl_mrt": {
+        "Description": "Average reaction time for large and small loss trials for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hl_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials shown for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hlpfb_nt": {
+        "Description": "Total number of large and small loss trials with positive feedback for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_hlpfb_rate": {
+        "Description": "Number of large and small loss trials that yielded positive feedback in run 1 and run 2 combined divided by the total number of loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hlpfb_mrt": {
+        "Description": "Average reaction time for large and small loss trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hlpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials with positive feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hlpfb_nt": {
+        "Description": "Total number of large and small loss trials with positive feedback for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_hlpfb_rate": {
+        "Description": "Number of large and small loss trials that yielded positive feedback in run 1 divided by the total number of loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hlpfb_mrt": {
+        "Description": "Average reaction time for large and small loss trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hlpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials with positive feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hlpfb_nt": {
+        "Description": "Total number of large and small loss trials with positive feedback for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_hlpfb_rate": {
+        "Description": "Number of large and small loss trials that yielded positive feedback in run 2 divided by the total number of loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hlpfb_mrt": {
+        "Description": "Average reaction time for large and small loss trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hlpfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials with positive feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hlnfb_nt": {
+        "Description": "Total number of large and small loss trials with negative feedback for run 1 and run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_all_beh_hlnfb_rate": {
+        "Description": "Number of large and small loss trials that yielded negative feedback in run 1 and run 2 combined divided by the total number of loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hlnfb_mrt": {
+        "Description": "Average reaction time for large and small loss trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_hlnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials with negative feedback for run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hlnfb_nt": {
+        "Description": "Total number of large and small loss trials with negative feedback for run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r1_beh_hlnfb_rate": {
+        "Description": "Number of large and small loss trials that yielded negative feedback in run 1 divided by the total number of loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hlnfb_mrt": {
+        "Description": "Average reaction time for large and small loss trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_hlnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials with negative feedback for run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hlnfb_nt": {
+        "Description": "Total number of large and small loss trials with negative feedback for run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_mid_r2_beh_hlnfb_rate": {
+        "Description": "Number of large and small loss trials that yielded negative feedback in run 2 divided by the total number of loss trials",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hlnfb_mrt": {
+        "Description": "Average reaction time for large and small loss trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_hlnfb_stdrt": {
+        "Description": "Standard deviation of average reaction time for large and small loss trials with negative feedback for run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_all_beh_t_earnings": {
+        "Description": "Total amount of earnings in run 1 and run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r1_beh_t_earnings": {
+        "Description": "Total amount of earnings in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_mid_r2_beh_t_earnings": {
+        "Description": "Total amount of earnings in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_mid_beh_feedbackflag": {
+        "Description": "Whether the participant had acceptable performance for feedback analyses; all trial types must yield 4 or more events for both positive and negative feedback | 1= acceptable; 0= not acceptable",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "acceptable",
+            "0": "not acceptable"
+        }
+    }
+}

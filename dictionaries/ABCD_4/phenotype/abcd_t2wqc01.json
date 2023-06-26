@@ -1,0 +1,122 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "visit": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "t2w_postqc_containertype": {
+        "Description": "Container type",
+        "DataType": "String"
+    },
+    "t2w_postqc_stype": {
+        "Description": "Series type",
+        "DataType": "String"
+    },
+    "t2w_postqc_nrev": {
+        "Description": "Number of reviews",
+        "DataType": "Integer",
+        "ValueRange": "0::4"
+    },
+    "t2w_postqc_revdisp": {
+        "Description": "Disparity between reviewers | 0 = reject; 1 = accept",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "reject",
+            "1": "accept"
+        }
+    },
+    "t2w_postqc_qc": {
+        "Description": "Overall QC score | 0 = no disparity; 1 = disparity between raters",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "no disparity",
+            "1": "disparity between raters"
+        }
+    },
+    "t2w_postqc_regt1": {
+        "Description": "Registration error score (0=good registration, 1=mild rotation or translation, 2=moderate rotation or translation, 3=severe rotation or translation) | 0 = absent; 1 = mild; 2 = moderate; 3 = severe",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "absent",
+            "1": "mild",
+            "2": "moderate",
+            "3": "severe"
+        }
+    },
+    "t2w_postqc_motion": {
+        "Description": "Motion score (0=no motion, 1=mild motion, 2=moderate motion, 3=severe motion artifact) | 0 = absent; 1 = mild; 2 = moderate; 3 = severe",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "absent",
+            "1": "mild",
+            "2": "moderate",
+            "3": "severe"
+        }
+    },
+    "t2w_postqc_inhomogeneity": {
+        "Description": "Inhomogeneity score (0=no inhomogeneity, 1=mild inhomogeneity, 2=moderate inhomogeneity, 3=severe inhomogeneity) | 0 = absent; 1 = mild; 2 = moderate; 3 = severe",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "absent",
+            "1": "mild",
+            "2": "moderate",
+            "3": "severe"
+        }
+    },
+    "t2w_postqc_artifact": {
+        "Description": "Artifact score  (0=no susceptibility artifact, 1=mild artifact, 2=moderate artifact, 3=severe artifact) | 0 = absent; 1 = mild; 2 = moderate; 3 = severe",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "absent",
+            "1": "mild",
+            "2": "moderate",
+            "3": "severe"
+        }
+    },
+    "t2w_postqc_notes": {
+        "Description": "sMRI T2w postprocessing QC Notes",
+        "DataType": "String"
+    }
+}

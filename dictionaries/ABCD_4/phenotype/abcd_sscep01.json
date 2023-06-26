@@ -1,0 +1,339 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "meim_p_ss_exp": {
+        "Description": "MEIM-R Exploration Subscale, Mean: (meim_1_p + meim_4_p + meim_5_p)/3; Validation: All items must be answered | Phinney, J. S., and Ong, A. D. (2007) Conceptualization and measurement of ethnic identity: Current status and future directions. Journal of Counseling Psychology 54: 271-281.",
+        "DataType": "Float"
+    },
+    "meim_p_ss_exp_nm": {
+        "Description": "MEIM-R Exploration Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "meim_p_ss_exp_nt": {
+        "Description": "MEIM-R Exploration Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "meim_p_ss_com": {
+        "Description": "MEIM-R Commitment and Attachment Subscale, Mean: (meim_2_p + meim_3_p + meim_6_p)/3; Validation: All items must be answered | Phinney, J. S., and Ong, A. D. (2007) Conceptualization and measurement of ethnic identity: Current status and future directions. Journal of Counseling Psychology 54: 271-281.",
+        "DataType": "Float"
+    },
+    "meim_p_ss_com_nm": {
+        "Description": "MEIM-R Commitment and Attachment Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "meim_p_ss_com_nt": {
+        "Description": "MEIM-R Commitment and Attachment Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "meim_p_ss_total": {
+        "Description": "MEIM-R Overall Mean: (meim_1_p + meim_2_p + meim_3_p + meim_4_p + meim_5_p + [meim_6_p)/6; Validation: minimum of 5 items answered | Phinney, J. S., and Ong, A. D. (2007) Conceptualization and measurement of ethnic identity: Current status and future directions. Journal of Counseling Psychology 54: 271-281.",
+        "DataType": "Float"
+    },
+    "meim_p_ss_total_nm": {
+        "Description": "MEIM-R Overall Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "meim_p_ss_total_nt": {
+        "Description": "MEIM-R Overall Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "via_p_ss_hc": {
+        "Description": "VIA Heritage Culture Subscale, Mean: (vancouver_q2_p +  vancouver_q4_p + vancouver_q6_p + vancouver_q8_p + vancouver_q10_p + vancouver_q12_p + vancouver_q14_p + vancouver_q16_p)/8; Validation: All items must be answered | Ryder, A.G., Alden, L. E., et al (2000) Is acculturation unidimensional or bidimensional? A head-to-head comparison in the prediction of personality, self-identity, and adjustment. J Pers Soc Psychol 79(1): 49-65.",
+        "DataType": "Float"
+    },
+    "via_p_ss_hc_nm": {
+        "Description": "VIA Heritage Culture Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "via_p_ss_hc_nt": {
+        "Description": "VIA Heritage Culture Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "via_p_ss_amer": {
+        "Description": "VIA American \"Mainstream\" Culture Subscale, Mean: (vancouver_q3_p + vancouver_q7_p + vancouver_q5_p + vancouver_q9_p + vancouver_q11_p + vancouver_q13_p + vancouver_q15_p + vancouver_q17_p)/8; Validation: All items must be answered | Ryder, A.G., Alden, L. E., et al (2000) Is acculturation unidimensional or bidimensional? A head-to-head comparison in the prediction of personality, self-identity, and adjustment. J Pers Soc Psychol 79(1): 49-65.",
+        "DataType": "Float"
+    },
+    "via_p_ss_amer_nm": {
+        "Description": "VIA American \"Mainstream\" Culture Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "via_p_ss_amer_nt": {
+        "Description": "VIA American \"Mainstream\" Culture Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "nsc_p_ss_mean_3_items": {
+        "Description": "Neighborhood Safety Protocol: Mean of Parent Report, (neighborhood1r_p + neighborhood2r_p + neighborhood3r_p)/3; Validation: No minimum | Echeverria, S. E., Diez-Roux, A. V.,  et al. (2004) Reliability of self-reported neighborhood characteristics. J Urban Health 81(4): 682-701;  Mujahid, M. S., et al. (2007)  Assessing the measurement properties of neighborhood scales: from psychometrics to ecometrics.  Am J Epidemiol 165(8): 858-67.",
+        "DataType": "Float"
+    },
+    "nsc_p_ss_mean_3_items_nm": {
+        "Description": "Neighborhood Safety Protocol, Mean of Parent Report: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "nsc_p_ss_mean_3_items_nt": {
+        "Description": "Neighborhood Safety Protocol, Mean of Parent Report: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_fc": {
+        "Description": "Conflict subscale from the Family Environment Scale Sum of Parent Report (RAW Score): fam_enviro1_p + fam_enviro2r_p + fam_enviro3_p + fam_enviro4r_p + fam_enviro5_p + fam_enviro6_p + fam_enviro7r_p + fam_enviro8_p + fam_enviro9r_p; Validation: Minimum of five items answered | Note that the scores for items that are reversed scored already reflect this scoring (fam_enviro2r_p, fam_enviro4r_p + fam_enviro7r_p, fam_enviro9r_p). Moos, R. H., and  Moos, B. S. (1994)  Family Environment Scale manual (3rd ed.). Palo Alto, CA: Consulting Psychologists Press.",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_fc_na": {
+        "Description": "Conflict subscale from the Family Environment Scale Sum of Parent Report Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_fc_pr": {
+        "Description": "Conflict subscale from the Family Environment Scale Sum of Parent Report Prorated Score (Based on minimum of five items answered) | Calculation: [fes_p_ss_fc]*[fes_p_ss_fc_nt]/[fes_p_ss_fc_na] | ",
+        "DataType": "Float"
+    },
+    "fes_p_ss_fc_nm": {
+        "Description": "Conflict subscale from the Family Environment Scale, Sum of Parent Report: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_fc_nt": {
+        "Description": "Conflict subscale from the Family Environment Scale, Sum of Parent Report: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_fs": {
+        "Description": "MACVS Family Support Subscale, Mean: (mex_american2_p +  mex_american7_p +  mex_american12_p +  mex_american16_p + [mex_american21_p +  mex_american26_p)/6; Validation: All items must be answered | Knight, G. P., Gonzales N. A., et al. (2010) The Mexican American Cultural Values scales for Adolescents and Adults. J Early Adolesc 30(3): 444-481.",
+        "DataType": "Float"
+    },
+    "macv_p_ss_fs_nm": {
+        "Description": "MACVS Family Support Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_fs_nt": {
+        "Description": "MACVS Family Support Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_fo": {
+        "Description": "MACVS Family Obligation Subscale, Mean: (mex_american3_p +  mex_american8_p +  mex_american13_p +  mex_american17_p + mex_american22_p)/5; Validation: All items must be answered | Knight, G. P., Gonzales N. A., et al. (2010) The Mexican American Cultural Values scales for Adolescents and Adults. J Early Adolesc 30(3): 444-481.",
+        "DataType": "Float"
+    },
+    "macv_p_ss_fo_nm": {
+        "Description": "MACVS Family Obligation Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_fo_nt": {
+        "Description": "MACVS Family Obligation Subscale, Mean: Number Total",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_isr": {
+        "Description": "MACVS Independence & Self-Reliance Subscale, Mean: (mex_american5_p +  mex_american10_p +  mex_american14_p +  mex_american19_p +  mex_american24_p)/5; Validation: All items must be answered | Knight, G. P., Gonzales N. A., et al. (2010) The Mexican American Cultural Values scales for Adolescents and Adults. J Early Adolesc 30(3): 444-481.",
+        "DataType": "Float"
+    },
+    "macv_p_ss_isr_nm": {
+        "Description": "MACVS Independence & Self-Reliance Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_isr_nt": {
+        "Description": "MACVS Independence & Self-Reliance Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_fr": {
+        "Description": "MACVS Family as Referent Subscale, Mean: (mex_american4_p + mex_american9_p +  mex_american18_p + mex_american23_p +  mex_american27_p)/5; Validation: All items must be answered | Knight, G. P., Gonzales N. A., et al. (2010) The Mexican American Cultural Values scales for Adolescents and Adults. J Early Adolesc 30(3): 444-481.",
+        "DataType": "Float"
+    },
+    "macv_p_ss_fr_nm": {
+        "Description": "MACVS Family as Referent Subscale, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_fr_nt": {
+        "Description": "MACVS Family as Referent Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_r": {
+        "Description": "MACVS Religion Subscale, Mean: (mex_american1_p +  mex_american6_p +  mex_american11_p +  mex_american15_p +  mex_american20_p + mex_american25_p) + mex_american28_p)/7; Validation: All items must be answered\r\n | Knight, G. P., Gonzales N. A., et al. (2010) The Mexican American Cultural Values scales for Adolescents and Adults. J Early Adolesc 30(3): 444-481.",
+        "DataType": "Float"
+    },
+    "macv_p_ss_r_nm": {
+        "Description": "MACVS Religion Subscale, Mean: Number Missing Answers\r\n",
+        "DataType": "Integer"
+    },
+    "macv_p_ss_r_nt": {
+        "Description": "MACVS Religion Subscale, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "psb_p_ss_mean": {
+        "Description": "Prosocial Behavior Subscale Mean of Parent Report on Youth: (prosocial_q1_p + prosocial_q2_p + prosocial_q3_p)/3; Validation: Minimum of two items answered |  Goodman, R. (1997) The Strengths and Difficulties Questionnaire: a research note. J Child Psychol Psychiatry 38(5):581-6; Goodman, R., Meltzer, H., & Bailey V. (1998) The Strengths and Difficulties Questionnaire: A pilot study of the validity of the self-report version. European Child and Adolescent Psychiatry 7: 125-13.",
+        "DataType": "Float"
+    },
+    "psb_p_ss_mean_nm": {
+        "Description": "Prosocial Behavior Subscale, Mean of Parent Report on Youth: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "psb_p_ss_mean_nt": {
+        "Description": "Prosocial Behavior Subscale, Mean of Parent report on Youth: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "psb_p_ss_answered": {
+        "Description": "Prosocial Behavior Subscale, Mean of Parent Report on Youth: Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_exp_sum_nt": {
+        "Description": "ExpressIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Total QuestIons",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_exp_sum_na": {
+        "Description": "ExpressIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_exp_sum_pr": {
+        "Description": "ExpressIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Prorated Score  (Based on mInImum oF 5 Items answered) | [fes_p_ss_exp_sum]*[fes_p_ss_exp_sum_nt]/[fes_p_ss_exp_sum_na]",
+        "DataType": "Float"
+    },
+    "fes_p_ss_int_cult_sum": {
+        "Description": "Intellectual-Cultural subscale from the FamIly EnvIronment Scale Sum oF Parent Report (RAW Scores) fes_6_p plus fes_16r_p plus fes_26_p plus fes_36r_p plus fes_46r_p plus fes_56_p plus fes_66_p plus fes_76r_p plus fes_86_p  ValIdatIon: MInImum oF 5 Items answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_int_cult_sum_nm": {
+        "Description": "Intellectual-Cultural subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number MIssIng Answers",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_int_cult_sum_nt": {
+        "Description": "Intellectual-Cultural subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Total QuestIons",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_int_cult_sum_na": {
+        "Description": "Intellectual-Cultural subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_int_cult_sum_pr": {
+        "Description": "Intellectual-Cultural subscale From the FamIly EnvIronment Scale Sum oF Parent Report Prorated Score  (Based on mInImum oF 5 Items answered) | [fes_p_ss_Int_cult_sum]*[fes_p_ss_Int_cult_sum_nt]/[fes_p_ss_Int_cult_sum_na]",
+        "DataType": "Float"
+    },
+    "fes_p_ss_act_rec_sum": {
+        "Description": "ActIvIty-RecreatIonal subscale from the FamIly EnvIronment Scale Sum oF Parent Report (RAW Scores) fes_7r_p plus fes_17_p plus fes_27r_p plus fes_37_p plus fes_47_p plus fes_57r_p plus fes_67_p plus fes_77_p plus fes_87r_p  ValIdatIon: MInImum oF 5 Items answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_act_rec_sum_nm": {
+        "Description": "ActIvIty-RecreatIonal subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number MIssIng Answers",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_act_rec_sum_nt": {
+        "Description": "ActIvIty-RecreatIonal subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Total QuestIons",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_act_rec_sum_na": {
+        "Description": "ActIvIty-RecreatIonal subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_act_rec_sum_pr": {
+        "Description": "ActIvIty-RecreatIonal subscale From the FamIly EnvIronment Scale Sum oF Parent Report Prorated Score  (Based on mInImum oF 5 Items answered) | [fes_p_ss_act_rec_sum]*[fes_p_ss_act_rec_sum_nt]/[fes_p_ss_act_rec_sum_na]",
+        "DataType": "Float"
+    },
+    "fes_p_ss_org_sum": {
+        "Description": "OrganIzatIon subscale From the famIly EnvIronment Scale Sum oF Parent Report (RAW Scores) fes_9_p plus fes_19_p plus fes_29r_p plus fes_39_p plus fes_49r_p plus fes_59_p plus fes_69_p plus fes_79r_p plus fes_89_p  ValIdatIon: MInImum oF 5 Items answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_org_sum_nm": {
+        "Description": "OrganIzatIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number MIssIng Answers",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_org_sum_nt": {
+        "Description": "OrganIzatIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Total QuestIons",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_org_sum_na": {
+        "Description": "OrganIzatIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_org_sum_pr": {
+        "Description": "OrganIzatIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Prorated Score  (Based on mInImum oF 5 Items answered) | [fes_p_ss_org_sum]*[fes_p_ss_org_sum_nt]/[fes_p_ss_org_sum_na]",
+        "DataType": "Float"
+    },
+    "comc_ss_cohesion_p": {
+        "Description": "CohesIon Sum Score mean(comc_phenx_close_knIt_p, comc_phenx_help_p, comc_phenx_get_along_p, comc_phenx_share_values_p, comc_phenx_trusted_p)  999 (dont know) converted to 3 In summary score calculatIon  ValIdatIon: MInImum of 1 Item must be answered",
+        "DataType": "Float"
+    },
+    "comc_ss_cohesion_p_nm": {
+        "Description": "CohesIon Number MIssIng",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_cohesion_sum": {
+        "Description": "CohesIon subscale from the FamIly EnvIronment Scale Sum oF Parent Report (RAW Score) fes_1_p plus fes_11r_p plus fes_21_p plus fes_31_p plus fes_41r_p plus fes_51_p plus fes_61r_p plus fes_71_p plus fes_81_p  ValIdatIon:  MInImum oF 5 Items answered",
+        "DataType": "Integer"
+    },
+    "comc_ss_control_p": {
+        "Description": "Control Sum Score  mean(comc_phenx_skIp_p, comc_phenx_graffItI_p, comc_phenx_dIsrespect_p, comc_phenx_fIght_p, comc_phenx_budget_p) 999 (dont know) converted to 3 In summary score calculatIon  ValIdatIon: MInImum of 1 Item must be answered",
+        "DataType": "Float"
+    },
+    "comc_ss_control_p_nm": {
+        "Description": "Control Number MIssIng",
+        "DataType": "Integer"
+    },
+    "comc_ss_control_p_nt": {
+        "Description": "Control Number Total",
+        "DataType": "Integer"
+    },
+    "comc_ss_collective_capacity_p": {
+        "Description": "CollectIve EffIcacy Sum Score mean of all 10 questIons asked In control and cohesIon mean(comc_phenx_close_knIt_p, comc_phenx_help_p,, comc_phenx_get_along_p, comc_phenx_share_values_p, comc_phenx_trusted_p, comc_phenx_skIp_p, comc_phenx_graffItI_p, comc_phenx_dIsrespect_p, comc_phenx_FIght_p, comc_phenx_budget_p) 999 (dont know) converted to 3 In summary score calculatIon ValIdatIon: MInImum of 1 Item must be answered",
+        "DataType": "Float"
+    },
+    "comc_ss_coll_capacity_p_nm": {
+        "Description": "CollectIve EFFIcacy MIssIng",
+        "DataType": "Integer"
+    },
+    "comc_ss_coll_capacity_p_nt": {
+        "Description": "CollectIve EFFIcacy Total",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_cohesion_sum_nm": {
+        "Description": "CohesIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number MIssIng Answers",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_cohesion_sum_nt": {
+        "Description": "CohesIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Total QuestIons",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_cohesion_sum_na": {
+        "Description": "CohesIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_cohesion_sum_pr": {
+        "Description": "CohesIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Prorated Score  (Based on mInImum oF 5 Items answered) | [fes_p_ss_cohesIon_sum]*[fes_p_ss_cohesIon_sum_nt]/[fes_p_ss_cohesIon_sum_na]",
+        "DataType": "Float"
+    },
+    "fes_p_ss_exp_sum": {
+        "Description": "ExpressIon subscale From the famIly EnvIronment Scale Sum oF Parent Report (RAW Scores) fes_2r_p plus fes_12_p plus fes_22_p plus fes_32_p plus fes_42_p plus fes_52r_p plus fes_62_p plus fes_72r_p plus fes_82_p  ValIdatIon: MInImum oF 5 Items answered",
+        "DataType": "Integer"
+    },
+    "fes_p_ss_exp_sum_nm": {
+        "Description": "ExpressIon subscale From the FamIly EnvIronment Scale Sum oF Parent Report Number MIssIng Answers",
+        "DataType": "Integer"
+    }
+}

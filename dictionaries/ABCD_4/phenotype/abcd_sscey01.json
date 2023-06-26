@@ -1,0 +1,263 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "pmq_y_ss_mean": {
+        "Description": "Parental Monitoring: Mean (parent_monitor_q1_y + parent_monitor_q2_y + parent_monitor_q3_y + parent_monitor_q4_y parent_monitor_q5_y)/5; Validation: no minimum number of answers | Karoly, H. C., Callahan, T., et al. (2016) Evaluating the hispanic paradox in the context of adolescent risky sexual behavior: the role of parent monitoring. J Pediatr Psychol 41(4): 429-40.",
+        "DataType": "Float"
+    },
+    "pmq_y_ss_mean_nm": {
+        "Description": "Parental Monitoring, Mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "pmq_y_ss_mean_nt": {
+        "Description": "Parental Monitoring, Mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "fes_y_ss_fc": {
+        "Description": "Conflict Subscale from the Family Environment Scale Sum of Youth Report (RAW Score): fes_youth_q1 + fes_youth_q2 + fes_youth_q3 + fes_youth_q4 + fes_youth_q5 + fes_youth_q6 + fes_youth_q7 + fes_youth_q8 + fes_youth_q9; Validation: Minimum of five items answered | Note that the scores for items that are reversed scored already reflect this scoring (fes_youth_q1, fes_youth_q4, fes_youth_q7, fes_youth_q9). Moos, R. H., and  Moos, B. S. (1994)  Family Environment Scale manual (3rd ed.). Palo Alto, CA: Consulting Psychologists Press.",
+        "DataType": "Integer"
+    },
+    "fes_y_ss_fc_nm": {
+        "Description": "Conflict Subscale from the Family Environment Scale, Sum of Youth Report: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "fes_y_ss_fc_nt": {
+        "Description": "Conflict Subscale from the Family Environment Scale, Sum of Youth Report: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "fes_y_ss_fc_na": {
+        "Description": "Conflict Subscale from the Family Environment Scale, Sum of Youth Report: Number Answered",
+        "DataType": "Integer"
+    },
+    "fes_y_ss_fc_pr": {
+        "Description": "Conflict Subscale from the Family Environment Scale, Sum of Youth Report: Prorated Score (Based on minimum of five items answered): [fes_y_ss_fc]*[fes_y_ss_fc_nt] /[fes_y_ss_fc_na]",
+        "DataType": "Float"
+    },
+    "psb_y_ss_mean": {
+        "Description": "Prosocial Behavior Subscale Mean of Youth Self Report: (prosocial_q1_y + prosocial_q2_y +  prosocial_q3_y)/3; Validation:Minimum of two items answered |  Goodman, R. (1997) The Strengths and Difficulties Questionnaire: a research note. J Child Psychol Psychiatry 38(5):581-6; Goodman, R., Meltzer, H., & Bailey V. (1998) The Strengths and Difficulties Questionnaire: A pilot study of the validity of the self-report version. European Child and Adolescent Psychiatry 7: 125\u2013130.",
+        "DataType": "Float"
+    },
+    "psb_y_ss_answered": {
+        "Description": "Prosocial Behavior Subscale, Mean of Youth Self Report: Number Answered",
+        "DataType": "Integer"
+    },
+    "psb_y_ss_mean_nm": {
+        "Description": "Prosocial Behavior Subscale, Mean of Youth Self Report: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "psb_y_ss_mean_nt": {
+        "Description": "Prosocial Behavior Subscale, Mean of Youth Self Report: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "crpbi_y_ss_parent": {
+        "Description": "CRPBI - Acceptance Subscale Mean of Report by Parent Completing Protocol by youth: (crpbi_parent1_y +  crpbi_parent2_y + crpbi_parent3_y], crpbi_parent4_y + crpbi_parent5_y)/5; Validation: Minimum of 4 items answered | Schaefer, E. S. (1965) Children's reports of parental behavior: an inventory. Child Dev 36: 413-24; Barber, B. K., Olsen, J. E., et al. (1994) Associations between parental psychological and behavioral control and youth internalized and externalized behaviors. Child Dev 65(4): 1120-36; Schludermann, E. H., Schludermann, S. M. (1988). Children\u2019s report on parent behavior (CRPBI-108, CRPBI-30) for older children and adolescents (Tech. Rep.). Winnipeg, Manitoba, Canada: University of Manitoba, Department of: Psychology; Barber, B. K., and  Olsen, J. (1997) Socialization in context: Connection, regulation, and autonomy in the family, school, and neighborhood and with peers. Journal of Adolescent Research, 12(2): 287-315. ",
+        "DataType": "Float"
+    },
+    "crpbi_y_ss_parent_nm": {
+        "Description": "CRPBI - Acceptance Subscale, Mean of Report by Parent Completing Protocol by youth: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "crpbi_y_ss_parent_nt": {
+        "Description": "CRPBI - Acceptance Subscale, Mean of Report by Parent Completing Protocol by youth: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "crpbi_y_ss_caregiver": {
+        "Description": "CRPBI - Acceptance Subscale Mean of Report by Secondary Caregiver by youth: (crpbi_caregiver12_y + crpbi_caregiver13_y + crpbi_caregiver14_y + crpbi_caregiver15_y + crpbi_caregiver16_y)/5; Validation: Minimum of four items answered | Schaefer, E. S. (1965) Children's reports of parental behavior: an inventory. Child Dev 36: 413-24; Barber, B. K., Olsen, J. E., et al. (1994) Associations between parental psychological and behavioral control and youth internalized and externalized behaviors. Child Dev 65(4): 1120-36; Schludermann, E. H., Schludermann, S. M. (1988). Children\u2019s report on parent behavior (CRPBI-108, CRPBI-30) for older children and adolescents (Tech. Rep.). Winnipeg, Manitoba, Canada: University of Manitoba, Department of: Psychology; Barber, B. K., and  Olsen, J. (1997) Socialization in context: Connection, regulation, and autonomy in the family, school, and neighborhood and with peers. Journal of Adolescent Research, 12(2): 287-315. ",
+        "DataType": "Float"
+    },
+    "crpbi_y_ss_caregiver_nm": {
+        "Description": "CRPBI - Acceptance Subscale, Mean of Report by Secondary Caregiver by youth: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "crpbi_y_ss_caregiver_nt": {
+        "Description": "CRPBI - Acceptance Subscale, Mean of Report by Secondary Caregiver by youth: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_ses": {
+        "Description": "SRPF School Environment Subscale, Sum: school_2_y + school_3_y + school_4_y + school_5_y + school_6_y + school_7_y; Validation: Minimum of five items answered |  Arthur, M. W., Briney, J. S., et al. (2007) Measuring risk and protection in communities using the Communities That Care Youth Survey. Eval Program Plann 30(2): 197-211.",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_ses_nm": {
+        "Description": "SRPF School Environment Subscale, Sum: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_ses_nt": {
+        "Description": "SRPF School Environment Subscale, Sum: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_iiss": {
+        "Description": "SRPF School Involvement Subscale, Sum: school_8_y + school_9_y + school_10_y + school_12_y; Validation: Minimum of three items answered |  Arthur, M. W., Briney, J. S., et al. (2007) Measuring risk and protection in communities using the Communities That Care Youth Survey. Eval Program Plann 30(2): 197-211.",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_iiss_nm": {
+        "Description": "SRPF School Involvement Subscale, Sum: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_iiss_nt": {
+        "Description": "SRPF School Involvement Subscale, Sum: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_dfs": {
+        "Description": "SRPF School Disengagement Subscale, Sum: school_15_y + school_17_y; Validation: All items must be answered |  Arthur, M. W., Briney, J. S., et al. (2007) Measuring risk and protection in communities using the Communities That Care Youth Survey. Eval Program Plann 30(2): 197-211.",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_dfs_nm": {
+        "Description": "SRPF School Disengagement Subscale, Sum: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "srpf_y_ss_dfs_nt": {
+        "Description": "SRPF School Disengagement Subscale, Sum: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "wps_ss_sum": {
+        "Description": "WPS SumSum[wps_q1_y. wps_q2_y. wps_q3_y,wps_q4_y, wps_q5_y, wps_q6_y]Validation: Minimum of 4 items answered (4 answers other than not applicable = 0)",
+        "DataType": "Integer"
+    },
+    "wps_ss_sum_nm": {
+        "Description": "WPS\r\nNumber Missing Answers",
+        "DataType": "Integer"
+    },
+    "wps_ss_sum_nt": {
+        "Description": "WPS\r\nNumber Total Questions",
+        "DataType": "Integer"
+    },
+    "dim_y_ss_mean": {
+        "Description": "Discrimination Measure mean(dim_matrix_q1,dim_matrix_q2,dim_matrix_q3,dim_matrix_q4,dim_matrix_q5,dim_matrix_q6,dim_matrix_q7); Only add if value 1 - 5; Validation: Minimum of four items must be answered",
+        "DataType": "Float"
+    },
+    "dim_y_ss_mean_nm": {
+        "Description": "Discrimination Measure mean: Number Missing Answers",
+        "DataType": "Integer"
+    },
+    "dim_y_ss_mean_nt": {
+        "Description": "Discrimination Measure mean: Number Total Questions",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fr_nm": {
+        "Description": "Family Referrent Number Missing",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fr_nt": {
+        "Description": "Family Referrent Number Total",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fs": {
+        "Description": "Family Support Sum Score mean([macv_q2], [macv_q7], [macv_q12], [macv_q16], [macv_q21], [macv_q26]) Validation: All items must be answered",
+        "DataType": "Float"
+    },
+    "macv_y_ss_fs_nm": {
+        "Description": "Family Support Number Missing",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fs_nt": {
+        "Description": "Family Support Number Total",
+        "DataType": "Integer"
+    },
+    "pbp_ss_prosocial_peers": {
+        "Description": "Involvement with Prosocial Peers sum(pbp_athletes, pbp_church, pbp_good_student) Validation: Minimum of two items must be answered",
+        "DataType": "Float"
+    },
+    "pbp_ss_prosocial_peers_nm": {
+        "Description": "Involvement with Prosocial Peers Missing",
+        "DataType": "Integer"
+    },
+    "pbp_ss_prosocial_peers_nt": {
+        "Description": "Involvement with Prosocial Peers Total",
+        "DataType": "Integer"
+    },
+    "pbp_ss_rule_break": {
+        "Description": "Involvement with Rule Breaking/Delinquent Peers  sum(pbp_skip_school, pbp_suspended, pbp_shop_lifted) Validation: Minimum of two items must be answered",
+        "DataType": "Float"
+    },
+    "pbp_ss_rule_break_nm": {
+        "Description": "Involvement with Rule Breaking/Delinquent Peers Missing",
+        "DataType": "Integer"
+    },
+    "pbp_ss_rule_break_nt": {
+        "Description": "Involvement with Rule Breaking/Delinquent Peers Total",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fo": {
+        "Description": "Family Obligation mean([macv_q3], [macv_q8], [macv_q13], [macv_q17], [macv_q22]) Validation: All questions must be answered",
+        "DataType": "Float"
+    },
+    "macv_y_ss_fo_nm": {
+        "Description": "Family Obligation Number Missing",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fo_nt": {
+        "Description": "Family Obligation Number Total",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_fr": {
+        "Description": "Family Referrent Sum Score  mean[macv_q4], [macv_q9], [macv_q18], [macv_q23], [macv_q27]) Validation: All items must be answered",
+        "DataType": "Float"
+    },
+    "pnh_ss_protective_scale": {
+        "Description": "Peer Network Health: Protective Scale Score; sum (pnh_substance, pnh_help, pnh_how_much_help, pnh_encourage, pnh_how_much_encourage); Validation: Items #1,#2, and #3 must be answered",
+        "DataType": "Integer"
+    },
+    "pnh_ss_protective_scale_nm": {
+        "Description": "Peer Network Health: Protective Scale Missing",
+        "DataType": "Integer"
+    },
+    "pnh_ss_protective_scale_nt": {
+        "Description": "Peer Network Health: Protective Scale Total",
+        "DataType": "Integer"
+    },
+    "mnbs_ss_monitor_supervision": {
+        "Description": "Monitoring/Supervision: mean of 1,2,3,4",
+        "DataType": "Float"
+    },
+    "mnbs_ss_mean_all": {
+        "Description": "all: mean 1-10",
+        "DataType": "Float"
+    },
+    "macv_y_ss_isr": {
+        "Description": "Independence/Self Reliance: mean:indep/self reliance = 5, 10, 14, 19, 24",
+        "DataType": "Integer"
+    },
+    "macv_y_ss_r": {
+        "Description": "Religion: mean: religion = 1, 6, 11, 15, 20, 25, 28",
+        "DataType": "Integer"
+    },
+    "mnbs_ss_ed_support": {
+        "Description": "Educational/support: mean of 8,9,10",
+        "DataType": "Float"
+    }
+}

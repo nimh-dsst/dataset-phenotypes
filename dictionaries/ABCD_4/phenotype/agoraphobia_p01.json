@@ -1,0 +1,435 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ksads_agorap_raw_1796_p": {
+        "Description": "Your child's afraid he or she might do something embarrassing | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1783_p": {
+        "Description": "Other (please type in reason) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1784_p": {
+        "Description": "Do you think that your child is more afraid of these situations than he or she needs to be, or more afraid of these situations than other kids your child's age? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1786_p": {
+        "Description": "Does your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:With friends | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1787_p": {
+        "Description": "Does your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:With family | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1788_p": {
+        "Description": "Does your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:At school | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1789_p": {
+        "Description": "Does your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:At work | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1790_p": {
+        "Description": "Does your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:In after school activities | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1791_p": {
+        "Description": "Does your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:In other places or times | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1792_p": {
+        "Description": "How much discomfort or distress does this problem cause your child? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "ksads_agorap_raw_1794_p": {
+        "Description": "Your child wouldn't be able to leave quickly if he or she wanted to | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1795_p": {
+        "Description": "Your child couldn't receive help quickly if something bad happened to him or herself | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1782_p": {
+        "Description": "Your child's afraid he or she might do something embarrassing | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1797_p": {
+        "Description": "Other (please type in reason) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1798_p": {
+        "Description": "Do think that your child was more afraid of these situations than he or she needed to be or more afraid of these situations than other kids your child's age back then? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1800_p": {
+        "Description": "Back then, did your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:With friends | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1801_p": {
+        "Description": "Back then, did your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:With family | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1802_p": {
+        "Description": "Back then, did your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:At school | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1803_p": {
+        "Description": "Back then, did your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:At work | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1804_p": {
+        "Description": "Back then, did your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:In after school activities | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1805_p": {
+        "Description": "Back then, did your child's fear or avoidance of these situations cause problems for him or her in any of the following areas:In other places or times | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_1806_p": {
+        "Description": "How much discomfort or distress did this problem cause your child back then? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "ksads_agorap_raw_1807_p": {
+        "Description": "For how long did your child avoid or feel like avoiding any of these situations back then? Please enter weeks, months, or years.",
+        "DataType": "String"
+    },
+    "ksads_agorap_raw_1781_p": {
+        "Description": "Your child couldn't receive help quickly if something bad happened to him or herself | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_182_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Buses | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_183_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Trains | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_184_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Subways | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_185_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Open Spaces | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_186_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Bridges | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_187_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Shops | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_188_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Theatres | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_189_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Malls | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_190_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Crowds | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_191_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Standing in lines | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_192_p": {
+        "Description": "In the past two weeks, how often has your child feared or avoided any of the following places because they make him or her super anxious?Being out of the house alone | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_agorap_raw_193_p": {
+        "Description": "When did this begin?",
+        "DataType": "String"
+    },
+    "ksads_agorap_raw_194_p": {
+        "Description": "Was there ever a time that for several months your child was afraid to leave the house, ride in cars or buses, be in enclosed places like theatres or crowds, or be in open spaces like parking lots or bridges? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_195_p": {
+        "Description": "Was there ever another time that for several months your child was afraid to leave the house, ride in cars or buses, be in enclosed places like theatres or crowds, or be in open spaces like parking lots or bridges? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_agorap_raw_196_p": {
+        "Description": "When was that? If this happened more than once, let me know when it was the worst.",
+        "DataType": "String"
+    },
+    "ksads_agorap_raw_1780_p": {
+        "Description": "Your child wouldn't be able to leave quickly if he or she wanted to | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    }
+}

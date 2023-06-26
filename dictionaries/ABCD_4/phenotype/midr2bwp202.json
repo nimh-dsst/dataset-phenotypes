@@ -1,0 +1,2759 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_mr2_arvn_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_prtrglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_prtrgrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_prtrglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_prtrgrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_bktslh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_clancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_clmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_eculh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ehinallh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_fflh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ifpalh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_iftplh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ihcglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_locclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_loroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_lglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_moroflh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_mdtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_phpallh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_paraclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_poprclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_poblh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_parstrglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pcnlh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_postclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pocglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_preclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_rancglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_rmdflh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_suflh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_spalh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_sutplh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_smlh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_fpolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_tppolelh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_trvtplh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_inalh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI lh-insula",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_bktsrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-bankssts",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_clancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-caudalanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_clmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-caudalmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ecurh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-cuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ehinalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-entorhinal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ffrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-fusiform",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ifparh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-inferiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_iftprh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-inferiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_ihcgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-isthmuscingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_loccrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-lateraloccipital",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_lorofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-lateralorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_lgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-lingual",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_morofrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-medialorbitofrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_mdtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-middletemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_phpalrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-parahippocampal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_paracrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-paracentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_poprcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-parsopercularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pobrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-parsorbitalis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_parstrgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-parstriangularis",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pcnrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-pericalcarine",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_postcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-postcentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pocgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-posteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_precrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-precentral",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_pcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-precuneus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_rancgrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-rostralanteriorcingulate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_rmdfrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-rostralmiddlefrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_sufrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-superiorfrontal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_sparh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-superiorparietal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_sutprh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-superiortemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_smrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-supramarginal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_fpolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-frontalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_tppolerh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-temporalpole",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_trvtprh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-transversetemporal",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bcdk_inarh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in APARC ROI rh-insula",
+        "DataType": "Float"
+    }
+}

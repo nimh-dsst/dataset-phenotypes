@@ -1,0 +1,439 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "asr_scr_perstr_r": {
+        "Description": "Personal Strength ASR Adaptive Functioning Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 22"
+    },
+    "asr_scr_perstr_t": {
+        "Description": "Personal Strength ASR Adaptive Functioning Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "20 :: 60"
+    },
+    "asr_scr_perstr_total": {
+        "Description": "Personal Strength ASR Adaptive Functioning Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 11"
+    },
+    "asr_scr_perstr_nm": {
+        "Description": "Personal Strength ASR Adaptive Functioning Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 11"
+    },
+    "asr_scr_anxdep_r": {
+        "Description": "Anxious/Depressed ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 36"
+    },
+    "asr_scr_anxdep_t": {
+        "Description": "Anxious/Depressed ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_anxdep_total": {
+        "Description": "Anxious/Depressed ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 18"
+    },
+    "asr_scr_anxdep_nm": {
+        "Description": "Anxious/Depressed ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 18"
+    },
+    "asr_scr_withdrawn_r": {
+        "Description": "Withdrawn ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 18"
+    },
+    "asr_scr_withdrawn_t": {
+        "Description": "Withdrawn ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_withdrawn_total": {
+        "Description": "Withdrawn ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 9"
+    },
+    "asr_scr_withdrawn_nm": {
+        "Description": "Withdrawn ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 9"
+    },
+    "asr_scr_somatic_r": {
+        "Description": "Somatic Complaints ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 24"
+    },
+    "asr_scr_somatic_t": {
+        "Description": "Somatic Complaints ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_somatic_total": {
+        "Description": "Somatic Complaints ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 12"
+    },
+    "asr_scr_somatic_nm": {
+        "Description": "Somatic Complaints ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 12"
+    },
+    "asr_scr_thought_r": {
+        "Description": "Thought Problems ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 20"
+    },
+    "asr_scr_thought_t": {
+        "Description": "Thought Problems ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_thought_total": {
+        "Description": "Thought Problems ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 10"
+    },
+    "asr_scr_thought_nm": {
+        "Description": "Thought Problems ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 10"
+    },
+    "asr_scr_attention_r": {
+        "Description": "Attention Problems ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 30"
+    },
+    "asr_scr_attention_t": {
+        "Description": "Attention Problems ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_attention_total": {
+        "Description": "Attention Problems ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 15"
+    },
+    "asr_scr_attention_nm": {
+        "Description": "Attention Problems ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 15"
+    },
+    "asr_scr_aggressive_r": {
+        "Description": "Aggressive Behavior ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 30"
+    },
+    "asr_scr_aggressive_t": {
+        "Description": "Aggressive Behavior ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_aggressive_total": {
+        "Description": "Aggressive Behavior ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 15"
+    },
+    "asr_scr_aggressive_nm": {
+        "Description": "Aggressive Behavior ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 15"
+    },
+    "asr_scr_rulebreak_r": {
+        "Description": "Rule-Breaking Behavior ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 28"
+    },
+    "asr_scr_rulebreak_t": {
+        "Description": "Rule-Breaking Behavior ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_rulebreak_total": {
+        "Description": "Rule-Breaking Behavior ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 14"
+    },
+    "asr_scr_rulebreak_nm": {
+        "Description": "Rule-Breaking Behavior ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 14"
+    },
+    "asr_scr_intrusive_r": {
+        "Description": "Intrusive ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 12"
+    },
+    "asr_scr_intrusive_t": {
+        "Description": "Intrusive ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 80"
+    },
+    "asr_scr_intrusive_total": {
+        "Description": "Intrusive ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 6"
+    },
+    "asr_scr_intrusive_nm": {
+        "Description": "Intrusive ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 6"
+    },
+    "asr_scr_internal_r": {
+        "Description": "Interalizing Problems ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 78"
+    },
+    "asr_scr_internal_t": {
+        "Description": "Interalizing Problems ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "30 :: 100"
+    },
+    "asr_scr_internal_total": {
+        "Description": "Interalizing Problems ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 39"
+    },
+    "asr_scr_internal_nm": {
+        "Description": "Interalizing Problems ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 39"
+    },
+    "asr_scr_external_r": {
+        "Description": "Externalizing Problems ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 70"
+    },
+    "asr_scr_external_t": {
+        "Description": "Externalizing Problems ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "30 :: 100"
+    },
+    "asr_scr_external_total": {
+        "Description": "Externalizing Problems ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 35"
+    },
+    "asr_scr_external_nm": {
+        "Description": "Externalizing Problems ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 35"
+    },
+    "asr_scr_totprob_r": {
+        "Description": "Total Problems ASR Syndrome Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 240"
+    },
+    "asr_scr_totprob_t": {
+        "Description": "Total Problems ASR Syndrome Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "25 :: 100"
+    },
+    "asr_scr_totprob_total": {
+        "Description": "Total Problems ASR Syndrome Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 120"
+    },
+    "asr_scr_totprob_nm": {
+        "Description": "Total Problems ASR Syndrome Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 120"
+    },
+    "asr_scr_depress_r": {
+        "Description": "Depressive Problems ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 28"
+    },
+    "asr_scr_depress_t": {
+        "Description": "Depressive Problems ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_depress_total": {
+        "Description": "Depressive Problems ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 14"
+    },
+    "asr_scr_depress_nm": {
+        "Description": "Depressive Problems ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 14"
+    },
+    "asr_scr_anxdisord_r": {
+        "Description": "Anxiety Problems ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 12"
+    },
+    "asr_scr_anxdisord_t": {
+        "Description": "Anxiety Problems ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 80"
+    },
+    "asr_scr_anxdisord_total": {
+        "Description": "Anxiety Problems ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 6"
+    },
+    "asr_scr_anxdisord_nm": {
+        "Description": "Anxiety Problems ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 6"
+    },
+    "asr_scr_somaticpr_r": {
+        "Description": "Somatic Problems ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 18"
+    },
+    "asr_scr_somaticpr_t": {
+        "Description": "Somatic Problems ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_somaticpr_total": {
+        "Description": "Somatic Problems ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 9"
+    },
+    "asr_scr_somaticpr_nm": {
+        "Description": "Somatic Problems ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 9"
+    },
+    "asr_scr_avoidant_r": {
+        "Description": "Avoidant Personality Problems ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 14"
+    },
+    "asr_scr_avoidant_t": {
+        "Description": "Avoidant Personality Problems ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 90"
+    },
+    "asr_scr_avoidant_total": {
+        "Description": "Avoidant Personality Problems ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 7"
+    },
+    "asr_scr_avoidant_nm": {
+        "Description": "Avoidant Personality Problems ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 7"
+    },
+    "asr_scr_adhd_r": {
+        "Description": "AD/H Problems ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 26"
+    },
+    "asr_scr_adhd_t": {
+        "Description": "AD/H Problems ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_adhd_total": {
+        "Description": "AD/H Problems ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 13"
+    },
+    "asr_scr_adhd_nm": {
+        "Description": "AD/H Problems ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 13"
+    },
+    "asr_scr_antisocial_r": {
+        "Description": "Antisocial Personality Problems ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 40"
+    },
+    "asr_scr_antisocial_t": {
+        "Description": "Antisocial Personality Problems ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 100"
+    },
+    "asr_scr_antisocial_total": {
+        "Description": "Antisocial Personality Problems ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 20"
+    },
+    "asr_scr_antisocial_nm": {
+        "Description": "Antisocial Personality Problems ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 20"
+    },
+    "asr_scr_inattention_r": {
+        "Description": "Inattention ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 14"
+    },
+    "asr_scr_inattention_t": {
+        "Description": "Inattention ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 90"
+    },
+    "asr_scr_inattention_total": {
+        "Description": "Inattention ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 7"
+    },
+    "asr_scr_inattention_nm": {
+        "Description": "Inattention ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 7"
+    },
+    "asr_scr_hyperactive_r": {
+        "Description": "Hyperactivity-Impulsivity ASR DSM-5-Oriented Scale (raw score)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 12"
+    },
+    "asr_scr_hyperactive_t": {
+        "Description": "Hyperactivity-Impulsivity ASR DSM-5-Oriented Scale (t-score) |  T-scores in relation to norms for each gender at ages 18-35 and 36-59, based on national probability samples.",
+        "DataType": "Integer",
+        "ValueRange": "50 :: 80"
+    },
+    "asr_scr_hyperactive_total": {
+        "Description": "Hyperactivity-Impulsivity ASR DSM-5-Oriented Scale (number of dependent raw scores)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 6"
+    },
+    "asr_scr_hyperactive_nm": {
+        "Description": "Hyperactivity-Impulsivity ASR DSM-5-Oriented Scale (number of dependent raw scores missing)",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 6"
+    }
+}

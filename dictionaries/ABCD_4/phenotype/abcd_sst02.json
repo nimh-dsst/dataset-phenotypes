@@ -1,0 +1,433 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_sst_beh_visitid": {
+        "Description": "Visit Name",
+        "DataType": "String"
+    },
+    "tfmri_sst_beh_switchflag": {
+        "Description": "Box was switched | 1=switched; 0= not switched",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "switched",
+            "0": "not switched"
+        }
+    },
+    "tfmri_sst_beh_performflag": {
+        "Description": "Whether the participant had an acceptable performance in the task; all trial types must yield more than 3 events for both positive and negative feedback | 1= acceptable; 0= not acceptable",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "acceptable",
+            "0": "not acceptable"
+        }
+    },
+    "tfmri_sst_nbeh_nruns": {
+        "Description": "Number of valid runs in the file",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_go_nt": {
+        "Description": "Total number of \"Go\" trials",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_s_nt": {
+        "Description": "Total number of \"Stop\" trials",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_total_nt": {
+        "Description": "Total number of trials",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_go_nt": {
+        "Description": "Total number of \"Go\" trials in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_s_nt": {
+        "Description": "Total number of \"Stop\" trials in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_go_nt": {
+        "Description": "Total number of \"Go\" trials in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_s_nt": {
+        "Description": "Total number of \"Stop\" trials in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_crgo_nt": {
+        "Description": "Total number of correct \"Go\" trials",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_crgo_nt": {
+        "Description": "Total number of correct \"Go\" trials in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_crgo_nt": {
+        "Description": "Total number of correct \"Go\" trials in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_crgo_rt": {
+        "Description": "Rate of correct \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crgo_rt": {
+        "Description": "Rate of correct \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crgo_rt": {
+        "Description": "Rate of correct \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_crgo_mrt": {
+        "Description": "Mean response time for all correct \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_crgo_stdrt": {
+        "Description": "Standard deviation of response times for all correct \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crgo_mrt": {
+        "Description": "Mean response time for all correct \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crgo_stdrt": {
+        "Description": "Standard deviation of response times for all correct \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crgo_mrt": {
+        "Description": "Mean response time for all correct \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crgo_stdrt": {
+        "Description": "Standard deviation of response times for all correct \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_crlg_nt": {
+        "Description": "Total number of \"Go\" trials that were correctly answered late",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_crlg_nt": {
+        "Description": "Total number of \"Go\" trials that were correctly answered late in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_crlg_nt": {
+        "Description": "Total number of \"Go\" trials that were correctly answered late in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_crlg_rt": {
+        "Description": "Rate of correct \"Go\" trials answered late",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crlg_rt": {
+        "Description": "Rate of correct \"Go\" trials answered late in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crlg_rt": {
+        "Description": "Rate of correct \"Go\" trials answered late in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_crlg_mrt": {
+        "Description": "Mean response time for all correct but late \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_crlg_stdrt": {
+        "Description": "Standard deviation of response times for all correct but late \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crlg_mrt": {
+        "Description": "Mean response time for all correct but late \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crlg_stdrt": {
+        "Description": "Standard deviation of response times for all correct but late \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crlg_mrt": {
+        "Description": "Mean response time for all correct but late \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crlg_stdrt": {
+        "Description": "Standard deviation of response times for all correct but late \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrgo_nt": {
+        "Description": "Total number of \"Go\" trials that were answered incorrectly",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_incrgo_nt": {
+        "Description": "Total number of \"Go\" trials that were answered incorrectly in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_incrgo_nt": {
+        "Description": "Total number of \"Go\" trials that were answered incorrectly in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_incrgo_rt": {
+        "Description": "Rate of \"Go\" trials that were answered incorrectly",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrgo_rt": {
+        "Description": "Rate of \"Go\" trials that were answered incorrectly in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrgo_rt": {
+        "Description": "Rate of \"Go\" trials that were answered incorrectly in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrgo_mrt": {
+        "Description": "Mean response time for all incorrect \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrgo_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrgo_mrt": {
+        "Description": "Mean response time for all incorrect \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrgo_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrgo_mrt": {
+        "Description": "Mean response time for all incorrect \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrgo_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrlg_nt": {
+        "Description": "Total number of \"Go\" trials that were correctly answered incorrectly and late",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_incrlg_nt": {
+        "Description": "Total number of \"Go\" trials that were answered incorrectly and late in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_incrlg_nt": {
+        "Description": "Total number of \"Go\" trials that were answered incorrectly and late in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_incrlg_rt": {
+        "Description": "Rate of incorrect and late \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrlg_rt": {
+        "Description": "Rate of incorrect and late \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrlg_rt": {
+        "Description": "Rate of incorrect and late \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrlg_mrt": {
+        "Description": "Mean response time for all incorrect and late \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrlg_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect but late \"Go\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrlg_mrt": {
+        "Description": "Mean response time for all incorrect and late \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrlg_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect but late \"Go\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrlg_mrt": {
+        "Description": "Mean response time for all incorrect and late \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrlg_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect and late \"Go\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_nrgo_nt": {
+        "Description": "Total number of \"Go\" trials unanswered",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_nrgo_nt": {
+        "Description": "Total number of \"Go\" trials unanswered in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_nrgo_nt": {
+        "Description": "Total number of \"Go\" trials unanswered in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_nrgo_rt": {
+        "Description": "Rate of \"Go\" trials unanswered",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_nrgo_rt": {
+        "Description": "Rate of \"Go\" trials unanswered in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_nrgo_rt": {
+        "Description": "Rate of \"Go\" trials unanswered in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_crs_nt": {
+        "Description": "Total number of correct \"Stop\" trials",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_crs_nt": {
+        "Description": "Total number of correct \"Stop\" trials in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_crs_nt": {
+        "Description": "Total number of correct \"Stop\" trials in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_crs_rt": {
+        "Description": "Rate of correct \"Stop\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_crs_rt": {
+        "Description": "Rate of correct \"Stop\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_crs_rt": {
+        "Description": "Rate of correct \"Stop\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrs_nt": {
+        "Description": "Total number of \"Stop\" trials answered incorrectly",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_incrs_nt": {
+        "Description": "Total number of \"Stop\" trials answered incorrectly in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_incrs_nt": {
+        "Description": "Total number of \"Stop\" trials answered incorrectly in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_incrs_rt": {
+        "Description": "Rate of \"Stop\" trials answered incorrectly",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrs_rt": {
+        "Description": "Rate of \"Stop\" trials answered incorrectly in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrs_rt": {
+        "Description": "Rate of \"Stop\" trials answered incorrectly in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrs_mrt": {
+        "Description": "Mean response time for all incorrect \"Stop\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_incrs_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect \"Stop\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrs_mrt": {
+        "Description": "Mean response time for all incorrect \"Stop\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_incrs_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect \"Stop\" trials in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrs_mrt": {
+        "Description": "Mean response time for all incorrect \"Stop\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_incrs_stdrt": {
+        "Description": "Standard deviation of response times for all incorrect \"Stop\" trials in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_ssds_nt": {
+        "Description": "Total number of \"Stop\" trials that were answered before the \"Stop\" signal was presented",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r1_beh_ssds_nt": {
+        "Description": "Total number of \"Stop\" trials that were answered before the \"Stop\" signal was presented in run 1",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_r2_beh_ssds_nt": {
+        "Description": "Total number of \"Stop\" trials that were answered before the \"Stop\" signal was presented in run 2",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_all_beh_ssds_rt": {
+        "Description": "Rate of \"Stop\" trials that were answered before the \"Stop\" signal was presented",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r1_beh_ssds_rt": {
+        "Description": "Rate of \"Stop\" trials that were answered before the \"Stop\" signal was presented in run 1",
+        "DataType": "Float"
+    },
+    "tfmri_sst_r2_beh_ssds_rt": {
+        "Description": "Rate of \"Stop\" trials that were answered before the \"Stop\" signal was presented in run 2",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_tot_mssd": {
+        "Description": "Mean stop signal delay for all \"Stop\" trials",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_total_meanrt": {
+        "Description": "Mean stop signal reaction time",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_total_mssrt": {
+        "Description": "Stop Signal Reaction Time, mean estimation",
+        "DataType": "Float"
+    },
+    "tfmri_sst_all_beh_total_issrt": {
+        "Description": "Stop Signal Reaction Time, integration estimation",
+        "DataType": "Float"
+    },
+    "tfmri_sst_beh_violatorflag": {
+        "Description": "Race model violators where Stop Fail RT > Go RT",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_beh_glitchflag": {
+        "Description": "Task coding error",
+        "DataType": "Integer"
+    },
+    "tfmri_sst_beh_0ssdcount": {
+        "Description": "Number of Stop trials with 0ms SSD",
+        "DataType": "Integer"
+    }
+}

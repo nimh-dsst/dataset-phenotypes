@@ -1,0 +1,2952 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "sai_ss_dance_nmonth_p_l": {
+        "Description": "Ballet, Dance\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When ballet/dance was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When ballet/dance was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_dance_perwk_p_l": {
+        "Description": "Ballet, Dance\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When ballet/dance was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When ballet/dance was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_dance_tspent_p_l": {
+        "Description": "Ballet, Dance\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When ballet/dance was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When ballet/dance was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_base_nmonth_p_l": {
+        "Description": "Baseball, Softball\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When baseball/softball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When baseball/softball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_base_perwk_p_l": {
+        "Description": "Baseball, Softball\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When baseball/softball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When baseball/softball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_base_tspent_p_l": {
+        "Description": "Baseball, Softball\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When baseball/softball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When baseball/softball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the \u00a0\"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_basket_nmonth_p_l": {
+        "Description": "Basketball\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When basketball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When basketball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_basket_perwk_p_l": {
+        "Description": "Basketball\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When basketball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When basketball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_basket_tspent_p_l": {
+        "Description": "Basketball\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When basketball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When basketball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_climb_nmonth_p_l": {
+        "Description": "Climbing\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When climbing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When climbing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_climb_perwk_p_l": {
+        "Description": "Climbing\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When climbing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When climbing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_climb_tspent_p_l": {
+        "Description": "Climbing\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When climbing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When climbing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_fhock_nmonth_p_l": {
+        "Description": "Field Hockey\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When field hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When field hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_fhock_perwk_p_l": {
+        "Description": "Field Hockey\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When field hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When field hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_fhock_tspent_p_l": {
+        "Description": "Field Hockey\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When field hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When field hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_fball_nmonth_p_l": {
+        "Description": "Football\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When football was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When football was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_fball_perwk_p_l": {
+        "Description": "Football\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When football was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When football was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_fball_tspent_p_l": {
+        "Description": "Football \nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When football was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When football was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_gym_nmonth_p_l": {
+        "Description": "Gymnastics. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When gymnastics was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When gymnastics was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_gym_perwk_p_l": {
+        "Description": "Gymnastics \nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When gymnastics was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When gymnastics was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_gym_tspent_p_l": {
+        "Description": "Gymnastics \nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When gymnastics was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When gymnastics was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_ihock_nmonth_p_l": {
+        "Description": "Ice Hockey. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_ihock_perwk_p_l": {
+        "Description": "Ice Hockey \nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_ihock_tspent_p_l": {
+        "Description": "Ice Hockey \nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When hockey was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_polo_nmonth_p_l": {
+        "Description": "Horseback Riding, Polo. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When horseback riding/polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When horseback riding/polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_polo_perwk_p_l": {
+        "Description": "Horseback Riding, Polo \nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When horseback riding/polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When horseback riding/polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_polo_tspent_p_l": {
+        "Description": "Horseback Riding, Polo\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When horseback riding/polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When horseback riding/polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_iskate_nmonth_p_l": {
+        "Description": "Ice or Inline Skating. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When ice or inline skating was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When ice or inline skating was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_iskate_perwk_p_l": {
+        "Description": "Ice or Inline Skating \nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When ice or inline skating was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When ice or inline skating was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_iskate_tspent_p_l": {
+        "Description": "Ice or Inline Skating\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When ice or inline skating was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When ice or inline skating was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_m_arts_nmonth_p_l": {
+        "Description": "Martial Arts\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_m_arts_perwk_p_l": {
+        "Description": "Martial Arts\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_m_arts_tspent_p_l": {
+        "Description": "Martial Arts\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_lax_nmonth_p_l": {
+        "Description": "Lacrosse\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When lacrosse was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When lacrosse was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_lax_perwk_p_l": {
+        "Description": "Lacrosse\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When lacrosse was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When lacrosse was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_lax_tspent_p_l": {
+        "Description": "Lacrosse\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When lacrosse was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When lacrosse was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_rugby_nmonth_p_l": {
+        "Description": "Rugby\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When rugby was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When rugby was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_rugby_perwk_p_l": {
+        "Description": "Rugby\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When rugby was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When rugby was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_rugby_tspent_p_l": {
+        "Description": "Rugby\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When rugby was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When rugby was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_skate_nmonth_p_l": {
+        "Description": "Skateboarding\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When skateboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When skateboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_skate_perwk_p_l": {
+        "Description": "Skateboarding\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When skateboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When skateboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_skate_tspent_p_l": {
+        "Description": "Skateboarding\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When skateboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When skateboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_sboard_nmonth_p_l": {
+        "Description": "Skiing, Snowboarding\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When skiing/snowboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When skiing/snowboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_sboard_perwk_p_l": {
+        "Description": "Skiing, Snowboarding\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When skiing/snowboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When skiing/snowboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_sboard_tspent_p_l": {
+        "Description": "Skiing, Snowboarding\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When skiing/snowboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When skiing/snowboarding was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_soc_nmonth_p_l": {
+        "Description": "Soccer\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When soccer was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When soccer was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_soc_perwk_p_l": {
+        "Description": "Soccer\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When soccer was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When soccer was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_soc_tspent_p_l": {
+        "Description": "Soccer\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When soccer was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When soccer was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_surf_nmonth_p_l": {
+        "Description": "Surfing\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When surfing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When surfing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_surf_perwk_p_l": {
+        "Description": "Surfing\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When surfing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When surfing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_surf_tspent_p_l": {
+        "Description": "Surfing\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When surfing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When surfing was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_wpolo_nmonth_p_l": {
+        "Description": "Swimming, Water Polo\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When swimming/water polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When swimming/water polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_wpolo_perwk_p_l": {
+        "Description": "Swimming, Water Polo\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When swimming/water polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When swimming/water polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_wpolo_tspent_p_l": {
+        "Description": "Swimming, Water Polo\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When swimming/water polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When swimming/water polo was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_tennis_nmonth_p_l": {
+        "Description": "Tennis\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When tennis was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When tennis was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_tennis_perwk_p_l": {
+        "Description": "Tennis\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When tennis was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When tennis was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_tennis_tspent_p_l": {
+        "Description": "Tennis\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When tennis was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When tennis was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_run_nmonth_p_l": {
+        "Description": "Track, Running, Cross-country\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When track/running/cross-country was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When track/running/cross-country was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_run_perwk_p_l": {
+        "Description": "Track, Running, Cross-country\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When track/running/cross-country was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When track/running/cross-country was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_run_tspent_p_l": {
+        "Description": "Track, Running, Cross-country\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When track/running/cross-country was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When track/running/cross-country was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_mma_nmonth_p_l": {
+        "Description": "Wresting, Mixed Martial Arts\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When wresting/mixed martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When wresting/mixed martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_mma_perwk_p_l": {
+        "Description": "Wresting, Mixed Martial Arts\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When wresting/mixed martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When wresting/mixed martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_mma_tspent_p_l": {
+        "Description": "Wresting, Mixed Martial Arts\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When wresting/mixed martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When wresting/mixed martial arts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_vball_nmonth_p_l": {
+        "Description": "Volleyball\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When volleyball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When volleyball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_vball_perwk_p_l": {
+        "Description": "Volleyball\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When volleyball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When volleyball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_vball_tspent_p_l": {
+        "Description": "Volleyball\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When volleyball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When volleyball was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_yoga_nmonth_p_l": {
+        "Description": "Yoga, Tai Chi\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When yoga/tai chi was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When yoga/tai chi was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_yoga_perwk_p_l": {
+        "Description": "Yoga, Tai Chi\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When yoga/tai chi was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When yoga/tai chi was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_yoga_tspent_p_l": {
+        "Description": "Yoga, Tai Chi\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When yoga/tai chi was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When yoga/tai chi was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_music_nmonth_p_l": {
+        "Description": "Musical Instrument (Singing, Choir, Guitar, Piano, Drums, Violin, Flute, Band, Rock Band, Orchestra\u2026)\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When musical instrument was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When musical instrument was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_music_perwk_p_l": {
+        "Description": "Musical Instrument (Singing, Choir, Guitar, Piano, Drums, Violin, Flute, Band, Rock Band, Orchestra\u2026)\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When musical instrument was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When musical instrument was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_music_tspent_p_l": {
+        "Description": "Musical Instrument (Singing, Choir, Guitar, Piano, Drums, Violin, Flute, Band, Rock Band, Orchestra\u2026)\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When musical instrument was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When musical instrument was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_art_nmonth_p_l": {
+        "Description": "Drawing, Painting, Graphic Art, Photography, Pottery, Sculpting. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When drawing/painting/graphic art/photography/pottery/sculpting was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When drawing/painting/graphic art/photography/pottery/sculpting was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_art_perwk_p_l": {
+        "Description": "Drawing, Painting, Graphic Art, Photography, Pottery, Sculpting\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When drawing/painting/graphic art/photography/pottery/sculpting was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When drawing/painting/graphic art/photography/pottery/sculpting was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_art_tspent_p_l": {
+        "Description": "Drawing, Painting, Graphic Art, Photography, Pottery, Sculpting\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When drawing/painting/graphic art/photography/pottery/sculpting was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When drawing/painting/graphic art/photography/pottery/sculpting was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_drama_nmonth_p_l": {
+        "Description": "Drama, Theater, Acting, Film\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When drama/theater/acting/film was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When drama/theater/acting/film was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_drama_perwk_p_l": {
+        "Description": "Drama, Theater, Acting, Film\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When drama/theater/acting/film was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When drama/theater/acting/film was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_drama_tspent_p_l": {
+        "Description": "Drama, Theater, Acting, Film\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When drama/theater/acting/film was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When drama/theater/acting/film was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_crafts_nmonth_p_l": {
+        "Description": "Crafts like Knitting, Building Model Cars or Airplanes\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When crafts like knitting, building model cars or airplanes was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When crafts like knitting, building model cars or airplanes was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_crafts_perwk_p_l": {
+        "Description": "Crafts like Knitting, Building Model Cars or Airplanes\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When crafts like knitting, building model cars or airplanes was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When crafts like knitting, building model cars or airplanes was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_crafts_tspent_p_l": {
+        "Description": "Crafts like Knitting, Building Model Cars or Airplanes\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When crafts like knitting, building model cars or airplanes was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When crafts like knitting, building model cars or airplanes was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_chess_nmonth_p_l": {
+        "Description": "Competitive Games like Chess, Cards, or Darts\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When competitive games like chess, cards, or darts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When competitive games like chess, cards, or darts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_chess_perwk_p_l": {
+        "Description": "Competitive Games like Chess, Cards, or Darts\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When competitive games like chess, cards, or darts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When competitive games like chess, cards, or darts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_chess_tspent_p_l": {
+        "Description": "Competitive Games like Chess, Cards, or Darts\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When competitive games like chess, cards, or darts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When competitive games like chess, cards, or darts was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_collect_nmonth_p_l": {
+        "Description": "Hobbies like collecting stamps or coins\r. Since we last saw you, about how many months per year did your child participate? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = 8; 9 = 9; 10 = 10; 11 = 11; 12 = 12; 13 = More than 12 months | When hobbies like collecting stamps or coins was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10 ; 11 ; 12 ; 13",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months | When hobbies like collecting stamps or coins was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_collect_perwk_p_l": {
+        "Description": "Hobbies like collecting stamps or coins\nAbout how many days per week? | 999 = Don't know; 0 = 0; 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5; 6 = 6; 7 = 7; 8 = Once every 2 weeks; 9 = One day every month; 10 = Less than one day per month | When hobbies like collecting stamps or coins was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9 ; 10",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month | When hobbies like collecting stamps or coins was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_collect_tspent_p_l": {
+        "Description": "Hobbies like collecting stamps or coins\nAbout how many minutes per session? | 999 = Don't know; 0 = 0; 1 = less than 30 minutes; 2 = 30; 3 = 45; 4 = 60 (1 hr); 5 = 90 (1.5 hrs); 6 = 120 (2 hrs); 7 = 150 (2.5 hrs); 8 = 180 (3 hrs); 9 = greater than 3 hours | When hobbies like collecting stamps or coins was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Integer",
+        "ValueRange": "999 ; 0 ; 1 ; 2 ; 3 ; 4 ; 5 ; 6 ; 7 ; 8 ; 9",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours | When hobbies like collecting stamps or coins was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\""
+        }
+    },
+    "sai_ss_lmusic_hours_p_l": {
+        "Description": "Music\nAbout how many hours per week does your child spend listening to music for pleasure? | When listening to music for pleasure was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Float",
+        "ValueRange": "0 :: 168"
+    },
+    "sai_ss_read_hours_p_l": {
+        "Description": "Reading\nAbout how many hours per week does your child spend reading for pleasure? | When reading for pleasure was not endorsed, values for the follow-up questions are missing. Here, missing values for  the  \"... how many...?\" follow-up questions have been replaced with \"0.\"",
+        "DataType": "Float",
+        "ValueRange": "0 :: 168"
+    },
+    "sai_ss_lmusic_hours_2_p_l": {
+        "Description": "Music.  About how many hours per week does your child spend listening to music for pleasure? | 0 = 0; 1 = Less than 1 hour; 2 = 1 hour or more  but less than 2 hours; 3=  2 hours or more  but less than 3 hours; 4=  3 hours or more  but less than 4 hours; 5=  4 hours or more  but less than 5 hour horas o m?s  pero menus de 5 horas; 6=  5 hours or more  but less than 6 hours horas o m?s  pero menos de 6 horas; 7=  6 hours or more  but less than 8 hours horas o m?s  pero menos de 8 horas; 8=  8 hours or more  but less than 12 hours horas o m?s  pero menos de 12 horas; 9 = 12 hours or more  but less than 18 hours horas o m?s  pero menos de 18 horas; 10=  18 hours or more  but less than 24 hours horas o m?s  pero menus de 24 horas; 11=  24 hours or more  but less than 36 hour horas o m?s  pero menos de 36 horas; 12=  36 hours or more  but less than 72 hours horas o m?s  pero menos de 72 horas; 13=  More than 72 hours; 999=  Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "0": "0",
+            "1": "Less than 1 hour",
+            "2": "1 hour or more  but less than 2 hours",
+            "3": "2 hours or more  but less than 3 hours",
+            "4": "3 hours or more  but less than 4 hours",
+            "5": "4 hours or more  but less than 5 hour horas o m?s  pero menus de 5 horas",
+            "6": "5 hours or more  but less than 6 hours horas o m?s  pero menos de 6 horas",
+            "7": "6 hours or more  but less than 8 hours horas o m?s  pero menos de 8 horas",
+            "8": "8 hours or more  but less than 12 hours horas o m?s  pero menos de 12 horas",
+            "9": "12 hours or more  but less than 18 hours horas o m?s  pero menos de 18 horas",
+            "10": "18 hours or more  but less than 24 hours horas o m?s  pero menus de 24 horas",
+            "11": "24 hours or more  but less than 36 hour horas o m?s  pero menos de 36 horas",
+            "12": "36 hours or more  but less than 72 hours horas o m?s  pero menos de 72 horas",
+            "13": "More than 72 hours",
+            "999": "Don't know"
+        }
+    },
+    "sai_ss_read_hours_2_p_l": {
+        "Description": "Reading    About how many hours per week does your child spend reading for pleasure? | 0 = 0; 1 = Less than 1 hour; 2 = 1 hour or more  but less than 2 hours; 3=  2 hours or more  but less than 3 hours; 4=  3 hours or more  but less than 4 hours; 5=  4 hours or more  but less than 5 hour horas o m?s  pero menus de 5 horas; 6=  5 hours or more  but less than 6 hours horas o m?s  pero menos de 6 horas; 7=  6 hours or more  but less than 8 hours horas o m?s  pero menos de 8 horas; 8=  8 hours or more  but less than 12 hours horas o m?s  pero menos de 12 horas; 9 = 12 hours or more  but less than 18 hours horas o m?s  pero menos de 18 horas; 10=  18 hours or more  but less than 24 hours horas o m?s  pero menus de 24 horas; 11=  24 hours or more  but less than 36 hour horas o m?s  pero menos de 36 horas; 12=  36 hours or more  but less than 72 hours horas o m?s  pero menos de 72 horas; 13=  More than 72 hours; 999=  Don't know",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "0": "0",
+            "1": "Less than 1 hour",
+            "2": "1 hour or more  but less than 2 hours",
+            "3": "2 hours or more  but less than 3 hours",
+            "4": "3 hours or more  but less than 4 hours",
+            "5": "4 hours or more  but less than 5 hour horas o m?s  pero menus de 5 horas",
+            "6": "5 hours or more  but less than 6 hours horas o m?s  pero menos de 6 horas",
+            "7": "6 hours or more  but less than 8 hours horas o m?s  pero menos de 8 horas",
+            "8": "8 hours or more  but less than 12 hours horas o m?s  pero menos de 12 horas",
+            "9": "12 hours or more  but less than 18 hours horas o m?s  pero menos de 18 horas",
+            "10": "18 hours or more  but less than 24 hours horas o m?s  pero menus de 24 horas",
+            "11": "24 hours or more  but less than 36 hour horas o m?s  pero menos de 36 horas",
+            "12": "36 hours or more  but less than 72 hours horas o m?s  pero menos de 72 horas",
+            "13": "More than 72 hours",
+            "999": "Don't know"
+        }
+    },
+    "sai_ss_cheer_nmonth_p": {
+        "Description": "Cheerleading: During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_cheer_perwk_p": {
+        "Description": "Cheerleading : About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_cheer_tspent_p": {
+        "Description": "Cheerleading  : About how many minutes per session | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_cheer_years_p": {
+        "Description": "Cheerleading : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_curling_nmonth_p": {
+        "Description": "Curling : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_curling_perwk_p": {
+        "Description": "Curling: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_curling_tspent_p": {
+        "Description": "Curling : About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_curling_years_p": {
+        "Description": "Cheerleading : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_cycling_nmonth_p": {
+        "Description": "Cycling : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_cycling_perwk_p": {
+        "Description": "Cycling: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_cycling_tspent_p": {
+        "Description": "Cycling : About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_cycling_years_p": {
+        "Description": "Cycling: For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_field_nmonth_p": {
+        "Description": "Field events (e.g. shot, discuss, high jump, javelin etc) : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_field_perwk_p": {
+        "Description": "Field events (e.g. shot, discuss, high jump, javelin etc) : About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_field_tspent_p": {
+        "Description": "Field events (e.g. shot, discuss, high jump, javelin etc) : About how many minutes per session?  | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_field_years_p": {
+        "Description": "Field events (e.g. shot, discuss, high jump, javelin etc) : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_fishing_nmonth_p": {
+        "Description": "Fishing, Hunting, Archery: During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_fishing_perwk_p": {
+        "Description": "Fishing, Hunting, Archery: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_fishing_tspent_p": {
+        "Description": "Fishing, Hunting, Archery: About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_fishing_years_p": {
+        "Description": "Fishing, Hunting, Archery: For how many years did your child participate in this activity | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_bowling_perwk_p": {
+        "Description": "Bowling  :  About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks ; 9=One day every month ; 10=Less than one day per month",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_golf_nmonth_p": {
+        "Description": "Golf: During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_golf_perwk_p": {
+        "Description": "Golf: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_golf_tspent_p": {
+        "Description": "Golf: About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_golf_years_p": {
+        "Description": "Golf: For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_orient_nmonth_p": {
+        "Description": "Orienteering : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_orient_perwk_p": {
+        "Description": "Orienteering: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_orient_tspent_p": {
+        "Description": "Orienteering: About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_orient_years_p": {
+        "Description": "Orienteering : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_paddle_nmonth_p": {
+        "Description": "Paddleboarding, water skiing, wakeboarding: During the most active period, about how many months per year did your child participate?<span lang=''es'' style=''colormaroon;''>Durante el periodo m?s activo, ?aproximadamente cu?ntos meses al a?o particip? su ni?o(a)? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_paddle_perwk_p": {
+        "Description": "Paddleboarding, water skiing, wakeboarding: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_bowling_tspent_p": {
+        "Description": "Bowling: About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes   ; 2=30 ; 3=45 ; 4= 60 (1 hr)   ; 5= 90 (1.5 hrs)   ; 6= 120 (2 hrs)   ; 7= 150 (2.5 hrs)   ; 8= 180 (3 hrs)   ; 9= greater than 3 hours  ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_paddle_tspent_p": {
+        "Description": "Paddleboarding, water skiing, wakeboarding : About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_paddle_years_p": {
+        "Description": "Paddleboarding, water skiing, wakeboarding : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_row_nmonth_p": {
+        "Description": "Rowing, canoeing, kayaking : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_row_perwk_p": {
+        "Description": "Rowing, canoeing, kayaking : About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_row_tspent_p": {
+        "Description": "Rowing, canoeing, kayaking : About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_row_years_p": {
+        "Description": "Rowing, canoeing, kayaking: For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_sail_nmonth_p": {
+        "Description": "Sailing, wind-surfing: During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_sail_perwk_p": {
+        "Description": "Sailing, wind-surfing: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_sail_tspent_p": {
+        "Description": "Sailing, wind-surfing : About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_sail_years_p": {
+        "Description": "Sailing, wind-surfing : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_bowling_years_p": {
+        "Description": "Bowling  For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_table_ten_nmonth_p": {
+        "Description": "Table tennis, Shuffleboard : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_table_ten_perwk_p": {
+        "Description": "Table tennis, Shuffleboard : About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_table_ten_tspent_p": {
+        "Description": "Table tennis, Shuffleboard: About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_table_ten_years_p": {
+        "Description": "Table tennis, Shuffleboard : For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_ult_fris_nmonth_p": {
+        "Description": "Ultimate frisbee: During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months ",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_ult_fris_perwk_p": {
+        "Description": "Ultimate frisbee: About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_ult_fris_tspent_p": {
+        "Description": "Ultimate frisbee : About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_ult_fris_years_p": {
+        "Description": "Ultimate frisbee: For how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    },
+    "sai_ss_bowling_nmonth_p": {
+        "Description": "Bowling : During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_boxing_nmonth_p": {
+        "Description": "Boxing: During the most active period, about how many months per year did your child participate? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=More than 12 months",
+        "DataType": "Integer",
+        "ValueRange": "0::13;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "More than 12 months"
+        }
+    },
+    "sai_ss_boxing_perwk_p": {
+        "Description": "Boxing About how many days per week? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=Once every 2 weeks  ; 9=One day every month  ; 10=Less than one day per month ",
+        "DataType": "Integer",
+        "ValueRange": "0::10;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "Once every 2 weeks",
+            "9": "One day every month",
+            "10": "Less than one day per month"
+        }
+    },
+    "sai_ss_boxing_tspent_p": {
+        "Description": "Boxing: About how many minutes per session? | 999=Don't know ; 0=0 ; 1=less than 30 minutes  ; 2=30 ; 3=45 ; 4=60 (1 hr)  ; 5=90 (1.5 hrs)  ; 6=120 (2 hrs)  ; 7=150 (2.5 hrs)  ; 8=180 (3 hrs)  ; 9=greater than 3 hours ",
+        "DataType": "Integer",
+        "ValueRange": "0::9;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "less than 30 minutes",
+            "2": "30",
+            "3": "45",
+            "4": "60 (1 hr)",
+            "5": "90 (1.5 hrs)",
+            "6": "120 (2 hrs)",
+            "7": "150 (2.5 hrs)",
+            "8": "180 (3 hrs)",
+            "9": "greater than 3 hours"
+        }
+    },
+    "sai_ss_boxing_years_p": {
+        "Description": "BoxingFor how many years did your child participate in this activity? | 999=Don't know ; 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14",
+        "DataType": "Integer",
+        "ValueRange": "0::14;999",
+        "Levels": {
+            "999": "Don't know",
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14"
+        }
+    }
+}

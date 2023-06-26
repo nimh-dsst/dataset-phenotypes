@@ -1,0 +1,216 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "bdefs_calm_down_p": {
+        "Description": "Has trouble calming themselves down once they are emotionally upset | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_consequences_p": {
+        "Description": "Likely to do things without considering the consequences for doing them | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_distract_upset_p": {
+        "Description": "Cannot seem to distract themselves away from whatever is upsetting them emotionally to help calm down Can't refocus their mind to a more positive framework. | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_explain_idea_p": {
+        "Description": "Has trouble explaining their ideas as well or as quickly as others | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_explain_pt_p": {
+        "Description": "Can't seem to get to the point of their explanations | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_explain_seq_p": {
+        "Description": "Has difficulty explaining things in their proper order or sequence | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_impulsive_action_p": {
+        "Description": "Acts without thinking things over | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_inconsistant_p": {
+        "Description": "Inconsistent in the quality or quantity of their work performance | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_lazy_p": {
+        "Description": "Seems lazy or unmotivated | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_p_select_language___1": {
+        "Description": "Espa\u00f1ol? | 1= Si",
+        "DataType": "Integer",
+        "ValueRange": "0;1"
+    },
+    "bdefs_process_info_p": {
+        "Description": "Doesn't seem to process information quickly or accurately | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_rechannel_p": {
+        "Description": "Not able to re-channel or redirect their emotions into more positive ways or outlets when they get upset | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_sense_time_p": {
+        "Description": "Has a poor sense of time | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_shortcuts_p": {
+        "Description": "Takes short cuts in their chores, school work, or other assignments and not do all that they are supposed to do | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    },
+    "bdefs_start_time": {
+        "Description": "Start time",
+        "DataType": "String"
+    },
+    "bdefs_stop_think_p": {
+        "Description": "Doesn't stop and talk things over with themselves before deciding to do something | 1= Never or Rarely ; 2= Sometimes ; 3= Often ; 4= Very Often ; 777= Refuse to Answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "Never or Rarely",
+            "2": "Sometimes",
+            "3": "Often",
+            "4": "Very Often",
+            "777": "Refuse to Answer"
+        }
+    }
+}

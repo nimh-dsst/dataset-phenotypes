@@ -1,0 +1,291 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "pea_assessment_status": {
+        "Description": "Pearson Assessment Status",
+        "DataType": "String"
+    },
+    "pea_assessmentdate": {
+        "Description": "Assessment Date",
+        "DataType": "String"
+    },
+    "pea_assessmentid": {
+        "Description": "Pearson Assessment ID",
+        "DataType": "String"
+    },
+    "pea_ravlt_sd_trial_i_tc": {
+        "Description": "RAVLT Short Delay Trial I Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_i_tr": {
+        "Description": "RAVLT Short Delay Trial I Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_i_ti": {
+        "Description": "RAVLT Short Delay Trial I Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_ii_tc": {
+        "Description": "RAVLT Short Delay Trial II Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_ii_tr": {
+        "Description": "RAVLT Short Delay Trial II Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_ii_ti": {
+        "Description": "RAVLT Short Delay Trial II Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_iii_tc": {
+        "Description": "RAVLT Short Delay Trial III Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_iii_tr": {
+        "Description": "RAVLT Short Delay Trial III Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_iii_ti": {
+        "Description": "RAVLT Short Delay Trial III Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_iv_tc": {
+        "Description": "RAVLT Short Delay Trial IV Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_iv_tr": {
+        "Description": "RAVLT Short Delay Trial IV Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_iv_ti": {
+        "Description": "RAVLT Short Delay Trial IV Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_v_tc": {
+        "Description": "RAVLT Short Delay Trial V Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_v_tr": {
+        "Description": "RAVLT Short Delay Trial V Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_v_ti": {
+        "Description": "RAVLT Short Delay Trial V Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_listb_tc": {
+        "Description": "RAVLT Short Delay List B Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_listb_tr": {
+        "Description": "RAVLT Short Delay List B Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_listb_ti": {
+        "Description": "RAVLT Short Delay List B Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_vi_tc": {
+        "Description": "RAVLT Short Delay Trial VI Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_vi_tr": {
+        "Description": "RAVLT Short Delay Trial VI Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_sd_trial_vi_ti": {
+        "Description": "RAVLT Short Delay Trial VI Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_ld_trial_vii_tc": {
+        "Description": "RAVLT Long Delay Trial VII Total Correct",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_ld_trial_vii_tr": {
+        "Description": "RAVLT Long Delay Trial VII Total Repetitions",
+        "DataType": "Integer"
+    },
+    "pea_ravlt_ld_trial_vii_ti": {
+        "Description": "RAVLT Long Delay Trial VII Total Intrusions",
+        "DataType": "Integer"
+    },
+    "pea_wiscv_trs": {
+        "Description": "WISC-V Matrix Reasoning Total Raw Score",
+        "DataType": "Integer"
+    },
+    "pea_wiscv_tss": {
+        "Description": "WISC-V Matrix Reasoning Total Scaled Score",
+        "DataType": "Integer"
+    },
+    "pea_wiscv_item_a_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item A (Matrix) Raw Score",
+        "DataType": "Integer"
+    },
+    "pea_wiscv_item_b_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item B (Serial Order) Raw Score",
+        "DataType": "Integer"
+    },
+    "pea_wiscv_item_1_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 1 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_2_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 2 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_3_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 3 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_4_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 4 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_5_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 5 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_6_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 6 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_7_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 7 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_8_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 8 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_9_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 9 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_10_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 10 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_11_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 11 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_12_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 12 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_13_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 13 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_14_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 14 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_15_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 15 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_16_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 16 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_17_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 17 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_18_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 18 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_19_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 19 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_20_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 20 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_21_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 21 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_22_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 22 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_23_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 23 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_24_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 24 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_25_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 25 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_26_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 26 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_27_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 27 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_28_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 28 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_29_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 29 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_30_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 30 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_31_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 31 Raw Score",
+        "DataType": "Float"
+    },
+    "pea_wiscv_item_32_rs": {
+        "Description": "WISC-V Matrix Reasoning Sample Item 32 Raw Score",
+        "DataType": "Float"
+    }
+}

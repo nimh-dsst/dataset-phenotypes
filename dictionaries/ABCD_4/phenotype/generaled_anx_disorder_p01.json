@@ -1,0 +1,561 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "ksads_gad_raw_1951_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Had difficulty concentrating | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1935_p": {
+        "Description": "Does your child's worrying about these things cause problems for him or her in any of the following areas:At work | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1936_p": {
+        "Description": "Does your child's worrying about these things cause problems for him or her in any of the following areas:In after school activities | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1937_p": {
+        "Description": "Does your child's worrying about these things cause problems for him or her in any of the following areas:In other places or times | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1938_p": {
+        "Description": "How much discomfort or distress does your child's worrying cause him or her? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "ksads_gad_raw_1940_p": {
+        "Description": "How your child looks | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1941_p": {
+        "Description": "What your child said | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1942_p": {
+        "Description": "How your child did on a test | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1943_p": {
+        "Description": "If people like him or her | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1944_p": {
+        "Description": "The future | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1945_p": {
+        "Description": "The past | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1946_p": {
+        "Description": "Other (specify) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1948_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Feels restless | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1949_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Feels keyed up | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1950_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Feels easily tired | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1934_p": {
+        "Description": "Does your child's worrying about these things cause problems for him or her in any of the following areas:At school | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1952_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Mind goes blank | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1953_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Feels irritable | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1954_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Had muscle tension | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1955_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Had difficulty falling asleep | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1956_p": {
+        "Description": "Back then, did your child have any of these other symptoms a lot when he or she worried? Mark all that apply.Had difficulty staying asleep | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1957_p": {
+        "Description": "Back then, did your child feel like he or she had trouble controlling their worries? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1959_p": {
+        "Description": "Back then, did your child's worrying a lot cause problems for him or her in any of the following areas:With friends | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1960_p": {
+        "Description": "Back then, did your child's worrying a lot cause problems for him or her in any of the following areas:With family | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1961_p": {
+        "Description": "Back then, did your child's worrying a lot cause problems for him or her in any of the following areas:At school | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1962_p": {
+        "Description": "Back then, did your child's worrying a lot cause problems for him or her in any of the following areas:At work | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1963_p": {
+        "Description": "Back then, did your child's worrying a lot cause problems for him or her in any of the following areas:In after school activities | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1964_p": {
+        "Description": "Back then, did your child's worrying a lot cause problems for him or her in any of the following areas:In other places or times | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1965_p": {
+        "Description": "How much discomfort or distress did your child's worrying cause him or her back then? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "ValueRange": "0::10",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "ksads_gad_raw_1966_p": {
+        "Description": "How long did your child's worrying about a lot of things last back then? Please enter weeks, months, or years.",
+        "DataType": "String"
+    },
+    "ksads_gad_raw_1933_p": {
+        "Description": "Does your child's worrying about these things cause problems for him or her in any of the following areas:With family | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_271_p": {
+        "Description": "In the past two weeks, how often has your child felt like a worrier - really worried about a lot of different things? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_272_p": {
+        "Description": "When did your child's worrying a lot of the time begin?",
+        "DataType": "String"
+    },
+    "ksads_gad_raw_273_p": {
+        "Description": "Was there ever a time, for a month or longer, that your child worried a super lot about a lot of different things? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_274_p": {
+        "Description": "Was there ever another time, for a month or longer, that your child worried a super lot about a lot of different things? | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_275_p": {
+        "Description": "When was that?",
+        "DataType": "String"
+    },
+    "ksads_gad_raw_1913_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.How your child looks | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1914_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.What your child said | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1915_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.How your child did on a test | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1916_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.If people like him or her | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1917_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.The future | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1918_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.The past | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1919_p": {
+        "Description": "You mentioned earlier that your child worries about a lot of different things. Mark below all the different things your child finds himself or herself worrying about. Mark as many as apply.Other (specify) | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1922_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Feels keyed up | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1932_p": {
+        "Description": "Does your child's worrying about these things cause problems for him or her in any of the following areas:With friends | 0=No; 1=Yes",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "0": "No",
+            "1": "Yes"
+        }
+    },
+    "ksads_gad_raw_1930_p": {
+        "Description": "In the past two weeks, how often has your child had trouble controlling their worries? | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1929_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Has difficulty staying asleep | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1928_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Has difficulty falling asleep | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1927_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Has muscle tension | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1926_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Feels irritable | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1925_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Mind goes blank | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1924_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Has difficulty concentrating | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1923_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Feels easily tired | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    },
+    "ksads_gad_raw_1921_p": {
+        "Description": "How often are the things below true of your child when he or she worries.Feels restless | 0=Not at all; 1=Rarely; 2=Several days; 3=More than half the days; 4=Nearly every day",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "Not at all",
+            "1": "Rarely",
+            "2": "Several days",
+            "3": "More than half the days",
+            "4": "Nearly every day"
+        }
+    }
+}

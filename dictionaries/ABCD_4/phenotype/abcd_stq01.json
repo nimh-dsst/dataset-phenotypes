@@ -1,0 +1,2951 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "screen1_wkdy_y": {
+        "Description": "On a typical weekday, how many hours do you: Watch TV shows or movies? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen2_wkdy_y": {
+        "Description": "On a typical weekday, how many hours do you: Watch videos (such as YouTube)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen3_wkdy_y": {
+        "Description": "On a typical weekday, how many hours do you: Play video games on a computer, console, phone or other device (Xbox, Play Station, iPad)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen4_wkdy_y": {
+        "Description": "On a typical weekday, how many hours do you: Text on a cell phone, tablet, or computer (e.g. GChat, Whatsapp, etc.)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen5_wkdy_y": {
+        "Description": "On a typical weekday, how many hours do you: Visit social networking sites like Facebook, Twitter, Instagram, etc.? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen_wkdy_y": {
+        "Description": "On a typical weekday, how many hours do you: Video chat (Skype, Facetime, etc.)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen7_wknd_y": {
+        "Description": "On a typical weekend day, how many hours do you: Watch TV shows or movies? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen8_wknd_y": {
+        "Description": "On a typical weekend day, how many hours do you: Watch videos (such as YouTube)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen9_wknd_y": {
+        "Description": "On a typical weekend day, how many hours do you: Play video games on a computer, console, phone or other device (Xbox, Play Station, iPad)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen10_wknd_y": {
+        "Description": "On a typical weekend day, how many hours do you: Text on a cell phone, tablet, or computer (GChat, Whatsapp, etc.)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen11_wknd_y": {
+        "Description": "On a typical weekend day, how many hours do you: Visit social networking sites like Facebook, Twitter, Instagram, etc.? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen12_wknd_y": {
+        "Description": "On a typical weekend day, how many hours do you: Video chat (Skype, Facetime, etc.)? | 0 = None; .25 = < 30 minutes; 0.5 = 30 minutes; 1 = 1 hour; 2 = 2 hours; 3 = 3 hours; 4 = 4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours.",
+        "DataType": "Float",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "None",
+            ".25": "< 30 minutes",
+            "0.5": "30 minutes",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4+ hours //Example: 1\u00bd hours would be coded as 1 hour, rather than 2 hours."
+        }
+    },
+    "screen13_y": {
+        "Description": "How often do you play mature-rated video games (e.g., Call of Duty, Grand Theft Auto, Assassin's Creed, etc.)? | 0 = Never; 1 = Once in a while; 2 = Regularly; 3 = All the time",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Never",
+            "1": "Once in a while",
+            "2": "Regularly",
+            "3": "All the time"
+        }
+    },
+    "screen14_y": {
+        "Description": "How often do you watch R-rated movies? | 0 = Never; 1 = Once in a while; 2 = Regularly; 3 = All the time",
+        "DataType": "Integer",
+        "ValueRange": "0::3",
+        "Levels": {
+            "0": "Never",
+            "1": "Once in a while",
+            "2": "Regularly",
+            "3": "All the time"
+        }
+    },
+    "screentime_4_wkdy_min": {
+        "Description": "On a typical weekday: Play multiplayer video games on a computer, console, phone, or other device (Xbox, Play Station, iPad, AppleTV) where you can interact with others in the game? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_sq3": {
+        "Description": "Watch or stream movies, videos, or TV shows | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq4": {
+        "Description": "Play video games | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq5": {
+        "Description": "Play music | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq6": {
+        "Description": "Talk on the phone or text (If you do not own a phone, choose 0 nights) | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq7": {
+        "Description": "Spend time online on social media (e.g. Facebook) | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq8": {
+        "Description": "Spend time in chat rooms | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq9": {
+        "Description": "Browse the Internet, Google-ing (not school related) | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq10": {
+        "Description": "Use a computer/laptop for studying | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq11": {
+        "Description": "Reading | 1=0 nights in the past week; 2=1-2 nights; 3=3-4 nights; 4=5-7 nights; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::5;777",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_sq12": {
+        "Description": "In the past week, how often have you had phone calls, text messages or emails that wake you after trying to go to sleep?  | 1=0 nights in the past week ; 2=1-2 nights ; 3=3-4 nights ; 4=5-7 nights ; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777;-1",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_5_wkdy_hr": {
+        "Description": "On a typical weekday: Text on a cell phone, tablet, computer, iPod, or other electronic device (e.g., GChat, Whatsapp, Kik etc.)? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_sq13": {
+        "Description": "In the past week, when you woke up during the night, how often have you used your phone or other device to send messages/play games/search or browse the internet/use social media/read or write emails? | 1=0 nights in the past week ; 2=1-2 nights ; 3=3-4 nights ; 4=5-7 nights ; 777=Refused to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;777;-1",
+        "Levels": {
+            "1": "0 nights in the past week",
+            "2": "1-2 nights",
+            "3": "3-4 nights",
+            "4": "5-7 nights",
+            "777": "Refused to answer"
+        }
+    },
+    "screentime_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered; 2=Youth Self-Administered; 3=Combination",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination"
+        }
+    },
+    "screentime_5_wkdy_min": {
+        "Description": "On a typical weekday: Text on a cell phone, tablet, computer, iPod, or other electronic device (e.g., GChat, Whatsapp, Kik etc.)? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_6_wkdy_hr": {
+        "Description": "On a typical weekday: Visit social media apps (e.g., Snapchat, Facebook, Twitter, Instagram, TikTok, etc.? (Do not include time spent editing photos or videos to post on social media.) | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_6_wkdy_min": {
+        "Description": "On a typical weekday: Visit social media apps (e.g., Snapchat, Facebook, Twitter, Instagram, TikTok, etc.? (Do not include time spent editing photos or videos to post on social media.) | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_7_wkdy_hr": {
+        "Description": "On a typical weekday: Edit photos or videos to post on social media. | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_7_wkdy_min": {
+        "Description": "On a typical weekday: Edit photos or videos to post on social media. | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_8_wkdy_hr": {
+        "Description": "On a typical weekday: Video chat (Skype, FaceTime, VRchat, etc.) | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_8_wkdy_min": {
+        "Description": "On a typical weekday: Video chat (Skype, FaceTime, VRchat, etc.) | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_9_wkdy_hr": {
+        "Description": "On a typical weekday: Searching or browsing the internet (e.g., using Google) that is NOT for school | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_9_wkdy_min": {
+        "Description": "On a typical weekday: Searching or browsing the internet (e.g., using Google) that is NOT for school | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_wkdy_typical_hr": {
+        "Description": "On a typical WEEKDAY (during the school year), how much TIME per day do you spend in TOTAL on a computer, phone, tablet, iPod, or other device or video game?  Please do NOT include time spent on school related work, but do include watching TV, shows or videos, texting or chatting, playing games, or visiting social networking sites (Facebook, Twitter, Instagram). | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_wkdy_typical_min": {
+        "Description": "On a typical WEEKDAY (during the school year), how much TIME per day do you spend in TOTAL on a computer, phone, tablet, iPod, or other device or video game?  Please do NOT include time spent on school related work, but do include watching TV, shows or videos, texting or chatting, playing games, or visiting social networking sites (Facebook, Twitter, Instagram). | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_7_wknd_hr": {
+        "Description": "On a typical weekend day: Watch or stream TV shows or movies? (such as Hulu, Netflix or Amazon, not including videos on YouTube) | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_7_wknd_min": {
+        "Description": "On a typical weekend day: Watch or stream TV shows or movies? (such as Hulu, Netflix or Amazon, not including videos on YouTube) | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_8_wknd_hr": {
+        "Description": "On a typical weekend day: Watch or stream videos or live stream (such as YouTube, Twitch)? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_8_wknd_min": {
+        "Description": "On a typical weekend day: Watch or stream videos or live stream (such as YouTube, Twitch)? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_9_wknd_hr": {
+        "Description": "On a typical weekend day: Play single-player video games on a computer, console, phone or other device (Xbox, Play Station, iPad, AppleTV)? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_9_wknd_min": {
+        "Description": "On a typical weekend day: Play single-player video games on a computer, console, phone or other device (Xbox, Play Station, iPad, AppleTV)? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_10_wknd_hr": {
+        "Description": "On a typical weekend day: Play multiplayer video games on a computer, console, phone, or other device (Xbox, Play Station, iPad, AppleTV) where you can interact with others in the game? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_1_wkdy_hr": {
+        "Description": "On a typical weekday: Watch or stream TV shows or movies? (such as Hulu, Netflix or Amazon, not including videos on YouTube) | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_10_wknd_min": {
+        "Description": "On a typical weekend day: Play multiplayer video games on a computer, console, phone, or other device (Xbox, Play Station, iPad, AppleTV) where you can interact with others in the game? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_11_wknd_hr": {
+        "Description": "On a typical weekend day: Text on a cell phone, tablet, computer, iPod, or other electronic device (e.g., GChat, Whatsapp, Kik etc.)? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_11_wknd_min": {
+        "Description": "On a typical weekend day: Text on a cell phone, tablet, computer, iPod, or other electronic device (e.g., GChat, Whatsapp, Kik etc.)? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_12_wknd_hr": {
+        "Description": "On a typical weekend day: Visit social media apps (e.g., Snapchat, Facebook, Twitter, Instagram, TikTok, etc.? (Do not include time spent editing photos or videos to post on social media.) | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_12_wknd_min": {
+        "Description": "On a typical weekend day: Visit social media apps (e.g., Snapchat, Facebook, Twitter, Instagram, TikTok, etc.? (Do not include time spent editing photos or videos to post on social media.) | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_13_wknd_hr": {
+        "Description": "On a typical weekend day: Edit photos or videos to post on social media. | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_13_wknd_min": {
+        "Description": "On a typical weekend day: Edit photos or videos to post on social media. | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_14_wknd_hr": {
+        "Description": "On a typical weekend day: Video chat (Skype, FaceTime, VRchat, etc.) | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_14_wknd_min": {
+        "Description": "On a typical weekend day: Video chat (Skype, FaceTime, VRchat, etc.) | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_15_wknd_hr": {
+        "Description": "On a typical weekend day: Searching or browsing the internet (e.g., using Google) that is NOT for school | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_1_wkdy_min": {
+        "Description": "On a typical weekday: Watch or stream TV shows or movies? (such as Hulu, Netflix or Amazon, not including videos on YouTube) | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_15_wknd_min": {
+        "Description": "On a typical weekend day: Searching or browsing the internet (e.g., using Google) that is NOT for school | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_wknd_typical_hr": {
+        "Description": "On a typical WEEKEND DAY (or non-school day, like during summer or holiday breaks), how much TIME per day do you spend in TOTAL on a computer, phone, tablet, iPod, or other device or video game?  Please do NOT include time spent on school related work, but do include watching TV, shows or videos, texting or chatting, playing games, or visiting social networking sites (Facebook, Twitter, Instagram). | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_wknd_t_min": {
+        "Description": "On a typical WEEKEND DAY (or non-school day, like during summer or holiday breaks), how much TIME per day do you spend in TOTAL on a computer, phone, tablet, iPod, or other device or video game?  Please do NOT include time spent on school related work, but do include watching TV, shows or videos, texting or chatting, playing games, or visiting social networking sites (Facebook, Twitter, Instagram). | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_phone_yn": {
+        "Description": "Do you have your own mobile phone, smart watch or ipod? | 0=No; 1=Yes; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "No",
+            "1": "Yes",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone_descript": {
+        "Description": "How much do you agree with the following statements in relation to your cell phone use?",
+        "DataType": "Integer"
+    },
+    "screentime_phone1": {
+        "Description": "I interrupt whatever else I am doing when I am contacted on my phone | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone2": {
+        "Description": "I often use my phone for no particular reason | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone3": {
+        "Description": "I feel connected to others when I am using my phone | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone4": {
+        "Description": "Arguments have arisen with others because of my phone use | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone5": {
+        "Description": "I lose track of how much I am using my phone. | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_2_wkdy_hr": {
+        "Description": "On a typical weekday: Watch or stream videos or live stream (such as YouTube, Twitch)? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_phone6": {
+        "Description": "I often think about my phone when I am not using it | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone7": {
+        "Description": "I have been unable to reduce my phone use | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone8": {
+        "Description": "The thought of being without my phone makes me feel distressed | 1=Strongly Disagree; 2=Disagree; 3=Somewhat Disagree; 4=Neither Agree nor Disagree; 5=Somewhat Agree; 6=Agree; 7=Strongly Agree; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Somewhat Disagree",
+            "4": "Neither Agree nor Disagree",
+            "5": "Somewhat Agree",
+            "6": "Agree",
+            "7": "Strongly Agree",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_phone_scale": {
+        "Description": "On a scale of 1-10 (with 1=barely check it/can go days without it, and 10=check at least hourly when awake), how attached are you to your phone?  | 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_usesoc": {
+        "Description": "Do you have a at least one social media account?",
+        "DataType": "Integer"
+    },
+    "screentime_smq_description": {
+        "Description": "Which social media sites do you have an account on? List the number of accounts you have on each of the social media sites below.",
+        "DataType": "Integer"
+    },
+    "screentime_smq_facebook": {
+        "Description": "Facebook | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_instagram": {
+        "Description": "Instagram | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_snapchat": {
+        "Description": "Snapchat | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_twitter": {
+        "Description": "Twitter | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_2_wkdy_min": {
+        "Description": "On a typical weekday: Watch or stream videos or live stream (such as YouTube, Twitch)? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_smq_youtube": {
+        "Description": "YouTube | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_pinterest": {
+        "Description": "Pinterest | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_tumblr": {
+        "Description": "Tumblr | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_reddit": {
+        "Description": "Reddit | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_mg_chat": {
+        "Description": "Multiplayer Videogame Online Chatting | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_musical_ly": {
+        "Description": "TikTok | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_other": {
+        "Description": "Other | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        }
+    },
+    "screentime_smq_other_name": {
+        "Description": "Please fill in Other social media site",
+        "DataType": "Integer"
+    },
+    "screentime_smq_use_other": {
+        "Description": "If Other, please fill in name",
+        "DataType": "Integer"
+    },
+    "screentime_3_wkdy_hr": {
+        "Description": "On a typical weekday: Play single-player video games on a computer, console, phone or other device (Xbox, Play Station, iPad, AppleTV)? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_smq_use_most": {
+        "Description": "Which social media site do you use the most? | 0=I do not have a social media account; 1=Facebook; 2=Instagram; 3=Snapchat; 4=Twitter; 5=YouTube; 6=Pinterest; 7=Tumblr; 8=Reddit; 11=TikTok; 9=Multiplayer Videogame Online Chatting; 10=Other",
+        "DataType": "Integer",
+        "ValueRange": "0::11;999",
+        "Levels": {
+            "0": "I do not have a social media account",
+            "1": "Facebook",
+            "2": "Instagram",
+            "3": "Snapchat",
+            "4": "Twitter",
+            "5": "YouTube",
+            "6": "Pinterest",
+            "7": "Tumblr",
+            "8": "Reddit",
+            "11": "TikTok",
+            "9": "Multiplayer Videogame Online Chatting",
+            "10": "Other"
+        }
+    },
+    "screentime_smq_um_other": {
+        "Description": "If Other, please fill in name",
+        "DataType": "Integer"
+    },
+    "screentime_smq_account": {
+        "Description": "On (screentime_smq_use_most), is your account public or private? | -1=Not Applicable; 1=Public; 2=Private; 999=Don't Know; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "-1": "Not Applicable",
+            "1": "Public",
+            "2": "Private",
+            "999": "Don't Know",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_smq_followers": {
+        "Description": "On (screentime_smq_use_most), how many followers do you have?",
+        "DataType": "Integer"
+    },
+    "screentime_smq_followers_na": {
+        "Description": "Not applicable | 1=Not applicable",
+        "DataType": "Integer"
+    },
+    "screentime_smq_following_na": {
+        "Description": "Not applicable | 1=Not applicable",
+        "DataType": "Integer"
+    },
+    "screentime_smq_followers_dk": {
+        "Description": "Don't know | 999=Don't know",
+        "DataType": "Integer"
+    },
+    "screentime_smq_following": {
+        "Description": "On (screentime_smq_use_most), how many people or groups are you following?",
+        "DataType": "Integer"
+    },
+    "screentime_smq_following_dk": {
+        "Description": "Don't know | 999=Don't know",
+        "DataType": "Integer"
+    },
+    "screentime_smq_secret": {
+        "Description": "Do you have a social media account that you keep secret from your parents? | 1=Yes; 0=No; 777=Refuse to Answer",
+        "DataType": "Integer",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refuse to Answer"
+        }
+    },
+    "screentime_3_wkdy_min": {
+        "Description": "On a typical weekday: Play single-player video games on a computer, console, phone or other device (Xbox, Play Station, iPad, AppleTV)? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_smq_soc_med_hr": {
+        "Description": "How much TIME per day do you spend on social media apps?   | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_smq_sm_min": {
+        "Description": "How much TIME per day do you spend on social media apps? | 0=0; 15=15; 30=30; 45=45",
+        "DataType": "Integer",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screentime_smqa1": {
+        "Description": "I spend a lot of time thinking about social media apps or planning my use of social media apps. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_smqa2": {
+        "Description": "I feel the need to use social media apps more and more. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_smqa3": {
+        "Description": "I use social media apps so I can forget about my problems. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_smqa4": {
+        "Description": "I've tried to use my social media apps less but I can't. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_smqa5": {
+        "Description": "I've become stressed or upset if I am not allowed to use my social media apps. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_smqa6": {
+        "Description": "I use social media apps so much that it has had a bad effect on my schoolwork or job | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_vgaq1": {
+        "Description": "I spend a lot of time thinking about playing video games. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_vgaq2": {
+        "Description": "I feel the need to play video games more and more. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_4_wkdy_hr": {
+        "Description": "On a typical weekday: Play multiplayer video games on a computer, console, phone, or other device (Xbox, Play Station, iPad, AppleTV) where you can interact with others in the game? | 0=0; 1=1; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13; 14=14; 15=15; 16=16; 17=17; 18=18; 19=19; 20=20; 21=21; 22=22; 23=23",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_vgaq3": {
+        "Description": "I play video games so I can forget about my problems. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_vgaq4": {
+        "Description": "I've tried to play video games less but I can't. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_vgaq5": {
+        "Description": "I've become stressed or upset if I am not allowed to play video games. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_vgaq6": {
+        "Description": "I play video games so much that it has had a bad effect on my schoolwork or job. | 1=Never; 2=Very rarely; 3=Rarely; 4=Sometimes; 5=Often; 6=Very often; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::6;777",
+        "Levels": {
+            "1": "Never",
+            "2": "Very rarely",
+            "3": "Rarely",
+            "4": "Sometimes",
+            "5": "Often",
+            "6": "Very often",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_odq1": {
+        "Description": "Have you ever used a dating app? | 1=Yes; 0=No; 999=I don't know what that is?; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1;0;999;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "I don't know what that is?",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_odq2": {
+        "Description": "Are you currently using a dating app? | 1=Yes; 0=No; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1;0;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_odq3": {
+        "Description": "How much time per week do you spend on online dating apps? | 1=None; 2=< 30 minutes; 3=30 minutes; 4=1 hour; 5=2 hours; 6=3 hours; 7=4+ hours; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::7;777",
+        "Levels": {
+            "1": "None",
+            "2": "< 30 minutes",
+            "3": "30 minutes",
+            "4": "1 hour",
+            "5": "2 hours",
+            "6": "3 hours",
+            "7": "4+ hours",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_odq4": {
+        "Description": "Have you arranged an in-person meeting with someone you met only on the dating app? | 1=Yes; 0=No; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1;0;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_sq1": {
+        "Description": "Is there a TV set or an Internet connected electronic device (computer, iPad, phone) in your bedroom? | 1=Yes; 0=No; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1;0;777",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_sq2": {
+        "Description": "What do you usually do with your phone when you are ready to go to sleep? Do you | -1=Not Applicable ; 1=Turn the phone off ; 2=Put the ringer on silent or vibrate ; 3=Leave the ringer on ; 4=Put it outside of the room where I sleep ; 777=Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "1::4;-1;777",
+        "Levels": {
+            "-1": "Not Applicable",
+            "1": "Turn the phone off",
+            "2": "Put the ringer on silent or vibrate",
+            "3": "Leave the ringer on",
+            "4": "Put it outside of the room where I sleep",
+            "777": "Refuse to answer"
+        }
+    },
+    "screentime_smq_use___7": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable:  7, Tumblr | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___8": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 8, Reddit | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___9": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 9, Multiplayer Videogame Online Chatting  | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___10": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 10, Other | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___11": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 11, TikTok | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___1": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 1, Facebook | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___2": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 2, Instagram | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___3": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 3, Snapchat | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___4": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 4, Twitter | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___5": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable:  5, YouTube  | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screentime_smq_use___6": {
+        "Description": "Which social media sites do you have an account on? Select all that are applicable: 6, Pinterest, | 1=Yes=0 No",
+        "DataType": "Integer",
+        "ValueRange": "1;0"
+    },
+    "screen_wknd_school_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_wknd_school_hr] > 0'' OR [screentime_wknd_school_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_14_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_14_wknd_hr] > 0'' OR [screentime_14_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_7_8_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_7_8_wknd_hr] > 0'' OR [screentime_7_8_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_8_wkdy_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_8_wkdy_hr] > 0'' OR [screentime_8_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_10_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_10_wknd_hr] - [screen_10_wknd_hr_y]) + (([screentime_10_wknd_min] - [screen_10_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_14_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_14_wknd_hr] > 0'' OR [screentime_14_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_wknd_typical_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_wknd_typical_hr] > 0'' OR [screentime_wknd_typical_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_9_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_9_wknd_hr] > 0'' OR [screentime_9_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_4_wkdy_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 [event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1'  AND ([screentime_4_wkdy_hr] > 0'' OR [screentime_4_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screen_3_wkdy_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours [event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1' AND ([screentime_3_wkdy_hr] > 0'' OR [screentime_3_wkdy_min] > '0')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours"
+        }
+    },
+    "screen_wkdy_school_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') and ([screentime_wkdy_school_hr] > '0' OR [screentime_wkdy_school_min] > '0')",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_9_wkdy_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_9_wkdy_hr] > 0'' OR [screentime_9_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_4_wkdy_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours [event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1'  AND ([screentime_4_wkdy_hr] > 0'' OR [screentime_4_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours"
+        }
+    },
+    "screen_5_wkdy_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_5_wkdy_hr] - [screen_5_wkdy_hr_y]) + (([screentime_5_wkdy_min] - [screen_5_wkdy_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_3_wkdy_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 [event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1' AND ([screentime_3_wkdy_hr] > 0'' OR [screentime_3_wkdy_min] > '0')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45"
+        }
+    },
+    "screen_wknd_school_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_wknd_school_hr] > 0'' OR [screentime_wknd_school_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_10_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_10_wknd_hr] > 0'' OR [screentime_10_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_6_wkdy_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_6_wkdy_hr] > 0'' OR [screentime_6_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_7_8_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_7_8_wknd_hr] - [screen_7_8_wknd_hr_y]) + (([screentime_7_8_wknd_min] - [screen_7_8_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_9_wkdy_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_9_wkdy_hr] - [screen_9_wkdy_hr_y]) + (([screentime_9_wkdy_min] - [screen_9_wkdy_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_11_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_11_wknd_hr] > 0'' OR [screentime_11_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_wkdy_typical_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_wkdy_typical_hr] > 0'' OR [screentime_wkdy_typical_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_wkdy_typical_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_wkdy_typical_hr] - [screen_wkdy_typical_hr_y]) + (([screentime_wkdy_typical_min] - [screen_wkdy_typical_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_1_wkdy2_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_1_wkdy2_hr] > 0'' OR  [screentime_1_wkdy2_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_9_wkdy_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_9_wkdy_hr] > 0'' OR [screentime_9_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_1_wkdy2_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and  ((([screentime_1_wkdy2_hr] - [screen_1_wkdy2_hr_y]) + (([screentime_1_wkdy2_min] - [screen_1_wkdy2_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_wkdy_school_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_wkdy_school_hr] - [screen_wkdy_school_hr_y]) + (([screentime_wkdy_school_min] - [screen_wkdy_school_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_14_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_14_wknd_hr] - [screen_14_wknd_hr_y]) + (([screentime_14_wknd_min] - [screen_14_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_wkdy_school_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') and ([screentime_wkdy_school_hr] > '0' OR [screentime_wkdy_school_min] > '0')",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_wknd_typical_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_wknd_typical_hr] - [screen_wknd_typical_hr_y]) + (([screentime_wknd_typical_min] - [screen_wknd_typical_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_15_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND  ([screentime_15_wknd_hr] > '0' OR [screentime_15_wknd_min] > '0')",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_12_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_12_wknd_hr] > 0'' OR [screentime_12_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_15_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND  ([screentime_15_wknd_hr] > '0' OR [screentime_15_wknd_min] > '0')",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_9_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_9_wknd_hr] - [screen_9_wknd_hr_y]) + (([screentime_9_wknd_min] - [screen_9_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_11_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_11_wknd_hr] - [screen_11_wknd_hr_y]) + (([screentime_11_wknd_min] - [screen_11_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_4_wkdy_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_4_wkdy_hr] - [screen_4_wkdy_hr_y]) + (([screentime_4_wkdy_min] - [screen_4_wkdy_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_12_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_12_wknd_hr] - [screen_12_wknd_hr_y]) + (([screentime_12_wknd_min] - [screen_12_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_9_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_9_wknd_hr] > 0'' OR [screentime_9_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_1_wkdy2_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_1_wkdy2_hr] > 0'' OR  [screentime_1_wkdy2_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_wknd_typical_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_wknd_typical_hr] > 0'' OR [screentime_wknd_typical_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_8_wkdy_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_8_wkdy_hr] - [screen_8_wkdy_hr_y]) + (([screentime_8_wkdy_min] - [screen_8_wkdy_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_5_wkdy_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_5_wkdy_hr] > 0'' OR [screentime_5_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_8_wkdy_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_8_wkdy_hr] > 0'' OR [screentime_8_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_12_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_12_wknd_hr] > 0'' OR [screentime_12_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_wkdy_typical_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_wkdy_typical_hr] > 0'' OR [screentime_wkdy_typical_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_3_wkdy_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_3_wkdy_hr] - [screen_3_wkdy_hr_y]) + (([screentime_3_wkdy_min] - [screen_3_wkdy_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_10_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_10_wknd_hr] > 0'' OR [screentime_10_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    },
+    "screen_6_wkdy_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_6_wkdy_hr] > 0'' OR [screentime_6_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_5_wkdy_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1')  AND ([screentime_5_wkdy_hr] > 0'' OR [screentime_5_wkdy_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screen_15_wknd_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_15_wknd_hr] - [screen_15_wknd_hr_y]) + (([screentime_15_wknd_min] - [screen_15_wknd_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screentime_1_wkdy2_hr": {
+        "Description": "On a typical weekday | 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14 ; 15=15 ; 16=16 ; 17=17 ; 18=18 ; 19=19 ; 20=20 ; 21=21 ; 22=22 ; 23=23 ",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23"
+        }
+    },
+    "screentime_1_wkdy2_min": {
+        "Description": "On a typical weekday | 0=0 ; 15=15 ; 30=30 ; 45=45  ([event-name] = '3_year_follow_up_y_arm_1' OR [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45  ("
+        }
+    },
+    "screentime_7_8_wknd_hr": {
+        "Description": "On a typical weekend day | 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14 ; 15=15 ; 16=16 ; 17=17 ; 18=18 ; 19=19 ; 20=20 ; 21=21 ; 22=22 ; 23=23  ([event-name] = '3_year_follow_up_y_arm_1'  OR [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23  ("
+        }
+    },
+    "screen_11_wknd_hr_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 hour ; 1=1 hour ; 2=2 hours ; 3=3 hours ; 4=4 hours ; 5=5 hours ; 6=6 hours ; 7=7 hours ; 8=8 hours ; 9=9 hours ; 10=10 hours ; 11=11 hours ; 12=12 hours ; 13=13 hours ; 14=14 hours ; 15=15 hours ; 16=16 hours ; 17=17 hours ; 18=18 hours ; 19=19 hours ; 20=20 hours ; 21=21 hours ; 22=22 hours ; 23=23 hours ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_11_wknd_hr] > 0'' OR [screentime_11_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0 hour",
+            "1": "1 hour",
+            "2": "2 hours",
+            "3": "3 hours",
+            "4": "4 hours",
+            "5": "5 hours",
+            "6": "6 hours",
+            "7": "7 hours",
+            "8": "8 hours",
+            "9": "9 hours",
+            "10": "10 hours",
+            "11": "11 hours",
+            "12": "12 hours",
+            "13": "13 hours",
+            "14": "14 hours",
+            "15": "15 hours",
+            "16": "16 hours",
+            "17": "17 hours",
+            "18": "18 hours",
+            "19": "19 hours",
+            "20": "20 hours",
+            "21": "21 hours",
+            "22": "22 hours",
+            "23": "23 hours ("
+        }
+    },
+    "screentime_7_8_wknd_min": {
+        "Description": "On a typical weekend day | 0=0 ; 15=15 ; 30=30 ; 45=45  ([event-name] = '3_year_follow_up_y_arm_1' OR [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45  ("
+        }
+    },
+    "screentime_wkdy_school_hr": {
+        "Description": "On a typical WEEKDAY (during the school year) | 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14 ; 15=15 ; 16=16 ; 17=17 ; 18=18 ; 19=19 ; 20=20 ; 21=21 ; 22=22 ; 23=23  ([event-name] = '3_year_follow_up_y_arm_1') OR ([screentime_phone_yn] = '1' AND [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23  ("
+        }
+    },
+    "screentime_wkdy_school_min": {
+        "Description": "On a typical WEEKDAY (during the school year) | 0=0 ; 15=15 ; 30=30 ; 45=45  ([event-name] = '3_year_follow_up_y_arm_1') OR ([screentime_phone_yn] = '1' AND [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45  ("
+        }
+    },
+    "screentime_wknd_school_hr": {
+        "Description": "On a typical WEEKEND DAY (or non-school day | 0=0 ; 1=1 ; 2=2 ; 3=3 ; 4=4 ; 5=5 ; 6=6 ; 7=7 ; 8=8 ; 9=9 ; 10=10 ; 11=11 ; 12=12 ; 13=13 ; 14=14 ; 15=15 ; 16=16 ; 17=17 ; 18=18 ; 19=19 ; 20=20 ; 21=21 ; 22=22 ; 23=23  ([event_name_number] = '31' OR [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0::23",
+        "Levels": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10",
+            "11": "11",
+            "12": "12",
+            "13": "13",
+            "14": "14",
+            "15": "15",
+            "16": "16",
+            "17": "17",
+            "18": "18",
+            "19": "19",
+            "20": "20",
+            "21": "21",
+            "22": "22",
+            "23": "23  ("
+        }
+    },
+    "screentime_wknd_school_min": {
+        "Description": "On a typical WEEKEND DAY (or non-school day | 0=0 ; 15=15 ; 30=30 ; 45=45  ([event_name_number] = '31' OR [event-name] = '4_year_follow_up_y_arm_1')",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45  ("
+        }
+    },
+    "screen_6_wkdy_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_6_wkdy_hr] - [screen_6_wkdy_hr_y]) + (([screentime_6_wkdy_min] - [screen_6_wkdy_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_wknd_school_error_y": {
+        "Description": "Answer choice cannot be greater than the first question! | ([screentime_phone_yn] = '1') and ((([screentime_wknd_school_hr] - [screen_wknd_school_hr_y]) + (([screentime_wknd_school_min] - [screen_wknd_school_min_y])/60)) < 0)",
+        "DataType": "String"
+    },
+    "screen_7_8_wknd_min_y": {
+        "Description": "How much of this time is on your smartphone? | 0=0 ; 15=15 ; 30=30 ; 45=45 ([event-name] = '4_year_follow_up_y_arm_1' AND [screentime_phone_yn] = '1') AND ([screentime_7_8_wknd_hr] > 0'' OR [screentime_7_8_wknd_min] > ''0'')''",
+        "DataType": "Integer",
+        "ValueRange": "0;15;30;45",
+        "Levels": {
+            "0": "0",
+            "15": "15",
+            "30": "30",
+            "45": "45 ("
+        }
+    }
+}

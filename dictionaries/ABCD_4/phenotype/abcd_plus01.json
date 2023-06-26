@@ -1,0 +1,890 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "pls1_sess": {
+        "Description": "Have participant complete right before the final NP or MRI session. Which session was this given at? | 0 = NP Session 1; 1 = NP Session 2; 2 = MRI Session 1; 3 = MRI Session 2; 4 = Other",
+        "DataType": "Integer",
+        "ValueRange": "0::4",
+        "Levels": {
+            "0": "NP Session 1",
+            "1": "NP Session 2",
+            "2": "MRI Session 1",
+            "3": "MRI Session 2",
+            "4": "Other"
+        }
+    },
+    "pls1_sess_date_time": {
+        "Description": "Enter current date and time",
+        "DataType": "Date"
+    },
+    "pls1_otc_rx_y": {
+        "Description": "Have you used any over-the-counter or prescription medications in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_med1_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) If medication name was not listed in the drop-down menu (with the exception of multivitamins), scroll down to Comments section and enter information there. For multivitamins, please choose  \"Vitamin\" from the drop-down menu. | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls1_otc2_rx_days_y": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_ago": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls1_med2_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls1_otc2_rx_days_y_2": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_ago_2": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls1_med3_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls1_otc2_rx_days_y_3": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_ago_3": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls1_med4_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls1_otc2_rx_days_y_4": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_ago_4": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls1_med5_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls1_otc2_rx_days_y_5": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_ago_5": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls1_y_caf": {
+        "Description": "Have you consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso, or green tea, black tea, or sweet tea) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_caffeine_t": {
+        "Description": "How long ago did you last consume a caffeinated beverage? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls1_y_nic_tlfb": {
+        "Description": "Was Nicotine use indicated on TLFB? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_y_nic_use": {
+        "Description": "Have you used nicotine (such as cigarettes, electronic cigarettes/vape pen/e-hookah, hookah, chewing tobacco, or cigar) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_youth_tobacco_t": {
+        "Description": "How long ago did you last use nicotine? | (in hours; 30 mins=0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5)"
+        }
+    },
+    "pls2_need": {
+        "Description": "Is NeuroCog and/or MRI being done on session #2? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_sess": {
+        "Description": "Administrator: have participant complete right before the final NP or MRI session. Which session was this given at? | 0 = NP Session 1; 1 = NP Session 2; 2 = MRI Session 1; 3 = MRI Session 2; 4 = Other: (Insert)",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "NP Session 1",
+            "1": "NP Session 2",
+            "2": "MRI Session 1",
+            "3": "MRI Session 2",
+            "4": "Other: (Insert)"
+        }
+    },
+    "pls2_date_time": {
+        "Description": "Enter current date and time",
+        "DataType": "Date"
+    },
+    "pls2_otc_rx_y": {
+        "Description": "Have you used any over-the-counter or prescription medications in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_med1_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_med2_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y_2": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago_2": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5)",
+        "DataType": "Float",
+        "Levels": {
+            "30 mins": "0.5)"
+        }
+    },
+    "pls2_med3_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y_3": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago_3": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_med4_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y_4": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago_4": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_med5_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y_5": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago_5": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_med6_rxnorm": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y_6": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago_6": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_med7_rxnorm_2": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls2_otc2_rx_days_y_7": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_ago_7": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_y_caf": {
+        "Description": "Have you consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso, or green tea, black tea, or sweet tea) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_caffeine_t": {
+        "Description": "How long ago did you last consume a caffeinated beverage? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls2_y_nic_tlfb": {
+        "Description": "(for Interviewer): Was Nicotine use indicated on TLFB? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_y_nic_use": {
+        "Description": "Have you used nicotine (such as cigarettes, electronic cigarettes/vape pen/e-hookah, hookah, chewing tobacco, or cigar) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_youth_tobacco_t": {
+        "Description": "How long ago did you last use nicotine? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Integer",
+        "ValueRange": "0::24"
+    },
+    "pls3_need": {
+        "Description": "Is NeuroCog and/or MRI being done on session #3? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_sess": {
+        "Description": "Administrator: have participant complete right before the final NP or MRI session. Which session was this given at? | 0 = NP Session 1; 1 = NP Session 2; 2 = MRI Session 1; 3 = MRI Session 2; 4 = Other",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "NP Session 1",
+            "1": "NP Session 2",
+            "2": "MRI Session 1",
+            "3": "MRI Session 2",
+            "4": "Other"
+        }
+    },
+    "pls3_sess_date_time": {
+        "Description": "Enter current date and time",
+        "DataType": "Date"
+    },
+    "pls3_otc_rx_y": {
+        "Description": "Have you used any over-the-counter or prescription medications in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_med1": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_otc_rx_days_y": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_youth_ago": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls3_med2": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) Please leave blank if no more medications taken | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_otc_rx_days_y_2": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls3_youth_ago_2": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls3_med3": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_otc_rx_days_y_3": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls3_youth_ago_3": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls3_med4": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_otc_rx_days_y_4": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls3_youth_ago_4": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls3_med5": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls3_otc_rx_days_y_5": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls3_youth_ago_5": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls3_y_caf": {
+        "Description": "Have you consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso, or green tea, black tea, or sweet tea) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_youth_caffeine_t": {
+        "Description": "How long ago did you last consume a caffeinated beverage? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls3_y_nic_tlfb": {
+        "Description": "(for Interviewer): Was Nicotine use indicated on TLFB? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_y_nic_use": {
+        "Description": "Have you used nicotine (such as cigarettes, electronic cigarettes/vape pen/e-hookah, hookah, chewing tobacco, or cigar) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_youth_tobacco_t": {
+        "Description": "How long ago did you last use nicotine? | (in hours; 30 mins=0.5)",
+        "DataType": "Float",
+        "ValueRange": "0 :: 24",
+        "Levels": {
+            "30 mins": "0.5)"
+        }
+    },
+    "pls4_need": {
+        "Description": "Is NeuroCog and/or MRI being done on session #4? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls4_sess": {
+        "Description": "Administrator: have participant complete right before the final NP or MRI session. Which session was this given at? | 0 = NP Session 1; 1 = NP Session 2; 2 = MRI Session 1; 3 = MRI Session 2; 4 = Other",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1 ; 2 ; 3 ; 4",
+        "Levels": {
+            "0": "NP Session 1",
+            "1": "NP Session 2",
+            "2": "MRI Session 1",
+            "3": "MRI Session 2",
+            "4": "Other"
+        }
+    },
+    "pls4_sess_date_time": {
+        "Description": "Enter current date and time",
+        "DataType": "Date"
+    },
+    "pls4_otc_rx_y": {
+        "Description": "Have you used any over-the-counter or prescription medications in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls4_med1": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_otc_rx_days_y": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls4_youth_ago": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls4_med2": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_otc_rx_days_y_2": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls4_youth_ago_2": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls4_med3": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_otc_rx_days_y_3": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls4_youth_ago_3": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls4_med4": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_otc_rx_days_y_4": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls4_youth_ago_4": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls4_med5": {
+        "Description": "Medication Name (please choose the formulation that most closely matches the medication you took; no need to include dosage) | This variable may include all variants available in the Bioportal RxNorm database (https://bioportal.bioontology.org). Please refer to this database for additional information on trade/generic names and formulations.",
+        "DataType": "String"
+    },
+    "pls4_otc_rx_days_y_5": {
+        "Description": "Is the medication extended-release (XR)? | 1 = Yes; 0 = No; 999 = Don't know",
+        "DataType": "Integer",
+        "ValueRange": "1 ; 0 ; 999",
+        "Levels": {
+            "1": "Yes",
+            "0": "No",
+            "999": "Don't know"
+        }
+    },
+    "pls4_youth_ago_5": {
+        "Description": "How long ago did you take the medication? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls4_y_caf": {
+        "Description": "Have you consumed a caffeinated beverage (such as Mountain Dew, Coke, Pepsi, Barq's root beer, energy drink like Red Bull or Monster, coffee or espresso, or green tea, black tea, or sweet tea) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls4_youth_caffeine_t": {
+        "Description": "How long ago did you last consume a caffeinated beverage? | (in hours; 30 mins=0.5, max hours = 24)",
+        "DataType": "Float"
+    },
+    "pls4_y_nic_tlfb": {
+        "Description": "(for Interviewer): Was Nicotine use indicated on TLFB? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls4_y_nic_use": {
+        "Description": "Have you used nicotine (such as cigarettes, electronic cigarettes/vape pen/e-hookah, hookah, chewing tobacco, or cigar) in the last 24 hours? | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0 ; 1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls4_youth_tobacco_t": {
+        "Description": "How long ago did you last use nicotine? | (in hours; 30 mins=0.5)",
+        "DataType": "Float",
+        "ValueRange": "0 :: 24",
+        "Levels": {
+            "30 mins": "0.5)"
+        }
+    },
+    "pls1_cbd_product__6": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  999, Don't know | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_cbd": {
+        "Description": "Have you used any CBD (or cannabidiol) products with your doctor's or parent's permission, such as Epidiolex or other over the counter CBD product, in the last 24 hours?  ",
+        "DataType": "Integer"
+    },
+    "pls2_cbd_ago": {
+        "Description": "How long ago did you last use a CBD product?",
+        "DataType": "Float"
+    },
+    "pls2_cbd_product__1": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 1, Epidiolex  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_cbd_product__2": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  2, Oil or tincture by mouth   | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_cbd_product__3": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 3, Inhaled or smoked product   | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_cbd_product__4": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 4, Edible, capsule, or pill   | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_cbd_product__5": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 5, Topical lotion or transdermal patch | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls2_cbd_product__6": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 999, Don't know | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_cbd": {
+        "Description": "Have you used any CBD (or cannabidiol) products with your doctor's or parent's permission, such as Epidiolex or other over the counter CBD product, in the last 24 hours?  ",
+        "DataType": "Integer"
+    },
+    "pls3_cbd_ago": {
+        "Description": "How long ago did you last use a CBD product?",
+        "DataType": "Float"
+    },
+    "pls3_cbd_product__1": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  1, Epidiolex  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_cbd_product__2": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  2, Oil or tincture by mouth  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_cbd_product__3": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  3, Inhaled or smoked product  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_cbd_product__4": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?4, Edible, capsule, or pill  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_cbd_product__5": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  5, Topical lotion or transdermal patch  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls3_cbd_product__6": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  999, Don't know | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_cbd": {
+        "Description": "Have you used any CBD (or cannabidiol) products with your doctor's or parent's permission, such as Epidiolex or other over the counter CBD product, in the last 24 hours?  ",
+        "DataType": "Integer"
+    },
+    "pls1_cbd_ago": {
+        "Description": "How long ago did you last use a CBD product?",
+        "DataType": "Float"
+    },
+    "pls1_cbd_product__1": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  1, Epidiolex | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_cbd_product__2": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 2, Oil or tincture by mouth  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_cbd_product__3": {
+        "Description": "What type of CBD product did you use (Choose all that apply)? 3, Inhaled or smoked product | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_cbd_product__4": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  4, Edible, capsule, or pill | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    },
+    "pls1_cbd_product__5": {
+        "Description": "What type of CBD product did you use (Choose all that apply)?  5, Topical lotion or transdermal patch  | 1 = Yes; 0 = No",
+        "DataType": "Integer",
+        "ValueRange": "0;1",
+        "Levels": {
+            "1": "Yes",
+            "0": "No"
+        }
+    }
+}

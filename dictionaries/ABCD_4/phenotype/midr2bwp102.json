@@ -1,0 +1,1287 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "tfmri_mr2_beta_visitid": {
+        "Description": "Visit name",
+        "DataType": "String"
+    },
+    "tfmri_mr2_beta_tr": {
+        "Description": "Pulse repetition time in seconds",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_beta_numtrs": {
+        "Description": "Number of frames in acquisition",
+        "DataType": "Integer"
+    },
+    "tfmri_mr2_beta_dof": {
+        "Description": "Degrees of freedom",
+        "DataType": "Integer"
+    },
+    "tfmri_mr2_beta_nvols": {
+        "Description": "Number of frames after removing dummy frames",
+        "DataType": "Integer"
+    },
+    "tfmri_mr2_beta_stvols": {
+        "Description": "Number of frames with FD < 0.2",
+        "DataType": "Integer"
+    },
+    "tfmri_mr2_beta_mm": {
+        "Description": "Average framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_beta_maxmotion": {
+        "Description": "Maximum framewise displacement in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_beta_meantrans": {
+        "Description": "Average framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_beta_maxtrans": {
+        "Description": "Maximum framewise translation in mm",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_beta_meanrot": {
+        "Description": "Average framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_beta_maxrot": {
+        "Description": "Maximum framewise rotation in radians",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_arvn_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvn_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_tplh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_pulh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_pllh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_bs": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_aglh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_csf": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_aalh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_vtrdclh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_tprh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_cderh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_purh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_plrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_agrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_aarh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_rpvnfb_bscs_vtrdcrh": {
+        "Description": "Beta weight for MID run2 reward positive versus negative feedback contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_tplh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_pulh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_pllh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_bs": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_aglh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_csf": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_aalh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_vtrdclh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_tprh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_cderh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_purh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_plrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_agrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_aarh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_lpvnfb_bscs_vtrdcrh": {
+        "Description": "Beta weight for MID run2 loss positive versus negative feedback contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alrvn_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_asrvn_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small reward versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsr_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large reward versus small reward contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_allvn_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_aslvn_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of small loss versus neutral contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_crbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_lvtclelh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_inftvtlh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_cbwmlh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_cbcxlh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_tplh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_cdelh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_pulh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_pllh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_3rdvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI 3rd-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_4thvtcle": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI 4th-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_bs": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI brain-stem",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_hpuslh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_aglh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_csf": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI csf",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_aalh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_vtraldclh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI left-ventraldc",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_crbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-cerebral-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_lvtclerh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-lateral-ventricle",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_inftvtrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-inf-lat-vent",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_cbwmrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-cerebellum-white-matter",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_cbcxrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-cerebellum-cortex",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_tprh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-thalamus-proper",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_cderh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-caudate",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_purh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-putamen",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_plrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-pallidum",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_hpusrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-hippocampus",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_agrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-amygdala",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_aarh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-accumbens-area",
+        "DataType": "Float"
+    },
+    "tfmri_mr2_alvsl_bscs_vtraldcrh": {
+        "Description": "Beta weight for MID run2 anticipation of large versus small loss contrast in ASEG ROI right-ventraldc",
+        "DataType": "Float"
+    }
+}

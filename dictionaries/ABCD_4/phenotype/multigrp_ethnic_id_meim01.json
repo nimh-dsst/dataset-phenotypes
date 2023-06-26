@@ -1,0 +1,145 @@
+{
+    "participant_id": {
+        "LongName": "Participant Identifier",
+        "Description": "Unique BIDS identifier for the participant in this study."
+    },
+    "subjectkey": {
+        "Description": "The NDAR Global Unique Identifier (GUID) for research subject",
+        "DataType": "GUID",
+        "ValueRange": "NDAR*"
+    },
+    "src_subject_id": {
+        "Description": "Subject ID how it's defined in lab/project",
+        "DataType": "String"
+    },
+    "interview_date": {
+        "Description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+        "DataType": "Date"
+    },
+    "interview_age": {
+        "Description": "Age in months at the time of the interview/test/sampling/imaging. | Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+        "DataType": "Integer",
+        "ValueRange": "0 :: 1260"
+    },
+    "sex": {
+        "Description": "Sex of subject at birth | M = Male; F = Female; O=Other; NR = Not reported",
+        "DataType": "String",
+        "ValueRange": "M;F; O; NR",
+        "Levels": {
+            "M": "Male",
+            "F": "Female",
+            "O": "Other",
+            "NR": "Not reported"
+        }
+    },
+    "eventname": {
+        "Description": "The event name for which the data was collected",
+        "DataType": "String"
+    },
+    "abcdmeim_1": {
+        "Description": "I have spent time trying to find out more about my ethnic group, such as its history, traditions, and customs. | 5=Strongly Agree; 4=Agree; 3=Neutral; 2=Disagree; 1=Strongly Disagree [meim_ethnic_id] = '1' or [meim_ethnic_id] = '2' or [meim_ethnic_id] = '3' or [meim_ethnic_id] = '4' or [meim_ethnic_id] = '5'  or [meim_ethnic_id] = '6' or [meim_ethnic_id] = '7' or [meim_ethnic_id] = '8'  or [meim_ethnic_id] = '9' or [meim_ethnic_id] = '10' or [meim_ethnic_id] = '11'  or [meim_ethnic_id] = '12' or [meim_ethnic_id] = '13' or [meim_ethnic_id] = '14'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "5": "Strongly Agree",
+            "4": "Agree",
+            "3": "Neutral",
+            "2": "Disagree",
+            "1": "Strongly Disagree"
+        }
+    },
+    "abcdmeim_2": {
+        "Description": "I have a strong sense of belonging to my own ethnic group. | 5=Strongly Agree; 4=Agree; 3=Neutral; 2=Disagree; 1=Strongly Disagree [meim_ethnic_id] = '1' or [meim_ethnic_id] = '2' or [meim_ethnic_id] = '3' or [meim_ethnic_id] = '4' or [meim_ethnic_id] = '5'  or [meim_ethnic_id] = '6' or [meim_ethnic_id] = '7' or [meim_ethnic_id] = '8'  or [meim_ethnic_id] = '9' or [meim_ethnic_id] = '10' or [meim_ethnic_id] = '11'  or [meim_ethnic_id] = '12' or [meim_ethnic_id] = '13' or [meim_ethnic_id] = '14'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "5": "Strongly Agree",
+            "4": "Agree",
+            "3": "Neutral",
+            "2": "Disagree",
+            "1": "Strongly Disagree"
+        }
+    },
+    "abcdmeim_3": {
+        "Description": "I understand pretty well what my ethnic group membership means to me. | 5=Strongly Agree; 4=Agree; 3=Neutral; 2=Disagree; 1=Strongly Disagree [meim_ethnic_id] = '1' or [meim_ethnic_id] = '2' or [meim_ethnic_id] = '3' or [meim_ethnic_id] = '4' or [meim_ethnic_id] = '5'  or [meim_ethnic_id] = '6' or [meim_ethnic_id] = '7' or [meim_ethnic_id] = '8'  or [meim_ethnic_id] = '9' or [meim_ethnic_id] = '10' or [meim_ethnic_id] = '11'  or [meim_ethnic_id] = '12' or [meim_ethnic_id] = '13' or [meim_ethnic_id] = '14'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "5": "Strongly Agree",
+            "4": "Agree",
+            "3": "Neutral",
+            "2": "Disagree",
+            "1": "Strongly Disagree"
+        }
+    },
+    "abcdmeim_4": {
+        "Description": "I have often done things that will help me understand my ethnic background better. | 5=Strongly Agree; 4=Agree; 3=Neutral; 2=Disagree; 1=Strongly Disagree [meim_ethnic_id] = '1' or [meim_ethnic_id] = '2' or [meim_ethnic_id] = '3' or [meim_ethnic_id] = '4' or [meim_ethnic_id] = '5'  or [meim_ethnic_id] = '6' or [meim_ethnic_id] = '7' or [meim_ethnic_id] = '8'  or [meim_ethnic_id] = '9' or [meim_ethnic_id] = '10' or [meim_ethnic_id] = '11'  or [meim_ethnic_id] = '12' or [meim_ethnic_id] = '13' or [meim_ethnic_id] = '14'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "5": "Strongly Agree",
+            "4": "Agree",
+            "3": "Neutral",
+            "2": "Disagree",
+            "1": "Strongly Disagree"
+        }
+    },
+    "abcdmeim_5": {
+        "Description": "I have often talked to other people in order to learn more about my ethnic group. | 5=Strongly Agree; 4=Agree; 3=Neutral; 2=Disagree; 1=Strongly Disagree [meim_ethnic_id] = '1' or [meim_ethnic_id] = '2' or [meim_ethnic_id] = '3' or [meim_ethnic_id] = '4' or [meim_ethnic_id] = '5'  or [meim_ethnic_id] = '6' or [meim_ethnic_id] = '7' or [meim_ethnic_id] = '8'  or [meim_ethnic_id] = '9' or [meim_ethnic_id] = '10' or [meim_ethnic_id] = '11'  or [meim_ethnic_id] = '12' or [meim_ethnic_id] = '13' or [meim_ethnic_id] = '14'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "5": "Strongly Agree",
+            "4": "Agree",
+            "3": "Neutral",
+            "2": "Disagree",
+            "1": "Strongly Disagree"
+        }
+    },
+    "abcdmeim_6": {
+        "Description": "I feel a strong attachment towards my own ethnic group. | 5=Strongly Agree; 4=Agree; 3=Neutral; 2=Disagree; 1=Strongly Disagree [meim_ethnic_id] = '1' or [meim_ethnic_id] = '2' or [meim_ethnic_id] = '3' or [meim_ethnic_id] = '4' or [meim_ethnic_id] = '5'  or [meim_ethnic_id] = '6' or [meim_ethnic_id] = '7' or [meim_ethnic_id] = '8'  or [meim_ethnic_id] = '9' or [meim_ethnic_id] = '10' or [meim_ethnic_id] = '11'  or [meim_ethnic_id] = '12' or [meim_ethnic_id] = '13' or [meim_ethnic_id] = '14'",
+        "DataType": "Integer",
+        "ValueRange": "1::5",
+        "Levels": {
+            "5": "Strongly Agree",
+            "4": "Agree",
+            "3": "Neutral",
+            "2": "Disagree",
+            "1": "Strongly Disagree"
+        }
+    },
+    "meim_admin": {
+        "Description": "Please indicate how instrument was administered: | 1=RA-Administered; 2=Youth Self-Administered; 3=Combination [event_name_number] > '21'",
+        "DataType": "Integer",
+        "ValueRange": "1::3",
+        "Levels": {
+            "1": "RA-Administered",
+            "2": "Youth Self-Administered",
+            "3": "Combination [event_name_number] > '21'"
+        }
+    },
+    "meim_ethnic_id": {
+        "Description": "In terms of ethnic group, I consider myself to be: | 1= White/Caucasian; 2= Western European; 3= Eastern European; 4= Hispanic/Latino; 5= Black/African American; 6= Afro-Carribean/Indo-Carribbean/West Indian (i.e. Jamaica, Haiti, Trinidad, Guyana); 7= East Asian (i.e. China, Japan, Korea, Taiwan); 8= South Asian (i.e. India, Pakistan, Bangladesh; 9= Southeast Asian (i.e. Phillipines, Vietnam, Thailand); 10= American Indian/Alaska Native#; 11= Middle Eastern/North African; 12= Native Hawaiian or Pacific Islander; 13= Mixed Ethnicity; 14= Other Ethnicity; 0= None; 999= Don't know; 777= Refuse to answer",
+        "DataType": "Integer",
+        "ValueRange": "0::14;777;999",
+        "Levels": {
+            "1": "White/Caucasian",
+            "2": "Western European",
+            "3": "Eastern European",
+            "4": "Hispanic/Latino",
+            "5": "Black/African American",
+            "6": "Afro-Carribean/Indo-Carribbean/West Indian (i.e. Jamaica, Haiti, Trinidad, Guyana)",
+            "7": "East Asian (i.e. China, Japan, Korea, Taiwan)",
+            "8": "South Asian (i.e. India, Pakistan, Bangladesh",
+            "9": "Southeast Asian (i.e. Phillipines, Vietnam, Thailand)",
+            "10": "American Indian/Alaska Native#",
+            "11": "Middle Eastern/North African",
+            "12": "Native Hawaiian or Pacific Islander",
+            "13": "Mixed Ethnicity",
+            "14": "Other Ethnicity",
+            "0": "None",
+            "999": "Don't know",
+            "777": "Refuse to answer"
+        }
+    }
+}
