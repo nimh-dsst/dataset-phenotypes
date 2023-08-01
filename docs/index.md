@@ -1,8 +1,28 @@
-[![DOI](https://zenodo.org/badge/567824366.svg)](https://zenodo.org/badge/latestdoi/567824366)
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
-![Brainhack DC Badge](https://img.shields.io/badge/brainhackdc-Capitol%20Cognition-blue?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAdtJREFUOI2tlM9rE1EQx78zb982dd2WDUkbFFGKrXj0IIhePPT/8d/zlpvgwauIoGjRgonubhKSje6++XqQQij5ZcnAHN4wn+8Mw8wTktil6U7VthWcTqe98Xj8cJvcaJskkh3nwlbFtxKs63oMAEmyOXdj1TzPD+I4Po1jfZTn+cFGRZIrvd/vR0VRPLh6V1V1n2S0jpF1azOZTM5IGslDkgFA6ZyL0zT9uIpZO0NV3QMwTJLkGwCX53kG4HAds04wFhEvIr6qqu58PhcRgYh4ADGAP0ubWKVWFEVvMBi8b5omCeH3U+99EkXRXQCfiqLo/XeHzrmX7Xb7p3OUptGpKh4DOFXVrnPOA7hYxklZlieqenwt/oLkXJUDkrcB1yX51TnZM4MnmQL4JSKfAYQryMx+RCRDmqZvF9Umk0lHRBgCL83YtFpRHkI4CcEuncNzsn5t5s/TNH2zyJVleU/5b29s0c3sFoBCRLyqHtd1fYdkW0SU1HdknIlIcp0jyaUzFJFRCGEmIh1VrYDmSES9962mrutzMwuq+mEpOxwOU+dcthjc31dXVRZEJPPeH4UQvqjqEzNrAQhm9l1ELsysWeSyLMvXnt4196PR6NVsNnp249O7ie38x/4LeGtOsdcfsLwAAAAASUVORK5CYII=)
+# Welcome
 
-# Big neuroimaging dataset BIDS tabular phenotype tools
+This ReadTheDocs site is for the big neuroimaging study BIDS tabular phenotype data tool, `bids-phenotype`, from [the `dataset-phenotypes` repository](https://github.com/nimh-dsst/dataset-phenotypes) on the National Institute of Mental Health Data Science and Sharing Team (NIMH DSST) GitHub organization. It was written collaboratively.
+
+Current featured data sets:
+
+1. Adolescent Brain Cognitive Development Study Release 4 (ABCD_4)
+1. Autism Brain Imaging Data Exchange I and II (ABIDE_I and ABIDE_II)
+1. Child Mind Institute Healthy Brain Network (HBN)
+1. Human Connectome Project 1,200 subject sample (HCP_1200)
+1. Nathan Kline Institute Rockland Sample (NKI)
+1. Philadelphia Neurodevelopmental Cohort (PNC)
+1. United Kingdom Biobank (UKB)
+
+## The Repository
+
+The `dataset-phenotypes` repository is an all-in-one repository for tabular phenotype data/dictionaries of big neuroimaging studies. It holds:
+
+- This documentation
+- The Python Package Index (PyPI) `bids-phenotype` pip-installable tool
+- Data/dictionary conversion scripts
+- Example data/dictionaries
+- Digital object identifier (DOI) releases to Zenodo
+
+## The Tool
 
 Preparatory scripts to output BIDS phenotypic data dictionaries and transform phenotypic data to BIDS TSVs for common neuroimaging datasets.
 
